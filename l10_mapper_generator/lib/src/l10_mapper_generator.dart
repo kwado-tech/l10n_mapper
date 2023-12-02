@@ -29,7 +29,7 @@ class L10MapperGenerator extends GeneratorForAnnotation<L10MapperAnnotation> {
     final extensionName = '${visitor.className}Extension';
 
     // annotation configs (mapper-extension)
-    final mapperExtension = annotation.read('l10MapperExtension');
+    final mapperExtension = annotation.read('mapperExtension');
     final generateL10n = mapperExtension.read('l10n').boolValue;
     final generateLocale = mapperExtension.read('locale').boolValue;
     final generateL10nParser = mapperExtension.read('l10nParser').boolValue;
