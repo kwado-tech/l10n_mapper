@@ -25,7 +25,7 @@ void logger<T>(String log, T Function()? callback,
     {LogType type = LogType.none}) {
   if (type != LogType.none) {
     // ignore: avoid_print
-    print('${type.toString()} $log');
+    print('${type.toString()}: $log');
   }
 
   if (callback != null) callback();
