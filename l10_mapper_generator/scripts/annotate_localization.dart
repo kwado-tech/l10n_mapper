@@ -1,11 +1,14 @@
 import 'dart:io';
 
+import '../core/logger.dart';
+
 // required for isolated testing
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
-    print("Error: Not enough arguments provided.");
-    print("Usage: dart annotate_localization.dart <file_path>");
-    exit(1);
+    logger(
+        'Not enough arguments provided! \nUsage => dart annotate_localization.dart <file_path>',
+        () => exit(1),
+        type: LogType.error);
   }
 
   return AnnotateLocalization()(arguments[0]);
@@ -28,8 +31,7 @@ class AnnotateLocalization {
       // Overwrite the original file with the new file
       tempFile.renameSync(path);
     } else {
-      print("Error: Annotation failed.");
-      exit(1);
+      logger('Annotation failed!', () => exit(1), type: LogType.error);
     }
   }
 
@@ -46,7 +48,7 @@ abstract class AppLocalizations {
 ''';
 
     // Write imports and annotations to app_localization.dart file
-    print('\nAdding required imports to generated app_localizations');
+    logger('\nAdding required imports to generated app_localizations', () {});
     replaceString(
         path: filePath, pattern: searchParameter, replacement: requiredImports);
   }
@@ -59,8 +61,7 @@ abstract class AppLocalizations {
     // Check if the input file exists
     final inputFile = File(path);
     if (!inputFile.existsSync()) {
-      print("Error: Input file does not exist.");
-      exit(1);
+      logger('Input file does not exist!', () => exit(1), type: LogType.error);
     }
 
     // Backup the original file
@@ -73,9 +74,10 @@ abstract class AppLocalizations {
     // verify if replacement operation was previously successful
     final alreadyReplaced = fileContent.contains(replacement);
     if (alreadyReplaced) {
-      print(
-          "Error: AnnotateLocalization failed as specified replacement already exists!");
-      exit(1);
+      logger(
+          'AnnotateLocalization failed as specified replacement already exists!',
+          () => exit(1),
+          type: LogType.error);
     }
 
     _replaceContent(
@@ -85,6 +87,6 @@ abstract class AppLocalizations {
       fileContent: fileContent,
     );
 
-    print("Annotation completed successfully.");
+    logger('Annotation completed successfully.', () {});
   }
 }
