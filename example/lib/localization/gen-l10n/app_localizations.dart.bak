@@ -59,10 +59,6 @@ import 'app_localizations_fr.dart';
 /// you wish to add from the pop-up menu in the Value field. This list should
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
-import 'package:l10_mapper_annotation/l10_mapper_annotation.dart';
-part 'app_localizations.g.dart';
-
-@L10MapperAnnotation()
 abstract class AppLocalizations {
   AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
