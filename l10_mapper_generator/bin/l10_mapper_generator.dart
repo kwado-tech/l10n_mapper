@@ -5,6 +5,7 @@ import 'package:args/args.dart';
 import '../scripts/annotate_localization.dart';
 
 void main(List<String> arguments) {
+  // TODO: write expressive help-messages
   final parser = ArgParser()
     ..addFlag('help',
         abbr: 'h', negatable: false, help: 'Print this usage information')
