@@ -12,6 +12,27 @@ void main(List<String> arguments) {
 }
 
 class AnnotateLocalization {
+  void _replaceContent({
+    required String path,
+    required String pattern,
+    required String replacement,
+    required String fileContent,
+  }) {
+    final replacedContent = fileContent.replaceAll(
+        RegExp(pattern, caseSensitive: false), replacement);
+    final tempFile = File('$path.tmp');
+    tempFile.writeAsStringSync(replacedContent);
+
+    // Check if the replacement was successful
+    if (tempFile.existsSync()) {
+      // Overwrite the original file with the new file
+      tempFile.renameSync(path);
+    } else {
+      print("Error: Annotation failed.");
+      exit(1);
+    }
+  }
+
   void call(String filePath) {
     // Mapper generator-config options
     String searchParameter = 'abstract class AppLocalizations {\n';
@@ -28,29 +49,6 @@ abstract class AppLocalizations {
     print('\nAdding required imports to generated app_localizations');
     replaceString(
         path: filePath, pattern: searchParameter, replacement: requiredImports);
-  }
-
-  void replaceContent({
-    required String path,
-    required String pattern,
-    required String replacement,
-    required String fileContent,
-  }) {
-    final replacedContent = fileContent.replaceAll(
-        RegExp(pattern, caseSensitive: false), replacement);
-    final tempFile = File('$path.tmp');
-    tempFile.writeAsStringSync(replacedContent);
-
-    // Check if the replacement was successful
-    if (tempFile.existsSync()) {
-      // Overwrite the original file with the new file
-      tempFile.renameSync(path);
-
-      print("Replacement completed successfully.");
-    } else {
-      print("Error: Replacement failed.");
-      exit(1);
-    }
   }
 
   void replaceString({
@@ -75,15 +73,18 @@ abstract class AppLocalizations {
     // verify if replacement operation was previously successful
     final alreadyReplaced = fileContent.contains(replacement);
     if (alreadyReplaced) {
-      print("Error: AnnotateLocalization failed as specified replacement already exists!");
+      print(
+          "Error: AnnotateLocalization failed as specified replacement already exists!");
       exit(1);
     }
 
-    replaceContent(
+    _replaceContent(
       path: path,
       pattern: pattern,
       replacement: replacement,
       fileContent: fileContent,
     );
+
+    print("Annotation completed successfully.");
   }
 }
