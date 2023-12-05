@@ -14,7 +14,7 @@ void main(List<String> arguments) {
 class AnnotateLocalization {
   void call(String filePath) {
     // Mapper generator-config options
-    String searchParameter = 'abstract class AppLocalizations {';
+    String searchParameter = 'abstract class AppLocalizations {\n';
 
     String requiredImports = '''
 import 'package:l10_mapper_annotation/l10_mapper_annotation.dart';
@@ -75,7 +75,7 @@ abstract class AppLocalizations {
     // verify if replacement operation was previously successful
     final alreadyReplaced = fileContent.contains(replacement);
     if (alreadyReplaced) {
-      print("Error: Specified replacement already exists!");
+      print("Error: AnnotateLocalization failed as specified replacement already exists!");
       exit(1);
     }
 
