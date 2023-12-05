@@ -1,12 +1,19 @@
 import 'dart:io';
 
 // required for isolated testing
-void main() => AnnotateLocalization()();
+void main(List<String> arguments) {
+  if (arguments.isEmpty) {
+    print("Error: Not enough arguments provided.");
+    print("Usage: dart annotate_localization.dart <file_path>");
+    exit(1);
+  }
+
+  return AnnotateLocalization()(arguments[0]);
+}
 
 class AnnotateLocalization {
-  void call() {
+  void call(String filePath) {
     // Mapper generator-config options
-    String filePath = './app_localizations.dart';
     String searchParameter = 'abstract class AppLocalizations {';
 
     String requiredImports = '''
@@ -23,24 +30,15 @@ abstract class AppLocalizations {
         path: filePath, pattern: searchParameter, replacement: requiredImports);
   }
 
-  void replaceString(
-      {required String path, required String pattern, required replacement}) {
-    // Check if the input file exists
-    File inputFile = File(path);
-    if (!inputFile.existsSync()) {
-      print("Error: Input file does not exist.");
-      exit(1);
-    }
-
-    // Backup the original file
-    File backupFile = File('$path.bak');
-    inputFile.copySync(backupFile.path);
-
-    // Perform the search and replace and write the result to a new file
-    String fileContent = inputFile.readAsStringSync();
-    String replacedContent = fileContent.replaceAll(
+  void replaceContent({
+    required String path,
+    required String pattern,
+    required String replacement,
+    required String fileContent,
+  }) {
+    final replacedContent = fileContent.replaceAll(
         RegExp(pattern, caseSensitive: false), replacement);
-    File tempFile = File('$path.tmp');
+    final tempFile = File('$path.tmp');
     tempFile.writeAsStringSync(replacedContent);
 
     // Check if the replacement was successful
@@ -53,5 +51,39 @@ abstract class AppLocalizations {
       print("Error: Replacement failed.");
       exit(1);
     }
+  }
+
+  void replaceString({
+    required String path,
+    required String pattern,
+    required String replacement,
+  }) {
+    // Check if the input file exists
+    final inputFile = File(path);
+    if (!inputFile.existsSync()) {
+      print("Error: Input file does not exist.");
+      exit(1);
+    }
+
+    // Backup the original file
+    final backupFile = File('$path.bak');
+    inputFile.copySync(backupFile.path);
+
+    // Perform the search and replace and write the result to a new file
+    final fileContent = inputFile.readAsStringSync();
+
+    // verify if replacement operation was previously successful
+    final alreadyReplaced = fileContent.contains(replacement);
+    if (alreadyReplaced) {
+      print("Error: Specified replacement already exists!");
+      exit(1);
+    }
+
+    replaceContent(
+      path: path,
+      pattern: pattern,
+      replacement: replacement,
+      fileContent: fileContent,
+    );
   }
 }
