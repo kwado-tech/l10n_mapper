@@ -62,7 +62,7 @@ import 'app_localizations_fr.dart';
 import 'package:l10_mapper_annotation/l10_mapper_annotation.dart';
 part 'app_localizations.g.dart';
 
-@L10MapperAnnotation()
+@L10MapperAnnotation(mapperExtension: L10MapperExtension(l10n: true, locale: true, l10nParser: true))
 abstract class AppLocalizations {
   AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
