@@ -35,7 +35,7 @@ class AnnotateLocalization {
     }
   }
 
-  void call(String filePath) {
+  void call(String filePath, {bool l10n = true, bool locale = true, bool l10nParser = true}) {
     // Mapper generator-config options
     String searchParameter = 'abstract class AppLocalizations {\n';
 
@@ -43,7 +43,7 @@ class AnnotateLocalization {
 import 'package:l10_mapper_annotation/l10_mapper_annotation.dart';
 part 'app_localizations.g.dart';
 
-@L10MapperAnnotation()
+@L10MapperAnnotation(mapperExtension: L10MapperExtension(l10n: $l10n, locale: $locale, l10nParser: $l10nParser))
 abstract class AppLocalizations {
 ''';
 
