@@ -2,7 +2,7 @@
 
 <!--- Describe briefly what this pull request does -->
 
-## Please check again
+## Please check the following boxes
 
 <!--- Put an `X` in all the boxes that apply: -->
 
