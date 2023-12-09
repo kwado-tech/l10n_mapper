@@ -2,18 +2,6 @@ import 'dart:io';
 
 import '../core/logger.dart';
 
-// required for isolated testing
-void main(List<String> arguments) {
-  if (arguments.isEmpty) {
-    logger(
-        'Not enough arguments provided! \nUsage => dart annotate_localization.dart <file_path>',
-        () => exit(1),
-        type: LogType.error);
-  }
-
-  return AnnotateLocalization()(arguments[0]);
-}
-
 class AnnotateLocalization {
   void _replaceContent({
     required String path,
@@ -35,7 +23,8 @@ class AnnotateLocalization {
     }
   }
 
-  void call(String filePath, {bool l10n = true, bool locale = true, bool l10nParser = true}) {
+  void call(String filePath,
+      {bool l10n = true, bool locale = true, bool l10nParser = true}) {
     // Mapper generator-config options
     String searchParameter = 'abstract class AppLocalizations {\n';
 
@@ -48,7 +37,8 @@ abstract class AppLocalizations {
 ''';
 
     // Write imports and annotations to app_localization.dart file
-    logger('\nAdding required imports to generated app_localizations', () {});
+    logger('\nAdding required imports to generated app_localizations', () {},
+        type: LogType.log);
     replaceString(
         path: filePath, pattern: searchParameter, replacement: requiredImports);
   }
@@ -87,6 +77,6 @@ abstract class AppLocalizations {
       fileContent: fileContent,
     );
 
-    logger('Annotation completed successfully.', () {});
+    logger('Annotation completed successfully.', () {}, type: LogType.log);
   }
 }

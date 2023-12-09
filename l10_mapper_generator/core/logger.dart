@@ -4,6 +4,7 @@ class LogType {
   const LogType._(String value) : _value = value;
 
   static const LogType none = LogType._('');
+  static const LogType log = LogType._('LOG');
   static const LogType usage = LogType._('USAGE');
   static const LogType error = LogType._('ERROR');
 
