@@ -1,3 +1,4 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Created `LocalizationMapperAnnotation`
+* Defined annotation configurations for generating extension methods
