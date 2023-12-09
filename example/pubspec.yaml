@@ -14,15 +14,23 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   l10_mapper_annotation: 
-    path: ../l10_mapper_annotation
+    git:
+      url: https://github.com/kwado-tech/l10_mapper.git
+      ref: 1.0.2
+      path: l10_mapper_annotation
 
 dev_dependencies:
   build_runner: ^2.3.3
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
+  # l10_mapper_generator: 
+  #   path: ../l10_mapper_generator
   l10_mapper_generator: 
-    path: ../l10_mapper_generator
+    git:
+      url: https://github.com/kwado-tech/l10_mapper.git
+      ref: 1.0.2
+      path: l10_mapper_generator
 
 flutter:
   uses-material-design: true

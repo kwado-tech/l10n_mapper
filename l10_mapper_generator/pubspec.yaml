@@ -17,8 +17,11 @@ dependencies:
   build: ^2.3.1
   flutter:
     sdk: flutter
-  l10_mapper_annotation:
-    path: ../l10_mapper_annotation
+  l10_mapper_annotation: 
+    git:
+      url: https://github.com/kwado-tech/l10_mapper.git
+      ref: 1.0.2
+      path: l10_mapper_annotation
   source_gen: ^1.4.0
 
 dev_dependencies:
