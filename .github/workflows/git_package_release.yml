@@ -50,4 +50,4 @@ jobs:
         with:
           generateReleaseNotes: true
           # commit: ${{ vars.RELEASE_TARGET_BRANCH }}
-          tag: ${{ vars.RELEASE_VERSION }}.${{ github.run_number }}
+          tag: ${{ env.release_version }}.${{ github.run_number }}
