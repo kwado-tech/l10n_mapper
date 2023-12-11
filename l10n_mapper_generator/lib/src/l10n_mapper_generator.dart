@@ -1,6 +1,6 @@
 import 'package:analyzer/dart/element/element.dart';
 import 'package:build/build.dart';
-import 'package:l10_mapper_annotation/l10_mapper_annotation.dart';
+import 'package:l10n_mapper_annotation/l10n_mapper_annotation.dart';
 import 'package:source_gen/source_gen.dart';
 
 import 'model_visitor.dart';
@@ -13,7 +13,7 @@ const genExceptions = [
   'supportedLocales',
 ];
 
-class L10MapperGenerator extends GeneratorForAnnotation<L10MapperAnnotation> {
+class L10nMapperGenerator extends GeneratorForAnnotation<L10nMapperAnnotation> {
   @override
   String generateForAnnotatedElement(
     Element element,

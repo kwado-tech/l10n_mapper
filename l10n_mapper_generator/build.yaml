@@ -7,9 +7,9 @@ targets:
 builders:
   generators:
     target: ":generators"
-    import: "package:l10_mapper_generator/l10_mapper_generator.dart"
+    import: "package:l10n_mapper_generator/l10n_mapper_generator.dart"
     builder_factories: ["generateLocalizationClass"] #Builder name(BuilderOptions)
-    build_extensions: { ".dart": [".l10_mapper_gen.g.part"] }
+    build_extensions: { ".dart": [".l10n_mapper_gen.g.part"] }
     auto_apply: dependents
     build_to: cache
     applies_builders: ["source_gen|combining_builder"]

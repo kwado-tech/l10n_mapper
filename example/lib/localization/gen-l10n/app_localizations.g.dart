@@ -3,7 +3,7 @@
 part of 'app_localizations.dart';
 
 // **************************************************************************
-// L10MapperGenerator
+// L10nMapperGenerator
 // **************************************************************************
 
 extension AppLocalizationsExtension on BuildContext {

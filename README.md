@@ -1,4 +1,4 @@
-# l10_mapper
+# l10n_mapper
 A dart package to support parsing dynamic translation keys (as flutter-localizations package does not yet support this).
 
 Note: Setup localization using `flutter_localizations` package before proceeding with this.
@@ -13,18 +13,18 @@ dependencies:
   flutter_localizations:
     sdk: flutter
     
-  l10_mapper_annotation: <latest-version>
+  l10n_mapper_annotation: <latest-version>
   
 dev_dependencies:
   build_runner: ^2.3.3
   
-  l10_mapper_generator: <latest-version>
+  l10n_mapper_generator: <latest-version>
 ```
 ###
-To run `l10_mapper_generator` in terminal, you should activate/install it as a global dependency
+To run `l10n_mapper_generator` in terminal, you should activate/install it as a global dependency
 
 ```dart
-dart pub global activate l10_mapper_generator
+dart pub global activate l10n_mapper_generator
 ```
 ###
 To generate app-localization mapper that can be parsed dynamic translation keys, you can simply run the following scripts in succession.
@@ -37,7 +37,7 @@ flutter gen-l10n
 
 ```shell
 # Annotate `app_localizations` to generate `app_localizations.g.dart` file. Provide `source` option (path of the generated `app_localizations.dart` after running `flutter gen-l10n`)
-dart pub run l10_mapper_generator --source=lib/localization/gen-l10n/app_localizations.dart
+dart pub run l10n_mapper_generator --source=lib/localization/gen-l10n/app_localizations.dart
 ```
 
 ```shell
@@ -55,7 +55,7 @@ Note: For convenience and a cleaner reuseable approach, you can create a shell s
 flutter gen-l10n
 
 # Annotate `app_localizations` to generate `app_localizations.g.dart` file. Provide `source` option (path of the generated `app_localizations.dart` after running `flutter gen-l10n`)
-dart pub run l10_mapper_generator --source=lib/localization/gen-l10n/app_localizations.dart
+dart pub run l10n_mapper_generator --source=lib/localization/gen-l10n/app_localizations.dart
 
 # Generate required code (this should generate `app_localizations.g.dart` [part file for `app_localizations.dart`] consisting of `AppLocalizationsExtension` and `AppLocalizationsMapper` classes)
 flutter pub run build_runner build --delete-conflicting-outputs
@@ -120,13 +120,13 @@ class AppLocalizationsMapper {
 Configurations can be parsed through the `L10MapperAnnotation` to specify what extension methods to generate. This is applicable when your application already defined relative extension methods so it is ideal to disable the generation of these already defined extension methods. Below, are config options available
 
 ```dart
-@L10MapperAnnotation(mapperExtension: L10MapperExtension(l10n: true, locale: true, l10nParser: true))
+@L10MapperAnnotation(mapperExtension: L10nMapperExtension(l10n: true, locale: true, l10nParser: true))
 ```
 
-This is the default config defined. To change this default configuration, you can specify different options when running `dart pub run l10_mapper_generator --source=lib/localization/gen-l10n/app_localizations.dart` script.
+This is the default config defined. To change this default configuration, you can specify different options when running `dart pub run l10n_mapper_generator --source=lib/localization/gen-l10n/app_localizations.dart` script.
 
 ```shell
-dart pub run l10_mapper_generator --source=lib/localization/gen-l10n/app_localizations.dart --l10n=false --locale=false --l10nParser=false
+dart pub run l10n_mapper_generator --source=lib/localization/gen-l10n/app_localizations.dart --l10n=false --locale=false --l10nParser=false
 ```
 
 **Example usage**

@@ -1,9 +1,9 @@
-library l10_mapper_generator;
+library l10n_mapper_generator;
 
 import 'package:build/build.dart';
 import 'package:source_gen/source_gen.dart';
 
-import 'src/l10_mapper_generator.dart';
+import 'src/l10n_mapper_generator.dart';
 
 Builder generateLocalizationClass(BuilderOptions options) =>
-    SharedPartBuilder([L10MapperGenerator()], 'l10_mapper_gen');
+    SharedPartBuilder([L10nMapperGenerator()], 'l10n_mapper_gen');

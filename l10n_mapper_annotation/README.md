@@ -120,7 +120,7 @@ class AppLocalizationsMapper {
 Configurations can be parsed through the `L10MapperAnnotation` to specify what extension methods to generate. This is applicable when your application already defined relative extension methods so it is ideal to disable the generation of these already defined extension methods. Below, are config options available
 
 ```dart
-@L10MapperAnnotation(mapperExtension: L10MapperExtension(l10n: true, locale: true, l10nParser: true))
+@L10MapperAnnotation(mapperExtension: L10nMapperExtension(l10n: true, locale: true, l10nParser: true))
 ```
 
 This is the default config defined. To change this default configuration, you can specify different options when running `dart pub run l10n_mapper_generator --source=lib/localization/gen-l10n/app_localizations.dart` script.
