@@ -299,11 +299,18 @@ packages:
   l10_mapper_annotation:
     dependency: "direct main"
     description:
-      path: l10_mapper_annotation
-      ref: "1.0.3"
-      resolved-ref: "47a5b48a59f0339af1b6785ef2a5b7c70dcd59c7"
-      url: "https://github.com/kwado-tech/l10_mapper.git"
-    source: git
+      name: l10_mapper_annotation
+      sha256: "62a89350eae4df65aa7f0bd56cfed415fdf48e7f8ab876f0561e0306330a858e"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
+  l10_mapper_generator:
+    dependency: "direct dev"
+    description:
+      name: l10_mapper_generator
+      sha256: cef3d4151034e2a092b78c279d808c50ce44496acc4b2b3d5d39b9a9bcc7ee05
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   lints:
     dependency: transitive
@@ -414,6 +421,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  source_gen:
+    dependency: transitive
+    description:
+      name: source_gen
+      sha256: fc0da689e5302edb6177fdd964efcb7f58912f43c28c2047a808f5bfff643d16
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.4.0"
   source_span:
     dependency: transitive
     description:
