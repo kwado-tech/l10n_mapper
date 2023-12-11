@@ -20,8 +20,8 @@ dependencies:
   l10_mapper_annotation: 
     git:
       url: https://github.com/kwado-tech/l10_mapper.git
-      ref: 1.0.2
-      path: l10_mapper_annotation
+      ref: 1.0.3
+      path: ./l10_mapper_annotation
   source_gen: ^1.4.0
 
 dev_dependencies:
