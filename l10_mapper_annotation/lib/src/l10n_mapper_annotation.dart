@@ -1,16 +1,16 @@
-class L10MapperExtension {
+class L10nMapperExtension {
   final bool l10n;
   final bool locale;
   final bool l10nParser;
 
-  const L10MapperExtension(
+  const L10nMapperExtension(
       {this.l10n = true, this.locale = true, this.l10nParser = true});
 
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
 
-    return other is L10MapperExtension &&
+    return other is L10nMapperExtension &&
         other.l10n == l10n &&
         other.locale == locale &&
         other.l10nParser == l10nParser;
@@ -21,20 +21,20 @@ class L10MapperExtension {
 
   @override
   String toString() =>
-      'L10MapperExtension(l10n: $l10n, locale: $locale, l10nParser: $l10nParser)';
+      'L10nMapperExtension(l10n: $l10n, locale: $locale, l10nParser: $l10nParser)';
 }
 
-class L10MapperAnnotation {
-  final L10MapperExtension mapperExtension;
+class L10nMapperAnnotation {
+  final L10nMapperExtension mapperExtension;
 
-  const L10MapperAnnotation(
-      {this.mapperExtension = const L10MapperExtension()});
+  const L10nMapperAnnotation(
+      {this.mapperExtension = const L10nMapperExtension()});
 
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
 
-    return other is L10MapperAnnotation &&
+    return other is L10nMapperAnnotation &&
         other.mapperExtension == mapperExtension;
   }
 
@@ -43,7 +43,7 @@ class L10MapperAnnotation {
 
   @override
   String toString() =>
-      'L10MapperAnnotation(mapperExtension: $mapperExtension)';
+      'L10nMapperAnnotation(mapperExtension: $mapperExtension)';
 }
 
-const localizationMapper = L10MapperAnnotation();
+const localizationMapper = L10nMapperAnnotation();

@@ -1,4 +1,4 @@
 ## 1.0.0
 
-* Created `LocalizationMapperAnnotation`
+* Created `L10nMapperAnnotation`
 * Defined annotation configurations for generating extension methods
