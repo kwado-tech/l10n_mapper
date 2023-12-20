@@ -1,8 +1,8 @@
 name: l10n_mapper_annotation
 description: A dart package to generate localization-mapper to support parsing dynamic translation keys (as flutter-localizations package does not yet support this).
 version: 1.0.0
-homepage: https://github.com/kwado-tech/l10n_mapper
-repository: https://github.com/kwado-tech/l10n_mapper
+homepage: https://github.com/kwado-tech/l10n_mapper/tree/main/l10n_mapper_annotation
+repository: https://github.com/kwado-tech/l10n_mapper/tree/main/l10n_mapper_annotation
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
