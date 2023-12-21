@@ -17,13 +17,7 @@ Future<void> main(List<String> arguments) async {
     ..addOption('config',
         abbr: 'c',
         help:
-            'Provide directory path which `l10_mapper.json` config file is defined if it is not defined in the project`s root directory')
-    ..addOption('l10n',
-        abbr: 'n', help: 'Should generate `l10n` extension method')
-    ..addOption('locale',
-        abbr: 'l', help: 'Should generate `locale` extension method')
-    ..addOption('l10nParser',
-        abbr: 'p', help: 'Should generate `l10nParser` extension method');
+            'Provide directory path which `l10_mapper.json` config file is defined if it is not defined in the project`s root directory');
 
   try {
     final results = parser.parse(arguments);
