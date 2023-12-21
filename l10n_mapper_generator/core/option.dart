@@ -15,9 +15,8 @@ class Option<T> {
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
-  
-    return other is Option<T> &&
-      other._value == _value;
+
+    return other is Option<T> && other._value == _value;
   }
 
   @override

@@ -5,7 +5,8 @@ class ConfigOptions {
 
   const ConfigOptions._({required this.generatorOptions});
 
-  factory ConfigOptions.none() => ConfigOptions._(generatorOptions: GeneratorOptions.none());
+  factory ConfigOptions.none() =>
+      ConfigOptions._(generatorOptions: GeneratorOptions.none());
 
   factory ConfigOptions.fromJson(Map<String, dynamic> json) {
     return ConfigOptions._(
@@ -27,7 +28,8 @@ class GeneratorOptions {
     required this.l10nParser,
   });
 
-  factory GeneratorOptions.none() => GeneratorOptions._(path: none(), l10n: none(), locale: none(), l10nParser: none());
+  factory GeneratorOptions.none() => GeneratorOptions._(
+      path: none(), l10n: none(), locale: none(), l10nParser: none());
 
   factory GeneratorOptions.fromJson(Map<String, dynamic>? json) {
     if (json == null) return GeneratorOptions.none();

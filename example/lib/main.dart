@@ -26,19 +26,20 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(context.l10nParser('application_name')),
-            Text(context.l10nParser('deposit_timeframe')),
-            Text(context.l10nParser('balance_reverted', arguments: ['BTC'])),
-            Text(context.l10nParser('convert_before_withdraw', arguments: ['CAD', 'EUR'])),
-            Text(context.l10nParser('convert_before_withdraw_again', arguments: ['BTC', 'USD'])),
-          ],
-        )
-      ),
+          child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(context.l10nParser('application_name')),
+          Text(context.l10nParser('deposit_timeframe')),
+          Text(context.l10nParser('balance_reverted', arguments: ['BTC'])),
+          Text(context.l10nParser('convert_before_withdraw',
+              arguments: ['CAD', 'EUR'])),
+          Text(context.l10nParser('convert_before_withdraw_again',
+              arguments: ['BTC', 'USD'])),
+        ],
+      )),
     );
   }
 }
