@@ -17,6 +17,7 @@ dependencies:
   flutter:
     sdk: flutter
   l10n_mapper_annotation: ^1.0.0
+  path: ^1.8.3
   source_gen: ^1.4.0
 
 dev_dependencies:
