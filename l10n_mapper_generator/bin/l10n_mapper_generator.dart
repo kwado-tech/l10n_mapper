@@ -16,6 +16,10 @@ Future<void> main(List<String> arguments) async {
         abbr: 'h',
         negatable: false,
         help: 'Usage: dart pub run l10_mapper_generator [options]')
+    ..addFlag('format',
+        abbr: 'f',
+        negatable: false,
+        help: 'Usage: dart pub run l10_mapper_generator --format')
     ..addOption('config',
         abbr: 'c',
         help:
@@ -35,8 +39,13 @@ Future<void> main(List<String> arguments) async {
     final optionsReader = ConfigOptionReader(path: configPath);
     final configOptions = await optionsReader.readConfigOptions();
 
-    // format localization translation files to match darts naming convention
-    if (configOptions.formatterOptions != FormatterOptions.none()) {
+    if ((results['format'] as bool) == true) {
+      if (configOptions.formatterOptions == FormatterOptions.none()) {
+        logger('Provide [formatterOptions] configuration in l10n_mapper.json file!', () => exit(1),
+            type: LogType.error);
+      }
+
+      // format localization translation files to match darts naming convention
       await FormatLocalization()(
           formatterOptions: configOptions.formatterOptions);
     }
