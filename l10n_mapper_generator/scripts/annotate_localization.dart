@@ -37,7 +37,7 @@ abstract class AppLocalizations {
 ''';
 
     // write imports and annotations to app_localization.dart file
-    logger('\nAdding required imports to generated app_localizations', () {},
+    logger('Adding required imports to generated app_localizations', () {},
         type: LogType.log);
     await replaceString(
         path: filePath, pattern: searchParameter, replacement: requiredImports);
