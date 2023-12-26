@@ -51,7 +51,7 @@ abstract class AppLocalizations {
     // check if the input file exists
     final inputFile = File(path);
     if (!(await inputFile.exists())) {
-      logger('Input file does not exist!', () => exit(1), type: LogType.error);
+      logger('[app_localizations.dart] file does not exist in set path!', () => exit(1), type: LogType.error);
     }
 
     // backup the original file

@@ -21,7 +21,11 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  l10n_mapper_generator: ^1.0.0
+  l10n_mapper_generator: 
+    git:
+      url: https://github.com/kwado-tech/l10n_mapper.git
+      path: l10n_mapper_generator
+      ref: feature/translation-formatter
 
 flutter:
   uses-material-design: true

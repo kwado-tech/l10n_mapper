@@ -23,7 +23,9 @@
         "keyPredicateMatch": {
             "-": "_",
             ".": "_",
-            "^": "_"
+            "^": "_",
+            "(": "_",
+            ")": "_"
         }
     },
     "generatorOptions": {

@@ -20,6 +20,10 @@ Future<void> main(List<String> arguments) async {
         abbr: 'f',
         negatable: false,
         help: 'Usage: dart pub run l10_mapper_generator --format')
+    ..addFlag('gen-mapper',
+        abbr: 'm',
+        negatable: false,
+        help: 'Usage: dart pub run l10_mapper_generator --gen-mapper')
     ..addOption('config',
         abbr: 'c',
         help:
@@ -39,9 +43,12 @@ Future<void> main(List<String> arguments) async {
     final optionsReader = ConfigOptionReader(path: configPath);
     final configOptions = await optionsReader.readConfigOptions();
 
+    //? Formatter
     if ((results['format'] as bool) == true) {
       if (configOptions.formatterOptions == FormatterOptions.none()) {
-        logger('Provide [formatterOptions] configuration in l10n_mapper.json file!', () => exit(1),
+        logger(
+            'Provide [formatterOptions] configuration in l10n_mapper.json file!',
+            () => exit(1),
             type: LogType.error);
       }
 
@@ -50,7 +57,15 @@ Future<void> main(List<String> arguments) async {
           formatterOptions: configOptions.formatterOptions);
     }
 
-    if (configOptions.generatorOptions != GeneratorOptions.none()) {
+    //? Mapper
+    if ((results['gen-mapper'] as bool) == true) {
+      if (configOptions.generatorOptions == GeneratorOptions.none()) {
+        logger(
+            'Provide [generatorOptions] configuration in l10n_mapper.json file!',
+            () => exit(1),
+            type: LogType.error);
+      }
+
       // parse generator-options
       final generatorOptions = configOptions.generatorOptions;
 

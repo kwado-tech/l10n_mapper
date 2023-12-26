@@ -1,8 +1,8 @@
 {
     "formatterOptions": {
         "prefix": "app",
-        "inputPath": "lib/localization/phrase_remote",
-        "outputPath": "lib/localization/phrase_local",
+        "inputPath": "lib/localization/translations/remote",
+        "outputPath": "lib/localization/translations/local",
         "translations": [
             {
                 "locale": "ar",
@@ -23,7 +23,9 @@
         "keyPredicateMatch": {
             "-": "_",
             ".": "_",
-            "^": "_"
+            "^": "_",
+            "(": "_",
+            ")": "_"
         }
     },
     "generatorOptions": {

@@ -1,3 +1,5 @@
+import 'package:collection/collection.dart';
+
 import '../option.dart';
 
 class ConfigOptions {
@@ -106,6 +108,28 @@ class FormatterOptions {
   @override
   String toString() {
     return 'FormatterOptions(prefix: $prefix, inputPath: $inputPath, outputPath: $outputPath, translations: $translations, keyPredicateMatch: $keyPredicateMatch)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    final listEquals = const DeepCollectionEquality().equals;
+  
+    return other is FormatterOptions &&
+      other.prefix == prefix &&
+      other.inputPath == inputPath &&
+      other.outputPath == outputPath &&
+      listEquals(other.translations, translations) &&
+      other.keyPredicateMatch == keyPredicateMatch;
+  }
+
+  @override
+  int get hashCode {
+    return prefix.hashCode ^
+      inputPath.hashCode ^
+      outputPath.hashCode ^
+      translations.hashCode ^
+      keyPredicateMatch.hashCode;
   }
 }
 
