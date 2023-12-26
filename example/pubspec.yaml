@@ -25,7 +25,7 @@ dev_dependencies:
     git:
       url: https://github.com/kwado-tech/l10n_mapper.git
       path: l10n_mapper_generator
-      ref: feature/translation-formatter
+      ref: e34b4bd44ecaf06901996fa1df6222bf3e90718f
 
 flutter:
   uses-material-design: true

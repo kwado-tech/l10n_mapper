@@ -308,8 +308,8 @@ packages:
     dependency: "direct dev"
     description:
       path: l10n_mapper_generator
-      ref: "feature/translation-formatter"
-      resolved-ref: "6fb2e4cd1be7c4bbe6959169242b9cb7ac65ade7"
+      ref: e34b4bd44ecaf06901996fa1df6222bf3e90718f
+      resolved-ref: e34b4bd44ecaf06901996fa1df6222bf3e90718f
       url: "https://github.com/kwado-tech/l10n_mapper.git"
     source: git
     version: "1.1.0"

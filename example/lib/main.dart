@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      onGenerateTitle: (context) => context.l10n.application_name,
+      onGenerateTitle: (context) => context.l10n.cashier_accounts_desc,
       theme: ThemeData(primarySwatch: Colors.blue),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
