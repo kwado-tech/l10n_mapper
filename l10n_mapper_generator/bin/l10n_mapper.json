@@ -1,8 +1,8 @@
 {
     "formatterOptions": {
         "prefix": "app",
-        "inputPath": "lib/localization/translations/remote",
-        "outputPath": "lib/localization/translations/local",
+        "inputPath": "../lib/src/localization/phrase_remote",
+        "outputPath": "../lib/src/localization/phrase_local",
         "translations": [
             {
                 "locale": "ar",
@@ -29,6 +29,7 @@
         }
     },
     "generatorOptions": {
-        "path": "lib/localization/gen-l10n/app_localizations.dart"
+        "path": "../lib/src/localization/gen-l10n/app_localizations.dart",
+        "l10nParser": false
     }
 }

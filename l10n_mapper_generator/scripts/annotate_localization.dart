@@ -3,29 +3,29 @@ import 'dart:io';
 import '../core/logger.dart';
 
 class AnnotateLocalization {
-  void _replaceContent({
+  Future<void> _replaceContent({
     required String path,
     required String pattern,
     required String replacement,
     required String fileContent,
-  }) {
+  }) async {
     final replacedContent = fileContent.replaceAll(
         RegExp(pattern, caseSensitive: false), replacement);
     final tempFile = File('$path.tmp');
     tempFile.writeAsStringSync(replacedContent);
 
-    // Check if the replacement was successful
-    if (tempFile.existsSync()) {
-      // Overwrite the original file with the new file
-      tempFile.renameSync(path);
+    // check if the replacement was successful
+    if (await tempFile.exists()) {
+      // overwrite the original file with the new file
+      await tempFile.rename(path);
     } else {
       logger('Annotation failed!', () => exit(1), type: LogType.error);
     }
   }
 
-  void call(String filePath,
-      {bool l10n = true, bool locale = true, bool l10nParser = true}) {
-    // Mapper generator-config options
+  Future<void> call(String filePath,
+      {bool l10n = true, bool locale = true, bool l10nParser = true}) async {
+    // mapper generator-config options
     String searchParameter = 'abstract class AppLocalizations {\n';
 
     String requiredImports = '''
@@ -36,30 +36,30 @@ part 'app_localizations.g.dart';
 abstract class AppLocalizations {
 ''';
 
-    // Write imports and annotations to app_localization.dart file
-    logger('\nAdding required imports to generated app_localizations', () {},
+    // write imports and annotations to app_localization.dart file
+    logger('Adding required imports to generated app_localizations', () {},
         type: LogType.log);
-    replaceString(
+    await replaceString(
         path: filePath, pattern: searchParameter, replacement: requiredImports);
   }
 
-  void replaceString({
+  Future<void> replaceString({
     required String path,
     required String pattern,
     required String replacement,
-  }) {
-    // Check if the input file exists
+  }) async {
+    // check if the input file exists
     final inputFile = File(path);
-    if (!inputFile.existsSync()) {
-      logger('Input file does not exist!', () => exit(1), type: LogType.error);
+    if (!(await inputFile.exists())) {
+      logger('[app_localizations.dart] file does not exist in set path!', () => exit(1), type: LogType.error);
     }
 
-    // Backup the original file
+    // backup the original file
     final backupFile = File('$path.bak');
-    inputFile.copySync(backupFile.path);
+    await inputFile.copy(backupFile.path);
 
-    // Perform the search and replace and write the result to a new file
-    final fileContent = inputFile.readAsStringSync();
+    // perform the search and replace and write the result to a new file
+    final fileContent = await inputFile.readAsString();
 
     // verify if replacement operation was previously successful
     final alreadyReplaced = fileContent.contains(replacement);
@@ -70,13 +70,13 @@ abstract class AppLocalizations {
           type: LogType.error);
     }
 
-    _replaceContent(
+    await _replaceContent(
       path: path,
       pattern: pattern,
       replacement: replacement,
       fileContent: fileContent,
     );
 
-    logger('Annotation completed successfully.', () {}, type: LogType.log);
+    logger('Annotation completed successfully!', () {}, type: LogType.log);
   }
 }

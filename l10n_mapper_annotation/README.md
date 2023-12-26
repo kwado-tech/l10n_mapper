@@ -27,23 +27,27 @@ To run `l10n_mapper_generator` in terminal, you should activate/install it as a 
 ```dart
 dart pub global activate l10n_mapper_generator
 ```
-####
+
+#### Mapper (--gen-mapper)
+This generator flag indicates annotating the specified `app_localizations.dart` class on which utility methods will be generated for dynamic localization-keys access by the generator.
+
 To generate app-localization mapper that can be parsed dynamic translation keys, you should simply 
 
 - run `flutter gen-l10n` to generate `app_localizations.dart` file with localization related files
 - create `l10n_mapper.json` configuration file in your project`s root directory with the following options
 
 ```json
+// l10n_mapper.json
+
 {
-    "generatorOptions": {
-        "path": "lib/localization/gen-l10n/app_localizations.dart",
-        "l10n": true, // optional [default value - true]
-        "locale": true, // optional [default value - true]
-        "l10nParser": true  // optional [default value - true]
-    }
+  "generatorOptions": {
+    "path": "lib/localization/gen-l10n/app_localizations.dart",
+    "l10n": true, // optional [default value - true]
+    "locale": true, // optional [default value - true]
+    "l10nParser": true  // optional [default value - true]
+  }
 }
 ```
-
     - path: location of your generated `app_localizations.dart` file after running `flutter gen-l10n`
     - l10n: boolean-value with default as true - required to generate `l10n` extension method
     - locale: boolean-value with default as true - required to generate `locale` extension method
@@ -53,12 +57,132 @@ To generate app-localization mapper that can be parsed dynamic translation keys,
 
 ```shell
 # Annotate `app_localizations` to generate `app_localizations.g.dart` file
-dart pub run l10n_mapper_generator
+dart pub run l10n_mapper_generator --gen-mapper
 ```
 
 ```shell
 # Generate required code (this should generate `app_localizations.g.dart` [part file for `app_localizations.dart`] consisting of `AppLocalizationsExtension` and `AppLocalizationsMapper` classes)
 flutter pub run build_runner build --delete-conflicting-outputs
+```
+
+#### Format (--format)
+This generator flag indicates formatting translation-file keys to match dart naming convention for translations to generate dart translation related files. A simple usecase for this is utilizing the same translation files originally defined for other frameworks 
+
+Example
+
+```json
+<!-- en-English.arb -->
+<!-- this was originally defined with compatible naming convention for a typescript/javascript project -->
+
+"test.send_your_USDT(TRON)_withdraw": "Send your USDT (TRC-20) withdrawal to:",
+"@test.send_your_USDT(TRON)_withdraw": {
+  "type": "text"
+},
+```
+
+Originally, the above example was defined for typescript/javascript support. Using `--format` flag formats these keys to support dart-naming convention which is compatible for dart to generate localization related files without errors when running `flutter gen-l10n`.
+
+To format translation-files, you can simply
+
+- setup `l10n_mapper.json` configuration file in your project`s root directory with the following options
+
+
+```json
+// l10n_mapper.json
+
+{
+  "formatterOptions": {
+    "prefix": "app", // file-name prefix to apply when creating translation-file after formatting
+    "inputPath": "lib/localization/translations/remote", // directory containing translation-files that require formatting
+    "outputPath": "lib/localization/translations/local", // directory where translation files will be create-in after formatting
+    "translations": [
+        {
+            "locale": "ar", // locale of translation after formatting
+            "input": "ar-Arabic.arb", // translation requiring formatting
+            "output": "ar.arb" // translation name after formatting eg. app_ar.arb (appended prefix after formatting)
+        },
+        {
+            "locale": "de",
+            "input": "de-German.arb",
+            "output": "de.arb"
+        },
+        {
+            "locale": "en",
+            "input": "en-English.arb",
+            "output": "en.arb"
+        }
+    ],
+    "keyPredicateMatch": { // contains all predicates to match and replace eg. `.` will be replace with `_` when found in a key
+        "-": "_",
+        ".": "_",
+        "^": "_",
+        "(": "_",
+        ")": "_"
+    }
+  },
+}
+```
+
+- run `flutter gen-l10n` to generate `app_localizations.dart` file with localization related files
+- run `flutter pub run build_runner build` command to generate the formatted files and other generator files as well
+
+NOTE: Given the above configuration setup of `l10n_mapper.json`, the generated translation file for the above example will be
+
+
+```json
+<!-- app_en.arb -->
+<!-- 
+  this is now compatible with dart naming convention with 
+  - uppercase characters converted to lowercase
+  - all `.`, `(` and `)` converted to `_`
+-->
+
+"test_send_your_usdt_tron_withdraw": "Send your USDT (TRC-20) withdrawal to:",
+"@test_send_your_usdt_tron_withdraw": {
+  "type": "text"
+},
+```
+####
+Here is a complete structure of the `l10n_mapper.json` file
+
+```json
+{
+  "formatterOptions": {
+    "prefix": "app",
+    "inputPath": "lib/localization/translations/remote",
+    "outputPath": "lib/localization/translations/local",
+    "translations": [
+        {
+            "locale": "ar",
+            "input": "ar-Arabic.arb",
+            "output": "ar.arb"
+        },
+        {
+            "locale": "de",
+            "input": "de-German.arb",
+            "output": "de.arb"
+        },
+        {
+            "locale": "en",
+            "input": "en-English.arb",
+            "output": "en.arb"
+        }
+    ],
+    "keyPredicateMatch": {
+        "-": "_",
+        ".": "_",
+        "^": "_",
+        "(": "_",
+        ")": "_"
+    }
+  },
+  "generatorOptions": {
+    "path": "lib/localization/gen-l10n/app_localizations.dart",
+    "l10n": true, // optional [default value - true]
+    "locale": true, // optional [default value - true]
+    "l10nParser": true  // optional [default value - true]
+  }
+}
 ```
 
 Note: For convenience and a cleaner reuseable approach, you can create a shell script (in the projects root directory) to collectively run the above scripts in succession.
@@ -69,11 +193,14 @@ Note: For convenience and a cleaner reuseable approach, you can create a shell s
 ```shell
 #!/bin/bash
 
-# Generate localization-related files
+# format translation-files in `translations/remote` to dart compatible format
+dart pub run l10n_mapper_generator --format
+
+# generate localization-related files
 flutter gen-l10n
 
-# Annotate `app_localizations` to generate `app_localizations.g.dart` file
-dart pub run l10n_mapper_generator
+# annotate `app_localizations` to generate `app_localizations.g.dart` file
+dart pub run l10n_mapper_generator --gen-mapper
 
 # Generate required code (this should generate `app_localizations.g.dart` [part file for `app_localizations.dart`] consisting of `AppLocalizationsExtension` and `AppLocalizationsMapper` classes)
 flutter pub run build_runner build --delete-conflicting-outputs

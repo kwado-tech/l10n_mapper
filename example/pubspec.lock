@@ -300,18 +300,19 @@ packages:
     dependency: "direct main"
     description:
       name: l10n_mapper_annotation
-      sha256: d6ddc09fa1d39fa5ad380995cc672d04a28e80254c93b41a845dfa9a85355221
+      sha256: "8f4a123c023bd61b41e9d4db87382917c6eb2d85523a0ab97c97d499583783f2"
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
   l10n_mapper_generator:
     dependency: "direct dev"
     description:
-      name: l10n_mapper_generator
-      sha256: f03e5c21775309e9e2261ded1f898d9be10bcfa6d0b67080f4ca28555b8418d8
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
+      path: l10n_mapper_generator
+      ref: "71cedef11ca0f58b8f87a977ba7ebd5549428433"
+      resolved-ref: "71cedef11ca0f58b8f87a977ba7ebd5549428433"
+      url: "https://github.com/kwado-tech/l10n_mapper.git"
+    source: git
+    version: "1.1.0"
   lints:
     dependency: transitive
     description:

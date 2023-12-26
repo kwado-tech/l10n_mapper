@@ -6,7 +6,9 @@ import '../core/configs/config_option_reader.dart';
 import '../core/constants.dart';
 import '../core/extensions/option_extension.dart';
 import '../core/logger.dart';
+import '../core/models/l10n_mapper_config.dart';
 import '../scripts/annotate_localization.dart';
+import '../scripts/format_localization.dart';
 
 Future<void> main(List<String> arguments) async {
   final parser = ArgParser()
@@ -14,6 +16,14 @@ Future<void> main(List<String> arguments) async {
         abbr: 'h',
         negatable: false,
         help: 'Usage: dart pub run l10_mapper_generator [options]')
+    ..addFlag('format',
+        abbr: 'f',
+        negatable: false,
+        help: 'Usage: dart pub run l10_mapper_generator --format')
+    ..addFlag('gen-mapper',
+        abbr: 'm',
+        negatable: false,
+        help: 'Usage: dart pub run l10_mapper_generator --gen-mapper')
     ..addOption('config',
         abbr: 'c',
         help:
@@ -33,15 +43,42 @@ Future<void> main(List<String> arguments) async {
     final optionsReader = ConfigOptionReader(path: configPath);
     final configOptions = await optionsReader.readConfigOptions();
 
-    // parse generator-options
-    final generatorOptions = configOptions.generatorOptions;
+    //? Formatter
+    if ((results['format'] as bool) == true) {
+      if (configOptions.formatterOptions == FormatterOptions.none()) {
+        logger(
+            'Provide [formatterOptions] configuration in l10n_mapper.json file!',
+            () => exit(1),
+            type: LogType.error);
+      }
 
-    return AnnotateLocalization()(
-      generatorOptions.path.getValue(),
-      l10n: generatorOptions.l10n.getOrElse(() => true),
-      locale: generatorOptions.locale.getOrElse(() => true),
-      l10nParser: generatorOptions.l10nParser.getOrElse(() => true),
-    );
+      // format localization translation files to match darts naming convention
+      await FormatLocalization()(
+          formatterOptions: configOptions.formatterOptions);
+    }
+
+    //? Mapper
+    if ((results['gen-mapper'] as bool) == true) {
+      if (configOptions.generatorOptions == GeneratorOptions.none()) {
+        logger(
+            'Provide [generatorOptions] configuration in l10n_mapper.json file!',
+            () => exit(1),
+            type: LogType.error);
+      }
+
+      // parse generator-options
+      final generatorOptions = configOptions.generatorOptions;
+
+      await AnnotateLocalization()(
+        generatorOptions.path.getValue(),
+        l10n: generatorOptions.l10n.getOrElse(() => true),
+        locale: generatorOptions.locale.getOrElse(() => true),
+        l10nParser: generatorOptions.l10nParser.getOrElse(() => true),
+      );
+    }
+
+    logger('L10n-mapper-generator run completed!', () => exit(0),
+        type: LogType.log);
   } catch (e) {
     logger(e.toString(), () => exit(1), type: LogType.error);
   }
