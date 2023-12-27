@@ -29,6 +29,10 @@
         }
     },
     "generatorOptions": {
-        "path": "lib/localization/gen-l10n/app_localizations.dart"
+        "path": "lib/localization/gen-l10n/app_localizations.dart",
+        "translation": {
+            "nullable": false,
+            "message": "Cannot find translation-key!"
+        }
     }
 }

@@ -24,26 +24,52 @@ class L10nMapperExtension {
       'L10nMapperExtension(l10n: $l10n, locale: $locale, l10nParser: $l10nParser)';
 }
 
-class L10nMapperAnnotation {
-  final L10nMapperExtension mapperExtension;
+class TranslationConfig {
+  final bool nullable;
+  final String? message;
 
-  const L10nMapperAnnotation(
-      {this.mapperExtension = const L10nMapperExtension()});
+  const TranslationConfig({this.nullable = true, this.message});
 
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
 
-    return other is L10nMapperAnnotation &&
-        other.mapperExtension == mapperExtension;
+    return other is TranslationConfig &&
+        other.nullable == nullable &&
+        other.message == message;
   }
 
   @override
-  int get hashCode => mapperExtension.hashCode;
+  int get hashCode => nullable.hashCode ^ message.hashCode;
 
   @override
   String toString() =>
-      'L10nMapperAnnotation(mapperExtension: $mapperExtension)';
+      'TranslationConfig(nullable: $nullable, message: $message)';
+}
+
+class L10nMapperAnnotation {
+  final L10nMapperExtension mapperExtension;
+  final TranslationConfig translationConfig;
+
+  const L10nMapperAnnotation({
+    this.mapperExtension = const L10nMapperExtension(),
+    this.translationConfig = const TranslationConfig(),
+  });
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+  
+    return other is L10nMapperAnnotation &&
+      other.mapperExtension == mapperExtension &&
+      other.translationConfig == translationConfig;
+  }
+
+  @override
+  int get hashCode => mapperExtension.hashCode ^ translationConfig.hashCode;
+
+  @override
+  String toString() => 'L10nMapperAnnotation(mapperExtension: $mapperExtension, translationConfig: $translationConfig)';
 }
 
 const localizationMapper = L10nMapperAnnotation();

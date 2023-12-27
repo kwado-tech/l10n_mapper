@@ -4,7 +4,6 @@ import 'package:args/args.dart';
 
 import '../core/configs/config_option_reader.dart';
 import '../core/constants.dart';
-import '../core/extensions/option_extension.dart';
 import '../core/logger.dart';
 import '../core/models/l10n_mapper_config.dart';
 import '../scripts/annotate_localization.dart';
@@ -43,6 +42,9 @@ Future<void> main(List<String> arguments) async {
     final optionsReader = ConfigOptionReader(path: configPath);
     final configOptions = await optionsReader.readConfigOptions();
 
+    // assert to ensure config options are accurate
+    optionsReader.assertConfigOptionsValidity(configOptions);
+
     //? Formatter
     if ((results['format'] as bool) == true) {
       if (configOptions.formatterOptions == FormatterOptions.none()) {
@@ -66,15 +68,8 @@ Future<void> main(List<String> arguments) async {
             type: LogType.error);
       }
 
-      // parse generator-options
-      final generatorOptions = configOptions.generatorOptions;
-
       await AnnotateLocalization()(
-        generatorOptions.path.getValue(),
-        l10n: generatorOptions.l10n.getOrElse(() => true),
-        locale: generatorOptions.locale.getOrElse(() => true),
-        l10nParser: generatorOptions.l10nParser.getOrElse(() => true),
-      );
+          generatorOptions: configOptions.generatorOptions);
     }
 
     logger('L10n-mapper-generator run completed!', () => exit(0),

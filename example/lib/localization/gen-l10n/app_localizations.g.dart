@@ -12,7 +12,7 @@ extension AppLocalizationsExtension on BuildContext {
   String l10nParser(String translationKey, {List<Object>? arguments}) {
     const mapper = AppLocalizationsMapper();
     final object = mapper.toLocalizationMap(this)[translationKey];
-    if (object == null) return 'Translation key not found!';
+    if (object == null) return 'Cannot find translation-key!';
     if (object is String) return object;
     assert(arguments != null, 'Arguments should not be null!');
     assert(arguments!.isNotEmpty, 'Arguments should not be empty!');

@@ -63,7 +63,7 @@ import 'app_localizations_en.dart';
 import 'package:l10n_mapper_annotation/l10n_mapper_annotation.dart';
 part 'app_localizations.g.dart';
 
-@L10nMapperAnnotation(mapperExtension: L10nMapperExtension(l10n: true, locale: true, l10nParser: true))
+@L10nMapperAnnotation(mapperExtension: L10nMapperExtension(l10n: true, locale: true, l10nParser: true), translationConfig: TranslationConfig(nullable: false, message: 'Cannot find translation-key!'),)
 abstract class AppLocalizations {
   AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 

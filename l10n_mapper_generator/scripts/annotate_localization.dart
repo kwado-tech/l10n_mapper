@@ -1,6 +1,8 @@
 import 'dart:io';
 
+import '../core/extensions/option_extension.dart';
 import '../core/logger.dart';
+import '../core/models/l10n_mapper_config.dart';
 
 class AnnotateLocalization {
   Future<void> _replaceContent({
@@ -23,16 +25,23 @@ class AnnotateLocalization {
     }
   }
 
-  Future<void> call(String filePath,
-      {bool l10n = true, bool locale = true, bool l10nParser = true}) async {
-    // mapper generator-config options
+  Future<void> call({required GeneratorOptions generatorOptions}) async {
+    final l10n = generatorOptions.l10n.getValue();
+    final locale = generatorOptions.locale.getValue();
+    final l10nParser = generatorOptions.l10nParser.getValue();
+    final filePath = generatorOptions.path.getValue();
+
+    final translationConfig = generatorOptions.translationConfig;
+    final nullable = translationConfig.nullable.getValue();
+    final message = translationConfig.message.getValueOrNull();
+
     String searchParameter = 'abstract class AppLocalizations {\n';
 
     String requiredImports = '''
 import 'package:l10n_mapper_annotation/l10n_mapper_annotation.dart';
 part 'app_localizations.g.dart';
 
-@L10nMapperAnnotation(mapperExtension: L10nMapperExtension(l10n: $l10n, locale: $locale, l10nParser: $l10nParser))
+@L10nMapperAnnotation(mapperExtension: L10nMapperExtension(l10n: $l10n, locale: $locale, l10nParser: $l10nParser), translationConfig: TranslationConfig(nullable: $nullable, message: ${message != null ? "'$message'" : message}),)
 abstract class AppLocalizations {
 ''';
 
@@ -51,7 +60,9 @@ abstract class AppLocalizations {
     // check if the input file exists
     final inputFile = File(path);
     if (!(await inputFile.exists())) {
-      logger('[app_localizations.dart] file does not exist in set path!', () => exit(1), type: LogType.error);
+      logger('[app_localizations.dart] file does not exist in set path!',
+          () => exit(1),
+          type: LogType.error);
     }
 
     // backup the original file

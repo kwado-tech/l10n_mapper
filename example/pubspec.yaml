@@ -14,10 +14,12 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   l10n_mapper_annotation: 
-    git:
-      url: https://github.com/kwado-tech/l10n_mapper.git
-      path: l10n_mapper_annotation
-      ref: 1.2.10
+    path: ../l10n_mapper_annotation
+  # l10n_mapper_annotation: 
+  #   git:
+  #     url: https://github.com/kwado-tech/l10n_mapper.git
+  #     path: l10n_mapper_annotation
+  #     ref: 1.2.10
 
 dev_dependencies:
   build_runner: ^2.3.3
@@ -26,10 +28,12 @@ dev_dependencies:
     sdk: flutter
 
   l10n_mapper_generator: 
-    git:
-      url: https://github.com/kwado-tech/l10n_mapper.git
-      path: l10n_mapper_generator
-      ref: 1.2.12
+    path: ../l10n_mapper_generator
+  # l10n_mapper_generator: 
+  #   git:
+  #     url: https://github.com/kwado-tech/l10n_mapper.git
+  #     path: l10n_mapper_generator
+  #     ref: 1.2.12
 
 flutter:
   uses-material-design: true
