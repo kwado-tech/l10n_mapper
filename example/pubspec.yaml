@@ -29,7 +29,7 @@ dev_dependencies:
     git:
       url: https://github.com/kwado-tech/l10n_mapper.git
       path: l10n_mapper_generator
-      ref: 1.2.10
+      ref: 1.2.12
 
 flutter:
   uses-material-design: true

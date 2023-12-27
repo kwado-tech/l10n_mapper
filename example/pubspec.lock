@@ -299,20 +299,21 @@ packages:
   l10n_mapper_annotation:
     dependency: "direct main"
     description:
-      name: l10n_mapper_annotation
-      sha256: "8f4a123c023bd61b41e9d4db87382917c6eb2d85523a0ab97c97d499583783f2"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
+      path: l10n_mapper_annotation
+      ref: "1.2.10"
+      resolved-ref: fb4db140d5912a69c5bbc72f342aa48e1a9ac285
+      url: "https://github.com/kwado-tech/l10n_mapper.git"
+    source: git
+    version: "1.1.0"
   l10n_mapper_generator:
     dependency: "direct dev"
     description:
       path: l10n_mapper_generator
-      ref: "71cedef11ca0f58b8f87a977ba7ebd5549428433"
-      resolved-ref: "71cedef11ca0f58b8f87a977ba7ebd5549428433"
+      ref: "1.2.12"
+      resolved-ref: "7d173c5790d8bbfe7b9fa83375f43bec7c50cbfc"
       url: "https://github.com/kwado-tech/l10n_mapper.git"
     source: git
-    version: "1.1.0"
+    version: "1.2.0"
   lints:
     dependency: transitive
     description:
