@@ -63,9 +63,15 @@ import 'app_localizations_en.dart';
 import 'package:l10n_mapper_annotation/l10n_mapper_annotation.dart';
 part 'app_localizations.g.dart';
 
-@L10nMapperAnnotation(mapperExtension: L10nMapperExtension(l10n: true, locale: true, l10nParser: true), translationConfig: TranslationConfig(nullable: false, message: 'Cannot find translation-key!'),)
+@L10nMapperAnnotation(
+  mapperExtension:
+      L10nMapperExtension(l10n: true, locale: true, l10nParser: true),
+  translationConfig: TranslationConfig(
+      nullable: false, message: 'Cannot find translation-key!'),
+)
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -73,7 +79,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -85,7 +92,8 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
     delegate,
     GlobalMaterialLocalizations.delegate,
     GlobalCupertinoLocalizations.delegate,
@@ -2065,7 +2073,8 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Your deducted amount depends on the bank you use.'**
-  String get cashier_fiat_deposit_bank_transfer_voucher_atm_jeton_provider_form_description;
+  String
+      get cashier_fiat_deposit_bank_transfer_voucher_atm_jeton_provider_form_description;
 
   /// No description provided for @cashier_fiat_deposit_bank_transfer_voucher_atm_fee.
   ///
@@ -2425,7 +2434,8 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Minimum and maximum deposit amounts: <b>{min} / {max}</b>\n'**
-  String cashier_fiat_deposit_ezeebill_provider_bank_transfer_jpy_limits(Object min, Object max);
+  String cashier_fiat_deposit_ezeebill_provider_bank_transfer_jpy_limits(
+      Object min, Object max);
 
   /// No description provided for @cashier_fiat_deposit_ezeebill_city_placeholder.
   ///
@@ -2599,13 +2609,15 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Daily deposit limit: total of USD 500,000 every 24 hours'**
-  String get cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_jpy_limits;
+  String
+      get cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_jpy_limits;
 
   /// Additional warning under limits
   ///
   /// In en, this message translates to:
   /// **'‎'**
-  String get cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_limits;
+  String
+      get cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_limits;
 
   /// No description provided for @cashier_fiat_deposit_jpy_instant_bank_transfer_fee.
   ///
@@ -4039,7 +4051,8 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_withdrawal_bank_transfer_trustly_open_new_window_title;
+  String
+      get cashier_fiat_withdrawal_bank_transfer_trustly_open_new_window_title;
 
   /// No description provided for @cashier_fiat_withdrawal_bankaccount.
   ///
@@ -4597,19 +4610,22 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'If you don\'t complete your transaction your funds will be back to your player account in 15 mins.'**
-  String get cashier_fiat_withdrawal_local_bank_transfer_qaicash_almost_done_message;
+  String
+      get cashier_fiat_withdrawal_local_bank_transfer_qaicash_almost_done_message;
 
   /// No description provided for @cashier_fiat_withdrawal_local_bank_transfer_qaicash_form_description.
   ///
   /// In en, this message translates to:
   /// **'   '**
-  String get cashier_fiat_withdrawal_local_bank_transfer_qaicash_form_description;
+  String
+      get cashier_fiat_withdrawal_local_bank_transfer_qaicash_form_description;
 
   /// No description provided for @cashier_fiat_withdrawal_local_bank_transfer_qaicash_iframe_description.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_local_bank_transfer_qaicash_iframe_description;
+  String
+      get cashier_fiat_withdrawal_local_bank_transfer_qaicash_iframe_description;
 
   /// No description provided for @cashier_fiat_withdrawal_local_bank_transfer_qaicash_message.
   ///
@@ -4621,7 +4637,8 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_withdrawal_local_bank_transfer_qaicash_open_new_window_title;
+  String
+      get cashier_fiat_withdrawal_local_bank_transfer_qaicash_open_new_window_title;
 
   /// No description provided for @cashier_fiat_withdrawal_max_limit.
   ///
@@ -6349,13 +6366,15 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Switch to {currency} and deposit'**
-  String cashier_reward_swich_currency_deposit_btn(Object currency, Object curreny);
+  String cashier_reward_swich_currency_deposit_btn(
+      Object currency, Object curreny);
 
   /// No description provided for @cashier_reward_swich_currency_deposit_description.
   ///
   /// In en, this message translates to:
   /// **'You\'ve activated a deposit bonus reward in a different currency. Please switch to {currency} wallet and deposit {amount} {currency} in order to play the reward or you can forfeit it and try another reward.'**
-  String cashier_reward_swich_currency_deposit_description(Object currency, Object amount);
+  String cashier_reward_swich_currency_deposit_description(
+      Object currency, Object amount);
 
   /// No description provided for @cashier_reward_swich_currency_description.
   ///
@@ -7345,7 +7364,8 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Exceeds wallets balance amount {walletBalance} {currency}'**
-  String cashier_web3wallet_error_exceeds_wallet_balance(Object walletBalance, Object currency);
+  String cashier_web3wallet_error_exceeds_wallet_balance(
+      Object walletBalance, Object currency);
 
   /// No description provided for @cashier_web3wallet_error_invalid_amount.
   ///
@@ -7357,7 +7377,8 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Minimum deposit amount {minDeposit} {currency}'**
-  String cashier_web3wallet_error_min_deposit_amount(Object minDeposit, Object currency);
+  String cashier_web3wallet_error_min_deposit_amount(
+      Object minDeposit, Object currency);
 
   /// No description provided for @cashier_web3wallet_error_prepare_contract.
   ///
@@ -8071,7 +8092,8 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Currency mismatch between selected currency and market Bitcoin rate'**
-  String get errors_currency_mismatch_between_selected_currency_and_market_btc_rate;
+  String
+      get errors_currency_mismatch_between_selected_currency_and_market_btc_rate;
 
   /// No description provided for @errors_disabled_withdrawals.
   ///
@@ -9616,7 +9638,8 @@ abstract class AppLocalizations {
   String get wallet_withdraw;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -9625,26 +9648,27 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['ar', 'de', 'en'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['ar', 'de', 'en'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'ar': return AppLocalizationsAr();
-    case 'de': return AppLocalizationsDe();
-    case 'en': return AppLocalizationsEn();
+    case 'ar':
+      return AppLocalizationsAr();
+    case 'de':
+      return AppLocalizationsDe();
+    case 'en':
+      return AppLocalizationsEn();
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

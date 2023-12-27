@@ -41,17 +41,23 @@ To generate app-localization mapper that can be parsed dynamic translation keys,
 
 {
   "generatorOptions": {
-    "path": "lib/localization/gen-l10n/app_localizations.dart",
     "l10n": true, // optional [default value - true]
     "locale": true, // optional [default value - true]
-    "l10nParser": true  // optional [default value - true]
+    "l10nParser": true, // optional [default value - true]
+    "appLocalizations": "lib/localization/gen-l10n/app_localizations.dart",
+    "translation": {
+      "nullable": false,  // [default value - true. When false, message should be provided]
+      "message": "Cannot find translation-key!" // optional [default value - null. When `nullable: false`, message should be provided]
+    }
   }
 }
 ```
-    - path: location of your generated `app_localizations.dart` file after running `flutter gen-l10n`
     - l10n: boolean-value with default as true - required to generate `l10n` extension method
     - locale: boolean-value with default as true - required to generate `locale` extension method
     - l10nParser: boolean-value with default as true - required to generate `l10nParser` extension method
+    - appLocalizations: location of your generated `app_localizations.dart` file after running `flutter gen-l10n`
+    - nullable: indicates if generated `l10nParser` should be nullable or not. If value is false, provide a `message` value to return when translation-key is not found.
+    - message: A fallback message to return when translation-key is not found. This should only be provided when `nullable: false`.
 ####
 - run the following scripts in succession (after setting-up `l10n_mapper.json` configuration file)
 
@@ -177,10 +183,14 @@ Here is a complete structure of the `l10n_mapper.json` file
     }
   },
   "generatorOptions": {
-    "path": "lib/localization/gen-l10n/app_localizations.dart",
     "l10n": true, // optional [default value - true]
     "locale": true, // optional [default value - true]
-    "l10nParser": true  // optional [default value - true]
+    "l10nParser": true,  // optional [default value - true]
+    "appLocalizations": "lib/localization/gen-l10n/app_localizations.dart",
+    "translation": {
+      "nullable": false,  // [default value - true. When false, message should be provided]
+      "message": "Cannot find translation-key!" // optional [default value - null. When `nullable: false`, message should be provided]
+    }
   }
 }
 ```
@@ -231,7 +241,7 @@ To access translations dynamically and parse placeholder parameters, a part file
 part of 'app_localizations.dart';
 
 // **************************************************************************
-// LocalizationMapperGenerator
+// L10nMapperGenerator
 // **************************************************************************
 
 extension AppLocalizationsExtension on BuildContext {
@@ -240,6 +250,7 @@ extension AppLocalizationsExtension on BuildContext {
   String l10nParser(String translationKey, {List<Object>? arguments}) {
     const mapper = AppLocalizationsMapper();
     final object = mapper.toLocalizationMap(this)[translationKey];
+    if (object == null) return 'Cannot find translation-key!';
     if (object is String) return object;
     assert(arguments != null, 'Arguments should not be null!');
     assert(arguments!.isNotEmpty, 'Arguments should not be empty!');
@@ -272,7 +283,15 @@ class AppLocalizationsMapper {
 Configurations can be parsed through the `L10MapperAnnotation` to specify what extension methods to generate. This is applicable when your application already defined relative extension methods so it is ideal to disable the generation of these already defined extension methods. Below, are config options available
 
 ```dart
-@L10MapperAnnotation(mapperExtension: L10nMapperExtension(l10n: true, locale: true, l10nParser: true))
+import 'package:l10n_mapper_annotation/l10n_mapper_annotation.dart';
+part 'app_localizations.g.dart';
+
+@L10nMapperAnnotation(
+  mapperExtension:
+      L10nMapperExtension(l10n: true, locale: true, l10nParser: true),
+  translationConfig: TranslationConfig(
+      nullable: false, message: 'Cannot find translation-key!'),
+)
 ```
 
 **Note: This is the default config defined. To change this default configuration, you can specify different options in `l10n_mapper.json` configuration file.**
