@@ -171,25 +171,25 @@ class TranslationConfig {
 }
 
 class GeneratorOptions {
-  final Option<String> path;
   final Option<bool> l10n;
   final Option<bool> locale;
   final Option<bool> l10nParser;
+  final Option<String> appLocalizations;
   final TranslationConfig translationConfig;
 
   const GeneratorOptions._({
-    required this.path,
     required this.l10n,
     required this.locale,
     required this.l10nParser,
+    required this.appLocalizations,
     required this.translationConfig,
   });
 
   factory GeneratorOptions.none() => GeneratorOptions._(
-        path: none(),
         l10n: none(),
         locale: none(),
         l10nParser: none(),
+        appLocalizations: none(),
         translationConfig: TranslationConfig.none(),
       );
 
@@ -197,10 +197,10 @@ class GeneratorOptions {
     if (json == null) return GeneratorOptions.none();
 
     return GeneratorOptions._(
-      path: optionOf(json['path'] as String?),
       l10n: optionOf((json['l10n'] as bool?) ?? true),
       locale: optionOf((json['locale'] as bool?) ?? true),
       l10nParser: optionOf((json['l10nParser'] as bool?) ?? true),
+      appLocalizations: optionOf(json['appLocalizations'] as String?),
       translationConfig: TranslationConfig.fromJson(
           json['translation'] as Map<String, dynamic>),
     );
@@ -211,7 +211,7 @@ class GeneratorOptions {
     if (identical(this, other)) return true;
 
     return other is GeneratorOptions &&
-        other.path == path &&
+        other.appLocalizations == appLocalizations &&
         other.l10n == l10n &&
         other.locale == locale &&
         other.l10nParser == l10nParser &&
@@ -220,7 +220,7 @@ class GeneratorOptions {
 
   @override
   int get hashCode {
-    return path.hashCode ^
+    return appLocalizations.hashCode ^
         l10n.hashCode ^
         locale.hashCode ^
         l10nParser.hashCode ^
@@ -229,6 +229,6 @@ class GeneratorOptions {
 
   @override
   String toString() {
-    return 'GeneratorOptions(path: $path, l10n: $l10n, locale: $locale, l10nParser: $l10nParser, translationConfig: $translationConfig)';
+    return 'GeneratorOptions(appLocalizations: $appLocalizations, l10n: $l10n, locale: $locale, l10nParser: $l10nParser, translationConfig: $translationConfig)';
   }
 }

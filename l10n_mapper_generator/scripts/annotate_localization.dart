@@ -29,7 +29,7 @@ class AnnotateLocalization {
     final l10n = generatorOptions.l10n.getValue();
     final locale = generatorOptions.locale.getValue();
     final l10nParser = generatorOptions.l10nParser.getValue();
-    final filePath = generatorOptions.path.getValue();
+    final appLocalizations = generatorOptions.appLocalizations.getValue();
 
     final translationConfig = generatorOptions.translationConfig;
     final nullable = translationConfig.nullable.getValue();
@@ -49,7 +49,10 @@ abstract class AppLocalizations {
     logger('Adding required imports to generated app_localizations', () {},
         type: LogType.log);
     await replaceString(
-        path: filePath, pattern: searchParameter, replacement: requiredImports);
+      path: appLocalizations,
+      pattern: searchParameter,
+      replacement: requiredImports,
+    );
   }
 
   Future<void> replaceString({
