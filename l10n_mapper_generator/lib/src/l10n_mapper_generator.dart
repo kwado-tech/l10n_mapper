@@ -34,6 +34,11 @@ class L10nMapperGenerator extends GeneratorForAnnotation<L10nMapperAnnotation> {
     final generateLocale = mapperExtension.read('locale').boolValue;
     final generateL10nParser = mapperExtension.read('l10nParser').boolValue;
 
+    // translation configs
+    final translationConfig = annotation.read('translationConfig');
+    final nullable = translationConfig.read('nullable').boolValue;
+    final messageIsNull = translationConfig.read('message').isNull;
+
     final shouldGenerateExtension =
         generateL10n || generateLocale || generateL10nParser;
 
@@ -50,16 +55,21 @@ class L10nMapperGenerator extends GeneratorForAnnotation<L10nMapperAnnotation> {
 
       if (generateL10nParser) {
         buffer.writeln(
-            'String l10nParser(String translationKey, {List<Object>? arguments}) {');
+            "${nullable ? 'String?' : 'String'} l10nParser(String translationKey, {List<Object>? arguments}) {");
         buffer.writeln('const mapper = $mapperName();');
         buffer.writeln(
             'final object = mapper.toLocalizationMap(this)[translationKey];');
 
         // account for null-case
-        buffer.writeln(
-            "if (object == null) return 'Translation key not found!';");
+        if (!nullable) {
+          buffer.writeln(
+              "if (object == null) return '${!messageIsNull ? translationConfig.read('message').stringValue : 'Translation key not found!'}';");
 
-        buffer.writeln('if (object is String) return object;');
+          buffer.writeln('if (object is String) return object;');
+        } else {
+          buffer.writeln(
+              'if (object is String || object == null) return object;');
+        }
 
         buffer.writeln(
             "assert(arguments != null, 'Arguments should not be null!');");

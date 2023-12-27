@@ -9,7 +9,7 @@ env:
   java_version: 17
   flutter_channel: 'stable'
   ruby_version: '2.7.5'
-  release_version: '1.2'
+  release_version: '1.3.0'
 
 jobs:
   git_package_release:
@@ -50,4 +50,5 @@ jobs:
         with:
           generateReleaseNotes: true
           # commit: ${{ vars.RELEASE_TARGET_BRANCH }}
-          tag: ${{ env.release_version }}.${{ github.run_number }}
+          # tag: ${{ env.release_version }}.${{ github.run_number }}
+          tag: ${{ env.release_version }}
