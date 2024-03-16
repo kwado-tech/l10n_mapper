@@ -1,8 +1,8 @@
-### l10n_mapper_annotation
+### [l10n_mapper_annotation](https://pub.dev/packages/l10n_mapper_annotation)
 
 A dart package to support parsing dynamic translation keys (as flutter-localizations package does not yet support this).
 
-**Note: Setup localization using `flutter_localizations` package before proceeding with this.**
+**Note: Setup localization using `flutter_localizations` package before proceeding with this and also ensure localization setup is not a synthetic package.**
 
 #### Getting started
 Install dependencies
