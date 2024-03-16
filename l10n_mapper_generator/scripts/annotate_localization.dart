@@ -35,7 +35,7 @@ class AnnotateLocalization {
     final nullable = translationConfig.nullable.getValue();
     final message = translationConfig.message.getValueOrNull();
 
-    String searchParameter = 'abstract class AppLocalizations {\n';
+    String searchParameter = 'abstract class AppLocalizations {';
 
     String requiredImports = '''
 import 'package:l10n_mapper_annotation/l10n_mapper_annotation.dart';
