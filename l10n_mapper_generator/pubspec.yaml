@@ -2,16 +2,16 @@ name: l10n_mapper_generator
 description: A dart package to generate localization-mapper to support parsing
   dynamic translation keys (as flutter-localizations package does not yet
   support this).
-version: 2.0.0
+version: 2.0.1
 homepage: https://github.com/kwado-tech/l10n_mapper/tree/main/l10n_mapper_generator
 repository: https://github.com/kwado-tech/l10n_mapper/tree/main/l10n_mapper_generator
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.3.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
-  analyzer: ^5.2.0
+  analyzer: ^6.4.1
   args: ^2.4.2
   build: ^2.3.1
   flutter:
@@ -21,7 +21,7 @@ dependencies:
 
 dev_dependencies:
   build_runner: ^2.3.3
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.2
   flutter_test:
     sdk: flutter
 
