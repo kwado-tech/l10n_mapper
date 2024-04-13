@@ -33,3 +33,7 @@
 * `l10n_mapper_generator` build configurations are now provided via `build.yaml` file
 * Updated readme.
 
+## 2.0.1
+
+* Fixes analysis issues
+
