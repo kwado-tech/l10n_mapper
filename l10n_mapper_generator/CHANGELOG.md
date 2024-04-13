@@ -25,3 +25,11 @@
 * Refactor to update l10n_mapper.json config file `generatorOptions` path to `appLocalizations` to accurately indicate intention.
 * Updated readme.
 
+## 2.0.0 [BREAKING CHANGE]
+
+* Deprecated `l10n_mapper_annotation` package previously required for annotation in `app_localization.dart` file
+* Refactored `l10n_mapper_generator` to remove dependency on annotation in `app_localization.dart` file
+* Removed related scripts required for annotating feature
+* `l10n_mapper_generator` build configurations are now provided via `build.yaml` file
+* Updated readme.
+
