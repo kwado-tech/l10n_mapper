@@ -27,13 +27,5 @@
             "(": "_",
             ")": "_"
         }
-    },
-    "generatorOptions": {
-        "l10nParser": false,
-        "appLocalizations": "../lib/src/localization/gen-l10n/app_localizations.dart",
-        "translation": {
-            "nullable": true,
-            "message": "Cannot find translation-key!"
-        }
     }
 }

@@ -1,4 +1,5 @@
 import 'package:example/localization/gen-l10n/app_localizations.dart';
+import 'package:example/localization/gen-l10n/app_localizations.g.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,13 +32,11 @@ class HomePage extends StatelessWidget {
           child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(context.l10nParser('application_name')),
-          Text(context.l10nParser('deposit_timeframe')),
-          Text(context.l10nParser('balance_reverted', arguments: ['BTC'])),
-          Text(context.l10nParser('convert_before_withdraw',
-              arguments: ['CAD', 'EUR'])),
-          Text(context.l10nParser('convert_before_withdraw_again',
-              arguments: ['BTC', 'USD'])),
+          Text(context.parseL10n('localeName')),
+          Text(context.parseL10n('cashier_accounts_desc')),
+          Text(context.parseL10n('cashier_convert_before_withdraw', arguments: ['BTC', 'USD'])),
+          Text(context.parseL10n('cashier_convert_to', arguments: ['EUR'])),
+          Text(context.parseL10n('transaction_exchange_withdrawal', arguments: ['BTC', 'USD'])),
         ],
       )),
     );
