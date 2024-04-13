@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 env:
-  flutter_version: '3.13.7'
+  flutter_version: '3.19.5'
   java_version: 17
   flutter_channel: 'stable'
   ruby_version: '2.7.5'
