@@ -2,7 +2,7 @@ builders:
   l10n_mapper_builder:
     import: "package:l10n_mapper_generator/l10n_mapper_builder.dart"
     builder_factories: ["l10nMapperBuilder"]
-    build_extensions: { ".dart": [".g.dart"] }
+    build_extensions: { ".dart": [".mapper.dart"] }
     auto_apply: dependents
     build_to: source
     defaults:

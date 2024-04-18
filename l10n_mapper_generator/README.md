@@ -5,6 +5,9 @@ A dart package to support parsing dynamic translation keys (as flutter-localizat
 **Note: Setup localization using `flutter_localizations` package before proceeding with this and also ensure localization setup is not a synthetic package.**
 
 #### Getting started
+*`l10n_mapper_generator: >=2.0.0` deprecates the use of [l10n_mapper_annotation](https://pub.dev/packages/l10n_mapper_annotation) as annotation is no longer required to work with `>=2.0.0`*
+
+####
 Install dependencies
 ```yaml
 dependencies:
@@ -24,6 +27,19 @@ To run `l10n_mapper_generator` in terminal, you should activate/install it as a 
 
 ```dart
 dart pub global activate l10n_mapper_generator
+```
+
+####
+**Example usage**
+
+Note: parameters, are parsed as a list of positional arguments which should be in the same order as specified in the translation key-value pair.
+
+```dart
+  final applicationName = context.parseL10n('application_name'); // Localization mapper
+  final depositTimeFrame = context.parseL10n('deposit_timeframe'); // Instant
+  
+  // parsing placeholder parameters
+  final convertBeforeWithdraw = context.parseL10n('convert_before_withdraw', arguments: ['CAD', 'EUR']); // * For withdrawing your CAD you first need to convert it back to EUR
 ```
 
 #### Mapper
@@ -150,41 +166,6 @@ NOTE: Given the above configuration setup of `l10n_mapper.json`, the generated t
 },
 ```
 ####
-Here is a complete structure of the `l10n_mapper.json` file
-
-```json
-{
-  "formatterOptions": {
-    "prefix": "app",
-    "inputPath": "lib/localization/translations/remote",
-    "outputPath": "lib/localization/translations/local",
-    "translations": [
-        {
-            "locale": "ar",
-            "input": "ar-Arabic.arb",
-            "output": "ar.arb"
-        },
-        {
-            "locale": "de",
-            "input": "de-German.arb",
-            "output": "de.arb"
-        },
-        {
-            "locale": "en",
-            "input": "en-English.arb",
-            "output": "en.arb"
-        }
-    ],
-    "keyPredicateMatch": {
-        "-": "_",
-        ".": "_",
-        "^": "_",
-        "(": "_",
-        ")": "_"
-    }
-  }
-}
-```
 
 Note: For convenience and a cleaner reuseable approach, you can create a shell script (in the projects root directory) to collectively run the above scripts in succession.
 
@@ -260,19 +241,6 @@ class AppLocalizationsMapper {
     };
   }
 }
-```
-
-####
-**Example usage**
-
-Note: parameters, are parsed as a list of positional arguments which should be in the same order as specified in the translation key-value pair.
-
-```dart
-  final applicationName = context.l10nParser('application_name'); // Localization mapper
-  final depositTimeFrame = context.l10nParser('deposit_timeframe'); // Instant
-  
-  // parsing placeholder parameters
-  final convertBeforeWithdraw = context.l10nParser('convert_before_withdraw', arguments: ['CAD', 'EUR']); // * For withdrawing your CAD you first need to convert it back to EUR
 ```
 
 #### Resources

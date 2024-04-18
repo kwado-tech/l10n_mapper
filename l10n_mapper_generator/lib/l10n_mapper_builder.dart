@@ -22,6 +22,6 @@ Builder l10nMapperBuilder(BuilderOptions options) {
       parseL10n: parseL10n,
       message: message,
     ),
-    generatedExtension: '.g.dart',
+    generatedExtension: '.mapper.dart',
   );
 }

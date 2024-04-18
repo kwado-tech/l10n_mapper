@@ -37,3 +37,8 @@
 
 * Fixes analysis issues
 
+## 2.1.0 [BREAKING CHANGE]
+
+* Fixes readme issues
+* Changed generated file extension to `.mapper.dart`.
+
