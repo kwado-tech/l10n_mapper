@@ -14,6 +14,7 @@ Builder l10nMapperBuilder(BuilderOptions options) {
   final locale = options.config['locale'] as bool? ?? true;
   final parseL10n = options.config['parseL10n'] as bool? ?? true;
   final message = options.config['message'] as String?;
+  final mapperWhitelist = (options.config['mapper-whitelist'] as List<dynamic>?)?.map<String>((item) => item.toString()).toList() ?? [];
 
   return LibraryBuilder(
     L10nMapperGenerator(
@@ -21,6 +22,7 @@ Builder l10nMapperBuilder(BuilderOptions options) {
       locale: locale,
       parseL10n: parseL10n,
       message: message,
+      mapperWhitelist: mapperWhitelist,
     ),
     generatedExtension: '.mapper.dart',
   );

@@ -22,7 +22,16 @@ class L10nMapperGenerator extends Generator {
   //? nullable values when key is not found but will return specified error message instead
   final String? message;
 
-  L10nMapperGenerator({required this.l10n, required this.locale, required this.parseL10n, required this.message});
+  /// only items from the mapperWhitelist will be included in the map
+   final List<String> mapperWhitelist;
+
+  L10nMapperGenerator({
+    required this.l10n, 
+    required this.locale, 
+    required this.parseL10n, 
+    required this.message,
+    this.mapperWhitelist = const [],
+  });
 
   @override
   FutureOr<String?> generate(LibraryReader library, BuildStep buildStep) {
@@ -98,6 +107,9 @@ class L10nMapperGenerator extends Generator {
           // skips gen-exceptions
           if (genExceptions.contains(name)) continue;
 
+          // skip fields not in mapperWhitelist
+          if (mapperWhitelist.isNotEmpty && !mapperWhitelist.contains(name)) continue;
+
           buffer.writeln("'$name': localizations.$name,");
         }
 
@@ -107,6 +119,10 @@ class L10nMapperGenerator extends Generator {
 
           // skips gen-exceptions
           if (genExceptions.contains(name)) continue;
+          
+          // skip fields not in mapperWhitelist
+          if (mapperWhitelist.isNotEmpty && !mapperWhitelist.contains(name)) continue;
+
           final parameters = method.parameters.map((e) => e.name).join(', ');
 
           buffer.writeln("'$name': ($parameters) => localizations.$name($parameters),");
