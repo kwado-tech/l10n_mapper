@@ -10,4 +10,5 @@ builders:
         l10n: true
         locale: true
         parseL10n: true
-        message: null
+        message: null,
+        mapper-whitelist: []
