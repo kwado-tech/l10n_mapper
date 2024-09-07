@@ -30,10 +30,11 @@ class AppLocalizationsMapper {
       'localeName': localizations.localeName,
       'cashier_accounts_desc': localizations.cashier_accounts_desc,
       'cashier_acquisition_promo': localizations.cashier_acquisition_promo,
+      'cashier_Test_Translation': localizations.cashier_Test_Translation,
       'cashier_activate_tronlink': localizations.cashier_activate_tronlink,
       'cashier_active_balance': localizations.cashier_active_balance,
       'cashier_active_balance_desc': localizations.cashier_active_balance_desc,
-      'cashier_ada': localizations.cashier_ada,
+      'cashier_ADA': localizations.cashier_ADA,
       'cashier_add_2fa': localizations.cashier_add_2fa,
       'cashier_add_or_remove_your_individual_currency':
           localizations.cashier_add_or_remove_your_individual_currency,
@@ -57,9 +58,11 @@ class AppLocalizationsMapper {
       'cashier_all_time': localizations.cashier_all_time,
       'cashier_amount_in': localizations.cashier_amount_in,
       'cashier_amount_of_eth': localizations.cashier_amount_of_eth,
+      'cashier_amount_of_mBTC': localizations.cashier_amount_of_mBTC,
       'cashier_amount_of_mbtc': localizations.cashier_amount_of_mbtc,
       'cashier_amount_of_soc': localizations.cashier_amount_of_soc,
       'cashier_amount_of_ubtc': localizations.cashier_amount_of_ubtc,
+      'cashier_amount_of_uBTC': localizations.cashier_amount_of_uBTC,
       'cashier_animex_bank_transfer_title':
           localizations.cashier_animex_bank_transfer_title,
       'cashier_animex_sumopay_title':
@@ -86,14 +89,14 @@ class AppLocalizationsMapper {
           localizations.cashier_bitlipa_instructions_tryagain,
       'cashier_bitlipa_deposit_warning':
           localizations.cashier_bitlipa_deposit_warning,
-      'cashier_bnb': localizations.cashier_bnb,
-      'cashier_brl': localizations.cashier_brl,
-      'cashier_btc': localizations.cashier_btc,
-      'cashier_btc_deposit_description':
-          localizations.cashier_btc_deposit_description,
+      'cashier_BNB': localizations.cashier_BNB,
+      'cashier_BRL': localizations.cashier_BRL,
+      'cashier_BTC': localizations.cashier_BTC,
+      'cashier_BTC_deposit_description':
+          localizations.cashier_BTC_deposit_description,
       'cashier_btxe_withdrawals_are_disabled':
           localizations.cashier_btxe_withdrawals_are_disabled,
-      'cashier_busd': localizations.cashier_busd,
+      'cashier_BUSD': localizations.cashier_BUSD,
       'cashier_buy': localizations.cashier_buy,
       'cashier_buy_and_sell': localizations.cashier_buy_and_sell,
       'cashier_buy_crypto': localizations.cashier_buy_crypto,
@@ -114,7 +117,7 @@ class AppLocalizationsMapper {
       'cashier_buy_or_cashout_bitcoin':
           localizations.cashier_buy_or_cashout_bitcoin,
       'cashier_buy_ton_wallet_bot': localizations.cashier_buy_ton_wallet_bot,
-      'cashier_cad': localizations.cashier_cad,
+      'cashier_CAD': localizations.cashier_CAD,
       'cashier_cancel': localizations.cashier_cancel,
       'cashier_cashout': localizations.cashier_cashout,
       'cashier_cashout_bitcoin': localizations.cashier_cashout_bitcoin,
@@ -131,7 +134,7 @@ class AppLocalizationsMapper {
       'cashier_clear_all': localizations.cashier_clear_all,
       'cashier_clipboard_copied': localizations.cashier_clipboard_copied,
       'cashier_close': localizations.cashier_close,
-      'cashier_cny': localizations.cashier_cny,
+      'cashier_CNY': localizations.cashier_CNY,
       'cashier_coinbasewallet': localizations.cashier_coinbasewallet,
       'cashier_coinbasewallet_desc': localizations.cashier_coinbasewallet_desc,
       'cashier_configuration': localizations.cashier_configuration,
@@ -140,7 +143,7 @@ class AppLocalizationsMapper {
       'cashier_confirm_transaction_in_tronlink_popup':
           localizations.cashier_confirm_transaction_in_tronlink_popup,
       'cashier_connect_wallet': localizations.cashier_connect_wallet,
-      'cashier_contact_us': localizations.cashier_contact_us,
+      'cashier_CONTACT_US': localizations.cashier_CONTACT_US,
       'cashier_copy_link': localizations.cashier_copy_link,
       'cashier_copy_tx_id': localizations.cashier_copy_tx_id,
       'cashier_corefy_jeton_title': localizations.cashier_corefy_jeton_title,
@@ -182,51 +185,51 @@ class AppLocalizationsMapper {
       'cashier_customer_details': localizations.cashier_customer_details,
       'cashier_customer_details_desc':
           localizations.cashier_customer_details_desc,
-      'cashier_dai': localizations.cashier_dai,
+      'cashier_DAI': localizations.cashier_DAI,
       'cashier_deposit': localizations.cashier_deposit,
-      'cashier_deposit_ada': localizations.cashier_deposit_ada,
+      'cashier_deposit_ADA': localizations.cashier_deposit_ADA,
       'cashier_deposit_agents_desc': localizations.cashier_deposit_agents_desc,
       'cashier_deposit_amount': localizations.cashier_deposit_amount,
       'cashier_deposit_amount_changing':
           localizations.cashier_deposit_amount_changing,
-      'cashier_deposit_bnb': localizations.cashier_deposit_bnb,
-      'cashier_deposit_brl': localizations.cashier_deposit_brl,
-      'cashier_deposit_btc': localizations.cashier_deposit_btc,
-      'cashier_deposit_busd': localizations.cashier_deposit_busd,
-      'cashier_deposit_cad': localizations.cashier_deposit_cad,
+      'cashier_deposit_BNB': localizations.cashier_deposit_BNB,
+      'cashier_deposit_BRL': localizations.cashier_deposit_BRL,
+      'cashier_deposit_BTC': localizations.cashier_deposit_BTC,
+      'cashier_deposit_BUSD': localizations.cashier_deposit_BUSD,
+      'cashier_deposit_CAD': localizations.cashier_deposit_CAD,
       'cashier_deposit_crypto': localizations.cashier_deposit_crypto,
-      'cashier_deposit_dai': localizations.cashier_deposit_dai,
+      'cashier_deposit_DAI': localizations.cashier_deposit_DAI,
       'cashier_deposit_destination_tag':
           localizations.cashier_deposit_destination_tag,
-      'cashier_deposit_doge': localizations.cashier_deposit_doge,
-      'cashier_deposit_eth': localizations.cashier_deposit_eth,
-      'cashier_deposit_eur': localizations.cashier_deposit_eur,
+      'cashier_deposit_DOGE': localizations.cashier_deposit_DOGE,
+      'cashier_deposit_ETH': localizations.cashier_deposit_ETH,
+      'cashier_deposit_EUR': localizations.cashier_deposit_EUR,
       'cashier_deposit_history': localizations.cashier_deposit_history,
-      'cashier_deposit_hkd': localizations.cashier_deposit_hkd,
-      'cashier_deposit_inr': localizations.cashier_deposit_inr,
-      'cashier_deposit_jpy': localizations.cashier_deposit_jpy,
-      'cashier_deposit_ltc': localizations.cashier_deposit_ltc,
-      'cashier_deposit_matic': localizations.cashier_deposit_matic,
+      'cashier_deposit_HKD': localizations.cashier_deposit_HKD,
+      'cashier_deposit_INR': localizations.cashier_deposit_INR,
+      'cashier_deposit_JPY': localizations.cashier_deposit_JPY,
+      'cashier_deposit_LTC': localizations.cashier_deposit_LTC,
+      'cashier_deposit_MATIC': localizations.cashier_deposit_MATIC,
       'cashier_deposit_methods': localizations.cashier_deposit_methods,
       'cashier_deposit_methods_desc':
           localizations.cashier_deposit_methods_desc,
       'cashier_deposit_network': localizations.cashier_deposit_network,
       'cashier_deposit_regular': localizations.cashier_deposit_regular,
-      'cashier_deposit_soc': localizations.cashier_deposit_soc,
-      'cashier_deposit_thb': localizations.cashier_deposit_thb,
-      'cashier_deposit_ton': localizations.cashier_deposit_ton,
+      'cashier_deposit_SOC': localizations.cashier_deposit_SOC,
+      'cashier_deposit_THB': localizations.cashier_deposit_THB,
+      'cashier_deposit_TON': localizations.cashier_deposit_TON,
       'cashier_deposit_ton_info': localizations.cashier_deposit_ton_info,
       'cashier_deposit_ton_invoice_id':
           localizations.cashier_deposit_ton_invoice_id,
       'cashier_deposit_ton_message': localizations.cashier_deposit_ton_message,
-      'cashier_deposit_trx': localizations.cashier_deposit_trx,
-      'cashier_deposit_usdc': localizations.cashier_deposit_usdc,
-      'cashier_deposit_usdt': localizations.cashier_deposit_usdt,
+      'cashier_deposit_TRX': localizations.cashier_deposit_TRX,
+      'cashier_deposit_USDC': localizations.cashier_deposit_USDC,
+      'cashier_deposit_USDT': localizations.cashier_deposit_USDT,
       'cashier_deposit_via_metamask':
           localizations.cashier_deposit_via_metamask,
       'cashier_deposit_with_altcoins':
           localizations.cashier_deposit_with_altcoins,
-      'cashier_deposit_xrp': localizations.cashier_deposit_xrp,
+      'cashier_deposit_XRP': localizations.cashier_deposit_XRP,
       'cashier_deposit_animex_sumopay_title':
           localizations.cashier_deposit_animex_sumopay_title,
       'cashier_deposit_binance_description':
@@ -256,8 +259,8 @@ class AppLocalizationsMapper {
           localizations.cashier_deposit_continue_transaction_with_wallet,
       'cashier_deposit_deposit_via_payixi':
           localizations.cashier_deposit_deposit_via_payixi,
-      'cashier_deposit_ezeebill_bank_transfer_inr_title':
-          localizations.cashier_deposit_ezeebill_bank_transfer_inr_title,
+      'cashier_deposit_ezeebill_bank_transfer_INR_title':
+          localizations.cashier_deposit_ezeebill_bank_transfer_INR_title,
       'cashier_deposit_ezeebill_bank_transfer_description':
           localizations.cashier_deposit_ezeebill_bank_transfer_description,
       'cashier_deposit_ezeebill_bank_transfer_title':
@@ -284,8 +287,8 @@ class AppLocalizationsMapper {
               .cashier_deposit_jeton_bank_transfer_voucher_atm_description,
       'cashier_deposit_jeton_bank_transfer_voucher_atm_title':
           localizations.cashier_deposit_jeton_bank_transfer_voucher_atm_title,
-      'cashier_deposit_jeton_jpy_title':
-          localizations.cashier_deposit_jeton_jpy_title,
+      'cashier_deposit_jeton_JPY_title':
+          localizations.cashier_deposit_jeton_JPY_title,
       'cashier_deposit_jeton_pix_description':
           localizations.cashier_deposit_jeton_pix_description,
       'cashier_deposit_jeton_pix_title':
@@ -307,8 +310,8 @@ class AppLocalizationsMapper {
           localizations.cashier_deposit_onramper_description,
       'cashier_deposit_onramper_title':
           localizations.cashier_deposit_onramper_title,
-      'cashier_deposit_pagava_jpy_title':
-          localizations.cashier_deposit_pagava_jpy_title,
+      'cashier_deposit_pagava_JPY_title':
+          localizations.cashier_deposit_pagava_JPY_title,
       'cashier_deposit_pagava_title':
           localizations.cashier_deposit_pagava_title,
       'cashier_deposit_pagsmile_pix_description':
@@ -329,8 +332,8 @@ class AppLocalizationsMapper {
           localizations.cashier_deposit_payixi_deposit_almost_done_message,
       'cashier_deposit_paymentrush_payment_rush_title':
           localizations.cashier_deposit_paymentrush_payment_rush_title,
-      'cashier_deposit_paytm10pay_paytm_10pay_title':
-          localizations.cashier_deposit_paytm10pay_paytm_10pay_title,
+      'cashier_deposit_paytm10Pay_paytm_10pay_title':
+          localizations.cashier_deposit_paytm10Pay_paytm_10pay_title,
       'cashier_deposit_pinbank_local_bank_transfer_title':
           localizations.cashier_deposit_pinbank_local_bank_transfer_title,
       'cashier_deposit_qaicash_bank_transfer_title':
@@ -347,8 +350,8 @@ class AppLocalizationsMapper {
           localizations.cashier_deposit_simplex_title,
       'cashier_deposit_sumopay_title':
           localizations.cashier_deposit_sumopay_title,
-      'cashier_deposit_upi10pay_upi_10pay_title':
-          localizations.cashier_deposit_upi10pay_upi_10pay_title,
+      'cashier_deposit_upi10Pay_upi_10pay_title':
+          localizations.cashier_deposit_upi10Pay_upi_10pay_title,
       'cashier_deposit_utorg_title': localizations.cashier_deposit_utorg_title,
       'cashier_deposit_vrio_upi_title':
           localizations.cashier_deposit_vrio_upi_title,
@@ -363,10 +366,10 @@ class AppLocalizationsMapper {
       'cashier_destination_tag_copied':
           localizations.cashier_destination_tag_copied,
       'cashier_disconnect': localizations.cashier_disconnect,
-      'cashier_doge': localizations.cashier_doge,
+      'cashier_DOGE': localizations.cashier_DOGE,
       'cashier_done': localizations.cashier_done,
       'cashier_dont_show_again': localizations.cashier_dont_show_again,
-      'cashier_email_us': localizations.cashier_email_us,
+      'cashier_EMAIL_US': localizations.cashier_EMAIL_US,
       'cashier_email_verification_banner_resend':
           localizations.cashier_email_verification_banner_resend,
       'cashier_email_verification_banner_success':
@@ -400,10 +403,10 @@ class AppLocalizationsMapper {
           localizations.cashier_enter_withdrawal_amount,
       'cashier_enter_your_address': localizations.cashier_enter_your_address,
       'cashier_estimated_quantity': localizations.cashier_estimated_quantity,
-      'cashier_eth': localizations.cashier_eth,
-      'cashier_eth_deposit_description':
-          localizations.cashier_eth_deposit_description,
-      'cashier_eur': localizations.cashier_eur,
+      'cashier_ETH': localizations.cashier_ETH,
+      'cashier_ETH_deposit_description':
+          localizations.cashier_ETH_deposit_description,
+      'cashier_EUR': localizations.cashier_EUR,
       'cashier_exchange': localizations.cashier_exchange,
       'cashier_exchange_rate_changed':
           localizations.cashier_exchange_rate_changed,
@@ -421,122 +424,123 @@ class AppLocalizationsMapper {
           localizations.cashier_external_wallet_tonkeeper_title,
       'cashier_faq': localizations.cashier_faq,
       'cashier_fast_deposit': localizations.cashier_fast_deposit,
-      'cashier_fiat_amount_usdt_placeholder':
-          localizations.cashier_fiat_amount_usdt_placeholder,
+      'cashier_fiat_amount_USDT_placeholder':
+          localizations.cashier_fiat_amount_USDT_placeholder,
       'cashier_fiat_estimated_total':
           localizations.cashier_fiat_estimated_total,
-      'cashier_fiat_ars': localizations.cashier_fiat_ars,
-      'cashier_fiat_bdt': localizations.cashier_fiat_bdt,
-      'cashier_fiat_brl': localizations.cashier_fiat_brl,
-      'cashier_fiat_cad': localizations.cashier_fiat_cad,
-      'cashier_fiat_clp': localizations.cashier_fiat_clp,
-      'cashier_fiat_cny': localizations.cashier_fiat_cny,
-      'cashier_fiat_corefy_jeton_title':
-          localizations.cashier_fiat_corefy_jeton_title,
+      'cashier_fiat_ARS': localizations.cashier_fiat_ARS,
+      'cashier_fiat_BDT': localizations.cashier_fiat_BDT,
+      'cashier_fiat_BRL': localizations.cashier_fiat_BRL,
+      'cashier_fiat_CAD': localizations.cashier_fiat_CAD,
+      'cashier_fiat_CLP': localizations.cashier_fiat_CLP,
+      'cashier_fiat_CNY': localizations.cashier_fiat_CNY,
+      'cashier_fiat_COREFY_JETON_title':
+          localizations.cashier_fiat_COREFY_JETON_title,
       'cashier_fiat_deposit': localizations.cashier_fiat_deposit,
       'cashier_fiat_deposit_started':
           localizations.cashier_fiat_deposit_started,
       'cashier_fiat_deposit_add_more_funds':
           localizations.cashier_fiat_deposit_add_more_funds,
-      'cashier_fiat_deposit_address':
-          localizations.cashier_fiat_deposit_address,
-      'cashier_fiat_deposit_address_placeholder':
-          localizations.cashier_fiat_deposit_address_placeholder,
-      'cashier_fiat_deposit_alipay': localizations.cashier_fiat_deposit_alipay,
+      'cashier_fiat_deposit_ADDRESS':
+          localizations.cashier_fiat_deposit_ADDRESS,
+      'cashier_fiat_deposit_ADDRESS_placeholder':
+          localizations.cashier_fiat_deposit_ADDRESS_placeholder,
+      'cashier_fiat_deposit_ALIPAY': localizations.cashier_fiat_deposit_ALIPAY,
       'cashier_fiat_deposit_amount': localizations.cashier_fiat_deposit_amount,
-      'cashier_fiat_deposit_bank': localizations.cashier_fiat_deposit_bank,
-      'cashier_fiat_deposit_bank_account_number':
-          localizations.cashier_fiat_deposit_bank_account_number,
-      'cashier_fiat_deposit_bank_account_number_placeholder':
-          localizations.cashier_fiat_deposit_bank_account_number_placeholder,
-      'cashier_fiat_deposit_bank_branch':
-          localizations.cashier_fiat_deposit_bank_branch,
-      'cashier_fiat_deposit_bank_code':
-          localizations.cashier_fiat_deposit_bank_code,
-      'cashier_fiat_deposit_bank_code_placeholder':
-          localizations.cashier_fiat_deposit_bank_code_placeholder,
-      'cashier_fiat_deposit_bank_interac':
-          localizations.cashier_fiat_deposit_bank_interac,
-      'cashier_fiat_deposit_bank_interac_almost_done_message':
-          localizations.cashier_fiat_deposit_bank_interac_almost_done_message,
-      'cashier_fiat_deposit_bank_interac_message':
-          localizations.cashier_fiat_deposit_bank_interac_message,
-      'cashier_fiat_deposit_bank_interac_open_new_window_title':
-          localizations.cashier_fiat_deposit_bank_interac_open_new_window_title,
-      'cashier_fiat_deposit_bank_placeholder':
-          localizations.cashier_fiat_deposit_bank_placeholder,
-      'cashier_fiat_deposit_bank_transfer':
-          localizations.cashier_fiat_deposit_bank_transfer,
-      'cashier_fiat_deposit_bank_transfer_klarna':
-          localizations.cashier_fiat_deposit_bank_transfer_klarna,
-      'cashier_fiat_deposit_bank_transfer_klarna_almost_done_message':
+      'cashier_fiat_DEPOSIT_amount': localizations.cashier_fiat_DEPOSIT_amount,
+      'cashier_fiat_deposit_BANK': localizations.cashier_fiat_deposit_BANK,
+      'cashier_fiat_deposit_BANK_ACCOUNT_NUMBER':
+          localizations.cashier_fiat_deposit_BANK_ACCOUNT_NUMBER,
+      'cashier_fiat_deposit_BANK_ACCOUNT_NUMBER_placeholder':
+          localizations.cashier_fiat_deposit_BANK_ACCOUNT_NUMBER_placeholder,
+      'cashier_fiat_deposit_BANK_BRANCH':
+          localizations.cashier_fiat_deposit_BANK_BRANCH,
+      'cashier_fiat_deposit_BANK_CODE':
+          localizations.cashier_fiat_deposit_BANK_CODE,
+      'cashier_fiat_deposit_BANK_CODE_placeholder':
+          localizations.cashier_fiat_deposit_BANK_CODE_placeholder,
+      'cashier_fiat_deposit_BANK_INTERAC':
+          localizations.cashier_fiat_deposit_BANK_INTERAC,
+      'cashier_fiat_deposit_BANK_INTERAC_almost_done_message':
+          localizations.cashier_fiat_deposit_BANK_INTERAC_almost_done_message,
+      'cashier_fiat_deposit_BANK_INTERAC_message':
+          localizations.cashier_fiat_deposit_BANK_INTERAC_message,
+      'cashier_fiat_deposit_BANK_INTERAC_open_new_window_title':
+          localizations.cashier_fiat_deposit_BANK_INTERAC_open_new_window_title,
+      'cashier_fiat_deposit_BANK_placeholder':
+          localizations.cashier_fiat_deposit_BANK_placeholder,
+      'cashier_fiat_deposit_BANK_TRANSFER':
+          localizations.cashier_fiat_deposit_BANK_TRANSFER,
+      'cashier_fiat_deposit_BANK_TRANSFER_KLARNA':
+          localizations.cashier_fiat_deposit_BANK_TRANSFER_KLARNA,
+      'cashier_fiat_deposit_BANK_TRANSFER_KLARNA_almost_done_message':
           localizations
-              .cashier_fiat_deposit_bank_transfer_klarna_almost_done_message,
-      'cashier_fiat_deposit_bank_transfer_klarna_form_description':
+              .cashier_fiat_deposit_BANK_TRANSFER_KLARNA_almost_done_message,
+      'cashier_fiat_deposit_BANK_TRANSFER_KLARNA_form_description':
           localizations
-              .cashier_fiat_deposit_bank_transfer_klarna_form_description,
-      'cashier_fiat_deposit_bank_transfer_klarna_message':
-          localizations.cashier_fiat_deposit_bank_transfer_klarna_message,
-      'cashier_fiat_deposit_bank_transfer_klarna_open_new_window_title':
+              .cashier_fiat_deposit_BANK_TRANSFER_KLARNA_form_description,
+      'cashier_fiat_deposit_BANK_TRANSFER_KLARNA_message':
+          localizations.cashier_fiat_deposit_BANK_TRANSFER_KLARNA_message,
+      'cashier_fiat_deposit_BANK_TRANSFER_KLARNA_open_new_window_title':
           localizations
-              .cashier_fiat_deposit_bank_transfer_klarna_open_new_window_title,
-      'cashier_fiat_deposit_bank_transfer_qaicash_form_description':
+              .cashier_fiat_deposit_BANK_TRANSFER_KLARNA_open_new_window_title,
+      'cashier_fiat_deposit_BANK_TRANSFER_QAICASH_form_description':
           localizations
-              .cashier_fiat_deposit_bank_transfer_qaicash_form_description,
-      'cashier_fiat_deposit_bank_transfer_trustly':
-          localizations.cashier_fiat_deposit_bank_transfer_trustly,
-      'cashier_fiat_deposit_bank_transfer_trustly_almost_done_message':
+              .cashier_fiat_deposit_BANK_TRANSFER_QAICASH_form_description,
+      'cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY':
+          localizations.cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY,
+      'cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_almost_done_message':
           localizations
-              .cashier_fiat_deposit_bank_transfer_trustly_almost_done_message,
-      'cashier_fiat_deposit_bank_transfer_trustly_form_description':
+              .cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_almost_done_message,
+      'cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_form_description':
           localizations
-              .cashier_fiat_deposit_bank_transfer_trustly_form_description,
-      'cashier_fiat_deposit_bank_transfer_trustly_iframe_description':
+              .cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_form_description,
+      'cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_iframe_description':
           localizations
-              .cashier_fiat_deposit_bank_transfer_trustly_iframe_description,
-      'cashier_fiat_deposit_bank_transfer_trustly_message':
-          localizations.cashier_fiat_deposit_bank_transfer_trustly_message,
-      'cashier_fiat_deposit_bank_transfer_trustly_open_new_window_title':
+              .cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_iframe_description,
+      'cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_message':
+          localizations.cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_message,
+      'cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_open_new_window_title':
           localizations
-              .cashier_fiat_deposit_bank_transfer_trustly_open_new_window_title,
-      'cashier_fiat_deposit_bank_transfer_voucher_atm_jeton_provider_form_description':
+              .cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_open_new_window_title,
+      'cashier_fiat_deposit_BANK_TRANSFER_VOUCHER_ATM_JETON_PROVIDER_form_description':
           localizations
-              .cashier_fiat_deposit_bank_transfer_voucher_atm_jeton_provider_form_description,
-      'cashier_fiat_deposit_bank_transfer_voucher_atm_fee':
-          localizations.cashier_fiat_deposit_bank_transfer_voucher_atm_fee,
+              .cashier_fiat_deposit_BANK_TRANSFER_VOUCHER_ATM_JETON_PROVIDER_form_description,
+      'cashier_fiat_deposit_BANK_TRANSFER_VOUCHER_ATM_fee':
+          localizations.cashier_fiat_deposit_BANK_TRANSFER_VOUCHER_ATM_fee,
       'cashier_fiat_deposit_barupay_account_number':
           localizations.cashier_fiat_deposit_barupay_account_number,
       'cashier_fiat_deposit_barupay_bank_branch':
           localizations.cashier_fiat_deposit_barupay_bank_branch,
       'cashier_fiat_deposit_barupay_bank_name':
           localizations.cashier_fiat_deposit_barupay_bank_name,
-      'cashier_fiat_deposit_barupay_beneficiaryname':
-          localizations.cashier_fiat_deposit_barupay_beneficiaryname,
-      'cashier_fiat_deposit_bic': localizations.cashier_fiat_deposit_bic,
+      'cashier_fiat_deposit_barupay_beneficiaryName':
+          localizations.cashier_fiat_deposit_barupay_beneficiaryName,
+      'cashier_fiat_deposit_BIC': localizations.cashier_fiat_deposit_BIC,
       'cashier_fiat_deposit_bitcasino_barupay_account_number':
           localizations.cashier_fiat_deposit_bitcasino_barupay_account_number,
       'cashier_fiat_deposit_bitcasino_barupay_bank_branch':
           localizations.cashier_fiat_deposit_bitcasino_barupay_bank_branch,
       'cashier_fiat_deposit_bitcasino_barupay_bank_name':
           localizations.cashier_fiat_deposit_bitcasino_barupay_bank_name,
-      'cashier_fiat_deposit_bitcasino_barupay_beneficiaryname':
-          localizations.cashier_fiat_deposit_bitcasino_barupay_beneficiaryname,
-      'cashier_fiat_deposit_brite': localizations.cashier_fiat_deposit_brite,
-      'cashier_fiat_deposit_business_logic_invalid':
-          localizations.cashier_fiat_deposit_business_logic_invalid,
-      'cashier_fiat_deposit_business_logic_required':
-          localizations.cashier_fiat_deposit_business_logic_required,
-      'cashier_fiat_deposit_cad_global_description':
-          localizations.cashier_fiat_deposit_cad_global_description,
-      'cashier_fiat_deposit_cardholder':
-          localizations.cashier_fiat_deposit_cardholder,
-      'cashier_fiat_deposit_cardnumber':
-          localizations.cashier_fiat_deposit_cardnumber,
+      'cashier_fiat_deposit_bitcasino_barupay_beneficiaryName':
+          localizations.cashier_fiat_deposit_bitcasino_barupay_beneficiaryName,
+      'cashier_fiat_deposit_BRITE': localizations.cashier_fiat_deposit_BRITE,
+      'cashier_fiat_deposit_BUSINESS_LOGIC_INVALID':
+          localizations.cashier_fiat_deposit_BUSINESS_LOGIC_INVALID,
+      'cashier_fiat_deposit_BUSINESS_LOGIC_REQUIRED':
+          localizations.cashier_fiat_deposit_BUSINESS_LOGIC_REQUIRED,
+      'cashier_fiat_deposit_CAD_global_description':
+          localizations.cashier_fiat_deposit_CAD_global_description,
+      'cashier_fiat_deposit_cardHolder':
+          localizations.cashier_fiat_deposit_cardHolder,
+      'cashier_fiat_deposit_cardNumber':
+          localizations.cashier_fiat_deposit_cardNumber,
       'cashier_fiat_deposit_choose_payment_method':
           localizations.cashier_fiat_deposit_choose_payment_method,
-      'cashier_fiat_deposit_city': localizations.cashier_fiat_deposit_city,
-      'cashier_fiat_deposit_city_placeholder':
-          localizations.cashier_fiat_deposit_city_placeholder,
+      'cashier_fiat_deposit_CITY': localizations.cashier_fiat_deposit_CITY,
+      'cashier_fiat_deposit_CITY_placeholder':
+          localizations.cashier_fiat_deposit_CITY_placeholder,
       'cashier_fiat_deposit_code': localizations.cashier_fiat_deposit_code,
       'cashier_fiat_deposit_continue':
           localizations.cashier_fiat_deposit_continue,
@@ -545,166 +549,171 @@ class AppLocalizationsMapper {
       'cashier_fiat_deposit_copy_to_clipboard':
           localizations.cashier_fiat_deposit_copy_to_clipboard,
       'cashier_fiat_deposit_cpf': localizations.cashier_fiat_deposit_cpf,
-      'cashier_fiat_deposit_cpf_already_exists_cpf':
-          localizations.cashier_fiat_deposit_cpf_already_exists_cpf,
+      'cashier_fiat_deposit_CPF': localizations.cashier_fiat_deposit_CPF,
+      'cashier_fiat_deposit_CPF_ALREADY_EXISTS_cpf':
+          localizations.cashier_fiat_deposit_CPF_ALREADY_EXISTS_cpf,
       'cashier_fiat_deposit_cpf_description':
           localizations.cashier_fiat_deposit_cpf_description,
-      'cashier_fiat_deposit_cpf_cpf':
-          localizations.cashier_fiat_deposit_cpf_cpf,
-      'cashier_fiat_deposit_credit_card_acapture':
-          localizations.cashier_fiat_deposit_credit_card_acapture,
-      'cashier_fiat_deposit_credit_card_acapture_form_description':
+      'cashier_fiat_deposit_CPF_CPF':
+          localizations.cashier_fiat_deposit_CPF_CPF,
+      'cashier_fiat_deposit_CREDIT_CARD_ACAPTURE':
+          localizations.cashier_fiat_deposit_CREDIT_CARD_ACAPTURE,
+      'cashier_fiat_deposit_CREDIT_CARD_ACAPTURE_form_description':
           localizations
-              .cashier_fiat_deposit_credit_card_acapture_form_description,
-      'cashier_fiat_deposit_credit_card_e_merchant_pay':
-          localizations.cashier_fiat_deposit_credit_card_e_merchant_pay,
-      'cashier_fiat_deposit_credit_card_e_merchant_pay_form_description':
+              .cashier_fiat_deposit_CREDIT_CARD_ACAPTURE_form_description,
+      'cashier_fiat_deposit_CREDIT_CARD_E_MERCHANT_PAY':
+          localizations.cashier_fiat_deposit_CREDIT_CARD_E_MERCHANT_PAY,
+      'cashier_fiat_deposit_CREDIT_CARD_E_MERCHANT_PAY_form_description':
           localizations
-              .cashier_fiat_deposit_credit_card_e_merchant_pay_form_description,
-      'cashier_fiat_deposit_creditcard':
-          localizations.cashier_fiat_deposit_creditcard,
-      'cashier_fiat_deposit_creditcard_almost_done_message':
-          localizations.cashier_fiat_deposit_creditcard_almost_done_message,
-      'cashier_fiat_deposit_creditcard_ecommpay':
-          localizations.cashier_fiat_deposit_creditcard_ecommpay,
-      'cashier_fiat_deposit_creditcard_ecommpay_form_description': localizations
-          .cashier_fiat_deposit_creditcard_ecommpay_form_description,
-      'cashier_fiat_deposit_creditcard_ecommpay_iframe_description':
+              .cashier_fiat_deposit_CREDIT_CARD_E_MERCHANT_PAY_form_description,
+      'cashier_fiat_deposit_CREDITCARD':
+          localizations.cashier_fiat_deposit_CREDITCARD,
+      'cashier_fiat_deposit_CREDITCARD_almost_done_message':
+          localizations.cashier_fiat_deposit_CREDITCARD_almost_done_message,
+      'cashier_fiat_deposit_CREDITCARD_ECOMMPAY':
+          localizations.cashier_fiat_deposit_CREDITCARD_ECOMMPAY,
+      'cashier_fiat_deposit_CREDITCARD_ECOMMPAY_form_description': localizations
+          .cashier_fiat_deposit_CREDITCARD_ECOMMPAY_form_description,
+      'cashier_fiat_deposit_CREDITCARD_ECOMMPAY_iframe_description':
           localizations
-              .cashier_fiat_deposit_creditcard_ecommpay_iframe_description,
-      'cashier_fiat_deposit_creditcard_ecommpay_message':
-          localizations.cashier_fiat_deposit_creditcard_ecommpay_message,
-      'cashier_fiat_deposit_creditcard_iframe_description':
-          localizations.cashier_fiat_deposit_creditcard_iframe_description,
-      'cashier_fiat_deposit_creditcard_message':
-          localizations.cashier_fiat_deposit_creditcard_message,
-      'cashier_fiat_deposit_creditcard_open_new_window_title':
-          localizations.cashier_fiat_deposit_creditcard_open_new_window_title,
-      'cashier_fiat_deposit_creditcard_ravedirect_form_description':
+              .cashier_fiat_deposit_CREDITCARD_ECOMMPAY_iframe_description,
+      'cashier_fiat_deposit_CREDITCARD_ECOMMPAY_message':
+          localizations.cashier_fiat_deposit_CREDITCARD_ECOMMPAY_message,
+      'cashier_fiat_deposit_CREDITCARD_iframe_description':
+          localizations.cashier_fiat_deposit_CREDITCARD_iframe_description,
+      'cashier_fiat_deposit_CREDITCARD_message':
+          localizations.cashier_fiat_deposit_CREDITCARD_message,
+      'cashier_fiat_deposit_CREDITCARD_open_new_window_title':
+          localizations.cashier_fiat_deposit_CREDITCARD_open_new_window_title,
+      'cashier_fiat_deposit_CREDITCARD_RAVEDIRECT_form_description':
           localizations
-              .cashier_fiat_deposit_creditcard_ravedirect_form_description,
-      'cashier_fiat_deposit_creditcard_ravedirect_message':
-          localizations.cashier_fiat_deposit_creditcard_ravedirect_message,
-      'cashier_fiat_deposit_customer_first_name':
-          localizations.cashier_fiat_deposit_customer_first_name,
-      'cashier_fiat_deposit_customer_first_name_placeholder':
-          localizations.cashier_fiat_deposit_customer_first_name_placeholder,
-      'cashier_fiat_deposit_customer_full_name':
-          localizations.cashier_fiat_deposit_customer_full_name,
-      'cashier_fiat_deposit_customer_last_name':
-          localizations.cashier_fiat_deposit_customer_last_name,
-      'cashier_fiat_deposit_customer_last_name_placeholder':
-          localizations.cashier_fiat_deposit_customer_last_name_placeholder,
-      'cashier_fiat_deposit_date_of_birth':
-          localizations.cashier_fiat_deposit_date_of_birth,
+              .cashier_fiat_deposit_CREDITCARD_RAVEDIRECT_form_description,
+      'cashier_fiat_deposit_CREDITCARD_RAVEDIRECT_message':
+          localizations.cashier_fiat_deposit_CREDITCARD_RAVEDIRECT_message,
+      'cashier_fiat_deposit_CUSTOMER_FIRST_NAME':
+          localizations.cashier_fiat_deposit_CUSTOMER_FIRST_NAME,
+      'cashier_fiat_deposit_CUSTOMER_FIRST_NAME_placeholder':
+          localizations.cashier_fiat_deposit_CUSTOMER_FIRST_NAME_placeholder,
+      'cashier_fiat_deposit_CUSTOMER_FULL_NAME':
+          localizations.cashier_fiat_deposit_CUSTOMER_FULL_NAME,
+      'cashier_fiat_deposit_CUSTOMER_LAST_NAME':
+          localizations.cashier_fiat_deposit_CUSTOMER_LAST_NAME,
+      'cashier_fiat_deposit_CUSTOMER_LAST_NAME_placeholder':
+          localizations.cashier_fiat_deposit_CUSTOMER_LAST_NAME_placeholder,
+      'cashier_fiat_deposit_DATE_OF_BIRTH':
+          localizations.cashier_fiat_deposit_DATE_OF_BIRTH,
       'cashier_fiat_deposit_delete': localizations.cashier_fiat_deposit_delete,
-      'cashier_fiat_deposit_depends_on_amount':
-          localizations.cashier_fiat_deposit_depends_on_amount,
-      'cashier_fiat_deposit_ecopayz':
-          localizations.cashier_fiat_deposit_ecopayz,
-      'cashier_fiat_deposit_ecopayz_form_description':
-          localizations.cashier_fiat_deposit_ecopayz_form_description,
-      'cashier_fiat_deposit_ecopayz_iframe_description':
-          localizations.cashier_fiat_deposit_ecopayz_iframe_description,
-      'cashier_fiat_deposit_ecopayz_message':
-          localizations.cashier_fiat_deposit_ecopayz_message,
-      'cashier_fiat_deposit_enccreditcardnumber':
-          localizations.cashier_fiat_deposit_enccreditcardnumber,
-      'cashier_fiat_deposit_enccvv': localizations.cashier_fiat_deposit_enccvv,
-      'cashier_fiat_deposit_eur_global_description':
-          localizations.cashier_fiat_deposit_eur_global_description,
-      'cashier_fiat_deposit_expirymonth':
-          localizations.cashier_fiat_deposit_expirymonth,
-      'cashier_fiat_deposit_expiryyear':
-          localizations.cashier_fiat_deposit_expiryyear,
-      'cashier_fiat_deposit_ezeebill_city_placeholder':
-          localizations.cashier_fiat_deposit_ezeebill_city_placeholder,
-      'cashier_fiat_deposit_ezeebill_state_placeholder':
-          localizations.cashier_fiat_deposit_ezeebill_state_placeholder,
+      'cashier_fiat_deposit_DEPENDS_ON_AMOUNT':
+          localizations.cashier_fiat_deposit_DEPENDS_ON_AMOUNT,
+      'cashier_fiat_deposit_ECOPAYZ':
+          localizations.cashier_fiat_deposit_ECOPAYZ,
+      'cashier_fiat_deposit_ECOPAYZ_form_description':
+          localizations.cashier_fiat_deposit_ECOPAYZ_form_description,
+      'cashier_fiat_deposit_ECOPAYZ_iframe_description':
+          localizations.cashier_fiat_deposit_ECOPAYZ_iframe_description,
+      'cashier_fiat_deposit_ECOPAYZ_message':
+          localizations.cashier_fiat_deposit_ECOPAYZ_message,
+      'cashier_fiat_deposit_encCreditcardNumber':
+          localizations.cashier_fiat_deposit_encCreditcardNumber,
+      'cashier_fiat_deposit_encCvv': localizations.cashier_fiat_deposit_encCvv,
+      'cashier_fiat_deposit_EUR_global_description':
+          localizations.cashier_fiat_deposit_EUR_global_description,
+      'cashier_fiat_deposit_expiryMonth':
+          localizations.cashier_fiat_deposit_expiryMonth,
+      'cashier_fiat_deposit_expiryYear':
+          localizations.cashier_fiat_deposit_expiryYear,
+      'cashier_fiat_deposit_ezeebill_provider_bank_transfer_JPY_limits':
+          localizations
+              .cashier_fiat_deposit_ezeebill_provider_bank_transfer_JPY_limits,
+      'cashier_fiat_deposit_ezeebill_CITY_placeholder':
+          localizations.cashier_fiat_deposit_ezeebill_CITY_placeholder,
+      'cashier_fiat_deposit_ezeebill_STATE_placeholder':
+          localizations.cashier_fiat_deposit_ezeebill_STATE_placeholder,
       'cashier_fiat_deposit_failure_message':
           localizations.cashier_fiat_deposit_failure_message,
-      'cashier_fiat_deposit_fee': localizations.cashier_fiat_deposit_fee,
-      'cashier_fiat_deposit_fee_add':
-          localizations.cashier_fiat_deposit_fee_add,
-      'cashier_fiat_deposit_fee_deduct':
-          localizations.cashier_fiat_deposit_fee_deduct,
-      'cashier_fiat_deposit_firstname':
-          localizations.cashier_fiat_deposit_firstname,
+      'cashier_fiat_deposit_FEE': localizations.cashier_fiat_deposit_FEE,
+      'cashier_fiat_deposit_fee_ADD':
+          localizations.cashier_fiat_deposit_fee_ADD,
+      'cashier_fiat_deposit_fee_DEDUCT':
+          localizations.cashier_fiat_deposit_fee_DEDUCT,
+      'cashier_fiat_deposit_firstName':
+          localizations.cashier_fiat_deposit_firstName,
+      'cashier_fiat_deposit_FREE': localizations.cashier_fiat_deposit_FREE,
       'cashier_fiat_deposit_free': localizations.cashier_fiat_deposit_free,
       'cashier_fiat_deposit_global_description':
           localizations.cashier_fiat_deposit_global_description,
       'cashier_fiat_deposit_go_back':
           localizations.cashier_fiat_deposit_go_back,
-      'cashier_fiat_deposit_help_2_pay_qaicash':
-          localizations.cashier_fiat_deposit_help_2_pay_qaicash,
-      'cashier_fiat_deposit_help_2_pay_qaicash_almost_done_message':
+      'cashier_fiat_deposit_HELP_2_PAY_QAICASH':
+          localizations.cashier_fiat_deposit_HELP_2_PAY_QAICASH,
+      'cashier_fiat_deposit_HELP_2_PAY_QAICASH_almost_done_message':
           localizations
-              .cashier_fiat_deposit_help_2_pay_qaicash_almost_done_message,
-      'cashier_fiat_deposit_help_2_pay_qaicash_form_description': localizations
-          .cashier_fiat_deposit_help_2_pay_qaicash_form_description,
-      'cashier_fiat_deposit_help_2_pay_qaicash_message':
-          localizations.cashier_fiat_deposit_help_2_pay_qaicash_message,
-      'cashier_fiat_deposit_help_2_pay_qaicash_open_new_window_title':
+              .cashier_fiat_deposit_HELP_2_PAY_QAICASH_almost_done_message,
+      'cashier_fiat_deposit_HELP_2_PAY_QAICASH_form_description': localizations
+          .cashier_fiat_deposit_HELP_2_PAY_QAICASH_form_description,
+      'cashier_fiat_deposit_HELP_2_PAY_QAICASH_message':
+          localizations.cashier_fiat_deposit_HELP_2_PAY_QAICASH_message,
+      'cashier_fiat_deposit_HELP_2_PAY_QAICASH_open_new_window_title':
           localizations
-              .cashier_fiat_deposit_help_2_pay_qaicash_open_new_window_title,
-      'cashier_fiat_deposit_iban': localizations.cashier_fiat_deposit_iban,
-      'cashier_fiat_deposit_inovapay_local_bank_transfer_brl_limits':
+              .cashier_fiat_deposit_HELP_2_PAY_QAICASH_open_new_window_title,
+      'cashier_fiat_deposit_IBAN': localizations.cashier_fiat_deposit_IBAN,
+      'cashier_fiat_deposit_inovapay_local_bank_transfer_BRL_limits':
           localizations
-              .cashier_fiat_deposit_inovapay_local_bank_transfer_brl_limits,
-      'cashier_fiat_deposit_instant':
-          localizations.cashier_fiat_deposit_instant,
-      'cashier_fiat_deposit_invalid_cpf_cpf':
-          localizations.cashier_fiat_deposit_invalid_cpf_cpf,
-      'cashier_fiat_deposit_invalid_phone_phone':
-          localizations.cashier_fiat_deposit_invalid_phone_phone,
-      'cashier_fiat_deposit_invalid_bank_account_number':
-          localizations.cashier_fiat_deposit_invalid_bank_account_number,
-      'cashier_fiat_deposit_is_not_positive_amount':
-          localizations.cashier_fiat_deposit_is_not_positive_amount,
-      'cashier_fiat_deposit_jeton_corefy':
-          localizations.cashier_fiat_deposit_jeton_corefy,
-      'cashier_fiat_deposit_jeton_corefy_almost_done_message':
-          localizations.cashier_fiat_deposit_jeton_corefy_almost_done_message,
-      'cashier_fiat_deposit_jeton_corefy_form_description':
-          localizations.cashier_fiat_deposit_jeton_corefy_form_description,
-      'cashier_fiat_deposit_jeton_corefy_open_new_window_title':
-          localizations.cashier_fiat_deposit_jeton_corefy_open_new_window_title,
+              .cashier_fiat_deposit_inovapay_local_bank_transfer_BRL_limits,
+      'cashier_fiat_deposit_INSTANT':
+          localizations.cashier_fiat_deposit_INSTANT,
+      'cashier_fiat_deposit_INVALID_CPF_cpf':
+          localizations.cashier_fiat_deposit_INVALID_CPF_cpf,
+      'cashier_fiat_deposit_INVALID_PHONE_phone':
+          localizations.cashier_fiat_deposit_INVALID_PHONE_phone,
+      'cashier_fiat_deposit_INVALID_BANK_ACCOUNT_NUMBER':
+          localizations.cashier_fiat_deposit_INVALID_BANK_ACCOUNT_NUMBER,
+      'cashier_fiat_deposit_IS_NOT_POSITIVE_amount':
+          localizations.cashier_fiat_deposit_IS_NOT_POSITIVE_amount,
+      'cashier_fiat_deposit_JETON_COREFY':
+          localizations.cashier_fiat_deposit_JETON_COREFY,
+      'cashier_fiat_deposit_JETON_COREFY_almost_done_message':
+          localizations.cashier_fiat_deposit_JETON_COREFY_almost_done_message,
+      'cashier_fiat_deposit_JETON_COREFY_form_description':
+          localizations.cashier_fiat_deposit_JETON_COREFY_form_description,
+      'cashier_fiat_deposit_JETON_COREFY_open_new_window_title':
+          localizations.cashier_fiat_deposit_JETON_COREFY_open_new_window_title,
       'cashier_fiat_deposit_jeton_exchange_rate':
           localizations.cashier_fiat_deposit_jeton_exchange_rate,
-      'cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_jpy_limits':
+      'cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_JPY_limits':
           localizations
-              .cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_jpy_limits,
-      'cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_limits':
+              .cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_JPY_limits,
+      'cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_JPY_limits':
           localizations
-              .cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_limits,
-      'cashier_fiat_deposit_jpy_instant_bank_transfer_fee':
-          localizations.cashier_fiat_deposit_jpy_instant_bank_transfer_fee,
-      'cashier_fiat_deposit_jpy_global_description':
-          localizations.cashier_fiat_deposit_jpy_global_description,
-      'cashier_fiat_deposit_keitapay_address_placeholder':
-          localizations.cashier_fiat_deposit_keitapay_address_placeholder,
-      'cashier_fiat_deposit_keitapay_bank_branch_placeholder':
-          localizations.cashier_fiat_deposit_keitapay_bank_branch_placeholder,
-      'cashier_fiat_deposit_keitapay_customer_first_name':
-          localizations.cashier_fiat_deposit_keitapay_customer_first_name,
-      'cashier_fiat_deposit_keitapay_customer_first_name_placeholder':
+              .cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_JPY_limits,
+      'cashier_fiat_deposit_JPY_INSTANT_BANK_TRANSFER_fee':
+          localizations.cashier_fiat_deposit_JPY_INSTANT_BANK_TRANSFER_fee,
+      'cashier_fiat_deposit_JPY_global_description':
+          localizations.cashier_fiat_deposit_JPY_global_description,
+      'cashier_fiat_deposit_keitapay_ADDRESS_placeholder':
+          localizations.cashier_fiat_deposit_keitapay_ADDRESS_placeholder,
+      'cashier_fiat_deposit_keitapay_BANK_BRANCH_placeholder':
+          localizations.cashier_fiat_deposit_keitapay_BANK_BRANCH_placeholder,
+      'cashier_fiat_deposit_keitapay_CUSTOMER_FIRST_NAME':
+          localizations.cashier_fiat_deposit_keitapay_CUSTOMER_FIRST_NAME,
+      'cashier_fiat_deposit_keitapay_CUSTOMER_FIRST_NAME_placeholder':
           localizations
-              .cashier_fiat_deposit_keitapay_customer_first_name_placeholder,
-      'cashier_fiat_deposit_keitapay_customer_last_name':
-          localizations.cashier_fiat_deposit_keitapay_customer_last_name,
-      'cashier_fiat_deposit_keitapay_customer_last_name_placeholder':
+              .cashier_fiat_deposit_keitapay_CUSTOMER_FIRST_NAME_placeholder,
+      'cashier_fiat_deposit_keitapay_CUSTOMER_LAST_NAME':
+          localizations.cashier_fiat_deposit_keitapay_CUSTOMER_LAST_NAME,
+      'cashier_fiat_deposit_keitapay_CUSTOMER_LAST_NAME_placeholder':
           localizations
-              .cashier_fiat_deposit_keitapay_customer_last_name_placeholder,
-      'cashier_fiat_deposit_keyta_pay_bank_transfer_jpy_limits':
-          localizations.cashier_fiat_deposit_keyta_pay_bank_transfer_jpy_limits,
-      'cashier_fiat_deposit_lastname':
-          localizations.cashier_fiat_deposit_lastname,
-      'cashier_fiat_deposit_local_bank_transfer_inovapay_form_description':
+              .cashier_fiat_deposit_keitapay_CUSTOMER_LAST_NAME_placeholder,
+      'cashier_fiat_deposit_keyta_pay_bank_transfer_JPY_limits':
+          localizations.cashier_fiat_deposit_keyta_pay_bank_transfer_JPY_limits,
+      'cashier_fiat_deposit_lastName':
+          localizations.cashier_fiat_deposit_lastName,
+      'cashier_fiat_deposit_LOCAL_BANK_TRANSFER_INOVAPAY_form_description':
           localizations
-              .cashier_fiat_deposit_local_bank_transfer_inovapay_form_description,
-      'cashier_fiat_deposit_local_bank_transfer_pin_bank_form_description':
+              .cashier_fiat_deposit_LOCAL_BANK_TRANSFER_INOVAPAY_form_description,
+      'cashier_fiat_deposit_LOCAL_BANK_TRANSFER_PIN_BANK_form_description':
           localizations
-              .cashier_fiat_deposit_local_bank_transfer_pin_bank_form_description,
+              .cashier_fiat_deposit_LOCAL_BANK_TRANSFER_PIN_BANK_form_description,
       'cashier_fiat_deposit_max_limit':
           localizations.cashier_fiat_deposit_max_limit,
       'cashier_fiat_deposit_min_amount':
@@ -715,36 +724,36 @@ class AppLocalizationsMapper {
           localizations.cashier_fiat_deposit_modal_footer,
       'cashier_fiat_deposit_modal_instruction':
           localizations.cashier_fiat_deposit_modal_instruction,
-      'cashier_fiat_deposit_muchbetter':
-          localizations.cashier_fiat_deposit_muchbetter,
-      'cashier_fiat_deposit_muchbetter_form_description':
-          localizations.cashier_fiat_deposit_muchbetter_form_description,
-      'cashier_fiat_deposit_muchbetter_iframe_description':
-          localizations.cashier_fiat_deposit_muchbetter_iframe_description,
-      'cashier_fiat_deposit_muchbetter_message':
-          localizations.cashier_fiat_deposit_muchbetter_message,
-      'cashier_fiat_deposit_nationalid':
-          localizations.cashier_fiat_deposit_nationalid,
-      'cashier_fiat_deposit_net_banking_qaicash':
-          localizations.cashier_fiat_deposit_net_banking_qaicash,
-      'cashier_fiat_deposit_net_banking_qaicash_almost_done_message':
+      'cashier_fiat_deposit_MUCHBETTER':
+          localizations.cashier_fiat_deposit_MUCHBETTER,
+      'cashier_fiat_deposit_MUCHBETTER_form_description':
+          localizations.cashier_fiat_deposit_MUCHBETTER_form_description,
+      'cashier_fiat_deposit_MUCHBETTER_iframe_description':
+          localizations.cashier_fiat_deposit_MUCHBETTER_iframe_description,
+      'cashier_fiat_deposit_MUCHBETTER_message':
+          localizations.cashier_fiat_deposit_MUCHBETTER_message,
+      'cashier_fiat_deposit_nationalId':
+          localizations.cashier_fiat_deposit_nationalId,
+      'cashier_fiat_deposit_NET_BANKING_QAICASH':
+          localizations.cashier_fiat_deposit_NET_BANKING_QAICASH,
+      'cashier_fiat_deposit_NET_BANKING_QAICASH_almost_done_message':
           localizations
-              .cashier_fiat_deposit_net_banking_qaicash_almost_done_message,
-      'cashier_fiat_deposit_net_banking_qaicash_message':
-          localizations.cashier_fiat_deposit_net_banking_qaicash_message,
-      'cashier_fiat_deposit_net_banking_qaicash_open_new_window_title':
+              .cashier_fiat_deposit_NET_BANKING_QAICASH_almost_done_message,
+      'cashier_fiat_deposit_NET_BANKING_QAICASH_message':
+          localizations.cashier_fiat_deposit_NET_BANKING_QAICASH_message,
+      'cashier_fiat_deposit_NET_BANKING_QAICASH_open_new_window_title':
           localizations
-              .cashier_fiat_deposit_net_banking_qaicash_open_new_window_title,
-      'cashier_fiat_deposit_neteller':
-          localizations.cashier_fiat_deposit_neteller,
-      'cashier_fiat_deposit_neteller_almost_done_message':
-          localizations.cashier_fiat_deposit_neteller_almost_done_message,
-      'cashier_fiat_deposit_neteller_form_description':
-          localizations.cashier_fiat_deposit_neteller_form_description,
-      'cashier_fiat_deposit_neteller_message':
-          localizations.cashier_fiat_deposit_neteller_message,
-      'cashier_fiat_deposit_neteller_open_new_window_title':
-          localizations.cashier_fiat_deposit_neteller_open_new_window_title,
+              .cashier_fiat_deposit_NET_BANKING_QAICASH_open_new_window_title,
+      'cashier_fiat_deposit_NETELLER':
+          localizations.cashier_fiat_deposit_NETELLER,
+      'cashier_fiat_deposit_NETELLER_almost_done_message':
+          localizations.cashier_fiat_deposit_NETELLER_almost_done_message,
+      'cashier_fiat_deposit_NETELLER_form_description':
+          localizations.cashier_fiat_deposit_NETELLER_form_description,
+      'cashier_fiat_deposit_NETELLER_message':
+          localizations.cashier_fiat_deposit_NETELLER_message,
+      'cashier_fiat_deposit_NETELLER_open_new_window_title':
+          localizations.cashier_fiat_deposit_NETELLER_open_new_window_title,
       'cashier_fiat_deposit_next_step':
           localizations.cashier_fiat_deposit_next_step,
       'cashier_fiat_deposit_nip': localizations.cashier_fiat_deposit_nip,
@@ -752,53 +761,55 @@ class AppLocalizationsMapper {
           localizations.cashier_fiat_deposit_no_extra_info_needed,
       'cashier_fiat_deposit_overview':
           localizations.cashier_fiat_deposit_overview,
-      'cashier_fiat_deposit_pagsmile_customer_first_name_placeholder':
+      'cashier_fiat_deposit_pagsmile_CUSTOMER_FIRST_NAME_placeholder':
           localizations
-              .cashier_fiat_deposit_pagsmile_customer_first_name_placeholder,
-      'cashier_fiat_deposit_pagsmile_customer_last_name_placeholder':
+              .cashier_fiat_deposit_pagsmile_CUSTOMER_FIRST_NAME_placeholder,
+      'cashier_fiat_deposit_pagsmile_CUSTOMER_LAST_NAME_placeholder':
           localizations
-              .cashier_fiat_deposit_pagsmile_customer_last_name_placeholder,
-      'cashier_fiat_deposit_pagsmile_phone':
-          localizations.cashier_fiat_deposit_pagsmile_phone,
-      'cashier_fiat_deposit_pagsmile_phone_placeholder':
-          localizations.cashier_fiat_deposit_pagsmile_phone_placeholder,
-      'cashier_fiat_deposit_pagsmile_pix_brl_limits':
-          localizations.cashier_fiat_deposit_pagsmile_pix_brl_limits,
+              .cashier_fiat_deposit_pagsmile_CUSTOMER_LAST_NAME_placeholder,
+      'cashier_fiat_deposit_pagsmile_PHONE':
+          localizations.cashier_fiat_deposit_pagsmile_PHONE,
+      'cashier_fiat_deposit_pagsmile_PHONE_placeholder':
+          localizations.cashier_fiat_deposit_pagsmile_PHONE_placeholder,
+      'cashier_fiat_deposit_pagsmile_pix_BRL_limits':
+          localizations.cashier_fiat_deposit_pagsmile_pix_BRL_limits,
       'cashier_fiat_deposit_password':
           localizations.cashier_fiat_deposit_password,
-      'cashier_fiat_deposit_pay4fun_webredirect_brl_limits':
-          localizations.cashier_fiat_deposit_pay4fun_webredirect_brl_limits,
+      'cashier_fiat_deposit_pay4fun_webredirect_BRL_limits':
+          localizations.cashier_fiat_deposit_pay4fun_webredirect_BRL_limits,
       'cashier_fiat_deposit_payment_methods':
           localizations.cashier_fiat_deposit_payment_methods,
-      'cashier_fiat_deposit_paypay_corefy':
-          localizations.cashier_fiat_deposit_paypay_corefy,
-      'cashier_fiat_deposit_paypay_corefy_almost_done_message':
-          localizations.cashier_fiat_deposit_paypay_corefy_almost_done_message,
-      'cashier_fiat_deposit_paypay_corefy_open_new_window_title': localizations
-          .cashier_fiat_deposit_paypay_corefy_open_new_window_title,
-      'cashier_fiat_deposit_paysafecard':
-          localizations.cashier_fiat_deposit_paysafecard,
-      'cashier_fiat_deposit_paysafecard_form_description':
-          localizations.cashier_fiat_deposit_paysafecard_form_description,
-      'cashier_fiat_deposit_paysafecard_iframe_description':
-          localizations.cashier_fiat_deposit_paysafecard_iframe_description,
-      'cashier_fiat_deposit_paysafecard_message':
-          localizations.cashier_fiat_deposit_paysafecard_message,
+      'cashier_fiat_deposit_PAYPAY_COREFY':
+          localizations.cashier_fiat_deposit_PAYPAY_COREFY,
+      'cashier_fiat_deposit_PAYPAY_COREFY_almost_done_message':
+          localizations.cashier_fiat_deposit_PAYPAY_COREFY_almost_done_message,
+      'cashier_fiat_deposit_PAYPAY_COREFY_open_new_window_title': localizations
+          .cashier_fiat_deposit_PAYPAY_COREFY_open_new_window_title,
+      'cashier_fiat_deposit_PAYSAFECARD':
+          localizations.cashier_fiat_deposit_PAYSAFECARD,
+      'cashier_fiat_deposit_PAYSAFECARD_form_description':
+          localizations.cashier_fiat_deposit_PAYSAFECARD_form_description,
+      'cashier_fiat_deposit_PAYSAFECARD_iframe_description':
+          localizations.cashier_fiat_deposit_PAYSAFECARD_iframe_description,
+      'cashier_fiat_deposit_PAYSAFECARD_message':
+          localizations.cashier_fiat_deposit_PAYSAFECARD_message,
       'cashier_fiat_deposit_personal_details':
           localizations.cashier_fiat_deposit_personal_details,
-      'cashier_fiat_deposit_phone': localizations.cashier_fiat_deposit_phone,
+      'cashier_fiat_deposit_PHONE': localizations.cashier_fiat_deposit_PHONE,
       'cashier_fiat_deposit_phone_number':
           localizations.cashier_fiat_deposit_phone_number,
+      'cashier_fiat_deposit_PHONE_placeholder':
+          localizations.cashier_fiat_deposit_PHONE_placeholder,
       'cashier_fiat_deposit_phone_placeholder':
           localizations.cashier_fiat_deposit_phone_placeholder,
-      'cashier_fiat_deposit_phone_placeholder_kes':
-          localizations.cashier_fiat_deposit_phone_placeholder_kes,
-      'cashier_fiat_deposit_phone_placeholder_tzs':
-          localizations.cashier_fiat_deposit_phone_placeholder_tzs,
-      'cashier_fiat_deposit_phone_placeholder_ugx':
-          localizations.cashier_fiat_deposit_phone_placeholder_ugx,
-      'cashier_fiat_deposit_phonenumber_placeholder':
-          localizations.cashier_fiat_deposit_phonenumber_placeholder,
+      'cashier_fiat_deposit_phone_placeholder_KES':
+          localizations.cashier_fiat_deposit_phone_placeholder_KES,
+      'cashier_fiat_deposit_phone_placeholder_TZS':
+          localizations.cashier_fiat_deposit_phone_placeholder_TZS,
+      'cashier_fiat_deposit_phone_placeholder_UGX':
+          localizations.cashier_fiat_deposit_phone_placeholder_UGX,
+      'cashier_fiat_deposit_phoneNumber_placeholder':
+          localizations.cashier_fiat_deposit_phoneNumber_placeholder,
       'cashier_fiat_deposit_please_enter_amount':
           localizations.cashier_fiat_deposit_please_enter_amount,
       'cashier_fiat_deposit_please_enter_cpf_message':
@@ -806,58 +817,58 @@ class AppLocalizationsMapper {
       'cashier_fiat_deposit_please_enter_personal_details_message':
           localizations
               .cashier_fiat_deposit_please_enter_personal_details_message,
-      'cashier_fiat_deposit_postcode':
-          localizations.cashier_fiat_deposit_postcode,
-      'cashier_fiat_deposit_required_cpf':
-          localizations.cashier_fiat_deposit_required_cpf,
-      'cashier_fiat_deposit_required_firstname':
-          localizations.cashier_fiat_deposit_required_firstname,
-      'cashier_fiat_deposit_required_lastname':
-          localizations.cashier_fiat_deposit_required_lastname,
-      'cashier_fiat_deposit_rolling_limit_exceed':
-          localizations.cashier_fiat_deposit_rolling_limit_exceed,
+      'cashier_fiat_deposit_POSTCODE':
+          localizations.cashier_fiat_deposit_POSTCODE,
+      'cashier_fiat_deposit_REQUIRED_CPF':
+          localizations.cashier_fiat_deposit_REQUIRED_CPF,
+      'cashier_fiat_deposit_REQUIRED_firstName':
+          localizations.cashier_fiat_deposit_REQUIRED_firstName,
+      'cashier_fiat_deposit_REQUIRED_lastName':
+          localizations.cashier_fiat_deposit_REQUIRED_lastName,
+      'cashier_fiat_deposit_ROLLING_LIMIT_EXCEED':
+          localizations.cashier_fiat_deposit_ROLLING_LIMIT_EXCEED,
       'cashier_fiat_deposit_saved_accounts':
           localizations.cashier_fiat_deposit_saved_accounts,
       'cashier_fiat_deposit_service':
           localizations.cashier_fiat_deposit_service,
-      'cashier_fiat_deposit_skrill': localizations.cashier_fiat_deposit_skrill,
-      'cashier_fiat_deposit_skrill_almost_done_message':
-          localizations.cashier_fiat_deposit_skrill_almost_done_message,
-      'cashier_fiat_deposit_skrill_form_description':
-          localizations.cashier_fiat_deposit_skrill_form_description,
-      'cashier_fiat_deposit_skrill_iframe_description':
-          localizations.cashier_fiat_deposit_skrill_iframe_description,
-      'cashier_fiat_deposit_skrill_message':
-          localizations.cashier_fiat_deposit_skrill_message,
-      'cashier_fiat_deposit_skrill_open_new_window_title':
-          localizations.cashier_fiat_deposit_skrill_open_new_window_title,
-      'cashier_fiat_deposit_skrillqco_iframe_description':
-          localizations.cashier_fiat_deposit_skrillqco_iframe_description,
-      'cashier_fiat_deposit_skrillqco_message':
-          localizations.cashier_fiat_deposit_skrillqco_message,
-      'cashier_fiat_deposit_skrillqco_rapidtransfer':
-          localizations.cashier_fiat_deposit_skrillqco_rapidtransfer,
-      'cashier_fiat_deposit_skrillqco_rapidtransfer_almost_done_message':
+      'cashier_fiat_deposit_SKRILL': localizations.cashier_fiat_deposit_SKRILL,
+      'cashier_fiat_deposit_SKRILL_almost_done_message':
+          localizations.cashier_fiat_deposit_SKRILL_almost_done_message,
+      'cashier_fiat_deposit_SKRILL_form_description':
+          localizations.cashier_fiat_deposit_SKRILL_form_description,
+      'cashier_fiat_deposit_SKRILL_iframe_description':
+          localizations.cashier_fiat_deposit_SKRILL_iframe_description,
+      'cashier_fiat_deposit_SKRILL_message':
+          localizations.cashier_fiat_deposit_SKRILL_message,
+      'cashier_fiat_deposit_SKRILL_open_new_window_title':
+          localizations.cashier_fiat_deposit_SKRILL_open_new_window_title,
+      'cashier_fiat_deposit_SKRILLQCO_iframe_description':
+          localizations.cashier_fiat_deposit_SKRILLQCO_iframe_description,
+      'cashier_fiat_deposit_SKRILLQCO_message':
+          localizations.cashier_fiat_deposit_SKRILLQCO_message,
+      'cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER':
+          localizations.cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER,
+      'cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_almost_done_message':
           localizations
-              .cashier_fiat_deposit_skrillqco_rapidtransfer_almost_done_message,
-      'cashier_fiat_deposit_skrillqco_rapidtransfer_form_description':
+              .cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_almost_done_message,
+      'cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_form_description':
           localizations
-              .cashier_fiat_deposit_skrillqco_rapidtransfer_form_description,
-      'cashier_fiat_deposit_skrillqco_rapidtransfer_iframe_description':
+              .cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_form_description,
+      'cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_iframe_description':
           localizations
-              .cashier_fiat_deposit_skrillqco_rapidtransfer_iframe_description,
-      'cashier_fiat_deposit_skrillqco_rapidtransfer_message':
-          localizations.cashier_fiat_deposit_skrillqco_rapidtransfer_message,
-      'cashier_fiat_deposit_skrillqco_rapidtransfer_open_new_window_title':
+              .cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_iframe_description,
+      'cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_message':
+          localizations.cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_message,
+      'cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_open_new_window_title':
           localizations
-              .cashier_fiat_deposit_skrillqco_rapidtransfer_open_new_window_title,
-      'cashier_fiat_deposit_sofort': localizations.cashier_fiat_deposit_sofort,
-      'cashier_fiat_deposit_sofort_form_description':
-          localizations.cashier_fiat_deposit_sofort_form_description,
-      'cashier_fiat_deposit_sofort_message':
-          localizations.cashier_fiat_deposit_sofort_message,
-      'cashier_fiat_deposit_sofort_open_new_window_title':
-          localizations.cashier_fiat_deposit_sofort_open_new_window_title,
+              .cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_open_new_window_title,
+      'cashier_fiat_deposit_SOFORT': localizations.cashier_fiat_deposit_SOFORT,
+      'cashier_fiat_deposit_SOFORT_form_description':
+          localizations.cashier_fiat_deposit_SOFORT_form_description,
+      'cashier_fiat_deposit_SOFORT_message':
+          localizations.cashier_fiat_deposit_SOFORT_message,
+      'cashier_fiat_deposit_SOFORT_open_new_window_title':
+          localizations.cashier_fiat_deposit_SOFORT_open_new_window_title,
       'cashier_fiat_deposit_something_went_wrong':
           localizations.cashier_fiat_deposit_something_went_wrong,
       'cashier_fiat_deposit_sportsbet_barupay_account_number':
@@ -866,474 +877,478 @@ class AppLocalizationsMapper {
           localizations.cashier_fiat_deposit_sportsbet_barupay_bank_branch,
       'cashier_fiat_deposit_sportsbet_barupay_bank_name':
           localizations.cashier_fiat_deposit_sportsbet_barupay_bank_name,
-      'cashier_fiat_deposit_sportsbet_barupay_beneficiaryname':
-          localizations.cashier_fiat_deposit_sportsbet_barupay_beneficiaryname,
-      'cashier_fiat_deposit_ssn': localizations.cashier_fiat_deposit_ssn,
-      'cashier_fiat_deposit_state': localizations.cashier_fiat_deposit_state,
-      'cashier_fiat_deposit_state_placeholder':
-          localizations.cashier_fiat_deposit_state_placeholder,
+      'cashier_fiat_deposit_sportsbet_barupay_beneficiaryName':
+          localizations.cashier_fiat_deposit_sportsbet_barupay_beneficiaryName,
+      'cashier_fiat_deposit_SSN': localizations.cashier_fiat_deposit_SSN,
+      'cashier_fiat_deposit_STATE': localizations.cashier_fiat_deposit_STATE,
+      'cashier_fiat_deposit_STATE_placeholder':
+          localizations.cashier_fiat_deposit_STATE_placeholder,
       'cashier_fiat_deposit_submit': localizations.cashier_fiat_deposit_submit,
       'cashier_fiat_deposit_subtotal':
           localizations.cashier_fiat_deposit_subtotal,
       'cashier_fiat_deposit_success_message':
           localizations.cashier_fiat_deposit_success_message,
-      'cashier_fiat_deposit_sumopay_animex':
-          localizations.cashier_fiat_deposit_sumopay_animex,
-      'cashier_fiat_deposit_sumopay_animex_form_description':
-          localizations.cashier_fiat_deposit_sumopay_animex_form_description,
-      'cashier_fiat_deposit_sumopay_animex_message':
-          localizations.cashier_fiat_deposit_sumopay_animex_message,
-      'cashier_fiat_deposit_sumopay_animex_open_new_window_title': localizations
-          .cashier_fiat_deposit_sumopay_animex_open_new_window_title,
-      'cashier_fiat_deposit_thb_global_description':
-          localizations.cashier_fiat_deposit_thb_global_description,
-      'cashier_fiat_deposit_timeframe_bank_brite':
-          localizations.cashier_fiat_deposit_timeframe_bank_brite,
-      'cashier_fiat_deposit_timeframe_bank_interac':
-          localizations.cashier_fiat_deposit_timeframe_bank_interac,
-      'cashier_fiat_deposit_timeframe_bank_transfer_klarna':
-          localizations.cashier_fiat_deposit_timeframe_bank_transfer_klarna,
-      'cashier_fiat_deposit_timeframe_bank_transfer_trustly':
-          localizations.cashier_fiat_deposit_timeframe_bank_transfer_trustly,
-      'cashier_fiat_deposit_timeframe_creditcard':
-          localizations.cashier_fiat_deposit_timeframe_creditcard,
-      'cashier_fiat_deposit_timeframe_creditcard_ecommpay':
-          localizations.cashier_fiat_deposit_timeframe_creditcard_ecommpay,
-      'cashier_fiat_deposit_timeframe_creditcard_ravedirect':
-          localizations.cashier_fiat_deposit_timeframe_creditcard_ravedirect,
-      'cashier_fiat_deposit_timeframe_ecopayz':
-          localizations.cashier_fiat_deposit_timeframe_ecopayz,
-      'cashier_fiat_deposit_timeframe_help_2_pay_qaicash':
-          localizations.cashier_fiat_deposit_timeframe_help_2_pay_qaicash,
-      'cashier_fiat_deposit_timeframe_jeton_corefy':
-          localizations.cashier_fiat_deposit_timeframe_jeton_corefy,
-      'cashier_fiat_deposit_timeframe_muchbetter':
-          localizations.cashier_fiat_deposit_timeframe_muchbetter,
-      'cashier_fiat_deposit_timeframe_net_banking_qaicash':
-          localizations.cashier_fiat_deposit_timeframe_net_banking_qaicash,
-      'cashier_fiat_deposit_timeframe_neteller':
-          localizations.cashier_fiat_deposit_timeframe_neteller,
-      'cashier_fiat_deposit_timeframe_paypay_corefy':
-          localizations.cashier_fiat_deposit_timeframe_paypay_corefy,
-      'cashier_fiat_deposit_timeframe_paysafecard':
-          localizations.cashier_fiat_deposit_timeframe_paysafecard,
-      'cashier_fiat_deposit_timeframe_skrill':
-          localizations.cashier_fiat_deposit_timeframe_skrill,
-      'cashier_fiat_deposit_timeframe_skrillqco':
-          localizations.cashier_fiat_deposit_timeframe_skrillqco,
-      'cashier_fiat_deposit_timeframe_skrillqco_rapidtransfer':
-          localizations.cashier_fiat_deposit_timeframe_skrillqco_rapidtransfer,
-      'cashier_fiat_deposit_timeframe_sofort':
-          localizations.cashier_fiat_deposit_timeframe_sofort,
-      'cashier_fiat_deposit_timeframe_sumopay_animex':
-          localizations.cashier_fiat_deposit_timeframe_sumopay_animex,
-      'cashier_fiat_deposit_timeframe_trinity_qaicash':
-          localizations.cashier_fiat_deposit_timeframe_trinity_qaicash,
-      'cashier_fiat_deposit_timeframe_trustly':
-          localizations.cashier_fiat_deposit_timeframe_trustly,
-      'cashier_fiat_deposit_timeframe_webredirect_sticpay':
-          localizations.cashier_fiat_deposit_timeframe_webredirect_sticpay,
-      'cashier_fiat_deposit_timeframe_xpay_qr_qaicash':
-          localizations.cashier_fiat_deposit_timeframe_xpay_qr_qaicash,
-      'cashier_fiat_deposit_timeframe_zimpler':
-          localizations.cashier_fiat_deposit_timeframe_zimpler,
+      'cashier_fiat_deposit_SUMOPAY_ANIMEX':
+          localizations.cashier_fiat_deposit_SUMOPAY_ANIMEX,
+      'cashier_fiat_deposit_SUMOPAY_ANIMEX_form_description':
+          localizations.cashier_fiat_deposit_SUMOPAY_ANIMEX_form_description,
+      'cashier_fiat_deposit_SUMOPAY_ANIMEX_message':
+          localizations.cashier_fiat_deposit_SUMOPAY_ANIMEX_message,
+      'cashier_fiat_deposit_SUMOPAY_ANIMEX_open_new_window_title': localizations
+          .cashier_fiat_deposit_SUMOPAY_ANIMEX_open_new_window_title,
+      'cashier_fiat_deposit_THB_global_description':
+          localizations.cashier_fiat_deposit_THB_global_description,
+      'cashier_fiat_deposit_TIMEFRAME_BANK_BRITE':
+          localizations.cashier_fiat_deposit_TIMEFRAME_BANK_BRITE,
+      'cashier_fiat_deposit_TIMEFRAME_BANK_INTERAC':
+          localizations.cashier_fiat_deposit_TIMEFRAME_BANK_INTERAC,
+      'cashier_fiat_deposit_TIMEFRAME_BANK_TRANSFER_KLARNA':
+          localizations.cashier_fiat_deposit_TIMEFRAME_BANK_TRANSFER_KLARNA,
+      'cashier_fiat_deposit_TIMEFRAME_BANK_TRANSFER_TRUSTLY':
+          localizations.cashier_fiat_deposit_TIMEFRAME_BANK_TRANSFER_TRUSTLY,
+      'cashier_fiat_deposit_TIMEFRAME_CREDITCARD':
+          localizations.cashier_fiat_deposit_TIMEFRAME_CREDITCARD,
+      'cashier_fiat_deposit_TIMEFRAME_CREDITCARD_ECOMMPAY':
+          localizations.cashier_fiat_deposit_TIMEFRAME_CREDITCARD_ECOMMPAY,
+      'cashier_fiat_deposit_TIMEFRAME_CREDITCARD_RAVEDIRECT':
+          localizations.cashier_fiat_deposit_TIMEFRAME_CREDITCARD_RAVEDIRECT,
+      'cashier_fiat_deposit_TIMEFRAME_ECOPAYZ':
+          localizations.cashier_fiat_deposit_TIMEFRAME_ECOPAYZ,
+      'cashier_fiat_deposit_TIMEFRAME_HELP_2_PAY_QAICASH':
+          localizations.cashier_fiat_deposit_TIMEFRAME_HELP_2_PAY_QAICASH,
+      'cashier_fiat_deposit_TIMEFRAME_JETON_COREFY':
+          localizations.cashier_fiat_deposit_TIMEFRAME_JETON_COREFY,
+      'cashier_fiat_deposit_TIMEFRAME_MUCHBETTER':
+          localizations.cashier_fiat_deposit_TIMEFRAME_MUCHBETTER,
+      'cashier_fiat_deposit_TIMEFRAME_NET_BANKING_QAICASH':
+          localizations.cashier_fiat_deposit_TIMEFRAME_NET_BANKING_QAICASH,
+      'cashier_fiat_deposit_TIMEFRAME_NETELLER':
+          localizations.cashier_fiat_deposit_TIMEFRAME_NETELLER,
+      'cashier_fiat_deposit_TIMEFRAME_PAYPAY_COREFY':
+          localizations.cashier_fiat_deposit_TIMEFRAME_PAYPAY_COREFY,
+      'cashier_fiat_deposit_TIMEFRAME_PAYSAFECARD':
+          localizations.cashier_fiat_deposit_TIMEFRAME_PAYSAFECARD,
+      'cashier_fiat_deposit_TIMEFRAME_SKRILL':
+          localizations.cashier_fiat_deposit_TIMEFRAME_SKRILL,
+      'cashier_fiat_deposit_TIMEFRAME_SKRILLQCO':
+          localizations.cashier_fiat_deposit_TIMEFRAME_SKRILLQCO,
+      'cashier_fiat_deposit_TIMEFRAME_SKRILLQCO_RAPIDTRANSFER':
+          localizations.cashier_fiat_deposit_TIMEFRAME_SKRILLQCO_RAPIDTRANSFER,
+      'cashier_fiat_deposit_TIMEFRAME_SOFORT':
+          localizations.cashier_fiat_deposit_TIMEFRAME_SOFORT,
+      'cashier_fiat_deposit_TIMEFRAME_SUMOPAY_ANIMEX':
+          localizations.cashier_fiat_deposit_TIMEFRAME_SUMOPAY_ANIMEX,
+      'cashier_fiat_deposit_TIMEFRAME_TRINITY_QAICASH':
+          localizations.cashier_fiat_deposit_TIMEFRAME_TRINITY_QAICASH,
+      'cashier_fiat_deposit_TIMEFRAME_TRUSTLY':
+          localizations.cashier_fiat_deposit_TIMEFRAME_TRUSTLY,
+      'cashier_fiat_deposit_TIMEFRAME_WEBREDIRECT_STICPAY':
+          localizations.cashier_fiat_deposit_TIMEFRAME_WEBREDIRECT_STICPAY,
+      'cashier_fiat_deposit_TIMEFRAME_XPAY_QR_QAICASH':
+          localizations.cashier_fiat_deposit_TIMEFRAME_XPAY_QR_QAICASH,
+      'cashier_fiat_deposit_TIMEFRAME_ZIMPLER':
+          localizations.cashier_fiat_deposit_TIMEFRAME_ZIMPLER,
       'cashier_fiat_deposit_total': localizations.cashier_fiat_deposit_total,
-      'cashier_fiat_deposit_total_add':
-          localizations.cashier_fiat_deposit_total_add,
-      'cashier_fiat_deposit_total_deduct':
-          localizations.cashier_fiat_deposit_total_deduct,
+      'cashier_fiat_deposit_total_ADD':
+          localizations.cashier_fiat_deposit_total_ADD,
+      'cashier_fiat_deposit_total_DEDUCT':
+          localizations.cashier_fiat_deposit_total_DEDUCT,
       'cashier_fiat_deposit_transaction_id':
           localizations.cashier_fiat_deposit_transaction_id,
-      'cashier_fiat_deposit_trinity_qaicash':
-          localizations.cashier_fiat_deposit_trinity_qaicash,
-      'cashier_fiat_deposit_trinity_qaicash_almost_done_message': localizations
-          .cashier_fiat_deposit_trinity_qaicash_almost_done_message,
-      'cashier_fiat_deposit_trinity_qaicash_form_description':
-          localizations.cashier_fiat_deposit_trinity_qaicash_form_description,
-      'cashier_fiat_deposit_trinity_qaicash_message':
-          localizations.cashier_fiat_deposit_trinity_qaicash_message,
-      'cashier_fiat_deposit_trinity_qaicash_open_new_window_title':
+      'cashier_fiat_deposit_TRINITY_QAICASH':
+          localizations.cashier_fiat_deposit_TRINITY_QAICASH,
+      'cashier_fiat_deposit_TRINITY_QAICASH_almost_done_message': localizations
+          .cashier_fiat_deposit_TRINITY_QAICASH_almost_done_message,
+      'cashier_fiat_deposit_TRINITY_QAICASH_form_description':
+          localizations.cashier_fiat_deposit_TRINITY_QAICASH_form_description,
+      'cashier_fiat_deposit_TRINITY_QAICASH_message':
+          localizations.cashier_fiat_deposit_TRINITY_QAICASH_message,
+      'cashier_fiat_deposit_TRINITY_QAICASH_open_new_window_title':
           localizations
-              .cashier_fiat_deposit_trinity_qaicash_open_new_window_title,
-      'cashier_fiat_deposit_trustly':
-          localizations.cashier_fiat_deposit_trustly,
-      'cashier_fiat_deposit_trustly_form_description':
-          localizations.cashier_fiat_deposit_trustly_form_description,
-      'cashier_fiat_deposit_trustly_iframe_description':
-          localizations.cashier_fiat_deposit_trustly_iframe_description,
-      'cashier_fiat_deposit_trustly_message':
-          localizations.cashier_fiat_deposit_trustly_message,
+              .cashier_fiat_deposit_TRINITY_QAICASH_open_new_window_title,
+      'cashier_fiat_deposit_TRUSTLY':
+          localizations.cashier_fiat_deposit_TRUSTLY,
+      'cashier_fiat_deposit_TRUSTLY_form_description':
+          localizations.cashier_fiat_deposit_TRUSTLY_form_description,
+      'cashier_fiat_deposit_TRUSTLY_iframe_description':
+          localizations.cashier_fiat_deposit_TRUSTLY_iframe_description,
+      'cashier_fiat_deposit_TRUSTLY_message':
+          localizations.cashier_fiat_deposit_TRUSTLY_message,
       'cashier_fiat_deposit_try_again':
           localizations.cashier_fiat_deposit_try_again,
-      'cashier_fiat_deposit_unionpay':
-          localizations.cashier_fiat_deposit_unionpay,
-      'cashier_fiat_deposit_unionpay_qr':
-          localizations.cashier_fiat_deposit_unionpay_qr,
-      'cashier_fiat_deposit_up_to_48h':
-          localizations.cashier_fiat_deposit_up_to_48h,
-      'cashier_fiat_deposit_usdt_global_description':
-          localizations.cashier_fiat_deposit_usdt_global_description,
+      'cashier_fiat_deposit_UNIONPAY':
+          localizations.cashier_fiat_deposit_UNIONPAY,
+      'cashier_fiat_deposit_UNIONPAY_QR':
+          localizations.cashier_fiat_deposit_UNIONPAY_QR,
+      'cashier_fiat_deposit_UP_TO_48H':
+          localizations.cashier_fiat_deposit_UP_TO_48H,
+      'cashier_fiat_deposit_USDT_global_description':
+          localizations.cashier_fiat_deposit_USDT_global_description,
       'cashier_fiat_deposit_username':
           localizations.cashier_fiat_deposit_username,
-      'cashier_fiat_deposit_webredirect_sticpay':
-          localizations.cashier_fiat_deposit_webredirect_sticpay,
-      'cashier_fiat_deposit_webredirect_sticpay_form_description': localizations
-          .cashier_fiat_deposit_webredirect_sticpay_form_description,
-      'cashier_fiat_deposit_webredirect_sticpay_iframe_description':
+      'cashier_fiat_deposit_WEBREDIRECT_STICPAY':
+          localizations.cashier_fiat_deposit_WEBREDIRECT_STICPAY,
+      'cashier_fiat_deposit_WEBREDIRECT_STICPAY_form_description': localizations
+          .cashier_fiat_deposit_WEBREDIRECT_STICPAY_form_description,
+      'cashier_fiat_deposit_WEBREDIRECT_STICPAY_iframe_description':
           localizations
-              .cashier_fiat_deposit_webredirect_sticpay_iframe_description,
-      'cashier_fiat_deposit_webredirect_sticpay_message':
-          localizations.cashier_fiat_deposit_webredirect_sticpay_message,
-      'cashier_fiat_deposit_wechat': localizations.cashier_fiat_deposit_wechat,
-      'cashier_fiat_deposit_xpay_qr_qaicash':
-          localizations.cashier_fiat_deposit_xpay_qr_qaicash,
-      'cashier_fiat_deposit_xpay_qr_qaicash_almost_done_message': localizations
-          .cashier_fiat_deposit_xpay_qr_qaicash_almost_done_message,
-      'cashier_fiat_deposit_xpay_qr_qaicash_form_description':
-          localizations.cashier_fiat_deposit_xpay_qr_qaicash_form_description,
-      'cashier_fiat_deposit_xpay_qr_qaicash_message':
-          localizations.cashier_fiat_deposit_xpay_qr_qaicash_message,
-      'cashier_fiat_deposit_xpay_qr_qaicash_open_new_window_title':
+              .cashier_fiat_deposit_WEBREDIRECT_STICPAY_iframe_description,
+      'cashier_fiat_deposit_WEBREDIRECT_STICPAY_message':
+          localizations.cashier_fiat_deposit_WEBREDIRECT_STICPAY_message,
+      'cashier_fiat_deposit_WECHAT': localizations.cashier_fiat_deposit_WECHAT,
+      'cashier_fiat_deposit_XPAY_QR_QAICASH':
+          localizations.cashier_fiat_deposit_XPAY_QR_QAICASH,
+      'cashier_fiat_deposit_XPAY_QR_QAICASH_almost_done_message': localizations
+          .cashier_fiat_deposit_XPAY_QR_QAICASH_almost_done_message,
+      'cashier_fiat_deposit_XPAY_QR_QAICASH_form_description':
+          localizations.cashier_fiat_deposit_XPAY_QR_QAICASH_form_description,
+      'cashier_fiat_deposit_XPAY_QR_QAICASH_message':
+          localizations.cashier_fiat_deposit_XPAY_QR_QAICASH_message,
+      'cashier_fiat_deposit_XPAY_QR_QAICASH_open_new_window_title':
           localizations
-              .cashier_fiat_deposit_xpay_qr_qaicash_open_new_window_title,
+              .cashier_fiat_deposit_XPAY_QR_QAICASH_open_new_window_title,
       'cashier_fiat_deposit_you_will_be_redirected':
           localizations.cashier_fiat_deposit_you_will_be_redirected,
-      'cashier_fiat_deposit_zimpler':
-          localizations.cashier_fiat_deposit_zimpler,
-      'cashier_fiat_deposit_zimpler_almost_done_message':
-          localizations.cashier_fiat_deposit_zimpler_almost_done_message,
-      'cashier_fiat_deposit_zimpler_form_description':
-          localizations.cashier_fiat_deposit_zimpler_form_description,
-      'cashier_fiat_deposit_zimpler_iframe_description':
-          localizations.cashier_fiat_deposit_zimpler_iframe_description,
-      'cashier_fiat_deposit_zimpler_message':
-          localizations.cashier_fiat_deposit_zimpler_message,
-      'cashier_fiat_deposit_zimpler_open_new_window_title':
-          localizations.cashier_fiat_deposit_zimpler_open_new_window_title,
-      'cashier_fiat_deposit_zip_code':
-          localizations.cashier_fiat_deposit_zip_code,
-      'cashier_fiat_deposit_zip_code_placeholder':
-          localizations.cashier_fiat_deposit_zip_code_placeholder,
-      'cashier_fiat_eur': localizations.cashier_fiat_eur,
+      'cashier_fiat_deposit_ZIMPLER':
+          localizations.cashier_fiat_deposit_ZIMPLER,
+      'cashier_fiat_deposit_ZIMPLER_almost_done_message':
+          localizations.cashier_fiat_deposit_ZIMPLER_almost_done_message,
+      'cashier_fiat_deposit_ZIMPLER_form_description':
+          localizations.cashier_fiat_deposit_ZIMPLER_form_description,
+      'cashier_fiat_deposit_ZIMPLER_iframe_description':
+          localizations.cashier_fiat_deposit_ZIMPLER_iframe_description,
+      'cashier_fiat_deposit_ZIMPLER_message':
+          localizations.cashier_fiat_deposit_ZIMPLER_message,
+      'cashier_fiat_deposit_ZIMPLER_open_new_window_title':
+          localizations.cashier_fiat_deposit_ZIMPLER_open_new_window_title,
+      'cashier_fiat_deposit_ZIP_CODE':
+          localizations.cashier_fiat_deposit_ZIP_CODE,
+      'cashier_fiat_deposit_ZIP_CODE_placeholder':
+          localizations.cashier_fiat_deposit_ZIP_CODE_placeholder,
+      'cashier_fiat_EUR': localizations.cashier_fiat_EUR,
       'cashier_fiat_exp_date': localizations.cashier_fiat_exp_date,
-      'cashier_fiat_flat_fee': localizations.cashier_fiat_flat_fee,
-      'cashier_fiat_gel': localizations.cashier_fiat_gel,
-      'cashier_fiat_idr': localizations.cashier_fiat_idr,
-      'cashier_fiat_inr': localizations.cashier_fiat_inr,
-      'cashier_fiat_iqd': localizations.cashier_fiat_iqd,
-      'cashier_fiat_jeton_provider_bank_transfer_voucher_atm_title':
+      'cashier_fiat_FLAT_FEE': localizations.cashier_fiat_FLAT_FEE,
+      'cashier_fiat_GEL': localizations.cashier_fiat_GEL,
+      'cashier_fiat_IDR': localizations.cashier_fiat_IDR,
+      'cashier_fiat_INR': localizations.cashier_fiat_INR,
+      'cashier_fiat_IQD': localizations.cashier_fiat_IQD,
+      'cashier_fiat_JETON_PROVIDER_BANK_TRANSFER_VOUCHER_ATM_title':
           localizations
-              .cashier_fiat_jeton_provider_bank_transfer_voucher_atm_title,
-      'cashier_fiat_jpy': localizations.cashier_fiat_jpy,
-      'cashier_fiat_krw': localizations.cashier_fiat_krw,
+              .cashier_fiat_JETON_PROVIDER_BANK_TRANSFER_VOUCHER_ATM_title,
+      'cashier_fiat_JPY': localizations.cashier_fiat_JPY,
+      'cashier_fiat_KRW': localizations.cashier_fiat_KRW,
       'cashier_fiat_min_max_deposit_label':
           localizations.cashier_fiat_min_max_deposit_label,
       'cashier_fiat_min_max_withdrawal_label':
           localizations.cashier_fiat_min_max_withdrawal_label,
-      'cashier_fiat_mxn': localizations.cashier_fiat_mxn,
-      'cashier_fiat_myr': localizations.cashier_fiat_myr,
-      'cashier_fiat_pen': localizations.cashier_fiat_pen,
-      'cashier_fiat_pkr': localizations.cashier_fiat_pkr,
-      'cashier_fiat_rub': localizations.cashier_fiat_rub,
-      'cashier_fiat_thb': localizations.cashier_fiat_thb,
-      'cashier_fiat_try': localizations.cashier_fiat_try,
-      'cashier_fiat_uah': localizations.cashier_fiat_uah,
-      'cashier_fiat_usd': localizations.cashier_fiat_usd,
-      'cashier_fiat_usdt': localizations.cashier_fiat_usdt,
-      'cashier_fiat_vnd': localizations.cashier_fiat_vnd,
+      'cashier_fiat_MXN': localizations.cashier_fiat_MXN,
+      'cashier_fiat_MYR': localizations.cashier_fiat_MYR,
+      'cashier_fiat_PEN': localizations.cashier_fiat_PEN,
+      'cashier_fiat_PKR': localizations.cashier_fiat_PKR,
+      'cashier_fiat_RUB': localizations.cashier_fiat_RUB,
+      'cashier_fiat_THB': localizations.cashier_fiat_THB,
+      'cashier_fiat_TRY': localizations.cashier_fiat_TRY,
+      'cashier_fiat_UAH': localizations.cashier_fiat_UAH,
+      'cashier_fiat_USD': localizations.cashier_fiat_USD,
+      'cashier_fiat_USDT': localizations.cashier_fiat_USDT,
+      'cashier_fiat_VND': localizations.cashier_fiat_VND,
       'cashier_fiat_withdrawal': localizations.cashier_fiat_withdrawal,
       'cashier_fiat_withdrawal_started':
           localizations.cashier_fiat_withdrawal_started,
-      'cashier_fiat_withdrawal_accountid':
-          localizations.cashier_fiat_withdrawal_accountid,
-      'cashier_fiat_withdrawal_accountnumber':
-          localizations.cashier_fiat_withdrawal_accountnumber,
-      'cashier_fiat_withdrawal_accounttype':
-          localizations.cashier_fiat_withdrawal_accounttype,
-      'cashier_fiat_withdrawal_address':
-          localizations.cashier_fiat_withdrawal_address,
-      'cashier_fiat_withdrawal_address_placeholder':
-          localizations.cashier_fiat_withdrawal_address_placeholder,
+      'cashier_fiat_withdrawal_accountId':
+          localizations.cashier_fiat_withdrawal_accountId,
+      'cashier_fiat_withdrawal_accountNumber':
+          localizations.cashier_fiat_withdrawal_accountNumber,
+      'cashier_fiat_withdrawal_accountType':
+          localizations.cashier_fiat_withdrawal_accountType,
+      'cashier_fiat_withdrawal_ADDRESS':
+          localizations.cashier_fiat_withdrawal_ADDRESS,
+      'cashier_fiat_withdrawal_ADDRESS_placeholder':
+          localizations.cashier_fiat_withdrawal_ADDRESS_placeholder,
+      'cashier_fiat_WITHDRAWAL_amount':
+          localizations.cashier_fiat_WITHDRAWAL_amount,
       'cashier_fiat_withdrawal_amount':
           localizations.cashier_fiat_withdrawal_amount,
-      'cashier_fiat_withdrawal_amount_exchange_rate':
-          localizations.cashier_fiat_withdrawal_amount_exchange_rate,
-      'cashier_fiat_withdrawal_bank_account_digit':
-          localizations.cashier_fiat_withdrawal_bank_account_digit,
-      'cashier_fiat_withdrawal_bank_account_digit_placeholder':
-          localizations.cashier_fiat_withdrawal_bank_account_digit_placeholder,
-      'cashier_fiat_withdrawal_bank_account_name':
-          localizations.cashier_fiat_withdrawal_bank_account_name,
-      'cashier_fiat_withdrawal_bank_account_name_placeholder':
-          localizations.cashier_fiat_withdrawal_bank_account_name_placeholder,
-      'cashier_fiat_withdrawal_bank_account_number':
-          localizations.cashier_fiat_withdrawal_bank_account_number,
-      'cashier_fiat_withdrawal_bank_account_number_placeholder':
-          localizations.cashier_fiat_withdrawal_bank_account_number_placeholder,
-      'cashier_fiat_withdrawal_bank_account_type':
-          localizations.cashier_fiat_withdrawal_bank_account_type,
-      'cashier_fiat_withdrawal_bank_account_type_placeholder':
-          localizations.cashier_fiat_withdrawal_bank_account_type_placeholder,
-      'cashier_fiat_withdrawal_bank_address':
-          localizations.cashier_fiat_withdrawal_bank_address,
-      'cashier_fiat_withdrawal_bank_branch':
-          localizations.cashier_fiat_withdrawal_bank_branch,
-      'cashier_fiat_withdrawal_bank_branch_digit':
-          localizations.cashier_fiat_withdrawal_bank_branch_digit,
-      'cashier_fiat_withdrawal_bank_branch_digit_placeholder':
-          localizations.cashier_fiat_withdrawal_bank_branch_digit_placeholder,
-      'cashier_fiat_withdrawal_bank_branch_number':
-          localizations.cashier_fiat_withdrawal_bank_branch_number,
-      'cashier_fiat_withdrawal_bank_branch_number_placeholder':
-          localizations.cashier_fiat_withdrawal_bank_branch_number_placeholder,
-      'cashier_fiat_withdrawal_bank_branch_placeholder':
-          localizations.cashier_fiat_withdrawal_bank_branch_placeholder,
-      'cashier_fiat_withdrawal_bank_card_number':
-          localizations.cashier_fiat_withdrawal_bank_card_number,
-      'cashier_fiat_withdrawal_bank_code':
-          localizations.cashier_fiat_withdrawal_bank_code,
-      'cashier_fiat_withdrawal_bank_code_placeholder':
-          localizations.cashier_fiat_withdrawal_bank_code_placeholder,
-      'cashier_fiat_withdrawal_bank_id':
-          localizations.cashier_fiat_withdrawal_bank_id,
-      'cashier_fiat_withdrawal_bank_ifsc':
-          localizations.cashier_fiat_withdrawal_bank_ifsc,
-      'cashier_fiat_withdrawal_bank_ifsc_placeholder':
-          localizations.cashier_fiat_withdrawal_bank_ifsc_placeholder,
-      'cashier_fiat_withdrawal_bank_name':
-          localizations.cashier_fiat_withdrawal_bank_name,
-      'cashier_fiat_withdrawal_bank_name_placeholder':
-          localizations.cashier_fiat_withdrawal_bank_name_placeholder,
-      'cashier_fiat_withdrawal_bank_swift':
-          localizations.cashier_fiat_withdrawal_bank_swift,
-      'cashier_fiat_withdrawal_bank_transfer':
-          localizations.cashier_fiat_withdrawal_bank_transfer,
-      'cashier_fiat_withdrawal_bank_transfer_animex':
-          localizations.cashier_fiat_withdrawal_bank_transfer_animex,
-      'cashier_fiat_withdrawal_bank_transfer_animex_message':
-          localizations.cashier_fiat_withdrawal_bank_transfer_animex_message,
-      'cashier_fiat_withdrawal_bank_transfer_brite':
-          localizations.cashier_fiat_withdrawal_bank_transfer_brite,
-      'cashier_fiat_withdrawal_bank_transfer_brite_form_description':
+      'cashier_fiat_withdrawal_AMOUNT_exchange_rate':
+          localizations.cashier_fiat_withdrawal_AMOUNT_exchange_rate,
+      'cashier_fiat_withdrawal_BANK_ACCOUNT_DIGIT':
+          localizations.cashier_fiat_withdrawal_BANK_ACCOUNT_DIGIT,
+      'cashier_fiat_withdrawal_BANK_ACCOUNT_DIGIT_placeholder':
+          localizations.cashier_fiat_withdrawal_BANK_ACCOUNT_DIGIT_placeholder,
+      'cashier_fiat_withdrawal_BANK_ACCOUNT_NAME':
+          localizations.cashier_fiat_withdrawal_BANK_ACCOUNT_NAME,
+      'cashier_fiat_withdrawal_BANK_ACCOUNT_NAME_placeholder':
+          localizations.cashier_fiat_withdrawal_BANK_ACCOUNT_NAME_placeholder,
+      'cashier_fiat_withdrawal_BANK_ACCOUNT_NUMBER':
+          localizations.cashier_fiat_withdrawal_BANK_ACCOUNT_NUMBER,
+      'cashier_fiat_withdrawal_BANK_ACCOUNT_NUMBER_placeholder':
+          localizations.cashier_fiat_withdrawal_BANK_ACCOUNT_NUMBER_placeholder,
+      'cashier_fiat_withdrawal_BANK_ACCOUNT_TYPE':
+          localizations.cashier_fiat_withdrawal_BANK_ACCOUNT_TYPE,
+      'cashier_fiat_withdrawal_BANK_ACCOUNT_TYPE_placeholder':
+          localizations.cashier_fiat_withdrawal_BANK_ACCOUNT_TYPE_placeholder,
+      'cashier_fiat_withdrawal_BANK_ADDRESS':
+          localizations.cashier_fiat_withdrawal_BANK_ADDRESS,
+      'cashier_fiat_withdrawal_BANK_BRANCH':
+          localizations.cashier_fiat_withdrawal_BANK_BRANCH,
+      'cashier_fiat_withdrawal_BANK_BRANCH_DIGIT':
+          localizations.cashier_fiat_withdrawal_BANK_BRANCH_DIGIT,
+      'cashier_fiat_withdrawal_BANK_BRANCH_DIGIT_placeholder':
+          localizations.cashier_fiat_withdrawal_BANK_BRANCH_DIGIT_placeholder,
+      'cashier_fiat_withdrawal_BANK_BRANCH_NUMBER':
+          localizations.cashier_fiat_withdrawal_BANK_BRANCH_NUMBER,
+      'cashier_fiat_withdrawal_BANK_BRANCH_NUMBER_placeholder':
+          localizations.cashier_fiat_withdrawal_BANK_BRANCH_NUMBER_placeholder,
+      'cashier_fiat_withdrawal_BANK_BRANCH_placeholder':
+          localizations.cashier_fiat_withdrawal_BANK_BRANCH_placeholder,
+      'cashier_fiat_withdrawal_BANK_CARD_NUMBER':
+          localizations.cashier_fiat_withdrawal_BANK_CARD_NUMBER,
+      'cashier_fiat_withdrawal_BANK_CODE':
+          localizations.cashier_fiat_withdrawal_BANK_CODE,
+      'cashier_fiat_withdrawal_BANK_CODE_placeholder':
+          localizations.cashier_fiat_withdrawal_BANK_CODE_placeholder,
+      'cashier_fiat_withdrawal_BANK_ID':
+          localizations.cashier_fiat_withdrawal_BANK_ID,
+      'cashier_fiat_withdrawal_BANK_IFSC':
+          localizations.cashier_fiat_withdrawal_BANK_IFSC,
+      'cashier_fiat_withdrawal_BANK_IFSC_placeholder':
+          localizations.cashier_fiat_withdrawal_BANK_IFSC_placeholder,
+      'cashier_fiat_withdrawal_BANK_NAME':
+          localizations.cashier_fiat_withdrawal_BANK_NAME,
+      'cashier_fiat_withdrawal_BANK_NAME_placeholder':
+          localizations.cashier_fiat_withdrawal_BANK_NAME_placeholder,
+      'cashier_fiat_withdrawal_BANK_SWIFT':
+          localizations.cashier_fiat_withdrawal_BANK_SWIFT,
+      'cashier_fiat_withdrawal_BANK_TRANSFER':
+          localizations.cashier_fiat_withdrawal_BANK_TRANSFER,
+      'cashier_fiat_withdrawal_BANK_TRANSFER_ANIMEX':
+          localizations.cashier_fiat_withdrawal_BANK_TRANSFER_ANIMEX,
+      'cashier_fiat_withdrawal_BANK_TRANSFER_ANIMEX_message':
+          localizations.cashier_fiat_withdrawal_BANK_TRANSFER_ANIMEX_message,
+      'cashier_fiat_withdrawal_BANK_TRANSFER_BRITE':
+          localizations.cashier_fiat_withdrawal_BANK_TRANSFER_BRITE,
+      'cashier_fiat_withdrawal_BANK_TRANSFER_BRITE_form_description':
           localizations
-              .cashier_fiat_withdrawal_bank_transfer_brite_form_description,
-      'cashier_fiat_withdrawal_bank_transfer_brite_message':
-          localizations.cashier_fiat_withdrawal_bank_transfer_brite_message,
-      'cashier_fiat_withdrawal_bank_transfer_trustly':
-          localizations.cashier_fiat_withdrawal_bank_transfer_trustly,
-      'cashier_fiat_withdrawal_bank_transfer_trustly_almost_done_message':
+              .cashier_fiat_withdrawal_BANK_TRANSFER_BRITE_form_description,
+      'cashier_fiat_withdrawal_BANK_TRANSFER_BRITE_message':
+          localizations.cashier_fiat_withdrawal_BANK_TRANSFER_BRITE_message,
+      'cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY':
+          localizations.cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY,
+      'cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_almost_done_message':
           localizations
-              .cashier_fiat_withdrawal_bank_transfer_trustly_almost_done_message,
-      'cashier_fiat_withdrawal_bank_transfer_trustly_form_description':
+              .cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_almost_done_message,
+      'cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_form_description':
           localizations
-              .cashier_fiat_withdrawal_bank_transfer_trustly_form_description,
-      'cashier_fiat_withdrawal_bank_transfer_trustly_message':
-          localizations.cashier_fiat_withdrawal_bank_transfer_trustly_message,
-      'cashier_fiat_withdrawal_bank_transfer_trustly_open_new_window_title':
+              .cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_form_description,
+      'cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_message':
+          localizations.cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_message,
+      'cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_open_new_window_title':
           localizations
-              .cashier_fiat_withdrawal_bank_transfer_trustly_open_new_window_title,
-      'cashier_fiat_withdrawal_bankaccount':
-          localizations.cashier_fiat_withdrawal_bankaccount,
-      'cashier_fiat_withdrawal_bankbranch':
-          localizations.cashier_fiat_withdrawal_bankbranch,
-      'cashier_fiat_withdrawal_bankcode':
-          localizations.cashier_fiat_withdrawal_bankcode,
-      'cashier_fiat_withdrawal_beneficiaryname':
-          localizations.cashier_fiat_withdrawal_beneficiaryname,
-      'cashier_fiat_withdrawal_cad_global_description':
-          localizations.cashier_fiat_withdrawal_cad_global_description,
-      'cashier_fiat_withdrawal_can_not_be_fraction_amount':
-          localizations.cashier_fiat_withdrawal_can_not_be_fraction_amount,
-      'cashier_fiat_withdrawal_cardholder':
-          localizations.cashier_fiat_withdrawal_cardholder,
+              .cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_open_new_window_title,
+      'cashier_fiat_withdrawal_bankAccount':
+          localizations.cashier_fiat_withdrawal_bankAccount,
+      'cashier_fiat_withdrawal_bankBranch':
+          localizations.cashier_fiat_withdrawal_bankBranch,
+      'cashier_fiat_withdrawal_bankCode':
+          localizations.cashier_fiat_withdrawal_bankCode,
+      'cashier_fiat_withdrawal_beneficiaryName':
+          localizations.cashier_fiat_withdrawal_beneficiaryName,
+      'cashier_fiat_withdrawal_CAD_global_description':
+          localizations.cashier_fiat_withdrawal_CAD_global_description,
+      'cashier_fiat_withdrawal_CAN_NOT_BE_FRACTION_AMOUNT':
+          localizations.cashier_fiat_withdrawal_CAN_NOT_BE_FRACTION_AMOUNT,
+      'cashier_fiat_withdrawal_cardHolder':
+          localizations.cashier_fiat_withdrawal_cardHolder,
       'cashier_fiat_withdrawal_choose_payment_method':
           localizations.cashier_fiat_withdrawal_choose_payment_method,
-      'cashier_fiat_withdrawal_city':
-          localizations.cashier_fiat_withdrawal_city,
-      'cashier_fiat_withdrawal_city_placeholder':
-          localizations.cashier_fiat_withdrawal_city_placeholder,
+      'cashier_fiat_withdrawal_CITY':
+          localizations.cashier_fiat_withdrawal_CITY,
+      'cashier_fiat_withdrawal_CITY_placeholder':
+          localizations.cashier_fiat_withdrawal_CITY_placeholder,
       'cashier_fiat_withdrawal_continue':
           localizations.cashier_fiat_withdrawal_continue,
       'cashier_fiat_withdrawal_copy_to_clipboard':
           localizations.cashier_fiat_withdrawal_copy_to_clipboard,
-      'cashier_fiat_withdrawal_corefy_jeton_jpy_limits':
-          localizations.cashier_fiat_withdrawal_corefy_jeton_jpy_limits,
+      'cashier_fiat_withdrawal_corefy_jeton_JPY_limits':
+          localizations.cashier_fiat_withdrawal_corefy_jeton_JPY_limits,
       'cashier_fiat_withdrawal_cpf': localizations.cashier_fiat_withdrawal_cpf,
-      'cashier_fiat_withdrawal_cpf_already_exists':
-          localizations.cashier_fiat_withdrawal_cpf_already_exists,
-      'cashier_fiat_withdrawal_cpf_already_exists_cpf':
-          localizations.cashier_fiat_withdrawal_cpf_already_exists_cpf,
+      'cashier_fiat_withdrawal_CPF_ALREADY_EXISTS':
+          localizations.cashier_fiat_withdrawal_CPF_ALREADY_EXISTS,
+      'cashier_fiat_withdrawal_CPF_ALREADY_EXISTS_cpf':
+          localizations.cashier_fiat_withdrawal_CPF_ALREADY_EXISTS_cpf,
       'cashier_fiat_withdrawal_cpf_description':
           localizations.cashier_fiat_withdrawal_cpf_description,
-      'cashier_fiat_withdrawal_credit_card_acapture':
-          localizations.cashier_fiat_withdrawal_credit_card_acapture,
-      'cashier_fiat_withdrawal_credit_card_e_merchant_pay':
-          localizations.cashier_fiat_withdrawal_credit_card_e_merchant_pay,
-      'cashier_fiat_withdrawal_creditcard':
-          localizations.cashier_fiat_withdrawal_creditcard,
-      'cashier_fiat_withdrawal_creditcard_ecommpay':
-          localizations.cashier_fiat_withdrawal_creditcard_ecommpay,
-      'cashier_fiat_withdrawal_creditcard_ecommpay_form_description':
+      'cashier_fiat_withdrawal_CREDIT_CARD_ACAPTURE':
+          localizations.cashier_fiat_withdrawal_CREDIT_CARD_ACAPTURE,
+      'cashier_fiat_withdrawal_CREDIT_CARD_E_MERCHANT_PAY':
+          localizations.cashier_fiat_withdrawal_CREDIT_CARD_E_MERCHANT_PAY,
+      'cashier_fiat_withdrawal_CREDITCARD':
+          localizations.cashier_fiat_withdrawal_CREDITCARD,
+      'cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY':
+          localizations.cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY,
+      'cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY_form_description':
           localizations
-              .cashier_fiat_withdrawal_creditcard_ecommpay_form_description,
-      'cashier_fiat_withdrawal_creditcard_ecommpay_message':
-          localizations.cashier_fiat_withdrawal_creditcard_ecommpay_message,
-      'cashier_fiat_withdrawal_creditcard_form_description':
-          localizations.cashier_fiat_withdrawal_creditcard_form_description,
-      'cashier_fiat_withdrawal_creditcard_message':
-          localizations.cashier_fiat_withdrawal_creditcard_message,
-      'cashier_fiat_withdrawal_creditcard_ravedirect_form_description':
+              .cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY_form_description,
+      'cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY_message':
+          localizations.cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY_message,
+      'cashier_fiat_withdrawal_CREDITCARD_form_description':
+          localizations.cashier_fiat_withdrawal_CREDITCARD_form_description,
+      'cashier_fiat_withdrawal_CREDITCARD_message':
+          localizations.cashier_fiat_withdrawal_CREDITCARD_message,
+      'cashier_fiat_withdrawal_CREDITCARD_RAVEDIRECT_form_description':
           localizations
-              .cashier_fiat_withdrawal_creditcard_ravedirect_form_description,
-      'cashier_fiat_withdrawal_creditcard_ravedirect_message':
-          localizations.cashier_fiat_withdrawal_creditcard_ravedirect_message,
-      'cashier_fiat_withdrawal_customer_local_name':
-          localizations.cashier_fiat_withdrawal_customer_local_name,
-      'cashier_fiat_withdrawal_customer_local_name_placeholder':
-          localizations.cashier_fiat_withdrawal_customer_local_name_placeholder,
-      'cashier_fiat_withdrawal_customer_name':
-          localizations.cashier_fiat_withdrawal_customer_name,
-      'cashier_fiat_withdrawal_customer_name_placeholder':
-          localizations.cashier_fiat_withdrawal_customer_name_placeholder,
-      'cashier_fiat_withdrawal_customername':
-          localizations.cashier_fiat_withdrawal_customername,
-      'cashier_fiat_withdrawal_customernumber':
-          localizations.cashier_fiat_withdrawal_customernumber,
-      'cashier_fiat_withdrawal_date_of_birth':
-          localizations.cashier_fiat_withdrawal_date_of_birth,
-      'cashier_fiat_withdrawal_date_of_birth_placeholder':
-          localizations.cashier_fiat_withdrawal_date_of_birth_placeholder,
+              .cashier_fiat_withdrawal_CREDITCARD_RAVEDIRECT_form_description,
+      'cashier_fiat_withdrawal_CREDITCARD_RAVEDIRECT_message':
+          localizations.cashier_fiat_withdrawal_CREDITCARD_RAVEDIRECT_message,
+      'cashier_fiat_withdrawal_CUSTOMER_LOCAL_NAME':
+          localizations.cashier_fiat_withdrawal_CUSTOMER_LOCAL_NAME,
+      'cashier_fiat_withdrawal_CUSTOMER_LOCAL_NAME_placeholder':
+          localizations.cashier_fiat_withdrawal_CUSTOMER_LOCAL_NAME_placeholder,
+      'cashier_fiat_withdrawal_CUSTOMER_NAME':
+          localizations.cashier_fiat_withdrawal_CUSTOMER_NAME,
+      'cashier_fiat_withdrawal_CUSTOMER_NAME_placeholder':
+          localizations.cashier_fiat_withdrawal_CUSTOMER_NAME_placeholder,
+      'cashier_fiat_withdrawal_customerName':
+          localizations.cashier_fiat_withdrawal_customerName,
+      'cashier_fiat_withdrawal_customerNumber':
+          localizations.cashier_fiat_withdrawal_customerNumber,
+      'cashier_fiat_withdrawal_DATE_OF_BIRTH':
+          localizations.cashier_fiat_withdrawal_DATE_OF_BIRTH,
+      'cashier_fiat_withdrawal_DATE_OF_BIRTH_placeholder':
+          localizations.cashier_fiat_withdrawal_DATE_OF_BIRTH_placeholder,
       'cashier_fiat_withdrawal_delete':
           localizations.cashier_fiat_withdrawal_delete,
-      'cashier_fiat_withdrawal_depends_on_amount':
-          localizations.cashier_fiat_withdrawal_depends_on_amount,
-      'cashier_fiat_withdrawal_ecopayz':
-          localizations.cashier_fiat_withdrawal_ecopayz,
-      'cashier_fiat_withdrawal_ecopayz_form_description':
-          localizations.cashier_fiat_withdrawal_ecopayz_form_description,
-      'cashier_fiat_withdrawal_ecopayz_message':
-          localizations.cashier_fiat_withdrawal_ecopayz_message,
+      'cashier_fiat_withdrawal_DEPENDS_ON_AMOUNT':
+          localizations.cashier_fiat_withdrawal_DEPENDS_ON_AMOUNT,
+      'cashier_fiat_withdrawal_ECOPAYZ':
+          localizations.cashier_fiat_withdrawal_ECOPAYZ,
+      'cashier_fiat_withdrawal_ECOPAYZ_form_description':
+          localizations.cashier_fiat_withdrawal_ECOPAYZ_form_description,
+      'cashier_fiat_withdrawal_ECOPAYZ_message':
+          localizations.cashier_fiat_withdrawal_ECOPAYZ_message,
       'cashier_fiat_withdrawal_email':
           localizations.cashier_fiat_withdrawal_email,
-      'cashier_fiat_withdrawal_enccreditcardnumber':
-          localizations.cashier_fiat_withdrawal_enccreditcardnumber,
-      'cashier_fiat_withdrawal_eur_global_description':
-          localizations.cashier_fiat_withdrawal_eur_global_description,
-      'cashier_fiat_withdrawal_expirymonth':
-          localizations.cashier_fiat_withdrawal_expirymonth,
-      'cashier_fiat_withdrawal_expiryyear':
-          localizations.cashier_fiat_withdrawal_expiryyear,
-      'cashier_fiat_withdrawal_ezeebill_bank_account_name':
-          localizations.cashier_fiat_withdrawal_ezeebill_bank_account_name,
-      'cashier_fiat_withdrawal_ezeebill_bank_account_name_placeholder':
+      'cashier_fiat_withdrawal_encCreditcardNumber':
+          localizations.cashier_fiat_withdrawal_encCreditcardNumber,
+      'cashier_fiat_withdrawal_EUR_global_description':
+          localizations.cashier_fiat_withdrawal_EUR_global_description,
+      'cashier_fiat_withdrawal_expiryMonth':
+          localizations.cashier_fiat_withdrawal_expiryMonth,
+      'cashier_fiat_withdrawal_expiryYear':
+          localizations.cashier_fiat_withdrawal_expiryYear,
+      'cashier_fiat_withdrawal_ezeebill_BANK_ACCOUNT_NAME':
+          localizations.cashier_fiat_withdrawal_ezeebill_BANK_ACCOUNT_NAME,
+      'cashier_fiat_withdrawal_ezeebill_BANK_ACCOUNT_NAME_placeholder':
           localizations
-              .cashier_fiat_withdrawal_ezeebill_bank_account_name_placeholder,
-      'cashier_fiat_withdrawal_ezeebill_bank_branch_placeholder': localizations
-          .cashier_fiat_withdrawal_ezeebill_bank_branch_placeholder,
-      'cashier_fiat_withdrawal_ezeebill_bank_name':
-          localizations.cashier_fiat_withdrawal_ezeebill_bank_name,
-      'cashier_fiat_withdrawal_ezeebill_bank_name_placeholder':
-          localizations.cashier_fiat_withdrawal_ezeebill_bank_name_placeholder,
-      'cashier_fiat_withdrawal_ezeebill_customer_name_placeholder':
+              .cashier_fiat_withdrawal_ezeebill_BANK_ACCOUNT_NAME_placeholder,
+      'cashier_fiat_withdrawal_ezeebill_BANK_BRANCH_placeholder': localizations
+          .cashier_fiat_withdrawal_ezeebill_BANK_BRANCH_placeholder,
+      'cashier_fiat_withdrawal_ezeebill_BANK_NAME':
+          localizations.cashier_fiat_withdrawal_ezeebill_BANK_NAME,
+      'cashier_fiat_withdrawal_ezeebill_BANK_NAME_placeholder':
+          localizations.cashier_fiat_withdrawal_ezeebill_BANK_NAME_placeholder,
+      'cashier_fiat_withdrawal_ezeebill_CUSTOMER_NAME_placeholder':
           localizations
-              .cashier_fiat_withdrawal_ezeebill_customer_name_placeholder,
+              .cashier_fiat_withdrawal_ezeebill_CUSTOMER_NAME_placeholder,
       'cashier_fiat_withdrawal_failure_message':
           localizations.cashier_fiat_withdrawal_failure_message,
-      'cashier_fiat_withdrawal_fee': localizations.cashier_fiat_withdrawal_fee,
-      'cashier_fiat_withdrawal_fee_add':
-          localizations.cashier_fiat_withdrawal_fee_add,
-      'cashier_fiat_withdrawal_fee_deduct':
-          localizations.cashier_fiat_withdrawal_fee_deduct,
-      'cashier_fiat_withdrawal_first_name':
-          localizations.cashier_fiat_withdrawal_first_name,
-      'cashier_fiat_withdrawal_first_name_placeholder':
-          localizations.cashier_fiat_withdrawal_first_name_placeholder,
-      'cashier_fiat_withdrawal_firstname':
-          localizations.cashier_fiat_withdrawal_firstname,
-      'cashier_fiat_withdrawal_free':
-          localizations.cashier_fiat_withdrawal_free,
+      'cashier_fiat_withdrawal_FEE': localizations.cashier_fiat_withdrawal_FEE,
+      'cashier_fiat_withdrawal_fee_ADD':
+          localizations.cashier_fiat_withdrawal_fee_ADD,
+      'cashier_fiat_withdrawal_fee_DEDUCT':
+          localizations.cashier_fiat_withdrawal_fee_DEDUCT,
+      'cashier_fiat_withdrawal_FIRST_NAME':
+          localizations.cashier_fiat_withdrawal_FIRST_NAME,
+      'cashier_fiat_withdrawal_FIRST_NAME_placeholder':
+          localizations.cashier_fiat_withdrawal_FIRST_NAME_placeholder,
+      'cashier_fiat_withdrawal_firstName':
+          localizations.cashier_fiat_withdrawal_firstName,
+      'cashier_fiat_withdrawal_FREE':
+          localizations.cashier_fiat_withdrawal_FREE,
       'cashier_fiat_withdrawal_global_description':
           localizations.cashier_fiat_withdrawal_global_description,
       'cashier_fiat_withdrawal_go_back':
           localizations.cashier_fiat_withdrawal_go_back,
-      'cashier_fiat_withdrawal_help_2_pay_qaicash_almost_done_message':
+      'cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_almost_done_message':
           localizations
-              .cashier_fiat_withdrawal_help_2_pay_qaicash_almost_done_message,
-      'cashier_fiat_withdrawal_help_2_pay_qaicash_message':
-          localizations.cashier_fiat_withdrawal_help_2_pay_qaicash_message,
-      'cashier_fiat_withdrawal_help_2_pay_qaicash_open_new_window_title':
+              .cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_almost_done_message,
+      'cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_message':
+          localizations.cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_message,
+      'cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_open_new_window_title':
           localizations
-              .cashier_fiat_withdrawal_help_2_pay_qaicash_open_new_window_title,
-      'cashier_fiat_withdrawal_inovapay_bank_transfer_brl_limits': localizations
-          .cashier_fiat_withdrawal_inovapay_bank_transfer_brl_limits,
-      'cashier_fiat_withdrawal_interac':
-          localizations.cashier_fiat_withdrawal_interac,
-      'cashier_fiat_withdrawal_interac_message':
-          localizations.cashier_fiat_withdrawal_interac_message,
-      'cashier_fiat_withdrawal_invalid_cpf_cpf':
-          localizations.cashier_fiat_withdrawal_invalid_cpf_cpf,
-      'cashier_fiat_withdrawal_invalid_format_bankaccount':
-          localizations.cashier_fiat_withdrawal_invalid_format_bankaccount,
-      'cashier_fiat_withdrawal_invalid_format_bankbranch':
-          localizations.cashier_fiat_withdrawal_invalid_format_bankbranch,
-      'cashier_fiat_withdrawal_invalid_address':
-          localizations.cashier_fiat_withdrawal_invalid_address,
-      'cashier_fiat_withdrawal_invalid_bank_account_number':
-          localizations.cashier_fiat_withdrawal_invalid_bank_account_number,
-      'cashier_fiat_withdrawal_invalid_bank_branch':
-          localizations.cashier_fiat_withdrawal_invalid_bank_branch,
-      'cashier_fiat_withdrawal_invalid_bank_branch_number':
-          localizations.cashier_fiat_withdrawal_invalid_bank_branch_number,
-      'cashier_fiat_withdrawal_invalid_bank_code':
-          localizations.cashier_fiat_withdrawal_invalid_bank_code,
-      'cashier_fiat_withdrawal_invalid_bank_ifsc':
-          localizations.cashier_fiat_withdrawal_invalid_bank_ifsc,
-      'cashier_fiat_withdrawal_invalid_bank_name':
-          localizations.cashier_fiat_withdrawal_invalid_bank_name,
-      'cashier_fiat_withdrawal_invalid_customer_local_name':
-          localizations.cashier_fiat_withdrawal_invalid_customer_local_name,
-      'cashier_fiat_withdrawal_invalid_customer_name':
-          localizations.cashier_fiat_withdrawal_invalid_customer_name,
-      'cashier_fiat_withdrawal_invalid_pix_key':
-          localizations.cashier_fiat_withdrawal_invalid_pix_key,
-      'cashier_fiat_withdrawal_jeton_corefy':
-          localizations.cashier_fiat_withdrawal_jeton_corefy,
-      'cashier_fiat_withdrawal_jeton_corefy_form_description':
-          localizations.cashier_fiat_withdrawal_jeton_corefy_form_description,
-      'cashier_fiat_withdrawal_jeton_corefy_message':
-          localizations.cashier_fiat_withdrawal_jeton_corefy_message,
+              .cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_open_new_window_title,
+      'cashier_fiat_withdrawal_inovapay_bank_transfer_BRL_limits': localizations
+          .cashier_fiat_withdrawal_inovapay_bank_transfer_BRL_limits,
+      'cashier_fiat_withdrawal_INTERAC':
+          localizations.cashier_fiat_withdrawal_INTERAC,
+      'cashier_fiat_withdrawal_INTERAC_message':
+          localizations.cashier_fiat_withdrawal_INTERAC_message,
+      'cashier_fiat_withdrawal_INVALID_CPF_cpf':
+          localizations.cashier_fiat_withdrawal_INVALID_CPF_cpf,
+      'cashier_fiat_withdrawal_INVALID_FORMAT_bankAccount':
+          localizations.cashier_fiat_withdrawal_INVALID_FORMAT_bankAccount,
+      'cashier_fiat_withdrawal_INVALID_FORMAT_bankBranch':
+          localizations.cashier_fiat_withdrawal_INVALID_FORMAT_bankBranch,
+      'cashier_fiat_withdrawal_INVALID_address':
+          localizations.cashier_fiat_withdrawal_INVALID_address,
+      'cashier_fiat_withdrawal_INVALID_ADDRESS':
+          localizations.cashier_fiat_withdrawal_INVALID_ADDRESS,
+      'cashier_fiat_withdrawal_INVALID_BANK_ACCOUNT_NUMBER':
+          localizations.cashier_fiat_withdrawal_INVALID_BANK_ACCOUNT_NUMBER,
+      'cashier_fiat_withdrawal_INVALID_BANK_BRANCH':
+          localizations.cashier_fiat_withdrawal_INVALID_BANK_BRANCH,
+      'cashier_fiat_withdrawal_INVALID_BANK_BRANCH_NUMBER':
+          localizations.cashier_fiat_withdrawal_INVALID_BANK_BRANCH_NUMBER,
+      'cashier_fiat_withdrawal_INVALID_BANK_CODE':
+          localizations.cashier_fiat_withdrawal_INVALID_BANK_CODE,
+      'cashier_fiat_withdrawal_INVALID_BANK_IFSC':
+          localizations.cashier_fiat_withdrawal_INVALID_BANK_IFSC,
+      'cashier_fiat_withdrawal_INVALID_BANK_NAME':
+          localizations.cashier_fiat_withdrawal_INVALID_BANK_NAME,
+      'cashier_fiat_withdrawal_INVALID_CUSTOMER_LOCAL_NAME':
+          localizations.cashier_fiat_withdrawal_INVALID_CUSTOMER_LOCAL_NAME,
+      'cashier_fiat_withdrawal_INVALID_CUSTOMER_NAME':
+          localizations.cashier_fiat_withdrawal_INVALID_CUSTOMER_NAME,
+      'cashier_fiat_withdrawal_INVALID_PIX_KEY':
+          localizations.cashier_fiat_withdrawal_INVALID_PIX_KEY,
+      'cashier_fiat_withdrawal_JETON_COREFY':
+          localizations.cashier_fiat_withdrawal_JETON_COREFY,
+      'cashier_fiat_withdrawal_JETON_COREFY_form_description':
+          localizations.cashier_fiat_withdrawal_JETON_COREFY_form_description,
+      'cashier_fiat_withdrawal_JETON_COREFY_message':
+          localizations.cashier_fiat_withdrawal_JETON_COREFY_message,
       'cashier_fiat_withdrawal_jeton_exchange_rate':
           localizations.cashier_fiat_withdrawal_jeton_exchange_rate,
-      'cashier_fiat_withdrawal_jeton_customer_name':
-          localizations.cashier_fiat_withdrawal_jeton_customer_name,
-      'cashier_fiat_withdrawal_jpy_global_description':
-          localizations.cashier_fiat_withdrawal_jpy_global_description,
-      'cashier_fiat_withdrawal_keyta_pay_bank_transfer_jpy_limits':
+      'cashier_fiat_withdrawal_jeton_CUSTOMER_NAME':
+          localizations.cashier_fiat_withdrawal_jeton_CUSTOMER_NAME,
+      'cashier_fiat_withdrawal_JPY_global_description':
+          localizations.cashier_fiat_withdrawal_JPY_global_description,
+      'cashier_fiat_withdrawal_keyta_pay_bank_transfer_JPY_limits':
           localizations
-              .cashier_fiat_withdrawal_keyta_pay_bank_transfer_jpy_limits,
-      'cashier_fiat_withdrawal_last_name':
-          localizations.cashier_fiat_withdrawal_last_name,
-      'cashier_fiat_withdrawal_last_name_placeholder':
-          localizations.cashier_fiat_withdrawal_last_name_placeholder,
-      'cashier_fiat_withdrawal_lastname':
-          localizations.cashier_fiat_withdrawal_lastname,
-      'cashier_fiat_withdrawal_local_bank_transfer_qaicash':
-          localizations.cashier_fiat_withdrawal_local_bank_transfer_qaicash,
-      'cashier_fiat_withdrawal_local_bank_transfer_qaicash_almost_done_message':
+              .cashier_fiat_withdrawal_keyta_pay_bank_transfer_JPY_limits,
+      'cashier_fiat_withdrawal_LAST_NAME':
+          localizations.cashier_fiat_withdrawal_LAST_NAME,
+      'cashier_fiat_withdrawal_LAST_NAME_placeholder':
+          localizations.cashier_fiat_withdrawal_LAST_NAME_placeholder,
+      'cashier_fiat_withdrawal_lastName':
+          localizations.cashier_fiat_withdrawal_lastName,
+      'cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH':
+          localizations.cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH,
+      'cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_almost_done_message':
           localizations
-              .cashier_fiat_withdrawal_local_bank_transfer_qaicash_almost_done_message,
-      'cashier_fiat_withdrawal_local_bank_transfer_qaicash_form_description':
+              .cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_almost_done_message,
+      'cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_form_description':
           localizations
-              .cashier_fiat_withdrawal_local_bank_transfer_qaicash_form_description,
-      'cashier_fiat_withdrawal_local_bank_transfer_qaicash_iframe_description':
+              .cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_form_description,
+      'cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_iframe_description':
           localizations
-              .cashier_fiat_withdrawal_local_bank_transfer_qaicash_iframe_description,
-      'cashier_fiat_withdrawal_local_bank_transfer_qaicash_message':
+              .cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_iframe_description,
+      'cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_message':
           localizations
-              .cashier_fiat_withdrawal_local_bank_transfer_qaicash_message,
-      'cashier_fiat_withdrawal_local_bank_transfer_qaicash_open_new_window_title':
+              .cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_message,
+      'cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_open_new_window_title':
           localizations
-              .cashier_fiat_withdrawal_local_bank_transfer_qaicash_open_new_window_title,
+              .cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_open_new_window_title,
       'cashier_fiat_withdrawal_max_limit':
           localizations.cashier_fiat_withdrawal_max_limit,
       'cashier_fiat_withdrawal_min_amount':
@@ -1344,67 +1359,69 @@ class AppLocalizationsMapper {
           localizations.cashier_fiat_withdrawal_min_withdrawal,
       'cashier_fiat_withdrawal_mobile':
           localizations.cashier_fiat_withdrawal_mobile,
-      'cashier_fiat_withdrawal_muchbetter':
-          localizations.cashier_fiat_withdrawal_muchbetter,
-      'cashier_fiat_withdrawal_muchbetter_form_description':
-          localizations.cashier_fiat_withdrawal_muchbetter_form_description,
-      'cashier_fiat_withdrawal_muchbetter_message':
-          localizations.cashier_fiat_withdrawal_muchbetter_message,
-      'cashier_fiat_withdrawal_nationalid':
-          localizations.cashier_fiat_withdrawal_nationalid,
-      'cashier_fiat_withdrawal_nationalidtype':
-          localizations.cashier_fiat_withdrawal_nationalidtype,
-      'cashier_fiat_withdrawal_neteller':
-          localizations.cashier_fiat_withdrawal_neteller,
-      'cashier_fiat_withdrawal_neteller_form_description':
-          localizations.cashier_fiat_withdrawal_neteller_form_description,
-      'cashier_fiat_withdrawal_neteller_message':
-          localizations.cashier_fiat_withdrawal_neteller_message,
+      'cashier_fiat_withdrawal_MUCHBETTER':
+          localizations.cashier_fiat_withdrawal_MUCHBETTER,
+      'cashier_fiat_withdrawal_MUCHBETTER_form_description':
+          localizations.cashier_fiat_withdrawal_MUCHBETTER_form_description,
+      'cashier_fiat_withdrawal_MUCHBETTER_message':
+          localizations.cashier_fiat_withdrawal_MUCHBETTER_message,
+      'cashier_fiat_withdrawal_nationalId':
+          localizations.cashier_fiat_withdrawal_nationalId,
+      'cashier_fiat_withdrawal_nationalIdType':
+          localizations.cashier_fiat_withdrawal_nationalIdType,
+      'cashier_fiat_withdrawal_NETELLER':
+          localizations.cashier_fiat_withdrawal_NETELLER,
+      'cashier_fiat_withdrawal_NETELLER_form_description':
+          localizations.cashier_fiat_withdrawal_NETELLER_form_description,
+      'cashier_fiat_withdrawal_NETELLER_message':
+          localizations.cashier_fiat_withdrawal_NETELLER_message,
       'cashier_fiat_withdrawal_next_step':
           localizations.cashier_fiat_withdrawal_next_step,
-      'cashier_fiat_withdrawal_not_enough_funds_amount':
-          localizations.cashier_fiat_withdrawal_not_enough_funds_amount,
-      'cashier_fiat_withdrawal_not_found_saved_account_uuid':
-          localizations.cashier_fiat_withdrawal_not_found_saved_account_uuid,
+      'cashier_fiat_withdrawal_NOT_ENOUGH_FUNDS_amount':
+          localizations.cashier_fiat_withdrawal_NOT_ENOUGH_FUNDS_amount,
+      'cashier_fiat_withdrawal_NOT_FOUND_SAVED_ACCOUNT_UUID':
+          localizations.cashier_fiat_withdrawal_NOT_FOUND_SAVED_ACCOUNT_UUID,
       'cashier_fiat_withdrawal_null':
           localizations.cashier_fiat_withdrawal_null,
       'cashier_fiat_withdrawal_overview':
           localizations.cashier_fiat_withdrawal_overview,
-      'cashier_fiat_withdrawal_pagava_bank_account_name':
-          localizations.cashier_fiat_withdrawal_pagava_bank_account_name,
-      'cashier_fiat_withdrawal_pagava_bank_account_name_placeholder':
+      'cashier_fiat_withdrawal_pagava_BANK_ACCOUNT_NAME':
+          localizations.cashier_fiat_withdrawal_pagava_BANK_ACCOUNT_NAME,
+      'cashier_fiat_withdrawal_pagava_BANK_ACCOUNT_NAME_placeholder':
           localizations
-              .cashier_fiat_withdrawal_pagava_bank_account_name_placeholder,
-      'cashier_fiat_withdrawal_pagava_customer_name_placeholder': localizations
-          .cashier_fiat_withdrawal_pagava_customer_name_placeholder,
-      'cashier_fiat_withdrawal_pagsmile_pix_brl_limits':
-          localizations.cashier_fiat_withdrawal_pagsmile_pix_brl_limits,
+              .cashier_fiat_withdrawal_pagava_BANK_ACCOUNT_NAME_placeholder,
+      'cashier_fiat_withdrawal_pagava_CUSTOMER_NAME_placeholder': localizations
+          .cashier_fiat_withdrawal_pagava_CUSTOMER_NAME_placeholder,
+      'cashier_fiat_withdrawal_pagsmile_pix_BRL_limits':
+          localizations.cashier_fiat_withdrawal_pagsmile_pix_BRL_limits,
       'cashier_fiat_withdrawal_password':
           localizations.cashier_fiat_withdrawal_password,
-      'cashier_fiat_withdrawal_pay4fun_webredirect_brl_limits':
-          localizations.cashier_fiat_withdrawal_pay4fun_webredirect_brl_limits,
+      'cashier_fiat_withdrawal_pay4fun_webredirect_BRL_limits':
+          localizations.cashier_fiat_withdrawal_pay4fun_webredirect_BRL_limits,
       'cashier_fiat_withdrawal_payment_methods':
           localizations.cashier_fiat_withdrawal_payment_methods,
-      'cashier_fiat_withdrawal_paysafecard':
-          localizations.cashier_fiat_withdrawal_paysafecard,
-      'cashier_fiat_withdrawal_paysafecard_form_description':
-          localizations.cashier_fiat_withdrawal_paysafecard_form_description,
-      'cashier_fiat_withdrawal_paysafecard_message':
-          localizations.cashier_fiat_withdrawal_paysafecard_message,
+      'cashier_fiat_withdrawal_PAYSAFECARD':
+          localizations.cashier_fiat_withdrawal_PAYSAFECARD,
+      'cashier_fiat_withdrawal_PAYSAFECARD_form_description':
+          localizations.cashier_fiat_withdrawal_PAYSAFECARD_form_description,
+      'cashier_fiat_withdrawal_PAYSAFECARD_message':
+          localizations.cashier_fiat_withdrawal_PAYSAFECARD_message,
       'cashier_fiat_withdrawal_personal_details':
           localizations.cashier_fiat_withdrawal_personal_details,
       'cashier_fiat_withdrawal_phone_number':
           localizations.cashier_fiat_withdrawal_phone_number,
-      'cashier_fiat_withdrawal_phone_number_placeholder':
-          localizations.cashier_fiat_withdrawal_phone_number_placeholder,
-      'cashier_fiat_withdrawal_phonenumber_placeholder':
-          localizations.cashier_fiat_withdrawal_phonenumber_placeholder,
-      'cashier_fiat_withdrawal_pinbank_bank_branch_placeholder':
-          localizations.cashier_fiat_withdrawal_pinbank_bank_branch_placeholder,
-      'cashier_fiat_withdrawal_pix_key':
-          localizations.cashier_fiat_withdrawal_pix_key,
-      'cashier_fiat_withdrawal_pix_key_placeholder':
-          localizations.cashier_fiat_withdrawal_pix_key_placeholder,
+      'cashier_fiat_withdrawal_PHONE_NUMBER':
+          localizations.cashier_fiat_withdrawal_PHONE_NUMBER,
+      'cashier_fiat_withdrawal_PHONE_NUMBER_placeholder':
+          localizations.cashier_fiat_withdrawal_PHONE_NUMBER_placeholder,
+      'cashier_fiat_withdrawal_phoneNumber_placeholder':
+          localizations.cashier_fiat_withdrawal_phoneNumber_placeholder,
+      'cashier_fiat_withdrawal_pinbank_BANK_BRANCH_placeholder':
+          localizations.cashier_fiat_withdrawal_pinbank_BANK_BRANCH_placeholder,
+      'cashier_fiat_withdrawal_PIX_KEY':
+          localizations.cashier_fiat_withdrawal_PIX_KEY,
+      'cashier_fiat_withdrawal_PIX_KEY_placeholder':
+          localizations.cashier_fiat_withdrawal_PIX_KEY_placeholder,
       'cashier_fiat_withdrawal_please_enter_amount':
           localizations.cashier_fiat_withdrawal_please_enter_amount,
       'cashier_fiat_withdrawal_please_enter_cpf_message':
@@ -1412,130 +1429,130 @@ class AppLocalizationsMapper {
       'cashier_fiat_withdrawal_please_enter_personal_details_message':
           localizations
               .cashier_fiat_withdrawal_please_enter_personal_details_message,
-      'cashier_fiat_withdrawal_postcode':
-          localizations.cashier_fiat_withdrawal_postcode,
-      'cashier_fiat_withdrawal_postcode_placeholder':
-          localizations.cashier_fiat_withdrawal_postcode_placeholder,
-      'cashier_fiat_withdrawal_province':
-          localizations.cashier_fiat_withdrawal_province,
-      'cashier_fiat_withdrawal_required_cardholder':
-          localizations.cashier_fiat_withdrawal_required_cardholder,
+      'cashier_fiat_withdrawal_POSTCODE':
+          localizations.cashier_fiat_withdrawal_POSTCODE,
+      'cashier_fiat_withdrawal_POSTCODE_placeholder':
+          localizations.cashier_fiat_withdrawal_POSTCODE_placeholder,
+      'cashier_fiat_withdrawal_PROVINCE':
+          localizations.cashier_fiat_withdrawal_PROVINCE,
+      'cashier_fiat_withdrawal_REQUIRED_cardHolder':
+          localizations.cashier_fiat_withdrawal_REQUIRED_cardHolder,
       'cashier_fiat_withdrawal_saved_accounts':
           localizations.cashier_fiat_withdrawal_saved_accounts,
       'cashier_fiat_withdrawal_service':
           localizations.cashier_fiat_withdrawal_service,
-      'cashier_fiat_withdrawal_skrill':
-          localizations.cashier_fiat_withdrawal_skrill,
-      'cashier_fiat_withdrawal_skrill_form_description':
-          localizations.cashier_fiat_withdrawal_skrill_form_description,
-      'cashier_fiat_withdrawal_skrill_message':
-          localizations.cashier_fiat_withdrawal_skrill_message,
-      'cashier_fiat_withdrawal_skrillqco_message':
-          localizations.cashier_fiat_withdrawal_skrillqco_message,
-      'cashier_fiat_withdrawal_skrillqco_rapidtransfer':
-          localizations.cashier_fiat_withdrawal_skrillqco_rapidtransfer,
-      'cashier_fiat_withdrawal_skrillqco_rapidtransfer_form_description':
+      'cashier_fiat_withdrawal_SKRILL':
+          localizations.cashier_fiat_withdrawal_SKRILL,
+      'cashier_fiat_withdrawal_SKRILL_form_description':
+          localizations.cashier_fiat_withdrawal_SKRILL_form_description,
+      'cashier_fiat_withdrawal_SKRILL_message':
+          localizations.cashier_fiat_withdrawal_SKRILL_message,
+      'cashier_fiat_withdrawal_SKRILLQCO_message':
+          localizations.cashier_fiat_withdrawal_SKRILLQCO_message,
+      'cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER':
+          localizations.cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER,
+      'cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER_form_description':
           localizations
-              .cashier_fiat_withdrawal_skrillqco_rapidtransfer_form_description,
-      'cashier_fiat_withdrawal_skrillqco_rapidtransfer_message':
-          localizations.cashier_fiat_withdrawal_skrillqco_rapidtransfer_message,
-      'cashier_fiat_withdrawal_sofort':
-          localizations.cashier_fiat_withdrawal_sofort,
-      'cashier_fiat_withdrawal_sofort_form_description':
-          localizations.cashier_fiat_withdrawal_sofort_form_description,
-      'cashier_fiat_withdrawal_sofort_message':
-          localizations.cashier_fiat_withdrawal_sofort_message,
-      'cashier_fiat_withdrawal_state':
-          localizations.cashier_fiat_withdrawal_state,
-      'cashier_fiat_withdrawal_state_placeholder':
-          localizations.cashier_fiat_withdrawal_state_placeholder,
-      'cashier_fiat_withdrawal_sticpay':
-          localizations.cashier_fiat_withdrawal_sticpay,
-      'cashier_fiat_withdrawal_sticpay_form_description':
-          localizations.cashier_fiat_withdrawal_sticpay_form_description,
-      'cashier_fiat_withdrawal_sticpay_message':
-          localizations.cashier_fiat_withdrawal_sticpay_message,
+              .cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER_form_description,
+      'cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER_message':
+          localizations.cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER_message,
+      'cashier_fiat_withdrawal_SOFORT':
+          localizations.cashier_fiat_withdrawal_SOFORT,
+      'cashier_fiat_withdrawal_SOFORT_form_description':
+          localizations.cashier_fiat_withdrawal_SOFORT_form_description,
+      'cashier_fiat_withdrawal_SOFORT_message':
+          localizations.cashier_fiat_withdrawal_SOFORT_message,
+      'cashier_fiat_withdrawal_STATE':
+          localizations.cashier_fiat_withdrawal_STATE,
+      'cashier_fiat_withdrawal_STATE_placeholder':
+          localizations.cashier_fiat_withdrawal_STATE_placeholder,
+      'cashier_fiat_withdrawal_STICPAY':
+          localizations.cashier_fiat_withdrawal_STICPAY,
+      'cashier_fiat_withdrawal_STICPAY_form_description':
+          localizations.cashier_fiat_withdrawal_STICPAY_form_description,
+      'cashier_fiat_withdrawal_STICPAY_message':
+          localizations.cashier_fiat_withdrawal_STICPAY_message,
       'cashier_fiat_withdrawal_submit':
           localizations.cashier_fiat_withdrawal_submit,
       'cashier_fiat_withdrawal_subtotal':
           localizations.cashier_fiat_withdrawal_subtotal,
       'cashier_fiat_withdrawal_success_message':
           localizations.cashier_fiat_withdrawal_success_message,
-      'cashier_fiat_withdrawal_thb_global_description':
-          localizations.cashier_fiat_withdrawal_thb_global_description,
-      'cashier_fiat_withdrawal_timeframe_bank_transfer_animex':
-          localizations.cashier_fiat_withdrawal_timeframe_bank_transfer_animex,
-      'cashier_fiat_withdrawal_timeframe_bank_transfer_trustly':
-          localizations.cashier_fiat_withdrawal_timeframe_bank_transfer_trustly,
-      'cashier_fiat_withdrawal_timeframe_creditcard':
-          localizations.cashier_fiat_withdrawal_timeframe_creditcard,
-      'cashier_fiat_withdrawal_timeframe_creditcard_ecommpay':
-          localizations.cashier_fiat_withdrawal_timeframe_creditcard_ecommpay,
-      'cashier_fiat_withdrawal_timeframe_creditcard_ravedirect':
-          localizations.cashier_fiat_withdrawal_timeframe_creditcard_ravedirect,
-      'cashier_fiat_withdrawal_timeframe_ecopayz':
-          localizations.cashier_fiat_withdrawal_timeframe_ecopayz,
-      'cashier_fiat_withdrawal_timeframe_help_2_pay_qaicash':
-          localizations.cashier_fiat_withdrawal_timeframe_help_2_pay_qaicash,
-      'cashier_fiat_withdrawal_timeframe_interac':
-          localizations.cashier_fiat_withdrawal_timeframe_interac,
-      'cashier_fiat_withdrawal_timeframe_jeton_corefy':
-          localizations.cashier_fiat_withdrawal_timeframe_jeton_corefy,
-      'cashier_fiat_withdrawal_timeframe_local_bank_transfer_qaicash':
+      'cashier_fiat_withdrawal_THB_global_description':
+          localizations.cashier_fiat_withdrawal_THB_global_description,
+      'cashier_fiat_withdrawal_TIMEFRAME_BANK_TRANSFER_ANIMEX':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_BANK_TRANSFER_ANIMEX,
+      'cashier_fiat_withdrawal_TIMEFRAME_BANK_TRANSFER_TRUSTLY':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_BANK_TRANSFER_TRUSTLY,
+      'cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD,
+      'cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD_ECOMMPAY':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD_ECOMMPAY,
+      'cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD_RAVEDIRECT':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD_RAVEDIRECT,
+      'cashier_fiat_withdrawal_TIMEFRAME_ECOPAYZ':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_ECOPAYZ,
+      'cashier_fiat_withdrawal_TIMEFRAME_HELP_2_PAY_QAICASH':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_HELP_2_PAY_QAICASH,
+      'cashier_fiat_withdrawal_TIMEFRAME_INTERAC':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_INTERAC,
+      'cashier_fiat_withdrawal_TIMEFRAME_JETON_COREFY':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_JETON_COREFY,
+      'cashier_fiat_withdrawal_TIMEFRAME_LOCAL_BANK_TRANSFER_QAICASH':
           localizations
-              .cashier_fiat_withdrawal_timeframe_local_bank_transfer_qaicash,
-      'cashier_fiat_withdrawal_timeframe_muchbetter':
-          localizations.cashier_fiat_withdrawal_timeframe_muchbetter,
-      'cashier_fiat_withdrawal_timeframe_neteller':
-          localizations.cashier_fiat_withdrawal_timeframe_neteller,
-      'cashier_fiat_withdrawal_timeframe_paysafecard':
-          localizations.cashier_fiat_withdrawal_timeframe_paysafecard,
-      'cashier_fiat_withdrawal_timeframe_skrill':
-          localizations.cashier_fiat_withdrawal_timeframe_skrill,
-      'cashier_fiat_withdrawal_timeframe_skrillqco':
-          localizations.cashier_fiat_withdrawal_timeframe_skrillqco,
-      'cashier_fiat_withdrawal_timeframe_skrillqco_rapidtransfer': localizations
-          .cashier_fiat_withdrawal_timeframe_skrillqco_rapidtransfer,
-      'cashier_fiat_withdrawal_timeframe_sofort':
-          localizations.cashier_fiat_withdrawal_timeframe_sofort,
-      'cashier_fiat_withdrawal_timeframe_sticpay':
-          localizations.cashier_fiat_withdrawal_timeframe_sticpay,
-      'cashier_fiat_withdrawal_timeframe_trustly':
-          localizations.cashier_fiat_withdrawal_timeframe_trustly,
-      'cashier_fiat_withdrawal_timeframe_zimpler':
-          localizations.cashier_fiat_withdrawal_timeframe_zimpler,
+              .cashier_fiat_withdrawal_TIMEFRAME_LOCAL_BANK_TRANSFER_QAICASH,
+      'cashier_fiat_withdrawal_TIMEFRAME_MUCHBETTER':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_MUCHBETTER,
+      'cashier_fiat_withdrawal_TIMEFRAME_NETELLER':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_NETELLER,
+      'cashier_fiat_withdrawal_TIMEFRAME_PAYSAFECARD':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_PAYSAFECARD,
+      'cashier_fiat_withdrawal_TIMEFRAME_SKRILL':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_SKRILL,
+      'cashier_fiat_withdrawal_TIMEFRAME_SKRILLQCO':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_SKRILLQCO,
+      'cashier_fiat_withdrawal_TIMEFRAME_SKRILLQCO_RAPIDTRANSFER': localizations
+          .cashier_fiat_withdrawal_TIMEFRAME_SKRILLQCO_RAPIDTRANSFER,
+      'cashier_fiat_withdrawal_TIMEFRAME_SOFORT':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_SOFORT,
+      'cashier_fiat_withdrawal_TIMEFRAME_STICPAY':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_STICPAY,
+      'cashier_fiat_withdrawal_TIMEFRAME_TRUSTLY':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_TRUSTLY,
+      'cashier_fiat_withdrawal_TIMEFRAME_ZIMPLER':
+          localizations.cashier_fiat_withdrawal_TIMEFRAME_ZIMPLER,
       'cashier_fiat_withdrawal_total':
           localizations.cashier_fiat_withdrawal_total,
-      'cashier_fiat_withdrawal_total_add':
-          localizations.cashier_fiat_withdrawal_total_add,
-      'cashier_fiat_withdrawal_total_deduct':
-          localizations.cashier_fiat_withdrawal_total_deduct,
+      'cashier_fiat_withdrawal_total_ADD':
+          localizations.cashier_fiat_withdrawal_total_ADD,
+      'cashier_fiat_withdrawal_total_DEDUCT':
+          localizations.cashier_fiat_withdrawal_total_DEDUCT,
       'cashier_fiat_withdrawal_transaction_id':
           localizations.cashier_fiat_withdrawal_transaction_id,
-      'cashier_fiat_withdrawal_trustly':
-          localizations.cashier_fiat_withdrawal_trustly,
-      'cashier_fiat_withdrawal_trustly_form_description':
-          localizations.cashier_fiat_withdrawal_trustly_form_description,
-      'cashier_fiat_withdrawal_trustly_iframe_description':
-          localizations.cashier_fiat_withdrawal_trustly_iframe_description,
-      'cashier_fiat_withdrawal_trustly_message':
-          localizations.cashier_fiat_withdrawal_trustly_message,
+      'cashier_fiat_withdrawal_TRUSTLY':
+          localizations.cashier_fiat_withdrawal_TRUSTLY,
+      'cashier_fiat_withdrawal_TRUSTLY_form_description':
+          localizations.cashier_fiat_withdrawal_TRUSTLY_form_description,
+      'cashier_fiat_withdrawal_TRUSTLY_iframe_description':
+          localizations.cashier_fiat_withdrawal_TRUSTLY_iframe_description,
+      'cashier_fiat_withdrawal_TRUSTLY_message':
+          localizations.cashier_fiat_withdrawal_TRUSTLY_message,
       'cashier_fiat_withdrawal_try_again':
           localizations.cashier_fiat_withdrawal_try_again,
       'cashier_fiat_withdrawal_username':
           localizations.cashier_fiat_withdrawal_username,
-      'cashier_fiat_withdrawal_webredirect_sticpay':
-          localizations.cashier_fiat_withdrawal_webredirect_sticpay,
-      'cashier_fiat_withdrawal_zimpler':
-          localizations.cashier_fiat_withdrawal_zimpler,
-      'cashier_fiat_withdrawal_zimpler_form_description':
-          localizations.cashier_fiat_withdrawal_zimpler_form_description,
-      'cashier_fiat_withdrawal_zimpler_message':
-          localizations.cashier_fiat_withdrawal_zimpler_message,
+      'cashier_fiat_withdrawal_WEBREDIRECT_STICPAY':
+          localizations.cashier_fiat_withdrawal_WEBREDIRECT_STICPAY,
+      'cashier_fiat_withdrawal_ZIMPLER':
+          localizations.cashier_fiat_withdrawal_ZIMPLER,
+      'cashier_fiat_withdrawal_ZIMPLER_form_description':
+          localizations.cashier_fiat_withdrawal_ZIMPLER_form_description,
+      'cashier_fiat_withdrawal_ZIMPLER_message':
+          localizations.cashier_fiat_withdrawal_ZIMPLER_message,
       'cashier_filer_by_date': localizations.cashier_filer_by_date,
       'cashier_filter_by_date': localizations.cashier_filter_by_date,
       'cashier_finances': localizations.cashier_finances,
-      'cashier_firstname': localizations.cashier_firstname,
+      'cashier_firstName': localizations.cashier_firstName,
       'cashier_forfeit': localizations.cashier_forfeit,
       'cashier_from_date': localizations.cashier_from_date,
       'cashier_get_bitcoins': localizations.cashier_get_bitcoins,
@@ -1550,14 +1567,14 @@ class AppLocalizationsMapper {
           localizations.cashier_hide_other_payment_options,
       'cashier_hide_withdraw_history':
           localizations.cashier_hide_withdraw_history,
-      'cashier_hkd': localizations.cashier_hkd,
+      'cashier_HKD': localizations.cashier_HKD,
       'cashier_if_you_dont_have_btc':
           localizations.cashier_if_you_dont_have_btc,
       'cashier_in_order_to_make_a_deposit':
           localizations.cashier_in_order_to_make_a_deposit,
       'cashier_initialize_account_web_resource':
           localizations.cashier_initialize_account_web_resource,
-      'cashier_inr': localizations.cashier_inr,
+      'cashier_INR': localizations.cashier_INR,
       'cashier_instant_bank_transfer_success':
           localizations.cashier_instant_bank_transfer_success,
       'cashier_instructions': localizations.cashier_instructions,
@@ -1566,23 +1583,23 @@ class AppLocalizationsMapper {
       'cashier_invalid_form_data': localizations.cashier_invalid_form_data,
       'cashier_invoice_address': localizations.cashier_invoice_address,
       'cashier_jeton_title': localizations.cashier_jeton_title,
-      'cashier_jpy': localizations.cashier_jpy,
-      'cashier_jpy_deposit_jeton_description':
-          localizations.cashier_jpy_deposit_jeton_description,
-      'cashier_jpy_deposit_jpysecure_description':
-          localizations.cashier_jpy_deposit_jpysecure_description,
-      'cashier_jpy_deposit_jpysecure_title':
-          localizations.cashier_jpy_deposit_jpysecure_title,
-      'cashier_jpy_deposit_pagava_description':
-          localizations.cashier_jpy_deposit_pagava_description,
-      'cashier_jpy_withdraw_jeton_description':
-          localizations.cashier_jpy_withdraw_jeton_description,
-      'cashier_jpy_withdraw_jpysecure_description':
-          localizations.cashier_jpy_withdraw_jpysecure_description,
-      'cashier_jpy_withdraw_jpysecure_title':
-          localizations.cashier_jpy_withdraw_jpysecure_title,
-      'cashier_jpy_withdraw_pagava_description':
-          localizations.cashier_jpy_withdraw_pagava_description,
+      'cashier_JPY': localizations.cashier_JPY,
+      'cashier_JPY_deposit_jeton_description':
+          localizations.cashier_JPY_deposit_jeton_description,
+      'cashier_JPY_deposit_jpysecure_description':
+          localizations.cashier_JPY_deposit_jpysecure_description,
+      'cashier_JPY_deposit_jpysecure_title':
+          localizations.cashier_JPY_deposit_jpysecure_title,
+      'cashier_JPY_deposit_pagava_description':
+          localizations.cashier_JPY_deposit_pagava_description,
+      'cashier_JPY_withdraw_jeton_description':
+          localizations.cashier_JPY_withdraw_jeton_description,
+      'cashier_JPY_withdraw_jpysecure_description':
+          localizations.cashier_JPY_withdraw_jpysecure_description,
+      'cashier_JPY_withdraw_jpysecure_title':
+          localizations.cashier_JPY_withdraw_jpysecure_title,
+      'cashier_JPY_withdraw_pagava_description':
+          localizations.cashier_JPY_withdraw_pagava_description,
       'cashier_kyc_banner_body_id_expired':
           localizations.cashier_kyc_banner_body_id_expired,
       'cashier_kyc_banner_body_threshold_1':
@@ -1601,20 +1618,20 @@ class AppLocalizationsMapper {
       'cashier_labels_verify_email': localizations.cashier_labels_verify_email,
       'cashier_labels_verify_phone_number':
           localizations.cashier_labels_verify_phone_number,
-      'cashier_lastname': localizations.cashier_lastname,
+      'cashier_lastName': localizations.cashier_lastName,
       'cashier_less_options': localizations.cashier_less_options,
       'cashier_live_support': localizations.cashier_live_support,
       'cashier_load_more': localizations.cashier_load_more,
-      'cashier_ltc': localizations.cashier_ltc,
-      'cashier_matic': localizations.cashier_matic,
+      'cashier_LTC': localizations.cashier_LTC,
+      'cashier_MATIC': localizations.cashier_MATIC,
       'cashier_max_deposit': localizations.cashier_max_deposit,
       'cashier_max_withdraw': localizations.cashier_max_withdraw,
       'cashier_metamask': localizations.cashier_metamask,
       'cashier_metamask_desc': localizations.cashier_metamask_desc,
       'cashier_metamask_wallet': localizations.cashier_metamask_wallet,
-      'cashier_metamask_insufficient_funds':
-          localizations.cashier_metamask_insufficient_funds,
-      'cashier_metric_prefix_btc': localizations.cashier_metric_prefix_btc,
+      'cashier_metamask_INSUFFICIENT_FUNDS':
+          localizations.cashier_metamask_INSUFFICIENT_FUNDS,
+      'cashier_metric_prefix_BTC': localizations.cashier_metric_prefix_BTC,
       'cashier_minimum_deposit_ada': localizations.cashier_minimum_deposit_ada,
       'cashier_minimum_deposit_amount':
           localizations.cashier_minimum_deposit_amount,
@@ -1747,8 +1764,8 @@ class AppLocalizationsMapper {
       'cashier_paypay_deposit_page_title':
           localizations.cashier_paypay_deposit_page_title,
       'cashier_paypay_description': localizations.cashier_paypay_description,
-      'cashier_paypay_description_jpy':
-          localizations.cashier_paypay_description_jpy,
+      'cashier_paypay_description_JPY':
+          localizations.cashier_paypay_description_JPY,
       'cashier_paypay_disabled_payout':
           localizations.cashier_paypay_disabled_payout,
       'cashier_paypay_disabled_region':
@@ -1818,46 +1835,46 @@ class AppLocalizationsMapper {
       'cashier_send': localizations.cashier_send,
       'cashier_send_email': localizations.cashier_send_email,
       'cashier_send_to': localizations.cashier_send_to,
-      'cashier_send_your_ada_deposit':
-          localizations.cashier_send_your_ada_deposit,
-      'cashier_send_your_ada_withdraw':
-          localizations.cashier_send_your_ada_withdraw,
-      'cashier_send_your_btc_deposit':
-          localizations.cashier_send_your_btc_deposit,
-      'cashier_send_your_btc_withdraw':
-          localizations.cashier_send_your_btc_withdraw,
-      'cashier_send_your_doge_deposit':
-          localizations.cashier_send_your_doge_deposit,
-      'cashier_send_your_doge_withdraw':
-          localizations.cashier_send_your_doge_withdraw,
-      'cashier_send_your_eth_withdraw':
-          localizations.cashier_send_your_eth_withdraw,
-      'cashier_send_your_ltc_deposit':
-          localizations.cashier_send_your_ltc_deposit,
-      'cashier_send_your_ltc_withdraw':
-          localizations.cashier_send_your_ltc_withdraw,
-      'cashier_send_your_soc_deposit':
-          localizations.cashier_send_your_soc_deposit,
-      'cashier_send_your_trx_deposit':
-          localizations.cashier_send_your_trx_deposit,
-      'cashier_send_your_trx_withdraw':
-          localizations.cashier_send_your_trx_withdraw,
-      'cashier_send_your_usdt_deposit':
-          localizations.cashier_send_your_usdt_deposit,
-      'cashier_send_your_usdt_withdraw':
-          localizations.cashier_send_your_usdt_withdraw,
-      'cashier_send_your_usdt_tron__withdraw':
-          localizations.cashier_send_your_usdt_tron__withdraw,
-      'cashier_send_your_xrp_deposit':
-          localizations.cashier_send_your_xrp_deposit,
-      'cashier_send_your_xrp_withdraw':
-          localizations.cashier_send_your_xrp_withdraw,
+      'cashier_send_your_ADA_deposit':
+          localizations.cashier_send_your_ADA_deposit,
+      'cashier_send_your_ADA_withdraw':
+          localizations.cashier_send_your_ADA_withdraw,
+      'cashier_send_your_BTC_deposit':
+          localizations.cashier_send_your_BTC_deposit,
+      'cashier_send_your_BTC_withdraw':
+          localizations.cashier_send_your_BTC_withdraw,
+      'cashier_send_your_DOGE_deposit':
+          localizations.cashier_send_your_DOGE_deposit,
+      'cashier_send_your_DOGE_withdraw':
+          localizations.cashier_send_your_DOGE_withdraw,
+      'cashier_send_your_ETH_withdraw':
+          localizations.cashier_send_your_ETH_withdraw,
+      'cashier_send_your_LTC_deposit':
+          localizations.cashier_send_your_LTC_deposit,
+      'cashier_send_your_LTC_withdraw':
+          localizations.cashier_send_your_LTC_withdraw,
+      'cashier_send_your_SOC_deposit':
+          localizations.cashier_send_your_SOC_deposit,
+      'cashier_send_your_TRX_deposit':
+          localizations.cashier_send_your_TRX_deposit,
+      'cashier_send_your_TRX_withdraw':
+          localizations.cashier_send_your_TRX_withdraw,
+      'cashier_send_your_USDT_deposit':
+          localizations.cashier_send_your_USDT_deposit,
+      'cashier_send_your_USDT_withdraw':
+          localizations.cashier_send_your_USDT_withdraw,
+      'cashier_send_your_USDT_TRON__withdraw':
+          localizations.cashier_send_your_USDT_TRON__withdraw,
+      'cashier_send_your_XRP_deposit':
+          localizations.cashier_send_your_XRP_deposit,
+      'cashier_send_your_XRP_withdraw':
+          localizations.cashier_send_your_XRP_withdraw,
       'cashier_show_less': localizations.cashier_show_less,
       'cashier_show_more': localizations.cashier_show_more,
       'cashier_simplex_instruction': localizations.cashier_simplex_instruction,
-      'cashier_soc': localizations.cashier_soc,
-      'cashier_soc_deposit_description':
-          localizations.cashier_soc_deposit_description,
+      'cashier_SOC': localizations.cashier_SOC,
+      'cashier_SOC_deposit_description':
+          localizations.cashier_SOC_deposit_description,
       'cashier_social_bitcasino_instagram':
           localizations.cashier_social_bitcasino_instagram,
       'cashier_social_bitcasino_tiktok':
@@ -1882,14 +1899,14 @@ class AppLocalizationsMapper {
       'cashier_sumopay_title': localizations.cashier_sumopay_title,
       'cashier_support': localizations.cashier_support,
       'cashier_support_settings': localizations.cashier_support_settings,
-      'cashier_thb': localizations.cashier_thb,
+      'cashier_THB': localizations.cashier_THB,
       'cashier_to_date': localizations.cashier_to_date,
       'cashier_today': localizations.cashier_today,
-      'cashier_ton': localizations.cashier_ton,
+      'cashier_TON': localizations.cashier_TON,
       'cashier_ton_message_copied': localizations.cashier_ton_message_copied,
-      'cashier_ton_wallets': localizations.cashier_ton_wallets,
-      'cashier_ton_wallets_description':
-          localizations.cashier_ton_wallets_description,
+      'cashier_TON_wallets': localizations.cashier_TON_wallets,
+      'cashier_TON_wallets_description':
+          localizations.cashier_TON_wallets_description,
       'cashier_ton_invoice_id_copied':
           localizations.cashier_ton_invoice_id_copied,
       'cashier_tooltip_fee': localizations.cashier_tooltip_fee,
@@ -1906,63 +1923,71 @@ class AppLocalizationsMapper {
       'cashier_transaction_amount': localizations.cashier_transaction_amount,
       'cashier_transaction_approved':
           localizations.cashier_transaction_approved,
+      'cashier_transaction_APPROVED':
+          localizations.cashier_transaction_APPROVED,
       'cashier_transaction_approving':
           localizations.cashier_transaction_approving,
-      'cashier_transaction_authorized':
-          localizations.cashier_transaction_authorized,
+      'cashier_transaction_APPROVING':
+          localizations.cashier_transaction_APPROVING,
+      'cashier_transaction_AUTHORIZED':
+          localizations.cashier_transaction_AUTHORIZED,
       'cashier_transaction_bet': localizations.cashier_transaction_bet,
       'cashier_transaction_bitcoin_rate_applied':
           localizations.cashier_transaction_bitcoin_rate_applied,
-      'cashier_transaction_cancelled':
-          localizations.cashier_transaction_cancelled,
+      'cashier_transaction_CANCELLED':
+          localizations.cashier_transaction_CANCELLED,
+      'cashier_transaction_CANCELLED_BY_USER':
+          localizations.cashier_transaction_CANCELLED_BY_USER,
       'cashier_transaction_cancelled_by_user':
           localizations.cashier_transaction_cancelled_by_user,
       'cashier_transaction_confirmation_pending':
           localizations.cashier_transaction_confirmation_pending,
       'cashier_transaction_confirmations':
           localizations.cashier_transaction_confirmations,
-      'cashier_transaction_confirmed':
-          localizations.cashier_transaction_confirmed,
+      'cashier_transaction_CONFIRMED':
+          localizations.cashier_transaction_CONFIRMED,
       'cashier_transaction_credit': localizations.cashier_transaction_credit,
       'cashier_transaction_date': localizations.cashier_transaction_date,
       'cashier_transaction_date_time':
           localizations.cashier_transaction_date_time,
       'cashier_transaction_debit': localizations.cashier_transaction_debit,
-      'cashier_transaction_declined':
-          localizations.cashier_transaction_declined,
-      'cashier_transaction_deleted': localizations.cashier_transaction_deleted,
+      'cashier_transaction_DECLINED':
+          localizations.cashier_transaction_DECLINED,
+      'cashier_transaction_DELETED': localizations.cashier_transaction_DELETED,
       'cashier_transaction_deposit': localizations.cashier_transaction_deposit,
       'cashier_transaction_description_title':
           localizations.cashier_transaction_description_title,
       'cashier_transaction_ending_balance':
           localizations.cashier_transaction_ending_balance,
-      'cashier_transaction_expired': localizations.cashier_transaction_expired,
-      'cashier_transaction_failed': localizations.cashier_transaction_failed,
+      'cashier_transaction_Expired': localizations.cashier_transaction_Expired,
+      'cashier_transaction_EXPIRED': localizations.cashier_transaction_EXPIRED,
+      'cashier_transaction_FAILED': localizations.cashier_transaction_FAILED,
       'cashier_transaction_from': localizations.cashier_transaction_from,
-      'cashier_transaction_in_progress':
-          localizations.cashier_transaction_in_progress,
+      'cashier_transaction_IN_PROGRESS':
+          localizations.cashier_transaction_IN_PROGRESS,
       'cashier_transaction_info_bet':
           localizations.cashier_transaction_info_bet,
       'cashier_transaction_info_rollback':
           localizations.cashier_transaction_info_rollback,
       'cashier_transaction_info_win':
           localizations.cashier_transaction_info_win,
-      'cashier_transaction_input_required':
-          localizations.cashier_transaction_input_required,
+      'cashier_transaction_INPUT_REQUIRED':
+          localizations.cashier_transaction_INPUT_REQUIRED,
       'cashier_transaction_link': localizations.cashier_transaction_link,
-      'cashier_transaction_new': localizations.cashier_transaction_new,
+      'cashier_transaction_NEW': localizations.cashier_transaction_NEW,
       'cashier_transaction_pending': localizations.cashier_transaction_pending,
-      'cashier_transaction_processing':
-          localizations.cashier_transaction_processing,
-      'cashier_transaction_rejected':
-          localizations.cashier_transaction_rejected,
+      'cashier_transaction_PENDING': localizations.cashier_transaction_PENDING,
+      'cashier_transaction_PROCESSING':
+          localizations.cashier_transaction_PROCESSING,
+      'cashier_transaction_REJECTED':
+          localizations.cashier_transaction_REJECTED,
       'cashier_transaction_resume_transaction':
           localizations.cashier_transaction_resume_transaction,
       'cashier_transaction_rollback':
           localizations.cashier_transaction_rollback,
       'cashier_transaction_round_id':
           localizations.cashier_transaction_round_id,
-      'cashier_transaction_started': localizations.cashier_transaction_started,
+      'cashier_transaction_STARTED': localizations.cashier_transaction_STARTED,
       'cashier_transaction_status': localizations.cashier_transaction_status,
       'cashier_transaction_to': localizations.cashier_transaction_to,
       'cashier_transaction_transaction_id':
@@ -1980,7 +2005,7 @@ class AppLocalizationsMapper {
       'cashier_tronlink': localizations.cashier_tronlink,
       'cashier_tronlink_wallet_balance':
           localizations.cashier_tronlink_wallet_balance,
-      'cashier_trx': localizations.cashier_trx,
+      'cashier_TRX': localizations.cashier_TRX,
       'cashier_trx_deposit': localizations.cashier_trx_deposit,
       'cashier_tx_destination_tag_copied':
           localizations.cashier_tx_destination_tag_copied,
@@ -1988,14 +2013,14 @@ class AppLocalizationsMapper {
       'cashier_tx_wallet_id_copied': localizations.cashier_tx_wallet_id_copied,
       'cashier_ultra_fast_deposit': localizations.cashier_ultra_fast_deposit,
       'cashier_update_rate': localizations.cashier_update_rate,
-      'cashier_usdc': localizations.cashier_usdc,
-      'cashier_usdt': localizations.cashier_usdt,
-      'cashier_usdt_erc_deposit': localizations.cashier_usdt_erc_deposit,
-      'cashier_usdt_trc_deposit': localizations.cashier_usdt_trc_deposit,
-      'cashier_usdt_deposit_jeton_description':
-          localizations.cashier_usdt_deposit_jeton_description,
-      'cashier_usdt_withdraw_jeton_description':
-          localizations.cashier_usdt_withdraw_jeton_description,
+      'cashier_USDC': localizations.cashier_USDC,
+      'cashier_USDT': localizations.cashier_USDT,
+      'cashier_USDT_ERC_deposit': localizations.cashier_USDT_ERC_deposit,
+      'cashier_USDT_TRC_deposit': localizations.cashier_USDT_TRC_deposit,
+      'cashier_USDT_deposit_jeton_description':
+          localizations.cashier_USDT_deposit_jeton_description,
+      'cashier_USDT_withdraw_jeton_description':
+          localizations.cashier_USDT_withdraw_jeton_description,
       'cashier_use_mobile_or_qr': localizations.cashier_use_mobile_or_qr,
       'cashier_utorg_purchase_description':
           localizations.cashier_utorg_purchase_description,
@@ -2066,16 +2091,16 @@ class AppLocalizationsMapper {
           localizations.cashier_withdraw_3_confirmations,
       'cashier_withdraw_48h_restriction':
           localizations.cashier_withdraw_48h_restriction,
-      'cashier_withdraw_ada': localizations.cashier_withdraw_ada,
-      'cashier_withdraw_bnb': localizations.cashier_withdraw_bnb,
-      'cashier_withdraw_btc': localizations.cashier_withdraw_btc,
-      'cashier_withdraw_busd': localizations.cashier_withdraw_busd,
-      'cashier_withdraw_cad': localizations.cashier_withdraw_cad,
+      'cashier_withdraw_ADA': localizations.cashier_withdraw_ADA,
+      'cashier_withdraw_BNB': localizations.cashier_withdraw_BNB,
+      'cashier_withdraw_BTC': localizations.cashier_withdraw_BTC,
+      'cashier_withdraw_BUSD': localizations.cashier_withdraw_BUSD,
+      'cashier_withdraw_CAD': localizations.cashier_withdraw_CAD,
       'cashier_withdraw_confirm': localizations.cashier_withdraw_confirm,
-      'cashier_withdraw_dai': localizations.cashier_withdraw_dai,
-      'cashier_withdraw_doge': localizations.cashier_withdraw_doge,
-      'cashier_withdraw_eth': localizations.cashier_withdraw_eth,
-      'cashier_withdraw_eur': localizations.cashier_withdraw_eur,
+      'cashier_withdraw_DAI': localizations.cashier_withdraw_DAI,
+      'cashier_withdraw_DOGE': localizations.cashier_withdraw_DOGE,
+      'cashier_withdraw_ETH': localizations.cashier_withdraw_ETH,
+      'cashier_withdraw_EUR': localizations.cashier_withdraw_EUR,
       'cashier_withdraw_funds': localizations.cashier_withdraw_funds,
       'cashier_withdraw_history': localizations.cashier_withdraw_history,
       'cashier_withdraw_in_progress':
@@ -2085,26 +2110,26 @@ class AppLocalizationsMapper {
       'cashier_withdraw_info_xrp': localizations.cashier_withdraw_info_xrp,
       'cashier_withdraw_is_complete':
           localizations.cashier_withdraw_is_complete,
-      'cashier_withdraw_jpy': localizations.cashier_withdraw_jpy,
-      'cashier_withdraw_ltc': localizations.cashier_withdraw_ltc,
-      'cashier_withdraw_matic': localizations.cashier_withdraw_matic,
+      'cashier_withdraw_JPY': localizations.cashier_withdraw_JPY,
+      'cashier_withdraw_LTC': localizations.cashier_withdraw_LTC,
+      'cashier_withdraw_MATIC': localizations.cashier_withdraw_MATIC,
       'cashier_withdraw_next': localizations.cashier_withdraw_next,
-      'cashier_withdraw_soc': localizations.cashier_withdraw_soc,
-      'cashier_withdraw_thb': localizations.cashier_withdraw_thb,
-      'cashier_withdraw_ton': localizations.cashier_withdraw_ton,
-      'cashier_withdraw_trx': localizations.cashier_withdraw_trx,
-      'cashier_withdraw_usdc': localizations.cashier_withdraw_usdc,
-      'cashier_withdraw_usdt': localizations.cashier_withdraw_usdt,
+      'cashier_withdraw_SOC': localizations.cashier_withdraw_SOC,
+      'cashier_withdraw_THB': localizations.cashier_withdraw_THB,
+      'cashier_withdraw_TON': localizations.cashier_withdraw_TON,
+      'cashier_withdraw_TRX': localizations.cashier_withdraw_TRX,
+      'cashier_withdraw_USDC': localizations.cashier_withdraw_USDC,
+      'cashier_withdraw_USDT': localizations.cashier_withdraw_USDT,
       'cashier_withdraw_view_status':
           localizations.cashier_withdraw_view_status,
-      'cashier_withdraw_xrp': localizations.cashier_withdraw_xrp,
+      'cashier_withdraw_XRP': localizations.cashier_withdraw_XRP,
       'cashier_withdraw_animex_bank_transfer_title':
           localizations.cashier_withdraw_animex_bank_transfer_title,
       'cashier_withdraw_cancel': localizations.cashier_withdraw_cancel,
-      'cashier_withdraw_ezeebill_bank_transfer_inr_title':
-          localizations.cashier_withdraw_ezeebill_bank_transfer_inr_title,
-      'cashier_withdraw_ezeebill_bank_transfer_jpy_title':
-          localizations.cashier_withdraw_ezeebill_bank_transfer_jpy_title,
+      'cashier_withdraw_ezeebill_bank_transfer_INR_title':
+          localizations.cashier_withdraw_ezeebill_bank_transfer_INR_title,
+      'cashier_withdraw_ezeebill_bank_transfer_JPY_title':
+          localizations.cashier_withdraw_ezeebill_bank_transfer_JPY_title,
       'cashier_withdraw_ezeebill_bank_transfer_description':
           localizations.cashier_withdraw_ezeebill_bank_transfer_description,
       'cashier_withdraw_ezeebill_bank_transfer_title':
@@ -2117,8 +2142,8 @@ class AppLocalizationsMapper {
           localizations.cashier_withdraw_inovapay_pix_title,
       'cashier_withdraw_interac_interac_title':
           localizations.cashier_withdraw_interac_interac_title,
-      'cashier_withdraw_jeton_jpy_title':
-          localizations.cashier_withdraw_jeton_jpy_title,
+      'cashier_withdraw_jeton_JPY_title':
+          localizations.cashier_withdraw_jeton_JPY_title,
       'cashier_withdraw_jeton_pix_title':
           localizations.cashier_withdraw_jeton_pix_title,
       'cashier_withdraw_jeton_description':
@@ -2157,15 +2182,15 @@ class AppLocalizationsMapper {
           localizations.cashier_withdraw_warning_confirm_address,
       'cashier_withdrawal_agents': localizations.cashier_withdrawal_agents,
       'cashier_withdrawal_amount': localizations.cashier_withdrawal_amount,
-      'cashier_withdrawal_brl': localizations.cashier_withdrawal_brl,
-      'cashier_withdrawal_cad': localizations.cashier_withdrawal_cad,
-      'cashier_withdrawal_inr': localizations.cashier_withdrawal_inr,
-      'cashier_withdrawal_jpy': localizations.cashier_withdrawal_jpy,
+      'cashier_withdrawal_BRL': localizations.cashier_withdrawal_BRL,
+      'cashier_withdrawal_CAD': localizations.cashier_withdrawal_CAD,
+      'cashier_withdrawal_INR': localizations.cashier_withdrawal_INR,
+      'cashier_withdrawal_JPY': localizations.cashier_withdrawal_JPY,
       'cashier_withdrawal_pay_to': localizations.cashier_withdrawal_pay_to,
-      'cashier_withdrawal_usdt': localizations.cashier_withdrawal_usdt,
+      'cashier_withdrawal_USDT': localizations.cashier_withdrawal_USDT,
       'cashier_would_you_like_to_cash':
           localizations.cashier_would_you_like_to_cash,
-      'cashier_xrp': localizations.cashier_xrp,
+      'cashier_XRP': localizations.cashier_XRP,
       'cashier_you_can_withdraw_bitcoins':
           localizations.cashier_you_can_withdraw_bitcoins,
       'cashier_your_address': localizations.cashier_your_address,
@@ -2186,205 +2211,205 @@ class AppLocalizationsMapper {
       'cashier_your_soc_address': localizations.cashier_your_soc_address,
       'cashier_your_soc_dep_address':
           localizations.cashier_your_soc_dep_address,
-      'currency_mbtc': localizations.currency_mbtc,
+      'currency_mBtc': localizations.currency_mBtc,
       'errors_404_cta': localizations.errors_404_cta,
       'errors_404_error_message_header':
           localizations.errors_404_error_message_header,
-      'errors_404_errormessage': localizations.errors_404_errormessage,
+      'errors_404_errorMessage': localizations.errors_404_errorMessage,
       'errors_404_promo': localizations.errors_404_promo,
-      'errors_age_must_be_over_18': localizations.errors_age_must_be_over_18,
+      'errors_AGE_MUST_BE_OVER_18': localizations.errors_AGE_MUST_BE_OVER_18,
       'errors_already_predicted_this_price':
           localizations.errors_already_predicted_this_price,
-      'errors_amount_is_null': localizations.errors_amount_is_null,
+      'errors_AMOUNT_IS_NULL': localizations.errors_AMOUNT_IS_NULL,
       'errors_article_404_text': localizations.errors_article_404_text,
-      'errors_btc_amount_must_be_greater_than_1_mbtc':
-          localizations.errors_btc_amount_must_be_greater_than_1_mbtc,
+      'errors_BTC_AMOUNT_MUST_BE_GREATER_THAN_1_MBTC':
+          localizations.errors_BTC_AMOUNT_MUST_BE_GREATER_THAN_1_MBTC,
       'errors_complete_form': localizations.errors_complete_form,
-      'errors_cooldown_after_password_change':
-          localizations.errors_cooldown_after_password_change,
-      'errors_corrupt_image': localizations.errors_corrupt_image,
-      'errors_country_does_not_have_supported_currencies':
-          localizations.errors_country_does_not_have_supported_currencies,
-      'errors_country_is_not_supported':
-          localizations.errors_country_is_not_supported,
-      'errors_cpf_contact_support': localizations.errors_cpf_contact_support,
-      'errors_currency_mismatch_between_selected_currency_and_market_btc_rate':
+      'errors_COOLDOWN_AFTER_PASSWORD_CHANGE':
+          localizations.errors_COOLDOWN_AFTER_PASSWORD_CHANGE,
+      'errors_CORRUPT_IMAGE': localizations.errors_CORRUPT_IMAGE,
+      'errors_COUNTRY_DOES_NOT_HAVE_SUPPORTED_CURRENCIES':
+          localizations.errors_COUNTRY_DOES_NOT_HAVE_SUPPORTED_CURRENCIES,
+      'errors_COUNTRY_IS_NOT_SUPPORTED':
+          localizations.errors_COUNTRY_IS_NOT_SUPPORTED,
+      'errors_CPF_CONTACT_SUPPORT': localizations.errors_CPF_CONTACT_SUPPORT,
+      'errors_CURRENCY_MISMATCH_BETWEEN_SELECTED_CURRENCY_AND_MARKET_BTC_RATE':
           localizations
-              .errors_currency_mismatch_between_selected_currency_and_market_btc_rate,
-      'errors_disabled_withdrawals': localizations.errors_disabled_withdrawals,
-      'errors_disabled_withdrawals_sportsbet':
-          localizations.errors_disabled_withdrawals_sportsbet,
-      'errors_email_already_exists': localizations.errors_email_already_exists,
+              .errors_CURRENCY_MISMATCH_BETWEEN_SELECTED_CURRENCY_AND_MARKET_BTC_RATE,
+      'errors_DISABLED_WITHDRAWALS': localizations.errors_DISABLED_WITHDRAWALS,
+      'errors_DISABLED_WITHDRAWALS_sportsbet':
+          localizations.errors_DISABLED_WITHDRAWALS_sportsbet,
+      'errors_EMAIL_ALREADY_EXISTS': localizations.errors_EMAIL_ALREADY_EXISTS,
       'errors_email_is_taken': localizations.errors_email_is_taken,
-      'errors_failed_to_submit': localizations.errors_failed_to_submit,
-      'errors_gamegeneral_cta': localizations.errors_gamegeneral_cta,
-      'errors_gamegeneral_errormessage':
-          localizations.errors_gamegeneral_errormessage,
+      'errors_FAILED_TO_SUBMIT': localizations.errors_FAILED_TO_SUBMIT,
+      'errors_gameGeneral_cta': localizations.errors_gameGeneral_cta,
+      'errors_gameGeneral_errorMessage':
+          localizations.errors_gameGeneral_errorMessage,
       'errors_general': localizations.errors_general,
-      'errors_general_description': localizations.errors_general_description,
+      'errors_GENERAL_DESCRIPTION': localizations.errors_GENERAL_DESCRIPTION,
       'errors_general_support': localizations.errors_general_support,
-      'errors_higher_than_limit': localizations.errors_higher_than_limit,
-      'errors_image_too_big': localizations.errors_image_too_big,
+      'errors_HIGHER_THAN_LIMIT': localizations.errors_HIGHER_THAN_LIMIT,
+      'errors_IMAGE_TOO_BIG': localizations.errors_IMAGE_TOO_BIG,
       'errors_input_max_length': localizations.errors_input_max_length,
       'errors_input_max_value': localizations.errors_input_max_value,
       'errors_input_min_value': localizations.errors_input_min_value,
       'errors_input_required': localizations.errors_input_required,
-      'errors_invalid': localizations.errors_invalid,
-      'errors_invalid_address': localizations.errors_invalid_address,
-      'errors_invalid_address_address':
-          localizations.errors_invalid_address_address,
-      'errors_invalid_cpf': localizations.errors_invalid_cpf,
-      'errors_invalid_date': localizations.errors_invalid_date,
+      'errors_INVALID': localizations.errors_INVALID,
+      'errors_INVALID_ADDRESS': localizations.errors_INVALID_ADDRESS,
+      'errors_INVALID_ADDRESS_address':
+          localizations.errors_INVALID_ADDRESS_address,
+      'errors_INVALID_CPF': localizations.errors_INVALID_CPF,
+      'errors_INVALID_DATE': localizations.errors_INVALID_DATE,
       'errors_invalid_date_range': localizations.errors_invalid_date_range,
-      'errors_invalid_email': localizations.errors_invalid_email,
-      'errors_invalid_market_btc_rate_id':
-          localizations.errors_invalid_market_btc_rate_id,
-      'errors_invalid_password': localizations.errors_invalid_password,
-      'errors_invalid_password_reset_token':
-          localizations.errors_invalid_password_reset_token,
-      'errors_invalid_payment_id': localizations.errors_invalid_payment_id,
-      'errors_invalid_phone': localizations.errors_invalid_phone,
-      'errors_invalid_request': localizations.errors_invalid_request,
-      'errors_invalid_rfc': localizations.errors_invalid_rfc,
-      'errors_invalid_status': localizations.errors_invalid_status,
-      'errors_invalid_status_update':
-          localizations.errors_invalid_status_update,
-      'errors_invalid_username': localizations.errors_invalid_username,
-      'errors_invalid_username_or_password':
-          localizations.errors_invalid_username_or_password,
-      'errors_invalid_username_password_or_otp':
-          localizations.errors_invalid_username_password_or_otp,
-      'errors_invalid_lightning_network_invoice':
-          localizations.errors_invalid_lightning_network_invoice,
-      'errors_invoice_expired_address':
-          localizations.errors_invoice_expired_address,
-      'errors_is_required': localizations.errors_is_required,
+      'errors_INVALID_EMAIL': localizations.errors_INVALID_EMAIL,
+      'errors_INVALID_MARKET_BTC_RATE_ID':
+          localizations.errors_INVALID_MARKET_BTC_RATE_ID,
+      'errors_INVALID_PASSWORD': localizations.errors_INVALID_PASSWORD,
+      'errors_INVALID_PASSWORD_RESET_TOKEN':
+          localizations.errors_INVALID_PASSWORD_RESET_TOKEN,
+      'errors_INVALID_PAYMENT_ID': localizations.errors_INVALID_PAYMENT_ID,
+      'errors_INVALID_PHONE': localizations.errors_INVALID_PHONE,
+      'errors_INVALID_REQUEST': localizations.errors_INVALID_REQUEST,
+      'errors_INVALID_RFC': localizations.errors_INVALID_RFC,
+      'errors_INVALID_STATUS': localizations.errors_INVALID_STATUS,
+      'errors_INVALID_STATUS_UPDATE':
+          localizations.errors_INVALID_STATUS_UPDATE,
+      'errors_INVALID_USERNAME': localizations.errors_INVALID_USERNAME,
+      'errors_INVALID_USERNAME_OR_PASSWORD':
+          localizations.errors_INVALID_USERNAME_OR_PASSWORD,
+      'errors_INVALID_USERNAME_PASSWORD_OR_OTP':
+          localizations.errors_INVALID_USERNAME_PASSWORD_OR_OTP,
+      'errors_INVALID_LIGHTNING_NETWORK_INVOICE':
+          localizations.errors_INVALID_LIGHTNING_NETWORK_INVOICE,
+      'errors_INVOICE_EXPIRED_address':
+          localizations.errors_INVOICE_EXPIRED_address,
+      'errors_IS_REQUIRED': localizations.errors_IS_REQUIRED,
       'errors_login_authentication_failed':
           localizations.errors_login_authentication_failed,
-      'errors_lower_than_limit': localizations.errors_lower_than_limit,
-      'errors_max_withdraw': localizations.errors_max_withdraw,
-      'errors_method_not_found': localizations.errors_method_not_found,
-      'errors_must_be_logged_in': localizations.errors_must_be_logged_in,
-      'errors_newer_market_rate_exists':
-          localizations.errors_newer_market_rate_exists,
+      'errors_LOWER_THAN_LIMIT': localizations.errors_LOWER_THAN_LIMIT,
+      'errors_MAX_WITHDRAW': localizations.errors_MAX_WITHDRAW,
+      'errors_METHOD_NOT_FOUND': localizations.errors_METHOD_NOT_FOUND,
+      'errors_MUST_BE_LOGGED_IN': localizations.errors_MUST_BE_LOGGED_IN,
+      'errors_NEWER_MARKET_RATE_EXISTS':
+          localizations.errors_NEWER_MARKET_RATE_EXISTS,
       'errors_no_exchange_currency_available':
           localizations.errors_no_exchange_currency_available,
-      'errors_no_internet_connection':
-          localizations.errors_no_internet_connection,
-      'errors_no_market_btc_rate_available_for_selected_currency': localizations
-          .errors_no_market_btc_rate_available_for_selected_currency,
-      'errors_not_allowed': localizations.errors_not_allowed,
-      'errors_not_allowed_to_use_app':
-          localizations.errors_not_allowed_to_use_app,
+      'errors_NO_INTERNET_CONNECTION':
+          localizations.errors_NO_INTERNET_CONNECTION,
+      'errors_NO_MARKET_BTC_RATE_AVAILABLE_FOR_SELECTED_CURRENCY': localizations
+          .errors_NO_MARKET_BTC_RATE_AVAILABLE_FOR_SELECTED_CURRENCY,
+      'errors_NOT_ALLOWED': localizations.errors_NOT_ALLOWED,
+      'errors_NOT_ALLOWED_TO_USE_APP':
+          localizations.errors_NOT_ALLOWED_TO_USE_APP,
       'errors_not_allowed_to_use_exchange_method':
           localizations.errors_not_allowed_to_use_exchange_method,
-      'errors_not_allowed_to_use_site':
-          localizations.errors_not_allowed_to_use_site,
-      'errors_not_enough_funds': localizations.errors_not_enough_funds,
-      'errors_not_enough_funds_amount':
-          localizations.errors_not_enough_funds_amount,
-      'errors_not_found': localizations.errors_not_found,
-      'errors_otp_is_required': localizations.errors_otp_is_required,
-      'errors_otp_must_be_disabled': localizations.errors_otp_must_be_disabled,
-      'errors_otp_verification_failed':
-          localizations.errors_otp_verification_failed,
-      'errors_otp_verification_failed_otp_bitcasino':
-          localizations.errors_otp_verification_failed_otp_bitcasino,
-      'errors_otp_verification_failed_otp_empire':
-          localizations.errors_otp_verification_failed_otp_empire,
-      'errors_otp_verification_failed_otp_sportsbet':
-          localizations.errors_otp_verification_failed_otp_sportsbet,
-      'errors_password_does_not_match':
-          localizations.errors_password_does_not_match,
+      'errors_NOT_ALLOWED_TO_USE_SITE':
+          localizations.errors_NOT_ALLOWED_TO_USE_SITE,
+      'errors_NOT_ENOUGH_FUNDS': localizations.errors_NOT_ENOUGH_FUNDS,
+      'errors_NOT_ENOUGH_FUNDS_amount':
+          localizations.errors_NOT_ENOUGH_FUNDS_amount,
+      'errors_NOT_FOUND': localizations.errors_NOT_FOUND,
+      'errors_OTP_IS_REQUIRED': localizations.errors_OTP_IS_REQUIRED,
+      'errors_OTP_MUST_BE_DISABLED': localizations.errors_OTP_MUST_BE_DISABLED,
+      'errors_OTP_VERIFICATION_FAILED':
+          localizations.errors_OTP_VERIFICATION_FAILED,
+      'errors_OTP_VERIFICATION_FAILED_otp_bitcasino':
+          localizations.errors_OTP_VERIFICATION_FAILED_otp_bitcasino,
+      'errors_OTP_VERIFICATION_FAILED_otp_empire':
+          localizations.errors_OTP_VERIFICATION_FAILED_otp_empire,
+      'errors_OTP_VERIFICATION_FAILED_otp_sportsbet':
+          localizations.errors_OTP_VERIFICATION_FAILED_otp_sportsbet,
+      'errors_PASSWORD_DOES_NOT_MATCH':
+          localizations.errors_PASSWORD_DOES_NOT_MATCH,
       'errors_password_recovery_email_not_found':
           localizations.errors_password_recovery_email_not_found,
       'errors_password_recovery_unable_to_change_password':
           localizations.errors_password_recovery_unable_to_change_password,
-      'errors_password_reset_denied_for_social_user':
-          localizations.errors_password_reset_denied_for_social_user,
-      'errors_password_reset_denied_user_deleted':
-          localizations.errors_password_reset_denied_user_deleted,
-      'errors_password_too_short': localizations.errors_password_too_short,
-      'errors_password_too_weak': localizations.errors_password_too_weak,
-      'errors_pattern_does_not_match':
-          localizations.errors_pattern_does_not_match,
-      'errors_payment_amount_too_large':
-          localizations.errors_payment_amount_too_large,
-      'errors_payment_method_is_not_supported':
-          localizations.errors_payment_method_is_not_supported,
-      'errors_payment_method_is_not_supported_in_current_country': localizations
-          .errors_payment_method_is_not_supported_in_current_country,
-      'errors_payment_method_is_not_supported_with_selected_currency':
+      'errors_PASSWORD_RESET_DENIED_FOR_SOCIAL_USER':
+          localizations.errors_PASSWORD_RESET_DENIED_FOR_SOCIAL_USER,
+      'errors_PASSWORD_RESET_DENIED_USER_DELETED':
+          localizations.errors_PASSWORD_RESET_DENIED_USER_DELETED,
+      'errors_PASSWORD_TOO_SHORT': localizations.errors_PASSWORD_TOO_SHORT,
+      'errors_PASSWORD_TOO_WEAK': localizations.errors_PASSWORD_TOO_WEAK,
+      'errors_PATTERN_DOES_NOT_MATCH':
+          localizations.errors_PATTERN_DOES_NOT_MATCH,
+      'errors_PAYMENT_AMOUNT_TOO_LARGE':
+          localizations.errors_PAYMENT_AMOUNT_TOO_LARGE,
+      'errors_PAYMENT_METHOD_IS_NOT_SUPPORTED':
+          localizations.errors_PAYMENT_METHOD_IS_NOT_SUPPORTED,
+      'errors_PAYMENT_METHOD_IS_NOT_SUPPORTED_IN_CURRENT_COUNTRY': localizations
+          .errors_PAYMENT_METHOD_IS_NOT_SUPPORTED_IN_CURRENT_COUNTRY,
+      'errors_PAYMENT_METHOD_IS_NOT_SUPPORTED_WITH_SELECTED_CURRENCY':
           localizations
-              .errors_payment_method_is_not_supported_with_selected_currency,
-      'errors_payment_status_must_be_new':
-          localizations.errors_payment_status_must_be_new,
-      'errors_processing_fee_too_high':
-          localizations.errors_processing_fee_too_high,
-      'errors_processing_fee_too_low':
-          localizations.errors_processing_fee_too_low,
+              .errors_PAYMENT_METHOD_IS_NOT_SUPPORTED_WITH_SELECTED_CURRENCY,
+      'errors_PAYMENT_STATUS_MUST_BE_NEW':
+          localizations.errors_PAYMENT_STATUS_MUST_BE_NEW,
+      'errors_PROCESSING_FEE_TOO_HIGH':
+          localizations.errors_PROCESSING_FEE_TOO_HIGH,
+      'errors_PROCESSING_FEE_TOO_LOW':
+          localizations.errors_PROCESSING_FEE_TOO_LOW,
       'errors_profile_authentication_failed':
           localizations.errors_profile_authentication_failed,
       'errors_profile_otp_verification_failed':
           localizations.errors_profile_otp_verification_failed,
       'errors_profile_user_not_found':
           localizations.errors_profile_user_not_found,
-      'errors_request_timeout': localizations.errors_request_timeout,
+      'errors_REQUEST_TIMEOUT': localizations.errors_REQUEST_TIMEOUT,
       'errors_required': localizations.errors_required,
-      'errors_requires_destination_tag':
-          localizations.errors_requires_destination_tag,
-      'errors_selected_currency_is_not_supported':
-          localizations.errors_selected_currency_is_not_supported,
-      'errors_selected_currency_is_not_supported_in_current_country':
+      'errors_REQUIRES_DESTINATION_TAG':
+          localizations.errors_REQUIRES_DESTINATION_TAG,
+      'errors_SELECTED_CURRENCY_IS_NOT_SUPPORTED':
+          localizations.errors_SELECTED_CURRENCY_IS_NOT_SUPPORTED,
+      'errors_SELECTED_CURRENCY_IS_NOT_SUPPORTED_IN_CURRENT_COUNTRY':
           localizations
-              .errors_selected_currency_is_not_supported_in_current_country,
+              .errors_SELECTED_CURRENCY_IS_NOT_SUPPORTED_IN_CURRENT_COUNTRY,
       'errors_sign_up_email_or_username_is_taken':
           localizations.errors_sign_up_email_or_username_is_taken,
-      'errors_sms_2fa_invalid_session_id':
-          localizations.errors_sms_2fa_invalid_session_id,
-      'errors_sms_2fa_seesion_id_expired':
-          localizations.errors_sms_2fa_seesion_id_expired,
-      'errors_sms_2fa_verification_failed':
-          localizations.errors_sms_2fa_verification_failed,
-      'errors_social_auth_connect_verify_email':
-          localizations.errors_social_auth_connect_verify_email,
+      'errors_SMS_2FA_INVALID_SESSION_ID':
+          localizations.errors_SMS_2FA_INVALID_SESSION_ID,
+      'errors_SMS_2FA_SEESION_ID_EXPIRED':
+          localizations.errors_SMS_2FA_SEESION_ID_EXPIRED,
+      'errors_SMS_2FA_VERIFICATION_FAILED':
+          localizations.errors_SMS_2FA_VERIFICATION_FAILED,
+      'errors_SOCIAL_AUTH_CONNECT_VERIFY_EMAIL':
+          localizations.errors_SOCIAL_AUTH_CONNECT_VERIFY_EMAIL,
       'errors_something_went_wrong': localizations.errors_something_went_wrong,
-      'errors_spread_too_high': localizations.errors_spread_too_high,
-      'errors_spread_too_low': localizations.errors_spread_too_low,
-      'errors_system_error': localizations.errors_system_error,
-      'errors_token_expired': localizations.errors_token_expired,
-      'errors_too_long': localizations.errors_too_long,
-      'errors_too_many_login_attempts':
-          localizations.errors_too_many_login_attempts,
-      'errors_too_many_password_reset_attempts':
-          localizations.errors_too_many_password_reset_attempts,
-      'errors_too_many_sms_2fa_attempts':
-          localizations.errors_too_many_sms_2fa_attempts,
-      'errors_too_many_sms_sent': localizations.errors_too_many_sms_sent,
+      'errors_SPREAD_TOO_HIGH': localizations.errors_SPREAD_TOO_HIGH,
+      'errors_SPREAD_TOO_LOW': localizations.errors_SPREAD_TOO_LOW,
+      'errors_SYSTEM_ERROR': localizations.errors_SYSTEM_ERROR,
+      'errors_TOKEN_EXPIRED': localizations.errors_TOKEN_EXPIRED,
+      'errors_TOO_LONG': localizations.errors_TOO_LONG,
+      'errors_TOO_MANY_LOGIN_ATTEMPTS':
+          localizations.errors_TOO_MANY_LOGIN_ATTEMPTS,
+      'errors_TOO_MANY_PASSWORD_RESET_ATTEMPTS':
+          localizations.errors_TOO_MANY_PASSWORD_RESET_ATTEMPTS,
+      'errors_TOO_MANY_SMS_2FA_ATTEMPTS':
+          localizations.errors_TOO_MANY_SMS_2FA_ATTEMPTS,
+      'errors_TOO_MANY_SMS_SENT': localizations.errors_TOO_MANY_SMS_SENT,
       'errors_transaction_amount': localizations.errors_transaction_amount,
-      'errors_transaction_reference_is_null':
-          localizations.errors_transaction_reference_is_null,
+      'errors_TRANSACTION_REFERENCE_IS_NULL':
+          localizations.errors_TRANSACTION_REFERENCE_IS_NULL,
       'errors_type_mismatch': localizations.errors_type_mismatch,
       'errors_ubtc_must_be_greater': localizations.errors_ubtc_must_be_greater,
-      'errors_unconfirmed_deposit': localizations.errors_unconfirmed_deposit,
-      'errors_unverified_email': localizations.errors_unverified_email,
-      'errors_user_self_exclusion_is_active':
-          localizations.errors_user_self_exclusion_is_active,
-      'errors_username_already_exists':
-          localizations.errors_username_already_exists,
+      'errors_UNCONFIRMED_DEPOSIT': localizations.errors_UNCONFIRMED_DEPOSIT,
+      'errors_UNVERIFIED_EMAIL': localizations.errors_UNVERIFIED_EMAIL,
+      'errors_USER_SELF_EXCLUSION_IS_ACTIVE':
+          localizations.errors_USER_SELF_EXCLUSION_IS_ACTIVE,
+      'errors_USERNAME_ALREADY_EXISTS':
+          localizations.errors_USERNAME_ALREADY_EXISTS,
       'errors_username_is_taken': localizations.errors_username_is_taken,
       'errors_validation_errors': localizations.errors_validation_errors,
       'errors_value_missing': localizations.errors_value_missing,
-      'errors_wallet_address_conflict':
-          localizations.errors_wallet_address_conflict,
-      'errors_wallet_address_conflict_address':
-          localizations.errors_wallet_address_conflict_address,
-      'errors_your_account_is_disabled':
-          localizations.errors_your_account_is_disabled,
-      'errors_your_account_is_disabled_security':
-          localizations.errors_your_account_is_disabled_security,
-      'errors_your_account_is_dormant':
-          localizations.errors_your_account_is_dormant,
+      'errors_WALLET_ADDRESS_CONFLICT':
+          localizations.errors_WALLET_ADDRESS_CONFLICT,
+      'errors_WALLET_ADDRESS_CONFLICT_address':
+          localizations.errors_WALLET_ADDRESS_CONFLICT_address,
+      'errors_YOUR_ACCOUNT_IS_DISABLED':
+          localizations.errors_YOUR_ACCOUNT_IS_DISABLED,
+      'errors_YOUR_ACCOUNT_IS_DISABLED_SECURITY':
+          localizations.errors_YOUR_ACCOUNT_IS_DISABLED_SECURITY,
+      'errors_YOUR_ACCOUNT_IS_DORMANT':
+          localizations.errors_YOUR_ACCOUNT_IS_DORMANT,
       'funds_balance': localizations.funds_balance,
       'funds_converted_balance': localizations.funds_converted_balance,
       'funds_funds': localizations.funds_funds,
@@ -2462,7 +2487,7 @@ class AppLocalizationsMapper {
           localizations.transaction_exchange_withdrawal_eur,
       'transaction_exchange_withdrawal_jpy':
           localizations.transaction_exchange_withdrawal_jpy,
-      'transaction_incomplete_btc': localizations.transaction_incomplete_btc,
+      'transaction_incomplete_BTC': localizations.transaction_incomplete_BTC,
       'transaction_link': localizations.transaction_link,
       'transaction_litecoin_deposit':
           localizations.transaction_litecoin_deposit,
@@ -2566,8 +2591,8 @@ class AppLocalizationsMapper {
       'transaction_start_balance': localizations.transaction_start_balance,
       'transaction_total_received': localizations.transaction_total_received,
       'transaction_type': localizations.transaction_type,
-      'transaction_type_bitcoin_deposit':
-          localizations.transaction_type_bitcoin_deposit,
+      'transaction_type_BITCOIN_DEPOSIT':
+          localizations.transaction_type_BITCOIN_DEPOSIT,
       'transaction_win': localizations.transaction_win,
       'transaction_withdrawal': localizations.transaction_withdrawal,
       'transaction_withdrawal_approved':
@@ -2608,8 +2633,10 @@ class AppLocalizationsMapper {
           localizations.cashier_balance_reverted(currency),
       'cashier_buy_currency': (currency) =>
           localizations.cashier_buy_currency(currency),
-      'cashier_convert_before_withdraw': (convertFrom, convertTo) =>
-          localizations.cashier_convert_before_withdraw(convertFrom, convertTo),
+      'cashier_convert_before_withdraw':
+          (CONVERT_FROM, CONVERT_TO, convertFrom, convertTo) =>
+              localizations.cashier_convert_before_withdraw(
+                  CONVERT_FROM, CONVERT_TO, convertFrom, convertTo),
       'cashier_convert_to': (currency) =>
           localizations.cashier_convert_to(currency),
       'cashier_cpf_rfc_processing_description': (variant) =>
@@ -2655,12 +2682,12 @@ class AppLocalizationsMapper {
           (min, max) => localizations
               .cashier_fiat_deposit_ezeebill_provider_bank_transfer_jpy_limits(
                   min, max),
-      'cashier_fiat_deposit_invalid_request': (field) =>
-          localizations.cashier_fiat_deposit_invalid_request(field),
+      'cashier_fiat_deposit_INVALID_REQUEST': (field) =>
+          localizations.cashier_fiat_deposit_INVALID_REQUEST(field),
       'cashier_fiat_deposit_received': (moneyIcon) =>
           localizations.cashier_fiat_deposit_received(moneyIcon),
-      'cashier_fiat_deposit_required': (field) =>
-          localizations.cashier_fiat_deposit_required(field),
+      'cashier_fiat_deposit_REQUIRED': (field) =>
+          localizations.cashier_fiat_deposit_REQUIRED(field),
       'cashier_fiat_estimated_currency_rate': (currency) =>
           localizations.cashier_fiat_estimated_currency_rate(currency),
       'cashier_fiat_min_max_deposit': (min, max) =>
@@ -2671,10 +2698,10 @@ class AppLocalizationsMapper {
           localizations.cashier_fiat_placed_order_description(amount),
       'cashier_fiat_sumopay_amount_desc': (currency) =>
           localizations.cashier_fiat_sumopay_amount_desc(currency),
-      'cashier_fiat_withdrawal_invalid_request': (field) =>
-          localizations.cashier_fiat_withdrawal_invalid_request(field),
-      'cashier_fiat_withdrawal_required': (field) =>
-          localizations.cashier_fiat_withdrawal_required(field),
+      'cashier_fiat_withdrawal_INVALID_REQUEST': (field) =>
+          localizations.cashier_fiat_withdrawal_INVALID_REQUEST(field),
+      'cashier_fiat_withdrawal_REQUIRED': (field) =>
+          localizations.cashier_fiat_withdrawal_REQUIRED(field),
       'cashier_funds_available': (amount, currency) =>
           localizations.cashier_funds_available(amount, currency),
       'cashier_get_bitcoins_fee': (value) =>
@@ -2711,6 +2738,8 @@ class AppLocalizationsMapper {
           localizations.cashier_reward_swich_currency_description(currency),
       'cashier_show_more_methods': (qty) =>
           localizations.cashier_show_more_methods(qty),
+      'cashier_transaction_declined': (description) =>
+          localizations.cashier_transaction_declined(description),
       'cashier_transaction_description': (description) =>
           localizations.cashier_transaction_description(description),
       'cashier_transaction_payment_time': (datetime) =>
@@ -2739,10 +2768,10 @@ class AppLocalizationsMapper {
           localizations.cashier_you_have_converted(amount, currency),
       'cashier_your_are_spending': (amount, currency) =>
           localizations.cashier_your_are_spending(amount, currency),
-      'errors_exchange_min_withdraw': (currency, amount) =>
-          localizations.errors_exchange_min_withdraw(currency, amount),
-      'errors_min_withdraw': (minAmount, currency, amount) =>
-          localizations.errors_min_withdraw(minAmount, currency, amount),
+      'errors_exchange_MIN_WITHDRAW': (currency, amount) =>
+          localizations.errors_exchange_MIN_WITHDRAW(currency, amount),
+      'errors_MIN_WITHDRAW': (minAmount, currency, amount) =>
+          localizations.errors_MIN_WITHDRAW(minAmount, currency, amount),
       'errors_no_deposits_available_at_this_time': (currency) =>
           localizations.errors_no_deposits_available_at_this_time(currency),
       'errors_no_withdrawals_available_at_this_time': (currency) =>

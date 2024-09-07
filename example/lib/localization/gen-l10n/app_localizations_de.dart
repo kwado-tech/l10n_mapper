@@ -11,6 +11,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_acquisition_promo => '10% Boost auf die Gewinne aus deiner Ersteinzahlung';
 
   @override
+  String get cashier_Test_Translation => '10% first deposit boost for your winnings';
+
+  @override
   String get cashier_activate_tronlink => 'Um TronLink zu verwenden, klicke zuerst auf deine TronLink-Erweiterung und melde dich an.';
 
   @override
@@ -20,7 +23,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_active_balance_desc => 'Wähle deine bevorzugte Währung aus\n';
 
   @override
-  String get cashier_ada => 'Cardano';
+  String get cashier_ADA => 'Cardano';
 
   @override
   String get cashier_add_2fa => 'Zwei-Faktor-Authentisierung hinzufügen';
@@ -71,6 +74,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_amount_of_eth => 'Menge an ETH';
 
   @override
+  String get cashier_amount_of_mBTC => 'Menge an mBTC';
+
+  @override
   String get cashier_amount_of_mbtc => 'Betrag in mBTC';
 
   @override
@@ -78,6 +84,9 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get cashier_amount_of_ubtc => 'Menge an μBTC';
+
+  @override
+  String get cashier_amount_of_uBTC => 'Menge an μBTC';
 
   @override
   String get cashier_animex_bank_transfer_title => 'Bank Transfer';
@@ -141,22 +150,22 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_bitlipa_deposit_warning => 'The mobile money currently offers a Pay-in option. Payouts are only available in USDT and USDC cryptocurrencies.';
 
   @override
-  String get cashier_bnb => 'Binance Coin';
+  String get cashier_BNB => 'Binance Coin';
 
   @override
-  String get cashier_brl => 'Brasilianischer Real';
+  String get cashier_BRL => 'Brasilianischer Real';
 
   @override
-  String get cashier_btc => 'Bitcoin';
+  String get cashier_BTC => 'Bitcoin';
 
   @override
-  String get cashier_btc_deposit_description => 'Bitcoins, die auf die oben angezeigte Adresse gesendet wurden, werden zu deinem Spielguthaben hinzugefügt. ';
+  String get cashier_BTC_deposit_description => 'Bitcoins, die auf die oben angezeigte Adresse gesendet wurden, werden zu deinem Spielguthaben hinzugefügt. ';
 
   @override
   String get cashier_btxe_withdrawals_are_disabled => 'Die Auszahlung auf dein Bankkonto oder Kreditkarte ist aktuell deaktiviert';
 
   @override
-  String get cashier_busd => 'Binance USD';
+  String get cashier_BUSD => 'Binance USD';
 
   @override
   String get cashier_buy => 'Kaufen';
@@ -206,7 +215,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_buy_ton_wallet_bot => 'Buy TON using Wallet';
 
   @override
-  String get cashier_cad => 'CAD';
+  String get cashier_CAD => 'CAD';
 
   @override
   String get cashier_cancel => 'Abbrechen';
@@ -245,7 +254,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_close => 'Schließen';
 
   @override
-  String get cashier_cny => 'Chinesische Yuan';
+  String get cashier_CNY => 'Chinesische Yuan';
 
   @override
   String get cashier_coinbasewallet => 'Coinbase Wallet';
@@ -266,10 +275,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_connect_wallet => 'Wallet verlinken';
 
   @override
-  String get cashier_contact_us => 'Contact us for more enquiries';
+  String get cashier_CONTACT_US => 'Contact us for more enquiries';
 
   @override
-  String cashier_convert_before_withdraw(Object convertFrom, Object convertTo) {
+  String cashier_convert_before_withdraw(Object CONVERT_FROM, Object CONVERT_TO, Object convertFrom, Object convertTo) {
     return '* Wenn Sie eine Auszalung in $convertFrom machen möchten, ist das Guthaben zuerst in $convertTo  umzurechnen.';
   }
 
@@ -409,13 +418,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_customer_details_desc => 'Fülle persönliche Informationen aus, um fortzufahren';
 
   @override
-  String get cashier_dai => 'DAI';
+  String get cashier_DAI => 'DAI';
 
   @override
   String get cashier_deposit => 'Einzahlung';
 
   @override
-  String get cashier_deposit_ada => 'ADA einzahlen';
+  String get cashier_deposit_ADA => 'ADA einzahlen';
 
   @override
   String cashier_deposit_agents(Object currency) {
@@ -432,19 +441,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_deposit_amount_changing => 'Changing the deposit amount will require you to generate new deposit request.';
 
   @override
-  String get cashier_deposit_bnb => 'BNB einzahlen';
+  String get cashier_deposit_BNB => 'BNB einzahlen';
 
   @override
-  String get cashier_deposit_brl => 'BRL einzahlen';
+  String get cashier_deposit_BRL => 'BRL einzahlen';
 
   @override
-  String get cashier_deposit_btc => 'Bitcoin einzahlen';
+  String get cashier_deposit_BTC => 'Bitcoin einzahlen';
 
   @override
-  String get cashier_deposit_busd => 'BUSD einzahlen';
+  String get cashier_deposit_BUSD => 'BUSD einzahlen';
 
   @override
-  String get cashier_deposit_cad => 'CAD einzahlen';
+  String get cashier_deposit_CAD => 'CAD einzahlen';
 
   @override
   String get cashier_deposit_crypto => 'Krypto-Einzahlung';
@@ -455,37 +464,37 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashier_deposit_dai => 'DAI einzahlen';
+  String get cashier_deposit_DAI => 'DAI einzahlen';
 
   @override
   String get cashier_deposit_destination_tag => 'Destination-Tag';
 
   @override
-  String get cashier_deposit_doge => 'DOGE einzahlen';
+  String get cashier_deposit_DOGE => 'DOGE einzahlen';
 
   @override
-  String get cashier_deposit_eth => 'EHT einzahlen';
+  String get cashier_deposit_ETH => 'EHT einzahlen';
 
   @override
-  String get cashier_deposit_eur => 'EUR einzahlen';
+  String get cashier_deposit_EUR => 'EUR einzahlen';
 
   @override
   String get cashier_deposit_history => 'Geleistete Einzahlungen';
 
   @override
-  String get cashier_deposit_hkd => 'HKD einzahlen';
+  String get cashier_deposit_HKD => 'HKD einzahlen';
 
   @override
-  String get cashier_deposit_inr => 'INR einzahlen';
+  String get cashier_deposit_INR => 'INR einzahlen';
 
   @override
-  String get cashier_deposit_jpy => 'JPY einzahlen';
+  String get cashier_deposit_JPY => 'JPY einzahlen';
 
   @override
-  String get cashier_deposit_ltc => 'LTC einzahlen';
+  String get cashier_deposit_LTC => 'LTC einzahlen';
 
   @override
-  String get cashier_deposit_matic => 'Polygon einzahlen';
+  String get cashier_deposit_MATIC => 'Polygon einzahlen';
 
   @override
   String get cashier_deposit_methods => 'Einzahlungsmethoden ';
@@ -500,7 +509,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_deposit_regular => 'Regulär';
 
   @override
-  String get cashier_deposit_soc => 'SOC einzahlen';
+  String get cashier_deposit_SOC => 'SOC einzahlen';
 
   @override
   String cashier_deposit_successful(Object currency, Object amount) {
@@ -508,10 +517,10 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashier_deposit_thb => 'THB einzahlen';
+  String get cashier_deposit_THB => 'THB einzahlen';
 
   @override
-  String get cashier_deposit_ton => 'TON einzahlen';
+  String get cashier_deposit_TON => 'TON einzahlen';
 
   @override
   String get cashier_deposit_ton_info => 'Um eine erfolgreiche Einzahlung sicherzustellen, kopiere unbedingt den Inhalt der NACHRICHT in deine Wallet-App rüber, bevor du mit der Transaktion fortfährst. Dieser Schritt ist entscheidend für die reibungslose Einzahlung des Geldes auf dein Konto.\n';
@@ -523,13 +532,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_deposit_ton_message => 'Nachricht (erforderlich, um die Transaktion abzuschließen)';
 
   @override
-  String get cashier_deposit_trx => 'TRX einzahlen';
+  String get cashier_deposit_TRX => 'TRX einzahlen';
 
   @override
-  String get cashier_deposit_usdc => 'USDC einzahlen';
+  String get cashier_deposit_USDC => 'USDC einzahlen';
 
   @override
-  String get cashier_deposit_usdt => 'Einzahlung Tether';
+  String get cashier_deposit_USDT => 'Einzahlung Tether';
 
   @override
   String get cashier_deposit_via_metamask => 'Über Metamask einzahlen';
@@ -543,7 +552,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_deposit_with_altcoins => 'Mit Altcoins einzahlen';
 
   @override
-  String get cashier_deposit_xrp => 'Einzahlung XRP';
+  String get cashier_deposit_XRP => 'Einzahlung XRP';
 
   @override
   String get cashier_deposit_animex_sumopay_title => 'Sumopay';
@@ -591,7 +600,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_deposit_deposit_via_payixi => 'Bezahlen per Payixi';
 
   @override
-  String get cashier_deposit_ezeebill_bank_transfer_inr_title => 'Instant INR Bank Transfer';
+  String get cashier_deposit_ezeebill_bank_transfer_INR_title => 'Instant INR Bank Transfer';
 
   @override
   String get cashier_deposit_ezeebill_bank_transfer_description => 'Transaktionen können 1 bis 24 Stunden in Anspruch nehmen';
@@ -630,7 +639,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_deposit_jeton_bank_transfer_voucher_atm_title => 'Mit einem Gutschein über Geldautomat einzahlen';
 
   @override
-  String get cashier_deposit_jeton_jpy_title => 'Banküberweisung';
+  String get cashier_deposit_jeton_JPY_title => 'Banküberweisung';
 
   @override
   String get cashier_deposit_jeton_pix_description => 'Sofortig';
@@ -666,7 +675,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_deposit_onramper_title => 'Onramper';
 
   @override
-  String get cashier_deposit_pagava_jpy_title => 'Pagava Bank Transfer';
+  String get cashier_deposit_pagava_JPY_title => 'Pagava Bank Transfer';
 
   @override
   String get cashier_deposit_pagava_title => 'Internet Banking Transfer';
@@ -699,7 +708,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_deposit_paymentrush_payment_rush_title => 'Instant Pay';
 
   @override
-  String get cashier_deposit_paytm10pay_paytm_10pay_title => 'PayTM';
+  String get cashier_deposit_paytm10Pay_paytm_10pay_title => 'PayTM';
 
   @override
   String get cashier_deposit_pinbank_local_bank_transfer_title => 'Banküberweisung';
@@ -726,7 +735,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_deposit_sumopay_title => 'Sumopay';
 
   @override
-  String get cashier_deposit_upi10pay_upi_10pay_title => 'UPI 10Pay';
+  String get cashier_deposit_upi10Pay_upi_10pay_title => 'UPI 10Pay';
 
   @override
   String get cashier_deposit_utorg_title => 'UTORG';
@@ -758,7 +767,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_disconnect => 'Disconnect';
 
   @override
-  String get cashier_doge => 'DOGE';
+  String get cashier_DOGE => 'DOGE';
 
   @override
   String get cashier_done => 'Fertig';
@@ -767,7 +776,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_dont_show_again => 'Don\'t show me again.';
 
   @override
-  String get cashier_email_us => 'Email us';
+  String get cashier_EMAIL_US => 'Email us';
 
   @override
   String cashier_email_verification_banner_body(Object brandName) {
@@ -837,13 +846,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_estimated_quantity => 'Estimated quantity';
 
   @override
-  String get cashier_eth => 'Ethereum';
+  String get cashier_ETH => 'Ethereum';
 
   @override
-  String get cashier_eth_deposit_description => 'Ethereum, das auf die oben angezeigte Adresse gesendet wurde, wird zu deinem Spielguthaben hinzugefügt. ';
+  String get cashier_ETH_deposit_description => 'Ethereum, das auf die oben angezeigte Adresse gesendet wurde, wird zu deinem Spielguthaben hinzugefügt. ';
 
   @override
-  String get cashier_eur => 'Euro';
+  String get cashier_EUR => 'Euro';
 
   @override
   String get cashier_exchange => 'Umwandeln';
@@ -899,28 +908,28 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fast_deposit => 'Schnelle Einzahlung';
 
   @override
-  String get cashier_fiat_amount_usdt_placeholder => 'Summe eingeben';
+  String get cashier_fiat_amount_USDT_placeholder => 'Summe eingeben';
 
   @override
   String get cashier_fiat_estimated_total => ' Geschätzter Gesamtbetrag';
 
   @override
-  String get cashier_fiat_ars => 'ARS';
+  String get cashier_fiat_ARS => 'ARS';
 
   @override
-  String get cashier_fiat_bdt => 'BDT';
+  String get cashier_fiat_BDT => 'BDT';
 
   @override
-  String get cashier_fiat_brl => 'BRL';
+  String get cashier_fiat_BRL => 'BRL';
 
   @override
-  String get cashier_fiat_cad => 'CAD';
+  String get cashier_fiat_CAD => 'CAD';
 
   @override
-  String get cashier_fiat_clp => 'CLP';
+  String get cashier_fiat_CLP => 'CLP';
 
   @override
-  String get cashier_fiat_cny => 'CNY';
+  String get cashier_fiat_CNY => 'CNY';
 
   @override
   String cashier_fiat_continue_external(Object provider) {
@@ -933,7 +942,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashier_fiat_corefy_jeton_title => 'Sofort-Überweisung';
+  String get cashier_fiat_COREFY_JETON_title => 'Sofort-Überweisung';
 
   @override
   String get cashier_fiat_deposit => 'Einzahlung';
@@ -945,16 +954,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_add_more_funds => 'Weitere Einzahlung leisten\n';
 
   @override
-  String get cashier_fiat_deposit_address => 'Adresse';
+  String get cashier_fiat_deposit_ADDRESS => 'Adresse';
 
   @override
-  String get cashier_fiat_deposit_address_placeholder => 'z.B. Motomachi 1-1-1 (nur Englisch)';
+  String get cashier_fiat_deposit_ADDRESS_placeholder => 'z.B. Motomachi 1-1-1 (nur Englisch)';
 
   @override
-  String get cashier_fiat_deposit_alipay => 'Alipay';
+  String get cashier_fiat_deposit_ALIPAY => 'Alipay';
 
   @override
-  String get cashier_fiat_deposit_amount => 'Summe eingeben';
+  String get cashier_fiat_deposit_amount => 'Betrag eingeben\n';
+
+  @override
+  String get cashier_fiat_DEPOSIT_amount => 'Summe eingeben';
 
   @override
   String cashier_fiat_deposit_amount_placeholder(Object currency) {
@@ -962,82 +974,82 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashier_fiat_deposit_bank => 'Name der Bank';
+  String get cashier_fiat_deposit_BANK => 'Name der Bank';
 
   @override
-  String get cashier_fiat_deposit_bank_account_number => 'Kontonummer';
+  String get cashier_fiat_deposit_BANK_ACCOUNT_NUMBER => 'Kontonummer';
 
   @override
-  String get cashier_fiat_deposit_bank_account_number_placeholder => '0123456';
+  String get cashier_fiat_deposit_BANK_ACCOUNT_NUMBER_placeholder => '0123456';
 
   @override
-  String get cashier_fiat_deposit_bank_branch => 'Bankfiliale';
+  String get cashier_fiat_deposit_BANK_BRANCH => 'Bankfiliale';
 
   @override
-  String get cashier_fiat_deposit_bank_code => 'Bankleitzahl';
+  String get cashier_fiat_deposit_BANK_CODE => 'Bankleitzahl';
 
   @override
-  String get cashier_fiat_deposit_bank_code_placeholder => '0005';
+  String get cashier_fiat_deposit_BANK_CODE_placeholder => '0005';
 
   @override
-  String get cashier_fiat_deposit_bank_interac => 'Interac';
+  String get cashier_fiat_deposit_BANK_INTERAC => 'Interac';
 
   @override
-  String get cashier_fiat_deposit_bank_interac_almost_done_message => ' ';
+  String get cashier_fiat_deposit_BANK_INTERAC_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_bank_interac_message => ' ';
+  String get cashier_fiat_deposit_BANK_INTERAC_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_bank_interac_open_new_window_title => 'Fast fertig\n\n';
+  String get cashier_fiat_deposit_BANK_INTERAC_open_new_window_title => 'Fast fertig\n\n';
 
   @override
-  String get cashier_fiat_deposit_bank_placeholder => 'Wäle bitte';
+  String get cashier_fiat_deposit_BANK_placeholder => 'Wäle bitte';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer => 'Banküberweisung';
+  String get cashier_fiat_deposit_BANK_TRANSFER => 'Banküberweisung';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_klarna => 'Klarna';
+  String get cashier_fiat_deposit_BANK_TRANSFER_KLARNA => 'Klarna';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_klarna_almost_done_message => ' ';
+  String get cashier_fiat_deposit_BANK_TRANSFER_KLARNA_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_klarna_form_description => ' ';
+  String get cashier_fiat_deposit_BANK_TRANSFER_KLARNA_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_klarna_message => ' ';
+  String get cashier_fiat_deposit_BANK_TRANSFER_KLARNA_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_klarna_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_BANK_TRANSFER_KLARNA_open_new_window_title => 'Fast fertig';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_qaicash_form_description => 'Using “Alipay to bankcard” deposit via P2P will cause delay of crediting to your wallet, kindly use “bankcard to bankcard”. ';
+  String get cashier_fiat_deposit_BANK_TRANSFER_QAICASH_form_description => 'Using “Alipay to bankcard” deposit via P2P will cause delay of crediting to your wallet, kindly use “bankcard to bankcard”. ';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_trustly => 'Trustly';
+  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY => 'Trustly';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_trustly_almost_done_message => ' ';
+  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_trustly_form_description => ' ';
+  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_trustly_iframe_description => '     ';
+  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_iframe_description => '     ';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_trustly_message => '       ';
+  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_message => '       ';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_trustly_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_open_new_window_title => 'Fast fertig';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_voucher_atm_jeton_provider_form_description => 'Ich bestätige, dass ich der Kontoinhaber von diesem Konto bin.';
+  String get cashier_fiat_deposit_BANK_TRANSFER_VOUCHER_ATM_JETON_PROVIDER_form_description => 'Ich bestätige, dass ich der Kontoinhaber von diesem Konto bin.';
 
   @override
-  String get cashier_fiat_deposit_bank_transfer_voucher_atm_fee => 'Depends on the bank you use';
+  String get cashier_fiat_deposit_BANK_TRANSFER_VOUCHER_ATM_fee => 'Depends on the bank you use';
 
   @override
   String get cashier_fiat_deposit_barupay_account_number => '1010345';
@@ -1049,10 +1061,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_barupay_bank_name => 'GMOあおぞらネット銀行 (0310)';
 
   @override
-  String get cashier_fiat_deposit_barupay_beneficiaryname => 'エムシステムマネジメント';
+  String get cashier_fiat_deposit_barupay_beneficiaryName => 'エムシステムマネジメント';
 
   @override
-  String get cashier_fiat_deposit_bic => 'BIC';
+  String get cashier_fiat_deposit_BIC => 'BIC';
 
   @override
   String get cashier_fiat_deposit_bitcasino_barupay_account_number => '7510561';
@@ -1064,34 +1076,34 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_bitcasino_barupay_bank_name => '三井住友銀行';
 
   @override
-  String get cashier_fiat_deposit_bitcasino_barupay_beneficiaryname => '株）LOVEWINE';
+  String get cashier_fiat_deposit_bitcasino_barupay_beneficiaryName => '株）LOVEWINE';
 
   @override
-  String get cashier_fiat_deposit_brite => 'Brite';
+  String get cashier_fiat_deposit_BRITE => 'Brite';
 
   @override
-  String get cashier_fiat_deposit_business_logic_invalid => 'Ungültig';
+  String get cashier_fiat_deposit_BUSINESS_LOGIC_INVALID => 'Ungültig';
 
   @override
-  String get cashier_fiat_deposit_business_logic_required => 'Ungültig';
+  String get cashier_fiat_deposit_BUSINESS_LOGIC_REQUIRED => 'Ungültig';
 
   @override
-  String get cashier_fiat_deposit_cad_global_description => ' ';
+  String get cashier_fiat_deposit_CAD_global_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_cardholder => 'Name des Karteninhabers\n';
+  String get cashier_fiat_deposit_cardHolder => 'Name des Karteninhabers\n';
 
   @override
-  String get cashier_fiat_deposit_cardnumber => 'Kartennummer';
+  String get cashier_fiat_deposit_cardNumber => 'Kartennummer';
 
   @override
   String get cashier_fiat_deposit_choose_payment_method => 'Zahlungsmethode auswählen\n';
 
   @override
-  String get cashier_fiat_deposit_city => 'Stadt';
+  String get cashier_fiat_deposit_CITY => 'Stadt';
 
   @override
-  String get cashier_fiat_deposit_city_placeholder => 'z.B. Yokohama-shi (nur Englisch)';
+  String get cashier_fiat_deposit_CITY_placeholder => 'z.B. Yokohama-shi (nur Englisch)';
 
   @override
   String get cashier_fiat_deposit_code => 'CVV';
@@ -1106,112 +1118,118 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_copy_to_clipboard => 'kopieren';
 
   @override
-  String get cashier_fiat_deposit_cpf => 'CPF';
+  String get cashier_fiat_deposit_cpf => 'CPF eingeben';
 
   @override
-  String get cashier_fiat_deposit_cpf_already_exists_cpf => 'CPF existiert bereits';
+  String get cashier_fiat_deposit_CPF => 'CPF';
+
+  @override
+  String get cashier_fiat_deposit_CPF_ALREADY_EXISTS_cpf => 'CPF existiert bereits';
 
   @override
   String get cashier_fiat_deposit_cpf_description => 'Die angegebenen Daten werden bei allen zukünftigen Transaktionen verwendet\n';
 
   @override
-  String get cashier_fiat_deposit_cpf_cpf => 'Ungültiges CPF';
+  String get cashier_fiat_deposit_CPF_CPF => 'Ungültiges CPF';
 
   @override
-  String get cashier_fiat_deposit_credit_card_acapture => 'Kreditkarte';
+  String get cashier_fiat_deposit_CREDIT_CARD_ACAPTURE => 'Kreditkarte';
 
   @override
-  String get cashier_fiat_deposit_credit_card_acapture_form_description => ' ';
+  String get cashier_fiat_deposit_CREDIT_CARD_ACAPTURE_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_credit_card_e_merchant_pay => 'Kreditkarte';
+  String get cashier_fiat_deposit_CREDIT_CARD_E_MERCHANT_PAY => 'Kreditkarte';
 
   @override
-  String get cashier_fiat_deposit_credit_card_e_merchant_pay_form_description => ' ';
+  String get cashier_fiat_deposit_CREDIT_CARD_E_MERCHANT_PAY_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_creditcard => 'Kredit-/Debitkarte';
+  String get cashier_fiat_deposit_CREDITCARD => 'Kredit-/Debitkarte';
 
   @override
-  String get cashier_fiat_deposit_creditcard_almost_done_message => ' ';
+  String get cashier_fiat_deposit_CREDITCARD_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_creditcard_ecommpay => 'Kredit-/Debitkarte';
+  String get cashier_fiat_deposit_CREDITCARD_ECOMMPAY => 'Kredit-/Debitkarte';
 
   @override
-  String get cashier_fiat_deposit_creditcard_ecommpay_form_description => ' ';
+  String get cashier_fiat_deposit_CREDITCARD_ECOMMPAY_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_creditcard_ecommpay_iframe_description => '  ';
+  String get cashier_fiat_deposit_CREDITCARD_ECOMMPAY_iframe_description => '  ';
 
   @override
-  String get cashier_fiat_deposit_creditcard_ecommpay_message => 'Bitte einen Moment Geduld, dein Konto ist in wenigen Minuten aufgeladen.';
+  String get cashier_fiat_deposit_CREDITCARD_ECOMMPAY_message => 'Bitte einen Moment Geduld, dein Konto ist in wenigen Minuten aufgeladen.';
 
   @override
-  String get cashier_fiat_deposit_creditcard_iframe_description => ' ';
+  String get cashier_fiat_deposit_CREDITCARD_iframe_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_creditcard_message => ' ';
+  String get cashier_fiat_deposit_CREDITCARD_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_creditcard_open_new_window_title => 'Fast fertig\n\n';
+  String get cashier_fiat_deposit_CREDITCARD_open_new_window_title => 'Fast fertig\n\n';
 
   @override
-  String get cashier_fiat_deposit_creditcard_ravedirect_form_description => 'Für diese Zahlungsart sind keine Auszahlungen möglich.';
+  String get cashier_fiat_deposit_CREDITCARD_RAVEDIRECT_form_description => 'Für diese Zahlungsart sind keine Auszahlungen möglich.';
 
   @override
-  String get cashier_fiat_deposit_creditcard_ravedirect_message => ' ';
+  String get cashier_fiat_deposit_CREDITCARD_RAVEDIRECT_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_customer_first_name => 'Vorname';
+  String get cashier_fiat_deposit_CUSTOMER_FIRST_NAME => 'Vorname';
 
   @override
-  String get cashier_fiat_deposit_customer_first_name_placeholder => 'z.B. Satoshi (Englisch oder Katakana)';
+  String get cashier_fiat_deposit_CUSTOMER_FIRST_NAME_placeholder => 'z.B. Satoshi (Englisch oder Katakana)';
 
   @override
-  String get cashier_fiat_deposit_customer_full_name => 'Name des Kontoinhabers';
+  String get cashier_fiat_deposit_CUSTOMER_FULL_NAME => 'Name des Kontoinhabers';
 
   @override
-  String get cashier_fiat_deposit_customer_last_name => 'Nachname';
+  String get cashier_fiat_deposit_CUSTOMER_LAST_NAME => 'Nachname';
 
   @override
-  String get cashier_fiat_deposit_customer_last_name_placeholder => 'z.B. Nakamoto (nur Englisch)';
+  String get cashier_fiat_deposit_CUSTOMER_LAST_NAME_placeholder => 'z.B. Nakamoto (nur Englisch)';
 
   @override
-  String get cashier_fiat_deposit_date_of_birth => 'Date of birth';
+  String get cashier_fiat_deposit_DATE_OF_BIRTH => 'Date of birth';
 
   @override
   String get cashier_fiat_deposit_delete => 'löschen';
 
   @override
-  String get cashier_fiat_deposit_depends_on_amount => 'Gebühr hängt vom Betrag ab\n';
+  String get cashier_fiat_deposit_DEPENDS_ON_AMOUNT => 'Gebühr hängt vom Betrag ab\n';
 
   @override
-  String get cashier_fiat_deposit_ecopayz => 'ecoPayz';
+  String get cashier_fiat_deposit_ECOPAYZ => 'ecoPayz';
 
   @override
-  String get cashier_fiat_deposit_ecopayz_form_description => ' ';
+  String get cashier_fiat_deposit_ECOPAYZ_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_ecopayz_iframe_description => ' ';
+  String get cashier_fiat_deposit_ECOPAYZ_iframe_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_ecopayz_message => ' ';
+  String get cashier_fiat_deposit_ECOPAYZ_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_enccreditcardnumber => 'Kartennummer';
+  String get cashier_fiat_deposit_encCreditcardNumber => 'Kartennummer';
 
   @override
-  String get cashier_fiat_deposit_enccvv => 'CVV';
+  String get cashier_fiat_deposit_encCvv => 'CVV';
 
   @override
-  String get cashier_fiat_deposit_eur_global_description => ' ';
+  String get cashier_fiat_deposit_EUR_global_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_expirymonth => 'Ablaufmonat ';
+  String get cashier_fiat_deposit_expiryMonth => 'Ablaufmonat ';
 
   @override
-  String get cashier_fiat_deposit_expiryyear => 'Ablaufjahr ';
+  String get cashier_fiat_deposit_expiryYear => 'Ablaufjahr ';
+
+  @override
+  String get cashier_fiat_deposit_ezeebill_provider_bank_transfer_JPY_limits => ' ';
 
   @override
   String cashier_fiat_deposit_ezeebill_provider_bank_transfer_jpy_limits(Object min, Object max) {
@@ -1219,25 +1237,28 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashier_fiat_deposit_ezeebill_city_placeholder => 'z.B. Yokohama shi (nur Englisch)';
+  String get cashier_fiat_deposit_ezeebill_CITY_placeholder => 'z.B. Yokohama shi (nur Englisch)';
 
   @override
-  String get cashier_fiat_deposit_ezeebill_state_placeholder => 'z.B. Kanagawa ken (nur Englisch)';
+  String get cashier_fiat_deposit_ezeebill_STATE_placeholder => 'z.B. Kanagawa ken (nur Englisch)';
 
   @override
   String get cashier_fiat_deposit_failure_message => 'Etwas ist schief gelaufen';
 
   @override
-  String get cashier_fiat_deposit_fee => 'Gebühr';
+  String get cashier_fiat_deposit_FEE => 'Gebühr';
 
   @override
-  String get cashier_fiat_deposit_fee_add => 'Gebühr';
+  String get cashier_fiat_deposit_fee_ADD => 'Gebühr';
 
   @override
-  String get cashier_fiat_deposit_fee_deduct => 'Gebühr';
+  String get cashier_fiat_deposit_fee_DEDUCT => 'Gebühr';
 
   @override
-  String get cashier_fiat_deposit_firstname => 'Vorname';
+  String get cashier_fiat_deposit_firstName => 'Vorname';
+
+  @override
+  String get cashier_fiat_deposit_FREE => 'Frei';
 
   @override
   String get cashier_fiat_deposit_free => 'Frei';
@@ -1249,102 +1270,102 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_go_back => 'Zurück gehen';
 
   @override
-  String get cashier_fiat_deposit_help_2_pay_qaicash => 'Help2Pay';
+  String get cashier_fiat_deposit_HELP_2_PAY_QAICASH => 'Help2Pay';
 
   @override
-  String get cashier_fiat_deposit_help_2_pay_qaicash_almost_done_message => ' ';
+  String get cashier_fiat_deposit_HELP_2_PAY_QAICASH_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_help_2_pay_qaicash_form_description => ' ';
+  String get cashier_fiat_deposit_HELP_2_PAY_QAICASH_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_help_2_pay_qaicash_message => ' ';
+  String get cashier_fiat_deposit_HELP_2_PAY_QAICASH_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_help_2_pay_qaicash_open_new_window_title => 'Fast fertig\n\n';
+  String get cashier_fiat_deposit_HELP_2_PAY_QAICASH_open_new_window_title => 'Fast fertig\n\n';
 
   @override
-  String get cashier_fiat_deposit_iban => 'IBAN';
+  String get cashier_fiat_deposit_IBAN => 'IBAN';
 
   @override
-  String get cashier_fiat_deposit_inovapay_local_bank_transfer_brl_limits => 'Bank transfers can take up to 1 business day to be confirmed';
+  String get cashier_fiat_deposit_inovapay_local_bank_transfer_BRL_limits => 'Bank transfers can take up to 1 business day to be confirmed';
 
   @override
-  String get cashier_fiat_deposit_instant => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_INSTANT => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_invalid_cpf_cpf => 'Ungültiges CPF';
+  String get cashier_fiat_deposit_INVALID_CPF_cpf => 'Ungültiges CPF';
 
   @override
-  String get cashier_fiat_deposit_invalid_phone_phone => 'Die Telefonnummer muss in einem gültigen Format eingegeben werden';
+  String get cashier_fiat_deposit_INVALID_PHONE_phone => 'Die Telefonnummer muss in einem gültigen Format eingegeben werden';
 
   @override
-  String cashier_fiat_deposit_invalid_request(Object field) {
+  String cashier_fiat_deposit_INVALID_REQUEST(Object field) {
     return 'Ungültiges Feld: $field';
   }
 
   @override
-  String get cashier_fiat_deposit_invalid_bank_account_number => 'Invalid Bank Account number';
+  String get cashier_fiat_deposit_INVALID_BANK_ACCOUNT_NUMBER => 'Invalid Bank Account number';
 
   @override
-  String get cashier_fiat_deposit_is_not_positive_amount => 'Ungültiger Betrag';
+  String get cashier_fiat_deposit_IS_NOT_POSITIVE_amount => 'Ungültiger Betrag';
 
   @override
-  String get cashier_fiat_deposit_jeton_corefy => 'Banküberweisung';
+  String get cashier_fiat_deposit_JETON_COREFY => 'Banküberweisung';
 
   @override
-  String get cashier_fiat_deposit_jeton_corefy_almost_done_message => ' ';
+  String get cashier_fiat_deposit_JETON_COREFY_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_jeton_corefy_form_description => 'Ich bestätige, dass ich der Kontoinhaber von diesem Konto bin.';
+  String get cashier_fiat_deposit_JETON_COREFY_form_description => 'Ich bestätige, dass ich der Kontoinhaber von diesem Konto bin.';
 
   @override
-  String get cashier_fiat_deposit_jeton_corefy_open_new_window_title => 'Fast fertig\n\n';
+  String get cashier_fiat_deposit_JETON_COREFY_open_new_window_title => 'Fast fertig\n\n';
 
   @override
   String get cashier_fiat_deposit_jeton_exchange_rate => 'Geschätzter USDT Preis:';
 
   @override
-  String get cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_jpy_limits => 'Daily deposit limit: total of USD 500,000 every 24 hours';
+  String get cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_JPY_limits => 'Daily deposit limit: total of USD 500,000 every 24 hours';
 
   @override
-  String get cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_limits => '‎';
+  String get cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_JPY_limits => '‎';
 
   @override
-  String get cashier_fiat_deposit_jpy_instant_bank_transfer_fee => 'Depends on the bank you use ';
+  String get cashier_fiat_deposit_JPY_INSTANT_BANK_TRANSFER_fee => 'Depends on the bank you use ';
 
   @override
-  String get cashier_fiat_deposit_jpy_global_description => ' ';
+  String get cashier_fiat_deposit_JPY_global_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_keitapay_address_placeholder => 'Motomachi 1-1-1 (Englisch, Japanisch)';
+  String get cashier_fiat_deposit_keitapay_ADDRESS_placeholder => 'Motomachi 1-1-1 (Englisch, Japanisch)';
 
   @override
-  String get cashier_fiat_deposit_keitapay_bank_branch_placeholder => 'Bitte wähle die Bankfiliale aus der Liste aus';
+  String get cashier_fiat_deposit_keitapay_BANK_BRANCH_placeholder => 'Bitte wähle die Bankfiliale aus der Liste aus';
 
   @override
-  String get cashier_fiat_deposit_keitapay_customer_first_name => 'z.B. Satoshi (Katakana)';
+  String get cashier_fiat_deposit_keitapay_CUSTOMER_FIRST_NAME => 'z.B. Satoshi (Katakana)';
 
   @override
-  String get cashier_fiat_deposit_keitapay_customer_first_name_placeholder => 'z.B. Satoshi (Katakana)';
+  String get cashier_fiat_deposit_keitapay_CUSTOMER_FIRST_NAME_placeholder => 'z.B. Satoshi (Katakana)';
 
   @override
-  String get cashier_fiat_deposit_keitapay_customer_last_name => 'z.B. Nakamoto (Katakana)';
+  String get cashier_fiat_deposit_keitapay_CUSTOMER_LAST_NAME => 'z.B. Nakamoto (Katakana)';
 
   @override
-  String get cashier_fiat_deposit_keitapay_customer_last_name_placeholder => 'z.B. Nakamoto (Katakana)';
+  String get cashier_fiat_deposit_keitapay_CUSTOMER_LAST_NAME_placeholder => 'z.B. Nakamoto (Katakana)';
 
   @override
-  String get cashier_fiat_deposit_keyta_pay_bank_transfer_jpy_limits => 'Scheduled maintenance will be carried out on every Sunday from 19:00 to 8:00 the following Monday. Kindly avoid these hours if you are in a hurry.';
+  String get cashier_fiat_deposit_keyta_pay_bank_transfer_JPY_limits => 'Scheduled maintenance will be carried out on every Sunday from 19:00 to 8:00 the following Monday. Kindly avoid these hours if you are in a hurry.';
 
   @override
-  String get cashier_fiat_deposit_lastname => 'Nachname';
+  String get cashier_fiat_deposit_lastName => 'Nachname';
 
   @override
-  String get cashier_fiat_deposit_local_bank_transfer_inovapay_form_description => 'Um dein Guthaben aufzuladen, zahle über Sportsbet.io ein. Mache bitte keine direkten Banküberweisungen von deinem Bankclient!';
+  String get cashier_fiat_deposit_LOCAL_BANK_TRANSFER_INOVAPAY_form_description => 'Um dein Guthaben aufzuladen, zahle über Sportsbet.io ein. Mache bitte keine direkten Banküberweisungen von deinem Bankclient!';
 
   @override
-  String get cashier_fiat_deposit_local_bank_transfer_pin_bank_form_description => 'Um dein Guthaben aufzuladen, zahle über Sportsbet.io ein. Mache bitte keine direkten Banküberweisungen von deinem Bankclient!';
+  String get cashier_fiat_deposit_LOCAL_BANK_TRANSFER_PIN_BANK_form_description => 'Um dein Guthaben aufzuladen, zahle über Sportsbet.io ein. Mache bitte keine direkten Banküberweisungen von deinem Bankclient!';
 
   @override
   String get cashier_fiat_deposit_max_limit => 'Max:  ';
@@ -1362,46 +1383,46 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_modal_instruction => 'Um die Transaktion abzuschließen, mache eine Banküberweisung auf dieses Konto anhand von den unten aufgeführten Angaben.';
 
   @override
-  String get cashier_fiat_deposit_muchbetter => 'MuchBetter';
+  String get cashier_fiat_deposit_MUCHBETTER => 'MuchBetter';
 
   @override
-  String get cashier_fiat_deposit_muchbetter_form_description => '<span>Du hast noch kein Konto? <a href=\"https://muchbetter.com/all/get-muchbetter/index.html?_branch_match_id=634307144850618811\" target=\"_blank\">Jetzt registrieren</a></span>';
+  String get cashier_fiat_deposit_MUCHBETTER_form_description => '<span>Du hast noch kein Konto? <a href=\"https://muchbetter.com/all/get-muchbetter/index.html?_branch_match_id=634307144850618811\" target=\"_blank\">Jetzt registrieren</a></span>';
 
   @override
-  String get cashier_fiat_deposit_muchbetter_iframe_description => ' ';
+  String get cashier_fiat_deposit_MUCHBETTER_iframe_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_muchbetter_message => 'Melde dich jetzt bei deiner MuchBetter-App an und klicke, um deine Einzahlung zu bestätigen. Dein Konto wird dann sofort aufgeladen.\n';
+  String get cashier_fiat_deposit_MUCHBETTER_message => 'Melde dich jetzt bei deiner MuchBetter-App an und klicke, um deine Einzahlung zu bestätigen. Dein Konto wird dann sofort aufgeladen.\n';
 
   @override
-  String get cashier_fiat_deposit_nationalid => 'Personalausweis';
+  String get cashier_fiat_deposit_nationalId => 'Personalausweis';
 
   @override
-  String get cashier_fiat_deposit_net_banking_qaicash => 'Lokaler Bank Transfer';
+  String get cashier_fiat_deposit_NET_BANKING_QAICASH => 'Lokaler Bank Transfer';
 
   @override
-  String get cashier_fiat_deposit_net_banking_qaicash_almost_done_message => ' ';
+  String get cashier_fiat_deposit_NET_BANKING_QAICASH_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_net_banking_qaicash_message => ' ';
+  String get cashier_fiat_deposit_NET_BANKING_QAICASH_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_net_banking_qaicash_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_NET_BANKING_QAICASH_open_new_window_title => 'Fast fertig';
 
   @override
-  String get cashier_fiat_deposit_neteller => 'Neteller';
+  String get cashier_fiat_deposit_NETELLER => 'Neteller';
 
   @override
-  String get cashier_fiat_deposit_neteller_almost_done_message => ' ';
+  String get cashier_fiat_deposit_NETELLER_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_neteller_form_description => ' ';
+  String get cashier_fiat_deposit_NETELLER_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_neteller_message => '  ';
+  String get cashier_fiat_deposit_NETELLER_message => '  ';
 
   @override
-  String get cashier_fiat_deposit_neteller_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_NETELLER_open_new_window_title => 'Fast fertig';
 
   @override
   String get cashier_fiat_deposit_next_step => 'Nächster Schritt\n';
@@ -1416,73 +1437,76 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_overview => 'Zahlungsübersicht\n';
 
   @override
-  String get cashier_fiat_deposit_pagsmile_customer_first_name_placeholder => 'z.B. Satoshi (Englisch oder Katakana)';
+  String get cashier_fiat_deposit_pagsmile_CUSTOMER_FIRST_NAME_placeholder => 'z.B. Satoshi (Englisch oder Katakana)';
 
   @override
-  String get cashier_fiat_deposit_pagsmile_customer_last_name_placeholder => 'z.B. Nakamoto (nur Englisch)';
+  String get cashier_fiat_deposit_pagsmile_CUSTOMER_LAST_NAME_placeholder => 'z.B. Nakamoto (nur Englisch)';
 
   @override
-  String get cashier_fiat_deposit_pagsmile_phone => 'Telefonnummer (z.B. BR 11999999999)';
+  String get cashier_fiat_deposit_pagsmile_PHONE => 'Telefonnummer (z.B. BR 11999999999)';
 
   @override
-  String get cashier_fiat_deposit_pagsmile_phone_placeholder => 'Telefonnummer (z.B. BR 11999999999)';
+  String get cashier_fiat_deposit_pagsmile_PHONE_placeholder => 'Telefonnummer (z.B. BR 11999999999)';
 
   @override
-  String get cashier_fiat_deposit_pagsmile_pix_brl_limits => 'PIX deposits can take up to 10 minutes to be confirmed.';
+  String get cashier_fiat_deposit_pagsmile_pix_BRL_limits => 'PIX deposits can take up to 10 minutes to be confirmed.';
 
   @override
   String get cashier_fiat_deposit_password => 'Passwort';
 
   @override
-  String get cashier_fiat_deposit_pay4fun_webredirect_brl_limits => 'Pay4Fun deposits are credited instantly';
+  String get cashier_fiat_deposit_pay4fun_webredirect_BRL_limits => 'Pay4Fun deposits are credited instantly';
 
   @override
   String get cashier_fiat_deposit_payment_methods => 'Zahlungsart auswählen';
 
   @override
-  String get cashier_fiat_deposit_paypay_corefy => 'PayPay';
+  String get cashier_fiat_deposit_PAYPAY_COREFY => 'PayPay';
 
   @override
-  String get cashier_fiat_deposit_paypay_corefy_almost_done_message => ' ';
+  String get cashier_fiat_deposit_PAYPAY_COREFY_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_paypay_corefy_open_new_window_title => 'Fast fertig\n\n';
+  String get cashier_fiat_deposit_PAYPAY_COREFY_open_new_window_title => 'Fast fertig\n\n';
 
   @override
-  String get cashier_fiat_deposit_paysafecard => 'Paysafecard';
+  String get cashier_fiat_deposit_PAYSAFECARD => 'Paysafecard';
 
   @override
-  String get cashier_fiat_deposit_paysafecard_form_description => ' ';
+  String get cashier_fiat_deposit_PAYSAFECARD_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_paysafecard_iframe_description => 'Diese Transaktion kann eine Gebühr enthalten.';
+  String get cashier_fiat_deposit_PAYSAFECARD_iframe_description => 'Diese Transaktion kann eine Gebühr enthalten.';
 
   @override
-  String get cashier_fiat_deposit_paysafecard_message => ' ';
+  String get cashier_fiat_deposit_PAYSAFECARD_message => ' ';
 
   @override
   String get cashier_fiat_deposit_personal_details => 'Zahlungsdetails\n';
 
   @override
-  String get cashier_fiat_deposit_phone => 'Telefonnummer';
+  String get cashier_fiat_deposit_PHONE => 'Telefonnummer';
 
   @override
   String get cashier_fiat_deposit_phone_number => 'Telefonnummer';
 
   @override
+  String get cashier_fiat_deposit_PHONE_placeholder => 'Telefonnummer';
+
+  @override
   String get cashier_fiat_deposit_phone_placeholder => 'Telefonnummer (z.B. BR 11999999999)';
 
   @override
-  String get cashier_fiat_deposit_phone_placeholder_kes => 'Telefonnummer (z.B. +254 999 9999999)';
+  String get cashier_fiat_deposit_phone_placeholder_KES => 'Telefonnummer (z.B. +254 999 9999999)';
 
   @override
-  String get cashier_fiat_deposit_phone_placeholder_tzs => 'Telefonnummer (z.B. +255 999 999 999)';
+  String get cashier_fiat_deposit_phone_placeholder_TZS => 'Telefonnummer (z.B. +255 999 999 999)';
 
   @override
-  String get cashier_fiat_deposit_phone_placeholder_ugx => 'Telefonnummer (z.B. +256 999 99 9999)';
+  String get cashier_fiat_deposit_phone_placeholder_UGX => 'Telefonnummer (z.B. +256 999 99 9999)';
 
   @override
-  String get cashier_fiat_deposit_phonenumber_placeholder => 'Telefon (z.B. UK 4472137127)';
+  String get cashier_fiat_deposit_phoneNumber_placeholder => 'Telefon (z.B. UK 4472137127)';
 
   @override
   String get cashier_fiat_deposit_please_enter_amount => 'Bitte gib den Betrag ein';
@@ -1494,7 +1518,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_please_enter_personal_details_message => 'Bitte gib deine persönlichen Daten an';
 
   @override
-  String get cashier_fiat_deposit_postcode => 'Postleitzahl';
+  String get cashier_fiat_deposit_POSTCODE => 'Postleitzahl';
 
   @override
   String cashier_fiat_deposit_received(Object moneyIcon) {
@@ -1502,21 +1526,21 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String cashier_fiat_deposit_required(Object field) {
+  String cashier_fiat_deposit_REQUIRED(Object field) {
     return 'Erforderliches Feld: $field';
   }
 
   @override
-  String get cashier_fiat_deposit_required_cpf => 'CPF ist erforderlich';
+  String get cashier_fiat_deposit_REQUIRED_CPF => 'CPF ist erforderlich';
 
   @override
-  String get cashier_fiat_deposit_required_firstname => 'Vorname ist erforderlich\n';
+  String get cashier_fiat_deposit_REQUIRED_firstName => 'Vorname ist erforderlich\n';
 
   @override
-  String get cashier_fiat_deposit_required_lastname => 'Nachname ist erforderlich';
+  String get cashier_fiat_deposit_REQUIRED_lastName => 'Nachname ist erforderlich';
 
   @override
-  String get cashier_fiat_deposit_rolling_limit_exceed => 'Die Einzahlungssumme übersteigt dein Einzahlungslimit.';
+  String get cashier_fiat_deposit_ROLLING_LIMIT_EXCEED => 'Die Einzahlungssumme übersteigt dein Einzahlungslimit.';
 
   @override
   String get cashier_fiat_deposit_saved_accounts => 'Gespeicherte Konten';
@@ -1525,58 +1549,58 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_service => 'Service';
 
   @override
-  String get cashier_fiat_deposit_skrill => 'Skrill';
+  String get cashier_fiat_deposit_SKRILL => 'Skrill';
 
   @override
-  String get cashier_fiat_deposit_skrill_almost_done_message => ' ';
+  String get cashier_fiat_deposit_SKRILL_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_skrill_form_description => ' ';
+  String get cashier_fiat_deposit_SKRILL_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_skrill_iframe_description => ' ';
+  String get cashier_fiat_deposit_SKRILL_iframe_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_skrill_message => '  ';
+  String get cashier_fiat_deposit_SKRILL_message => '  ';
 
   @override
-  String get cashier_fiat_deposit_skrill_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_SKRILL_open_new_window_title => 'Fast fertig';
 
   @override
-  String get cashier_fiat_deposit_skrillqco_iframe_description => ' ';
+  String get cashier_fiat_deposit_SKRILLQCO_iframe_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_skrillqco_message => ' ';
+  String get cashier_fiat_deposit_SKRILLQCO_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_skrillqco_rapidtransfer => 'Rapid Transfer';
+  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER => 'Rapid Transfer';
 
   @override
-  String get cashier_fiat_deposit_skrillqco_rapidtransfer_almost_done_message => ' ';
+  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_skrillqco_rapidtransfer_form_description => ' ';
+  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_skrillqco_rapidtransfer_iframe_description => ' ';
+  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_iframe_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_skrillqco_rapidtransfer_message => ' ';
+  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_skrillqco_rapidtransfer_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_open_new_window_title => 'Fast fertig';
 
   @override
-  String get cashier_fiat_deposit_sofort => 'Klarna';
+  String get cashier_fiat_deposit_SOFORT => 'Klarna';
 
   @override
-  String get cashier_fiat_deposit_sofort_form_description => ' ';
+  String get cashier_fiat_deposit_SOFORT_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_sofort_message => '  ';
+  String get cashier_fiat_deposit_SOFORT_message => '  ';
 
   @override
-  String get cashier_fiat_deposit_sofort_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_SOFORT_open_new_window_title => 'Fast fertig';
 
   @override
   String get cashier_fiat_deposit_something_went_wrong => 'Etwas ist schief gelaufen! Bitte versuche es erneut oder wende dich an den Kundenservice.';
@@ -1591,16 +1615,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_sportsbet_barupay_bank_name => '三井住友銀行';
 
   @override
-  String get cashier_fiat_deposit_sportsbet_barupay_beneficiaryname => '株）LOVEWINE';
+  String get cashier_fiat_deposit_sportsbet_barupay_beneficiaryName => '株）LOVEWINE';
 
   @override
-  String get cashier_fiat_deposit_ssn => 'SSN';
+  String get cashier_fiat_deposit_SSN => 'SSN';
 
   @override
-  String get cashier_fiat_deposit_state => 'Staat';
+  String get cashier_fiat_deposit_STATE => 'Staat';
 
   @override
-  String get cashier_fiat_deposit_state_placeholder => 'z.B. Kanagawa-ken (nur Englisch)';
+  String get cashier_fiat_deposit_STATE_placeholder => 'z.B. Kanagawa-ken (nur Englisch)';
 
   @override
   String get cashier_fiat_deposit_submit => 'Mobile Telefonnummer speichern';
@@ -1612,208 +1636,208 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_deposit_success_message => 'Deine Einzahlung wird übermittelt\n';
 
   @override
-  String get cashier_fiat_deposit_sumopay_animex => 'Sumo Pay';
+  String get cashier_fiat_deposit_SUMOPAY_ANIMEX => 'Sumo Pay';
 
   @override
-  String get cashier_fiat_deposit_sumopay_animex_form_description => 'Bitte beachten: Ihre Bank kann eine zusätzliche Gebühr berechnen. Bitte  geben Sie bei der Zahlung nur  die Bestellnummer an. \n(1) Ich bestätige, dass ich der Kontoinhaber dieses Zahlungskontos bin. (2) Ich bestätige, dass ich nicht das Firmenkonto benutze.';
+  String get cashier_fiat_deposit_SUMOPAY_ANIMEX_form_description => 'Bitte beachten: Ihre Bank kann eine zusätzliche Gebühr berechnen. Bitte  geben Sie bei der Zahlung nur  die Bestellnummer an. \n(1) Ich bestätige, dass ich der Kontoinhaber dieses Zahlungskontos bin. (2) Ich bestätige, dass ich nicht das Firmenkonto benutze.';
 
   @override
-  String get cashier_fiat_deposit_sumopay_animex_message => '  ';
+  String get cashier_fiat_deposit_SUMOPAY_ANIMEX_message => '  ';
 
   @override
-  String get cashier_fiat_deposit_sumopay_animex_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_SUMOPAY_ANIMEX_open_new_window_title => 'Fast fertig';
 
   @override
-  String get cashier_fiat_deposit_thb_global_description => ' ';
+  String get cashier_fiat_deposit_THB_global_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_timeframe_bank_brite => 'Umgehend';
+  String get cashier_fiat_deposit_TIMEFRAME_BANK_BRITE => 'Umgehend';
 
   @override
-  String get cashier_fiat_deposit_timeframe_bank_interac => '<15 min';
+  String get cashier_fiat_deposit_TIMEFRAME_BANK_INTERAC => '<15 min';
 
   @override
-  String get cashier_fiat_deposit_timeframe_bank_transfer_klarna => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_BANK_TRANSFER_KLARNA => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_bank_transfer_trustly => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_BANK_TRANSFER_TRUSTLY => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_creditcard => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_CREDITCARD => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_creditcard_ecommpay => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_CREDITCARD_ECOMMPAY => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_creditcard_ravedirect => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_CREDITCARD_RAVEDIRECT => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_ecopayz => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_ECOPAYZ => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_help_2_pay_qaicash => '<5 Minuten';
+  String get cashier_fiat_deposit_TIMEFRAME_HELP_2_PAY_QAICASH => '<5 Minuten';
 
   @override
-  String get cashier_fiat_deposit_timeframe_jeton_corefy => 'Up to 24h';
+  String get cashier_fiat_deposit_TIMEFRAME_JETON_COREFY => 'Up to 24h';
 
   @override
-  String get cashier_fiat_deposit_timeframe_muchbetter => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_MUCHBETTER => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_net_banking_qaicash => '<15 min';
+  String get cashier_fiat_deposit_TIMEFRAME_NET_BANKING_QAICASH => '<15 min';
 
   @override
-  String get cashier_fiat_deposit_timeframe_neteller => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_NETELLER => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_paypay_corefy => 'Up to 24h';
+  String get cashier_fiat_deposit_TIMEFRAME_PAYPAY_COREFY => 'Up to 24h';
 
   @override
-  String get cashier_fiat_deposit_timeframe_paysafecard => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_PAYSAFECARD => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_skrill => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_SKRILL => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_skrillqco => 'Umgehend';
+  String get cashier_fiat_deposit_TIMEFRAME_SKRILLQCO => 'Umgehend';
 
   @override
-  String get cashier_fiat_deposit_timeframe_skrillqco_rapidtransfer => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_SKRILLQCO_RAPIDTRANSFER => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_sofort => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_SOFORT => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_sumopay_animex => 'Up to 24h';
+  String get cashier_fiat_deposit_TIMEFRAME_SUMOPAY_ANIMEX => 'Up to 24h';
 
   @override
-  String get cashier_fiat_deposit_timeframe_trinity_qaicash => '<5 Minuten';
+  String get cashier_fiat_deposit_TIMEFRAME_TRINITY_QAICASH => '<5 Minuten';
 
   @override
-  String get cashier_fiat_deposit_timeframe_trustly => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_TRUSTLY => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_webredirect_sticpay => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_WEBREDIRECT_STICPAY => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_deposit_timeframe_xpay_qr_qaicash => '<15 min';
+  String get cashier_fiat_deposit_TIMEFRAME_XPAY_QR_QAICASH => '<15 min';
 
   @override
-  String get cashier_fiat_deposit_timeframe_zimpler => 'Direkte Gutschrift';
+  String get cashier_fiat_deposit_TIMEFRAME_ZIMPLER => 'Direkte Gutschrift';
 
   @override
   String get cashier_fiat_deposit_total => 'Wird berechnet:';
 
   @override
-  String get cashier_fiat_deposit_total_add => 'Wird berechnet:';
+  String get cashier_fiat_deposit_total_ADD => 'Wird berechnet:';
 
   @override
-  String get cashier_fiat_deposit_total_deduct => 'Wird berechnet:';
+  String get cashier_fiat_deposit_total_DEDUCT => 'Wird berechnet:';
 
   @override
   String get cashier_fiat_deposit_transaction_id => 'Transaktions-ID:\n';
 
   @override
-  String get cashier_fiat_deposit_trinity_qaicash => 'Banküberweisung';
+  String get cashier_fiat_deposit_TRINITY_QAICASH => 'Banküberweisung';
 
   @override
-  String get cashier_fiat_deposit_trinity_qaicash_almost_done_message => '  ';
+  String get cashier_fiat_deposit_TRINITY_QAICASH_almost_done_message => '  ';
 
   @override
-  String get cashier_fiat_deposit_trinity_qaicash_form_description => ' ';
+  String get cashier_fiat_deposit_TRINITY_QAICASH_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_trinity_qaicash_message => ' ';
+  String get cashier_fiat_deposit_TRINITY_QAICASH_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_trinity_qaicash_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_TRINITY_QAICASH_open_new_window_title => 'Fast fertig';
 
   @override
-  String get cashier_fiat_deposit_trustly => 'Trustly';
+  String get cashier_fiat_deposit_TRUSTLY => 'Trustly';
 
   @override
-  String get cashier_fiat_deposit_trustly_form_description => ' ';
+  String get cashier_fiat_deposit_TRUSTLY_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_trustly_iframe_description => '     ';
+  String get cashier_fiat_deposit_TRUSTLY_iframe_description => '     ';
 
   @override
-  String get cashier_fiat_deposit_trustly_message => '       ';
+  String get cashier_fiat_deposit_TRUSTLY_message => '       ';
 
   @override
   String get cashier_fiat_deposit_try_again => 'Erneut versuchen';
 
   @override
-  String get cashier_fiat_deposit_unionpay => 'Unionpay';
+  String get cashier_fiat_deposit_UNIONPAY => 'Unionpay';
 
   @override
-  String get cashier_fiat_deposit_unionpay_qr => 'Unionpay QR';
+  String get cashier_fiat_deposit_UNIONPAY_QR => 'Unionpay QR';
 
   @override
-  String get cashier_fiat_deposit_up_to_48h => 'Up to 24h';
+  String get cashier_fiat_deposit_UP_TO_48H => 'Up to 24h';
 
   @override
-  String get cashier_fiat_deposit_usdt_global_description => ' ';
+  String get cashier_fiat_deposit_USDT_global_description => ' ';
 
   @override
   String get cashier_fiat_deposit_username => 'Benutzername';
 
   @override
-  String get cashier_fiat_deposit_webredirect_sticpay => 'Sticpay';
+  String get cashier_fiat_deposit_WEBREDIRECT_STICPAY => 'Sticpay';
 
   @override
-  String get cashier_fiat_deposit_webredirect_sticpay_form_description => ' ';
+  String get cashier_fiat_deposit_WEBREDIRECT_STICPAY_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_webredirect_sticpay_iframe_description => ' ';
+  String get cashier_fiat_deposit_WEBREDIRECT_STICPAY_iframe_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_webredirect_sticpay_message => ' ';
+  String get cashier_fiat_deposit_WEBREDIRECT_STICPAY_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_wechat => 'Wechat';
+  String get cashier_fiat_deposit_WECHAT => 'Wechat';
 
   @override
-  String get cashier_fiat_deposit_xpay_qr_qaicash => 'QR';
+  String get cashier_fiat_deposit_XPAY_QR_QAICASH => 'QR';
 
   @override
-  String get cashier_fiat_deposit_xpay_qr_qaicash_almost_done_message => ' ';
+  String get cashier_fiat_deposit_XPAY_QR_QAICASH_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_xpay_qr_qaicash_form_description => ' ';
+  String get cashier_fiat_deposit_XPAY_QR_QAICASH_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_xpay_qr_qaicash_message => ' ';
+  String get cashier_fiat_deposit_XPAY_QR_QAICASH_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_xpay_qr_qaicash_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_XPAY_QR_QAICASH_open_new_window_title => 'Fast fertig';
 
   @override
   String get cashier_fiat_deposit_you_will_be_redirected => 'Du wirst weiter geleitet und ein neues Fenster wird geöffnet.';
 
   @override
-  String get cashier_fiat_deposit_zimpler => 'Bank Transfer';
+  String get cashier_fiat_deposit_ZIMPLER => 'Bank Transfer';
 
   @override
-  String get cashier_fiat_deposit_zimpler_almost_done_message => ' ';
+  String get cashier_fiat_deposit_ZIMPLER_almost_done_message => ' ';
 
   @override
-  String get cashier_fiat_deposit_zimpler_form_description => ' ';
+  String get cashier_fiat_deposit_ZIMPLER_form_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_zimpler_iframe_description => ' ';
+  String get cashier_fiat_deposit_ZIMPLER_iframe_description => ' ';
 
   @override
-  String get cashier_fiat_deposit_zimpler_message => '  ';
+  String get cashier_fiat_deposit_ZIMPLER_message => '  ';
 
   @override
-  String get cashier_fiat_deposit_zimpler_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_deposit_ZIMPLER_open_new_window_title => 'Fast fertig';
 
   @override
-  String get cashier_fiat_deposit_zip_code => 'Postleitzahl';
+  String get cashier_fiat_deposit_ZIP_CODE => 'Postleitzahl';
 
   @override
-  String get cashier_fiat_deposit_zip_code_placeholder => '123456';
+  String get cashier_fiat_deposit_ZIP_CODE_placeholder => '123456';
 
   @override
   String cashier_fiat_estimated_currency_rate(Object currency) {
@@ -1821,34 +1845,34 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashier_fiat_eur => 'EUR';
+  String get cashier_fiat_EUR => 'EUR';
 
   @override
   String get cashier_fiat_exp_date => 'Verfallsdatum';
 
   @override
-  String get cashier_fiat_flat_fee => 'Flat Fee';
+  String get cashier_fiat_FLAT_FEE => 'Flat Fee';
 
   @override
-  String get cashier_fiat_gel => 'GEL ';
+  String get cashier_fiat_GEL => 'GEL ';
 
   @override
-  String get cashier_fiat_idr => 'IDR';
+  String get cashier_fiat_IDR => 'IDR';
 
   @override
-  String get cashier_fiat_inr => 'INR';
+  String get cashier_fiat_INR => 'INR';
 
   @override
-  String get cashier_fiat_iqd => 'IQD';
+  String get cashier_fiat_IQD => 'IQD';
 
   @override
-  String get cashier_fiat_jeton_provider_bank_transfer_voucher_atm_title => 'ATM Voucher';
+  String get cashier_fiat_JETON_PROVIDER_BANK_TRANSFER_VOUCHER_ATM_title => 'ATM Voucher';
 
   @override
-  String get cashier_fiat_jpy => 'JPY';
+  String get cashier_fiat_JPY => 'JPY';
 
   @override
-  String get cashier_fiat_krw => 'KRW';
+  String get cashier_fiat_KRW => 'KRW';
 
   @override
   String cashier_fiat_min_max_deposit(Object min, Object max) {
@@ -1867,16 +1891,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_min_max_withdrawal_label => 'Minimum and maximum withdrawal amounts';
 
   @override
-  String get cashier_fiat_mxn => 'MXN';
+  String get cashier_fiat_MXN => 'MXN';
 
   @override
-  String get cashier_fiat_myr => 'MYR';
+  String get cashier_fiat_MYR => 'MYR';
 
   @override
-  String get cashier_fiat_pen => 'PEN';
+  String get cashier_fiat_PEN => 'PEN';
 
   @override
-  String get cashier_fiat_pkr => 'PKR';
+  String get cashier_fiat_PKR => 'PKR';
 
   @override
   String cashier_fiat_placed_order_description(Object amount) {
@@ -1884,7 +1908,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashier_fiat_rub => 'RUB';
+  String get cashier_fiat_RUB => 'RUB';
 
   @override
   String cashier_fiat_sumopay_amount_desc(Object currency) {
@@ -1892,22 +1916,22 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashier_fiat_thb => 'THB';
+  String get cashier_fiat_THB => 'THB';
 
   @override
-  String get cashier_fiat_try => 'TRY';
+  String get cashier_fiat_TRY => 'TRY';
 
   @override
-  String get cashier_fiat_uah => 'UAH';
+  String get cashier_fiat_UAH => 'UAH';
 
   @override
-  String get cashier_fiat_usd => 'USD';
+  String get cashier_fiat_USD => 'USD';
 
   @override
-  String get cashier_fiat_usdt => 'USDT';
+  String get cashier_fiat_USDT => 'USDT';
 
   @override
-  String get cashier_fiat_vnd => 'VND';
+  String get cashier_fiat_VND => 'VND';
 
   @override
   String get cashier_fiat_withdrawal => 'Auszahlen';
@@ -1916,160 +1940,163 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_withdrawal_started => 'Auszahlung wurde veranlasst';
 
   @override
-  String get cashier_fiat_withdrawal_accountid => 'Konto-ID\n';
+  String get cashier_fiat_withdrawal_accountId => 'Konto-ID\n';
 
   @override
-  String get cashier_fiat_withdrawal_accountnumber => 'Kontonummer';
+  String get cashier_fiat_withdrawal_accountNumber => 'Kontonummer';
 
   @override
-  String get cashier_fiat_withdrawal_accounttype => 'Konto Typ';
+  String get cashier_fiat_withdrawal_accountType => 'Konto Typ';
 
   @override
-  String get cashier_fiat_withdrawal_address => 'Adresse';
+  String get cashier_fiat_withdrawal_ADDRESS => 'Adresse';
 
   @override
-  String get cashier_fiat_withdrawal_address_placeholder => 'Motomachi 1-1-1 (Englisch, Japanisch)';
+  String get cashier_fiat_withdrawal_ADDRESS_placeholder => 'Motomachi 1-1-1 (Englisch, Japanisch)';
+
+  @override
+  String get cashier_fiat_WITHDRAWAL_amount => 'Summe eingeben';
 
   @override
   String get cashier_fiat_withdrawal_amount => 'Summe eingeben';
 
   @override
-  String get cashier_fiat_withdrawal_amount_exchange_rate => 'Umrechnungskurs:';
+  String get cashier_fiat_withdrawal_AMOUNT_exchange_rate => 'Umrechnungskurs:';
 
   @override
-  String get cashier_fiat_withdrawal_bank_account_digit => 'Bank account digit (1 digit)';
+  String get cashier_fiat_withdrawal_BANK_ACCOUNT_DIGIT => 'Bank account digit (1 digit)';
 
   @override
-  String get cashier_fiat_withdrawal_bank_account_digit_placeholder => '1';
+  String get cashier_fiat_withdrawal_BANK_ACCOUNT_DIGIT_placeholder => '1';
 
   @override
-  String get cashier_fiat_withdrawal_bank_account_name => 'Bank name';
+  String get cashier_fiat_withdrawal_BANK_ACCOUNT_NAME => 'Bank name';
 
   @override
-  String get cashier_fiat_withdrawal_bank_account_name_placeholder => 'Bank name';
+  String get cashier_fiat_withdrawal_BANK_ACCOUNT_NAME_placeholder => 'Bank name';
 
   @override
-  String get cashier_fiat_withdrawal_bank_account_number => 'Kontonummer';
+  String get cashier_fiat_withdrawal_BANK_ACCOUNT_NUMBER => 'Kontonummer';
 
   @override
-  String get cashier_fiat_withdrawal_bank_account_number_placeholder => '0123456';
+  String get cashier_fiat_withdrawal_BANK_ACCOUNT_NUMBER_placeholder => '0123456';
 
   @override
-  String get cashier_fiat_withdrawal_bank_account_type => 'Konto Typ';
+  String get cashier_fiat_withdrawal_BANK_ACCOUNT_TYPE => 'Konto Typ';
 
   @override
-  String get cashier_fiat_withdrawal_bank_account_type_placeholder => 'Kontoart';
+  String get cashier_fiat_withdrawal_BANK_ACCOUNT_TYPE_placeholder => 'Kontoart';
 
   @override
-  String get cashier_fiat_withdrawal_bank_address => 'Bankadresse';
+  String get cashier_fiat_withdrawal_BANK_ADDRESS => 'Bankadresse';
 
   @override
-  String get cashier_fiat_withdrawal_bank_branch => 'Bankfiliale';
+  String get cashier_fiat_withdrawal_BANK_BRANCH => 'Bankfiliale';
 
   @override
-  String get cashier_fiat_withdrawal_bank_branch_digit => 'Bank branch digit (1 digit)';
+  String get cashier_fiat_withdrawal_BANK_BRANCH_DIGIT => 'Bank branch digit (1 digit)';
 
   @override
-  String get cashier_fiat_withdrawal_bank_branch_digit_placeholder => '1';
+  String get cashier_fiat_withdrawal_BANK_BRANCH_DIGIT_placeholder => '1';
 
   @override
-  String get cashier_fiat_withdrawal_bank_branch_number => 'Filialnummer';
+  String get cashier_fiat_withdrawal_BANK_BRANCH_NUMBER => 'Filialnummer';
 
   @override
-  String get cashier_fiat_withdrawal_bank_branch_number_placeholder => '480';
+  String get cashier_fiat_withdrawal_BANK_BRANCH_NUMBER_placeholder => '480';
 
   @override
-  String get cashier_fiat_withdrawal_bank_branch_placeholder => 'ヨコハマ (nur Katakana)';
+  String get cashier_fiat_withdrawal_BANK_BRANCH_placeholder => 'ヨコハマ (nur Katakana)';
 
   @override
-  String get cashier_fiat_withdrawal_bank_card_number => 'Bankkartennummer\n';
+  String get cashier_fiat_withdrawal_BANK_CARD_NUMBER => 'Bankkartennummer\n';
 
   @override
-  String get cashier_fiat_withdrawal_bank_code => 'Bankleitzahl';
+  String get cashier_fiat_withdrawal_BANK_CODE => 'Bankleitzahl';
 
   @override
-  String get cashier_fiat_withdrawal_bank_code_placeholder => '0005';
+  String get cashier_fiat_withdrawal_BANK_CODE_placeholder => '0005';
 
   @override
-  String get cashier_fiat_withdrawal_bank_id => 'Bank ID\n';
+  String get cashier_fiat_withdrawal_BANK_ID => 'Bank ID\n';
 
   @override
-  String get cashier_fiat_withdrawal_bank_ifsc => 'IFSC Code';
+  String get cashier_fiat_withdrawal_BANK_IFSC => 'IFSC Code';
 
   @override
-  String get cashier_fiat_withdrawal_bank_ifsc_placeholder => 'Beispiel: ABAB0004321';
+  String get cashier_fiat_withdrawal_BANK_IFSC_placeholder => 'Beispiel: ABAB0004321';
 
   @override
-  String get cashier_fiat_withdrawal_bank_name => 'Name der Bank';
+  String get cashier_fiat_withdrawal_BANK_NAME => 'Name der Bank';
 
   @override
-  String get cashier_fiat_withdrawal_bank_name_placeholder => 'MUFG';
+  String get cashier_fiat_withdrawal_BANK_NAME_placeholder => 'MUFG';
 
   @override
-  String get cashier_fiat_withdrawal_bank_swift => 'Bank SWIFT-Code';
+  String get cashier_fiat_withdrawal_BANK_SWIFT => 'Bank SWIFT-Code';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer => 'Banküberweisung';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER => 'Banküberweisung';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer_animex => 'Bank Transfer';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER_ANIMEX => 'Bank Transfer';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer_animex_message => ' ';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER_ANIMEX_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer_brite => 'Brite Banküberweisung';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER_BRITE => 'Brite Banküberweisung';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer_brite_form_description => ' ';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER_BRITE_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer_brite_message => ' ';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER_BRITE_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer_trustly => 'Trustly';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY => 'Trustly';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer_trustly_almost_done_message => '  ';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_almost_done_message => '  ';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer_trustly_form_description => '       ';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_form_description => '       ';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer_trustly_message => '       ';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_message => '       ';
 
   @override
-  String get cashier_fiat_withdrawal_bank_transfer_trustly_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_open_new_window_title => 'Fast fertig';
 
   @override
-  String get cashier_fiat_withdrawal_bankaccount => 'Bankkonto';
+  String get cashier_fiat_withdrawal_bankAccount => 'Bankkonto';
 
   @override
-  String get cashier_fiat_withdrawal_bankbranch => 'Bankfiliale';
+  String get cashier_fiat_withdrawal_bankBranch => 'Bankfiliale';
 
   @override
-  String get cashier_fiat_withdrawal_bankcode => 'Bankleitzahl';
+  String get cashier_fiat_withdrawal_bankCode => 'Bankleitzahl';
 
   @override
-  String get cashier_fiat_withdrawal_beneficiaryname => 'Name des Zahlungsempfängers';
+  String get cashier_fiat_withdrawal_beneficiaryName => 'Name des Zahlungsempfängers';
 
   @override
-  String get cashier_fiat_withdrawal_cad_global_description => ' ';
+  String get cashier_fiat_withdrawal_CAD_global_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_can_not_be_fraction_amount => 'Bitte beachte: Summierte Werte werden nur ohne Dezimalstellen akzeptiert! (z.B. werden 1500,55 JPY nicht akzeptiert. Der Wert muss entweder 1500 JPY oder 1501 JPY entsprechen).';
+  String get cashier_fiat_withdrawal_CAN_NOT_BE_FRACTION_AMOUNT => 'Bitte beachte: Summierte Werte werden nur ohne Dezimalstellen akzeptiert! (z.B. werden 1500,55 JPY nicht akzeptiert. Der Wert muss entweder 1500 JPY oder 1501 JPY entsprechen).';
 
   @override
-  String get cashier_fiat_withdrawal_cardholder => 'Vor- und Zuname';
+  String get cashier_fiat_withdrawal_cardHolder => 'Vor- und Zuname';
 
   @override
   String get cashier_fiat_withdrawal_choose_payment_method => 'Zahlungsmethode auswählen\n';
 
   @override
-  String get cashier_fiat_withdrawal_city => 'Stadt';
+  String get cashier_fiat_withdrawal_CITY => 'Stadt';
 
   @override
-  String get cashier_fiat_withdrawal_city_placeholder => 'Yokohama-shi (Englisch, Japanisch)';
+  String get cashier_fiat_withdrawal_CITY_placeholder => 'Yokohama-shi (Englisch, Japanisch)';
 
   @override
   String get cashier_fiat_withdrawal_continue => 'Fortsetzen';
@@ -2078,145 +2105,145 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_withdrawal_copy_to_clipboard => 'kopieren';
 
   @override
-  String get cashier_fiat_withdrawal_corefy_jeton_jpy_limits => 'Please note that the daily withdrawal limit is 14,000,000 JPY. Daily limit refreshes each day at 18:00 JST.';
+  String get cashier_fiat_withdrawal_corefy_jeton_JPY_limits => 'Please note that the daily withdrawal limit is 14,000,000 JPY. Daily limit refreshes each day at 18:00 JST.';
 
   @override
   String get cashier_fiat_withdrawal_cpf => 'CPF eingeben';
 
   @override
-  String get cashier_fiat_withdrawal_cpf_already_exists => 'CPF existiert bereits';
+  String get cashier_fiat_withdrawal_CPF_ALREADY_EXISTS => 'CPF existiert bereits';
 
   @override
-  String get cashier_fiat_withdrawal_cpf_already_exists_cpf => 'CPF existiert bereits';
+  String get cashier_fiat_withdrawal_CPF_ALREADY_EXISTS_cpf => 'CPF existiert bereits';
 
   @override
   String get cashier_fiat_withdrawal_cpf_description => 'Die angegebenen Daten werden bei allen zukünftigen Transaktionen verwendet\n';
 
   @override
-  String get cashier_fiat_withdrawal_credit_card_acapture => 'Kreditkarte';
+  String get cashier_fiat_withdrawal_CREDIT_CARD_ACAPTURE => 'Kreditkarte';
 
   @override
-  String get cashier_fiat_withdrawal_credit_card_e_merchant_pay => 'Kreditkarte';
+  String get cashier_fiat_withdrawal_CREDIT_CARD_E_MERCHANT_PAY => 'Kreditkarte';
 
   @override
-  String get cashier_fiat_withdrawal_creditcard => 'Kredit-/Debitkarte';
+  String get cashier_fiat_withdrawal_CREDITCARD => 'Kredit-/Debitkarte';
 
   @override
-  String get cashier_fiat_withdrawal_creditcard_ecommpay => 'Kredit-/Debitkarte';
+  String get cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY => 'Kredit-/Debitkarte';
 
   @override
-  String get cashier_fiat_withdrawal_creditcard_ecommpay_form_description => ' ';
+  String get cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_creditcard_ecommpay_message => ' ';
+  String get cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_creditcard_form_description => ' ';
+  String get cashier_fiat_withdrawal_CREDITCARD_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_creditcard_message => ' ';
+  String get cashier_fiat_withdrawal_CREDITCARD_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_creditcard_ravedirect_form_description => ' ';
+  String get cashier_fiat_withdrawal_CREDITCARD_RAVEDIRECT_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_creditcard_ravedirect_message => ' ';
+  String get cashier_fiat_withdrawal_CREDITCARD_RAVEDIRECT_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_customer_local_name => 'Lokaler Kundenname';
+  String get cashier_fiat_withdrawal_CUSTOMER_LOCAL_NAME => 'Lokaler Kundenname';
 
   @override
-  String get cashier_fiat_withdrawal_customer_local_name_placeholder => 'タカハシ アキラ (nur Katakana)';
+  String get cashier_fiat_withdrawal_CUSTOMER_LOCAL_NAME_placeholder => 'タカハシ アキラ (nur Katakana)';
 
   @override
-  String get cashier_fiat_withdrawal_customer_name => 'Name';
+  String get cashier_fiat_withdrawal_CUSTOMER_NAME => 'Name';
 
   @override
-  String get cashier_fiat_withdrawal_customer_name_placeholder => 'Satoshi Nakamoto (nur Englisch)';
+  String get cashier_fiat_withdrawal_CUSTOMER_NAME_placeholder => 'Satoshi Nakamoto (nur Englisch)';
 
   @override
-  String get cashier_fiat_withdrawal_customername => 'Kundennummer\n';
+  String get cashier_fiat_withdrawal_customerName => 'Kundennummer\n';
 
   @override
-  String get cashier_fiat_withdrawal_customernumber => 'Kundennummer\n';
+  String get cashier_fiat_withdrawal_customerNumber => 'Kundennummer\n';
 
   @override
-  String get cashier_fiat_withdrawal_date_of_birth => 'Geburtsdatum';
+  String get cashier_fiat_withdrawal_DATE_OF_BIRTH => 'Geburtsdatum';
 
   @override
-  String get cashier_fiat_withdrawal_date_of_birth_placeholder => '25/12/1990';
+  String get cashier_fiat_withdrawal_DATE_OF_BIRTH_placeholder => '25/12/1990';
 
   @override
   String get cashier_fiat_withdrawal_delete => 'löschen';
 
   @override
-  String get cashier_fiat_withdrawal_depends_on_amount => 'Gebühr hängt vom Betrag ab\n';
+  String get cashier_fiat_withdrawal_DEPENDS_ON_AMOUNT => 'Gebühr hängt vom Betrag ab\n';
 
   @override
-  String get cashier_fiat_withdrawal_ecopayz => 'ecoPayz';
+  String get cashier_fiat_withdrawal_ECOPAYZ => 'ecoPayz';
 
   @override
-  String get cashier_fiat_withdrawal_ecopayz_form_description => ' ';
+  String get cashier_fiat_withdrawal_ECOPAYZ_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_ecopayz_message => ' ';
+  String get cashier_fiat_withdrawal_ECOPAYZ_message => ' ';
 
   @override
   String get cashier_fiat_withdrawal_email => 'Email address';
 
   @override
-  String get cashier_fiat_withdrawal_enccreditcardnumber => 'Kartennummer';
+  String get cashier_fiat_withdrawal_encCreditcardNumber => 'Kartennummer';
 
   @override
-  String get cashier_fiat_withdrawal_eur_global_description => ' ';
+  String get cashier_fiat_withdrawal_EUR_global_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_expirymonth => 'Ablaufmonat';
+  String get cashier_fiat_withdrawal_expiryMonth => 'Ablaufmonat';
 
   @override
-  String get cashier_fiat_withdrawal_expiryyear => 'Ablaufjahr ';
+  String get cashier_fiat_withdrawal_expiryYear => 'Ablaufjahr ';
 
   @override
-  String get cashier_fiat_withdrawal_ezeebill_bank_account_name => 'Name auf der Karte';
+  String get cashier_fiat_withdrawal_ezeebill_BANK_ACCOUNT_NAME => 'Name auf der Karte';
 
   @override
-  String get cashier_fiat_withdrawal_ezeebill_bank_account_name_placeholder => 'Name auf der Karte (nur Katakana)';
+  String get cashier_fiat_withdrawal_ezeebill_BANK_ACCOUNT_NAME_placeholder => 'Name auf der Karte (nur Katakana)';
 
   @override
-  String get cashier_fiat_withdrawal_ezeebill_bank_branch_placeholder => 'Bitte wähle die Bankfiliale aus der Liste aus';
+  String get cashier_fiat_withdrawal_ezeebill_BANK_BRANCH_placeholder => 'Bitte wähle die Bankfiliale aus der Liste aus';
 
   @override
-  String get cashier_fiat_withdrawal_ezeebill_bank_name => 'Bank name';
+  String get cashier_fiat_withdrawal_ezeebill_BANK_NAME => 'Bank name';
 
   @override
-  String get cashier_fiat_withdrawal_ezeebill_bank_name_placeholder => 'Please select your desired bank from the list';
+  String get cashier_fiat_withdrawal_ezeebill_BANK_NAME_placeholder => 'Please select your desired bank from the list';
 
   @override
-  String get cashier_fiat_withdrawal_ezeebill_customer_name_placeholder => 'Satoshi Nakamoto (nur Englisch)';
+  String get cashier_fiat_withdrawal_ezeebill_CUSTOMER_NAME_placeholder => 'Satoshi Nakamoto (nur Englisch)';
 
   @override
   String get cashier_fiat_withdrawal_failure_message => 'Etwas ist schief gelaufen';
 
   @override
-  String get cashier_fiat_withdrawal_fee => 'Gebühr';
+  String get cashier_fiat_withdrawal_FEE => 'Gebühr';
 
   @override
-  String get cashier_fiat_withdrawal_fee_add => 'Gebühr:';
+  String get cashier_fiat_withdrawal_fee_ADD => 'Gebühr:';
 
   @override
-  String get cashier_fiat_withdrawal_fee_deduct => 'Gebühr:';
+  String get cashier_fiat_withdrawal_fee_DEDUCT => 'Gebühr:';
 
   @override
-  String get cashier_fiat_withdrawal_first_name => 'Vorname';
+  String get cashier_fiat_withdrawal_FIRST_NAME => 'Vorname';
 
   @override
-  String get cashier_fiat_withdrawal_first_name_placeholder => 'z.B. Satoshi (Englisch oder Katakana)';
+  String get cashier_fiat_withdrawal_FIRST_NAME_placeholder => 'z.B. Satoshi (Englisch oder Katakana)';
 
   @override
-  String get cashier_fiat_withdrawal_firstname => 'Vorname';
+  String get cashier_fiat_withdrawal_firstName => 'Vorname';
 
   @override
-  String get cashier_fiat_withdrawal_free => 'Frei';
+  String get cashier_fiat_withdrawal_FREE => 'Frei';
 
   @override
   String get cashier_fiat_withdrawal_global_description => ' ';
@@ -2225,114 +2252,117 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_withdrawal_go_back => 'Zurück gehen';
 
   @override
-  String get cashier_fiat_withdrawal_help_2_pay_qaicash_almost_done_message => 'Wenn du die Transaktion nicht abschließt, wird das Guthaben in 15 Minuten wieder auf dein Spielerkonto gutgeschrieben.\n\n';
+  String get cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_almost_done_message => 'Wenn du die Transaktion nicht abschließt, wird das Guthaben in 15 Minuten wieder auf dein Spielerkonto gutgeschrieben.\n\n';
 
   @override
-  String get cashier_fiat_withdrawal_help_2_pay_qaicash_message => ' ';
+  String get cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_help_2_pay_qaicash_open_new_window_title => 'Fast fertig\n\n';
+  String get cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_open_new_window_title => 'Fast fertig\n\n';
 
   @override
-  String get cashier_fiat_withdrawal_inovapay_bank_transfer_brl_limits => 'Bank transfer withdrawals can take up to 6 business days to be confirmed.';
+  String get cashier_fiat_withdrawal_inovapay_bank_transfer_BRL_limits => 'Bank transfer withdrawals can take up to 6 business days to be confirmed.';
 
   @override
-  String get cashier_fiat_withdrawal_interac => 'Interac';
+  String get cashier_fiat_withdrawal_INTERAC => 'Interac';
 
   @override
-  String get cashier_fiat_withdrawal_interac_message => ' ';
+  String get cashier_fiat_withdrawal_INTERAC_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_cpf_cpf => 'Ungültiges CPF';
+  String get cashier_fiat_withdrawal_INVALID_CPF_cpf => 'Ungültiges CPF';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_format_bankaccount => 'Ungültige Kontonummer';
+  String get cashier_fiat_withdrawal_INVALID_FORMAT_bankAccount => 'Ungültige Kontonummer';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_format_bankbranch => 'Ungültige Bankleitzahl';
+  String get cashier_fiat_withdrawal_INVALID_FORMAT_bankBranch => 'Ungültige Bankleitzahl';
 
   @override
-  String cashier_fiat_withdrawal_invalid_request(Object field) {
+  String cashier_fiat_withdrawal_INVALID_REQUEST(Object field) {
     return 'Ungültiges Feld: $field';
   }
 
   @override
-  String get cashier_fiat_withdrawal_invalid_address => 'Ungültige Adresse';
+  String get cashier_fiat_withdrawal_INVALID_address => 'Ungültige Adresse';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_bank_account_number => 'Invalid Bank Account number';
+  String get cashier_fiat_withdrawal_INVALID_ADDRESS => 'Invalid address';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_bank_branch => 'Invalid Bank branch';
+  String get cashier_fiat_withdrawal_INVALID_BANK_ACCOUNT_NUMBER => 'Invalid Bank Account number';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_bank_branch_number => 'Invalid Bank branch number';
+  String get cashier_fiat_withdrawal_INVALID_BANK_BRANCH => 'Invalid Bank branch';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_bank_code => 'Invalid Bank code';
+  String get cashier_fiat_withdrawal_INVALID_BANK_BRANCH_NUMBER => 'Invalid Bank branch number';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_bank_ifsc => 'Invalid Bank name';
+  String get cashier_fiat_withdrawal_INVALID_BANK_CODE => 'Invalid Bank code';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_bank_name => 'Invalid Bank name';
+  String get cashier_fiat_withdrawal_INVALID_BANK_IFSC => 'Invalid Bank name';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_customer_local_name => 'Invalid Customer Local name';
+  String get cashier_fiat_withdrawal_INVALID_BANK_NAME => 'Invalid Bank name';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_customer_name => 'Invalid Customer name';
+  String get cashier_fiat_withdrawal_INVALID_CUSTOMER_LOCAL_NAME => 'Invalid Customer Local name';
 
   @override
-  String get cashier_fiat_withdrawal_invalid_pix_key => 'Du hast einen ungültigen PIX-Schlüssel eingegeben. Gib deinen CPF ein. ';
+  String get cashier_fiat_withdrawal_INVALID_CUSTOMER_NAME => 'Invalid Customer name';
 
   @override
-  String get cashier_fiat_withdrawal_jeton_corefy => 'Überweisung';
+  String get cashier_fiat_withdrawal_INVALID_PIX_KEY => 'Du hast einen ungültigen PIX-Schlüssel eingegeben. Gib deinen CPF ein. ';
 
   @override
-  String get cashier_fiat_withdrawal_jeton_corefy_form_description => 'Ich bestätige, dass ich der Besitze dieses Kontos bin.';
+  String get cashier_fiat_withdrawal_JETON_COREFY => 'Überweisung';
 
   @override
-  String get cashier_fiat_withdrawal_jeton_corefy_message => ' ';
+  String get cashier_fiat_withdrawal_JETON_COREFY_form_description => 'Ich bestätige, dass ich der Besitze dieses Kontos bin.';
+
+  @override
+  String get cashier_fiat_withdrawal_JETON_COREFY_message => ' ';
 
   @override
   String get cashier_fiat_withdrawal_jeton_exchange_rate => 'Wechselkurs';
 
   @override
-  String get cashier_fiat_withdrawal_jeton_customer_name => 'Name';
+  String get cashier_fiat_withdrawal_jeton_CUSTOMER_NAME => 'Name';
 
   @override
-  String get cashier_fiat_withdrawal_jpy_global_description => ' ';
+  String get cashier_fiat_withdrawal_JPY_global_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_keyta_pay_bank_transfer_jpy_limits => 'Scheduled maintenance will be carried on every Sunday from 19:00 to 8:00 the following Monday. Kindly avoid these hours if you are in a hurry.';
+  String get cashier_fiat_withdrawal_keyta_pay_bank_transfer_JPY_limits => 'Scheduled maintenance will be carried on every Sunday from 19:00 to 8:00 the following Monday. Kindly avoid these hours if you are in a hurry.';
 
   @override
-  String get cashier_fiat_withdrawal_last_name => 'Nachname';
+  String get cashier_fiat_withdrawal_LAST_NAME => 'Nachname';
 
   @override
-  String get cashier_fiat_withdrawal_last_name_placeholder => 'z.B. Nakamoto (nur Englisch)';
+  String get cashier_fiat_withdrawal_LAST_NAME_placeholder => 'z.B. Nakamoto (nur Englisch)';
 
   @override
-  String get cashier_fiat_withdrawal_lastname => 'Nachname';
+  String get cashier_fiat_withdrawal_lastName => 'Nachname';
 
   @override
-  String get cashier_fiat_withdrawal_local_bank_transfer_qaicash => 'Banküberweisung - Auszahlung';
+  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH => 'Banküberweisung - Auszahlung';
 
   @override
-  String get cashier_fiat_withdrawal_local_bank_transfer_qaicash_almost_done_message => 'Wenn du die Transaktion nicht abschließt, wird das Guthaben in 15 Minuten wieder auf dein Spielerkonto gutgeschrieben.\n';
+  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_almost_done_message => 'Wenn du die Transaktion nicht abschließt, wird das Guthaben in 15 Minuten wieder auf dein Spielerkonto gutgeschrieben.\n';
 
   @override
-  String get cashier_fiat_withdrawal_local_bank_transfer_qaicash_form_description => '  ';
+  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_form_description => '  ';
 
   @override
-  String get cashier_fiat_withdrawal_local_bank_transfer_qaicash_iframe_description => '  ';
+  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_iframe_description => '  ';
 
   @override
-  String get cashier_fiat_withdrawal_local_bank_transfer_qaicash_message => ' ';
+  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_local_bank_transfer_qaicash_open_new_window_title => 'Fast fertig';
+  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_open_new_window_title => 'Fast fertig';
 
   @override
   String get cashier_fiat_withdrawal_max_limit => 'Max: ';
@@ -2350,37 +2380,37 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_withdrawal_mobile => 'Telefonnummer';
 
   @override
-  String get cashier_fiat_withdrawal_muchbetter => 'MuchBetter';
+  String get cashier_fiat_withdrawal_MUCHBETTER => 'MuchBetter';
 
   @override
-  String get cashier_fiat_withdrawal_muchbetter_form_description => '<span>Du hast noch kein Konto? <a href=\"https://muchbetter.com/all/get-muchbetter/index.html?_branch_match_id=634307144850618811\" target=\"_blank\">Jetzt registrieren</a></span>';
+  String get cashier_fiat_withdrawal_MUCHBETTER_form_description => '<span>Du hast noch kein Konto? <a href=\"https://muchbetter.com/all/get-muchbetter/index.html?_branch_match_id=634307144850618811\" target=\"_blank\">Jetzt registrieren</a></span>';
 
   @override
-  String get cashier_fiat_withdrawal_muchbetter_message => ' ';
+  String get cashier_fiat_withdrawal_MUCHBETTER_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_nationalid => 'Personalausweis';
+  String get cashier_fiat_withdrawal_nationalId => 'Personalausweis';
 
   @override
-  String get cashier_fiat_withdrawal_nationalidtype => ' Dokumenttyp';
+  String get cashier_fiat_withdrawal_nationalIdType => ' Dokumenttyp';
 
   @override
-  String get cashier_fiat_withdrawal_neteller => 'Neteller';
+  String get cashier_fiat_withdrawal_NETELLER => 'Neteller';
 
   @override
-  String get cashier_fiat_withdrawal_neteller_form_description => ' ';
+  String get cashier_fiat_withdrawal_NETELLER_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_neteller_message => ' ';
+  String get cashier_fiat_withdrawal_NETELLER_message => ' ';
 
   @override
   String get cashier_fiat_withdrawal_next_step => 'Nächster Schritt\n';
 
   @override
-  String get cashier_fiat_withdrawal_not_enough_funds_amount => 'Nicht genügend Guthaben auf deinem Konto';
+  String get cashier_fiat_withdrawal_NOT_ENOUGH_FUNDS_amount => 'Nicht genügend Guthaben auf deinem Konto';
 
   @override
-  String get cashier_fiat_withdrawal_not_found_saved_account_uuid => 'Konto konnte nicht gefunden werden. Bitte lade die Seite erneut';
+  String get cashier_fiat_withdrawal_NOT_FOUND_SAVED_ACCOUNT_UUID => 'Konto konnte nicht gefunden werden. Bitte lade die Seite erneut';
 
   @override
   String get cashier_fiat_withdrawal_null => 'Telefonnummer';
@@ -2389,34 +2419,34 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_withdrawal_overview => 'Auszahlungsübersicht\n';
 
   @override
-  String get cashier_fiat_withdrawal_pagava_bank_account_name => 'Name auf der Karte';
+  String get cashier_fiat_withdrawal_pagava_BANK_ACCOUNT_NAME => 'Name auf der Karte';
 
   @override
-  String get cashier_fiat_withdrawal_pagava_bank_account_name_placeholder => 'Name auf der Karte (nur Katakana)';
+  String get cashier_fiat_withdrawal_pagava_BANK_ACCOUNT_NAME_placeholder => 'Name auf der Karte (nur Katakana)';
 
   @override
-  String get cashier_fiat_withdrawal_pagava_customer_name_placeholder => 'Satoshi Nakamoto (nur Englisch)';
+  String get cashier_fiat_withdrawal_pagava_CUSTOMER_NAME_placeholder => 'Satoshi Nakamoto (nur Englisch)';
 
   @override
-  String get cashier_fiat_withdrawal_pagsmile_pix_brl_limits => 'PIX withdrawals can take up to 1 business day to be confirmed.';
+  String get cashier_fiat_withdrawal_pagsmile_pix_BRL_limits => 'PIX withdrawals can take up to 1 business day to be confirmed.';
 
   @override
   String get cashier_fiat_withdrawal_password => 'Passwort';
 
   @override
-  String get cashier_fiat_withdrawal_pay4fun_webredirect_brl_limits => 'Pay4Fun wallet withdrawals are confirmed instantly';
+  String get cashier_fiat_withdrawal_pay4fun_webredirect_BRL_limits => 'Pay4Fun wallet withdrawals are confirmed instantly';
 
   @override
   String get cashier_fiat_withdrawal_payment_methods => 'Zahlungsart auswählen';
 
   @override
-  String get cashier_fiat_withdrawal_paysafecard => 'Paysafecard';
+  String get cashier_fiat_withdrawal_PAYSAFECARD => 'Paysafecard';
 
   @override
-  String get cashier_fiat_withdrawal_paysafecard_form_description => ' ';
+  String get cashier_fiat_withdrawal_PAYSAFECARD_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_paysafecard_message => ' ';
+  String get cashier_fiat_withdrawal_PAYSAFECARD_message => ' ';
 
   @override
   String get cashier_fiat_withdrawal_personal_details => 'Zahlungsdetails\n';
@@ -2425,19 +2455,22 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_withdrawal_phone_number => 'Telefonnummer';
 
   @override
-  String get cashier_fiat_withdrawal_phone_number_placeholder => '+9012345678';
+  String get cashier_fiat_withdrawal_PHONE_NUMBER => 'Telefonnummer';
 
   @override
-  String get cashier_fiat_withdrawal_phonenumber_placeholder => 'Telefon (z.B. UK 4472137127)';
+  String get cashier_fiat_withdrawal_PHONE_NUMBER_placeholder => '+9012345678';
 
   @override
-  String get cashier_fiat_withdrawal_pinbank_bank_branch_placeholder => 'Bankfiliale';
+  String get cashier_fiat_withdrawal_phoneNumber_placeholder => 'Telefon (z.B. UK 4472137127)';
 
   @override
-  String get cashier_fiat_withdrawal_pix_key => 'CPF Schlüssel (numbers only)';
+  String get cashier_fiat_withdrawal_pinbank_BANK_BRANCH_placeholder => 'Bankfiliale';
 
   @override
-  String get cashier_fiat_withdrawal_pix_key_placeholder => 'CPF Schlüssel';
+  String get cashier_fiat_withdrawal_PIX_KEY => 'CPF Schlüssel (numbers only)';
+
+  @override
+  String get cashier_fiat_withdrawal_PIX_KEY_placeholder => 'CPF Schlüssel';
 
   @override
   String get cashier_fiat_withdrawal_please_enter_amount => 'Bitte gib den Betrag ein';
@@ -2449,21 +2482,21 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_withdrawal_please_enter_personal_details_message => 'Bitte gib deine persönlichen Daten an';
 
   @override
-  String get cashier_fiat_withdrawal_postcode => 'Postleitzahl';
+  String get cashier_fiat_withdrawal_POSTCODE => 'Postleitzahl';
 
   @override
-  String get cashier_fiat_withdrawal_postcode_placeholder => '120-0003';
+  String get cashier_fiat_withdrawal_POSTCODE_placeholder => '120-0003';
 
   @override
-  String get cashier_fiat_withdrawal_province => 'Provinz';
+  String get cashier_fiat_withdrawal_PROVINCE => 'Provinz';
 
   @override
-  String cashier_fiat_withdrawal_required(Object field) {
+  String cashier_fiat_withdrawal_REQUIRED(Object field) {
     return 'Erforderliches Feld: $field';
   }
 
   @override
-  String get cashier_fiat_withdrawal_required_cardholder => 'Name des Karteninhabers erforderlich\n';
+  String get cashier_fiat_withdrawal_REQUIRED_cardHolder => 'Name des Karteninhabers erforderlich\n';
 
   @override
   String get cashier_fiat_withdrawal_saved_accounts => 'Gespeicherte Konten';
@@ -2472,49 +2505,49 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_withdrawal_service => 'Service';
 
   @override
-  String get cashier_fiat_withdrawal_skrill => 'Skrill';
+  String get cashier_fiat_withdrawal_SKRILL => 'Skrill';
 
   @override
-  String get cashier_fiat_withdrawal_skrill_form_description => ' ';
+  String get cashier_fiat_withdrawal_SKRILL_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_skrill_message => ' ';
+  String get cashier_fiat_withdrawal_SKRILL_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_skrillqco_message => ' ';
+  String get cashier_fiat_withdrawal_SKRILLQCO_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_skrillqco_rapidtransfer => 'Rapid Transfer';
+  String get cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER => 'Rapid Transfer';
 
   @override
-  String get cashier_fiat_withdrawal_skrillqco_rapidtransfer_form_description => ' ';
+  String get cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_skrillqco_rapidtransfer_message => ' ';
+  String get cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER_message => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_sofort => 'Klarna';
+  String get cashier_fiat_withdrawal_SOFORT => 'Klarna';
 
   @override
-  String get cashier_fiat_withdrawal_sofort_form_description => ' ';
+  String get cashier_fiat_withdrawal_SOFORT_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_sofort_message => '  ';
+  String get cashier_fiat_withdrawal_SOFORT_message => '  ';
 
   @override
-  String get cashier_fiat_withdrawal_state => 'Staat';
+  String get cashier_fiat_withdrawal_STATE => 'Staat';
 
   @override
-  String get cashier_fiat_withdrawal_state_placeholder => 'z.B. Kanagawa-ken (nur Englisch)';
+  String get cashier_fiat_withdrawal_STATE_placeholder => 'z.B. Kanagawa-ken (nur Englisch)';
 
   @override
-  String get cashier_fiat_withdrawal_sticpay => 'Sticpay';
+  String get cashier_fiat_withdrawal_STICPAY => 'Sticpay';
 
   @override
-  String get cashier_fiat_withdrawal_sticpay_form_description => ' ';
+  String get cashier_fiat_withdrawal_STICPAY_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_sticpay_message => ' ';
+  String get cashier_fiat_withdrawal_STICPAY_message => ' ';
 
   @override
   String get cashier_fiat_withdrawal_submit => 'Senden';
@@ -2526,91 +2559,91 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_withdrawal_success_message => 'Deine Auszahlung ist in Bearbeitung\n';
 
   @override
-  String get cashier_fiat_withdrawal_thb_global_description => ' ';
+  String get cashier_fiat_withdrawal_THB_global_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_bank_transfer_animex => '1-2 Werktage';
+  String get cashier_fiat_withdrawal_TIMEFRAME_BANK_TRANSFER_ANIMEX => '1-2 Werktage';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_bank_transfer_trustly => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_BANK_TRANSFER_TRUSTLY => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_creditcard => '1-6 Werktage';
+  String get cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD => '1-6 Werktage';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_creditcard_ecommpay => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD_ECOMMPAY => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_creditcard_ravedirect => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD_RAVEDIRECT => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_ecopayz => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_ECOPAYZ => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_help_2_pay_qaicash => '<5 Minuten';
+  String get cashier_fiat_withdrawal_TIMEFRAME_HELP_2_PAY_QAICASH => '<5 Minuten';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_interac => 'Bis zu 2 Werktage';
+  String get cashier_fiat_withdrawal_TIMEFRAME_INTERAC => 'Bis zu 2 Werktage';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_jeton_corefy => '1-2 Werktage';
+  String get cashier_fiat_withdrawal_TIMEFRAME_JETON_COREFY => '1-2 Werktage';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_local_bank_transfer_qaicash => '<5 Minuten';
+  String get cashier_fiat_withdrawal_TIMEFRAME_LOCAL_BANK_TRANSFER_QAICASH => '<5 Minuten';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_muchbetter => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_MUCHBETTER => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_neteller => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_NETELLER => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_paysafecard => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_PAYSAFECARD => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_skrill => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_SKRILL => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_skrillqco => 'Umgehend';
+  String get cashier_fiat_withdrawal_TIMEFRAME_SKRILLQCO => 'Umgehend';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_skrillqco_rapidtransfer => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_SKRILLQCO_RAPIDTRANSFER => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_sofort => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_SOFORT => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_sticpay => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_STICPAY => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_trustly => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_TRUSTLY => 'Direkte Gutschrift';
 
   @override
-  String get cashier_fiat_withdrawal_timeframe_zimpler => 'Direkte Gutschrift';
+  String get cashier_fiat_withdrawal_TIMEFRAME_ZIMPLER => 'Direkte Gutschrift';
 
   @override
   String get cashier_fiat_withdrawal_total => 'Ausgezahlter Betrag:';
 
   @override
-  String get cashier_fiat_withdrawal_total_add => 'Ausgezahlter Betrag:';
+  String get cashier_fiat_withdrawal_total_ADD => 'Ausgezahlter Betrag:';
 
   @override
-  String get cashier_fiat_withdrawal_total_deduct => 'Wird berechnet:';
+  String get cashier_fiat_withdrawal_total_DEDUCT => 'Wird berechnet:';
 
   @override
   String get cashier_fiat_withdrawal_transaction_id => 'Transaktions-ID:\n';
 
   @override
-  String get cashier_fiat_withdrawal_trustly => 'Trustly';
+  String get cashier_fiat_withdrawal_TRUSTLY => 'Trustly';
 
   @override
-  String get cashier_fiat_withdrawal_trustly_form_description => ' ';
+  String get cashier_fiat_withdrawal_TRUSTLY_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_trustly_iframe_description => '     ';
+  String get cashier_fiat_withdrawal_TRUSTLY_iframe_description => '     ';
 
   @override
-  String get cashier_fiat_withdrawal_trustly_message => '     ';
+  String get cashier_fiat_withdrawal_TRUSTLY_message => '     ';
 
   @override
   String get cashier_fiat_withdrawal_try_again => 'Erneut versuchen';
@@ -2619,16 +2652,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_fiat_withdrawal_username => 'Benutzername';
 
   @override
-  String get cashier_fiat_withdrawal_webredirect_sticpay => 'Sticpay';
+  String get cashier_fiat_withdrawal_WEBREDIRECT_STICPAY => 'Sticpay';
 
   @override
-  String get cashier_fiat_withdrawal_zimpler => 'Bank Transfer';
+  String get cashier_fiat_withdrawal_ZIMPLER => 'Bank Transfer';
 
   @override
-  String get cashier_fiat_withdrawal_zimpler_form_description => ' ';
+  String get cashier_fiat_withdrawal_ZIMPLER_form_description => ' ';
 
   @override
-  String get cashier_fiat_withdrawal_zimpler_message => ' ';
+  String get cashier_fiat_withdrawal_ZIMPLER_message => ' ';
 
   @override
   String get cashier_filer_by_date => 'Nach Datum sortieren';
@@ -2640,7 +2673,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_finances => 'Geld';
 
   @override
-  String get cashier_firstname => 'Vorname ';
+  String get cashier_firstName => 'Vorname ';
 
   @override
   String get cashier_forfeit => 'Verwirken';
@@ -2686,7 +2719,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_hide_withdraw_history => 'Auszahlungsverlauf verbergen';
 
   @override
-  String get cashier_hkd => 'Hong Kong Dollar';
+  String get cashier_HKD => 'Hong Kong Dollar';
 
   @override
   String get cashier_if_you_dont_have_btc => 'Du kannst Bitcoins kaufen, indem du auf diesen Link klickst';
@@ -2698,7 +2731,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_initialize_account_web_resource => 'Initializing account web-resource';
 
   @override
-  String get cashier_inr => 'Indische Rupee';
+  String get cashier_INR => 'Indische Rupee';
 
   @override
   String get cashier_instant_bank_transfer_success => 'Erfolg! Klicke auf \'Sofort-Überweisung\', um die Transaktion abzuschließen';
@@ -2719,31 +2752,31 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_jeton_title => 'Instant Bank Transfer';
 
   @override
-  String get cashier_jpy => 'Japanische Yen';
+  String get cashier_JPY => 'Japanische Yen';
 
   @override
-  String get cashier_jpy_deposit_jeton_description => 'Sofortige JPY Banküberweisung';
+  String get cashier_JPY_deposit_jeton_description => 'Sofortige JPY Banküberweisung';
 
   @override
-  String get cashier_jpy_deposit_jpysecure_description => 'Sofortige JPY Banküberweisung';
+  String get cashier_JPY_deposit_jpysecure_description => 'Sofortige JPY Banküberweisung';
 
   @override
-  String get cashier_jpy_deposit_jpysecure_title => 'Barupay';
+  String get cashier_JPY_deposit_jpysecure_title => 'Barupay';
 
   @override
-  String get cashier_jpy_deposit_pagava_description => 'Easy online banking transfer‎';
+  String get cashier_JPY_deposit_pagava_description => 'Easy online banking transfer‎';
 
   @override
-  String get cashier_jpy_withdraw_jeton_description => 'Sofortige JPY Banküberweisung';
+  String get cashier_JPY_withdraw_jeton_description => 'Sofortige JPY Banküberweisung';
 
   @override
-  String get cashier_jpy_withdraw_jpysecure_description => 'Sofortige JPY Banküberweisung';
+  String get cashier_JPY_withdraw_jpysecure_description => 'Sofortige JPY Banküberweisung';
 
   @override
-  String get cashier_jpy_withdraw_jpysecure_title => 'Barupay';
+  String get cashier_JPY_withdraw_jpysecure_title => 'Barupay';
 
   @override
-  String get cashier_jpy_withdraw_pagava_description => 'Easy online banking transfer‎';
+  String get cashier_JPY_withdraw_pagava_description => 'Easy online banking transfer‎';
 
   @override
   String get cashier_kyc_banner_body_id_expired => 'Bitte verifiziere deine Identität erneut mit einem gültigen Ausweis.\n';
@@ -2782,7 +2815,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_labels_verify_phone_number => 'Verifiziere deine Telefonnummer';
 
   @override
-  String get cashier_lastname => 'Nachname ';
+  String get cashier_lastName => 'Nachname ';
 
   @override
   String get cashier_less_options => 'Weniger Optionen';
@@ -2794,10 +2827,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_load_more => 'Mehr laden';
 
   @override
-  String get cashier_ltc => 'Litecoin';
+  String get cashier_LTC => 'Litecoin';
 
   @override
-  String get cashier_matic => 'Polygon (Matic)';
+  String get cashier_MATIC => 'Polygon (Matic)';
 
   @override
   String get cashier_max_deposit => 'Höchsteinzahlung';
@@ -2820,10 +2853,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_metamask_wallet => 'Metamask Wallet';
 
   @override
-  String get cashier_metamask_insufficient_funds => 'Unzureichendes Guthaben';
+  String get cashier_metamask_INSUFFICIENT_FUNDS => 'Unzureichendes Guthaben';
 
   @override
-  String get cashier_metric_prefix_btc => 'Bitcoin-Metrikpräfix ';
+  String get cashier_metric_prefix_BTC => 'Bitcoin-Metrikpräfix ';
 
   @override
   String cashier_minimum_conversion_amount(Object amount, Object currency) {
@@ -3092,7 +3125,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_paypay_description => 'Benutze dein Online-Banking, um ein- und auszuzahlen.';
 
   @override
-  String get cashier_paypay_description_jpy => 'Nach dem Einkauf, wird deine aktive Wallet auf USDT umgestellt.';
+  String get cashier_paypay_description_JPY => 'Nach dem Einkauf, wird deine aktive Wallet auf USDT umgestellt.';
 
   @override
   String get cashier_paypay_disabled_payout => 'Auszahlungen sind momentan leider nicht verfügbar';
@@ -3293,55 +3326,55 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_send_to => 'Schicken an';
 
   @override
-  String get cashier_send_your_ada_deposit => 'Schicke deine ADA Einzahlung an:';
+  String get cashier_send_your_ADA_deposit => 'Schicke deine ADA Einzahlung an:';
 
   @override
-  String get cashier_send_your_ada_withdraw => 'Schicke deine ADA Auszahlung an:';
+  String get cashier_send_your_ADA_withdraw => 'Schicke deine ADA Auszahlung an:';
 
   @override
-  String get cashier_send_your_btc_deposit => 'Schicke deine Bitcoin Einzahlung auf:';
+  String get cashier_send_your_BTC_deposit => 'Schicke deine Bitcoin Einzahlung auf:';
 
   @override
-  String get cashier_send_your_btc_withdraw => 'Schicke deine Bitcoin Auszahlung zu:';
+  String get cashier_send_your_BTC_withdraw => 'Schicke deine Bitcoin Auszahlung zu:';
 
   @override
-  String get cashier_send_your_doge_deposit => 'Schicke deine DOGE Einzahlung an:';
+  String get cashier_send_your_DOGE_deposit => 'Schicke deine DOGE Einzahlung an:';
 
   @override
-  String get cashier_send_your_doge_withdraw => 'Schicke deine DOGE Auszahlung an:';
+  String get cashier_send_your_DOGE_withdraw => 'Schicke deine DOGE Auszahlung an:';
 
   @override
-  String get cashier_send_your_eth_withdraw => 'Schicke deine ETH (ERC-20) Auszahlung an:';
+  String get cashier_send_your_ETH_withdraw => 'Schicke deine ETH (ERC-20) Auszahlung an:';
 
   @override
-  String get cashier_send_your_ltc_deposit => 'Schicke deine Litecoin Einzahlung an:';
+  String get cashier_send_your_LTC_deposit => 'Schicke deine Litecoin Einzahlung an:';
 
   @override
-  String get cashier_send_your_ltc_withdraw => 'Schicke deine LTC Auszahlung an:';
+  String get cashier_send_your_LTC_withdraw => 'Schicke deine LTC Auszahlung an:';
 
   @override
-  String get cashier_send_your_soc_deposit => 'Schicke deine SOC Einzahlung an:';
+  String get cashier_send_your_SOC_deposit => 'Schicke deine SOC Einzahlung an:';
 
   @override
-  String get cashier_send_your_trx_deposit => 'Schicke deine TRX Einzahlung an:';
+  String get cashier_send_your_TRX_deposit => 'Schicke deine TRX Einzahlung an:';
 
   @override
-  String get cashier_send_your_trx_withdraw => ' Schicke deine TRX Auszahlung an:';
+  String get cashier_send_your_TRX_withdraw => ' Schicke deine TRX Auszahlung an:';
 
   @override
-  String get cashier_send_your_usdt_deposit => 'Schicke deine USDT (ERC-20) Einzahlung an:';
+  String get cashier_send_your_USDT_deposit => 'Schicke deine USDT (ERC-20) Einzahlung an:';
 
   @override
-  String get cashier_send_your_usdt_withdraw => 'Schicke deine USDT (ERC-20) Auszahlung an:';
+  String get cashier_send_your_USDT_withdraw => 'Schicke deine USDT (ERC-20) Auszahlung an:';
 
   @override
-  String get cashier_send_your_usdt_tron__withdraw => 'Sende deine USDT (TRC-20) Auszahlung an:';
+  String get cashier_send_your_USDT_TRON__withdraw => 'Sende deine USDT (TRC-20) Auszahlung an:';
 
   @override
-  String get cashier_send_your_xrp_deposit => 'Schicke deine XRP Einzahlung an:';
+  String get cashier_send_your_XRP_deposit => 'Schicke deine XRP Einzahlung an:';
 
   @override
-  String get cashier_send_your_xrp_withdraw => 'Schicke deine XRP Auszahlung an';
+  String get cashier_send_your_XRP_withdraw => 'Schicke deine XRP Auszahlung an';
 
   @override
   String get cashier_show_less => 'Weniger anzeigen';
@@ -3358,10 +3391,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_simplex_instruction => 'Du erhältst umgehend eine Bestätigung\nund dein Guthaben wird entsprechend\ndem Transaktionsbetrag aktualisiert.\n';
 
   @override
-  String get cashier_soc => 'SOC';
+  String get cashier_SOC => 'SOC';
 
   @override
-  String get cashier_soc_deposit_description => 'SOC, die auf die oben angezeigte Adresse gesendet wurden, werden zu deinem Spielguthaben hinzugefügt. ';
+  String get cashier_SOC_deposit_description => 'SOC, die auf die oben angezeigte Adresse gesendet wurden, werden zu deinem Spielguthaben hinzugefügt. ';
 
   @override
   String get cashier_social_bitcasino_instagram => 'https://www.instagram.com/bitcasinoio/';
@@ -3418,7 +3451,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_support_settings => 'Support & Einstellungen';
 
   @override
-  String get cashier_thb => 'THB';
+  String get cashier_THB => 'THB';
 
   @override
   String get cashier_to_date => 'Bis';
@@ -3427,16 +3460,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_today => 'Heute';
 
   @override
-  String get cashier_ton => 'The Open Network';
+  String get cashier_TON => 'The Open Network';
 
   @override
   String get cashier_ton_message_copied => 'Nachricht kopiert';
 
   @override
-  String get cashier_ton_wallets => 'TON Wallets';
+  String get cashier_TON_wallets => 'TON Wallets';
 
   @override
-  String get cashier_ton_wallets_description => 'Zahle über eine beliebige ton.org Wallet ein.';
+  String get cashier_TON_wallets_description => 'Zahle über eine beliebige ton.org Wallet ein.';
 
   @override
   String get cashier_ton_invoice_id_copied => 'Rechnungsnummer kopiert';
@@ -3472,10 +3505,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_transaction_approved => 'Transaktion bestätigt';
 
   @override
+  String get cashier_transaction_APPROVED => 'Transaktion bestätigt';
+
+  @override
   String get cashier_transaction_approving => 'Transaktion bestätigen';
 
   @override
-  String get cashier_transaction_authorized => 'Autorisiert';
+  String get cashier_transaction_APPROVING => 'Transaktion bestätigen';
+
+  @override
+  String get cashier_transaction_AUTHORIZED => 'Autorisiert';
 
   @override
   String get cashier_transaction_bet => 'Wetten';
@@ -3484,7 +3523,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_transaction_bitcoin_rate_applied => 'Benutzter Bitcoin-Wechselkurs:';
 
   @override
-  String get cashier_transaction_cancelled => 'Storniert';
+  String get cashier_transaction_CANCELLED => 'Storniert';
+
+  @override
+  String get cashier_transaction_CANCELLED_BY_USER => 'Vom Benutzer storniert';
 
   @override
   String get cashier_transaction_cancelled_by_user => 'Vom Benutzer storniert';
@@ -3496,7 +3538,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_transaction_confirmations => 'Bestätigungen';
 
   @override
-  String get cashier_transaction_confirmed => 'Bestätigt';
+  String get cashier_transaction_CONFIRMED => 'Bestätigt';
 
   @override
   String get cashier_transaction_credit => 'Kredit-Umrechnung';
@@ -3511,10 +3553,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_transaction_debit => 'Debit-Umrechnung';
 
   @override
-  String get cashier_transaction_declined => 'Abgelehnt';
+  String cashier_transaction_declined(Object description) {
+    return '$description';
+  }
 
   @override
-  String get cashier_transaction_deleted => 'Gelöscht';
+  String get cashier_transaction_DECLINED => 'Abgelehnt';
+
+  @override
+  String get cashier_transaction_DELETED => 'Gelöscht';
 
   @override
   String get cashier_transaction_deposit => 'Einzahlen';
@@ -3531,16 +3578,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_transaction_ending_balance => 'Auslaufend';
 
   @override
-  String get cashier_transaction_expired => 'Abgelaufen';
+  String get cashier_transaction_Expired => 'Abgelaufen';
 
   @override
-  String get cashier_transaction_failed => 'Fehlgeschlagen';
+  String get cashier_transaction_EXPIRED => 'Abgelaufen';
+
+  @override
+  String get cashier_transaction_FAILED => 'Fehlgeschlagen';
 
   @override
   String get cashier_transaction_from => 'Von';
 
   @override
-  String get cashier_transaction_in_progress => 'In Bearbeitung';
+  String get cashier_transaction_IN_PROGRESS => 'In Bearbeitung';
 
   @override
   String get cashier_transaction_info_bet => 'Wetten in ';
@@ -3552,13 +3602,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_transaction_info_win => 'Gewinne in';
 
   @override
-  String get cashier_transaction_input_required => 'Eingabe erforderlich';
+  String get cashier_transaction_INPUT_REQUIRED => 'Eingabe erforderlich';
 
   @override
   String get cashier_transaction_link => 'Transaktionslink';
 
   @override
-  String get cashier_transaction_new => 'Ausstehend';
+  String get cashier_transaction_NEW => 'Ausstehend';
 
   @override
   String cashier_transaction_payment_time(Object datetime) {
@@ -3569,10 +3619,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_transaction_pending => 'Ausstehend';
 
   @override
-  String get cashier_transaction_processing => 'Wird verarbeitet';
+  String get cashier_transaction_PENDING => 'Ausstehend';
 
   @override
-  String get cashier_transaction_rejected => 'Abgelehnt';
+  String get cashier_transaction_PROCESSING => 'Wird verarbeitet';
+
+  @override
+  String get cashier_transaction_REJECTED => 'Abgelehnt';
 
   @override
   String get cashier_transaction_resume_transaction => 'Transaktion fortsetzen';
@@ -3584,7 +3637,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_transaction_round_id => 'Bet ID';
 
   @override
-  String get cashier_transaction_started => 'Begonnen';
+  String get cashier_transaction_STARTED => 'Begonnen';
 
   @override
   String get cashier_transaction_status => 'Status';
@@ -3620,7 +3673,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_tronlink_wallet_balance => 'TronLink Wallet Guthaben, TRX';
 
   @override
-  String get cashier_trx => 'Tron';
+  String get cashier_TRX => 'Tron';
 
   @override
   String get cashier_trx_deposit => 'TRX EINZAHLUNG\n\n';
@@ -3641,22 +3694,22 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_update_rate => 'Wechselkurs aktualisieren';
 
   @override
-  String get cashier_usdc => 'USD Coin';
+  String get cashier_USDC => 'USD Coin';
 
   @override
-  String get cashier_usdt => 'Tether';
+  String get cashier_USDT => 'Tether';
 
   @override
-  String get cashier_usdt_erc_deposit => 'Schicke deine ETH (ERC-20) Einzahlung an:';
+  String get cashier_USDT_ERC_deposit => 'Schicke deine ETH (ERC-20) Einzahlung an:';
 
   @override
-  String get cashier_usdt_trc_deposit => 'Sende deine USDT (TRC-20) Einzahlung an:';
+  String get cashier_USDT_TRC_deposit => 'Sende deine USDT (TRC-20) Einzahlung an:';
 
   @override
-  String get cashier_usdt_deposit_jeton_description => 'Sofortige JPY Banküberweisung';
+  String get cashier_USDT_deposit_jeton_description => 'Sofortige JPY Banküberweisung';
 
   @override
-  String get cashier_usdt_withdraw_jeton_description => 'Sofortige JPY Banküberweisung';
+  String get cashier_USDT_withdraw_jeton_description => 'Sofortige JPY Banküberweisung';
 
   @override
   String get cashier_use_mobile_or_qr => 'Benutze Handy für QR';
@@ -3807,34 +3860,34 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_withdraw_48h_restriction => 'Aus Sicherheitsgründen kannst du innerhalb von 48 Stunden nach der Änderung des Passwortes keine Beträge abheben.';
 
   @override
-  String get cashier_withdraw_ada => 'ADA auszahlen';
+  String get cashier_withdraw_ADA => 'ADA auszahlen';
 
   @override
-  String get cashier_withdraw_bnb => 'BNB auszahlen';
+  String get cashier_withdraw_BNB => 'BNB auszahlen';
 
   @override
-  String get cashier_withdraw_btc => 'Bitcoin auszahlen';
+  String get cashier_withdraw_BTC => 'Bitcoin auszahlen';
 
   @override
-  String get cashier_withdraw_busd => 'BUSD auszahlen';
+  String get cashier_withdraw_BUSD => 'BUSD auszahlen';
 
   @override
-  String get cashier_withdraw_cad => 'CAD auszahlen';
+  String get cashier_withdraw_CAD => 'CAD auszahlen';
 
   @override
   String get cashier_withdraw_confirm => 'Bestätigen ';
 
   @override
-  String get cashier_withdraw_dai => 'DAI auszahlen';
+  String get cashier_withdraw_DAI => 'DAI auszahlen';
 
   @override
-  String get cashier_withdraw_doge => 'DOGE auszahlen';
+  String get cashier_withdraw_DOGE => 'DOGE auszahlen';
 
   @override
-  String get cashier_withdraw_eth => 'ETH auszahlen';
+  String get cashier_withdraw_ETH => 'ETH auszahlen';
 
   @override
-  String get cashier_withdraw_eur => 'EUR auszahlen';
+  String get cashier_withdraw_EUR => 'EUR auszahlen';
 
   @override
   String get cashier_withdraw_funds => 'Guthaben auszahlen';
@@ -3855,19 +3908,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_withdraw_is_complete => 'Auszahlung ist abgeschlossen';
 
   @override
-  String get cashier_withdraw_jpy => 'JPY auszahlen';
+  String get cashier_withdraw_JPY => 'JPY auszahlen';
 
   @override
-  String get cashier_withdraw_ltc => 'LTC auszahlen';
+  String get cashier_withdraw_LTC => 'LTC auszahlen';
 
   @override
-  String get cashier_withdraw_matic => 'MATIC auszahlen';
+  String get cashier_withdraw_MATIC => 'MATIC auszahlen';
 
   @override
   String get cashier_withdraw_next => 'Weiter';
 
   @override
-  String get cashier_withdraw_soc => 'SOC auszahlen';
+  String get cashier_withdraw_SOC => 'SOC auszahlen';
 
   @override
   String cashier_withdraw_successful(Object currency, Object amount) {
@@ -3875,25 +3928,25 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashier_withdraw_thb => 'THB auszahlen';
+  String get cashier_withdraw_THB => 'THB auszahlen';
 
   @override
-  String get cashier_withdraw_ton => 'TON auszahlen';
+  String get cashier_withdraw_TON => 'TON auszahlen';
 
   @override
-  String get cashier_withdraw_trx => 'TRX auszahlen';
+  String get cashier_withdraw_TRX => 'TRX auszahlen';
 
   @override
-  String get cashier_withdraw_usdc => 'USDC auszahlen';
+  String get cashier_withdraw_USDC => 'USDC auszahlen';
 
   @override
-  String get cashier_withdraw_usdt => 'USDT auszahlen';
+  String get cashier_withdraw_USDT => 'USDT auszahlen';
 
   @override
   String get cashier_withdraw_view_status => 'Klicke hier, um den Status einzusehen';
 
   @override
-  String get cashier_withdraw_xrp => 'XRP auszahlen';
+  String get cashier_withdraw_XRP => 'XRP auszahlen';
 
   @override
   String get cashier_withdraw_animex_bank_transfer_title => 'Bank Transfer';
@@ -3902,10 +3955,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_withdraw_cancel => 'Auszahlung stornieren';
 
   @override
-  String get cashier_withdraw_ezeebill_bank_transfer_inr_title => 'Instant INR Bank Transfer';
+  String get cashier_withdraw_ezeebill_bank_transfer_INR_title => 'Instant INR Bank Transfer';
 
   @override
-  String get cashier_withdraw_ezeebill_bank_transfer_jpy_title => 'Sofortige JPY Banküberweisung';
+  String get cashier_withdraw_ezeebill_bank_transfer_JPY_title => 'Sofortige JPY Banküberweisung';
 
   @override
   String get cashier_withdraw_ezeebill_bank_transfer_description => 'Reflection time: 2 business days (varies by bank)';
@@ -3926,7 +3979,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_withdraw_interac_interac_title => 'Payment';
 
   @override
-  String get cashier_withdraw_jeton_jpy_title => 'Sofortige JPY Banküberweisung';
+  String get cashier_withdraw_jeton_JPY_title => 'Sofortige JPY Banküberweisung';
 
   @override
   String get cashier_withdraw_jeton_pix_title => 'Jeton - PIX';
@@ -3989,10 +4042,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_withdrawal_amount => 'Auszahlungsbetrag:';
 
   @override
-  String get cashier_withdrawal_brl => 'BRL auszahlen';
+  String get cashier_withdrawal_BRL => 'BRL auszahlen';
 
   @override
-  String get cashier_withdrawal_cad => 'Withdraw CAD';
+  String get cashier_withdrawal_CAD => 'Withdraw CAD';
 
   @override
   String cashier_withdrawal_currency(Object currency) {
@@ -4000,22 +4053,22 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashier_withdrawal_inr => 'INR auszahlen';
+  String get cashier_withdrawal_INR => 'INR auszahlen';
 
   @override
-  String get cashier_withdrawal_jpy => 'Zahle JPY aus';
+  String get cashier_withdrawal_JPY => 'Zahle JPY aus';
 
   @override
   String get cashier_withdrawal_pay_to => 'Zahlen an';
 
   @override
-  String get cashier_withdrawal_usdt => 'Zahle USDT aus';
+  String get cashier_withdrawal_USDT => 'Zahle USDT aus';
 
   @override
   String get cashier_would_you_like_to_cash => 'Möchten du auf dein Bankkonto auszahlen lassen?';
 
   @override
-  String get cashier_xrp => 'Ripple';
+  String get cashier_XRP => 'Ripple';
 
   @override
   String cashier_you_are_spending(Object transferAmount) {
@@ -4069,7 +4122,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashier_your_soc_dep_address => 'Deine SOC-Einzahlungsadresse';
 
   @override
-  String get currency_mbtc => 'μBTC';
+  String get currency_mBtc => 'μBTC';
 
   @override
   String get errors_404_cta => 'Gehe zu Spiele';
@@ -4078,87 +4131,87 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errors_404_error_message_header => 'Hoppla!';
 
   @override
-  String get errors_404_errormessage => 'Hoppla! Wir konnten die von dir gesuchte Webseite nicht finden.';
+  String get errors_404_errorMessage => 'Hoppla! Wir konnten die von dir gesuchte Webseite nicht finden.';
 
   @override
   String get errors_404_promo => 'Hoppla! Wir konnten die von dir gesuchte Webseite nicht finden.';
 
   @override
-  String get errors_age_must_be_over_18 => 'Du musst mindestens 18 Jahre alt sein, um dich zu registrieren';
+  String get errors_AGE_MUST_BE_OVER_18 => 'Du musst mindestens 18 Jahre alt sein, um dich zu registrieren';
 
   @override
   String get errors_already_predicted_this_price => 'Du hast diesen Preis bereits getippt.';
 
   @override
-  String get errors_amount_is_null => 'Die Summe ist null';
+  String get errors_AMOUNT_IS_NULL => 'Die Summe ist null';
 
   @override
   String get errors_article_404_text => 'Hoppla! Wir konnten die von dir gesuchte Webseite nicht finden.';
 
   @override
-  String get errors_btc_amount_must_be_greater_than_1_mbtc => 'Die BTC Summe muss mindestens 2 mBTC betragen';
+  String get errors_BTC_AMOUNT_MUST_BE_GREATER_THAN_1_MBTC => 'Die BTC Summe muss mindestens 2 mBTC betragen';
 
   @override
   String get errors_complete_form => 'Complete form before proceeding!';
 
   @override
-  String get errors_cooldown_after_password_change => 'Aus Sicherheitsgründen kannst du innerhalb von 48 Stunden nach der Änderung des Passwortes keine Beträge abheben.';
+  String get errors_COOLDOWN_AFTER_PASSWORD_CHANGE => 'Aus Sicherheitsgründen kannst du innerhalb von 48 Stunden nach der Änderung des Passwortes keine Beträge abheben.';
 
   @override
-  String get errors_corrupt_image => 'Ungültige Bilddatei';
+  String get errors_CORRUPT_IMAGE => 'Ungültige Bilddatei';
 
   @override
-  String get errors_country_does_not_have_supported_currencies => 'Das Land hat keine der unterstützten Währungen';
+  String get errors_COUNTRY_DOES_NOT_HAVE_SUPPORTED_CURRENCIES => 'Das Land hat keine der unterstützten Währungen';
 
   @override
-  String get errors_country_is_not_supported => 'Das ausgewählte Land wird nicht unterstützt';
+  String get errors_COUNTRY_IS_NOT_SUPPORTED => 'Das ausgewählte Land wird nicht unterstützt';
 
   @override
-  String get errors_cpf_contact_support => 'We couldn\'t validate your CPF, Please contact our support team';
+  String get errors_CPF_CONTACT_SUPPORT => 'We couldn\'t validate your CPF, Please contact our support team';
 
   @override
-  String get errors_currency_mismatch_between_selected_currency_and_market_btc_rate => 'Währungsinkongruenz zwischen der ausgewählten Währung und dem Bitcoin-Wechselkurs';
+  String get errors_CURRENCY_MISMATCH_BETWEEN_SELECTED_CURRENCY_AND_MARKET_BTC_RATE => 'Währungsinkongruenz zwischen der ausgewählten Währung und dem Bitcoin-Wechselkurs';
 
   @override
-  String get errors_disabled_withdrawals => 'Ein Fehler ist aufgetreten. Bitte kontaktiere unseren Support.';
+  String get errors_DISABLED_WITHDRAWALS => 'Ein Fehler ist aufgetreten. Bitte kontaktiere unseren Support.';
 
   @override
-  String get errors_disabled_withdrawals_sportsbet => 'Ein Fehler ist aufgetreten. Bitte kontaktieren Sie uns unter <a class=\'text-piccolo\' href=\"mailto:safety@sportsbet.io\">safety@sportsbet.io </a>';
+  String get errors_DISABLED_WITHDRAWALS_sportsbet => 'Ein Fehler ist aufgetreten. Bitte kontaktieren Sie uns unter <a class=\'text-piccolo\' href=\"mailto:safety@sportsbet.io\">safety@sportsbet.io </a>';
 
   @override
-  String get errors_email_already_exists => 'Diese E-Mail-Adresse existiert schon in unserem System';
+  String get errors_EMAIL_ALREADY_EXISTS => 'Diese E-Mail-Adresse existiert schon in unserem System';
 
   @override
   String get errors_email_is_taken => 'Die E-Mail-Adresse ist schon vergeben';
 
   @override
-  String errors_exchange_min_withdraw(Object currency, Object amount) {
+  String errors_exchange_MIN_WITHDRAW(Object currency, Object amount) {
     return 'Der Mindestbetrag für die Umrechnung liegt bei $amount $currency.';
   }
 
   @override
-  String get errors_failed_to_submit => 'Failed to submit transaction! Verify if your your input is valid';
+  String get errors_FAILED_TO_SUBMIT => 'Failed to submit transaction! Verify if your your input is valid';
 
   @override
-  String get errors_gamegeneral_cta => 'Aktualisieren';
+  String get errors_gameGeneral_cta => 'Aktualisieren';
 
   @override
-  String get errors_gamegeneral_errormessage => 'Etwas ist schief gelaufen. Versuche es erneut!';
+  String get errors_gameGeneral_errorMessage => 'Etwas ist schief gelaufen. Versuche es erneut!';
 
   @override
   String get errors_general => 'Etwas ist schief gelaufen.';
 
   @override
-  String get errors_general_description => 'Things don\'t appear to work at the moment. Please try again later';
+  String get errors_GENERAL_DESCRIPTION => 'Things don\'t appear to work at the moment. Please try again later';
 
   @override
   String get errors_general_support => 'Oops, something went wrong. Please contact support';
 
   @override
-  String get errors_higher_than_limit => 'The amount you entered is more than the maximum amount';
+  String get errors_HIGHER_THAN_LIMIT => 'The amount you entered is more than the maximum amount';
 
   @override
-  String get errors_image_too_big => 'Das Bild muss kleiner als 10 MB sein';
+  String get errors_IMAGE_TOO_BIG => 'Das Bild muss kleiner als 10 MB sein';
 
   @override
   String get errors_input_max_length => 'Maximale Länge überschritten';
@@ -4173,93 +4226,93 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errors_input_required => 'Feld ist erforderlich';
 
   @override
-  String get errors_invalid => 'Ungültig';
+  String get errors_INVALID => 'Ungültig';
 
   @override
-  String get errors_invalid_address => 'Ungültige Wallet-Adresse';
+  String get errors_INVALID_ADDRESS => 'Ungültige Wallet-Adresse';
 
   @override
-  String get errors_invalid_address_address => 'Ungültige Wallet-Adresse';
+  String get errors_INVALID_ADDRESS_address => 'Ungültige Wallet-Adresse';
 
   @override
-  String get errors_invalid_cpf => 'Ungültiges CPF';
+  String get errors_INVALID_CPF => 'Ungültiges CPF';
 
   @override
-  String get errors_invalid_date => 'Ungültiges Datum';
+  String get errors_INVALID_DATE => 'Ungültiges Datum';
 
   @override
   String get errors_invalid_date_range => '\'Von\'-Datum muss vor dem \'Bis\'-Datum liegen ';
 
   @override
-  String get errors_invalid_email => 'Ungültige E-Mail-Adresse';
+  String get errors_INVALID_EMAIL => 'Ungültige E-Mail-Adresse';
 
   @override
-  String get errors_invalid_market_btc_rate_id => 'Ungültige ID des Bitcoin-Wechselkurses';
+  String get errors_INVALID_MARKET_BTC_RATE_ID => 'Ungültige ID des Bitcoin-Wechselkurses';
 
   @override
-  String get errors_invalid_password => 'Ungültiges Passwort';
+  String get errors_INVALID_PASSWORD => 'Ungültiges Passwort';
 
   @override
-  String get errors_invalid_password_reset_token => 'Bitte überprüfen den Link zum Zurücksetzen des Passwortes';
+  String get errors_INVALID_PASSWORD_RESET_TOKEN => 'Bitte überprüfen den Link zum Zurücksetzen des Passwortes';
 
   @override
-  String get errors_invalid_payment_id => 'Ungültige Zahlungs-ID';
+  String get errors_INVALID_PAYMENT_ID => 'Ungültige Zahlungs-ID';
 
   @override
-  String get errors_invalid_phone => 'Die Telefonnummer muss in einem gültigen Format eingegeben werden';
+  String get errors_INVALID_PHONE => 'Die Telefonnummer muss in einem gültigen Format eingegeben werden';
 
   @override
-  String get errors_invalid_request => 'Ein Fehler ist aufgetreten. Bitte kontaktiere unseren Support.';
+  String get errors_INVALID_REQUEST => 'Ein Fehler ist aufgetreten. Bitte kontaktiere unseren Support.';
 
   @override
-  String get errors_invalid_rfc => 'Ungültiger RFC ';
+  String get errors_INVALID_RFC => 'Ungültiger RFC ';
 
   @override
-  String get errors_invalid_status => 'Ungültiger Status';
+  String get errors_INVALID_STATUS => 'Ungültiger Status';
 
   @override
-  String get errors_invalid_status_update => 'Ungültige Statusaktualisierung';
+  String get errors_INVALID_STATUS_UPDATE => 'Ungültige Statusaktualisierung';
 
   @override
-  String get errors_invalid_username => 'Ein Benutzername muss 3-20 Zeichen lang sein und kann nur Buchstaben, Zahlen und _ beinhalten';
+  String get errors_INVALID_USERNAME => 'Ein Benutzername muss 3-20 Zeichen lang sein und kann nur Buchstaben, Zahlen und _ beinhalten';
 
   @override
-  String get errors_invalid_username_or_password => 'Ungültiger Benutzername oder Passwort';
+  String get errors_INVALID_USERNAME_OR_PASSWORD => 'Ungültiger Benutzername oder Passwort';
 
   @override
-  String get errors_invalid_username_password_or_otp => 'Bitte überprüfe deinen Login, Passwort oder Google Authenticator Code';
+  String get errors_INVALID_USERNAME_PASSWORD_OR_OTP => 'Bitte überprüfe deinen Login, Passwort oder Google Authenticator Code';
 
   @override
-  String get errors_invalid_lightning_network_invoice => 'The invoice cannot be used twice. <br />Please create new one on your wallet application to start your withdrawal.';
+  String get errors_INVALID_LIGHTNING_NETWORK_INVOICE => 'The invoice cannot be used twice. <br />Please create new one on your wallet application to start your withdrawal.';
 
   @override
-  String get errors_invoice_expired_address => 'Withdrawal request is expired. <br /> Please create new one on your wallet application to start your withdrawal.';
+  String get errors_INVOICE_EXPIRED_address => 'Withdrawal request is expired. <br /> Please create new one on your wallet application to start your withdrawal.';
 
   @override
-  String get errors_is_required => 'Pflichtfeld';
+  String get errors_IS_REQUIRED => 'Pflichtfeld';
 
   @override
   String get errors_login_authentication_failed => 'Anmeldung fehlgeschlagen. Bitte versuche es erneut! ';
 
   @override
-  String get errors_lower_than_limit => 'Die eingegebene Menge ist niedriger als das Minimum';
+  String get errors_LOWER_THAN_LIMIT => 'Die eingegebene Menge ist niedriger als das Minimum';
 
   @override
-  String get errors_max_withdraw => 'Diese Summe überschreitet die maximale Auszahlung';
+  String get errors_MAX_WITHDRAW => 'Diese Summe überschreitet die maximale Auszahlung';
 
   @override
-  String get errors_method_not_found => 'Selected method is not available';
+  String get errors_METHOD_NOT_FOUND => 'Selected method is not available';
 
   @override
-  String errors_min_withdraw(Object minAmount, Object currency, Object amount) {
+  String errors_MIN_WITHDRAW(Object minAmount, Object currency, Object amount) {
     return 'Die Mindestauszahlung beträgt $amount $currency';
   }
 
   @override
-  String get errors_must_be_logged_in => 'Du musst angemeldet sein';
+  String get errors_MUST_BE_LOGGED_IN => 'Du musst angemeldet sein';
 
   @override
-  String get errors_newer_market_rate_exists => 'Ein neuer Wechselkurs ist verfügbar';
+  String get errors_NEWER_MARKET_RATE_EXISTS => 'Ein neuer Wechselkurs ist verfügbar';
 
   @override
   String errors_no_deposits_available_at_this_time(Object currency) {
@@ -4270,10 +4323,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errors_no_exchange_currency_available => ' Keine Währung für den Wechsel verfügbar';
 
   @override
-  String get errors_no_internet_connection => 'Not connected to the internet. Please try again';
+  String get errors_NO_INTERNET_CONNECTION => 'Not connected to the internet. Please try again';
 
   @override
-  String get errors_no_market_btc_rate_available_for_selected_currency => 'Kein Bitcoin-Wechselkurs verfügbar für die ausgewählte Währung';
+  String get errors_NO_MARKET_BTC_RATE_AVAILABLE_FOR_SELECTED_CURRENCY => 'Kein Bitcoin-Wechselkurs verfügbar für die ausgewählte Währung';
 
   @override
   String errors_no_withdrawals_available_at_this_time(Object currency) {
@@ -4281,46 +4334,46 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get errors_not_allowed => 'Bitte überprüfe deinen Google Authenticator Code';
+  String get errors_NOT_ALLOWED => 'Bitte überprüfe deinen Google Authenticator Code';
 
   @override
-  String get errors_not_allowed_to_use_app => 'Sorry! You are not allowed to use this application from your location';
+  String get errors_NOT_ALLOWED_TO_USE_APP => 'Sorry! You are not allowed to use this application from your location';
 
   @override
   String get errors_not_allowed_to_use_exchange_method => 'Du hast keine Berechtigung, die ausgewählte Umrechnungsmethode zu nutzen';
 
   @override
-  String get errors_not_allowed_to_use_site => 'Es ist verboten, diese Webseite von deinem Standort aus zu nutzen';
+  String get errors_NOT_ALLOWED_TO_USE_SITE => 'Es ist verboten, diese Webseite von deinem Standort aus zu nutzen';
 
   @override
-  String get errors_not_enough_funds => 'Du hast nicht genug Guthaben, um fortzufahren. ';
+  String get errors_NOT_ENOUGH_FUNDS => 'Du hast nicht genug Guthaben, um fortzufahren. ';
 
   @override
-  String get errors_not_enough_funds_amount => 'Not enough funds for withdrawal. Please top up your account.';
+  String get errors_NOT_ENOUGH_FUNDS_amount => 'Not enough funds for withdrawal. Please top up your account.';
 
   @override
-  String get errors_not_found => 'Nicht gefunden';
+  String get errors_NOT_FOUND => 'Nicht gefunden';
 
   @override
-  String get errors_otp_is_required => 'Bitte gib deinen Google Authenticator Code ein';
+  String get errors_OTP_IS_REQUIRED => 'Bitte gib deinen Google Authenticator Code ein';
 
   @override
-  String get errors_otp_must_be_disabled => 'Um dein bestehendes Konto mit deinem Facebook-Konto zu verlinken, musst du zuerst den Google Authenticator deaktivieren. ';
+  String get errors_OTP_MUST_BE_DISABLED => 'Um dein bestehendes Konto mit deinem Facebook-Konto zu verlinken, musst du zuerst den Google Authenticator deaktivieren. ';
 
   @override
-  String get errors_otp_verification_failed => 'Dein Google Authenticator Code ist falsch.';
+  String get errors_OTP_VERIFICATION_FAILED => 'Dein Google Authenticator Code ist falsch.';
 
   @override
-  String get errors_otp_verification_failed_otp_bitcasino => 'Einmalige Passwortüberprüfung fehlgeschlagen';
+  String get errors_OTP_VERIFICATION_FAILED_otp_bitcasino => 'Einmalige Passwortüberprüfung fehlgeschlagen';
 
   @override
-  String get errors_otp_verification_failed_otp_empire => 'Einmalige Passwortüberprüfung fehlgeschlagen';
+  String get errors_OTP_VERIFICATION_FAILED_otp_empire => 'Einmalige Passwortüberprüfung fehlgeschlagen';
 
   @override
-  String get errors_otp_verification_failed_otp_sportsbet => 'Einmalige Passwortüberprüfung fehlgeschlagen';
+  String get errors_OTP_VERIFICATION_FAILED_otp_sportsbet => 'Einmalige Passwortüberprüfung fehlgeschlagen';
 
   @override
-  String get errors_password_does_not_match => 'Die Kennwörter stimmen nicht überein';
+  String get errors_PASSWORD_DOES_NOT_MATCH => 'Die Kennwörter stimmen nicht überein';
 
   @override
   String get errors_password_recovery_email_not_found => 'Falsche E-Mail-Adresse. Bitte überprüfe deine Eingabe und versuche es erneut.';
@@ -4329,40 +4382,40 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errors_password_recovery_unable_to_change_password => 'Änderung des Passwortes fehlgeschlagen';
 
   @override
-  String get errors_password_reset_denied_for_social_user => 'Du hast dich über ein soziales Netzwerk registriert. Für die Anmeldung, klicke bitte auf den Button des Sozialnetzwerkes, mit dem du dich registriert hast. ';
+  String get errors_PASSWORD_RESET_DENIED_FOR_SOCIAL_USER => 'Du hast dich über ein soziales Netzwerk registriert. Für die Anmeldung, klicke bitte auf den Button des Sozialnetzwerkes, mit dem du dich registriert hast. ';
 
   @override
-  String get errors_password_reset_denied_user_deleted => 'Passwortzurücksetzung fehlgeschlagen. Das Konto wurde entfernt.';
+  String get errors_PASSWORD_RESET_DENIED_USER_DELETED => 'Passwortzurücksetzung fehlgeschlagen. Das Konto wurde entfernt.';
 
   @override
-  String get errors_password_too_short => 'Dein Passwort muss mindestens 6 Zeichen lang sein';
+  String get errors_PASSWORD_TOO_SHORT => 'Dein Passwort muss mindestens 6 Zeichen lang sein';
 
   @override
-  String get errors_password_too_weak => 'Dieses Kennwort ist zu unsicher. Ein sicheres Kennwort enthält Großbuchstaben und Zahlen';
+  String get errors_PASSWORD_TOO_WEAK => 'Dieses Kennwort ist zu unsicher. Ein sicheres Kennwort enthält Großbuchstaben und Zahlen';
 
   @override
-  String get errors_pattern_does_not_match => 'Ungültige Eingabe';
+  String get errors_PATTERN_DOES_NOT_MATCH => 'Ungültige Eingabe';
 
   @override
-  String get errors_payment_amount_too_large => 'Zahlungsbetrag ist zu groß.';
+  String get errors_PAYMENT_AMOUNT_TOO_LARGE => 'Zahlungsbetrag ist zu groß.';
 
   @override
-  String get errors_payment_method_is_not_supported => 'Diese Zahlungsmethode wird nicht unterstützt';
+  String get errors_PAYMENT_METHOD_IS_NOT_SUPPORTED => 'Diese Zahlungsmethode wird nicht unterstützt';
 
   @override
-  String get errors_payment_method_is_not_supported_in_current_country => 'Diese Zahlungsmethode wird im aktuellen Land nicht unterstützt';
+  String get errors_PAYMENT_METHOD_IS_NOT_SUPPORTED_IN_CURRENT_COUNTRY => 'Diese Zahlungsmethode wird im aktuellen Land nicht unterstützt';
 
   @override
-  String get errors_payment_method_is_not_supported_with_selected_currency => 'Diese Zahlungsmethode wird mit der ausgewählten Währung nicht unterstützt';
+  String get errors_PAYMENT_METHOD_IS_NOT_SUPPORTED_WITH_SELECTED_CURRENCY => 'Diese Zahlungsmethode wird mit der ausgewählten Währung nicht unterstützt';
 
   @override
-  String get errors_payment_status_must_be_new => 'Der Zahlungsstatus muss neu sein';
+  String get errors_PAYMENT_STATUS_MUST_BE_NEW => 'Der Zahlungsstatus muss neu sein';
 
   @override
-  String get errors_processing_fee_too_high => 'Bearbeitungsgebühr zu hoch';
+  String get errors_PROCESSING_FEE_TOO_HIGH => 'Bearbeitungsgebühr zu hoch';
 
   @override
-  String get errors_processing_fee_too_low => 'Bearbeitungsgebühr zu niedrig';
+  String get errors_PROCESSING_FEE_TOO_LOW => 'Bearbeitungsgebühr zu niedrig';
 
   @override
   String get errors_profile_authentication_failed => 'Authentifizierung fehlgeschlagen';
@@ -4374,70 +4427,70 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errors_profile_user_not_found => 'Benutzer nicht gefunden';
 
   @override
-  String get errors_request_timeout => 'Request timeout!';
+  String get errors_REQUEST_TIMEOUT => 'Request timeout!';
 
   @override
   String get errors_required => 'Pflichtfeld';
 
   @override
-  String get errors_requires_destination_tag => 'Ein Destinations Tag wird benötigt. Generiere eine X-Adresse unter Benutzung von https://xrpaddress.info.';
+  String get errors_REQUIRES_DESTINATION_TAG => 'Ein Destinations Tag wird benötigt. Generiere eine X-Adresse unter Benutzung von https://xrpaddress.info.';
 
   @override
-  String get errors_selected_currency_is_not_supported => 'Die ausgewählte Währung wird nicht unterstützt';
+  String get errors_SELECTED_CURRENCY_IS_NOT_SUPPORTED => 'Die ausgewählte Währung wird nicht unterstützt';
 
   @override
-  String get errors_selected_currency_is_not_supported_in_current_country => 'Die ausgewählte Währung wird im aktuellen Land nicht unterstützt';
+  String get errors_SELECTED_CURRENCY_IS_NOT_SUPPORTED_IN_CURRENT_COUNTRY => 'Die ausgewählte Währung wird im aktuellen Land nicht unterstützt';
 
   @override
   String get errors_sign_up_email_or_username_is_taken => 'E-Mail-Adresse oder Benutzername schon vergeben';
 
   @override
-  String get errors_sms_2fa_invalid_session_id => 'Ungültige Sitzung, versuche es bitte erneut';
+  String get errors_SMS_2FA_INVALID_SESSION_ID => 'Ungültige Sitzung, versuche es bitte erneut';
 
   @override
-  String get errors_sms_2fa_seesion_id_expired => 'OTP verfallen';
+  String get errors_SMS_2FA_SEESION_ID_EXPIRED => 'OTP verfallen';
 
   @override
-  String get errors_sms_2fa_verification_failed => 'Ungültiger OTP Code';
+  String get errors_SMS_2FA_VERIFICATION_FAILED => 'Ungültiger OTP Code';
 
   @override
-  String get errors_social_auth_connect_verify_email => 'Um diese Login-Methode zu benutzen, melde dich zeurst bei deinem Konto an und verifiziere deine E-Mail-Adresse';
+  String get errors_SOCIAL_AUTH_CONNECT_VERIFY_EMAIL => 'Um diese Login-Methode zu benutzen, melde dich zeurst bei deinem Konto an und verifiziere deine E-Mail-Adresse';
 
   @override
   String get errors_something_went_wrong => 'Etwas ist schief gelaufen! Bitte versuche es erneut oder wende dich an den Kundenservice.';
 
   @override
-  String get errors_spread_too_high => 'Spread zu hoch';
+  String get errors_SPREAD_TOO_HIGH => 'Spread zu hoch';
 
   @override
-  String get errors_spread_too_low => 'Spread zu niedrig';
+  String get errors_SPREAD_TOO_LOW => 'Spread zu niedrig';
 
   @override
-  String get errors_system_error => 'Systemfehler. Bitte kontaktieren Sie die Kundenbetreuung.';
+  String get errors_SYSTEM_ERROR => 'Systemfehler. Bitte kontaktieren Sie die Kundenbetreuung.';
 
   @override
-  String get errors_token_expired => 'Token ist abgelaufen';
+  String get errors_TOKEN_EXPIRED => 'Token ist abgelaufen';
 
   @override
-  String get errors_too_long => 'Eingabe zu lang';
+  String get errors_TOO_LONG => 'Eingabe zu lang';
 
   @override
-  String get errors_too_many_login_attempts => 'Zu viele Anmeldungsversuche! Bitte versuche es später erneut. ';
+  String get errors_TOO_MANY_LOGIN_ATTEMPTS => 'Zu viele Anmeldungsversuche! Bitte versuche es später erneut. ';
 
   @override
-  String get errors_too_many_password_reset_attempts => 'Zu viele Versuche das Passwort zurückzusetzen. Bitte versuche es später noch einmal.';
+  String get errors_TOO_MANY_PASSWORD_RESET_ATTEMPTS => 'Zu viele Versuche das Passwort zurückzusetzen. Bitte versuche es später noch einmal.';
 
   @override
-  String get errors_too_many_sms_2fa_attempts => 'Zu viele Authentifizierungsversuche über SMS! Bitte versuche es in 15 Minuten erneut. ';
+  String get errors_TOO_MANY_SMS_2FA_ATTEMPTS => 'Zu viele Authentifizierungsversuche über SMS! Bitte versuche es in 15 Minuten erneut. ';
 
   @override
-  String get errors_too_many_sms_sent => 'Zu viele SMS verschickt. Bitte versuche es in 15 Minuten erneut. ';
+  String get errors_TOO_MANY_SMS_SENT => 'Zu viele SMS verschickt. Bitte versuche es in 15 Minuten erneut. ';
 
   @override
   String get errors_transaction_amount => 'Invalid transaction amount value!';
 
   @override
-  String get errors_transaction_reference_is_null => 'Transaktionsreferenz ist null';
+  String get errors_TRANSACTION_REFERENCE_IS_NULL => 'Transaktionsreferenz ist null';
 
   @override
   String get errors_type_mismatch => 'Typenkonflikt';
@@ -4446,16 +4499,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errors_ubtc_must_be_greater => 'Der Betrag muss mindestens 2,000 µBTC sein';
 
   @override
-  String get errors_unconfirmed_deposit => 'Deine Einzahlung muss zuerst bestätigt werden, bevor du eine Auszahlung tätigen kannst. ';
+  String get errors_UNCONFIRMED_DEPOSIT => 'Deine Einzahlung muss zuerst bestätigt werden, bevor du eine Auszahlung tätigen kannst. ';
 
   @override
-  String get errors_unverified_email => 'Die E-Mail-Adresse ist nicht verifiziert';
+  String get errors_UNVERIFIED_EMAIL => 'Die E-Mail-Adresse ist nicht verifiziert';
 
   @override
-  String get errors_user_self_exclusion_is_active => 'Du bist aktuell für insgesamt 24 Stunden von deinem Konto ausgeschlossen, nachdem du den “Panik Knopf” betätigt hast. Nach Ablauf der 24 Stunden kannst du dich wieder wie gewohnt in deinem Konto anmelden.';
+  String get errors_USER_SELF_EXCLUSION_IS_ACTIVE => 'Du bist aktuell für insgesamt 24 Stunden von deinem Konto ausgeschlossen, nachdem du den “Panik Knopf” betätigt hast. Nach Ablauf der 24 Stunden kannst du dich wieder wie gewohnt in deinem Konto anmelden.';
 
   @override
-  String get errors_username_already_exists => 'Dieser Benutzername existiert schon';
+  String get errors_USERNAME_ALREADY_EXISTS => 'Dieser Benutzername existiert schon';
 
   @override
   String get errors_username_is_taken => 'Dieser Benutzername ist schon vergeben';
@@ -4467,19 +4520,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errors_value_missing => 'Pflichtfeld';
 
   @override
-  String get errors_wallet_address_conflict => 'Auszahlung auf die Einzahlungsadresse nicht möglich ';
+  String get errors_WALLET_ADDRESS_CONFLICT => 'Auszahlung auf die Einzahlungsadresse nicht möglich ';
 
   @override
-  String get errors_wallet_address_conflict_address => 'Auszahlung auf die Einzahlungsadresse nicht möglich ';
+  String get errors_WALLET_ADDRESS_CONFLICT_address => 'Auszahlung auf die Einzahlungsadresse nicht möglich ';
 
   @override
-  String get errors_your_account_is_disabled => 'Dein Konto ist deaktiviert - bitte kontaktier die Kundenbetreuung';
+  String get errors_YOUR_ACCOUNT_IS_DISABLED => 'Dein Konto ist deaktiviert - bitte kontaktier die Kundenbetreuung';
 
   @override
-  String get errors_your_account_is_disabled_security => 'Dein Konto ist deaktiviert. Kontaktiere bitte unseren Kundendienst für weitere Informationen. ';
+  String get errors_YOUR_ACCOUNT_IS_DISABLED_SECURITY => 'Dein Konto ist deaktiviert. Kontaktiere bitte unseren Kundendienst für weitere Informationen. ';
 
   @override
-  String get errors_your_account_is_dormant => 'Dieses Spielerkonto wurde wegen langer Inaktivität zu deiner Sicherheit geschlossen. Bitte kontaktiere security@bitcasino.io für Hilfe.';
+  String get errors_YOUR_ACCOUNT_IS_DORMANT => 'Dieses Spielerkonto wurde wegen langer Inaktivität zu deiner Sicherheit geschlossen. Bitte kontaktiere security@bitcasino.io für Hilfe.';
 
   @override
   String get funds_balance => 'Guthaben';
@@ -4642,7 +4695,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get transaction_exchange_withdrawal_jpy => 'JPY zu BTC Umrechnung';
 
   @override
-  String get transaction_incomplete_btc => 'Dein BTC-Kauf ist unvollständig. Um die Transaktion abzuschließen, musst du weitere Informationen hinzufügen.';
+  String get transaction_incomplete_BTC => 'Dein BTC-Kauf ist unvollständig. Um die Transaktion abzuschließen, musst du weitere Informationen hinzufügen.';
 
   @override
   String get transaction_link => 'Transaktions-ID';
@@ -4822,7 +4875,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get transaction_type => 'Transaktionsart';
 
   @override
-  String get transaction_type_bitcoin_deposit => 'Bitcoin-Einzahlung';
+  String get transaction_type_BITCOIN_DEPOSIT => 'Bitcoin-Einzahlung';
 
   @override
   String get transaction_win => 'Gewinnen';
