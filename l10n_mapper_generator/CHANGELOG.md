@@ -47,3 +47,7 @@
 * Fixes inconsistent formatting of placeholders
 * Updated readme
 
+## 2.1.2
+
+* Use dynamic import for `L10nMapperGenerator` in generated `AppLocalizationsMapper`. Thanks to @SERDUN in [PR-26](https://github.com/kwado-tech/l10n_mapper/pull/26)
+
