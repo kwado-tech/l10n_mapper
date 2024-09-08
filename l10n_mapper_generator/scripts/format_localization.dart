@@ -19,6 +19,10 @@ class FormatLocalization {
   bool startsWithUppercase(String input) {
     final substring = input.substring(0, 1);
 
+    if (substring == '@') {
+      return input.substring(0, 2).toLowerCase() == input.substring(0, 2);
+    }
+
     return substring.toUpperCase() == substring;
   }
 
@@ -43,6 +47,47 @@ class FormatLocalization {
       }
     }
     return false;
+  }
+
+  String toCamelCase(String input, List<String> separators) {
+    if (separators.isEmpty || isCamelCase(input)) return input;
+
+    final separatorPattern = RegExp(separators.map((e) => RegExp.escape(e)).join('|'));
+
+    List<String> words = input.split(separatorPattern);
+
+    if (words.isEmpty) return input;
+
+    // convert the first word to lowercase
+    String camelCaseString = words[0].toLowerCase();
+
+    // capitalize the first letter of each subsequent word
+    for (int i = 1; i < words.length; i++) {
+      String word = words[i].toLowerCase();
+      camelCaseString += word[0].toUpperCase() + word.substring(1);
+    }
+
+    return camelCaseString;
+  }
+
+  String convertPlaceholdersToCamelCase(String input, List<String> separators) {
+    if (separators.isEmpty || isCamelCase(input)) return input;
+
+    final placeholderPattern = RegExp(r'\{\s*(.*?)\s*\}');
+
+    // use String.replaceAllMapped to process each placeholder
+    return input.replaceAllMapped(placeholderPattern, (match) {
+      // extract the placeholder content without the curly braces
+      String placeholderContent = match.group(1) ?? '';
+
+      // if (isCamelCase(placeholderContent)) return '{$placeholderContent}';
+
+      // convert the placeholder content to camel case
+      String camelCasePlaceholder = toCamelCase(placeholderContent, separators);
+
+      // rebuild the placeholder with curly braces
+      return '{$camelCasePlaceholder}';
+    });
   }
 
   Future<void> call({required FormatterOptions formatterOptions}) async {
@@ -92,50 +137,37 @@ class FormatLocalization {
       }
 
       try {
-        int braceCount = 0; // keep track of nested braces
-        bool inPlaceholdersBlock = false; // track whether we are inside a placeholders object
-
         final lines = <String>[];
+
+        final predicates = predicateMatch.getOrElse(() => {});
+
+        // get all keys where predicate-values are empty. This is to format-keys to camel-case where no predicate value is provided in the `l10n_mapper.json` config file
+        final emptyPredicateKeys = predicates.keys.where((e) => predicates[e].toString().isEmpty).toList();
 
         // open file and read each line in file
         await inputFile.openRead().transform(utf8.decoder).transform(const LineSplitter()).forEach((line) {
-          final predicates = predicateMatch.getOrElse(() => {});
-
           final parts = line.split(':');
 
-          // modify key to replace matching predicates
-          String modifiedTranslationKey = StringConstants.emptyString;
+          String modifiedTranslationKey = parts[0].replaceAll('"', '').trim();
+          String modifiedTranslationValue = parts.sublist(1).join().trimLeft();
 
-          modifiedTranslationKey = parts[0]
-              .replaceAll('"', '')
-              .split(StringConstants.emptyString)
-              .map((e) => predicates[e] ?? e)
-              .join()
-              .trim();
+          // format translation-value
+          // modify key to replace matching predicates and convert match to camel-case if predicate-value is empty (if its not a placeholder object)
+          modifiedTranslationKey = toCamelCase(modifiedTranslationKey, emptyPredicateKeys);
 
-          // check if we're entering the "placeholders" object
-          if (line.contains('"placeholders"')) {
-            inPlaceholdersBlock = true;
-            braceCount = 0; // reset brace count when we enter a new placeholders block
-          }
-
-          // Adjust braceCount based on encountering opening or closing braces
-          if (inPlaceholdersBlock) {
-            braceCount += '{'.allMatches(line).length;
-            braceCount -= '}'.allMatches(line).length;
-
-            // Exit placeholders block if all opened braces are closed
-            if (braceCount <= 0) {
-              inPlaceholdersBlock = false;
-            }
-          }
+          modifiedTranslationKey =
+              modifiedTranslationKey.split(StringConstants.emptyString).map((e) => predicates[e] ?? e).join().trim();
 
           // convert the key to camel-case if it's not in a placeholders block and not camel-case
-          if (!inPlaceholdersBlock && startsWithUppercase(modifiedTranslationKey)) {
+          if (startsWithUppercase(modifiedTranslationKey)) {
             modifiedTranslationKey = toLocalizationKeyCase(modifiedTranslationKey);
           }
 
-          final modifiedTranslationValue = parts.sublist(1).join(':').trimLeft();
+          // format translation-value
+          modifiedTranslationValue = convertPlaceholdersToCamelCase(modifiedTranslationValue, emptyPredicateKeys);
+
+          modifiedTranslationValue =
+              modifiedTranslationValue.split(StringConstants.emptyString).map((e) => predicates[e] ?? e).join().trim();
 
           if ('"$modifiedTranslationKey"' == '"@@locale"') {
             lines.add('"$modifiedTranslationKey": "${option.locale.getValue()}",');

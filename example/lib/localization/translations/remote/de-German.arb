@@ -1,5 +1,14 @@
 {
   "@@locale": "de_DE",
+  "ec.pop-message": "Unexpected error occured. Please try later. {ERROR_CODE}",
+  "@ec.pop-message": {
+      "placeholders": {
+          "ERROR_CODE": {
+              "type": "String",
+              "example": "1234"
+          }
+      }
+  },
   "cashier.acquisition_promo": "10% Boost auf die Gewinne aus deiner Ersteinzahlung",
   "@cashier.acquisition_promo": {
     "type": "text"

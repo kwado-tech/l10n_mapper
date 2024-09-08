@@ -95,9623 +95,9533 @@ abstract class AppLocalizations {
     Locale('en')
   ];
 
+  /// No description provided for @ecPop_message.
+  ///
+  /// In en, this message translates to:
+  /// **'Unexpected error occured Please try later {errorCode}'**
+  String ecPop_message(String errorCode);
+
   /// Select the account to proceed
   ///
   /// In en, this message translates to:
   /// **'Select the account to proceed'**
-  String get cashier_accounts_desc;
+  String get cashierAccountsDesc;
 
-  /// No description provided for @cashier_acquisition_promo.
+  /// No description provided for @cashierAcquisitionPromo.
   ///
   /// In en, this message translates to:
   /// **'10% first deposit boost for your winnings'**
-  String get cashier_acquisition_promo;
+  String get cashierAcquisitionPromo;
 
-  /// No description provided for @cashier_Test_Translation.
+  /// No description provided for @cashierTestTranslation.
   ///
   /// In en, this message translates to:
   /// **'10% first deposit boost for your winnings'**
-  String get cashier_Test_Translation;
+  String get cashierTestTranslation;
 
-  /// No description provided for @cashier_activate_tronlink.
+  /// No description provided for @cashierActivateTronlink.
   ///
   /// In en, this message translates to:
-  /// **'To use TronLink, first click on your TronLink extension and log in.'**
-  String get cashier_activate_tronlink;
+  /// **'To use TronLink, first click on your TronLink extension and log in'**
+  String get cashierActivateTronlink;
 
-  /// No description provided for @cashier_active_balance.
+  /// No description provided for @cashierActiveBalance.
   ///
   /// In en, this message translates to:
   /// **'Active balance'**
-  String get cashier_active_balance;
+  String get cashierActiveBalance;
 
-  /// No description provided for @cashier_active_balance_desc.
+  /// No description provided for @cashierActiveBalanceDesc.
   ///
   /// In en, this message translates to:
   /// **'Choose your preferred currency'**
-  String get cashier_active_balance_desc;
+  String get cashierActiveBalanceDesc;
 
-  /// No description provided for @cashier_ADA.
+  /// No description provided for @cashierAda.
   ///
   /// In en, this message translates to:
   /// **'Cardano'**
-  String get cashier_ADA;
+  String get cashierAda;
 
-  /// No description provided for @cashier_add_2fa.
+  /// No description provided for @cashierAdd2fa.
   ///
   /// In en, this message translates to:
-  /// **'Add Two-factor authentication'**
-  String get cashier_add_2fa;
+  /// **'Add Two_factor authentication'**
+  String get cashierAdd2fa;
 
-  /// No description provided for @cashier_add_or_remove_your_individual_currency.
+  /// No description provided for @cashierAddOrRemoveYourIndividualCurrency.
   ///
   /// In en, this message translates to:
   /// **'Add or remove your individual currency'**
-  String get cashier_add_or_remove_your_individual_currency;
+  String get cashierAddOrRemoveYourIndividualCurrency;
 
-  /// No description provided for @cashier_add_remove_wallets.
+  /// No description provided for @cashierAddRemoveWallets.
   ///
   /// In en, this message translates to:
   /// **'Add/remove wallets'**
-  String get cashier_add_remove_wallets;
+  String get cashierAddRemoveWallets;
 
-  /// No description provided for @cashier_address.
+  /// No description provided for @cashierAddress.
   ///
   /// In en, this message translates to:
   /// **'Address'**
-  String get cashier_address;
+  String get cashierAddress;
 
-  /// No description provided for @cashier_agent_withdraw_description.
+  /// No description provided for @cashierAgentWithdrawDescription.
   ///
   /// In en, this message translates to:
-  /// **'Use a local agent to withdraw funds.'**
-  String get cashier_agent_withdraw_description;
+  /// **'Use a local agent to withdraw funds'**
+  String get cashierAgentWithdrawDescription;
 
-  /// No description provided for @cashier_agent_withdraw_otp.
+  /// No description provided for @cashierAgentWithdrawOtp.
   ///
   /// In en, this message translates to:
   /// **'OTP'**
-  String get cashier_agent_withdraw_otp;
+  String get cashierAgentWithdrawOtp;
 
-  /// No description provided for @cashier_agent_withdraw_title.
+  /// No description provided for @cashierAgentWithdrawTitle.
   ///
   /// In en, this message translates to:
   /// **'Agent'**
-  String get cashier_agent_withdraw_title;
+  String get cashierAgentWithdrawTitle;
 
-  /// No description provided for @cashier_agent_withdraw_transfer.
+  /// No description provided for @cashierAgentWithdrawTransfer.
   ///
   /// In en, this message translates to:
   /// **'Transfer funds'**
-  String get cashier_agent_withdraw_transfer;
+  String get cashierAgentWithdrawTransfer;
 
-  /// No description provided for @cashier_agent_withdraw_username.
+  /// No description provided for @cashierAgentWithdrawUsername.
   ///
   /// In en, this message translates to:
   /// **'Agent username'**
-  String get cashier_agent_withdraw_username;
+  String get cashierAgentWithdrawUsername;
 
-  /// No description provided for @cashier_agent_withdraw_username_hint.
+  /// No description provided for @cashierAgentWithdrawUsernameHint.
   ///
   /// In en, this message translates to:
-  /// **'Agent username (same as used in deposit)'**
-  String get cashier_agent_withdraw_username_hint;
+  /// **'Agent username _same as used in deposit_'**
+  String get cashierAgentWithdrawUsernameHint;
 
-  /// No description provided for @cashier_agent_withdrawal_started.
+  /// No description provided for @cashierAgentWithdrawalStarted.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal request has been sent'**
-  String get cashier_agent_withdrawal_started;
+  String get cashierAgentWithdrawalStarted;
 
-  /// No description provided for @cashier_agents.
+  /// No description provided for @cashierAgents.
   ///
   /// In en, this message translates to:
   /// **'Agents'**
-  String get cashier_agents;
+  String get cashierAgents;
 
-  /// No description provided for @cashier_all_methods.
+  /// No description provided for @cashierAllMethods.
   ///
   /// In en, this message translates to:
   /// **'All methods'**
-  String get cashier_all_methods;
+  String get cashierAllMethods;
 
-  /// No description provided for @cashier_all_time.
+  /// No description provided for @cashierAllTime.
   ///
   /// In en, this message translates to:
   /// **'All time'**
-  String get cashier_all_time;
+  String get cashierAllTime;
 
-  /// No description provided for @cashier_amount_in.
+  /// No description provided for @cashierAmountIn.
   ///
   /// In en, this message translates to:
   /// **'Amount in'**
-  String get cashier_amount_in;
+  String get cashierAmountIn;
 
-  /// No description provided for @cashier_amount_of_eth.
+  /// No description provided for @cashierAmountOfEth.
   ///
   /// In en, this message translates to:
   /// **'Amount of ETH'**
-  String get cashier_amount_of_eth;
+  String get cashierAmountOfEth;
 
-  /// No description provided for @cashier_amount_of_mBTC.
+  /// No description provided for @cashierAmountOfMbtc.
   ///
   /// In en, this message translates to:
   /// **'Amount of mBTC'**
-  String get cashier_amount_of_mBTC;
+  String get cashierAmountOfMbtc;
 
-  /// No description provided for @cashier_amount_of_mbtc.
-  ///
-  /// In en, this message translates to:
-  /// **'Amount of mBTC'**
-  String get cashier_amount_of_mbtc;
-
-  /// No description provided for @cashier_amount_of_soc.
+  /// No description provided for @cashierAmountOfSoc.
   ///
   /// In en, this message translates to:
   /// **'Amount of SOC'**
-  String get cashier_amount_of_soc;
+  String get cashierAmountOfSoc;
 
-  /// No description provided for @cashier_amount_of_ubtc.
+  /// No description provided for @cashierAmountOfUbtc.
   ///
   /// In en, this message translates to:
   /// **'Amount of μBTC'**
-  String get cashier_amount_of_ubtc;
+  String get cashierAmountOfUbtc;
 
-  /// No description provided for @cashier_amount_of_uBTC.
-  ///
-  /// In en, this message translates to:
-  /// **'Amount of μBTC'**
-  String get cashier_amount_of_uBTC;
-
-  /// No description provided for @cashier_animex_bank_transfer_title.
+  /// No description provided for @cashierAnimex_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_animex_bank_transfer_title;
+  String get cashierAnimex_bankTransferTitle;
 
-  /// No description provided for @cashier_animex_sumopay_title.
+  /// No description provided for @cashierAnimex_sumopayTitle.
   ///
   /// In en, this message translates to:
   /// **'Sumopay'**
-  String get cashier_animex_sumopay_title;
+  String get cashierAnimex_sumopayTitle;
 
-  /// No description provided for @cashier_apply_filters.
+  /// No description provided for @cashierApplyFilters.
   ///
   /// In en, this message translates to:
   /// **'Apply filters'**
-  String get cashier_apply_filters;
+  String get cashierApplyFilters;
 
-  /// No description provided for @cashier_balance.
+  /// No description provided for @cashierBalance.
   ///
   /// In en, this message translates to:
   /// **'Balance {currency}'**
-  String cashier_balance(Object currency);
+  String cashierBalance(Object currency);
 
-  /// No description provided for @cashier_balance_reverted.
+  /// No description provided for @cashierBalanceReverted.
   ///
   /// In en, this message translates to:
   /// **'{currency} balance'**
-  String cashier_balance_reverted(Object currency);
+  String cashierBalanceReverted(Object currency);
 
-  /// No description provided for @cashier_bank_transfer_account.
+  /// No description provided for @cashierBankTransferAccount.
   ///
   /// In en, this message translates to:
   /// **'Bank transfer account'**
-  String get cashier_bank_transfer_account;
+  String get cashierBankTransferAccount;
 
-  /// No description provided for @cashier_banking.
+  /// No description provided for @cashierBanking.
   ///
   /// In en, this message translates to:
   /// **'FIAT'**
-  String get cashier_banking;
+  String get cashierBanking;
 
-  /// No description provided for @cashier_banking_and_credit_cards.
+  /// No description provided for @cashierBankingAndCreditCards.
   ///
   /// In en, this message translates to:
   /// **'Banking & Credit cards'**
-  String get cashier_banking_and_credit_cards;
+  String get cashierBankingAndCreditCards;
 
-  /// No description provided for @cashier_barupay_modal_title.
+  /// No description provided for @cashierBarupayModalTitle.
   ///
   /// In en, this message translates to:
   /// **'Buy ticket voucher'**
-  String get cashier_barupay_modal_title;
+  String get cashierBarupayModalTitle;
 
-  /// No description provided for @cashier_before_depositing.
+  /// No description provided for @cashierBeforeDepositing.
   ///
   /// In en, this message translates to:
-  /// **'Before depositing you need to create Bitcoin wallet, it’s simple.'**
-  String get cashier_before_depositing;
+  /// **'Before depositing you need to create Bitcoin wallet, it’s simple'**
+  String get cashierBeforeDepositing;
 
-  /// No description provided for @cashier_bet.
+  /// No description provided for @cashierBet.
   ///
   /// In en, this message translates to:
   /// **'Bet'**
-  String get cashier_bet;
+  String get cashierBet;
 
-  /// No description provided for @cashier_binance_smart_chain.
+  /// No description provided for @cashierBinanceSmartChain.
   ///
   /// In en, this message translates to:
   /// **'Binance Smart Chain'**
-  String get cashier_binance_smart_chain;
+  String get cashierBinanceSmartChain;
 
-  /// No description provided for @cashier_binance_smart_chain_message.
+  /// No description provided for @cashierBinanceSmartChainMessage.
   ///
   /// In en, this message translates to:
-  /// **'We are currently supporting only Binance Smart Chain network for the deposits. ERC-20 coming soon!'**
-  String get cashier_binance_smart_chain_message;
+  /// **'We are currently supporting only Binance Smart Chain network for the deposits ERC_20 coming soon!'**
+  String get cashierBinanceSmartChainMessage;
 
-  /// No description provided for @cashier_bitcoin_balance.
+  /// No description provided for @cashierBitcoinBalance.
   ///
   /// In en, this message translates to:
-  /// **'Bitcoin balance:'**
-  String get cashier_bitcoin_balance;
+  /// **'Bitcoin balance'**
+  String get cashierBitcoinBalance;
 
-  /// No description provided for @cashier_bitcoin_rate.
+  /// No description provided for @cashierBitcoinRate.
   ///
   /// In en, this message translates to:
   /// **'CRYPTO RATE'**
-  String get cashier_bitcoin_rate;
+  String get cashierBitcoinRate;
 
-  /// No description provided for @cashier_bitlipa_instructions_amounts.
+  /// No description provided for @cashierBitlipaInstructionsAmounts.
   ///
   /// In en, this message translates to:
-  /// **'No amounts will be deducted from your account until you confirm it from your device.'**
-  String get cashier_bitlipa_instructions_amounts;
+  /// **'No amounts will be deducted from your account until you confirm it from your device'**
+  String get cashierBitlipaInstructionsAmounts;
 
-  /// No description provided for @cashier_bitlipa_instructions_sms.
+  /// No description provided for @cashierBitlipaInstructionsSms.
   ///
   /// In en, this message translates to:
-  /// **'You will receive an SMS on your phone shortly to proceed with the transaction.'**
-  String get cashier_bitlipa_instructions_sms;
+  /// **'You will receive an SMS on your phone shortly to proceed with the transaction'**
+  String get cashierBitlipaInstructionsSms;
 
-  /// No description provided for @cashier_bitlipa_instructions_tryagain.
+  /// No description provided for @cashierBitlipaInstructionsTryagain.
   ///
   /// In en, this message translates to:
-  /// **'If you do not receive any SMS messages, please start from the beginning.'**
-  String get cashier_bitlipa_instructions_tryagain;
+  /// **'If you do not receive any SMS messages, please start from the beginning'**
+  String get cashierBitlipaInstructionsTryagain;
 
-  /// No description provided for @cashier_bitlipa_deposit_warning.
+  /// No description provided for @cashierBitlipaDepositWarning.
   ///
   /// In en, this message translates to:
-  /// **'The mobile money currently offers a Pay-in option. Payouts are only available in USDT and USDC cryptocurrencies.'**
-  String get cashier_bitlipa_deposit_warning;
+  /// **'The mobile money currently offers a Pay_in option Payouts are only available in USDT and USDC cryptocurrencies'**
+  String get cashierBitlipaDepositWarning;
 
-  /// No description provided for @cashier_BNB.
+  /// No description provided for @cashierBnb.
   ///
   /// In en, this message translates to:
   /// **'Binance Coin'**
-  String get cashier_BNB;
+  String get cashierBnb;
 
-  /// No description provided for @cashier_BRL.
+  /// No description provided for @cashierBrl.
   ///
   /// In en, this message translates to:
   /// **'Brazilian real'**
-  String get cashier_BRL;
+  String get cashierBrl;
 
-  /// No description provided for @cashier_BTC.
+  /// No description provided for @cashierBtc.
   ///
   /// In en, this message translates to:
   /// **'Bitcoin'**
-  String get cashier_BTC;
+  String get cashierBtc;
 
-  /// No description provided for @cashier_BTC_deposit_description.
+  /// No description provided for @cashierBtcDepositDescription.
   ///
   /// In en, this message translates to:
-  /// **'Bitcoins sent to the above address will be credited to your balance for playing.'**
-  String get cashier_BTC_deposit_description;
+  /// **'Bitcoins sent to the above address will be credited to your balance for playing'**
+  String get cashierBtcDepositDescription;
 
-  /// No description provided for @cashier_btxe_withdrawals_are_disabled.
+  /// No description provided for @cashierBtxeWithdrawalsAreDisabled.
   ///
   /// In en, this message translates to:
   /// **'Cashing out to your bank account or credit card  is currently disabled'**
-  String get cashier_btxe_withdrawals_are_disabled;
+  String get cashierBtxeWithdrawalsAreDisabled;
 
-  /// No description provided for @cashier_BUSD.
+  /// No description provided for @cashierBusd.
   ///
   /// In en, this message translates to:
   /// **'Binance USD'**
-  String get cashier_BUSD;
+  String get cashierBusd;
 
-  /// No description provided for @cashier_buy.
+  /// No description provided for @cashierBuy.
   ///
   /// In en, this message translates to:
   /// **'Buy'**
-  String get cashier_buy;
+  String get cashierBuy;
 
-  /// No description provided for @cashier_buy_and_sell.
+  /// No description provided for @cashierBuyAndSell.
   ///
   /// In en, this message translates to:
   /// **'Deposit & Withdraw via Bank Transfer'**
-  String get cashier_buy_and_sell;
+  String get cashierBuyAndSell;
 
-  /// No description provided for @cashier_buy_crypto.
+  /// No description provided for @cashierBuyCrypto.
   ///
   /// In en, this message translates to:
   /// **'Buy Crypto'**
-  String get cashier_buy_crypto;
+  String get cashierBuyCrypto;
 
-  /// No description provided for @cashier_buy_crypto_bitlipa_title.
+  /// No description provided for @cashierBuyCryptoBitlipaTitle.
   ///
   /// In en, this message translates to:
-  /// **'Buy Crypto via M-Pesa'**
-  String get cashier_buy_crypto_bitlipa_title;
+  /// **'Buy Crypto via M_Pesa'**
+  String get cashierBuyCryptoBitlipaTitle;
 
-  /// No description provided for @cashier_buy_crypto_desc.
+  /// No description provided for @cashierBuyCryptoDesc.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto currency from our trusted partners'**
-  String get cashier_buy_crypto_desc;
+  String get cashierBuyCryptoDesc;
 
-  /// No description provided for @cashier_buy_crypto_moonpay.
+  /// No description provided for @cashierBuyCryptoMoonpay.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto with MoonPay'**
-  String get cashier_buy_crypto_moonpay;
+  String get cashierBuyCryptoMoonpay;
 
-  /// No description provided for @cashier_buy_crypto_neocrypto_description.
+  /// No description provided for @cashierBuyCryptoNeocryptoDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto from our recommended exchange'**
-  String get cashier_buy_crypto_neocrypto_description;
+  String get cashierBuyCryptoNeocryptoDescription;
 
-  /// No description provided for @cashier_buy_crypto_neocrypto_title.
+  /// No description provided for @cashierBuyCryptoNeocryptoTitle.
   ///
   /// In en, this message translates to:
   /// **'Neocrypto'**
-  String get cashier_buy_crypto_neocrypto_title;
+  String get cashierBuyCryptoNeocryptoTitle;
 
-  /// No description provided for @cashier_buy_crypto_onramp_title.
+  /// No description provided for @cashierBuyCryptoOnrampTitle.
   ///
   /// In en, this message translates to:
   /// **'Deposit via Onramp'**
-  String get cashier_buy_crypto_onramp_title;
+  String get cashierBuyCryptoOnrampTitle;
 
-  /// No description provided for @cashier_buy_crypto_title.
+  /// No description provided for @cashierBuyCryptoTitle.
   ///
   /// In en, this message translates to:
   /// **'Deposit via Onramper'**
-  String get cashier_buy_crypto_title;
+  String get cashierBuyCryptoTitle;
 
-  /// No description provided for @cashier_buy_crypto_tooltip.
+  /// No description provided for @cashierBuyCryptoTooltip.
   ///
   /// In en, this message translates to:
-  /// **'Now all Buy crypto methods are moved under single tab.'**
-  String get cashier_buy_crypto_tooltip;
+  /// **'Now all Buy crypto methods are moved under single tab'**
+  String get cashierBuyCryptoTooltip;
 
-  /// No description provided for @cashier_buy_crypto_with_cash.
+  /// No description provided for @cashierBuyCryptoWithCash.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto with a card'**
-  String get cashier_buy_crypto_with_cash;
+  String get cashierBuyCryptoWithCash;
 
-  /// No description provided for @cashier_buy_currency.
+  /// No description provided for @cashierBuyCurrency.
   ///
   /// In en, this message translates to:
   /// **'Buy {currency}'**
-  String cashier_buy_currency(Object currency);
+  String cashierBuyCurrency(Object currency);
 
-  /// No description provided for @cashier_buy_or_cashout_bitcoin.
+  /// No description provided for @cashierBuyOrCashoutBitcoin.
   ///
   /// In en, this message translates to:
   /// **'Buy or Cash out Bitcoin'**
-  String get cashier_buy_or_cashout_bitcoin;
+  String get cashierBuyOrCashoutBitcoin;
 
-  /// No description provided for @cashier_buy_ton_wallet_bot.
+  /// No description provided for @cashierBuyTonWalletBot.
   ///
   /// In en, this message translates to:
   /// **'Buy TON using Wallet'**
-  String get cashier_buy_ton_wallet_bot;
+  String get cashierBuyTonWalletBot;
 
-  /// No description provided for @cashier_CAD.
+  /// No description provided for @cashierCad.
   ///
   /// In en, this message translates to:
   /// **'CAD'**
-  String get cashier_CAD;
+  String get cashierCad;
 
-  /// No description provided for @cashier_cancel.
+  /// No description provided for @cashierCancel.
   ///
   /// In en, this message translates to:
   /// **'Cancel'**
-  String get cashier_cancel;
+  String get cashierCancel;
 
-  /// No description provided for @cashier_cashout.
+  /// No description provided for @cashierCashout.
   ///
   /// In en, this message translates to:
   /// **'Cash out'**
-  String get cashier_cashout;
+  String get cashierCashout;
 
-  /// No description provided for @cashier_cashout_bitcoin.
+  /// No description provided for @cashierCashoutBitcoin.
   ///
   /// In en, this message translates to:
   /// **'Cashout Bitcoin to your account'**
-  String get cashier_cashout_bitcoin;
+  String get cashierCashoutBitcoin;
 
-  /// No description provided for @cashier_choose_deposit_network.
+  /// No description provided for @cashierChooseDepositNetwork.
   ///
   /// In en, this message translates to:
   /// **'Choose deposit network'**
-  String get cashier_choose_deposit_network;
+  String get cashierChooseDepositNetwork;
 
-  /// No description provided for @cashier_choose_payment_method.
+  /// No description provided for @cashierChoosePaymentMethod.
   ///
   /// In en, this message translates to:
-  /// **'Choose payment method:'**
-  String get cashier_choose_payment_method;
+  /// **'Choose payment method'**
+  String get cashierChoosePaymentMethod;
 
-  /// No description provided for @cashier_choose_payment_options.
+  /// No description provided for @cashierChoosePaymentOptions.
   ///
   /// In en, this message translates to:
-  /// **'Please select your country:'**
-  String get cashier_choose_payment_options;
+  /// **'Please select your country'**
+  String get cashierChoosePaymentOptions;
 
-  /// No description provided for @cashier_choose_withdraw_network.
+  /// No description provided for @cashierChooseWithdrawNetwork.
   ///
   /// In en, this message translates to:
   /// **'Withdraw network'**
-  String get cashier_choose_withdraw_network;
+  String get cashierChooseWithdrawNetwork;
 
-  /// No description provided for @cashier_claim.
+  /// No description provided for @cashierClaim.
   ///
   /// In en, this message translates to:
   /// **'Claim'**
-  String get cashier_claim;
+  String get cashierClaim;
 
-  /// No description provided for @cashier_clear.
+  /// No description provided for @cashierClear.
   ///
   /// In en, this message translates to:
   /// **'Clear'**
-  String get cashier_clear;
+  String get cashierClear;
 
-  /// No description provided for @cashier_clear_all.
+  /// No description provided for @cashierClearAll.
   ///
   /// In en, this message translates to:
   /// **'Clear all'**
-  String get cashier_clear_all;
+  String get cashierClearAll;
 
-  /// No description provided for @cashier_clipboard_copied.
+  /// No description provided for @cashierClipboardCopied.
   ///
   /// In en, this message translates to:
   /// **'Copied to clipboard'**
-  String get cashier_clipboard_copied;
+  String get cashierClipboardCopied;
 
-  /// No description provided for @cashier_close.
+  /// No description provided for @cashierClose.
   ///
   /// In en, this message translates to:
   /// **'Close'**
-  String get cashier_close;
+  String get cashierClose;
 
-  /// No description provided for @cashier_CNY.
+  /// No description provided for @cashierCny.
   ///
   /// In en, this message translates to:
   /// **'Chinese Yuan'**
-  String get cashier_CNY;
+  String get cashierCny;
 
-  /// No description provided for @cashier_coinbasewallet.
+  /// No description provided for @cashierCoinbasewallet.
   ///
   /// In en, this message translates to:
   /// **'Coinbase Wallet'**
-  String get cashier_coinbasewallet;
+  String get cashierCoinbasewallet;
 
-  /// No description provided for @cashier_coinbasewallet_desc.
+  /// No description provided for @cashierCoinbasewalletDesc.
   ///
   /// In en, this message translates to:
   /// **'Connect coinbase wallet'**
-  String get cashier_coinbasewallet_desc;
+  String get cashierCoinbasewalletDesc;
 
-  /// No description provided for @cashier_configuration.
+  /// No description provided for @cashierConfiguration.
   ///
   /// In en, this message translates to:
   /// **'Configuration'**
-  String get cashier_configuration;
+  String get cashierConfiguration;
 
-  /// No description provided for @cashier_confirm_instant_bank_transfer.
+  /// No description provided for @cashierConfirmInstantBankTransfer.
   ///
   /// In en, this message translates to:
   /// **'Instant Bank Transfer'**
-  String get cashier_confirm_instant_bank_transfer;
+  String get cashierConfirmInstantBankTransfer;
 
-  /// No description provided for @cashier_confirm_transaction_in_tronlink_popup.
+  /// No description provided for @cashierConfirmTransactionInTronlinkPopup.
   ///
   /// In en, this message translates to:
   /// **'Confirm your transaction in TronLink popup'**
-  String get cashier_confirm_transaction_in_tronlink_popup;
+  String get cashierConfirmTransactionInTronlinkPopup;
 
-  /// No description provided for @cashier_connect_wallet.
+  /// No description provided for @cashierConnectWallet.
   ///
   /// In en, this message translates to:
   /// **'Connect wallet'**
-  String get cashier_connect_wallet;
+  String get cashierConnectWallet;
 
-  /// No description provided for @cashier_CONTACT_US.
+  /// No description provided for @cashierContactUs.
   ///
   /// In en, this message translates to:
   /// **'Contact us for more enquiries'**
-  String get cashier_CONTACT_US;
+  String get cashierContactUs;
 
-  /// No description provided for @cashier_convert_before_withdraw.
+  /// No description provided for @cashierConvertBeforeWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'* For withdrawing your {CONVERT_FROM} you first need to convert it back to {CONVERT_TO}'**
-  String cashier_convert_before_withdraw(Object CONVERT_FROM, Object CONVERT_TO, Object convertFrom, Object convertTo);
+  /// **'* For withdrawing your {convertFrom} you first need to convert it back to {convertTo}'**
+  String cashierConvertBeforeWithdraw(Object convertFrom, Object convertTo);
 
-  /// No description provided for @cashier_convert_to.
+  /// No description provided for @cashierConvertTo.
   ///
   /// In en, this message translates to:
   /// **'Convert to {currency}'**
-  String cashier_convert_to(Object currency);
+  String cashierConvertTo(Object currency);
 
-  /// No description provided for @cashier_copy_link.
+  /// No description provided for @cashierCopyLink.
   ///
   /// In en, this message translates to:
   /// **'Copy Link'**
-  String get cashier_copy_link;
+  String get cashierCopyLink;
 
-  /// No description provided for @cashier_copy_tx_id.
+  /// No description provided for @cashierCopyTxId.
   ///
   /// In en, this message translates to:
   /// **'Copy transaction ID'**
-  String get cashier_copy_tx_id;
+  String get cashierCopyTxId;
 
-  /// No description provided for @cashier_corefy_jeton_title.
+  /// No description provided for @cashierCorefy_jetonTitle.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_corefy_jeton_title;
+  String get cashierCorefy_jetonTitle;
 
-  /// No description provided for @cashier_country_cn.
+  /// No description provided for @cashierCountryCn.
   ///
   /// In en, this message translates to:
   /// **'中国'**
-  String get cashier_country_cn;
+  String get cashierCountryCn;
 
-  /// No description provided for @cashier_country_ee.
+  /// No description provided for @cashierCountryEe.
   ///
   /// In en, this message translates to:
   /// **'Estonia'**
-  String get cashier_country_ee;
+  String get cashierCountryEe;
 
-  /// No description provided for @cashier_country_ie.
+  /// No description provided for @cashierCountryIe.
   ///
   /// In en, this message translates to:
   /// **'Ireland'**
-  String get cashier_country_ie;
+  String get cashierCountryIe;
 
-  /// No description provided for @cashier_country_jp.
+  /// No description provided for @cashierCountryJp.
   ///
   /// In en, this message translates to:
   /// **'Japan'**
-  String get cashier_country_jp;
+  String get cashierCountryJp;
 
-  /// No description provided for @cashier_country_tr.
+  /// No description provided for @cashierCountryTr.
   ///
   /// In en, this message translates to:
   /// **'Turkey'**
-  String get cashier_country_tr;
+  String get cashierCountryTr;
 
-  /// No description provided for @cashier_country_uk.
+  /// No description provided for @cashierCountryUk.
   ///
   /// In en, this message translates to:
   /// **'United Kingdom'**
-  String get cashier_country_uk;
+  String get cashierCountryUk;
 
-  /// No description provided for @cashier_country_xx.
+  /// No description provided for @cashierCountryXx.
   ///
   /// In en, this message translates to:
   /// **'Global methods'**
-  String get cashier_country_xx;
+  String get cashierCountryXx;
 
-  /// No description provided for @cashier_cpf_rfc_description.
+  /// No description provided for @cashierCpfRfcDescription.
   ///
   /// In en, this message translates to:
-  /// **'Please, specify your personal details. All data is encrypted and secure.'**
-  String get cashier_cpf_rfc_description;
+  /// **'Please, specify your personal details All data is encrypted and secure'**
+  String get cashierCpfRfcDescription;
 
-  /// No description provided for @cashier_cpf_rfc_info.
+  /// No description provided for @cashierCpfRfcInfo.
   ///
   /// In en, this message translates to:
-  /// **'We do not store your data on our servers, We store a secure token provided by our payment providers.'**
-  String get cashier_cpf_rfc_info;
+  /// **'We do not store your data on our servers, We store a secure token provided by our payment providers'**
+  String get cashierCpfRfcInfo;
 
-  /// No description provided for @cashier_cpf_rfc_input_cpf.
+  /// No description provided for @cashierCpfRfcInputCpf.
   ///
   /// In en, this message translates to:
   /// **'Enter CPF'**
-  String get cashier_cpf_rfc_input_cpf;
+  String get cashierCpfRfcInputCpf;
 
-  /// No description provided for @cashier_cpf_rfc_input_rfc.
+  /// No description provided for @cashierCpfRfcInputRfc.
   ///
   /// In en, this message translates to:
   /// **'Enter RFC'**
-  String get cashier_cpf_rfc_input_rfc;
+  String get cashierCpfRfcInputRfc;
 
-  /// No description provided for @cashier_cpf_rfc_processing_description.
+  /// No description provided for @cashierCpfRfcProcessingDescription.
   ///
   /// In en, this message translates to:
-  /// **'Your {variant} is being verified. Please wait a moment.'**
-  String cashier_cpf_rfc_processing_description(Object variant);
+  /// **'Your {variant} is being verified Please wait a moment'**
+  String cashierCpfRfcProcessingDescription(Object variant);
 
-  /// No description provided for @cashier_cpf_rfc_processing_title.
+  /// No description provided for @cashierCpfRfcProcessingTitle.
   ///
   /// In en, this message translates to:
   /// **'Processing {variant}'**
-  String cashier_cpf_rfc_processing_title(Object variant);
+  String cashierCpfRfcProcessingTitle(Object variant);
 
-  /// No description provided for @cashier_cpf_rfc_title.
+  /// No description provided for @cashierCpfRfcTitle.
   ///
   /// In en, this message translates to:
   /// **'Before you continue'**
-  String get cashier_cpf_rfc_title;
+  String get cashierCpfRfcTitle;
 
-  /// No description provided for @cashier_create_wallet.
+  /// No description provided for @cashierCreateWallet.
   ///
   /// In en, this message translates to:
   /// **'Create wallet'**
-  String get cashier_create_wallet;
+  String get cashierCreateWallet;
 
-  /// No description provided for @cashier_crypto.
+  /// No description provided for @cashierCrypto.
   ///
   /// In en, this message translates to:
   /// **'Crypto'**
-  String get cashier_crypto;
+  String get cashierCrypto;
 
-  /// No description provided for @cashier_crypto_deposit.
+  /// No description provided for @cashierCryptoDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Deposit (Crypto)'**
-  String get cashier_crypto_deposit;
+  /// **'Deposit _Crypto_'**
+  String get cashierCryptoDeposit;
 
-  /// No description provided for @cashier_crypto_withdraw_correct_invoice.
+  /// No description provided for @cashierCryptoWithdrawCorrectInvoice.
   ///
   /// In en, this message translates to:
   /// **'Please enter the correct invoice'**
-  String get cashier_crypto_withdraw_correct_invoice;
+  String get cashierCryptoWithdrawCorrectInvoice;
 
-  /// No description provided for @cashier_crypto_withdraw_invoice_with_amount.
+  /// No description provided for @cashierCryptoWithdrawInvoiceWithAmount.
   ///
   /// In en, this message translates to:
   /// **'Please enter an invoice with an amount'**
-  String get cashier_crypto_withdraw_invoice_with_amount;
+  String get cashierCryptoWithdrawInvoiceWithAmount;
 
-  /// No description provided for @cashier_crypto_withdraw_valid_invoice.
+  /// No description provided for @cashierCryptoWithdrawValidInvoice.
   ///
   /// In en, this message translates to:
   /// **'Please enter a valid invoice address'**
-  String get cashier_crypto_withdraw_valid_invoice;
+  String get cashierCryptoWithdrawValidInvoice;
 
-  /// No description provided for @cashier_crypto_withdraw_valid_wallet_address.
+  /// No description provided for @cashierCryptoWithdrawValidWalletAddress.
   ///
   /// In en, this message translates to:
   /// **'Please enter a valid wallet address'**
-  String get cashier_crypto_withdraw_valid_wallet_address;
+  String get cashierCryptoWithdrawValidWalletAddress;
 
-  /// No description provided for @cashier_currency.
+  /// No description provided for @cashierCurrency.
   ///
   /// In en, this message translates to:
   /// **'Currency'**
-  String get cashier_currency;
+  String get cashierCurrency;
 
-  /// No description provided for @cashier_currency_deposit.
+  /// No description provided for @cashierCurrencyDeposit.
   ///
   /// In en, this message translates to:
   /// **'{currency} Deposit'**
-  String cashier_currency_deposit(Object currency);
+  String cashierCurrencyDeposit(Object currency);
 
-  /// No description provided for @cashier_currency_mbtc.
+  /// No description provided for @cashierCurrencyMbtc.
   ///
   /// In en, this message translates to:
   /// **'mBTC'**
-  String get cashier_currency_mbtc;
+  String get cashierCurrencyMbtc;
 
-  /// No description provided for @cashier_currency_ubtc.
+  /// No description provided for @cashierCurrencyUbtc.
   ///
   /// In en, this message translates to:
   /// **'μBTC'**
-  String get cashier_currency_ubtc;
+  String get cashierCurrencyUbtc;
 
-  /// No description provided for @cashier_currency_withdrawal.
+  /// No description provided for @cashierCurrencyWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'{currency} Withdrawal'**
-  String cashier_currency_withdrawal(Object currency);
+  String cashierCurrencyWithdrawal(Object currency);
 
-  /// No description provided for @cashier_currency_eur.
+  /// No description provided for @cashierCurrencyEur.
   ///
   /// In en, this message translates to:
   /// **'EUR'**
-  String get cashier_currency_eur;
+  String get cashierCurrencyEur;
 
-  /// No description provided for @cashier_currency_jpy.
+  /// No description provided for @cashierCurrencyJpy.
   ///
   /// In en, this message translates to:
   /// **'JPY'**
-  String get cashier_currency_jpy;
+  String get cashierCurrencyJpy;
 
-  /// No description provided for @cashier_currency_try.
+  /// No description provided for @cashierCurrencyTry.
   ///
   /// In en, this message translates to:
   /// **'TRY'**
-  String get cashier_currency_try;
+  String get cashierCurrencyTry;
 
-  /// No description provided for @cashier_currency_usd.
+  /// No description provided for @cashierCurrencyUsd.
   ///
   /// In en, this message translates to:
   /// **'USD'**
-  String get cashier_currency_usd;
+  String get cashierCurrencyUsd;
 
-  /// No description provided for @cashier_current_balance.
+  /// No description provided for @cashierCurrentBalance.
   ///
   /// In en, this message translates to:
-  /// **'Current balance: {amount} {currency}'**
-  String cashier_current_balance(Object amount, Object currency);
+  /// **'Current balance {amount} {currency}'**
+  String cashierCurrentBalance(Object amount, Object currency);
 
-  /// No description provided for @cashier_current_bitcoin_balance.
+  /// No description provided for @cashierCurrentBitcoinBalance.
   ///
   /// In en, this message translates to:
-  /// **'Your current Bitcoin balance:'**
-  String get cashier_current_bitcoin_balance;
+  /// **'Your current Bitcoin balance'**
+  String get cashierCurrentBitcoinBalance;
 
-  /// No description provided for @cashier_custom.
+  /// No description provided for @cashierCustom.
   ///
   /// In en, this message translates to:
   /// **'Custom'**
-  String get cashier_custom;
+  String get cashierCustom;
 
-  /// No description provided for @cashier_custom_date.
+  /// No description provided for @cashierCustomDate.
   ///
   /// In en, this message translates to:
   /// **'Custom date'**
-  String get cashier_custom_date;
+  String get cashierCustomDate;
 
   /// Custom range
   ///
   /// In en, this message translates to:
   /// **'Custom range'**
-  String get cashier_custom_date_range;
+  String get cashierCustomDateRange;
 
-  /// No description provided for @cashier_customer_details.
+  /// No description provided for @cashierCustomerDetails.
   ///
   /// In en, this message translates to:
   /// **'Customer details'**
-  String get cashier_customer_details;
+  String get cashierCustomerDetails;
 
-  /// No description provided for @cashier_customer_details_desc.
+  /// No description provided for @cashierCustomerDetailsDesc.
   ///
   /// In en, this message translates to:
   /// **'Fill out the personal data to proceed'**
-  String get cashier_customer_details_desc;
+  String get cashierCustomerDetailsDesc;
 
-  /// No description provided for @cashier_DAI.
+  /// No description provided for @cashierDai.
   ///
   /// In en, this message translates to:
   /// **'DAI'**
-  String get cashier_DAI;
+  String get cashierDai;
 
-  /// No description provided for @cashier_deposit.
+  /// No description provided for @cashierDeposit.
   ///
   /// In en, this message translates to:
   /// **'Deposit'**
-  String get cashier_deposit;
+  String get cashierDeposit;
 
-  /// No description provided for @cashier_deposit_ADA.
+  /// No description provided for @cashierDepositAda.
   ///
   /// In en, this message translates to:
   /// **'Deposit ADA'**
-  String get cashier_deposit_ADA;
+  String get cashierDepositAda;
 
-  /// No description provided for @cashier_deposit_agents.
+  /// No description provided for @cashierDepositAgents.
   ///
   /// In en, this message translates to:
   /// **'Deposit {currency} via agents'**
-  String cashier_deposit_agents(Object currency);
+  String cashierDepositAgents(Object currency);
 
-  /// No description provided for @cashier_deposit_agents_desc.
+  /// No description provided for @cashierDepositAgentsDesc.
   ///
   /// In en, this message translates to:
   /// **'Contact an agent to deposit'**
-  String get cashier_deposit_agents_desc;
+  String get cashierDepositAgentsDesc;
 
-  /// No description provided for @cashier_deposit_amount.
+  /// No description provided for @cashierDepositAmount.
   ///
   /// In en, this message translates to:
   /// **'Deposit amount'**
-  String get cashier_deposit_amount;
+  String get cashierDepositAmount;
 
-  /// No description provided for @cashier_deposit_amount_changing.
+  /// No description provided for @cashierDepositAmountChanging.
   ///
   /// In en, this message translates to:
-  /// **'Changing the deposit amount will require you to generate new deposit request.'**
-  String get cashier_deposit_amount_changing;
+  /// **'Changing the deposit amount will require you to generate new deposit request'**
+  String get cashierDepositAmountChanging;
 
-  /// No description provided for @cashier_deposit_BNB.
+  /// No description provided for @cashierDepositBnb.
   ///
   /// In en, this message translates to:
   /// **'Deposit BNB'**
-  String get cashier_deposit_BNB;
+  String get cashierDepositBnb;
 
-  /// No description provided for @cashier_deposit_BRL.
+  /// No description provided for @cashierDepositBrl.
   ///
   /// In en, this message translates to:
   /// **'Deposit BRL'**
-  String get cashier_deposit_BRL;
+  String get cashierDepositBrl;
 
-  /// No description provided for @cashier_deposit_BTC.
+  /// No description provided for @cashierDepositBtc.
   ///
   /// In en, this message translates to:
   /// **'Deposit Bitcoin'**
-  String get cashier_deposit_BTC;
+  String get cashierDepositBtc;
 
-  /// No description provided for @cashier_deposit_BUSD.
+  /// No description provided for @cashierDepositBusd.
   ///
   /// In en, this message translates to:
   /// **'Deposit BUSD'**
-  String get cashier_deposit_BUSD;
+  String get cashierDepositBusd;
 
-  /// No description provided for @cashier_deposit_CAD.
+  /// No description provided for @cashierDepositCad.
   ///
   /// In en, this message translates to:
   /// **'Deposit CAD'**
-  String get cashier_deposit_CAD;
+  String get cashierDepositCad;
 
-  /// No description provided for @cashier_deposit_crypto.
+  /// No description provided for @cashierDepositCrypto.
   ///
   /// In en, this message translates to:
   /// **'Crypto deposit'**
-  String get cashier_deposit_crypto;
+  String get cashierDepositCrypto;
 
-  /// No description provided for @cashier_deposit_currency.
+  /// No description provided for @cashierDepositCurrency.
   ///
   /// In en, this message translates to:
   /// **'Deposit {currency}'**
-  String cashier_deposit_currency(Object currency);
+  String cashierDepositCurrency(Object currency);
 
-  /// No description provided for @cashier_deposit_DAI.
+  /// No description provided for @cashierDepositDai.
   ///
   /// In en, this message translates to:
   /// **'Deposit DAI'**
-  String get cashier_deposit_DAI;
+  String get cashierDepositDai;
 
-  /// No description provided for @cashier_deposit_destination_tag.
+  /// No description provided for @cashierDepositDestinationTag.
   ///
   /// In en, this message translates to:
   /// **'Destination tag'**
-  String get cashier_deposit_destination_tag;
+  String get cashierDepositDestinationTag;
 
-  /// No description provided for @cashier_deposit_DOGE.
+  /// No description provided for @cashierDepositDoge.
   ///
   /// In en, this message translates to:
   /// **'Deposit DOGE'**
-  String get cashier_deposit_DOGE;
+  String get cashierDepositDoge;
 
-  /// No description provided for @cashier_deposit_ETH.
+  /// No description provided for @cashierDepositEth.
   ///
   /// In en, this message translates to:
   /// **'Deposit ETH'**
-  String get cashier_deposit_ETH;
+  String get cashierDepositEth;
 
-  /// No description provided for @cashier_deposit_EUR.
+  /// No description provided for @cashierDepositEur.
   ///
   /// In en, this message translates to:
   /// **'Deposit EUR'**
-  String get cashier_deposit_EUR;
+  String get cashierDepositEur;
 
-  /// No description provided for @cashier_deposit_history.
+  /// No description provided for @cashierDepositHistory.
   ///
   /// In en, this message translates to:
   /// **'Deposit history'**
-  String get cashier_deposit_history;
+  String get cashierDepositHistory;
 
-  /// No description provided for @cashier_deposit_HKD.
+  /// No description provided for @cashierDepositHkd.
   ///
   /// In en, this message translates to:
   /// **'Deposit HKD'**
-  String get cashier_deposit_HKD;
+  String get cashierDepositHkd;
 
-  /// No description provided for @cashier_deposit_INR.
+  /// No description provided for @cashierDepositInr.
   ///
   /// In en, this message translates to:
   /// **'Deposit INR'**
-  String get cashier_deposit_INR;
+  String get cashierDepositInr;
 
-  /// No description provided for @cashier_deposit_JPY.
+  /// No description provided for @cashierDepositJpy.
   ///
   /// In en, this message translates to:
   /// **'Deposit JPY'**
-  String get cashier_deposit_JPY;
+  String get cashierDepositJpy;
 
-  /// No description provided for @cashier_deposit_LTC.
+  /// No description provided for @cashierDepositLtc.
   ///
   /// In en, this message translates to:
   /// **'Deposit LTC'**
-  String get cashier_deposit_LTC;
+  String get cashierDepositLtc;
 
-  /// No description provided for @cashier_deposit_MATIC.
+  /// No description provided for @cashierDepositMatic.
   ///
   /// In en, this message translates to:
   /// **'Deposit Polygon'**
-  String get cashier_deposit_MATIC;
+  String get cashierDepositMatic;
 
-  /// No description provided for @cashier_deposit_methods.
+  /// No description provided for @cashierDepositMethods.
   ///
   /// In en, this message translates to:
   /// **'Deposit methods'**
-  String get cashier_deposit_methods;
+  String get cashierDepositMethods;
 
-  /// No description provided for @cashier_deposit_methods_desc.
+  /// No description provided for @cashierDepositMethodsDesc.
   ///
   /// In en, this message translates to:
   /// **'Choose your preferred deposit method'**
-  String get cashier_deposit_methods_desc;
+  String get cashierDepositMethodsDesc;
 
-  /// No description provided for @cashier_deposit_network.
+  /// No description provided for @cashierDepositNetwork.
   ///
   /// In en, this message translates to:
   /// **'Deposit network'**
-  String get cashier_deposit_network;
+  String get cashierDepositNetwork;
 
-  /// No description provided for @cashier_deposit_regular.
+  /// No description provided for @cashierDepositRegular.
   ///
   /// In en, this message translates to:
   /// **'Regular'**
-  String get cashier_deposit_regular;
+  String get cashierDepositRegular;
 
-  /// No description provided for @cashier_deposit_SOC.
+  /// No description provided for @cashierDepositSoc.
   ///
   /// In en, this message translates to:
   /// **'Deposit SOC'**
-  String get cashier_deposit_SOC;
+  String get cashierDepositSoc;
 
-  /// No description provided for @cashier_deposit_successful.
+  /// No description provided for @cashierDepositSuccessful.
   ///
   /// In en, this message translates to:
-  /// **'Your deposit of {currency} {amount} is confirmed.'**
-  String cashier_deposit_successful(Object currency, Object amount);
+  /// **'Your deposit of {currency} {amount} is confirmed'**
+  String cashierDepositSuccessful(Object currency, Object amount);
 
-  /// No description provided for @cashier_deposit_THB.
+  /// No description provided for @cashierDepositThb.
   ///
   /// In en, this message translates to:
   /// **'Deposit THB'**
-  String get cashier_deposit_THB;
+  String get cashierDepositThb;
 
-  /// No description provided for @cashier_deposit_TON.
+  /// No description provided for @cashierDepositTon.
   ///
   /// In en, this message translates to:
   /// **'Deposit TON'**
-  String get cashier_deposit_TON;
+  String get cashierDepositTon;
 
-  /// No description provided for @cashier_deposit_ton_info.
+  /// No description provided for @cashierDepositTonInfo.
   ///
   /// In en, this message translates to:
-  /// **'To ensure successful deposit, make sure to copy the content of the MESSAGE and paste it into your wallet app before proceeding with the transaction. This step is crucial for the funds to be deposited into your account seamlessly.'**
-  String get cashier_deposit_ton_info;
+  /// **'To ensure successful deposit, make sure to copy the content of the MESSAGE and paste it into your wallet app before proceeding with the transaction This step is crucial for the funds to be deposited into your account seamlessly'**
+  String get cashierDepositTonInfo;
 
-  /// No description provided for @cashier_deposit_ton_invoice_id.
+  /// No description provided for @cashierDepositTonInvoiceId.
   ///
   /// In en, this message translates to:
-  /// **'Invoice ID (Required to complete the transaction)'**
-  String get cashier_deposit_ton_invoice_id;
+  /// **'Invoice ID _Required to complete the transaction_'**
+  String get cashierDepositTonInvoiceId;
 
-  /// No description provided for @cashier_deposit_ton_message.
+  /// No description provided for @cashierDepositTonMessage.
   ///
   /// In en, this message translates to:
-  /// **'Message (Required to complete the transaction)'**
-  String get cashier_deposit_ton_message;
+  /// **'Message _Required to complete the transaction_'**
+  String get cashierDepositTonMessage;
 
-  /// No description provided for @cashier_deposit_TRX.
+  /// No description provided for @cashierDepositTrx.
   ///
   /// In en, this message translates to:
   /// **'Deposit TRX'**
-  String get cashier_deposit_TRX;
+  String get cashierDepositTrx;
 
-  /// No description provided for @cashier_deposit_USDC.
+  /// No description provided for @cashierDepositUsdc.
   ///
   /// In en, this message translates to:
   /// **'Deposit USDC'**
-  String get cashier_deposit_USDC;
+  String get cashierDepositUsdc;
 
-  /// No description provided for @cashier_deposit_USDT.
+  /// No description provided for @cashierDepositUsdt.
   ///
   /// In en, this message translates to:
   /// **'Deposit Tether'**
-  String get cashier_deposit_USDT;
+  String get cashierDepositUsdt;
 
-  /// No description provided for @cashier_deposit_via_metamask.
+  /// No description provided for @cashierDepositViaMetamask.
   ///
   /// In en, this message translates to:
   /// **'Deposit via Metamask'**
-  String get cashier_deposit_via_metamask;
+  String get cashierDepositViaMetamask;
 
-  /// No description provided for @cashier_deposit_warning_erc_20_network.
+  /// No description provided for @cashierDepositWarningErc20Network.
   ///
   /// In en, this message translates to:
-  /// **'Please make sure you use only the ERC-20 network when depositing {currency}, and not any other network, in order to receive your balance seamlessly.'**
-  String cashier_deposit_warning_erc_20_network(Object currency);
+  /// **'Please make sure you use only the ERC_20 network when depositing {currency}, and not any other network, in order to receive your balance seamlessly'**
+  String cashierDepositWarningErc20Network(Object currency);
 
-  /// No description provided for @cashier_deposit_with_altcoins.
+  /// No description provided for @cashierDepositWithAltcoins.
   ///
   /// In en, this message translates to:
   /// **'Deposit in altcoins'**
-  String get cashier_deposit_with_altcoins;
+  String get cashierDepositWithAltcoins;
 
-  /// No description provided for @cashier_deposit_XRP.
+  /// No description provided for @cashierDepositXrp.
   ///
   /// In en, this message translates to:
   /// **'Deposit XRP'**
-  String get cashier_deposit_XRP;
+  String get cashierDepositXrp;
 
-  /// No description provided for @cashier_deposit_animex_sumopay_title.
+  /// No description provided for @cashierDepositAnimex_sumopayTitle.
   ///
   /// In en, this message translates to:
   /// **'Sumopay'**
-  String get cashier_deposit_animex_sumopay_title;
+  String get cashierDepositAnimex_sumopayTitle;
 
-  /// No description provided for @cashier_deposit_binance_description.
+  /// No description provided for @cashierDepositBinanceDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto from our recommended exchange'**
-  String get cashier_deposit_binance_description;
+  String get cashierDepositBinanceDescription;
 
-  /// No description provided for @cashier_deposit_binance_title.
+  /// No description provided for @cashierDepositBinanceTitle.
   ///
   /// In en, this message translates to:
   /// **'Binance'**
-  String get cashier_deposit_binance_title;
+  String get cashierDepositBinanceTitle;
 
-  /// No description provided for @cashier_deposit_bitflyer_description.
+  /// No description provided for @cashierDepositBitflyerDescription.
   ///
   /// In en, this message translates to:
   /// **'‎Crypto exchange'**
-  String get cashier_deposit_bitflyer_description;
+  String get cashierDepositBitflyerDescription;
 
-  /// No description provided for @cashier_deposit_bitflyer_title.
+  /// No description provided for @cashierDepositBitflyerTitle.
   ///
   /// In en, this message translates to:
   /// **'Bitflyer'**
-  String get cashier_deposit_bitflyer_title;
+  String get cashierDepositBitflyerTitle;
 
-  /// No description provided for @cashier_deposit_bitget_description.
+  /// No description provided for @cashierDepositBitgetDescription.
   ///
   /// In en, this message translates to:
   /// **'Recommended exchange'**
-  String get cashier_deposit_bitget_description;
+  String get cashierDepositBitgetDescription;
 
-  /// No description provided for @cashier_deposit_bitget_title.
+  /// No description provided for @cashierDepositBitgetTitle.
   ///
   /// In en, this message translates to:
   /// **'Bitget'**
-  String get cashier_deposit_bitget_title;
+  String get cashierDepositBitgetTitle;
 
-  /// No description provided for @cashier_deposit_bitlipa_description.
+  /// No description provided for @cashierDepositBitlipaDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto with Mobile money'**
-  String get cashier_deposit_bitlipa_description;
+  String get cashierDepositBitlipaDescription;
 
-  /// No description provided for @cashier_deposit_bitlipa_title.
+  /// No description provided for @cashierDepositBitlipaTitle.
   ///
   /// In en, this message translates to:
-  /// **'M-Pesa (KES)'**
-  String get cashier_deposit_bitlipa_title;
+  /// **'M_Pesa _KES_'**
+  String get cashierDepositBitlipaTitle;
 
-  /// No description provided for @cashier_deposit_blockfinex_description.
+  /// No description provided for @cashierDepositBlockfinexDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto from our recommended exchange'**
-  String get cashier_deposit_blockfinex_description;
+  String get cashierDepositBlockfinexDescription;
 
-  /// No description provided for @cashier_deposit_blockfinex_title.
+  /// No description provided for @cashierDepositBlockfinexTitle.
   ///
   /// In en, this message translates to:
   /// **'Blockfinex'**
-  String get cashier_deposit_blockfinex_title;
+  String get cashierDepositBlockfinexTitle;
 
-  /// No description provided for @cashier_deposit_bybit_description.
+  /// No description provided for @cashierDepositBybitDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto from our recommended exchange'**
-  String get cashier_deposit_bybit_description;
+  String get cashierDepositBybitDescription;
 
-  /// No description provided for @cashier_deposit_bybit_title.
+  /// No description provided for @cashierDepositBybitTitle.
   ///
   /// In en, this message translates to:
   /// **'Bybit'**
-  String get cashier_deposit_bybit_title;
+  String get cashierDepositBybitTitle;
 
   /// Continue transaction with @wallet
   ///
   /// In en, this message translates to:
   /// **'Continue transaction with @wallet'**
-  String get cashier_deposit_continue_transaction_with_wallet;
+  String get cashierDepositContinueTransactionWithWallet;
 
-  /// No description provided for @cashier_deposit_deposit_via_payixi.
+  /// No description provided for @cashierDepositDepositViaPayixi.
   ///
   /// In en, this message translates to:
   /// **'Deposit via Payixi'**
-  String get cashier_deposit_deposit_via_payixi;
+  String get cashierDepositDepositViaPayixi;
 
-  /// No description provided for @cashier_deposit_ezeebill_bank_transfer_INR_title.
+  /// No description provided for @cashierDepositEzeebill_bankTransfer_inrTitle.
   ///
   /// In en, this message translates to:
   /// **'Instant INR Bank Transfer'**
-  String get cashier_deposit_ezeebill_bank_transfer_INR_title;
+  String get cashierDepositEzeebill_bankTransfer_inrTitle;
 
   /// Ezeebill subtitle
   ///
   /// In en, this message translates to:
-  /// **'Transactions can take 1-24 hours to complete'**
-  String get cashier_deposit_ezeebill_bank_transfer_description;
+  /// **'Transactions can take 1_24 hours to complete'**
+  String get cashierDepositEzeebill_bankTransferDescription;
 
-  /// No description provided for @cashier_deposit_ezeebill_bank_transfer_title.
+  /// No description provided for @cashierDepositEzeebill_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Ezeebill Bank Transfer'**
-  String get cashier_deposit_ezeebill_bank_transfer_title;
+  String get cashierDepositEzeebill_bankTransferTitle;
 
-  /// No description provided for @cashier_deposit_ezeebill_ezeebill_title.
+  /// No description provided for @cashierDepositEzeebill_ezeebillTitle.
   ///
   /// In en, this message translates to:
   /// **'Ezeebill'**
-  String get cashier_deposit_ezeebill_ezeebill_title;
+  String get cashierDepositEzeebill_ezeebillTitle;
 
-  /// No description provided for @cashier_deposit_generate_request.
+  /// No description provided for @cashierDepositGenerateRequest.
   ///
   /// In en, this message translates to:
   /// **'Generate deposit request'**
-  String get cashier_deposit_generate_request;
+  String get cashierDepositGenerateRequest;
 
-  /// No description provided for @cashier_deposit_inovapay_local_bank_transfer_description.
+  /// No description provided for @cashierDepositInovapay_localBankTransferDescription.
   ///
   /// In en, this message translates to:
   /// **'Transactions can take up to 1 business day to confirm'**
-  String get cashier_deposit_inovapay_local_bank_transfer_description;
+  String get cashierDepositInovapay_localBankTransferDescription;
 
-  /// No description provided for @cashier_deposit_inovapay_local_bank_transfer_title.
+  /// No description provided for @cashierDepositInovapay_localBankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_deposit_inovapay_local_bank_transfer_title;
+  String get cashierDepositInovapay_localBankTransferTitle;
 
-  /// No description provided for @cashier_deposit_inovapay_pix_title.
+  /// No description provided for @cashierDepositInovapay_pixTitle.
   ///
   /// In en, this message translates to:
   /// **'PIX'**
-  String get cashier_deposit_inovapay_pix_title;
+  String get cashierDepositInovapay_pixTitle;
 
-  /// No description provided for @cashier_deposit_interac_bank_title.
+  /// No description provided for @cashierDepositInterac_bankTitle.
   ///
   /// In en, this message translates to:
   /// **'Payment'**
-  String get cashier_deposit_interac_bank_title;
+  String get cashierDepositInterac_bankTitle;
 
-  /// No description provided for @cashier_deposit_jeton_bank_transfer_voucher_atm_jpy_description.
+  /// No description provided for @cashierDepositJeton_bankTransferVoucherAtmJpyDescription.
   ///
   /// In en, this message translates to:
   /// **'Your funds are transferred instantly'**
-  String get cashier_deposit_jeton_bank_transfer_voucher_atm_jpy_description;
+  String get cashierDepositJeton_bankTransferVoucherAtmJpyDescription;
 
-  /// No description provided for @cashier_deposit_jeton_bank_transfer_voucher_atm_jpy_title.
+  /// No description provided for @cashierDepositJeton_bankTransferVoucherAtmJpyTitle.
   ///
   /// In en, this message translates to:
   /// **'VIP JPY Bank Transfer'**
-  String get cashier_deposit_jeton_bank_transfer_voucher_atm_jpy_title;
+  String get cashierDepositJeton_bankTransferVoucherAtmJpyTitle;
 
-  /// No description provided for @cashier_deposit_jeton_bank_transfer_voucher_atm_description.
+  /// No description provided for @cashierDepositJeton_bankTransferVoucherAtmDescription.
   ///
   /// In en, this message translates to:
-  /// **'Transactions can take 1-24 hours to complete'**
-  String get cashier_deposit_jeton_bank_transfer_voucher_atm_description;
+  /// **'Transactions can take 1_24 hours to complete'**
+  String get cashierDepositJeton_bankTransferVoucherAtmDescription;
 
-  /// No description provided for @cashier_deposit_jeton_bank_transfer_voucher_atm_title.
+  /// No description provided for @cashierDepositJeton_bankTransferVoucherAtmTitle.
   ///
   /// In en, this message translates to:
-  /// **'Deposit via ATM (domestic transfer only)'**
-  String get cashier_deposit_jeton_bank_transfer_voucher_atm_title;
+  /// **'Deposit via ATM _domestic transfer only_'**
+  String get cashierDepositJeton_bankTransferVoucherAtmTitle;
 
-  /// No description provided for @cashier_deposit_jeton_JPY_title.
+  /// No description provided for @cashierDepositJeton_jpyTitle.
   ///
   /// In en, this message translates to:
   /// **'JPY Bank Transfer'**
-  String get cashier_deposit_jeton_JPY_title;
+  String get cashierDepositJeton_jpyTitle;
 
-  /// No description provided for @cashier_deposit_jeton_pix_description.
+  /// No description provided for @cashierDepositJeton_pixDescription.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_deposit_jeton_pix_description;
+  String get cashierDepositJeton_pixDescription;
 
-  /// No description provided for @cashier_deposit_jeton_pix_title.
+  /// No description provided for @cashierDepositJeton_pixTitle.
   ///
   /// In en, this message translates to:
   /// **'PIX'**
-  String get cashier_deposit_jeton_pix_title;
+  String get cashierDepositJeton_pixTitle;
 
-  /// No description provided for @cashier_deposit_jeton_description.
+  /// No description provided for @cashierDepositJetonDescription.
   ///
   /// In en, this message translates to:
   /// **'JPY Bank Transfer'**
-  String get cashier_deposit_jeton_description;
+  String get cashierDepositJetonDescription;
 
-  /// No description provided for @cashier_deposit_jeton_title.
+  /// No description provided for @cashierDepositJetonTitle.
   ///
   /// In en, this message translates to:
   /// **'JPY Bank Transfer'**
-  String get cashier_deposit_jeton_title;
+  String get cashierDepositJetonTitle;
 
-  /// No description provided for @cashier_deposit_kraken_description.
+  /// No description provided for @cashierDepositKrakenDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto from our recommended exchange'**
-  String get cashier_deposit_kraken_description;
+  String get cashierDepositKrakenDescription;
 
-  /// No description provided for @cashier_deposit_kraken_title.
+  /// No description provided for @cashierDepositKrakenTitle.
   ///
   /// In en, this message translates to:
   /// **'Kraken'**
-  String get cashier_deposit_kraken_title;
+  String get cashierDepositKrakenTitle;
 
-  /// No description provided for @cashier_deposit_network_tooltip.
+  /// No description provided for @cashierDepositNetworkTooltip.
   ///
   /// In en, this message translates to:
-  /// **'Make sure to always double-check that the correct network is selected before depositing.'**
-  String get cashier_deposit_network_tooltip;
+  /// **'Make sure to always double_check that the correct network is selected before depositing'**
+  String get cashierDepositNetworkTooltip;
 
-  /// No description provided for @cashier_deposit_onramp_description.
+  /// No description provided for @cashierDepositOnrampDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto using INR ₹ with UPI'**
-  String get cashier_deposit_onramp_description;
+  String get cashierDepositOnrampDescription;
 
-  /// No description provided for @cashier_deposit_onramp_title.
+  /// No description provided for @cashierDepositOnrampTitle.
   ///
   /// In en, this message translates to:
   /// **'Onramp'**
-  String get cashier_deposit_onramp_title;
+  String get cashierDepositOnrampTitle;
 
-  /// No description provided for @cashier_deposit_onramper_description.
+  /// No description provided for @cashierDepositOnramperDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto with Credit/Debit Card'**
-  String get cashier_deposit_onramper_description;
+  String get cashierDepositOnramperDescription;
 
-  /// No description provided for @cashier_deposit_onramper_title.
+  /// No description provided for @cashierDepositOnramperTitle.
   ///
   /// In en, this message translates to:
   /// **'Onramper'**
-  String get cashier_deposit_onramper_title;
+  String get cashierDepositOnramperTitle;
 
-  /// No description provided for @cashier_deposit_pagava_JPY_title.
+  /// No description provided for @cashierDepositPagava_jpyTitle.
   ///
   /// In en, this message translates to:
   /// **'Pagava Bank Transfer'**
-  String get cashier_deposit_pagava_JPY_title;
+  String get cashierDepositPagava_jpyTitle;
 
-  /// No description provided for @cashier_deposit_pagava_title.
+  /// No description provided for @cashierDepositPagavaTitle.
   ///
   /// In en, this message translates to:
   /// **'Internet Banking Transfer'**
-  String get cashier_deposit_pagava_title;
+  String get cashierDepositPagavaTitle;
 
-  /// No description provided for @cashier_deposit_pagsmile_pix_description.
+  /// No description provided for @cashierDepositPagsmile_pixDescription.
   ///
   /// In en, this message translates to:
   /// **'Instant transfer'**
-  String get cashier_deposit_pagsmile_pix_description;
+  String get cashierDepositPagsmile_pixDescription;
 
-  /// No description provided for @cashier_deposit_pagsmile_pix_title.
+  /// No description provided for @cashierDepositPagsmile_pixTitle.
   ///
   /// In en, this message translates to:
   /// **'PIX'**
-  String get cashier_deposit_pagsmile_pix_title;
+  String get cashierDepositPagsmile_pixTitle;
 
-  /// No description provided for @cashier_deposit_paxful_description.
+  /// No description provided for @cashierDepositPaxfulDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto with Credit/Debit Card'**
-  String get cashier_deposit_paxful_description;
+  String get cashierDepositPaxfulDescription;
 
-  /// No description provided for @cashier_deposit_paxful_title.
+  /// No description provided for @cashierDepositPaxfulTitle.
   ///
   /// In en, this message translates to:
   /// **'Paxful'**
-  String get cashier_deposit_paxful_title;
+  String get cashierDepositPaxfulTitle;
 
-  /// No description provided for @cashier_deposit_pay4fun_webredirect_description.
+  /// No description provided for @cashierDepositPay4fun_webredirectDescription.
   ///
   /// In en, this message translates to:
   /// **'Instant transfer'**
-  String get cashier_deposit_pay4fun_webredirect_description;
+  String get cashierDepositPay4fun_webredirectDescription;
 
-  /// No description provided for @cashier_deposit_pay4fun_webredirect_title.
+  /// No description provided for @cashierDepositPay4fun_webredirectTitle.
   ///
   /// In en, this message translates to:
   /// **'Pay4Fun'**
-  String get cashier_deposit_pay4fun_webredirect_title;
+  String get cashierDepositPay4fun_webredirectTitle;
 
-  /// No description provided for @cashier_deposit_payixi_deposit.
+  /// No description provided for @cashierDepositPayixiDeposit.
   ///
   /// In en, this message translates to:
   /// **'Deposit with Payixi'**
-  String get cashier_deposit_payixi_deposit;
+  String get cashierDepositPayixiDeposit;
 
-  /// No description provided for @cashier_deposit_payixi_deposit_almost_done_message.
+  /// No description provided for @cashierDepositPayixiDepositAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **'Complete the payment with Payixi'**
-  String get cashier_deposit_payixi_deposit_almost_done_message;
+  String get cashierDepositPayixiDepositAlmostDoneMessage;
 
-  /// No description provided for @cashier_deposit_paymentrush_payment_rush_title.
+  /// No description provided for @cashierDepositPaymentrush_paymentRushTitle.
   ///
   /// In en, this message translates to:
   /// **'Instant Pay'**
-  String get cashier_deposit_paymentrush_payment_rush_title;
+  String get cashierDepositPaymentrush_paymentRushTitle;
 
-  /// No description provided for @cashier_deposit_paytm10Pay_paytm_10pay_title.
+  /// No description provided for @cashierDepositPaytm10pay_paytm10payTitle.
   ///
   /// In en, this message translates to:
   /// **'PayTM'**
-  String get cashier_deposit_paytm10Pay_paytm_10pay_title;
+  String get cashierDepositPaytm10pay_paytm10payTitle;
 
-  /// No description provided for @cashier_deposit_pinbank_local_bank_transfer_title.
+  /// No description provided for @cashierDepositPinbank_localBankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'PIX and bank transfer'**
-  String get cashier_deposit_pinbank_local_bank_transfer_title;
+  String get cashierDepositPinbank_localBankTransferTitle;
 
-  /// No description provided for @cashier_deposit_qaicash_bank_transfer_title.
+  /// No description provided for @cashierDepositQaicash_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_deposit_qaicash_bank_transfer_title;
+  String get cashierDepositQaicash_bankTransferTitle;
 
-  /// No description provided for @cashier_deposit_remitano_description.
+  /// No description provided for @cashierDepositRemitanoDescription.
   ///
   /// In en, this message translates to:
   /// **'Crypto exchange'**
-  String get cashier_deposit_remitano_description;
+  String get cashierDepositRemitanoDescription;
 
-  /// No description provided for @cashier_deposit_remitano_title.
+  /// No description provided for @cashierDepositRemitanoTitle.
   ///
   /// In en, this message translates to:
   /// **'Remitano'**
-  String get cashier_deposit_remitano_title;
+  String get cashierDepositRemitanoTitle;
 
-  /// No description provided for @cashier_deposit_rupeepayments_bank_transfer_title.
+  /// No description provided for @cashierDepositRupeepayments_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Popular methods'**
-  String get cashier_deposit_rupeepayments_bank_transfer_title;
+  String get cashierDepositRupeepayments_bankTransferTitle;
 
-  /// No description provided for @cashier_deposit_simplex_description.
+  /// No description provided for @cashierDepositSimplexDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy crypto with Credit/Debit Card'**
-  String get cashier_deposit_simplex_description;
+  String get cashierDepositSimplexDescription;
 
-  /// No description provided for @cashier_deposit_simplex_title.
+  /// No description provided for @cashierDepositSimplexTitle.
   ///
   /// In en, this message translates to:
   /// **'Simplex'**
-  String get cashier_deposit_simplex_title;
+  String get cashierDepositSimplexTitle;
 
-  /// No description provided for @cashier_deposit_sumopay_title.
+  /// No description provided for @cashierDepositSumopayTitle.
   ///
   /// In en, this message translates to:
   /// **'Sumopay'**
-  String get cashier_deposit_sumopay_title;
+  String get cashierDepositSumopayTitle;
 
-  /// No description provided for @cashier_deposit_upi10Pay_upi_10pay_title.
+  /// No description provided for @cashierDepositUpi10pay_upi10payTitle.
   ///
   /// In en, this message translates to:
   /// **'UPI 10Pay'**
-  String get cashier_deposit_upi10Pay_upi_10pay_title;
+  String get cashierDepositUpi10pay_upi10payTitle;
 
-  /// No description provided for @cashier_deposit_utorg_title.
+  /// No description provided for @cashierDepositUtorgTitle.
   ///
   /// In en, this message translates to:
   /// **'UTORG'**
-  String get cashier_deposit_utorg_title;
+  String get cashierDepositUtorgTitle;
 
-  /// No description provided for @cashier_deposit_vrio_upi_title.
+  /// No description provided for @cashierDepositVrio_upiTitle.
   ///
   /// In en, this message translates to:
   /// **'UPI'**
-  String get cashier_deposit_vrio_upi_title;
+  String get cashierDepositVrio_upiTitle;
 
-  /// No description provided for @cashier_deposit_wallet_deposit.
+  /// No description provided for @cashierDepositWalletDeposit.
   ///
   /// In en, this message translates to:
   /// **'Deposit with @Wallet'**
-  String get cashier_deposit_wallet_deposit;
+  String get cashierDepositWalletDeposit;
 
-  /// No description provided for @cashier_deposit_wallet_deposit_started.
+  /// No description provided for @cashierDepositWalletDepositStarted.
   ///
   /// In en, this message translates to:
-  /// **'Your {amount} {currency} deposit transaction has been initiated.\nClick to continue on @Wallet to complete.'**
-  String cashier_deposit_wallet_deposit_started(Object amount, Object currency);
+  /// **'Your {amount} {currency} deposit transaction has been initiated\nClick to continue on @Wallet to complete'**
+  String cashierDepositWalletDepositStarted(Object amount, Object currency);
 
-  /// No description provided for @cashier_deposit_warning_confirm_address.
+  /// No description provided for @cashierDepositWarningConfirmAddress.
   ///
   /// In en, this message translates to:
-  /// **'Please always check your deposit wallet address on our site before making your transactions.'**
-  String get cashier_deposit_warning_confirm_address;
+  /// **'Please always check your deposit wallet address on our site before making your transactions'**
+  String get cashierDepositWarningConfirmAddress;
 
-  /// No description provided for @cashier_deposit_warning_lightning_network.
+  /// No description provided for @cashierDepositWarningLightningNetwork.
   ///
   /// In en, this message translates to:
-  /// **'Lightning is a network that runs on top of Bitcoin blockchain to enable more uses of for bitcoin. <a href=\"https://www.google.com/\" target=\"_blank\">Learn more</a>.'**
-  String get cashier_deposit_warning_lightning_network;
+  /// **'Lightning is a network that runs on top of Bitcoin blockchain to enable more uses of for bitcoin <a href=\"https//wwwgooglecom/\" target=\"blank\">Learn more</a>'**
+  String get cashierDepositWarningLightningNetwork;
 
-  /// No description provided for @cashier_deposits_are_disabled.
+  /// No description provided for @cashierDepositsAreDisabled.
   ///
   /// In en, this message translates to:
-  /// **'Purchasing cryptocurrency via MoonPay feature is currently disabled.'**
-  String get cashier_deposits_are_disabled;
+  /// **'Purchasing cryptocurrency via MoonPay feature is currently disabled'**
+  String get cashierDepositsAreDisabled;
 
-  /// No description provided for @cashier_destination_tag_copied.
+  /// No description provided for @cashierDestinationTagCopied.
   ///
   /// In en, this message translates to:
   /// **'Destination tag copied'**
-  String get cashier_destination_tag_copied;
+  String get cashierDestinationTagCopied;
 
-  /// No description provided for @cashier_disconnect.
+  /// No description provided for @cashierDisconnect.
   ///
   /// In en, this message translates to:
   /// **'Disconnect'**
-  String get cashier_disconnect;
+  String get cashierDisconnect;
 
-  /// No description provided for @cashier_DOGE.
+  /// No description provided for @cashierDoge.
   ///
   /// In en, this message translates to:
   /// **'DOGE'**
-  String get cashier_DOGE;
+  String get cashierDoge;
 
-  /// No description provided for @cashier_done.
+  /// No description provided for @cashierDone.
   ///
   /// In en, this message translates to:
   /// **'Done'**
-  String get cashier_done;
+  String get cashierDone;
 
-  /// No description provided for @cashier_dont_show_again.
+  /// No description provided for @cashierDontShowAgain.
   ///
   /// In en, this message translates to:
-  /// **'Don\'t show me again.'**
-  String get cashier_dont_show_again;
+  /// **'Don\'t show me again'**
+  String get cashierDontShowAgain;
 
-  /// No description provided for @cashier_EMAIL_US.
+  /// No description provided for @cashierEmailUs.
   ///
   /// In en, this message translates to:
   /// **'Email us'**
-  String get cashier_EMAIL_US;
+  String get cashierEmailUs;
 
-  /// No description provided for @cashier_email_verification_banner_body.
+  /// No description provided for @cashierEmailVerificationBannerBody.
   ///
   /// In en, this message translates to:
   /// **'To benefit from all {brandName} features please verify your email address'**
-  String cashier_email_verification_banner_body(Object brandName);
+  String cashierEmailVerificationBannerBody(Object brandName);
 
-  /// No description provided for @cashier_email_verification_banner_resend.
+  /// No description provided for @cashierEmailVerificationBannerResend.
   ///
   /// In en, this message translates to:
   /// **'Resend'**
-  String get cashier_email_verification_banner_resend;
+  String get cashierEmailVerificationBannerResend;
 
-  /// No description provided for @cashier_email_verification_banner_success.
+  /// No description provided for @cashierEmailVerificationBannerSuccess.
   ///
   /// In en, this message translates to:
   /// **'Email link has been sent!'**
-  String get cashier_email_verification_banner_success;
+  String get cashierEmailVerificationBannerSuccess;
 
-  /// No description provided for @cashier_email_verification_banner_title.
+  /// No description provided for @cashierEmailVerificationBannerTitle.
   ///
   /// In en, this message translates to:
   /// **'Verify your email'**
-  String get cashier_email_verification_banner_title;
+  String get cashierEmailVerificationBannerTitle;
 
-  /// No description provided for @cashier_email_verification_confirm_subtitle.
+  /// No description provided for @cashierEmailVerificationConfirmSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'By not verifying your email you will not be able to withdraw any funds.'**
-  String get cashier_email_verification_confirm_subtitle;
+  /// **'By not verifying your email you will not be able to withdraw any funds'**
+  String get cashierEmailVerificationConfirmSubtitle;
 
-  /// No description provided for @cashier_email_verification_confirm_title.
+  /// No description provided for @cashierEmailVerificationConfirmTitle.
   ///
   /// In en, this message translates to:
   /// **'Are you sure?'**
-  String get cashier_email_verification_confirm_title;
+  String get cashierEmailVerificationConfirmTitle;
 
-  /// No description provided for @cashier_email_verification_confirm_verify.
+  /// No description provided for @cashierEmailVerificationConfirmVerify.
   ///
   /// In en, this message translates to:
   /// **'Verify'**
-  String get cashier_email_verification_confirm_verify;
+  String get cashierEmailVerificationConfirmVerify;
 
-  /// No description provided for @cashier_email_verification_resend_link.
+  /// No description provided for @cashierEmailVerificationResendLink.
   ///
   /// In en, this message translates to:
   /// **'Resend verification link'**
-  String get cashier_email_verification_resend_link;
+  String get cashierEmailVerificationResendLink;
 
-  /// No description provided for @cashier_empty_deposit_options.
+  /// No description provided for @cashierEmptyDepositOptions.
   ///
   /// In en, this message translates to:
   /// **'There are currently no options available'**
-  String get cashier_empty_deposit_options;
+  String get cashierEmptyDepositOptions;
 
-  /// No description provided for @cashier_empty_withdrawal_options.
+  /// No description provided for @cashierEmptyWithdrawalOptions.
   ///
   /// In en, this message translates to:
   /// **'There are currently no options available'**
-  String get cashier_empty_withdrawal_options;
+  String get cashierEmptyWithdrawalOptions;
 
-  /// No description provided for @cashier_english_input_requried.
+  /// No description provided for @cashierEnglishInputRequried.
   ///
   /// In en, this message translates to:
   /// **'Required input in English'**
-  String get cashier_english_input_requried;
+  String get cashierEnglishInputRequried;
 
-  /// No description provided for @cashier_enter_amount.
+  /// No description provided for @cashierEnterAmount.
   ///
   /// In en, this message translates to:
   /// **'Enter amount'**
-  String get cashier_enter_amount;
+  String get cashierEnterAmount;
 
-  /// No description provided for @cashier_enter_code_from_sms.
+  /// No description provided for @cashierEnterCodeFromSms.
   ///
   /// In en, this message translates to:
   /// **'Enter the code we sent over SMS to {phone}'**
-  String cashier_enter_code_from_sms(Object phone);
+  String cashierEnterCodeFromSms(Object phone);
 
-  /// No description provided for @cashier_enter_katakana_input.
+  /// No description provided for @cashierEnterKatakanaInput.
   ///
   /// In en, this message translates to:
   /// **'Required input in Katakana'**
-  String get cashier_enter_katakana_input;
+  String get cashierEnterKatakanaInput;
 
-  /// No description provided for @cashier_enter_otp.
+  /// No description provided for @cashierEnterOtp.
   ///
   /// In en, this message translates to:
   /// **'Enter Authenticator code'**
-  String get cashier_enter_otp;
+  String get cashierEnterOtp;
 
-  /// No description provided for @cashier_enter_valid_input.
+  /// No description provided for @cashierEnterValidInput.
   ///
   /// In en, this message translates to:
   /// **'Invalid input'**
-  String get cashier_enter_valid_input;
+  String get cashierEnterValidInput;
 
-  /// No description provided for @cashier_enter_valid_phone_number.
+  /// No description provided for @cashierEnterValidPhoneNumber.
   ///
   /// In en, this message translates to:
   /// **'Required valid phone number'**
-  String get cashier_enter_valid_phone_number;
+  String get cashierEnterValidPhoneNumber;
 
-  /// No description provided for @cashier_enter_valid_zip_code.
+  /// No description provided for @cashierEnterValidZipCode.
   ///
   /// In en, this message translates to:
   /// **'Valid postcode required'**
-  String get cashier_enter_valid_zip_code;
+  String get cashierEnterValidZipCode;
 
-  /// No description provided for @cashier_enter_withdrawal_amount.
+  /// No description provided for @cashierEnterWithdrawalAmount.
   ///
   /// In en, this message translates to:
   /// **'Enter withdrawal amount'**
-  String get cashier_enter_withdrawal_amount;
+  String get cashierEnterWithdrawalAmount;
 
-  /// No description provided for @cashier_enter_your_address.
+  /// No description provided for @cashierEnterYourAddress.
   ///
   /// In en, this message translates to:
   /// **'Enter your address'**
-  String get cashier_enter_your_address;
+  String get cashierEnterYourAddress;
 
-  /// No description provided for @cashier_estimated_quantity.
+  /// No description provided for @cashierEstimatedQuantity.
   ///
   /// In en, this message translates to:
   /// **'Estimated quantity'**
-  String get cashier_estimated_quantity;
+  String get cashierEstimatedQuantity;
 
-  /// No description provided for @cashier_ETH.
+  /// No description provided for @cashierEth.
   ///
   /// In en, this message translates to:
   /// **'Ethereum'**
-  String get cashier_ETH;
+  String get cashierEth;
 
-  /// No description provided for @cashier_ETH_deposit_description.
+  /// No description provided for @cashierEthDepositDescription.
   ///
   /// In en, this message translates to:
-  /// **'Ethereum sent to the above address will be credited to your balance for playing.'**
-  String get cashier_ETH_deposit_description;
+  /// **'Ethereum sent to the above address will be credited to your balance for playing'**
+  String get cashierEthDepositDescription;
 
-  /// No description provided for @cashier_EUR.
+  /// No description provided for @cashierEur.
   ///
   /// In en, this message translates to:
   /// **'Euro'**
-  String get cashier_EUR;
+  String get cashierEur;
 
-  /// No description provided for @cashier_exchange.
+  /// No description provided for @cashierExchange.
   ///
   /// In en, this message translates to:
   /// **'Convert'**
-  String get cashier_exchange;
+  String get cashierExchange;
 
-  /// No description provided for @cashier_exchange_3_confirmations.
+  /// No description provided for @cashierExchange3Confirmations.
   ///
   /// In en, this message translates to:
-  /// **'You have a pending deposit of {amount} {currency}. This amount is locked for conversion until transaction will get three confirmations.'**
-  String cashier_exchange_3_confirmations(Object amount, Object currency);
+  /// **'You have a pending deposit of {amount} {currency} This amount is locked for conversion until transaction will get three confirmations'**
+  String cashierExchange3Confirmations(Object amount, Object currency);
 
-  /// No description provided for @cashier_exchange_fee.
+  /// No description provided for @cashierExchangeFee.
   ///
   /// In en, this message translates to:
-  /// **'Fee: {amount} {currency} ({fee}%)'**
-  String cashier_exchange_fee(Object amount, Object currency, Object fee);
+  /// **'Fee {amount} {currency} _{fee}%_'**
+  String cashierExchangeFee(Object amount, Object currency, Object fee);
 
-  /// No description provided for @cashier_exchange_overall_balance.
+  /// No description provided for @cashierExchangeOverallBalance.
   ///
   /// In en, this message translates to:
-  /// **'Overall balance in {currency}: {amount}'**
-  String cashier_exchange_overall_balance(Object currency, Object amount);
+  /// **'Overall balance in {currency} {amount}'**
+  String cashierExchangeOverallBalance(Object currency, Object amount);
 
-  /// No description provided for @cashier_exchange_rate.
+  /// No description provided for @cashierExchangeRate.
   ///
   /// In en, this message translates to:
-  /// **'1,000 mBTC (1 BTC) = {amount} {currency}'**
-  String cashier_exchange_rate(Object amount, Object currency);
+  /// **'1,000 mBTC _1 BTC_ = {amount} {currency}'**
+  String cashierExchangeRate(Object amount, Object currency);
 
-  /// No description provided for @cashier_exchange_rate_changed.
+  /// No description provided for @cashierExchangeRateChanged.
   ///
   /// In en, this message translates to:
-  /// **'The exchange rate has been changed.'**
-  String get cashier_exchange_rate_changed;
+  /// **'The exchange rate has been changed'**
+  String get cashierExchangeRateChanged;
 
-  /// No description provided for @cashier_exchange_rate_text.
+  /// No description provided for @cashierExchangeRateText.
   ///
   /// In en, this message translates to:
   /// **'Exchange rate'**
-  String get cashier_exchange_rate_text;
+  String get cashierExchangeRateText;
 
-  /// No description provided for @cashier_exchange_rate_updated.
+  /// No description provided for @cashierExchangeRateUpdated.
   ///
   /// In en, this message translates to:
-  /// **'The exchange rate has been updated.'**
-  String get cashier_exchange_rate_updated;
+  /// **'The exchange rate has been updated'**
+  String get cashierExchangeRateUpdated;
 
-  /// No description provided for @cashier_external.
+  /// No description provided for @cashierExternal.
   ///
   /// In en, this message translates to:
   /// **'External wallets'**
-  String get cashier_external;
+  String get cashierExternal;
 
-  /// No description provided for @cashier_external_wallet_tonhub_description.
+  /// No description provided for @cashierExternalWalletTonhubDescription.
   ///
   /// In en, this message translates to:
-  /// **'Deposit via Tonhub wallet.'**
-  String get cashier_external_wallet_tonhub_description;
+  /// **'Deposit via Tonhub wallet'**
+  String get cashierExternalWalletTonhubDescription;
 
-  /// No description provided for @cashier_external_wallet_tonhub_title.
+  /// No description provided for @cashierExternalWalletTonhubTitle.
   ///
   /// In en, this message translates to:
   /// **'Tonhub'**
-  String get cashier_external_wallet_tonhub_title;
+  String get cashierExternalWalletTonhubTitle;
 
-  /// No description provided for @cashier_external_wallet_tonkeeper_description.
+  /// No description provided for @cashierExternalWalletTonkeeperDescription.
   ///
   /// In en, this message translates to:
-  /// **'Deposit via TonKeeper wallet.'**
-  String get cashier_external_wallet_tonkeeper_description;
+  /// **'Deposit via TonKeeper wallet'**
+  String get cashierExternalWalletTonkeeperDescription;
 
-  /// No description provided for @cashier_external_wallet_tonkeeper_title.
+  /// No description provided for @cashierExternalWalletTonkeeperTitle.
   ///
   /// In en, this message translates to:
   /// **'TonKeeper'**
-  String get cashier_external_wallet_tonkeeper_title;
+  String get cashierExternalWalletTonkeeperTitle;
 
-  /// No description provided for @cashier_faq.
+  /// No description provided for @cashierFaq.
   ///
   /// In en, this message translates to:
   /// **'FAQ'**
-  String get cashier_faq;
+  String get cashierFaq;
 
-  /// No description provided for @cashier_fast_deposit.
+  /// No description provided for @cashierFastDeposit.
   ///
   /// In en, this message translates to:
   /// **'Fast deposit'**
-  String get cashier_fast_deposit;
+  String get cashierFastDeposit;
 
-  /// No description provided for @cashier_fiat_amount_USDT_placeholder.
+  /// No description provided for @cashierFiatAmountUsdtPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'Enter amount in USDT'**
-  String get cashier_fiat_amount_USDT_placeholder;
+  String get cashierFiatAmountUsdtPlaceholder;
 
-  /// No description provided for @cashier_fiat_estimated_total.
+  /// No description provided for @cashierFiatEstimatedTotal.
   ///
   /// In en, this message translates to:
   /// **'Estimated total'**
-  String get cashier_fiat_estimated_total;
+  String get cashierFiatEstimatedTotal;
 
-  /// No description provided for @cashier_fiat_ARS.
+  /// No description provided for @cashierFiatArs.
   ///
   /// In en, this message translates to:
   /// **'ARS'**
-  String get cashier_fiat_ARS;
+  String get cashierFiatArs;
 
-  /// No description provided for @cashier_fiat_BDT.
+  /// No description provided for @cashierFiatBdt.
   ///
   /// In en, this message translates to:
   /// **'BDT\n'**
-  String get cashier_fiat_BDT;
+  String get cashierFiatBdt;
 
-  /// No description provided for @cashier_fiat_BRL.
+  /// No description provided for @cashierFiatBrl.
   ///
   /// In en, this message translates to:
   /// **'BRL'**
-  String get cashier_fiat_BRL;
+  String get cashierFiatBrl;
 
-  /// No description provided for @cashier_fiat_CAD.
+  /// No description provided for @cashierFiatCad.
   ///
   /// In en, this message translates to:
   /// **'CAD'**
-  String get cashier_fiat_CAD;
+  String get cashierFiatCad;
 
-  /// No description provided for @cashier_fiat_CLP.
+  /// No description provided for @cashierFiatClp.
   ///
   /// In en, this message translates to:
   /// **'CLP'**
-  String get cashier_fiat_CLP;
+  String get cashierFiatClp;
 
-  /// No description provided for @cashier_fiat_CNY.
+  /// No description provided for @cashierFiatCny.
   ///
   /// In en, this message translates to:
   /// **'CNY'**
-  String get cashier_fiat_CNY;
+  String get cashierFiatCny;
 
-  /// No description provided for @cashier_fiat_continue_external.
+  /// No description provided for @cashierFiatContinueExternal.
   ///
   /// In en, this message translates to:
-  /// **'Success! Click \"Continue on {provider}\" to complete the transaction.'**
-  String cashier_fiat_continue_external(Object provider);
+  /// **'Success! Click \"Continue on {provider}\" to complete the transaction'**
+  String cashierFiatContinueExternal(Object provider);
 
-  /// No description provided for @cashier_fiat_continue_provider.
+  /// No description provided for @cashierFiatContinueProvider.
   ///
   /// In en, this message translates to:
   /// **'Continue on {provider}'**
-  String cashier_fiat_continue_provider(Object provider);
+  String cashierFiatContinueProvider(Object provider);
 
-  /// No description provided for @cashier_fiat_COREFY_JETON_title.
+  /// No description provided for @cashierFiatCorefyJetonTitle.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_fiat_COREFY_JETON_title;
+  String get cashierFiatCorefyJetonTitle;
 
-  /// No description provided for @cashier_fiat_deposit.
+  /// No description provided for @cashierFiatDeposit.
   ///
   /// In en, this message translates to:
   /// **'Deposit'**
-  String get cashier_fiat_deposit;
+  String get cashierFiatDeposit;
 
-  /// No description provided for @cashier_fiat_deposit_started.
+  /// No description provided for @cashierFiatDepositStarted.
   ///
   /// In en, this message translates to:
   /// **'Deposit has been started'**
-  String get cashier_fiat_deposit_started;
+  String get cashierFiatDepositStarted;
 
-  /// No description provided for @cashier_fiat_deposit_add_more_funds.
+  /// No description provided for @cashierFiatDepositAddMoreFunds.
   ///
   /// In en, this message translates to:
   /// **'Add more funds'**
-  String get cashier_fiat_deposit_add_more_funds;
+  String get cashierFiatDepositAddMoreFunds;
 
-  /// No description provided for @cashier_fiat_deposit_ADDRESS.
+  /// No description provided for @cashierFiatDepositAddress.
   ///
   /// In en, this message translates to:
   /// **'Address'**
-  String get cashier_fiat_deposit_ADDRESS;
+  String get cashierFiatDepositAddress;
 
-  /// No description provided for @cashier_fiat_deposit_ADDRESS_placeholder.
+  /// No description provided for @cashierFiatDepositAddressPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Motomachi 1-1-1 (English only)'**
-  String get cashier_fiat_deposit_ADDRESS_placeholder;
+  /// **'eg Motomachi 1_1_1 _English only_'**
+  String get cashierFiatDepositAddressPlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_ALIPAY.
+  /// No description provided for @cashierFiatDepositAlipay.
   ///
   /// In en, this message translates to:
   /// **'Alipay'**
-  String get cashier_fiat_deposit_ALIPAY;
+  String get cashierFiatDepositAlipay;
 
-  /// No description provided for @cashier_fiat_deposit_amount.
+  /// No description provided for @cashierFiatDepositAmount.
   ///
   /// In en, this message translates to:
   /// **'Enter amount'**
-  String get cashier_fiat_deposit_amount;
+  String get cashierFiatDepositAmount;
 
-  /// No description provided for @cashier_fiat_DEPOSIT_amount.
-  ///
-  /// In en, this message translates to:
-  /// **'Enter amount'**
-  String get cashier_fiat_DEPOSIT_amount;
-
-  /// No description provided for @cashier_fiat_deposit_amount_placeholder.
+  /// No description provided for @cashierFiatDepositAmountPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'Enter amount in {currency}'**
-  String cashier_fiat_deposit_amount_placeholder(Object currency);
+  String cashierFiatDepositAmountPlaceholder(Object currency);
 
-  /// No description provided for @cashier_fiat_deposit_BANK.
+  /// No description provided for @cashierFiatDepositBank.
   ///
   /// In en, this message translates to:
   /// **'Bank name'**
-  String get cashier_fiat_deposit_BANK;
+  String get cashierFiatDepositBank;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_ACCOUNT_NUMBER.
+  /// No description provided for @cashierFiatDepositBankAccountNumber.
   ///
   /// In en, this message translates to:
   /// **'Bank account number'**
-  String get cashier_fiat_deposit_BANK_ACCOUNT_NUMBER;
+  String get cashierFiatDepositBankAccountNumber;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_ACCOUNT_NUMBER_placeholder.
+  /// No description provided for @cashierFiatDepositBankAccountNumberPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'0123456'**
-  String get cashier_fiat_deposit_BANK_ACCOUNT_NUMBER_placeholder;
+  String get cashierFiatDepositBankAccountNumberPlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_BRANCH.
+  /// No description provided for @cashierFiatDepositBankBranch.
   ///
   /// In en, this message translates to:
   /// **'Bank branch'**
-  String get cashier_fiat_deposit_BANK_BRANCH;
+  String get cashierFiatDepositBankBranch;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_CODE.
+  /// No description provided for @cashierFiatDepositBankCode.
   ///
   /// In en, this message translates to:
   /// **'Bank code'**
-  String get cashier_fiat_deposit_BANK_CODE;
+  String get cashierFiatDepositBankCode;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_CODE_placeholder.
+  /// No description provided for @cashierFiatDepositBankCodePlaceholder.
   ///
   /// In en, this message translates to:
   /// **'0005'**
-  String get cashier_fiat_deposit_BANK_CODE_placeholder;
+  String get cashierFiatDepositBankCodePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_INTERAC.
+  /// No description provided for @cashierFiatDepositBankInterac.
   ///
   /// In en, this message translates to:
   /// **'Interac'**
-  String get cashier_fiat_deposit_BANK_INTERAC;
+  String get cashierFiatDepositBankInterac;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_INTERAC_almost_done_message.
+  /// No description provided for @cashierFiatDepositBankInteracAlmostDoneMessage.
   ///
   /// In en, this message translates to:
-  /// **' ®Trademark of Interac Corp. Used under license. '**
-  String get cashier_fiat_deposit_BANK_INTERAC_almost_done_message;
+  /// **' ®Trademark of Interac Corp Used under license '**
+  String get cashierFiatDepositBankInteracAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_INTERAC_message.
+  /// No description provided for @cashierFiatDepositBankInteracMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_BANK_INTERAC_message;
+  String get cashierFiatDepositBankInteracMessage;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_INTERAC_open_new_window_title.
+  /// No description provided for @cashierFiatDepositBankInteracOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_BANK_INTERAC_open_new_window_title;
+  String get cashierFiatDepositBankInteracOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_placeholder.
+  /// No description provided for @cashierFiatDepositBankPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'Please select'**
-  String get cashier_fiat_deposit_BANK_placeholder;
+  String get cashierFiatDepositBankPlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER.
+  /// No description provided for @cashierFiatDepositBankTransfer.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfers'**
-  String get cashier_fiat_deposit_BANK_TRANSFER;
+  String get cashierFiatDepositBankTransfer;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_KLARNA.
+  /// No description provided for @cashierFiatDepositBankTransferKlarna.
   ///
   /// In en, this message translates to:
   /// **'Klarna'**
-  String get cashier_fiat_deposit_BANK_TRANSFER_KLARNA;
+  String get cashierFiatDepositBankTransferKlarna;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_KLARNA_almost_done_message.
+  /// No description provided for @cashierFiatDepositBankTransferKlarnaAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_BANK_TRANSFER_KLARNA_almost_done_message;
+  String get cashierFiatDepositBankTransferKlarnaAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_KLARNA_form_description.
+  /// No description provided for @cashierFiatDepositBankTransferKlarnaFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_BANK_TRANSFER_KLARNA_form_description;
+  String get cashierFiatDepositBankTransferKlarnaFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_KLARNA_message.
+  /// No description provided for @cashierFiatDepositBankTransferKlarnaMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_BANK_TRANSFER_KLARNA_message;
+  String get cashierFiatDepositBankTransferKlarnaMessage;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_KLARNA_open_new_window_title.
+  /// No description provided for @cashierFiatDepositBankTransferKlarnaOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_BANK_TRANSFER_KLARNA_open_new_window_title;
+  String get cashierFiatDepositBankTransferKlarnaOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_QAICASH_form_description.
+  /// No description provided for @cashierFiatDepositBankTransferQaicashFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'Using “Alipay to bankcard” deposit via P2P will cause delay of crediting to your wallet, kindly use “bankcard to bankcard”. '**
-  String get cashier_fiat_deposit_BANK_TRANSFER_QAICASH_form_description;
+  /// **'Using “Alipay to bankcard” deposit via P2P will cause delay of crediting to your wallet, kindly use “bankcard to bankcard” '**
+  String get cashierFiatDepositBankTransferQaicashFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY.
+  /// No description provided for @cashierFiatDepositBankTransferTrustly.
   ///
   /// In en, this message translates to:
   /// **'Trustly'**
-  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY;
+  String get cashierFiatDepositBankTransferTrustly;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_almost_done_message.
+  /// No description provided for @cashierFiatDepositBankTransferTrustlyAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_almost_done_message;
+  String get cashierFiatDepositBankTransferTrustlyAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_form_description.
+  /// No description provided for @cashierFiatDepositBankTransferTrustlyFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_form_description;
+  String get cashierFiatDepositBankTransferTrustlyFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_iframe_description.
+  /// No description provided for @cashierFiatDepositBankTransferTrustlyIframeDescription.
   ///
   /// In en, this message translates to:
   /// **'     '**
-  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_iframe_description;
+  String get cashierFiatDepositBankTransferTrustlyIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_message.
+  /// No description provided for @cashierFiatDepositBankTransferTrustlyMessage.
   ///
   /// In en, this message translates to:
   /// **'       '**
-  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_message;
+  String get cashierFiatDepositBankTransferTrustlyMessage;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_open_new_window_title.
+  /// No description provided for @cashierFiatDepositBankTransferTrustlyOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_BANK_TRANSFER_TRUSTLY_open_new_window_title;
+  String get cashierFiatDepositBankTransferTrustlyOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_VOUCHER_ATM_JETON_PROVIDER_form_description.
+  /// No description provided for @cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'Your deducted amount depends on the bank you use.'**
-  String get cashier_fiat_deposit_BANK_TRANSFER_VOUCHER_ATM_JETON_PROVIDER_form_description;
+  /// **'Your deducted amount depends on the bank you use'**
+  String get cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_BANK_TRANSFER_VOUCHER_ATM_fee.
+  /// No description provided for @cashierFiatDepositBankTransferVoucherAtmFee.
   ///
   /// In en, this message translates to:
   /// **'Depends on the bank you use'**
-  String get cashier_fiat_deposit_BANK_TRANSFER_VOUCHER_ATM_fee;
+  String get cashierFiatDepositBankTransferVoucherAtmFee;
 
-  /// No description provided for @cashier_fiat_deposit_barupay_account_number.
+  /// No description provided for @cashierFiatDepositBarupayAccountNumber.
   ///
   /// In en, this message translates to:
   /// **'1010345'**
-  String get cashier_fiat_deposit_barupay_account_number;
+  String get cashierFiatDepositBarupayAccountNumber;
 
-  /// No description provided for @cashier_fiat_deposit_barupay_bank_branch.
+  /// No description provided for @cashierFiatDepositBarupayBankBranch.
   ///
   /// In en, this message translates to:
-  /// **'法人第二営業部 (102)'**
-  String get cashier_fiat_deposit_barupay_bank_branch;
+  /// **'法人第二営業部 _102_'**
+  String get cashierFiatDepositBarupayBankBranch;
 
-  /// No description provided for @cashier_fiat_deposit_barupay_bank_name.
+  /// No description provided for @cashierFiatDepositBarupayBankName.
   ///
   /// In en, this message translates to:
-  /// **'GMOあおぞらネット銀行 (0310)'**
-  String get cashier_fiat_deposit_barupay_bank_name;
+  /// **'GMOあおぞらネット銀行 _0310_'**
+  String get cashierFiatDepositBarupayBankName;
 
-  /// No description provided for @cashier_fiat_deposit_barupay_beneficiaryName.
+  /// No description provided for @cashierFiatDepositBarupayBeneficiaryname.
   ///
   /// In en, this message translates to:
   /// **'エムシステムマネジメント'**
-  String get cashier_fiat_deposit_barupay_beneficiaryName;
+  String get cashierFiatDepositBarupayBeneficiaryname;
 
-  /// No description provided for @cashier_fiat_deposit_BIC.
+  /// No description provided for @cashierFiatDepositBic.
   ///
   /// In en, this message translates to:
   /// **'BIC'**
-  String get cashier_fiat_deposit_BIC;
+  String get cashierFiatDepositBic;
 
-  /// No description provided for @cashier_fiat_deposit_bitcasino_barupay_account_number.
+  /// No description provided for @cashierFiatDepositBitcasinoBarupayAccountNumber.
   ///
   /// In en, this message translates to:
   /// **'7510561'**
-  String get cashier_fiat_deposit_bitcasino_barupay_account_number;
+  String get cashierFiatDepositBitcasinoBarupayAccountNumber;
 
-  /// No description provided for @cashier_fiat_deposit_bitcasino_barupay_bank_branch.
+  /// No description provided for @cashierFiatDepositBitcasinoBarupayBankBranch.
   ///
   /// In en, this message translates to:
   /// **'綾瀬支店（691）'**
-  String get cashier_fiat_deposit_bitcasino_barupay_bank_branch;
+  String get cashierFiatDepositBitcasinoBarupayBankBranch;
 
-  /// No description provided for @cashier_fiat_deposit_bitcasino_barupay_bank_name.
+  /// No description provided for @cashierFiatDepositBitcasinoBarupayBankName.
   ///
   /// In en, this message translates to:
   /// **'三井住友銀行'**
-  String get cashier_fiat_deposit_bitcasino_barupay_bank_name;
+  String get cashierFiatDepositBitcasinoBarupayBankName;
 
-  /// No description provided for @cashier_fiat_deposit_bitcasino_barupay_beneficiaryName.
+  /// No description provided for @cashierFiatDepositBitcasinoBarupayBeneficiaryname.
   ///
   /// In en, this message translates to:
   /// **'株）LOVEWINE'**
-  String get cashier_fiat_deposit_bitcasino_barupay_beneficiaryName;
+  String get cashierFiatDepositBitcasinoBarupayBeneficiaryname;
 
-  /// No description provided for @cashier_fiat_deposit_BRITE.
+  /// No description provided for @cashierFiatDepositBrite.
   ///
   /// In en, this message translates to:
   /// **'Brite'**
-  String get cashier_fiat_deposit_BRITE;
+  String get cashierFiatDepositBrite;
 
-  /// No description provided for @cashier_fiat_deposit_BUSINESS_LOGIC_INVALID.
+  /// No description provided for @cashierFiatDepositBusinessLogicInvalid.
   ///
   /// In en, this message translates to:
   /// **'Invalid'**
-  String get cashier_fiat_deposit_BUSINESS_LOGIC_INVALID;
+  String get cashierFiatDepositBusinessLogicInvalid;
 
-  /// No description provided for @cashier_fiat_deposit_BUSINESS_LOGIC_REQUIRED.
+  /// No description provided for @cashierFiatDepositBusinessLogicRequired.
   ///
   /// In en, this message translates to:
   /// **'Invalid'**
-  String get cashier_fiat_deposit_BUSINESS_LOGIC_REQUIRED;
+  String get cashierFiatDepositBusinessLogicRequired;
 
-  /// No description provided for @cashier_fiat_deposit_CAD_global_description.
+  /// No description provided for @cashierFiatDepositCadGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_CAD_global_description;
+  String get cashierFiatDepositCadGlobalDescription;
 
-  /// No description provided for @cashier_fiat_deposit_cardHolder.
+  /// No description provided for @cashierFiatDepositCardholder.
   ///
   /// In en, this message translates to:
   /// **'First name and last name'**
-  String get cashier_fiat_deposit_cardHolder;
+  String get cashierFiatDepositCardholder;
 
-  /// No description provided for @cashier_fiat_deposit_cardNumber.
+  /// No description provided for @cashierFiatDepositCardnumber.
   ///
   /// In en, this message translates to:
   /// **'Card number'**
-  String get cashier_fiat_deposit_cardNumber;
+  String get cashierFiatDepositCardnumber;
 
-  /// No description provided for @cashier_fiat_deposit_choose_payment_method.
+  /// No description provided for @cashierFiatDepositChoosePaymentMethod.
   ///
   /// In en, this message translates to:
   /// **'Select new payment method'**
-  String get cashier_fiat_deposit_choose_payment_method;
+  String get cashierFiatDepositChoosePaymentMethod;
 
-  /// No description provided for @cashier_fiat_deposit_CITY.
+  /// No description provided for @cashierFiatDepositCity.
   ///
   /// In en, this message translates to:
   /// **'City'**
-  String get cashier_fiat_deposit_CITY;
+  String get cashierFiatDepositCity;
 
-  /// No description provided for @cashier_fiat_deposit_CITY_placeholder.
+  /// No description provided for @cashierFiatDepositCityPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Yokohama-shi (English only)'**
-  String get cashier_fiat_deposit_CITY_placeholder;
+  /// **'eg Yokohama_shi _English only_'**
+  String get cashierFiatDepositCityPlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_code.
+  /// No description provided for @cashierFiatDepositCode.
   ///
   /// In en, this message translates to:
   /// **'CVV'**
-  String get cashier_fiat_deposit_code;
+  String get cashierFiatDepositCode;
 
-  /// No description provided for @cashier_fiat_deposit_continue.
+  /// No description provided for @cashierFiatDepositContinue.
   ///
   /// In en, this message translates to:
   /// **'Continue'**
-  String get cashier_fiat_deposit_continue;
+  String get cashierFiatDepositContinue;
 
-  /// No description provided for @cashier_fiat_deposit_continue_deposit.
+  /// No description provided for @cashierFiatDepositContinueDeposit.
   ///
   /// In en, this message translates to:
   /// **'Continue deposit'**
-  String get cashier_fiat_deposit_continue_deposit;
+  String get cashierFiatDepositContinueDeposit;
 
-  /// No description provided for @cashier_fiat_deposit_copy_to_clipboard.
+  /// No description provided for @cashierFiatDepositCopyToClipboard.
   ///
   /// In en, this message translates to:
   /// **'Copy'**
-  String get cashier_fiat_deposit_copy_to_clipboard;
+  String get cashierFiatDepositCopyToClipboard;
 
-  /// No description provided for @cashier_fiat_deposit_cpf.
-  ///
-  /// In en, this message translates to:
-  /// **'Enter CPF'**
-  String get cashier_fiat_deposit_cpf;
-
-  /// No description provided for @cashier_fiat_deposit_CPF.
+  /// No description provided for @cashierFiatDepositCpf.
   ///
   /// In en, this message translates to:
   /// **'CPF'**
-  String get cashier_fiat_deposit_CPF;
+  String get cashierFiatDepositCpf;
 
-  /// No description provided for @cashier_fiat_deposit_CPF_ALREADY_EXISTS_cpf.
+  /// No description provided for @cashierFiatDepositCpfAlreadyExistsCpf.
   ///
   /// In en, this message translates to:
   /// **'CPF already exists'**
-  String get cashier_fiat_deposit_CPF_ALREADY_EXISTS_cpf;
+  String get cashierFiatDepositCpfAlreadyExistsCpf;
 
-  /// No description provided for @cashier_fiat_deposit_cpf_description.
+  /// No description provided for @cashierFiatDepositCpfDescription.
   ///
   /// In en, this message translates to:
   /// **'The details provided will be used in all future transactions'**
-  String get cashier_fiat_deposit_cpf_description;
+  String get cashierFiatDepositCpfDescription;
 
-  /// No description provided for @cashier_fiat_deposit_CPF_CPF.
+  /// No description provided for @cashierFiatDepositCpfCpf.
   ///
   /// In en, this message translates to:
   /// **'Invalid CPF'**
-  String get cashier_fiat_deposit_CPF_CPF;
+  String get cashierFiatDepositCpfCpf;
 
-  /// No description provided for @cashier_fiat_deposit_CREDIT_CARD_ACAPTURE.
+  /// No description provided for @cashierFiatDepositCreditCardAcapture.
   ///
   /// In en, this message translates to:
   /// **'Credit/Debit card'**
-  String get cashier_fiat_deposit_CREDIT_CARD_ACAPTURE;
+  String get cashierFiatDepositCreditCardAcapture;
 
-  /// No description provided for @cashier_fiat_deposit_CREDIT_CARD_ACAPTURE_form_description.
+  /// No description provided for @cashierFiatDepositCreditCardAcaptureFormDescription.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_CREDIT_CARD_ACAPTURE_form_description;
+  String get cashierFiatDepositCreditCardAcaptureFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_CREDIT_CARD_E_MERCHANT_PAY.
+  /// No description provided for @cashierFiatDepositCreditCardEMerchantPay.
   ///
   /// In en, this message translates to:
   /// **'Credit/Debit card'**
-  String get cashier_fiat_deposit_CREDIT_CARD_E_MERCHANT_PAY;
+  String get cashierFiatDepositCreditCardEMerchantPay;
 
-  /// No description provided for @cashier_fiat_deposit_CREDIT_CARD_E_MERCHANT_PAY_form_description.
+  /// No description provided for @cashierFiatDepositCreditCardEMerchantPayFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_CREDIT_CARD_E_MERCHANT_PAY_form_description;
+  String get cashierFiatDepositCreditCardEMerchantPayFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD.
+  /// No description provided for @cashierFiatDepositCreditcard.
   ///
   /// In en, this message translates to:
   /// **'Credit/Debit card'**
-  String get cashier_fiat_deposit_CREDITCARD;
+  String get cashierFiatDepositCreditcard;
 
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD_almost_done_message.
+  /// No description provided for @cashierFiatDepositCreditcardAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_CREDITCARD_almost_done_message;
+  String get cashierFiatDepositCreditcardAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD_ECOMMPAY.
+  /// No description provided for @cashierFiatDepositCreditcardEcommpay.
   ///
   /// In en, this message translates to:
   /// **'Credit/Debit card'**
-  String get cashier_fiat_deposit_CREDITCARD_ECOMMPAY;
+  String get cashierFiatDepositCreditcardEcommpay;
 
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD_ECOMMPAY_form_description.
+  /// No description provided for @cashierFiatDepositCreditcardEcommpayFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_CREDITCARD_ECOMMPAY_form_description;
+  String get cashierFiatDepositCreditcardEcommpayFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD_ECOMMPAY_iframe_description.
+  /// No description provided for @cashierFiatDepositCreditcardEcommpayIframeDescription.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_CREDITCARD_ECOMMPAY_iframe_description;
+  String get cashierFiatDepositCreditcardEcommpayIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD_ECOMMPAY_message.
+  /// No description provided for @cashierFiatDepositCreditcardEcommpayMessage.
   ///
   /// In en, this message translates to:
-  /// **'Bear with us, you will get your account topped up in a couple of minutes.'**
-  String get cashier_fiat_deposit_CREDITCARD_ECOMMPAY_message;
+  /// **'Bear with us, you will get your account topped up in a couple of minutes'**
+  String get cashierFiatDepositCreditcardEcommpayMessage;
 
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD_iframe_description.
-  ///
-  /// In en, this message translates to:
-  /// **' '**
-  String get cashier_fiat_deposit_CREDITCARD_iframe_description;
-
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD_message.
+  /// No description provided for @cashierFiatDepositCreditcardIframeDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_CREDITCARD_message;
+  String get cashierFiatDepositCreditcardIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD_open_new_window_title.
+  /// No description provided for @cashierFiatDepositCreditcardMessage.
+  ///
+  /// In en, this message translates to:
+  /// **' '**
+  String get cashierFiatDepositCreditcardMessage;
+
+  /// No description provided for @cashierFiatDepositCreditcardOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_CREDITCARD_open_new_window_title;
+  String get cashierFiatDepositCreditcardOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD_RAVEDIRECT_form_description.
+  /// No description provided for @cashierFiatDepositCreditcardRavedirectFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'Withdrawals are not available for this payment method.\n'**
-  String get cashier_fiat_deposit_CREDITCARD_RAVEDIRECT_form_description;
+  /// **'Withdrawals are not available for this payment method\n'**
+  String get cashierFiatDepositCreditcardRavedirectFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_CREDITCARD_RAVEDIRECT_message.
+  /// No description provided for @cashierFiatDepositCreditcardRavedirectMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_CREDITCARD_RAVEDIRECT_message;
+  String get cashierFiatDepositCreditcardRavedirectMessage;
 
-  /// No description provided for @cashier_fiat_deposit_CUSTOMER_FIRST_NAME.
+  /// No description provided for @cashierFiatDepositCustomerFirstName.
   ///
   /// In en, this message translates to:
   /// **'First name'**
-  String get cashier_fiat_deposit_CUSTOMER_FIRST_NAME;
+  String get cashierFiatDepositCustomerFirstName;
 
-  /// No description provided for @cashier_fiat_deposit_CUSTOMER_FIRST_NAME_placeholder.
+  /// No description provided for @cashierFiatDepositCustomerFirstNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Satoshi (English or Katakana)'**
-  String get cashier_fiat_deposit_CUSTOMER_FIRST_NAME_placeholder;
+  /// **'eg Satoshi _English or Katakana_'**
+  String get cashierFiatDepositCustomerFirstNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_CUSTOMER_FULL_NAME.
+  /// No description provided for @cashierFiatDepositCustomerFullName.
   ///
   /// In en, this message translates to:
   /// **'Customer name'**
-  String get cashier_fiat_deposit_CUSTOMER_FULL_NAME;
+  String get cashierFiatDepositCustomerFullName;
 
-  /// No description provided for @cashier_fiat_deposit_CUSTOMER_LAST_NAME.
+  /// No description provided for @cashierFiatDepositCustomerLastName.
   ///
   /// In en, this message translates to:
   /// **'Last name'**
-  String get cashier_fiat_deposit_CUSTOMER_LAST_NAME;
+  String get cashierFiatDepositCustomerLastName;
 
-  /// No description provided for @cashier_fiat_deposit_CUSTOMER_LAST_NAME_placeholder.
+  /// No description provided for @cashierFiatDepositCustomerLastNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Nakamoto (English or Katakana)'**
-  String get cashier_fiat_deposit_CUSTOMER_LAST_NAME_placeholder;
+  /// **'eg Nakamoto _English or Katakana_'**
+  String get cashierFiatDepositCustomerLastNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_DATE_OF_BIRTH.
+  /// No description provided for @cashierFiatDepositDateOfBirth.
   ///
   /// In en, this message translates to:
   /// **'Date of birth'**
-  String get cashier_fiat_deposit_DATE_OF_BIRTH;
+  String get cashierFiatDepositDateOfBirth;
 
-  /// No description provided for @cashier_fiat_deposit_delete.
+  /// No description provided for @cashierFiatDepositDelete.
   ///
   /// In en, this message translates to:
   /// **'Delete'**
-  String get cashier_fiat_deposit_delete;
+  String get cashierFiatDepositDelete;
 
-  /// No description provided for @cashier_fiat_deposit_DEPENDS_ON_AMOUNT.
+  /// No description provided for @cashierFiatDepositDependsOnAmount.
   ///
   /// In en, this message translates to:
   /// **'Fee depends on amount'**
-  String get cashier_fiat_deposit_DEPENDS_ON_AMOUNT;
+  String get cashierFiatDepositDependsOnAmount;
 
-  /// No description provided for @cashier_fiat_deposit_ECOPAYZ.
+  /// No description provided for @cashierFiatDepositEcopayz.
   ///
   /// In en, this message translates to:
   /// **'ecoPayz'**
-  String get cashier_fiat_deposit_ECOPAYZ;
+  String get cashierFiatDepositEcopayz;
 
-  /// No description provided for @cashier_fiat_deposit_ECOPAYZ_form_description.
+  /// No description provided for @cashierFiatDepositEcopayzFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_ECOPAYZ_form_description;
+  String get cashierFiatDepositEcopayzFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_ECOPAYZ_iframe_description.
+  /// No description provided for @cashierFiatDepositEcopayzIframeDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_ECOPAYZ_iframe_description;
+  String get cashierFiatDepositEcopayzIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_ECOPAYZ_message.
+  /// No description provided for @cashierFiatDepositEcopayzMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_ECOPAYZ_message;
+  String get cashierFiatDepositEcopayzMessage;
 
-  /// No description provided for @cashier_fiat_deposit_encCreditcardNumber.
+  /// No description provided for @cashierFiatDepositEnccreditcardnumber.
   ///
   /// In en, this message translates to:
   /// **'Card number'**
-  String get cashier_fiat_deposit_encCreditcardNumber;
+  String get cashierFiatDepositEnccreditcardnumber;
 
-  /// No description provided for @cashier_fiat_deposit_encCvv.
+  /// No description provided for @cashierFiatDepositEnccvv.
   ///
   /// In en, this message translates to:
   /// **'CVV'**
-  String get cashier_fiat_deposit_encCvv;
+  String get cashierFiatDepositEnccvv;
 
-  /// No description provided for @cashier_fiat_deposit_EUR_global_description.
+  /// No description provided for @cashierFiatDepositEurGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_EUR_global_description;
+  String get cashierFiatDepositEurGlobalDescription;
 
-  /// No description provided for @cashier_fiat_deposit_expiryMonth.
+  /// No description provided for @cashierFiatDepositExpirymonth.
   ///
   /// In en, this message translates to:
   /// **'Expiry month'**
-  String get cashier_fiat_deposit_expiryMonth;
+  String get cashierFiatDepositExpirymonth;
 
-  /// No description provided for @cashier_fiat_deposit_expiryYear.
+  /// No description provided for @cashierFiatDepositExpiryyear.
   ///
   /// In en, this message translates to:
   /// **'Expiry year '**
-  String get cashier_fiat_deposit_expiryYear;
+  String get cashierFiatDepositExpiryyear;
 
-  /// No description provided for @cashier_fiat_deposit_ezeebill_provider_bank_transfer_JPY_limits.
+  /// No description provided for @cashierFiatDepositEzeebillProviderBankTransferJpyLimits.
   ///
   /// In en, this message translates to:
-  /// **' '**
-  String get cashier_fiat_deposit_ezeebill_provider_bank_transfer_JPY_limits;
+  /// **'Minimum and maximum deposit amounts <b>{min} / {max}</b>\n'**
+  String cashierFiatDepositEzeebillProviderBankTransferJpyLimits(Object min, Object max);
 
-  /// No description provided for @cashier_fiat_deposit_ezeebill_provider_bank_transfer_jpy_limits.
+  /// No description provided for @cashierFiatDepositEzeebillCityPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Minimum and maximum deposit amounts: <b>{min} / {max}</b>\n'**
-  String cashier_fiat_deposit_ezeebill_provider_bank_transfer_jpy_limits(Object min, Object max);
+  /// **'eg Yokohama shi _English only_'**
+  String get cashierFiatDepositEzeebillCityPlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_ezeebill_CITY_placeholder.
+  /// No description provided for @cashierFiatDepositEzeebillStatePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Yokohama shi (English only)'**
-  String get cashier_fiat_deposit_ezeebill_CITY_placeholder;
+  /// **'eg Kanagawa ken _English only_'**
+  String get cashierFiatDepositEzeebillStatePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_ezeebill_STATE_placeholder.
-  ///
-  /// In en, this message translates to:
-  /// **'e.g. Kanagawa ken (English only)'**
-  String get cashier_fiat_deposit_ezeebill_STATE_placeholder;
-
-  /// No description provided for @cashier_fiat_deposit_failure_message.
+  /// No description provided for @cashierFiatDepositFailureMessage.
   ///
   /// In en, this message translates to:
   /// **'Something went wrong'**
-  String get cashier_fiat_deposit_failure_message;
+  String get cashierFiatDepositFailureMessage;
 
-  /// No description provided for @cashier_fiat_deposit_FEE.
+  /// No description provided for @cashierFiatDepositFee.
   ///
   /// In en, this message translates to:
   /// **'Fee'**
-  String get cashier_fiat_deposit_FEE;
+  String get cashierFiatDepositFee;
 
-  /// No description provided for @cashier_fiat_deposit_fee_ADD.
+  /// No description provided for @cashierFiatDepositFeeAdd.
   ///
   /// In en, this message translates to:
-  /// **'Fee:'**
-  String get cashier_fiat_deposit_fee_ADD;
+  /// **'Fee'**
+  String get cashierFiatDepositFeeAdd;
 
-  /// No description provided for @cashier_fiat_deposit_fee_DEDUCT.
+  /// No description provided for @cashierFiatDepositFeeDeduct.
   ///
   /// In en, this message translates to:
-  /// **'Fee:'**
-  String get cashier_fiat_deposit_fee_DEDUCT;
+  /// **'Fee'**
+  String get cashierFiatDepositFeeDeduct;
 
-  /// No description provided for @cashier_fiat_deposit_firstName.
+  /// No description provided for @cashierFiatDepositFirstname.
   ///
   /// In en, this message translates to:
   /// **'First name'**
-  String get cashier_fiat_deposit_firstName;
+  String get cashierFiatDepositFirstname;
 
-  /// No description provided for @cashier_fiat_deposit_FREE.
+  /// No description provided for @cashierFiatDepositFree.
   ///
   /// In en, this message translates to:
   /// **'Free'**
-  String get cashier_fiat_deposit_FREE;
+  String get cashierFiatDepositFree;
 
-  /// No description provided for @cashier_fiat_deposit_free.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get cashier_fiat_deposit_free;
-
-  /// No description provided for @cashier_fiat_deposit_global_description.
+  /// No description provided for @cashierFiatDepositGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_global_description;
+  String get cashierFiatDepositGlobalDescription;
 
-  /// No description provided for @cashier_fiat_deposit_go_back.
+  /// No description provided for @cashierFiatDepositGoBack.
   ///
   /// In en, this message translates to:
   /// **'Go back'**
-  String get cashier_fiat_deposit_go_back;
+  String get cashierFiatDepositGoBack;
 
-  /// No description provided for @cashier_fiat_deposit_HELP_2_PAY_QAICASH.
+  /// No description provided for @cashierFiatDepositHelp2PayQaicash.
   ///
   /// In en, this message translates to:
   /// **'Bank Account Number Deposit'**
-  String get cashier_fiat_deposit_HELP_2_PAY_QAICASH;
+  String get cashierFiatDepositHelp2PayQaicash;
 
-  /// No description provided for @cashier_fiat_deposit_HELP_2_PAY_QAICASH_almost_done_message.
+  /// No description provided for @cashierFiatDepositHelp2PayQaicashAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_HELP_2_PAY_QAICASH_almost_done_message;
+  String get cashierFiatDepositHelp2PayQaicashAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_HELP_2_PAY_QAICASH_form_description.
+  /// No description provided for @cashierFiatDepositHelp2PayQaicashFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_HELP_2_PAY_QAICASH_form_description;
+  String get cashierFiatDepositHelp2PayQaicashFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_HELP_2_PAY_QAICASH_message.
+  /// No description provided for @cashierFiatDepositHelp2PayQaicashMessage.
   ///
   /// In en, this message translates to:
   /// **'   '**
-  String get cashier_fiat_deposit_HELP_2_PAY_QAICASH_message;
+  String get cashierFiatDepositHelp2PayQaicashMessage;
 
-  /// No description provided for @cashier_fiat_deposit_HELP_2_PAY_QAICASH_open_new_window_title.
+  /// No description provided for @cashierFiatDepositHelp2PayQaicashOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_HELP_2_PAY_QAICASH_open_new_window_title;
+  String get cashierFiatDepositHelp2PayQaicashOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_IBAN.
+  /// No description provided for @cashierFiatDepositIban.
   ///
   /// In en, this message translates to:
   /// **'IBAN'**
-  String get cashier_fiat_deposit_IBAN;
+  String get cashierFiatDepositIban;
 
-  /// No description provided for @cashier_fiat_deposit_inovapay_local_bank_transfer_BRL_limits.
+  /// No description provided for @cashierFiatDepositInovapayLocalBankTransferBrlLimits.
   ///
   /// In en, this message translates to:
   /// **'Bank transfers can take up to 1 business day to be confirmed'**
-  String get cashier_fiat_deposit_inovapay_local_bank_transfer_BRL_limits;
+  String get cashierFiatDepositInovapayLocalBankTransferBrlLimits;
 
-  /// No description provided for @cashier_fiat_deposit_INSTANT.
+  /// No description provided for @cashierFiatDepositInstant.
   ///
   /// In en, this message translates to:
   /// **'INSTANT'**
-  String get cashier_fiat_deposit_INSTANT;
+  String get cashierFiatDepositInstant;
 
-  /// No description provided for @cashier_fiat_deposit_INVALID_CPF_cpf.
+  /// No description provided for @cashierFiatDepositInvalidCpfCpf.
   ///
   /// In en, this message translates to:
   /// **'You entered invalid CPF'**
-  String get cashier_fiat_deposit_INVALID_CPF_cpf;
+  String get cashierFiatDepositInvalidCpfCpf;
 
-  /// No description provided for @cashier_fiat_deposit_INVALID_PHONE_phone.
+  /// No description provided for @cashierFiatDepositInvalidPhonePhone.
   ///
   /// In en, this message translates to:
   /// **'The phone number must be in a valid format'**
-  String get cashier_fiat_deposit_INVALID_PHONE_phone;
+  String get cashierFiatDepositInvalidPhonePhone;
 
-  /// No description provided for @cashier_fiat_deposit_INVALID_REQUEST.
+  /// No description provided for @cashierFiatDepositInvalidRequest.
   ///
   /// In en, this message translates to:
-  /// **'Invalid field: {field}'**
-  String cashier_fiat_deposit_INVALID_REQUEST(Object field);
+  /// **'Invalid field {field}'**
+  String cashierFiatDepositInvalidRequest(Object field);
 
   /// Invalid Bank account number
   ///
   /// In en, this message translates to:
   /// **'Invalid Bank Account number'**
-  String get cashier_fiat_deposit_INVALID_BANK_ACCOUNT_NUMBER;
+  String get cashierFiatDepositInvalidBankAccountNumber;
 
-  /// No description provided for @cashier_fiat_deposit_IS_NOT_POSITIVE_amount.
+  /// No description provided for @cashierFiatDepositIsNotPositiveAmount.
   ///
   /// In en, this message translates to:
   /// **'Invalid amount'**
-  String get cashier_fiat_deposit_IS_NOT_POSITIVE_amount;
+  String get cashierFiatDepositIsNotPositiveAmount;
 
-  /// No description provided for @cashier_fiat_deposit_JETON_COREFY.
+  /// No description provided for @cashierFiatDepositJetonCorefy.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_fiat_deposit_JETON_COREFY;
+  String get cashierFiatDepositJetonCorefy;
 
-  /// No description provided for @cashier_fiat_deposit_JETON_COREFY_almost_done_message.
+  /// No description provided for @cashierFiatDepositJetonCorefyAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_JETON_COREFY_almost_done_message;
+  String get cashierFiatDepositJetonCorefyAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_JETON_COREFY_form_description.
+  /// No description provided for @cashierFiatDepositJetonCorefyFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'Your deducted amount depends on the bank you use.'**
-  String get cashier_fiat_deposit_JETON_COREFY_form_description;
+  /// **'Your deducted amount depends on the bank you use'**
+  String get cashierFiatDepositJetonCorefyFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_JETON_COREFY_open_new_window_title.
+  /// No description provided for @cashierFiatDepositJetonCorefyOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_JETON_COREFY_open_new_window_title;
+  String get cashierFiatDepositJetonCorefyOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_jeton_exchange_rate.
+  /// No description provided for @cashierFiatDepositJetonExchangeRate.
   ///
   /// In en, this message translates to:
-  /// **'Estimated USDT Price:'**
-  String get cashier_fiat_deposit_jeton_exchange_rate;
+  /// **'Estimated USDT Price'**
+  String get cashierFiatDepositJetonExchangeRate;
 
-  /// No description provided for @cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_JPY_limits.
+  /// No description provided for @cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyJpyLimits.
   ///
   /// In en, this message translates to:
-  /// **'Daily deposit limit: total of USD 500,000 every 24 hours'**
-  String get cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_jpy_JPY_limits;
+  /// **'Daily deposit limit total of USD 500,000 every 24 hours'**
+  String get cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyJpyLimits;
 
   /// Additional warning under limits
   ///
   /// In en, this message translates to:
   /// **'‎'**
-  String get cashier_fiat_deposit_jeton_provider_bank_transfer_voucher_atm_JPY_limits;
+  String get cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyLimits;
 
-  /// No description provided for @cashier_fiat_deposit_JPY_INSTANT_BANK_TRANSFER_fee.
+  /// No description provided for @cashierFiatDepositJpy_instantBankTransferFee.
   ///
   /// In en, this message translates to:
   /// **'Depends on the bank you use '**
-  String get cashier_fiat_deposit_JPY_INSTANT_BANK_TRANSFER_fee;
+  String get cashierFiatDepositJpy_instantBankTransferFee;
 
-  /// No description provided for @cashier_fiat_deposit_JPY_global_description.
+  /// No description provided for @cashierFiatDepositJpyGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_JPY_global_description;
+  String get cashierFiatDepositJpyGlobalDescription;
 
-  /// No description provided for @cashier_fiat_deposit_keitapay_ADDRESS_placeholder.
+  /// No description provided for @cashierFiatDepositKeitapayAddressPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Motomachi 1-1-1 (English, Japanese)'**
-  String get cashier_fiat_deposit_keitapay_ADDRESS_placeholder;
+  /// **'Motomachi 1_1_1 _English, Japanese_'**
+  String get cashierFiatDepositKeitapayAddressPlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_keitapay_BANK_BRANCH_placeholder.
+  /// No description provided for @cashierFiatDepositKeitapayBankBranchPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'Please select  bank branch from the list'**
-  String get cashier_fiat_deposit_keitapay_BANK_BRANCH_placeholder;
+  String get cashierFiatDepositKeitapayBankBranchPlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_keitapay_CUSTOMER_FIRST_NAME.
+  /// No description provided for @cashierFiatDepositKeitapayCustomerFirstName.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Satoshi (Katakana only)'**
-  String get cashier_fiat_deposit_keitapay_CUSTOMER_FIRST_NAME;
+  /// **'eg Satoshi _Katakana only_'**
+  String get cashierFiatDepositKeitapayCustomerFirstName;
 
-  /// No description provided for @cashier_fiat_deposit_keitapay_CUSTOMER_FIRST_NAME_placeholder.
+  /// No description provided for @cashierFiatDepositKeitapayCustomerFirstNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Satoshi (Katakana only)'**
-  String get cashier_fiat_deposit_keitapay_CUSTOMER_FIRST_NAME_placeholder;
+  /// **'eg Satoshi _Katakana only_'**
+  String get cashierFiatDepositKeitapayCustomerFirstNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_keitapay_CUSTOMER_LAST_NAME.
+  /// No description provided for @cashierFiatDepositKeitapayCustomerLastName.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Nakamoto (Katakana only)'**
-  String get cashier_fiat_deposit_keitapay_CUSTOMER_LAST_NAME;
+  /// **'eg Nakamoto _Katakana only_'**
+  String get cashierFiatDepositKeitapayCustomerLastName;
 
-  /// No description provided for @cashier_fiat_deposit_keitapay_CUSTOMER_LAST_NAME_placeholder.
+  /// No description provided for @cashierFiatDepositKeitapayCustomerLastNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Nakamoto (Katakana only)'**
-  String get cashier_fiat_deposit_keitapay_CUSTOMER_LAST_NAME_placeholder;
+  /// **'eg Nakamoto _Katakana only_'**
+  String get cashierFiatDepositKeitapayCustomerLastNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_keyta_pay_bank_transfer_JPY_limits.
+  /// No description provided for @cashierFiatDepositKeytaPayBankTransferJpyLimits.
   ///
   /// In en, this message translates to:
-  /// **'Scheduled maintenance will be carried out on every Sunday from 19:00 to 8:00 the following Monday. Kindly avoid these hours if you are in a hurry.'**
-  String get cashier_fiat_deposit_keyta_pay_bank_transfer_JPY_limits;
+  /// **'Scheduled maintenance will be carried out on every Sunday from 1900 to 800 the following Monday Kindly avoid these hours if you are in a hurry'**
+  String get cashierFiatDepositKeytaPayBankTransferJpyLimits;
 
-  /// No description provided for @cashier_fiat_deposit_lastName.
+  /// No description provided for @cashierFiatDepositLastname.
   ///
   /// In en, this message translates to:
   /// **'Last name'**
-  String get cashier_fiat_deposit_lastName;
+  String get cashierFiatDepositLastname;
 
-  /// No description provided for @cashier_fiat_deposit_LOCAL_BANK_TRANSFER_INOVAPAY_form_description.
+  /// No description provided for @cashierFiatDepositLocalBankTransferInovapayFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'To top up your player account, make a deposit via Sportsbet.io. Do not deposit directly from your bank! '**
-  String get cashier_fiat_deposit_LOCAL_BANK_TRANSFER_INOVAPAY_form_description;
+  /// **'To top up your player account, make a deposit via Sportsbetio Do not deposit directly from your bank! '**
+  String get cashierFiatDepositLocalBankTransferInovapayFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_LOCAL_BANK_TRANSFER_PIN_BANK_form_description.
+  /// No description provided for @cashierFiatDepositLocalBankTransferPinBankFormDescription.
   ///
   /// In en, this message translates to:
-  /// **' To top up your player account, make a deposit via Sportsbet.io. Do not deposit directly from your bank!'**
-  String get cashier_fiat_deposit_LOCAL_BANK_TRANSFER_PIN_BANK_form_description;
+  /// **' To top up your player account, make a deposit via Sportsbetio Do not deposit directly from your bank!'**
+  String get cashierFiatDepositLocalBankTransferPinBankFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_max_limit.
+  /// No description provided for @cashierFiatDepositMaxLimit.
   ///
   /// In en, this message translates to:
-  /// **'Max:  '**
-  String get cashier_fiat_deposit_max_limit;
+  /// **'Max  '**
+  String get cashierFiatDepositMaxLimit;
 
-  /// No description provided for @cashier_fiat_deposit_min_amount.
+  /// No description provided for @cashierFiatDepositMinAmount.
   ///
   /// In en, this message translates to:
   /// **'Minimum deposit is 20'**
-  String get cashier_fiat_deposit_min_amount;
+  String get cashierFiatDepositMinAmount;
 
-  /// No description provided for @cashier_fiat_deposit_min_limit.
+  /// No description provided for @cashierFiatDepositMinLimit.
   ///
   /// In en, this message translates to:
-  /// **'Min:'**
-  String get cashier_fiat_deposit_min_limit;
+  /// **'Min'**
+  String get cashierFiatDepositMinLimit;
 
-  /// No description provided for @cashier_fiat_deposit_modal_footer.
+  /// No description provided for @cashierFiatDepositModalFooter.
   ///
   /// In en, this message translates to:
   /// **'&nbsp;'**
-  String get cashier_fiat_deposit_modal_footer;
+  String get cashierFiatDepositModalFooter;
 
-  /// No description provided for @cashier_fiat_deposit_modal_instruction.
+  /// No description provided for @cashierFiatDepositModalInstruction.
   ///
   /// In en, this message translates to:
-  /// **'In order to complete the transaction, make a bank transfer to this account with the details following below.'**
-  String get cashier_fiat_deposit_modal_instruction;
+  /// **'In order to complete the transaction, make a bank transfer to this account with the details following below'**
+  String get cashierFiatDepositModalInstruction;
 
-  /// No description provided for @cashier_fiat_deposit_MUCHBETTER.
+  /// No description provided for @cashierFiatDepositMuchbetter.
   ///
   /// In en, this message translates to:
   /// **'MuchBetter'**
-  String get cashier_fiat_deposit_MUCHBETTER;
+  String get cashierFiatDepositMuchbetter;
 
-  /// No description provided for @cashier_fiat_deposit_MUCHBETTER_form_description.
+  /// No description provided for @cashierFiatDepositMuchbetterFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'1% fee is applied to all deposits lower than 50 EUR or 80 CAD.\n<span>Don\'t have an account? <a href=\"https://a.api.muchbetter.com/merchant/user?trackingCode=QmwzNTg5ODA\" target=\"_blank\">Sign Up</a></span>'**
-  String get cashier_fiat_deposit_MUCHBETTER_form_description;
+  /// **'1% fee is applied to all deposits lower than 50 EUR or 80 CAD\n<span>Don\'t have an account? <a href=\"https//aapimuchbettercom/merchant/user?trackingCode=QmwzNTg5ODA\" target=\"blank\">Sign Up</a></span>'**
+  String get cashierFiatDepositMuchbetterFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_MUCHBETTER_iframe_description.
+  /// No description provided for @cashierFiatDepositMuchbetterIframeDescription.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_MUCHBETTER_iframe_description;
+  String get cashierFiatDepositMuchbetterIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_MUCHBETTER_message.
+  /// No description provided for @cashierFiatDepositMuchbetterMessage.
   ///
   /// In en, this message translates to:
-  /// **'Please now log into your MuchBetter APP and click to confirm your deposit. \nYour Account will then be immediately topped up.'**
-  String get cashier_fiat_deposit_MUCHBETTER_message;
+  /// **'Please now log into your MuchBetter APP and click to confirm your deposit \nYour Account will then be immediately topped up'**
+  String get cashierFiatDepositMuchbetterMessage;
 
-  /// No description provided for @cashier_fiat_deposit_nationalId.
+  /// No description provided for @cashierFiatDepositNationalid.
   ///
   /// In en, this message translates to:
-  /// **'CPF/CURP/DNI/CI...'**
-  String get cashier_fiat_deposit_nationalId;
+  /// **'CPF/CURP/DNI/CI'**
+  String get cashierFiatDepositNationalid;
 
-  /// No description provided for @cashier_fiat_deposit_NET_BANKING_QAICASH.
+  /// No description provided for @cashierFiatDepositNetBankingQaicash.
   ///
   /// In en, this message translates to:
   /// **'Online Banking'**
-  String get cashier_fiat_deposit_NET_BANKING_QAICASH;
+  String get cashierFiatDepositNetBankingQaicash;
 
-  /// No description provided for @cashier_fiat_deposit_NET_BANKING_QAICASH_almost_done_message.
+  /// No description provided for @cashierFiatDepositNetBankingQaicashAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_NET_BANKING_QAICASH_almost_done_message;
+  String get cashierFiatDepositNetBankingQaicashAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_NET_BANKING_QAICASH_message.
+  /// No description provided for @cashierFiatDepositNetBankingQaicashMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_NET_BANKING_QAICASH_message;
+  String get cashierFiatDepositNetBankingQaicashMessage;
 
-  /// No description provided for @cashier_fiat_deposit_NET_BANKING_QAICASH_open_new_window_title.
+  /// No description provided for @cashierFiatDepositNetBankingQaicashOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_NET_BANKING_QAICASH_open_new_window_title;
+  String get cashierFiatDepositNetBankingQaicashOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_NETELLER.
+  /// No description provided for @cashierFiatDepositNeteller.
   ///
   /// In en, this message translates to:
   /// **'Neteller'**
-  String get cashier_fiat_deposit_NETELLER;
+  String get cashierFiatDepositNeteller;
 
-  /// No description provided for @cashier_fiat_deposit_NETELLER_almost_done_message.
+  /// No description provided for @cashierFiatDepositNetellerAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_NETELLER_almost_done_message;
+  String get cashierFiatDepositNetellerAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_NETELLER_form_description.
+  /// No description provided for @cashierFiatDepositNetellerFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_NETELLER_form_description;
+  String get cashierFiatDepositNetellerFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_NETELLER_message.
+  /// No description provided for @cashierFiatDepositNetellerMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_NETELLER_message;
+  String get cashierFiatDepositNetellerMessage;
 
-  /// No description provided for @cashier_fiat_deposit_NETELLER_open_new_window_title.
+  /// No description provided for @cashierFiatDepositNetellerOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_NETELLER_open_new_window_title;
+  String get cashierFiatDepositNetellerOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_next_step.
+  /// No description provided for @cashierFiatDepositNextStep.
   ///
   /// In en, this message translates to:
   /// **'Next step'**
-  String get cashier_fiat_deposit_next_step;
+  String get cashierFiatDepositNextStep;
 
-  /// No description provided for @cashier_fiat_deposit_nip.
+  /// No description provided for @cashierFiatDepositNip.
   ///
   /// In en, this message translates to:
   /// **'NIP'**
-  String get cashier_fiat_deposit_nip;
+  String get cashierFiatDepositNip;
 
-  /// No description provided for @cashier_fiat_deposit_no_extra_info_needed.
+  /// No description provided for @cashierFiatDepositNoExtraInfoNeeded.
   ///
   /// In en, this message translates to:
   /// **'No extra info needed'**
-  String get cashier_fiat_deposit_no_extra_info_needed;
+  String get cashierFiatDepositNoExtraInfoNeeded;
 
-  /// No description provided for @cashier_fiat_deposit_overview.
+  /// No description provided for @cashierFiatDepositOverview.
   ///
   /// In en, this message translates to:
   /// **'Payment overview'**
-  String get cashier_fiat_deposit_overview;
+  String get cashierFiatDepositOverview;
 
-  /// No description provided for @cashier_fiat_deposit_pagsmile_CUSTOMER_FIRST_NAME_placeholder.
+  /// No description provided for @cashierFiatDepositPagsmileCustomerFirstNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. John'**
-  String get cashier_fiat_deposit_pagsmile_CUSTOMER_FIRST_NAME_placeholder;
+  /// **'eg John'**
+  String get cashierFiatDepositPagsmileCustomerFirstNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_pagsmile_CUSTOMER_LAST_NAME_placeholder.
+  /// No description provided for @cashierFiatDepositPagsmileCustomerLastNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Smith'**
-  String get cashier_fiat_deposit_pagsmile_CUSTOMER_LAST_NAME_placeholder;
+  /// **'eg Smith'**
+  String get cashierFiatDepositPagsmileCustomerLastNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_pagsmile_PHONE.
+  /// No description provided for @cashierFiatDepositPagsmilePhone.
   ///
   /// In en, this message translates to:
-  /// **'Phone number (eg. 11999999999)'**
-  String get cashier_fiat_deposit_pagsmile_PHONE;
+  /// **'Phone number _eg 11999999999_'**
+  String get cashierFiatDepositPagsmilePhone;
 
-  /// No description provided for @cashier_fiat_deposit_pagsmile_PHONE_placeholder.
+  /// No description provided for @cashierFiatDepositPagsmilePhonePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Phone number (eg. 11999999999)'**
-  String get cashier_fiat_deposit_pagsmile_PHONE_placeholder;
+  /// **'Phone number _eg 11999999999_'**
+  String get cashierFiatDepositPagsmilePhonePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_pagsmile_pix_BRL_limits.
+  /// No description provided for @cashierFiatDepositPagsmilePixBrlLimits.
   ///
   /// In en, this message translates to:
-  /// **'PIX deposits can take up to 10 minutes to be confirmed.'**
-  String get cashier_fiat_deposit_pagsmile_pix_BRL_limits;
+  /// **'PIX deposits can take up to 10 minutes to be confirmed'**
+  String get cashierFiatDepositPagsmilePixBrlLimits;
 
-  /// No description provided for @cashier_fiat_deposit_password.
+  /// No description provided for @cashierFiatDepositPassword.
   ///
   /// In en, this message translates to:
   /// **'Password'**
-  String get cashier_fiat_deposit_password;
+  String get cashierFiatDepositPassword;
 
-  /// No description provided for @cashier_fiat_deposit_pay4fun_webredirect_BRL_limits.
+  /// No description provided for @cashierFiatDepositPay4funWebredirectBrlLimits.
   ///
   /// In en, this message translates to:
   /// **'Pay4Fun deposits are credited instantly'**
-  String get cashier_fiat_deposit_pay4fun_webredirect_BRL_limits;
+  String get cashierFiatDepositPay4funWebredirectBrlLimits;
 
-  /// No description provided for @cashier_fiat_deposit_payment_methods.
+  /// No description provided for @cashierFiatDepositPaymentMethods.
   ///
   /// In en, this message translates to:
   /// **'Payment methods'**
-  String get cashier_fiat_deposit_payment_methods;
+  String get cashierFiatDepositPaymentMethods;
 
-  /// No description provided for @cashier_fiat_deposit_PAYPAY_COREFY.
+  /// No description provided for @cashierFiatDepositPaypayCorefy.
   ///
   /// In en, this message translates to:
   /// **'PayPay'**
-  String get cashier_fiat_deposit_PAYPAY_COREFY;
+  String get cashierFiatDepositPaypayCorefy;
 
-  /// No description provided for @cashier_fiat_deposit_PAYPAY_COREFY_almost_done_message.
+  /// No description provided for @cashierFiatDepositPaypayCorefyAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_PAYPAY_COREFY_almost_done_message;
+  String get cashierFiatDepositPaypayCorefyAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_PAYPAY_COREFY_open_new_window_title.
+  /// No description provided for @cashierFiatDepositPaypayCorefyOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_PAYPAY_COREFY_open_new_window_title;
+  String get cashierFiatDepositPaypayCorefyOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_PAYSAFECARD.
+  /// No description provided for @cashierFiatDepositPaysafecard.
   ///
   /// In en, this message translates to:
   /// **'Paysafecard'**
-  String get cashier_fiat_deposit_PAYSAFECARD;
+  String get cashierFiatDepositPaysafecard;
 
-  /// No description provided for @cashier_fiat_deposit_PAYSAFECARD_form_description.
+  /// No description provided for @cashierFiatDepositPaysafecardFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_PAYSAFECARD_form_description;
+  String get cashierFiatDepositPaysafecardFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_PAYSAFECARD_iframe_description.
+  /// No description provided for @cashierFiatDepositPaysafecardIframeDescription.
   ///
   /// In en, this message translates to:
-  /// **'This transaction may contain a fee.'**
-  String get cashier_fiat_deposit_PAYSAFECARD_iframe_description;
+  /// **'This transaction may contain a fee'**
+  String get cashierFiatDepositPaysafecardIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_PAYSAFECARD_message.
+  /// No description provided for @cashierFiatDepositPaysafecardMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_PAYSAFECARD_message;
+  String get cashierFiatDepositPaysafecardMessage;
 
-  /// No description provided for @cashier_fiat_deposit_personal_details.
+  /// No description provided for @cashierFiatDepositPersonalDetails.
   ///
   /// In en, this message translates to:
   /// **'Payment details'**
-  String get cashier_fiat_deposit_personal_details;
+  String get cashierFiatDepositPersonalDetails;
 
-  /// No description provided for @cashier_fiat_deposit_PHONE.
+  /// No description provided for @cashierFiatDepositPhone.
   ///
   /// In en, this message translates to:
   /// **'Phone number'**
-  String get cashier_fiat_deposit_PHONE;
+  String get cashierFiatDepositPhone;
 
-  /// No description provided for @cashier_fiat_deposit_phone_number.
+  /// No description provided for @cashierFiatDepositPhoneNumber.
   ///
   /// In en, this message translates to:
   /// **'Phone number'**
-  String get cashier_fiat_deposit_phone_number;
+  String get cashierFiatDepositPhoneNumber;
 
-  /// Phone Number
+  /// No description provided for @cashierFiatDepositPhonePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Phone Number'**
-  String get cashier_fiat_deposit_PHONE_placeholder;
+  /// **'Phone number _eg 11999999999_'**
+  String get cashierFiatDepositPhonePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_phone_placeholder.
+  /// No description provided for @cashierFiatDepositPhonePlaceholderKes.
   ///
   /// In en, this message translates to:
-  /// **'Phone number (eg. 11999999999)'**
-  String get cashier_fiat_deposit_phone_placeholder;
+  /// **'Phone number _eg +254 999 9999999_'**
+  String get cashierFiatDepositPhonePlaceholderKes;
 
-  /// No description provided for @cashier_fiat_deposit_phone_placeholder_KES.
+  /// No description provided for @cashierFiatDepositPhonePlaceholderTzs.
   ///
   /// In en, this message translates to:
-  /// **'Phone number (eg. +254 999 9999999)'**
-  String get cashier_fiat_deposit_phone_placeholder_KES;
+  /// **'Phone number _eg +255 999 999 999_'**
+  String get cashierFiatDepositPhonePlaceholderTzs;
 
-  /// No description provided for @cashier_fiat_deposit_phone_placeholder_TZS.
+  /// No description provided for @cashierFiatDepositPhonePlaceholderUgx.
   ///
   /// In en, this message translates to:
-  /// **'Phone number (eg. +255 999 999 999)'**
-  String get cashier_fiat_deposit_phone_placeholder_TZS;
+  /// **'Phone number _eg +256 999 99 9999_'**
+  String get cashierFiatDepositPhonePlaceholderUgx;
 
-  /// No description provided for @cashier_fiat_deposit_phone_placeholder_UGX.
+  /// No description provided for @cashierFiatDepositPhonenumberPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Phone number (eg. +256 999 99 9999)'**
-  String get cashier_fiat_deposit_phone_placeholder_UGX;
+  /// **'Phone _eg UK 4472137127_'**
+  String get cashierFiatDepositPhonenumberPlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_phoneNumber_placeholder.
-  ///
-  /// In en, this message translates to:
-  /// **'Phone (e.g. UK 4472137127)'**
-  String get cashier_fiat_deposit_phoneNumber_placeholder;
-
-  /// No description provided for @cashier_fiat_deposit_please_enter_amount.
+  /// No description provided for @cashierFiatDepositPleaseEnterAmount.
   ///
   /// In en, this message translates to:
   /// **'Please enter amount'**
-  String get cashier_fiat_deposit_please_enter_amount;
+  String get cashierFiatDepositPleaseEnterAmount;
 
-  /// No description provided for @cashier_fiat_deposit_please_enter_cpf_message.
+  /// No description provided for @cashierFiatDepositPleaseEnterCpfMessage.
   ///
   /// In en, this message translates to:
   /// **'Please, specify your CPF'**
-  String get cashier_fiat_deposit_please_enter_cpf_message;
+  String get cashierFiatDepositPleaseEnterCpfMessage;
 
-  /// No description provided for @cashier_fiat_deposit_please_enter_personal_details_message.
+  /// No description provided for @cashierFiatDepositPleaseEnterPersonalDetailsMessage.
   ///
   /// In en, this message translates to:
   /// **'Please enter your mobile number'**
-  String get cashier_fiat_deposit_please_enter_personal_details_message;
+  String get cashierFiatDepositPleaseEnterPersonalDetailsMessage;
 
-  /// No description provided for @cashier_fiat_deposit_POSTCODE.
+  /// No description provided for @cashierFiatDepositPostcode.
   ///
   /// In en, this message translates to:
   /// **'Postcode'**
-  String get cashier_fiat_deposit_POSTCODE;
+  String get cashierFiatDepositPostcode;
 
-  /// No description provided for @cashier_fiat_deposit_received.
+  /// No description provided for @cashierFiatDepositReceived.
   ///
   /// In en, this message translates to:
   /// **'<b>{moneyIcon}</b> received'**
-  String cashier_fiat_deposit_received(Object moneyIcon);
+  String cashierFiatDepositReceived(Object moneyIcon);
 
-  /// No description provided for @cashier_fiat_deposit_REQUIRED.
+  /// No description provided for @cashierFiatDepositRequired.
   ///
   /// In en, this message translates to:
-  /// **'Field required: {field}'**
-  String cashier_fiat_deposit_REQUIRED(Object field);
+  /// **'Field required {field}'**
+  String cashierFiatDepositRequired(Object field);
 
-  /// No description provided for @cashier_fiat_deposit_REQUIRED_CPF.
+  /// No description provided for @cashierFiatDepositRequiredCpf.
   ///
   /// In en, this message translates to:
   /// **'CPF is required'**
-  String get cashier_fiat_deposit_REQUIRED_CPF;
+  String get cashierFiatDepositRequiredCpf;
 
-  /// No description provided for @cashier_fiat_deposit_REQUIRED_firstName.
+  /// No description provided for @cashierFiatDepositRequiredFirstname.
   ///
   /// In en, this message translates to:
   /// **'First name is required'**
-  String get cashier_fiat_deposit_REQUIRED_firstName;
+  String get cashierFiatDepositRequiredFirstname;
 
-  /// No description provided for @cashier_fiat_deposit_REQUIRED_lastName.
+  /// No description provided for @cashierFiatDepositRequiredLastname.
   ///
   /// In en, this message translates to:
   /// **'Last name is required'**
-  String get cashier_fiat_deposit_REQUIRED_lastName;
+  String get cashierFiatDepositRequiredLastname;
 
-  /// No description provided for @cashier_fiat_deposit_ROLLING_LIMIT_EXCEED.
+  /// No description provided for @cashierFiatDepositRollingLimitExceed.
   ///
   /// In en, this message translates to:
-  /// **'The amount entered exceeds your deposit limit.'**
-  String get cashier_fiat_deposit_ROLLING_LIMIT_EXCEED;
+  /// **'The amount entered exceeds your deposit limit'**
+  String get cashierFiatDepositRollingLimitExceed;
 
-  /// No description provided for @cashier_fiat_deposit_saved_accounts.
+  /// No description provided for @cashierFiatDepositSavedAccounts.
   ///
   /// In en, this message translates to:
   /// **'Saved accounts'**
-  String get cashier_fiat_deposit_saved_accounts;
+  String get cashierFiatDepositSavedAccounts;
 
-  /// No description provided for @cashier_fiat_deposit_service.
+  /// No description provided for @cashierFiatDepositService.
   ///
   /// In en, this message translates to:
   /// **'Service'**
-  String get cashier_fiat_deposit_service;
+  String get cashierFiatDepositService;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILL.
+  /// No description provided for @cashierFiatDepositSkrill.
   ///
   /// In en, this message translates to:
   /// **'Skrill'**
-  String get cashier_fiat_deposit_SKRILL;
+  String get cashierFiatDepositSkrill;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILL_almost_done_message.
+  /// No description provided for @cashierFiatDepositSkrillAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_SKRILL_almost_done_message;
+  String get cashierFiatDepositSkrillAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILL_form_description.
+  /// No description provided for @cashierFiatDepositSkrillFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_SKRILL_form_description;
+  String get cashierFiatDepositSkrillFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILL_iframe_description.
+  /// No description provided for @cashierFiatDepositSkrillIframeDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_SKRILL_iframe_description;
+  String get cashierFiatDepositSkrillIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILL_message.
+  /// No description provided for @cashierFiatDepositSkrillMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_SKRILL_message;
+  String get cashierFiatDepositSkrillMessage;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILL_open_new_window_title.
+  /// No description provided for @cashierFiatDepositSkrillOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_SKRILL_open_new_window_title;
+  String get cashierFiatDepositSkrillOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILLQCO_iframe_description.
+  /// No description provided for @cashierFiatDepositSkrillqcoIframeDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_SKRILLQCO_iframe_description;
+  String get cashierFiatDepositSkrillqcoIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILLQCO_message.
+  /// No description provided for @cashierFiatDepositSkrillqcoMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_SKRILLQCO_message;
+  String get cashierFiatDepositSkrillqcoMessage;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER.
+  /// No description provided for @cashierFiatDepositSkrillqcoRapidtransfer.
   ///
   /// In en, this message translates to:
   /// **'Rapid Transfer'**
-  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER;
+  String get cashierFiatDepositSkrillqcoRapidtransfer;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_almost_done_message.
+  /// No description provided for @cashierFiatDepositSkrillqcoRapidtransferAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_almost_done_message;
+  String get cashierFiatDepositSkrillqcoRapidtransferAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_form_description.
+  /// No description provided for @cashierFiatDepositSkrillqcoRapidtransferFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_form_description;
+  String get cashierFiatDepositSkrillqcoRapidtransferFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_iframe_description.
+  /// No description provided for @cashierFiatDepositSkrillqcoRapidtransferIframeDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_iframe_description;
+  String get cashierFiatDepositSkrillqcoRapidtransferIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_message.
+  /// No description provided for @cashierFiatDepositSkrillqcoRapidtransferMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_message;
+  String get cashierFiatDepositSkrillqcoRapidtransferMessage;
 
-  /// No description provided for @cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_open_new_window_title.
+  /// No description provided for @cashierFiatDepositSkrillqcoRapidtransferOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_SKRILLQCO_RAPIDTRANSFER_open_new_window_title;
+  String get cashierFiatDepositSkrillqcoRapidtransferOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_SOFORT.
+  /// No description provided for @cashierFiatDepositSofort.
   ///
   /// In en, this message translates to:
   /// **'Klarna'**
-  String get cashier_fiat_deposit_SOFORT;
+  String get cashierFiatDepositSofort;
 
-  /// No description provided for @cashier_fiat_deposit_SOFORT_form_description.
+  /// No description provided for @cashierFiatDepositSofortFormDescription.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_SOFORT_form_description;
+  String get cashierFiatDepositSofortFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_SOFORT_message.
+  /// No description provided for @cashierFiatDepositSofortMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_SOFORT_message;
+  String get cashierFiatDepositSofortMessage;
 
-  /// No description provided for @cashier_fiat_deposit_SOFORT_open_new_window_title.
+  /// No description provided for @cashierFiatDepositSofortOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_SOFORT_open_new_window_title;
+  String get cashierFiatDepositSofortOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_something_went_wrong.
+  /// No description provided for @cashierFiatDepositSomethingWentWrong.
   ///
   /// In en, this message translates to:
   /// **'Something went wrong'**
-  String get cashier_fiat_deposit_something_went_wrong;
+  String get cashierFiatDepositSomethingWentWrong;
 
-  /// No description provided for @cashier_fiat_deposit_sportsbet_barupay_account_number.
+  /// No description provided for @cashierFiatDepositSportsbetBarupayAccountNumber.
   ///
   /// In en, this message translates to:
   /// **'7510561'**
-  String get cashier_fiat_deposit_sportsbet_barupay_account_number;
+  String get cashierFiatDepositSportsbetBarupayAccountNumber;
 
-  /// No description provided for @cashier_fiat_deposit_sportsbet_barupay_bank_branch.
+  /// No description provided for @cashierFiatDepositSportsbetBarupayBankBranch.
   ///
   /// In en, this message translates to:
   /// **'綾瀬支店（691）'**
-  String get cashier_fiat_deposit_sportsbet_barupay_bank_branch;
+  String get cashierFiatDepositSportsbetBarupayBankBranch;
 
-  /// No description provided for @cashier_fiat_deposit_sportsbet_barupay_bank_name.
+  /// No description provided for @cashierFiatDepositSportsbetBarupayBankName.
   ///
   /// In en, this message translates to:
   /// **'三井住友銀行'**
-  String get cashier_fiat_deposit_sportsbet_barupay_bank_name;
+  String get cashierFiatDepositSportsbetBarupayBankName;
 
-  /// No description provided for @cashier_fiat_deposit_sportsbet_barupay_beneficiaryName.
+  /// No description provided for @cashierFiatDepositSportsbetBarupayBeneficiaryname.
   ///
   /// In en, this message translates to:
   /// **'株）LOVEWINE'**
-  String get cashier_fiat_deposit_sportsbet_barupay_beneficiaryName;
+  String get cashierFiatDepositSportsbetBarupayBeneficiaryname;
 
-  /// No description provided for @cashier_fiat_deposit_SSN.
+  /// No description provided for @cashierFiatDepositSsn.
   ///
   /// In en, this message translates to:
   /// **'SSN'**
-  String get cashier_fiat_deposit_SSN;
+  String get cashierFiatDepositSsn;
 
-  /// No description provided for @cashier_fiat_deposit_STATE.
+  /// No description provided for @cashierFiatDepositState.
   ///
   /// In en, this message translates to:
   /// **'Prefecture'**
-  String get cashier_fiat_deposit_STATE;
+  String get cashierFiatDepositState;
 
-  /// No description provided for @cashier_fiat_deposit_STATE_placeholder.
+  /// No description provided for @cashierFiatDepositStatePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Kanagawa-ken (English only)'**
-  String get cashier_fiat_deposit_STATE_placeholder;
+  /// **'eg Kanagawa_ken _English only_'**
+  String get cashierFiatDepositStatePlaceholder;
 
-  /// No description provided for @cashier_fiat_deposit_submit.
+  /// No description provided for @cashierFiatDepositSubmit.
   ///
   /// In en, this message translates to:
   /// **'Save mobile number'**
-  String get cashier_fiat_deposit_submit;
+  String get cashierFiatDepositSubmit;
 
-  /// No description provided for @cashier_fiat_deposit_subtotal.
+  /// No description provided for @cashierFiatDepositSubtotal.
   ///
   /// In en, this message translates to:
   /// **'Will receive'**
-  String get cashier_fiat_deposit_subtotal;
+  String get cashierFiatDepositSubtotal;
 
-  /// No description provided for @cashier_fiat_deposit_success_message.
+  /// No description provided for @cashierFiatDepositSuccessMessage.
   ///
   /// In en, this message translates to:
   /// **'Your deposit is submitted'**
-  String get cashier_fiat_deposit_success_message;
+  String get cashierFiatDepositSuccessMessage;
 
-  /// No description provided for @cashier_fiat_deposit_SUMOPAY_ANIMEX.
+  /// No description provided for @cashierFiatDepositSumopayAnimex.
   ///
   /// In en, this message translates to:
   /// **'Sumo Pay'**
-  String get cashier_fiat_deposit_SUMOPAY_ANIMEX;
+  String get cashierFiatDepositSumopayAnimex;
 
-  /// No description provided for @cashier_fiat_deposit_SUMOPAY_ANIMEX_form_description.
+  /// No description provided for @cashierFiatDepositSumopayAnimexFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'Attention: Your bank may charge you an extra fee. Please remember to put only the order number on your bank deposit slip. (1) I confirm that I am the account holder that I am using. (2) I confirm that I do not use company account.'**
-  String get cashier_fiat_deposit_SUMOPAY_ANIMEX_form_description;
+  /// **'Attention Your bank may charge you an extra fee Please remember to put only the order number on your bank deposit slip _1_ I confirm that I am the account holder that I am using _2_ I confirm that I do not use company account'**
+  String get cashierFiatDepositSumopayAnimexFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_SUMOPAY_ANIMEX_message.
+  /// No description provided for @cashierFiatDepositSumopayAnimexMessage.
   ///
   /// In en, this message translates to:
   /// **'   '**
-  String get cashier_fiat_deposit_SUMOPAY_ANIMEX_message;
+  String get cashierFiatDepositSumopayAnimexMessage;
 
-  /// No description provided for @cashier_fiat_deposit_SUMOPAY_ANIMEX_open_new_window_title.
+  /// No description provided for @cashierFiatDepositSumopayAnimexOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_SUMOPAY_ANIMEX_open_new_window_title;
+  String get cashierFiatDepositSumopayAnimexOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_THB_global_description.
+  /// No description provided for @cashierFiatDepositThbGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_THB_global_description;
+  String get cashierFiatDepositThbGlobalDescription;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_BANK_BRITE.
+  /// No description provided for @cashierFiatDepositTimeframeBankBrite.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_BANK_BRITE;
+  String get cashierFiatDepositTimeframeBankBrite;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_BANK_INTERAC.
+  /// No description provided for @cashierFiatDepositTimeframeBankInterac.
   ///
   /// In en, this message translates to:
   /// **'<15 min'**
-  String get cashier_fiat_deposit_TIMEFRAME_BANK_INTERAC;
+  String get cashierFiatDepositTimeframeBankInterac;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_BANK_TRANSFER_KLARNA.
+  /// No description provided for @cashierFiatDepositTimeframeBankTransferKlarna.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_BANK_TRANSFER_KLARNA;
+  String get cashierFiatDepositTimeframeBankTransferKlarna;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_BANK_TRANSFER_TRUSTLY.
+  /// No description provided for @cashierFiatDepositTimeframeBankTransferTrustly.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_BANK_TRANSFER_TRUSTLY;
+  String get cashierFiatDepositTimeframeBankTransferTrustly;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_CREDITCARD.
+  /// No description provided for @cashierFiatDepositTimeframeCreditcard.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_CREDITCARD;
+  String get cashierFiatDepositTimeframeCreditcard;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_CREDITCARD_ECOMMPAY.
+  /// No description provided for @cashierFiatDepositTimeframeCreditcardEcommpay.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_CREDITCARD_ECOMMPAY;
+  String get cashierFiatDepositTimeframeCreditcardEcommpay;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_CREDITCARD_RAVEDIRECT.
+  /// No description provided for @cashierFiatDepositTimeframeCreditcardRavedirect.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_CREDITCARD_RAVEDIRECT;
+  String get cashierFiatDepositTimeframeCreditcardRavedirect;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_ECOPAYZ.
+  /// No description provided for @cashierFiatDepositTimeframeEcopayz.
   ///
   /// In en, this message translates to:
   /// **'Instant '**
-  String get cashier_fiat_deposit_TIMEFRAME_ECOPAYZ;
+  String get cashierFiatDepositTimeframeEcopayz;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_HELP_2_PAY_QAICASH.
+  /// No description provided for @cashierFiatDepositTimeframeHelp2PayQaicash.
   ///
   /// In en, this message translates to:
   /// **'<5 min'**
-  String get cashier_fiat_deposit_TIMEFRAME_HELP_2_PAY_QAICASH;
+  String get cashierFiatDepositTimeframeHelp2PayQaicash;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_JETON_COREFY.
+  /// No description provided for @cashierFiatDepositTimeframeJetonCorefy.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_JETON_COREFY;
+  String get cashierFiatDepositTimeframeJetonCorefy;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_MUCHBETTER.
+  /// No description provided for @cashierFiatDepositTimeframeMuchbetter.
   ///
   /// In en, this message translates to:
   /// **'Instant '**
-  String get cashier_fiat_deposit_TIMEFRAME_MUCHBETTER;
+  String get cashierFiatDepositTimeframeMuchbetter;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_NET_BANKING_QAICASH.
+  /// No description provided for @cashierFiatDepositTimeframeNetBankingQaicash.
   ///
   /// In en, this message translates to:
   /// **'<15 min'**
-  String get cashier_fiat_deposit_TIMEFRAME_NET_BANKING_QAICASH;
+  String get cashierFiatDepositTimeframeNetBankingQaicash;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_NETELLER.
+  /// No description provided for @cashierFiatDepositTimeframeNeteller.
   ///
   /// In en, this message translates to:
   /// **'Instant '**
-  String get cashier_fiat_deposit_TIMEFRAME_NETELLER;
+  String get cashierFiatDepositTimeframeNeteller;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_PAYPAY_COREFY.
+  /// No description provided for @cashierFiatDepositTimeframePaypayCorefy.
   ///
   /// In en, this message translates to:
   /// **'Up to 24h'**
-  String get cashier_fiat_deposit_TIMEFRAME_PAYPAY_COREFY;
+  String get cashierFiatDepositTimeframePaypayCorefy;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_PAYSAFECARD.
+  /// No description provided for @cashierFiatDepositTimeframePaysafecard.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_PAYSAFECARD;
+  String get cashierFiatDepositTimeframePaysafecard;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_SKRILL.
+  /// No description provided for @cashierFiatDepositTimeframeSkrill.
   ///
   /// In en, this message translates to:
   /// **'Instant '**
-  String get cashier_fiat_deposit_TIMEFRAME_SKRILL;
+  String get cashierFiatDepositTimeframeSkrill;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_SKRILLQCO.
+  /// No description provided for @cashierFiatDepositTimeframeSkrillqco.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_SKRILLQCO;
+  String get cashierFiatDepositTimeframeSkrillqco;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_SKRILLQCO_RAPIDTRANSFER.
+  /// No description provided for @cashierFiatDepositTimeframeSkrillqcoRapidtransfer.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_SKRILLQCO_RAPIDTRANSFER;
+  String get cashierFiatDepositTimeframeSkrillqcoRapidtransfer;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_SOFORT.
+  /// No description provided for @cashierFiatDepositTimeframeSofort.
   ///
   /// In en, this message translates to:
   /// **'Instant '**
-  String get cashier_fiat_deposit_TIMEFRAME_SOFORT;
+  String get cashierFiatDepositTimeframeSofort;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_SUMOPAY_ANIMEX.
+  /// No description provided for @cashierFiatDepositTimeframeSumopayAnimex.
   ///
   /// In en, this message translates to:
   /// **'Up to 24h'**
-  String get cashier_fiat_deposit_TIMEFRAME_SUMOPAY_ANIMEX;
+  String get cashierFiatDepositTimeframeSumopayAnimex;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_TRINITY_QAICASH.
+  /// No description provided for @cashierFiatDepositTimeframeTrinityQaicash.
   ///
   /// In en, this message translates to:
   /// **'<5 min'**
-  String get cashier_fiat_deposit_TIMEFRAME_TRINITY_QAICASH;
+  String get cashierFiatDepositTimeframeTrinityQaicash;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_TRUSTLY.
+  /// No description provided for @cashierFiatDepositTimeframeTrustly.
   ///
   /// In en, this message translates to:
   /// **'Instant '**
-  String get cashier_fiat_deposit_TIMEFRAME_TRUSTLY;
+  String get cashierFiatDepositTimeframeTrustly;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_WEBREDIRECT_STICPAY.
+  /// No description provided for @cashierFiatDepositTimeframeWebredirectSticpay.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_WEBREDIRECT_STICPAY;
+  String get cashierFiatDepositTimeframeWebredirectSticpay;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_XPAY_QR_QAICASH.
+  /// No description provided for @cashierFiatDepositTimeframeXpayQrQaicash.
   ///
   /// In en, this message translates to:
   /// **'<15 min'**
-  String get cashier_fiat_deposit_TIMEFRAME_XPAY_QR_QAICASH;
+  String get cashierFiatDepositTimeframeXpayQrQaicash;
 
-  /// No description provided for @cashier_fiat_deposit_TIMEFRAME_ZIMPLER.
+  /// No description provided for @cashierFiatDepositTimeframeZimpler.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_deposit_TIMEFRAME_ZIMPLER;
+  String get cashierFiatDepositTimeframeZimpler;
 
-  /// No description provided for @cashier_fiat_deposit_total.
+  /// No description provided for @cashierFiatDepositTotal.
   ///
   /// In en, this message translates to:
-  /// **'Will be charged:'**
-  String get cashier_fiat_deposit_total;
+  /// **'Will be charged'**
+  String get cashierFiatDepositTotal;
 
-  /// No description provided for @cashier_fiat_deposit_total_ADD.
+  /// No description provided for @cashierFiatDepositTotalAdd.
   ///
   /// In en, this message translates to:
-  /// **'Will be charged:'**
-  String get cashier_fiat_deposit_total_ADD;
+  /// **'Will be charged'**
+  String get cashierFiatDepositTotalAdd;
 
-  /// No description provided for @cashier_fiat_deposit_total_DEDUCT.
+  /// No description provided for @cashierFiatDepositTotalDeduct.
   ///
   /// In en, this message translates to:
-  /// **'Will be charged:'**
-  String get cashier_fiat_deposit_total_DEDUCT;
+  /// **'Will be charged'**
+  String get cashierFiatDepositTotalDeduct;
 
-  /// No description provided for @cashier_fiat_deposit_transaction_id.
+  /// No description provided for @cashierFiatDepositTransactionId.
   ///
   /// In en, this message translates to:
-  /// **'Transaction id: '**
-  String get cashier_fiat_deposit_transaction_id;
+  /// **'Transaction id '**
+  String get cashierFiatDepositTransactionId;
 
-  /// No description provided for @cashier_fiat_deposit_TRINITY_QAICASH.
+  /// No description provided for @cashierFiatDepositTrinityQaicash.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_fiat_deposit_TRINITY_QAICASH;
+  String get cashierFiatDepositTrinityQaicash;
 
-  /// No description provided for @cashier_fiat_deposit_TRINITY_QAICASH_almost_done_message.
+  /// No description provided for @cashierFiatDepositTrinityQaicashAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_TRINITY_QAICASH_almost_done_message;
+  String get cashierFiatDepositTrinityQaicashAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_TRINITY_QAICASH_form_description.
+  /// No description provided for @cashierFiatDepositTrinityQaicashFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_TRINITY_QAICASH_form_description;
+  String get cashierFiatDepositTrinityQaicashFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_TRINITY_QAICASH_message.
+  /// No description provided for @cashierFiatDepositTrinityQaicashMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_TRINITY_QAICASH_message;
+  String get cashierFiatDepositTrinityQaicashMessage;
 
-  /// No description provided for @cashier_fiat_deposit_TRINITY_QAICASH_open_new_window_title.
+  /// No description provided for @cashierFiatDepositTrinityQaicashOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_TRINITY_QAICASH_open_new_window_title;
+  String get cashierFiatDepositTrinityQaicashOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_TRUSTLY.
+  /// No description provided for @cashierFiatDepositTrustly.
   ///
   /// In en, this message translates to:
   /// **'Trustly'**
-  String get cashier_fiat_deposit_TRUSTLY;
+  String get cashierFiatDepositTrustly;
 
-  /// No description provided for @cashier_fiat_deposit_TRUSTLY_form_description.
+  /// No description provided for @cashierFiatDepositTrustlyFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_TRUSTLY_form_description;
+  String get cashierFiatDepositTrustlyFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_TRUSTLY_iframe_description.
+  /// No description provided for @cashierFiatDepositTrustlyIframeDescription.
   ///
   /// In en, this message translates to:
   /// **'     '**
-  String get cashier_fiat_deposit_TRUSTLY_iframe_description;
+  String get cashierFiatDepositTrustlyIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_TRUSTLY_message.
+  /// No description provided for @cashierFiatDepositTrustlyMessage.
   ///
   /// In en, this message translates to:
   /// **'       '**
-  String get cashier_fiat_deposit_TRUSTLY_message;
+  String get cashierFiatDepositTrustlyMessage;
 
-  /// No description provided for @cashier_fiat_deposit_try_again.
+  /// No description provided for @cashierFiatDepositTryAgain.
   ///
   /// In en, this message translates to:
   /// **'Try again'**
-  String get cashier_fiat_deposit_try_again;
+  String get cashierFiatDepositTryAgain;
 
-  /// No description provided for @cashier_fiat_deposit_UNIONPAY.
+  /// No description provided for @cashierFiatDepositUnionpay.
   ///
   /// In en, this message translates to:
   /// **'Unionpay'**
-  String get cashier_fiat_deposit_UNIONPAY;
+  String get cashierFiatDepositUnionpay;
 
-  /// No description provided for @cashier_fiat_deposit_UNIONPAY_QR.
+  /// No description provided for @cashierFiatDepositUnionpayQr.
   ///
   /// In en, this message translates to:
   /// **'Unionpay QR'**
-  String get cashier_fiat_deposit_UNIONPAY_QR;
+  String get cashierFiatDepositUnionpayQr;
 
-  /// No description provided for @cashier_fiat_deposit_UP_TO_48H.
+  /// No description provided for @cashierFiatDepositUpTo48h.
   ///
   /// In en, this message translates to:
   /// **'Up to 24h'**
-  String get cashier_fiat_deposit_UP_TO_48H;
+  String get cashierFiatDepositUpTo48h;
 
-  /// No description provided for @cashier_fiat_deposit_USDT_global_description.
+  /// No description provided for @cashierFiatDepositUsdtGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_USDT_global_description;
+  String get cashierFiatDepositUsdtGlobalDescription;
 
-  /// No description provided for @cashier_fiat_deposit_username.
+  /// No description provided for @cashierFiatDepositUsername.
   ///
   /// In en, this message translates to:
   /// **'Username'**
-  String get cashier_fiat_deposit_username;
+  String get cashierFiatDepositUsername;
 
-  /// No description provided for @cashier_fiat_deposit_WEBREDIRECT_STICPAY.
+  /// No description provided for @cashierFiatDepositWebredirectSticpay.
   ///
   /// In en, this message translates to:
   /// **'Sticpay'**
-  String get cashier_fiat_deposit_WEBREDIRECT_STICPAY;
+  String get cashierFiatDepositWebredirectSticpay;
 
-  /// No description provided for @cashier_fiat_deposit_WEBREDIRECT_STICPAY_form_description.
+  /// No description provided for @cashierFiatDepositWebredirectSticpayFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_WEBREDIRECT_STICPAY_form_description;
+  String get cashierFiatDepositWebredirectSticpayFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_WEBREDIRECT_STICPAY_iframe_description.
+  /// No description provided for @cashierFiatDepositWebredirectSticpayIframeDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_WEBREDIRECT_STICPAY_iframe_description;
+  String get cashierFiatDepositWebredirectSticpayIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_WEBREDIRECT_STICPAY_message.
+  /// No description provided for @cashierFiatDepositWebredirectSticpayMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_WEBREDIRECT_STICPAY_message;
+  String get cashierFiatDepositWebredirectSticpayMessage;
 
-  /// No description provided for @cashier_fiat_deposit_WECHAT.
+  /// No description provided for @cashierFiatDepositWechat.
   ///
   /// In en, this message translates to:
   /// **'Wechat'**
-  String get cashier_fiat_deposit_WECHAT;
+  String get cashierFiatDepositWechat;
 
-  /// No description provided for @cashier_fiat_deposit_XPAY_QR_QAICASH.
+  /// No description provided for @cashierFiatDepositXpayQrQaicash.
   ///
   /// In en, this message translates to:
   /// **'QR'**
-  String get cashier_fiat_deposit_XPAY_QR_QAICASH;
+  String get cashierFiatDepositXpayQrQaicash;
 
-  /// No description provided for @cashier_fiat_deposit_XPAY_QR_QAICASH_almost_done_message.
+  /// No description provided for @cashierFiatDepositXpayQrQaicashAlmostDoneMessage.
   ///
   /// In en, this message translates to:
-  /// **'Please complete the payment within 3 minutes; otherwise the QR code will be expired, thank you.  '**
-  String get cashier_fiat_deposit_XPAY_QR_QAICASH_almost_done_message;
+  /// **'Please complete the payment within 3 minutes; otherwise the QR code will be expired, thank you  '**
+  String get cashierFiatDepositXpayQrQaicashAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_XPAY_QR_QAICASH_form_description.
+  /// No description provided for @cashierFiatDepositXpayQrQaicashFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'There will be a decimal difference of deposit amount added ranging from THB 0.01 to THB 0.99. The payment must be made with the exact amount displayed in the amount section to avoid any deposit delays.'**
-  String get cashier_fiat_deposit_XPAY_QR_QAICASH_form_description;
+  /// **'There will be a decimal difference of deposit amount added ranging from THB 001 to THB 099 The payment must be made with the exact amount displayed in the amount section to avoid any deposit delays'**
+  String get cashierFiatDepositXpayQrQaicashFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_XPAY_QR_QAICASH_message.
+  /// No description provided for @cashierFiatDepositXpayQrQaicashMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_XPAY_QR_QAICASH_message;
+  String get cashierFiatDepositXpayQrQaicashMessage;
 
-  /// No description provided for @cashier_fiat_deposit_XPAY_QR_QAICASH_open_new_window_title.
+  /// No description provided for @cashierFiatDepositXpayQrQaicashOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_XPAY_QR_QAICASH_open_new_window_title;
+  String get cashierFiatDepositXpayQrQaicashOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_you_will_be_redirected.
+  /// No description provided for @cashierFiatDepositYouWillBeRedirected.
   ///
   /// In en, this message translates to:
   /// **'You will be redirected and new window will be opened'**
-  String get cashier_fiat_deposit_you_will_be_redirected;
+  String get cashierFiatDepositYouWillBeRedirected;
 
-  /// No description provided for @cashier_fiat_deposit_ZIMPLER.
+  /// No description provided for @cashierFiatDepositZimpler.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_fiat_deposit_ZIMPLER;
+  String get cashierFiatDepositZimpler;
 
-  /// No description provided for @cashier_fiat_deposit_ZIMPLER_almost_done_message.
+  /// No description provided for @cashierFiatDepositZimplerAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_ZIMPLER_almost_done_message;
+  String get cashierFiatDepositZimplerAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_deposit_ZIMPLER_form_description.
+  /// No description provided for @cashierFiatDepositZimplerFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_ZIMPLER_form_description;
+  String get cashierFiatDepositZimplerFormDescription;
 
-  /// No description provided for @cashier_fiat_deposit_ZIMPLER_iframe_description.
+  /// No description provided for @cashierFiatDepositZimplerIframeDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_deposit_ZIMPLER_iframe_description;
+  String get cashierFiatDepositZimplerIframeDescription;
 
-  /// No description provided for @cashier_fiat_deposit_ZIMPLER_message.
+  /// No description provided for @cashierFiatDepositZimplerMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_deposit_ZIMPLER_message;
+  String get cashierFiatDepositZimplerMessage;
 
-  /// No description provided for @cashier_fiat_deposit_ZIMPLER_open_new_window_title.
+  /// No description provided for @cashierFiatDepositZimplerOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_deposit_ZIMPLER_open_new_window_title;
+  String get cashierFiatDepositZimplerOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_deposit_ZIP_CODE.
+  /// No description provided for @cashierFiatDepositZipCode.
   ///
   /// In en, this message translates to:
   /// **'ZIP code'**
-  String get cashier_fiat_deposit_ZIP_CODE;
+  String get cashierFiatDepositZipCode;
 
-  /// No description provided for @cashier_fiat_deposit_ZIP_CODE_placeholder.
+  /// No description provided for @cashierFiatDepositZipCodePlaceholder.
   ///
   /// In en, this message translates to:
   /// **'123456'**
-  String get cashier_fiat_deposit_ZIP_CODE_placeholder;
+  String get cashierFiatDepositZipCodePlaceholder;
 
-  /// No description provided for @cashier_fiat_estimated_currency_rate.
+  /// No description provided for @cashierFiatEstimatedCurrencyRate.
   ///
   /// In en, this message translates to:
   /// **'Estimated {currency} Price'**
-  String cashier_fiat_estimated_currency_rate(Object currency);
+  String cashierFiatEstimatedCurrencyRate(Object currency);
 
-  /// No description provided for @cashier_fiat_EUR.
+  /// No description provided for @cashierFiatEur.
   ///
   /// In en, this message translates to:
   /// **'EUR'**
-  String get cashier_fiat_EUR;
+  String get cashierFiatEur;
 
-  /// No description provided for @cashier_fiat_exp_date.
+  /// No description provided for @cashierFiatExpDate.
   ///
   /// In en, this message translates to:
-  /// **'Exp. Date'**
-  String get cashier_fiat_exp_date;
+  /// **'Exp Date'**
+  String get cashierFiatExpDate;
 
-  /// No description provided for @cashier_fiat_FLAT_FEE.
+  /// No description provided for @cashierFiatFlatFee.
   ///
   /// In en, this message translates to:
   /// **'Flat fee'**
-  String get cashier_fiat_FLAT_FEE;
+  String get cashierFiatFlatFee;
 
-  /// No description provided for @cashier_fiat_GEL.
+  /// No description provided for @cashierFiatGel.
   ///
   /// In en, this message translates to:
   /// **'GEL '**
-  String get cashier_fiat_GEL;
+  String get cashierFiatGel;
 
-  /// No description provided for @cashier_fiat_IDR.
+  /// No description provided for @cashierFiatIdr.
   ///
   /// In en, this message translates to:
   /// **'IDR'**
-  String get cashier_fiat_IDR;
+  String get cashierFiatIdr;
 
-  /// No description provided for @cashier_fiat_INR.
+  /// No description provided for @cashierFiatInr.
   ///
   /// In en, this message translates to:
   /// **'INR'**
-  String get cashier_fiat_INR;
+  String get cashierFiatInr;
 
-  /// No description provided for @cashier_fiat_IQD.
+  /// No description provided for @cashierFiatIqd.
   ///
   /// In en, this message translates to:
   /// **'IQD'**
-  String get cashier_fiat_IQD;
+  String get cashierFiatIqd;
 
-  /// No description provided for @cashier_fiat_JETON_PROVIDER_BANK_TRANSFER_VOUCHER_ATM_title.
+  /// No description provided for @cashierFiatJetonProviderBankTransferVoucherAtmTitle.
   ///
   /// In en, this message translates to:
   /// **'ATM Voucher'**
-  String get cashier_fiat_JETON_PROVIDER_BANK_TRANSFER_VOUCHER_ATM_title;
+  String get cashierFiatJetonProviderBankTransferVoucherAtmTitle;
 
-  /// No description provided for @cashier_fiat_JPY.
+  /// No description provided for @cashierFiatJpy.
   ///
   /// In en, this message translates to:
   /// **'JPY'**
-  String get cashier_fiat_JPY;
+  String get cashierFiatJpy;
 
-  /// No description provided for @cashier_fiat_KRW.
+  /// No description provided for @cashierFiatKrw.
   ///
   /// In en, this message translates to:
   /// **'KRW'**
-  String get cashier_fiat_KRW;
+  String get cashierFiatKrw;
 
-  /// No description provided for @cashier_fiat_min_max_deposit.
+  /// No description provided for @cashierFiatMinMaxDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Minimum and maximum deposit amounts: <b>{min} / {max}</b>\n'**
-  String cashier_fiat_min_max_deposit(Object min, Object max);
+  /// **'Minimum and maximum deposit amounts <b>{min} / {max}</b>\n'**
+  String cashierFiatMinMaxDeposit(Object min, Object max);
 
-  /// No description provided for @cashier_fiat_min_max_deposit_label.
+  /// No description provided for @cashierFiatMinMaxDepositLabel.
   ///
   /// In en, this message translates to:
   /// **'Minimum and maximum deposit amounts'**
-  String get cashier_fiat_min_max_deposit_label;
+  String get cashierFiatMinMaxDepositLabel;
 
-  /// No description provided for @cashier_fiat_min_max_withdraw.
+  /// No description provided for @cashierFiatMinMaxWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Minimum and maximum withdrawal amounts: <b>{min} / {max}</b>'**
-  String cashier_fiat_min_max_withdraw(Object min, Object max);
+  /// **'Minimum and maximum withdrawal amounts <b>{min} / {max}</b>'**
+  String cashierFiatMinMaxWithdraw(Object min, Object max);
 
-  /// No description provided for @cashier_fiat_min_max_withdrawal_label.
+  /// No description provided for @cashierFiatMinMaxWithdrawalLabel.
   ///
   /// In en, this message translates to:
   /// **'Minimum and maximum withdrawal amounts'**
-  String get cashier_fiat_min_max_withdrawal_label;
+  String get cashierFiatMinMaxWithdrawalLabel;
 
-  /// No description provided for @cashier_fiat_MXN.
+  /// No description provided for @cashierFiatMxn.
   ///
   /// In en, this message translates to:
   /// **'MXN'**
-  String get cashier_fiat_MXN;
+  String get cashierFiatMxn;
 
-  /// No description provided for @cashier_fiat_MYR.
+  /// No description provided for @cashierFiatMyr.
   ///
   /// In en, this message translates to:
   /// **'MYR'**
-  String get cashier_fiat_MYR;
+  String get cashierFiatMyr;
 
-  /// No description provided for @cashier_fiat_PEN.
+  /// No description provided for @cashierFiatPen.
   ///
   /// In en, this message translates to:
   /// **'PEN'**
-  String get cashier_fiat_PEN;
+  String get cashierFiatPen;
 
-  /// No description provided for @cashier_fiat_PKR.
+  /// No description provided for @cashierFiatPkr.
   ///
   /// In en, this message translates to:
   /// **'PKR'**
-  String get cashier_fiat_PKR;
+  String get cashierFiatPkr;
 
-  /// No description provided for @cashier_fiat_placed_order_description.
+  /// No description provided for @cashierFiatPlacedOrderDescription.
   ///
   /// In en, this message translates to:
-  /// **'You’ve successfully placed an order to buy a <b>{amount}</b> ticket voucher.'**
-  String cashier_fiat_placed_order_description(Object amount);
+  /// **'You’ve successfully placed an order to buy a <b>{amount}</b> ticket voucher'**
+  String cashierFiatPlacedOrderDescription(Object amount);
 
-  /// No description provided for @cashier_fiat_RUB.
+  /// No description provided for @cashierFiatRub.
   ///
   /// In en, this message translates to:
   /// **'RUB'**
-  String get cashier_fiat_RUB;
+  String get cashierFiatRub;
 
-  /// No description provided for @cashier_fiat_sumopay_amount_desc.
+  /// No description provided for @cashierFiatSumopayAmountDesc.
   ///
   /// In en, this message translates to:
-  /// **'<b>{currency}</b> - This amount could not be deposited with this payment method, please choose one of the following amounts below.'**
-  String cashier_fiat_sumopay_amount_desc(Object currency);
+  /// **'<b>{currency}</b> _ This amount could not be deposited with this payment method, please choose one of the following amounts below'**
+  String cashierFiatSumopayAmountDesc(Object currency);
 
-  /// No description provided for @cashier_fiat_THB.
+  /// No description provided for @cashierFiatThb.
   ///
   /// In en, this message translates to:
   /// **'THB'**
-  String get cashier_fiat_THB;
+  String get cashierFiatThb;
 
-  /// No description provided for @cashier_fiat_TRY.
+  /// No description provided for @cashierFiatTry.
   ///
   /// In en, this message translates to:
   /// **'TRY'**
-  String get cashier_fiat_TRY;
+  String get cashierFiatTry;
 
-  /// No description provided for @cashier_fiat_UAH.
+  /// No description provided for @cashierFiatUah.
   ///
   /// In en, this message translates to:
   /// **'UAH'**
-  String get cashier_fiat_UAH;
+  String get cashierFiatUah;
 
-  /// No description provided for @cashier_fiat_USD.
+  /// No description provided for @cashierFiatUsd.
   ///
   /// In en, this message translates to:
   /// **'USD'**
-  String get cashier_fiat_USD;
+  String get cashierFiatUsd;
 
-  /// No description provided for @cashier_fiat_USDT.
+  /// No description provided for @cashierFiatUsdt.
   ///
   /// In en, this message translates to:
   /// **'USDT'**
-  String get cashier_fiat_USDT;
+  String get cashierFiatUsdt;
 
-  /// No description provided for @cashier_fiat_VND.
+  /// No description provided for @cashierFiatVnd.
   ///
   /// In en, this message translates to:
   /// **'VND'**
-  String get cashier_fiat_VND;
+  String get cashierFiatVnd;
 
-  /// No description provided for @cashier_fiat_withdrawal.
+  /// No description provided for @cashierFiatWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'Withdraw'**
-  String get cashier_fiat_withdrawal;
+  String get cashierFiatWithdrawal;
 
-  /// No description provided for @cashier_fiat_withdrawal_started.
+  /// No description provided for @cashierFiatWithdrawalStarted.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal has been started'**
-  String get cashier_fiat_withdrawal_started;
+  String get cashierFiatWithdrawalStarted;
 
-  /// No description provided for @cashier_fiat_withdrawal_accountId.
+  /// No description provided for @cashierFiatWithdrawalAccountid.
   ///
   /// In en, this message translates to:
   /// **'Account ID'**
-  String get cashier_fiat_withdrawal_accountId;
+  String get cashierFiatWithdrawalAccountid;
 
-  /// No description provided for @cashier_fiat_withdrawal_accountNumber.
+  /// No description provided for @cashierFiatWithdrawalAccountnumber.
   ///
   /// In en, this message translates to:
   /// **'Account number'**
-  String get cashier_fiat_withdrawal_accountNumber;
+  String get cashierFiatWithdrawalAccountnumber;
 
-  /// No description provided for @cashier_fiat_withdrawal_accountType.
+  /// No description provided for @cashierFiatWithdrawalAccounttype.
   ///
   /// In en, this message translates to:
   /// **'Account type'**
-  String get cashier_fiat_withdrawal_accountType;
+  String get cashierFiatWithdrawalAccounttype;
 
-  /// No description provided for @cashier_fiat_withdrawal_ADDRESS.
+  /// No description provided for @cashierFiatWithdrawalAddress.
   ///
   /// In en, this message translates to:
   /// **'Address'**
-  String get cashier_fiat_withdrawal_ADDRESS;
+  String get cashierFiatWithdrawalAddress;
 
-  /// No description provided for @cashier_fiat_withdrawal_ADDRESS_placeholder.
+  /// No description provided for @cashierFiatWithdrawalAddressPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Motomachi 1-1-1 (English, Japanese)'**
-  String get cashier_fiat_withdrawal_ADDRESS_placeholder;
+  /// **'Motomachi 1_1_1 _English, Japanese_'**
+  String get cashierFiatWithdrawalAddressPlaceholder;
 
-  /// No description provided for @cashier_fiat_WITHDRAWAL_amount.
-  ///
-  /// In en, this message translates to:
-  /// **'Enter amount in USDT'**
-  String get cashier_fiat_WITHDRAWAL_amount;
-
-  /// No description provided for @cashier_fiat_withdrawal_amount.
+  /// No description provided for @cashierFiatWithdrawalAmount.
   ///
   /// In en, this message translates to:
   /// **'Enter amount in USDT'**
-  String get cashier_fiat_withdrawal_amount;
+  String get cashierFiatWithdrawalAmount;
 
-  /// No description provided for @cashier_fiat_withdrawal_AMOUNT_exchange_rate.
+  /// No description provided for @cashierFiatWithdrawalAmountExchangeRate.
   ///
   /// In en, this message translates to:
-  /// **'Rate:'**
-  String get cashier_fiat_withdrawal_AMOUNT_exchange_rate;
+  /// **'Rate'**
+  String get cashierFiatWithdrawalAmountExchangeRate;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_ACCOUNT_DIGIT.
+  /// No description provided for @cashierFiatWithdrawalBankAccountDigit.
   ///
   /// In en, this message translates to:
-  /// **'Bank account digit (1 digit)'**
-  String get cashier_fiat_withdrawal_BANK_ACCOUNT_DIGIT;
+  /// **'Bank account digit _1 digit_'**
+  String get cashierFiatWithdrawalBankAccountDigit;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_ACCOUNT_DIGIT_placeholder.
+  /// No description provided for @cashierFiatWithdrawalBankAccountDigitPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'1'**
-  String get cashier_fiat_withdrawal_BANK_ACCOUNT_DIGIT_placeholder;
+  String get cashierFiatWithdrawalBankAccountDigitPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_ACCOUNT_NAME.
+  /// No description provided for @cashierFiatWithdrawalBankAccountName.
   ///
   /// In en, this message translates to:
   /// **'Bank name'**
-  String get cashier_fiat_withdrawal_BANK_ACCOUNT_NAME;
+  String get cashierFiatWithdrawalBankAccountName;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_ACCOUNT_NAME_placeholder.
+  /// No description provided for @cashierFiatWithdrawalBankAccountNamePlaceholder.
   ///
   /// In en, this message translates to:
   /// **'Bank name'**
-  String get cashier_fiat_withdrawal_BANK_ACCOUNT_NAME_placeholder;
+  String get cashierFiatWithdrawalBankAccountNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_ACCOUNT_NUMBER.
+  /// No description provided for @cashierFiatWithdrawalBankAccountNumber.
   ///
   /// In en, this message translates to:
   /// **'Bank account number'**
-  String get cashier_fiat_withdrawal_BANK_ACCOUNT_NUMBER;
+  String get cashierFiatWithdrawalBankAccountNumber;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_ACCOUNT_NUMBER_placeholder.
+  /// No description provided for @cashierFiatWithdrawalBankAccountNumberPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'0123456'**
-  String get cashier_fiat_withdrawal_BANK_ACCOUNT_NUMBER_placeholder;
+  String get cashierFiatWithdrawalBankAccountNumberPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_ACCOUNT_TYPE.
+  /// No description provided for @cashierFiatWithdrawalBankAccountType.
   ///
   /// In en, this message translates to:
   /// **'Bank account type'**
-  String get cashier_fiat_withdrawal_BANK_ACCOUNT_TYPE;
+  String get cashierFiatWithdrawalBankAccountType;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_ACCOUNT_TYPE_placeholder.
+  /// No description provided for @cashierFiatWithdrawalBankAccountTypePlaceholder.
   ///
   /// In en, this message translates to:
   /// **'Bank account type'**
-  String get cashier_fiat_withdrawal_BANK_ACCOUNT_TYPE_placeholder;
+  String get cashierFiatWithdrawalBankAccountTypePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_ADDRESS.
+  /// No description provided for @cashierFiatWithdrawalBankAddress.
   ///
   /// In en, this message translates to:
   /// **'Bank address'**
-  String get cashier_fiat_withdrawal_BANK_ADDRESS;
+  String get cashierFiatWithdrawalBankAddress;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_BRANCH.
+  /// No description provided for @cashierFiatWithdrawalBankBranch.
   ///
   /// In en, this message translates to:
   /// **'Bank branch'**
-  String get cashier_fiat_withdrawal_BANK_BRANCH;
+  String get cashierFiatWithdrawalBankBranch;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_BRANCH_DIGIT.
+  /// No description provided for @cashierFiatWithdrawalBankBranchDigit.
   ///
   /// In en, this message translates to:
-  /// **'Bank branch digit (1 digit)'**
-  String get cashier_fiat_withdrawal_BANK_BRANCH_DIGIT;
+  /// **'Bank branch digit _1 digit_'**
+  String get cashierFiatWithdrawalBankBranchDigit;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_BRANCH_DIGIT_placeholder.
+  /// No description provided for @cashierFiatWithdrawalBankBranchDigitPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'1'**
-  String get cashier_fiat_withdrawal_BANK_BRANCH_DIGIT_placeholder;
+  String get cashierFiatWithdrawalBankBranchDigitPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_BRANCH_NUMBER.
+  /// No description provided for @cashierFiatWithdrawalBankBranchNumber.
   ///
   /// In en, this message translates to:
   /// **'Bank branch number'**
-  String get cashier_fiat_withdrawal_BANK_BRANCH_NUMBER;
+  String get cashierFiatWithdrawalBankBranchNumber;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_BRANCH_NUMBER_placeholder.
+  /// No description provided for @cashierFiatWithdrawalBankBranchNumberPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'480'**
-  String get cashier_fiat_withdrawal_BANK_BRANCH_NUMBER_placeholder;
+  String get cashierFiatWithdrawalBankBranchNumberPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_BRANCH_placeholder.
+  /// No description provided for @cashierFiatWithdrawalBankBranchPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'ヨコハマ (Katakana only)'**
-  String get cashier_fiat_withdrawal_BANK_BRANCH_placeholder;
+  /// **'ヨコハマ _Katakana only_'**
+  String get cashierFiatWithdrawalBankBranchPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_CARD_NUMBER.
+  /// No description provided for @cashierFiatWithdrawalBankCardNumber.
   ///
   /// In en, this message translates to:
   /// **'Bank card number'**
-  String get cashier_fiat_withdrawal_BANK_CARD_NUMBER;
+  String get cashierFiatWithdrawalBankCardNumber;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_CODE.
+  /// No description provided for @cashierFiatWithdrawalBankCode.
   ///
   /// In en, this message translates to:
   /// **'Bank code'**
-  String get cashier_fiat_withdrawal_BANK_CODE;
+  String get cashierFiatWithdrawalBankCode;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_CODE_placeholder.
+  /// No description provided for @cashierFiatWithdrawalBankCodePlaceholder.
   ///
   /// In en, this message translates to:
   /// **'0005'**
-  String get cashier_fiat_withdrawal_BANK_CODE_placeholder;
+  String get cashierFiatWithdrawalBankCodePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_ID.
+  /// No description provided for @cashierFiatWithdrawalBankId.
   ///
   /// In en, this message translates to:
   /// **'Bank ID'**
-  String get cashier_fiat_withdrawal_BANK_ID;
+  String get cashierFiatWithdrawalBankId;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_IFSC.
+  /// No description provided for @cashierFiatWithdrawalBankIfsc.
   ///
   /// In en, this message translates to:
   /// **'IFSC code'**
-  String get cashier_fiat_withdrawal_BANK_IFSC;
+  String get cashierFiatWithdrawalBankIfsc;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_IFSC_placeholder.
+  /// No description provided for @cashierFiatWithdrawalBankIfscPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Sample: ABAB0004321'**
-  String get cashier_fiat_withdrawal_BANK_IFSC_placeholder;
+  /// **'Sample ABAB0004321'**
+  String get cashierFiatWithdrawalBankIfscPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_NAME.
+  /// No description provided for @cashierFiatWithdrawalBankName.
   ///
   /// In en, this message translates to:
   /// **'Bank name'**
-  String get cashier_fiat_withdrawal_BANK_NAME;
+  String get cashierFiatWithdrawalBankName;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_NAME_placeholder.
+  /// No description provided for @cashierFiatWithdrawalBankNamePlaceholder.
   ///
   /// In en, this message translates to:
   /// **'MUFG'**
-  String get cashier_fiat_withdrawal_BANK_NAME_placeholder;
+  String get cashierFiatWithdrawalBankNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_SWIFT.
+  /// No description provided for @cashierFiatWithdrawalBankSwift.
   ///
   /// In en, this message translates to:
   /// **'Bank SWIFT code'**
-  String get cashier_fiat_withdrawal_BANK_SWIFT;
+  String get cashierFiatWithdrawalBankSwift;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER.
+  /// No description provided for @cashierFiatWithdrawalBankTransfer.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER;
+  String get cashierFiatWithdrawalBankTransfer;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER_ANIMEX.
+  /// No description provided for @cashierFiatWithdrawalBankTransferAnimex.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER_ANIMEX;
+  String get cashierFiatWithdrawalBankTransferAnimex;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER_ANIMEX_message.
+  /// No description provided for @cashierFiatWithdrawalBankTransferAnimexMessage.
   ///
   /// In en, this message translates to:
   /// **'   '**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER_ANIMEX_message;
+  String get cashierFiatWithdrawalBankTransferAnimexMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER_BRITE.
+  /// No description provided for @cashierFiatWithdrawalBankTransferBrite.
   ///
   /// In en, this message translates to:
   /// **'Brite Bank Transfer'**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER_BRITE;
+  String get cashierFiatWithdrawalBankTransferBrite;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER_BRITE_form_description.
+  /// No description provided for @cashierFiatWithdrawalBankTransferBriteFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER_BRITE_form_description;
+  String get cashierFiatWithdrawalBankTransferBriteFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER_BRITE_message.
+  /// No description provided for @cashierFiatWithdrawalBankTransferBriteMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER_BRITE_message;
+  String get cashierFiatWithdrawalBankTransferBriteMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY.
+  /// No description provided for @cashierFiatWithdrawalBankTransferTrustly.
   ///
   /// In en, this message translates to:
   /// **'Trustly'**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY;
+  String get cashierFiatWithdrawalBankTransferTrustly;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_almost_done_message.
+  /// No description provided for @cashierFiatWithdrawalBankTransferTrustlyAlmostDoneMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_almost_done_message;
+  String get cashierFiatWithdrawalBankTransferTrustlyAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_form_description.
+  /// No description provided for @cashierFiatWithdrawalBankTransferTrustlyFormDescription.
   ///
   /// In en, this message translates to:
   /// **'       '**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_form_description;
+  String get cashierFiatWithdrawalBankTransferTrustlyFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_message.
+  /// No description provided for @cashierFiatWithdrawalBankTransferTrustlyMessage.
   ///
   /// In en, this message translates to:
   /// **'       '**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_message;
+  String get cashierFiatWithdrawalBankTransferTrustlyMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_open_new_window_title.
+  /// No description provided for @cashierFiatWithdrawalBankTransferTrustlyOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_withdrawal_BANK_TRANSFER_TRUSTLY_open_new_window_title;
+  String get cashierFiatWithdrawalBankTransferTrustlyOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_withdrawal_bankAccount.
+  /// No description provided for @cashierFiatWithdrawalBankaccount.
   ///
   /// In en, this message translates to:
   /// **'Bank account'**
-  String get cashier_fiat_withdrawal_bankAccount;
+  String get cashierFiatWithdrawalBankaccount;
 
-  /// No description provided for @cashier_fiat_withdrawal_bankBranch.
+  /// No description provided for @cashierFiatWithdrawalBankbranch.
   ///
   /// In en, this message translates to:
   /// **'Bank branch'**
-  String get cashier_fiat_withdrawal_bankBranch;
+  String get cashierFiatWithdrawalBankbranch;
 
-  /// No description provided for @cashier_fiat_withdrawal_bankCode.
+  /// No description provided for @cashierFiatWithdrawalBankcode.
   ///
   /// In en, this message translates to:
   /// **'Bank code'**
-  String get cashier_fiat_withdrawal_bankCode;
+  String get cashierFiatWithdrawalBankcode;
 
-  /// No description provided for @cashier_fiat_withdrawal_beneficiaryName.
+  /// No description provided for @cashierFiatWithdrawalBeneficiaryname.
   ///
   /// In en, this message translates to:
   /// **'Beneficiary name'**
-  String get cashier_fiat_withdrawal_beneficiaryName;
+  String get cashierFiatWithdrawalBeneficiaryname;
 
-  /// No description provided for @cashier_fiat_withdrawal_CAD_global_description.
+  /// No description provided for @cashierFiatWithdrawalCadGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_CAD_global_description;
+  String get cashierFiatWithdrawalCadGlobalDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_CAN_NOT_BE_FRACTION_AMOUNT.
+  /// No description provided for @cashierFiatWithdrawalCanNotBeFractionAmount.
   ///
   /// In en, this message translates to:
-  /// **'Please note: only sum values without decimals are acceptable! (e.g 1500.55 JPY is not acceptable, needs to be 1500 JPY or 1501 JPY).'**
-  String get cashier_fiat_withdrawal_CAN_NOT_BE_FRACTION_AMOUNT;
+  /// **'Please note only sum values without decimals are acceptable! _eg 150055 JPY is not acceptable, needs to be 1500 JPY or 1501 JPY_'**
+  String get cashierFiatWithdrawalCanNotBeFractionAmount;
 
-  /// No description provided for @cashier_fiat_withdrawal_cardHolder.
+  /// No description provided for @cashierFiatWithdrawalCardholder.
   ///
   /// In en, this message translates to:
   /// **'First name and last name'**
-  String get cashier_fiat_withdrawal_cardHolder;
+  String get cashierFiatWithdrawalCardholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_choose_payment_method.
+  /// No description provided for @cashierFiatWithdrawalChoosePaymentMethod.
   ///
   /// In en, this message translates to:
   /// **'Select payment method'**
-  String get cashier_fiat_withdrawal_choose_payment_method;
+  String get cashierFiatWithdrawalChoosePaymentMethod;
 
-  /// No description provided for @cashier_fiat_withdrawal_CITY.
+  /// No description provided for @cashierFiatWithdrawalCity.
   ///
   /// In en, this message translates to:
   /// **'City'**
-  String get cashier_fiat_withdrawal_CITY;
+  String get cashierFiatWithdrawalCity;
 
-  /// No description provided for @cashier_fiat_withdrawal_CITY_placeholder.
+  /// No description provided for @cashierFiatWithdrawalCityPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Yokohama-shi (English, Japanese)'**
-  String get cashier_fiat_withdrawal_CITY_placeholder;
+  /// **'Yokohama_shi _English, Japanese_'**
+  String get cashierFiatWithdrawalCityPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_continue.
+  /// No description provided for @cashierFiatWithdrawalContinue.
   ///
   /// In en, this message translates to:
   /// **'Continue'**
-  String get cashier_fiat_withdrawal_continue;
+  String get cashierFiatWithdrawalContinue;
 
-  /// No description provided for @cashier_fiat_withdrawal_copy_to_clipboard.
+  /// No description provided for @cashierFiatWithdrawalCopyToClipboard.
   ///
   /// In en, this message translates to:
   /// **'Copy'**
-  String get cashier_fiat_withdrawal_copy_to_clipboard;
+  String get cashierFiatWithdrawalCopyToClipboard;
 
-  /// No description provided for @cashier_fiat_withdrawal_corefy_jeton_JPY_limits.
+  /// No description provided for @cashierFiatWithdrawalCorefyJetonJpyLimits.
   ///
   /// In en, this message translates to:
-  /// **'Please note that the daily withdrawal limit is 14,000,000 JPY. Daily limit refreshes each day at 18:00 JST.'**
-  String get cashier_fiat_withdrawal_corefy_jeton_JPY_limits;
+  /// **'Please note that the daily withdrawal limit is 14,000,000 JPY Daily limit refreshes each day at 1800 JST'**
+  String get cashierFiatWithdrawalCorefyJetonJpyLimits;
 
-  /// No description provided for @cashier_fiat_withdrawal_cpf.
+  /// No description provided for @cashierFiatWithdrawalCpf.
   ///
   /// In en, this message translates to:
   /// **'Enter CPF'**
-  String get cashier_fiat_withdrawal_cpf;
+  String get cashierFiatWithdrawalCpf;
 
-  /// No description provided for @cashier_fiat_withdrawal_CPF_ALREADY_EXISTS.
+  /// No description provided for @cashierFiatWithdrawalCpfAlreadyExists.
   ///
   /// In en, this message translates to:
   /// **'CPF already exists'**
-  String get cashier_fiat_withdrawal_CPF_ALREADY_EXISTS;
+  String get cashierFiatWithdrawalCpfAlreadyExists;
 
-  /// No description provided for @cashier_fiat_withdrawal_CPF_ALREADY_EXISTS_cpf.
+  /// No description provided for @cashierFiatWithdrawalCpfAlreadyExistsCpf.
   ///
   /// In en, this message translates to:
   /// **'CPF already exists'**
-  String get cashier_fiat_withdrawal_CPF_ALREADY_EXISTS_cpf;
+  String get cashierFiatWithdrawalCpfAlreadyExistsCpf;
 
-  /// No description provided for @cashier_fiat_withdrawal_cpf_description.
+  /// No description provided for @cashierFiatWithdrawalCpfDescription.
   ///
   /// In en, this message translates to:
   /// **'The details provided will be used in all future transactions'**
-  String get cashier_fiat_withdrawal_cpf_description;
+  String get cashierFiatWithdrawalCpfDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_CREDIT_CARD_ACAPTURE.
+  /// No description provided for @cashierFiatWithdrawalCreditCardAcapture.
   ///
   /// In en, this message translates to:
   /// **'Credit/Debit card'**
-  String get cashier_fiat_withdrawal_CREDIT_CARD_ACAPTURE;
+  String get cashierFiatWithdrawalCreditCardAcapture;
 
-  /// No description provided for @cashier_fiat_withdrawal_CREDIT_CARD_E_MERCHANT_PAY.
+  /// No description provided for @cashierFiatWithdrawalCreditCardEMerchantPay.
   ///
   /// In en, this message translates to:
   /// **'Credit/Debit card'**
-  String get cashier_fiat_withdrawal_CREDIT_CARD_E_MERCHANT_PAY;
+  String get cashierFiatWithdrawalCreditCardEMerchantPay;
 
-  /// No description provided for @cashier_fiat_withdrawal_CREDITCARD.
+  /// No description provided for @cashierFiatWithdrawalCreditcard.
   ///
   /// In en, this message translates to:
   /// **'Credit/Debit card'**
-  String get cashier_fiat_withdrawal_CREDITCARD;
+  String get cashierFiatWithdrawalCreditcard;
 
-  /// No description provided for @cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY.
+  /// No description provided for @cashierFiatWithdrawalCreditcardEcommpay.
   ///
   /// In en, this message translates to:
   /// **'Credit/Debit card'**
-  String get cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY;
+  String get cashierFiatWithdrawalCreditcardEcommpay;
 
-  /// No description provided for @cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY_form_description.
+  /// No description provided for @cashierFiatWithdrawalCreditcardEcommpayFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY_form_description;
+  String get cashierFiatWithdrawalCreditcardEcommpayFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY_message.
+  /// No description provided for @cashierFiatWithdrawalCreditcardEcommpayMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_withdrawal_CREDITCARD_ECOMMPAY_message;
+  String get cashierFiatWithdrawalCreditcardEcommpayMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_CREDITCARD_form_description.
+  /// No description provided for @cashierFiatWithdrawalCreditcardFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_CREDITCARD_form_description;
+  String get cashierFiatWithdrawalCreditcardFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_CREDITCARD_message.
+  /// No description provided for @cashierFiatWithdrawalCreditcardMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_CREDITCARD_message;
+  String get cashierFiatWithdrawalCreditcardMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_CREDITCARD_RAVEDIRECT_form_description.
+  /// No description provided for @cashierFiatWithdrawalCreditcardRavedirectFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_CREDITCARD_RAVEDIRECT_form_description;
+  String get cashierFiatWithdrawalCreditcardRavedirectFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_CREDITCARD_RAVEDIRECT_message.
+  /// No description provided for @cashierFiatWithdrawalCreditcardRavedirectMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_CREDITCARD_RAVEDIRECT_message;
+  String get cashierFiatWithdrawalCreditcardRavedirectMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_CUSTOMER_LOCAL_NAME.
+  /// No description provided for @cashierFiatWithdrawalCustomerLocalName.
   ///
   /// In en, this message translates to:
   /// **'Customer local name'**
-  String get cashier_fiat_withdrawal_CUSTOMER_LOCAL_NAME;
+  String get cashierFiatWithdrawalCustomerLocalName;
 
-  /// No description provided for @cashier_fiat_withdrawal_CUSTOMER_LOCAL_NAME_placeholder.
+  /// No description provided for @cashierFiatWithdrawalCustomerLocalNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'タカハシ アキラ (Katakana only)'**
-  String get cashier_fiat_withdrawal_CUSTOMER_LOCAL_NAME_placeholder;
+  /// **'タカハシ アキラ _Katakana only_'**
+  String get cashierFiatWithdrawalCustomerLocalNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_CUSTOMER_NAME.
+  /// No description provided for @cashierFiatWithdrawalCustomerName.
   ///
   /// In en, this message translates to:
   /// **'Customer name'**
-  String get cashier_fiat_withdrawal_CUSTOMER_NAME;
+  String get cashierFiatWithdrawalCustomerName;
 
-  /// No description provided for @cashier_fiat_withdrawal_CUSTOMER_NAME_placeholder.
+  /// No description provided for @cashierFiatWithdrawalCustomerNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Satoshi Nakamoto (English only)'**
-  String get cashier_fiat_withdrawal_CUSTOMER_NAME_placeholder;
+  /// **'Satoshi Nakamoto _English only_'**
+  String get cashierFiatWithdrawalCustomerNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_customerName.
-  ///
-  /// In en, this message translates to:
-  /// **'Customer number'**
-  String get cashier_fiat_withdrawal_customerName;
-
-  /// No description provided for @cashier_fiat_withdrawal_customerNumber.
+  /// No description provided for @cashierFiatWithdrawalCustomername.
   ///
   /// In en, this message translates to:
   /// **'Customer number'**
-  String get cashier_fiat_withdrawal_customerNumber;
+  String get cashierFiatWithdrawalCustomername;
 
-  /// No description provided for @cashier_fiat_withdrawal_DATE_OF_BIRTH.
+  /// No description provided for @cashierFiatWithdrawalCustomernumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Customer number'**
+  String get cashierFiatWithdrawalCustomernumber;
+
+  /// No description provided for @cashierFiatWithdrawalDateOfBirth.
   ///
   /// In en, this message translates to:
   /// **'Date of birth'**
-  String get cashier_fiat_withdrawal_DATE_OF_BIRTH;
+  String get cashierFiatWithdrawalDateOfBirth;
 
-  /// No description provided for @cashier_fiat_withdrawal_DATE_OF_BIRTH_placeholder.
+  /// No description provided for @cashierFiatWithdrawalDateOfBirthPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'25/12/1990'**
-  String get cashier_fiat_withdrawal_DATE_OF_BIRTH_placeholder;
+  String get cashierFiatWithdrawalDateOfBirthPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_delete.
+  /// No description provided for @cashierFiatWithdrawalDelete.
   ///
   /// In en, this message translates to:
   /// **'Delete'**
-  String get cashier_fiat_withdrawal_delete;
+  String get cashierFiatWithdrawalDelete;
 
-  /// No description provided for @cashier_fiat_withdrawal_DEPENDS_ON_AMOUNT.
+  /// No description provided for @cashierFiatWithdrawalDependsOnAmount.
   ///
   /// In en, this message translates to:
   /// **'Fee depends on amount'**
-  String get cashier_fiat_withdrawal_DEPENDS_ON_AMOUNT;
+  String get cashierFiatWithdrawalDependsOnAmount;
 
-  /// No description provided for @cashier_fiat_withdrawal_ECOPAYZ.
+  /// No description provided for @cashierFiatWithdrawalEcopayz.
   ///
   /// In en, this message translates to:
   /// **'ecoPayz'**
-  String get cashier_fiat_withdrawal_ECOPAYZ;
+  String get cashierFiatWithdrawalEcopayz;
 
-  /// No description provided for @cashier_fiat_withdrawal_ECOPAYZ_form_description.
+  /// No description provided for @cashierFiatWithdrawalEcopayzFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_ECOPAYZ_form_description;
+  String get cashierFiatWithdrawalEcopayzFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_ECOPAYZ_message.
+  /// No description provided for @cashierFiatWithdrawalEcopayzMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_ECOPAYZ_message;
+  String get cashierFiatWithdrawalEcopayzMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_email.
+  /// No description provided for @cashierFiatWithdrawalEmail.
   ///
   /// In en, this message translates to:
   /// **'Email address'**
-  String get cashier_fiat_withdrawal_email;
+  String get cashierFiatWithdrawalEmail;
 
-  /// No description provided for @cashier_fiat_withdrawal_encCreditcardNumber.
+  /// No description provided for @cashierFiatWithdrawalEnccreditcardnumber.
   ///
   /// In en, this message translates to:
   /// **'Card number'**
-  String get cashier_fiat_withdrawal_encCreditcardNumber;
+  String get cashierFiatWithdrawalEnccreditcardnumber;
 
-  /// No description provided for @cashier_fiat_withdrawal_EUR_global_description.
+  /// No description provided for @cashierFiatWithdrawalEurGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_EUR_global_description;
+  String get cashierFiatWithdrawalEurGlobalDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_expiryMonth.
+  /// No description provided for @cashierFiatWithdrawalExpirymonth.
   ///
   /// In en, this message translates to:
   /// **'Expiry month'**
-  String get cashier_fiat_withdrawal_expiryMonth;
+  String get cashierFiatWithdrawalExpirymonth;
 
-  /// No description provided for @cashier_fiat_withdrawal_expiryYear.
+  /// No description provided for @cashierFiatWithdrawalExpiryyear.
   ///
   /// In en, this message translates to:
   /// **'Expiry year '**
-  String get cashier_fiat_withdrawal_expiryYear;
+  String get cashierFiatWithdrawalExpiryyear;
 
-  /// No description provided for @cashier_fiat_withdrawal_ezeebill_BANK_ACCOUNT_NAME.
+  /// No description provided for @cashierFiatWithdrawalEzeebillBankAccountName.
   ///
   /// In en, this message translates to:
   /// **'Name on card'**
-  String get cashier_fiat_withdrawal_ezeebill_BANK_ACCOUNT_NAME;
+  String get cashierFiatWithdrawalEzeebillBankAccountName;
 
-  /// No description provided for @cashier_fiat_withdrawal_ezeebill_BANK_ACCOUNT_NAME_placeholder.
+  /// No description provided for @cashierFiatWithdrawalEzeebillBankAccountNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Name on card (Katakana only)'**
-  String get cashier_fiat_withdrawal_ezeebill_BANK_ACCOUNT_NAME_placeholder;
+  /// **'Name on card _Katakana only_'**
+  String get cashierFiatWithdrawalEzeebillBankAccountNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_ezeebill_BANK_BRANCH_placeholder.
+  /// No description provided for @cashierFiatWithdrawalEzeebillBankBranchPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'Please select  bank branch from the list'**
-  String get cashier_fiat_withdrawal_ezeebill_BANK_BRANCH_placeholder;
+  String get cashierFiatWithdrawalEzeebillBankBranchPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_ezeebill_BANK_NAME.
+  /// No description provided for @cashierFiatWithdrawalEzeebillBankName.
   ///
   /// In en, this message translates to:
   /// **'Bank name'**
-  String get cashier_fiat_withdrawal_ezeebill_BANK_NAME;
+  String get cashierFiatWithdrawalEzeebillBankName;
 
-  /// No description provided for @cashier_fiat_withdrawal_ezeebill_BANK_NAME_placeholder.
+  /// No description provided for @cashierFiatWithdrawalEzeebillBankNamePlaceholder.
   ///
   /// In en, this message translates to:
   /// **'Please select your desired bank from the list'**
-  String get cashier_fiat_withdrawal_ezeebill_BANK_NAME_placeholder;
+  String get cashierFiatWithdrawalEzeebillBankNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_ezeebill_CUSTOMER_NAME_placeholder.
+  /// No description provided for @cashierFiatWithdrawalEzeebillCustomerNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'サトシ ナカモト (Katakana only)'**
-  String get cashier_fiat_withdrawal_ezeebill_CUSTOMER_NAME_placeholder;
+  /// **'サトシ ナカモト _Katakana only_'**
+  String get cashierFiatWithdrawalEzeebillCustomerNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_failure_message.
+  /// No description provided for @cashierFiatWithdrawalFailureMessage.
   ///
   /// In en, this message translates to:
   /// **'Something went wrong'**
-  String get cashier_fiat_withdrawal_failure_message;
+  String get cashierFiatWithdrawalFailureMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_FEE.
+  /// No description provided for @cashierFiatWithdrawalFee.
   ///
   /// In en, this message translates to:
   /// **'Fee'**
-  String get cashier_fiat_withdrawal_FEE;
+  String get cashierFiatWithdrawalFee;
 
-  /// No description provided for @cashier_fiat_withdrawal_fee_ADD.
+  /// No description provided for @cashierFiatWithdrawalFeeAdd.
   ///
   /// In en, this message translates to:
-  /// **'Fee:'**
-  String get cashier_fiat_withdrawal_fee_ADD;
+  /// **'Fee'**
+  String get cashierFiatWithdrawalFeeAdd;
 
-  /// No description provided for @cashier_fiat_withdrawal_fee_DEDUCT.
+  /// No description provided for @cashierFiatWithdrawalFeeDeduct.
   ///
   /// In en, this message translates to:
-  /// **'Fee:'**
-  String get cashier_fiat_withdrawal_fee_DEDUCT;
+  /// **'Fee'**
+  String get cashierFiatWithdrawalFeeDeduct;
 
-  /// No description provided for @cashier_fiat_withdrawal_FIRST_NAME.
-  ///
-  /// In en, this message translates to:
-  /// **'First name'**
-  String get cashier_fiat_withdrawal_FIRST_NAME;
-
-  /// No description provided for @cashier_fiat_withdrawal_FIRST_NAME_placeholder.
-  ///
-  /// In en, this message translates to:
-  /// **'e.g. Satoshi (English or Katakana)'**
-  String get cashier_fiat_withdrawal_FIRST_NAME_placeholder;
-
-  /// No description provided for @cashier_fiat_withdrawal_firstName.
+  /// No description provided for @cashierFiatWithdrawalFirstName.
   ///
   /// In en, this message translates to:
   /// **'First name'**
-  String get cashier_fiat_withdrawal_firstName;
+  String get cashierFiatWithdrawalFirstName;
 
-  /// No description provided for @cashier_fiat_withdrawal_FREE.
+  /// No description provided for @cashierFiatWithdrawalFirstNamePlaceholder.
+  ///
+  /// In en, this message translates to:
+  /// **'eg Satoshi _English or Katakana_'**
+  String get cashierFiatWithdrawalFirstNamePlaceholder;
+
+  /// No description provided for @cashierFiatWithdrawalFirstname.
+  ///
+  /// In en, this message translates to:
+  /// **'First name'**
+  String get cashierFiatWithdrawalFirstname;
+
+  /// No description provided for @cashierFiatWithdrawalFree.
   ///
   /// In en, this message translates to:
   /// **'Free'**
-  String get cashier_fiat_withdrawal_FREE;
+  String get cashierFiatWithdrawalFree;
 
-  /// No description provided for @cashier_fiat_withdrawal_global_description.
+  /// No description provided for @cashierFiatWithdrawalGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_global_description;
+  String get cashierFiatWithdrawalGlobalDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_go_back.
+  /// No description provided for @cashierFiatWithdrawalGoBack.
   ///
   /// In en, this message translates to:
   /// **'Go back'**
-  String get cashier_fiat_withdrawal_go_back;
+  String get cashierFiatWithdrawalGoBack;
 
-  /// No description provided for @cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_almost_done_message.
+  /// No description provided for @cashierFiatWithdrawalHelp2PayQaicashAlmostDoneMessage.
   ///
   /// In en, this message translates to:
-  /// **'If you don\'t complete your transaction your funds will be back to your player account in 15 mins.'**
-  String get cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_almost_done_message;
+  /// **'If you don\'t complete your transaction your funds will be back to your player account in 15 mins'**
+  String get cashierFiatWithdrawalHelp2PayQaicashAlmostDoneMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_message.
+  /// No description provided for @cashierFiatWithdrawalHelp2PayQaicashMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_message;
+  String get cashierFiatWithdrawalHelp2PayQaicashMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_open_new_window_title.
+  /// No description provided for @cashierFiatWithdrawalHelp2PayQaicashOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_withdrawal_HELP_2_PAY_QAICASH_open_new_window_title;
+  String get cashierFiatWithdrawalHelp2PayQaicashOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_withdrawal_inovapay_bank_transfer_BRL_limits.
+  /// No description provided for @cashierFiatWithdrawalInovapayBankTransferBrlLimits.
   ///
   /// In en, this message translates to:
-  /// **'Bank transfer withdrawals can take up to 6 business days to be confirmed.'**
-  String get cashier_fiat_withdrawal_inovapay_bank_transfer_BRL_limits;
+  /// **'Bank transfer withdrawals can take up to 6 business days to be confirmed'**
+  String get cashierFiatWithdrawalInovapayBankTransferBrlLimits;
 
-  /// No description provided for @cashier_fiat_withdrawal_INTERAC.
+  /// No description provided for @cashierFiatWithdrawalInterac.
   ///
   /// In en, this message translates to:
   /// **'Interac'**
-  String get cashier_fiat_withdrawal_INTERAC;
+  String get cashierFiatWithdrawalInterac;
 
-  /// No description provided for @cashier_fiat_withdrawal_INTERAC_message.
+  /// No description provided for @cashierFiatWithdrawalInteracMessage.
   ///
   /// In en, this message translates to:
-  /// **' ®Trademark of Interac Corp. Used under license. '**
-  String get cashier_fiat_withdrawal_INTERAC_message;
+  /// **' ®Trademark of Interac Corp Used under license '**
+  String get cashierFiatWithdrawalInteracMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_CPF_cpf.
+  /// No description provided for @cashierFiatWithdrawalInvalidCpfCpf.
   ///
   /// In en, this message translates to:
   /// **'You entered invalid CPF'**
-  String get cashier_fiat_withdrawal_INVALID_CPF_cpf;
+  String get cashierFiatWithdrawalInvalidCpfCpf;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_FORMAT_bankAccount.
+  /// No description provided for @cashierFiatWithdrawalInvalidFormatBankaccount.
   ///
   /// In en, this message translates to:
   /// **'Invalid bank account'**
-  String get cashier_fiat_withdrawal_INVALID_FORMAT_bankAccount;
+  String get cashierFiatWithdrawalInvalidFormatBankaccount;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_FORMAT_bankBranch.
+  /// No description provided for @cashierFiatWithdrawalInvalidFormatBankbranch.
   ///
   /// In en, this message translates to:
   /// **'Invalid bank branch'**
-  String get cashier_fiat_withdrawal_INVALID_FORMAT_bankBranch;
+  String get cashierFiatWithdrawalInvalidFormatBankbranch;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_REQUEST.
+  /// No description provided for @cashierFiatWithdrawalInvalidRequest.
   ///
   /// In en, this message translates to:
-  /// **'Invalid field: {field}'**
-  String cashier_fiat_withdrawal_INVALID_REQUEST(Object field);
+  /// **'Invalid field {field}'**
+  String cashierFiatWithdrawalInvalidRequest(Object field);
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_address.
-  ///
-  /// In en, this message translates to:
-  /// **'Invalid Address'**
-  String get cashier_fiat_withdrawal_INVALID_address;
-
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_ADDRESS.
+  /// No description provided for @cashierFiatWithdrawalInvalidAddress.
   ///
   /// In en, this message translates to:
   /// **'Invalid address'**
-  String get cashier_fiat_withdrawal_INVALID_ADDRESS;
+  String get cashierFiatWithdrawalInvalidAddress;
 
   /// Invalid Bank account number
   ///
   /// In en, this message translates to:
   /// **'Invalid Bank Account number'**
-  String get cashier_fiat_withdrawal_INVALID_BANK_ACCOUNT_NUMBER;
+  String get cashierFiatWithdrawalInvalidBankAccountNumber;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_BANK_BRANCH.
+  /// No description provided for @cashierFiatWithdrawalInvalidBankBranch.
   ///
   /// In en, this message translates to:
   /// **'Invalid Bank branch'**
-  String get cashier_fiat_withdrawal_INVALID_BANK_BRANCH;
+  String get cashierFiatWithdrawalInvalidBankBranch;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_BANK_BRANCH_NUMBER.
+  /// No description provided for @cashierFiatWithdrawalInvalidBankBranchNumber.
   ///
   /// In en, this message translates to:
   /// **'Invalid Bank branch number'**
-  String get cashier_fiat_withdrawal_INVALID_BANK_BRANCH_NUMBER;
+  String get cashierFiatWithdrawalInvalidBankBranchNumber;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_BANK_CODE.
+  /// No description provided for @cashierFiatWithdrawalInvalidBankCode.
   ///
   /// In en, this message translates to:
   /// **'Invalid Bank code'**
-  String get cashier_fiat_withdrawal_INVALID_BANK_CODE;
+  String get cashierFiatWithdrawalInvalidBankCode;
 
   /// Invalid Bank
   ///
   /// In en, this message translates to:
   /// **'Invalid Bank name'**
-  String get cashier_fiat_withdrawal_INVALID_BANK_IFSC;
+  String get cashierFiatWithdrawalInvalidBankIfsc;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_BANK_NAME.
+  /// No description provided for @cashierFiatWithdrawalInvalidBankName.
   ///
   /// In en, this message translates to:
   /// **'Invalid Bank name'**
-  String get cashier_fiat_withdrawal_INVALID_BANK_NAME;
+  String get cashierFiatWithdrawalInvalidBankName;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_CUSTOMER_LOCAL_NAME.
+  /// No description provided for @cashierFiatWithdrawalInvalidCustomerLocalName.
   ///
   /// In en, this message translates to:
   /// **'Invalid Customer Local name'**
-  String get cashier_fiat_withdrawal_INVALID_CUSTOMER_LOCAL_NAME;
+  String get cashierFiatWithdrawalInvalidCustomerLocalName;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_CUSTOMER_NAME.
+  /// No description provided for @cashierFiatWithdrawalInvalidCustomerName.
   ///
   /// In en, this message translates to:
   /// **'Invalid Customer name'**
-  String get cashier_fiat_withdrawal_INVALID_CUSTOMER_NAME;
+  String get cashierFiatWithdrawalInvalidCustomerName;
 
-  /// No description provided for @cashier_fiat_withdrawal_INVALID_PIX_KEY.
+  /// No description provided for @cashierFiatWithdrawalInvalidPixKey.
   ///
   /// In en, this message translates to:
-  /// **'You entered invalid PIX key. Enter your CPF'**
-  String get cashier_fiat_withdrawal_INVALID_PIX_KEY;
+  /// **'You entered invalid PIX key Enter your CPF'**
+  String get cashierFiatWithdrawalInvalidPixKey;
 
-  /// No description provided for @cashier_fiat_withdrawal_JETON_COREFY.
+  /// No description provided for @cashierFiatWithdrawalJetonCorefy.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_fiat_withdrawal_JETON_COREFY;
+  String get cashierFiatWithdrawalJetonCorefy;
 
-  /// No description provided for @cashier_fiat_withdrawal_JETON_COREFY_form_description.
+  /// No description provided for @cashierFiatWithdrawalJetonCorefyFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'I confirm that I am the account holder that I am using.'**
-  String get cashier_fiat_withdrawal_JETON_COREFY_form_description;
+  /// **'I confirm that I am the account holder that I am using'**
+  String get cashierFiatWithdrawalJetonCorefyFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_JETON_COREFY_message.
+  /// No description provided for @cashierFiatWithdrawalJetonCorefyMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_JETON_COREFY_message;
+  String get cashierFiatWithdrawalJetonCorefyMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_jeton_exchange_rate.
+  /// No description provided for @cashierFiatWithdrawalJetonExchangeRate.
   ///
   /// In en, this message translates to:
-  /// **'USDT Price:'**
-  String get cashier_fiat_withdrawal_jeton_exchange_rate;
+  /// **'USDT Price'**
+  String get cashierFiatWithdrawalJetonExchangeRate;
 
-  /// No description provided for @cashier_fiat_withdrawal_jeton_CUSTOMER_NAME.
+  /// No description provided for @cashierFiatWithdrawalJetonCustomerName.
   ///
   /// In en, this message translates to:
   /// **'Customer name'**
-  String get cashier_fiat_withdrawal_jeton_CUSTOMER_NAME;
+  String get cashierFiatWithdrawalJetonCustomerName;
 
-  /// No description provided for @cashier_fiat_withdrawal_JPY_global_description.
+  /// No description provided for @cashierFiatWithdrawalJpyGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_JPY_global_description;
+  String get cashierFiatWithdrawalJpyGlobalDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_keyta_pay_bank_transfer_JPY_limits.
+  /// No description provided for @cashierFiatWithdrawalKeytaPayBankTransferJpyLimits.
   ///
   /// In en, this message translates to:
-  /// **'Scheduled maintenance will be carried on every Sunday from 19:00 to 8:00 the following Monday. Kindly avoid these hours if you are in a hurry.'**
-  String get cashier_fiat_withdrawal_keyta_pay_bank_transfer_JPY_limits;
+  /// **'Scheduled maintenance will be carried on every Sunday from 1900 to 800 the following Monday Kindly avoid these hours if you are in a hurry'**
+  String get cashierFiatWithdrawalKeytaPayBankTransferJpyLimits;
 
-  /// No description provided for @cashier_fiat_withdrawal_LAST_NAME.
-  ///
-  /// In en, this message translates to:
-  /// **'Last name'**
-  String get cashier_fiat_withdrawal_LAST_NAME;
-
-  /// No description provided for @cashier_fiat_withdrawal_LAST_NAME_placeholder.
-  ///
-  /// In en, this message translates to:
-  /// **'e.g. Nakamoto (English or Katakana)'**
-  String get cashier_fiat_withdrawal_LAST_NAME_placeholder;
-
-  /// No description provided for @cashier_fiat_withdrawal_lastName.
+  /// No description provided for @cashierFiatWithdrawalLastName.
   ///
   /// In en, this message translates to:
   /// **'Last name'**
-  String get cashier_fiat_withdrawal_lastName;
+  String get cashierFiatWithdrawalLastName;
 
-  /// No description provided for @cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH.
+  /// No description provided for @cashierFiatWithdrawalLastNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Bank Transfer - Withdrawal'**
-  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH;
+  /// **'eg Nakamoto _English or Katakana_'**
+  String get cashierFiatWithdrawalLastNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_almost_done_message.
+  /// No description provided for @cashierFiatWithdrawalLastname.
   ///
   /// In en, this message translates to:
-  /// **'If you don\'t complete your transaction your funds will be back to your player account in 15 mins.'**
-  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_almost_done_message;
+  /// **'Last name'**
+  String get cashierFiatWithdrawalLastname;
 
-  /// No description provided for @cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_form_description.
+  /// No description provided for @cashierFiatWithdrawalLocalBankTransferQaicash.
+  ///
+  /// In en, this message translates to:
+  /// **'Bank Transfer _ Withdrawal'**
+  String get cashierFiatWithdrawalLocalBankTransferQaicash;
+
+  /// No description provided for @cashierFiatWithdrawalLocalBankTransferQaicashAlmostDoneMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'If you don\'t complete your transaction your funds will be back to your player account in 15 mins'**
+  String get cashierFiatWithdrawalLocalBankTransferQaicashAlmostDoneMessage;
+
+  /// No description provided for @cashierFiatWithdrawalLocalBankTransferQaicashFormDescription.
   ///
   /// In en, this message translates to:
   /// **'   '**
-  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_form_description;
+  String get cashierFiatWithdrawalLocalBankTransferQaicashFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_iframe_description.
+  /// No description provided for @cashierFiatWithdrawalLocalBankTransferQaicashIframeDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_iframe_description;
+  String get cashierFiatWithdrawalLocalBankTransferQaicashIframeDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_message.
+  /// No description provided for @cashierFiatWithdrawalLocalBankTransferQaicashMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_message;
+  String get cashierFiatWithdrawalLocalBankTransferQaicashMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_open_new_window_title.
+  /// No description provided for @cashierFiatWithdrawalLocalBankTransferQaicashOpenNewWindowTitle.
   ///
   /// In en, this message translates to:
   /// **'Almost done'**
-  String get cashier_fiat_withdrawal_LOCAL_BANK_TRANSFER_QAICASH_open_new_window_title;
+  String get cashierFiatWithdrawalLocalBankTransferQaicashOpenNewWindowTitle;
 
-  /// No description provided for @cashier_fiat_withdrawal_max_limit.
+  /// No description provided for @cashierFiatWithdrawalMaxLimit.
   ///
   /// In en, this message translates to:
-  /// **'Max:  '**
-  String get cashier_fiat_withdrawal_max_limit;
+  /// **'Max  '**
+  String get cashierFiatWithdrawalMaxLimit;
 
-  /// No description provided for @cashier_fiat_withdrawal_min_amount.
+  /// No description provided for @cashierFiatWithdrawalMinAmount.
   ///
   /// In en, this message translates to:
   /// **'Minimum withdrawal is 20 '**
-  String get cashier_fiat_withdrawal_min_amount;
+  String get cashierFiatWithdrawalMinAmount;
 
-  /// No description provided for @cashier_fiat_withdrawal_min_limit.
+  /// No description provided for @cashierFiatWithdrawalMinLimit.
   ///
   /// In en, this message translates to:
-  /// **'Min: '**
-  String get cashier_fiat_withdrawal_min_limit;
+  /// **'Min '**
+  String get cashierFiatWithdrawalMinLimit;
 
-  /// No description provided for @cashier_fiat_withdrawal_min_withdrawal.
+  /// No description provided for @cashierFiatWithdrawalMinWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'Minimum withdrawal is 20'**
-  String get cashier_fiat_withdrawal_min_withdrawal;
+  String get cashierFiatWithdrawalMinWithdrawal;
 
-  /// No description provided for @cashier_fiat_withdrawal_mobile.
+  /// No description provided for @cashierFiatWithdrawalMobile.
   ///
   /// In en, this message translates to:
   /// **'Phone number'**
-  String get cashier_fiat_withdrawal_mobile;
+  String get cashierFiatWithdrawalMobile;
 
-  /// No description provided for @cashier_fiat_withdrawal_MUCHBETTER.
+  /// No description provided for @cashierFiatWithdrawalMuchbetter.
   ///
   /// In en, this message translates to:
   /// **'MuchBetter'**
-  String get cashier_fiat_withdrawal_MUCHBETTER;
+  String get cashierFiatWithdrawalMuchbetter;
 
-  /// No description provided for @cashier_fiat_withdrawal_MUCHBETTER_form_description.
+  /// No description provided for @cashierFiatWithdrawalMuchbetterFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'<span>Don\'t have an account? <a href=\"https://a.api.muchbetter.com/merchant/user?trackingCode=QmwzNTg5ODA\" target=\"_blank\">Sign Up</a></span>'**
-  String get cashier_fiat_withdrawal_MUCHBETTER_form_description;
+  /// **'<span>Don\'t have an account? <a href=\"https//aapimuchbettercom/merchant/user?trackingCode=QmwzNTg5ODA\" target=\"blank\">Sign Up</a></span>'**
+  String get cashierFiatWithdrawalMuchbetterFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_MUCHBETTER_message.
+  /// No description provided for @cashierFiatWithdrawalMuchbetterMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_MUCHBETTER_message;
+  String get cashierFiatWithdrawalMuchbetterMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_nationalId.
+  /// No description provided for @cashierFiatWithdrawalNationalid.
   ///
   /// In en, this message translates to:
-  /// **'CPF/CURP/DNI/CI...'**
-  String get cashier_fiat_withdrawal_nationalId;
+  /// **'CPF/CURP/DNI/CI'**
+  String get cashierFiatWithdrawalNationalid;
 
-  /// No description provided for @cashier_fiat_withdrawal_nationalIdType.
+  /// No description provided for @cashierFiatWithdrawalNationalidtype.
   ///
   /// In en, this message translates to:
   /// **'National ID type'**
-  String get cashier_fiat_withdrawal_nationalIdType;
+  String get cashierFiatWithdrawalNationalidtype;
 
-  /// No description provided for @cashier_fiat_withdrawal_NETELLER.
+  /// No description provided for @cashierFiatWithdrawalNeteller.
   ///
   /// In en, this message translates to:
   /// **'Neteller'**
-  String get cashier_fiat_withdrawal_NETELLER;
+  String get cashierFiatWithdrawalNeteller;
 
-  /// No description provided for @cashier_fiat_withdrawal_NETELLER_form_description.
+  /// No description provided for @cashierFiatWithdrawalNetellerFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_NETELLER_form_description;
+  String get cashierFiatWithdrawalNetellerFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_NETELLER_message.
+  /// No description provided for @cashierFiatWithdrawalNetellerMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_NETELLER_message;
+  String get cashierFiatWithdrawalNetellerMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_next_step.
+  /// No description provided for @cashierFiatWithdrawalNextStep.
   ///
   /// In en, this message translates to:
   /// **'Next step'**
-  String get cashier_fiat_withdrawal_next_step;
+  String get cashierFiatWithdrawalNextStep;
 
-  /// No description provided for @cashier_fiat_withdrawal_NOT_ENOUGH_FUNDS_amount.
+  /// No description provided for @cashierFiatWithdrawalNotEnoughFundsAmount.
   ///
   /// In en, this message translates to:
   /// **'Not enough funds in your account'**
-  String get cashier_fiat_withdrawal_NOT_ENOUGH_FUNDS_amount;
+  String get cashierFiatWithdrawalNotEnoughFundsAmount;
 
-  /// No description provided for @cashier_fiat_withdrawal_NOT_FOUND_SAVED_ACCOUNT_UUID.
+  /// No description provided for @cashierFiatWithdrawalNotFoundSavedAccountUuid.
   ///
   /// In en, this message translates to:
-  /// **'Account is not found. Please refresh the page'**
-  String get cashier_fiat_withdrawal_NOT_FOUND_SAVED_ACCOUNT_UUID;
+  /// **'Account is not found Please refresh the page'**
+  String get cashierFiatWithdrawalNotFoundSavedAccountUuid;
 
-  /// No description provided for @cashier_fiat_withdrawal_null.
+  /// No description provided for @cashierFiatWithdrawalNull.
   ///
   /// In en, this message translates to:
   /// **'Phone number'**
-  String get cashier_fiat_withdrawal_null;
+  String get cashierFiatWithdrawalNull;
 
-  /// No description provided for @cashier_fiat_withdrawal_overview.
+  /// No description provided for @cashierFiatWithdrawalOverview.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal overview'**
-  String get cashier_fiat_withdrawal_overview;
+  String get cashierFiatWithdrawalOverview;
 
-  /// No description provided for @cashier_fiat_withdrawal_pagava_BANK_ACCOUNT_NAME.
+  /// No description provided for @cashierFiatWithdrawalPagavaBankAccountName.
   ///
   /// In en, this message translates to:
   /// **'Name on card'**
-  String get cashier_fiat_withdrawal_pagava_BANK_ACCOUNT_NAME;
+  String get cashierFiatWithdrawalPagavaBankAccountName;
 
-  /// No description provided for @cashier_fiat_withdrawal_pagava_BANK_ACCOUNT_NAME_placeholder.
+  /// No description provided for @cashierFiatWithdrawalPagavaBankAccountNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Name on card (Katakana only)'**
-  String get cashier_fiat_withdrawal_pagava_BANK_ACCOUNT_NAME_placeholder;
+  /// **'Name on card _Katakana only_'**
+  String get cashierFiatWithdrawalPagavaBankAccountNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_pagava_CUSTOMER_NAME_placeholder.
+  /// No description provided for @cashierFiatWithdrawalPagavaCustomerNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'サトシ ナカモト (Katakana only)'**
-  String get cashier_fiat_withdrawal_pagava_CUSTOMER_NAME_placeholder;
+  /// **'サトシ ナカモト _Katakana only_'**
+  String get cashierFiatWithdrawalPagavaCustomerNamePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_pagsmile_pix_BRL_limits.
+  /// No description provided for @cashierFiatWithdrawalPagsmilePixBrlLimits.
   ///
   /// In en, this message translates to:
-  /// **'PIX withdrawals can take up to 1 business day to be confirmed.'**
-  String get cashier_fiat_withdrawal_pagsmile_pix_BRL_limits;
+  /// **'PIX withdrawals can take up to 1 business day to be confirmed'**
+  String get cashierFiatWithdrawalPagsmilePixBrlLimits;
 
-  /// No description provided for @cashier_fiat_withdrawal_password.
+  /// No description provided for @cashierFiatWithdrawalPassword.
   ///
   /// In en, this message translates to:
   /// **'Password'**
-  String get cashier_fiat_withdrawal_password;
+  String get cashierFiatWithdrawalPassword;
 
-  /// No description provided for @cashier_fiat_withdrawal_pay4fun_webredirect_BRL_limits.
+  /// No description provided for @cashierFiatWithdrawalPay4funWebredirectBrlLimits.
   ///
   /// In en, this message translates to:
   /// **'Pay4Fun wallet withdrawals are confirmed instantly'**
-  String get cashier_fiat_withdrawal_pay4fun_webredirect_BRL_limits;
+  String get cashierFiatWithdrawalPay4funWebredirectBrlLimits;
 
-  /// No description provided for @cashier_fiat_withdrawal_payment_methods.
+  /// No description provided for @cashierFiatWithdrawalPaymentMethods.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal methods'**
-  String get cashier_fiat_withdrawal_payment_methods;
+  String get cashierFiatWithdrawalPaymentMethods;
 
-  /// No description provided for @cashier_fiat_withdrawal_PAYSAFECARD.
+  /// No description provided for @cashierFiatWithdrawalPaysafecard.
   ///
   /// In en, this message translates to:
   /// **'Paysafecard'**
-  String get cashier_fiat_withdrawal_PAYSAFECARD;
+  String get cashierFiatWithdrawalPaysafecard;
 
-  /// No description provided for @cashier_fiat_withdrawal_PAYSAFECARD_form_description.
+  /// No description provided for @cashierFiatWithdrawalPaysafecardFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_PAYSAFECARD_form_description;
+  String get cashierFiatWithdrawalPaysafecardFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_PAYSAFECARD_message.
+  /// No description provided for @cashierFiatWithdrawalPaysafecardMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_PAYSAFECARD_message;
+  String get cashierFiatWithdrawalPaysafecardMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_personal_details.
+  /// No description provided for @cashierFiatWithdrawalPersonalDetails.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal details'**
-  String get cashier_fiat_withdrawal_personal_details;
+  String get cashierFiatWithdrawalPersonalDetails;
 
-  /// No description provided for @cashier_fiat_withdrawal_phone_number.
+  /// No description provided for @cashierFiatWithdrawalPhoneNumber.
   ///
   /// In en, this message translates to:
   /// **'Phone number'**
-  String get cashier_fiat_withdrawal_phone_number;
+  String get cashierFiatWithdrawalPhoneNumber;
 
-  /// No description provided for @cashier_fiat_withdrawal_PHONE_NUMBER.
-  ///
-  /// In en, this message translates to:
-  /// **'Phone number'**
-  String get cashier_fiat_withdrawal_PHONE_NUMBER;
-
-  /// No description provided for @cashier_fiat_withdrawal_PHONE_NUMBER_placeholder.
+  /// No description provided for @cashierFiatWithdrawalPhoneNumberPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'+9012345678'**
-  String get cashier_fiat_withdrawal_PHONE_NUMBER_placeholder;
+  String get cashierFiatWithdrawalPhoneNumberPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_phoneNumber_placeholder.
+  /// No description provided for @cashierFiatWithdrawalPhonenumberPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Phone (e.g. UK 4472137127)'**
-  String get cashier_fiat_withdrawal_phoneNumber_placeholder;
+  /// **'Phone _eg UK 4472137127_'**
+  String get cashierFiatWithdrawalPhonenumberPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_pinbank_BANK_BRANCH_placeholder.
+  /// No description provided for @cashierFiatWithdrawalPinbankBankBranchPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'Bank branch'**
-  String get cashier_fiat_withdrawal_pinbank_BANK_BRANCH_placeholder;
+  String get cashierFiatWithdrawalPinbankBankBranchPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_PIX_KEY.
+  /// No description provided for @cashierFiatWithdrawalPixKey.
   ///
   /// In en, this message translates to:
-  /// **'CPF Key (numbers only)'**
-  String get cashier_fiat_withdrawal_PIX_KEY;
+  /// **'CPF Key _numbers only_'**
+  String get cashierFiatWithdrawalPixKey;
 
-  /// No description provided for @cashier_fiat_withdrawal_PIX_KEY_placeholder.
+  /// No description provided for @cashierFiatWithdrawalPixKeyPlaceholder.
   ///
   /// In en, this message translates to:
   /// **'CPF Key'**
-  String get cashier_fiat_withdrawal_PIX_KEY_placeholder;
+  String get cashierFiatWithdrawalPixKeyPlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_please_enter_amount.
+  /// No description provided for @cashierFiatWithdrawalPleaseEnterAmount.
   ///
   /// In en, this message translates to:
   /// **'Please enter amount'**
-  String get cashier_fiat_withdrawal_please_enter_amount;
+  String get cashierFiatWithdrawalPleaseEnterAmount;
 
-  /// No description provided for @cashier_fiat_withdrawal_please_enter_cpf_message.
+  /// No description provided for @cashierFiatWithdrawalPleaseEnterCpfMessage.
   ///
   /// In en, this message translates to:
   /// **'Please, specify your CPF'**
-  String get cashier_fiat_withdrawal_please_enter_cpf_message;
+  String get cashierFiatWithdrawalPleaseEnterCpfMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_please_enter_personal_details_message.
+  /// No description provided for @cashierFiatWithdrawalPleaseEnterPersonalDetailsMessage.
   ///
   /// In en, this message translates to:
   /// **'Please enter your mobile number'**
-  String get cashier_fiat_withdrawal_please_enter_personal_details_message;
+  String get cashierFiatWithdrawalPleaseEnterPersonalDetailsMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_POSTCODE.
+  /// No description provided for @cashierFiatWithdrawalPostcode.
   ///
   /// In en, this message translates to:
   /// **'Postcode'**
-  String get cashier_fiat_withdrawal_POSTCODE;
+  String get cashierFiatWithdrawalPostcode;
 
-  /// No description provided for @cashier_fiat_withdrawal_POSTCODE_placeholder.
+  /// No description provided for @cashierFiatWithdrawalPostcodePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'120-0003'**
-  String get cashier_fiat_withdrawal_POSTCODE_placeholder;
+  /// **'120_0003'**
+  String get cashierFiatWithdrawalPostcodePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_PROVINCE.
+  /// No description provided for @cashierFiatWithdrawalProvince.
   ///
   /// In en, this message translates to:
   /// **'Province'**
-  String get cashier_fiat_withdrawal_PROVINCE;
+  String get cashierFiatWithdrawalProvince;
 
-  /// No description provided for @cashier_fiat_withdrawal_REQUIRED.
+  /// No description provided for @cashierFiatWithdrawalRequired.
   ///
   /// In en, this message translates to:
-  /// **'Field required: {field}'**
-  String cashier_fiat_withdrawal_REQUIRED(Object field);
+  /// **'Field required {field}'**
+  String cashierFiatWithdrawalRequired(Object field);
 
-  /// No description provided for @cashier_fiat_withdrawal_REQUIRED_cardHolder.
+  /// No description provided for @cashierFiatWithdrawalRequiredCardholder.
   ///
   /// In en, this message translates to:
   /// **'First name and last name are required'**
-  String get cashier_fiat_withdrawal_REQUIRED_cardHolder;
+  String get cashierFiatWithdrawalRequiredCardholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_saved_accounts.
+  /// No description provided for @cashierFiatWithdrawalSavedAccounts.
   ///
   /// In en, this message translates to:
   /// **'Saved accounts'**
-  String get cashier_fiat_withdrawal_saved_accounts;
+  String get cashierFiatWithdrawalSavedAccounts;
 
-  /// No description provided for @cashier_fiat_withdrawal_service.
+  /// No description provided for @cashierFiatWithdrawalService.
   ///
   /// In en, this message translates to:
   /// **'Service'**
-  String get cashier_fiat_withdrawal_service;
+  String get cashierFiatWithdrawalService;
 
-  /// No description provided for @cashier_fiat_withdrawal_SKRILL.
+  /// No description provided for @cashierFiatWithdrawalSkrill.
   ///
   /// In en, this message translates to:
   /// **'Skrill'**
-  String get cashier_fiat_withdrawal_SKRILL;
+  String get cashierFiatWithdrawalSkrill;
 
-  /// No description provided for @cashier_fiat_withdrawal_SKRILL_form_description.
+  /// No description provided for @cashierFiatWithdrawalSkrillFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_SKRILL_form_description;
+  String get cashierFiatWithdrawalSkrillFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_SKRILL_message.
+  /// No description provided for @cashierFiatWithdrawalSkrillMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_SKRILL_message;
+  String get cashierFiatWithdrawalSkrillMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_SKRILLQCO_message.
+  /// No description provided for @cashierFiatWithdrawalSkrillqcoMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_withdrawal_SKRILLQCO_message;
+  String get cashierFiatWithdrawalSkrillqcoMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER.
+  /// No description provided for @cashierFiatWithdrawalSkrillqcoRapidtransfer.
   ///
   /// In en, this message translates to:
   /// **'Rapid Transfer'**
-  String get cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER;
+  String get cashierFiatWithdrawalSkrillqcoRapidtransfer;
 
-  /// No description provided for @cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER_form_description.
+  /// No description provided for @cashierFiatWithdrawalSkrillqcoRapidtransferFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER_form_description;
+  String get cashierFiatWithdrawalSkrillqcoRapidtransferFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER_message.
+  /// No description provided for @cashierFiatWithdrawalSkrillqcoRapidtransferMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_SKRILLQCO_RAPIDTRANSFER_message;
+  String get cashierFiatWithdrawalSkrillqcoRapidtransferMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_SOFORT.
+  /// No description provided for @cashierFiatWithdrawalSofort.
   ///
   /// In en, this message translates to:
   /// **'Klarna'**
-  String get cashier_fiat_withdrawal_SOFORT;
+  String get cashierFiatWithdrawalSofort;
 
-  /// No description provided for @cashier_fiat_withdrawal_SOFORT_form_description.
+  /// No description provided for @cashierFiatWithdrawalSofortFormDescription.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_withdrawal_SOFORT_form_description;
+  String get cashierFiatWithdrawalSofortFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_SOFORT_message.
+  /// No description provided for @cashierFiatWithdrawalSofortMessage.
   ///
   /// In en, this message translates to:
   /// **'  '**
-  String get cashier_fiat_withdrawal_SOFORT_message;
+  String get cashierFiatWithdrawalSofortMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_STATE.
+  /// No description provided for @cashierFiatWithdrawalState.
   ///
   /// In en, this message translates to:
   /// **'Prefecture'**
-  String get cashier_fiat_withdrawal_STATE;
+  String get cashierFiatWithdrawalState;
 
-  /// No description provided for @cashier_fiat_withdrawal_STATE_placeholder.
+  /// No description provided for @cashierFiatWithdrawalStatePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'e.g. Kanagawa-ken (English only)'**
-  String get cashier_fiat_withdrawal_STATE_placeholder;
+  /// **'eg Kanagawa_ken _English only_'**
+  String get cashierFiatWithdrawalStatePlaceholder;
 
-  /// No description provided for @cashier_fiat_withdrawal_STICPAY.
+  /// No description provided for @cashierFiatWithdrawalSticpay.
   ///
   /// In en, this message translates to:
   /// **'Sticpay'**
-  String get cashier_fiat_withdrawal_STICPAY;
+  String get cashierFiatWithdrawalSticpay;
 
-  /// No description provided for @cashier_fiat_withdrawal_STICPAY_form_description.
+  /// No description provided for @cashierFiatWithdrawalSticpayFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_STICPAY_form_description;
+  String get cashierFiatWithdrawalSticpayFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_STICPAY_message.
+  /// No description provided for @cashierFiatWithdrawalSticpayMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_STICPAY_message;
+  String get cashierFiatWithdrawalSticpayMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_submit.
+  /// No description provided for @cashierFiatWithdrawalSubmit.
   ///
   /// In en, this message translates to:
   /// **'Submit'**
-  String get cashier_fiat_withdrawal_submit;
+  String get cashierFiatWithdrawalSubmit;
 
-  /// No description provided for @cashier_fiat_withdrawal_subtotal.
+  /// No description provided for @cashierFiatWithdrawalSubtotal.
   ///
   /// In en, this message translates to:
   /// **'Will receive'**
-  String get cashier_fiat_withdrawal_subtotal;
+  String get cashierFiatWithdrawalSubtotal;
 
-  /// No description provided for @cashier_fiat_withdrawal_success_message.
+  /// No description provided for @cashierFiatWithdrawalSuccessMessage.
   ///
   /// In en, this message translates to:
   /// **'Your withdrawal is in progress'**
-  String get cashier_fiat_withdrawal_success_message;
+  String get cashierFiatWithdrawalSuccessMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_THB_global_description.
+  /// No description provided for @cashierFiatWithdrawalThbGlobalDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_THB_global_description;
+  String get cashierFiatWithdrawalThbGlobalDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_BANK_TRANSFER_ANIMEX.
+  /// No description provided for @cashierFiatWithdrawalTimeframeBankTransferAnimex.
   ///
   /// In en, this message translates to:
-  /// **'1-2 business days'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_BANK_TRANSFER_ANIMEX;
+  /// **'1_2 business days'**
+  String get cashierFiatWithdrawalTimeframeBankTransferAnimex;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_BANK_TRANSFER_TRUSTLY.
-  ///
-  /// In en, this message translates to:
-  /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_BANK_TRANSFER_TRUSTLY;
-
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD.
-  ///
-  /// In en, this message translates to:
-  /// **'1-6 business days'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD;
-
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD_ECOMMPAY.
+  /// No description provided for @cashierFiatWithdrawalTimeframeBankTransferTrustly.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD_ECOMMPAY;
+  String get cashierFiatWithdrawalTimeframeBankTransferTrustly;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD_RAVEDIRECT.
+  /// No description provided for @cashierFiatWithdrawalTimeframeCreditcard.
+  ///
+  /// In en, this message translates to:
+  /// **'1_6 business days'**
+  String get cashierFiatWithdrawalTimeframeCreditcard;
+
+  /// No description provided for @cashierFiatWithdrawalTimeframeCreditcardEcommpay.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_CREDITCARD_RAVEDIRECT;
+  String get cashierFiatWithdrawalTimeframeCreditcardEcommpay;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_ECOPAYZ.
+  /// No description provided for @cashierFiatWithdrawalTimeframeCreditcardRavedirect.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_ECOPAYZ;
+  String get cashierFiatWithdrawalTimeframeCreditcardRavedirect;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_HELP_2_PAY_QAICASH.
+  /// No description provided for @cashierFiatWithdrawalTimeframeEcopayz.
+  ///
+  /// In en, this message translates to:
+  /// **'Instant'**
+  String get cashierFiatWithdrawalTimeframeEcopayz;
+
+  /// No description provided for @cashierFiatWithdrawalTimeframeHelp2PayQaicash.
   ///
   /// In en, this message translates to:
   /// **'<5 min'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_HELP_2_PAY_QAICASH;
+  String get cashierFiatWithdrawalTimeframeHelp2PayQaicash;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_INTERAC.
+  /// No description provided for @cashierFiatWithdrawalTimeframeInterac.
   ///
   /// In en, this message translates to:
   /// **'Up to 2 days'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_INTERAC;
+  String get cashierFiatWithdrawalTimeframeInterac;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_JETON_COREFY.
+  /// No description provided for @cashierFiatWithdrawalTimeframeJetonCorefy.
   ///
   /// In en, this message translates to:
-  /// **'1-2 business days'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_JETON_COREFY;
+  /// **'1_2 business days'**
+  String get cashierFiatWithdrawalTimeframeJetonCorefy;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_LOCAL_BANK_TRANSFER_QAICASH.
+  /// No description provided for @cashierFiatWithdrawalTimeframeLocalBankTransferQaicash.
   ///
   /// In en, this message translates to:
   /// **'<5 min'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_LOCAL_BANK_TRANSFER_QAICASH;
+  String get cashierFiatWithdrawalTimeframeLocalBankTransferQaicash;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_MUCHBETTER.
+  /// No description provided for @cashierFiatWithdrawalTimeframeMuchbetter.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_MUCHBETTER;
+  String get cashierFiatWithdrawalTimeframeMuchbetter;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_NETELLER.
+  /// No description provided for @cashierFiatWithdrawalTimeframeNeteller.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_NETELLER;
+  String get cashierFiatWithdrawalTimeframeNeteller;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_PAYSAFECARD.
+  /// No description provided for @cashierFiatWithdrawalTimeframePaysafecard.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_PAYSAFECARD;
+  String get cashierFiatWithdrawalTimeframePaysafecard;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_SKRILL.
+  /// No description provided for @cashierFiatWithdrawalTimeframeSkrill.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_SKRILL;
+  String get cashierFiatWithdrawalTimeframeSkrill;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_SKRILLQCO.
+  /// No description provided for @cashierFiatWithdrawalTimeframeSkrillqco.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_SKRILLQCO;
+  String get cashierFiatWithdrawalTimeframeSkrillqco;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_SKRILLQCO_RAPIDTRANSFER.
+  /// No description provided for @cashierFiatWithdrawalTimeframeSkrillqcoRapidtransfer.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_SKRILLQCO_RAPIDTRANSFER;
+  String get cashierFiatWithdrawalTimeframeSkrillqcoRapidtransfer;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_SOFORT.
+  /// No description provided for @cashierFiatWithdrawalTimeframeSofort.
   ///
   /// In en, this message translates to:
   /// **'Instant '**
-  String get cashier_fiat_withdrawal_TIMEFRAME_SOFORT;
+  String get cashierFiatWithdrawalTimeframeSofort;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_STICPAY.
+  /// No description provided for @cashierFiatWithdrawalTimeframeSticpay.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_STICPAY;
+  String get cashierFiatWithdrawalTimeframeSticpay;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_TRUSTLY.
+  /// No description provided for @cashierFiatWithdrawalTimeframeTrustly.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_TRUSTLY;
+  String get cashierFiatWithdrawalTimeframeTrustly;
 
-  /// No description provided for @cashier_fiat_withdrawal_TIMEFRAME_ZIMPLER.
+  /// No description provided for @cashierFiatWithdrawalTimeframeZimpler.
   ///
   /// In en, this message translates to:
   /// **'Instant'**
-  String get cashier_fiat_withdrawal_TIMEFRAME_ZIMPLER;
+  String get cashierFiatWithdrawalTimeframeZimpler;
 
-  /// No description provided for @cashier_fiat_withdrawal_total.
+  /// No description provided for @cashierFiatWithdrawalTotal.
   ///
   /// In en, this message translates to:
-  /// **'Will be charged:'**
-  String get cashier_fiat_withdrawal_total;
+  /// **'Will be charged'**
+  String get cashierFiatWithdrawalTotal;
 
-  /// No description provided for @cashier_fiat_withdrawal_total_ADD.
+  /// No description provided for @cashierFiatWithdrawalTotalAdd.
   ///
   /// In en, this message translates to:
-  /// **'Will be charged:'**
-  String get cashier_fiat_withdrawal_total_ADD;
+  /// **'Will be charged'**
+  String get cashierFiatWithdrawalTotalAdd;
 
-  /// No description provided for @cashier_fiat_withdrawal_total_DEDUCT.
+  /// No description provided for @cashierFiatWithdrawalTotalDeduct.
   ///
   /// In en, this message translates to:
-  /// **'Will be charged:'**
-  String get cashier_fiat_withdrawal_total_DEDUCT;
+  /// **'Will be charged'**
+  String get cashierFiatWithdrawalTotalDeduct;
 
-  /// No description provided for @cashier_fiat_withdrawal_transaction_id.
+  /// No description provided for @cashierFiatWithdrawalTransactionId.
   ///
   /// In en, this message translates to:
-  /// **'Transaction id: '**
-  String get cashier_fiat_withdrawal_transaction_id;
+  /// **'Transaction id '**
+  String get cashierFiatWithdrawalTransactionId;
 
-  /// No description provided for @cashier_fiat_withdrawal_TRUSTLY.
+  /// No description provided for @cashierFiatWithdrawalTrustly.
   ///
   /// In en, this message translates to:
   /// **'Trustly'**
-  String get cashier_fiat_withdrawal_TRUSTLY;
+  String get cashierFiatWithdrawalTrustly;
 
-  /// No description provided for @cashier_fiat_withdrawal_TRUSTLY_form_description.
+  /// No description provided for @cashierFiatWithdrawalTrustlyFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_TRUSTLY_form_description;
+  String get cashierFiatWithdrawalTrustlyFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_TRUSTLY_iframe_description.
+  /// No description provided for @cashierFiatWithdrawalTrustlyIframeDescription.
   ///
   /// In en, this message translates to:
   /// **'     '**
-  String get cashier_fiat_withdrawal_TRUSTLY_iframe_description;
+  String get cashierFiatWithdrawalTrustlyIframeDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_TRUSTLY_message.
+  /// No description provided for @cashierFiatWithdrawalTrustlyMessage.
   ///
   /// In en, this message translates to:
   /// **'     '**
-  String get cashier_fiat_withdrawal_TRUSTLY_message;
+  String get cashierFiatWithdrawalTrustlyMessage;
 
-  /// No description provided for @cashier_fiat_withdrawal_try_again.
+  /// No description provided for @cashierFiatWithdrawalTryAgain.
   ///
   /// In en, this message translates to:
   /// **'Try again'**
-  String get cashier_fiat_withdrawal_try_again;
+  String get cashierFiatWithdrawalTryAgain;
 
-  /// No description provided for @cashier_fiat_withdrawal_username.
+  /// No description provided for @cashierFiatWithdrawalUsername.
   ///
   /// In en, this message translates to:
   /// **'Username'**
-  String get cashier_fiat_withdrawal_username;
+  String get cashierFiatWithdrawalUsername;
 
-  /// No description provided for @cashier_fiat_withdrawal_WEBREDIRECT_STICPAY.
+  /// No description provided for @cashierFiatWithdrawalWebredirectSticpay.
   ///
   /// In en, this message translates to:
   /// **'Sticpay'**
-  String get cashier_fiat_withdrawal_WEBREDIRECT_STICPAY;
+  String get cashierFiatWithdrawalWebredirectSticpay;
 
-  /// No description provided for @cashier_fiat_withdrawal_ZIMPLER.
+  /// No description provided for @cashierFiatWithdrawalZimpler.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_fiat_withdrawal_ZIMPLER;
+  String get cashierFiatWithdrawalZimpler;
 
-  /// No description provided for @cashier_fiat_withdrawal_ZIMPLER_form_description.
+  /// No description provided for @cashierFiatWithdrawalZimplerFormDescription.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_ZIMPLER_form_description;
+  String get cashierFiatWithdrawalZimplerFormDescription;
 
-  /// No description provided for @cashier_fiat_withdrawal_ZIMPLER_message.
+  /// No description provided for @cashierFiatWithdrawalZimplerMessage.
   ///
   /// In en, this message translates to:
   /// **' '**
-  String get cashier_fiat_withdrawal_ZIMPLER_message;
+  String get cashierFiatWithdrawalZimplerMessage;
 
-  /// No description provided for @cashier_filer_by_date.
+  /// No description provided for @cashierFilerByDate.
   ///
   /// In en, this message translates to:
   /// **'Filter by date'**
-  String get cashier_filer_by_date;
+  String get cashierFilerByDate;
 
-  /// No description provided for @cashier_filter_by_date.
+  /// No description provided for @cashierFilterByDate.
   ///
   /// In en, this message translates to:
   /// **'Filter by date'**
-  String get cashier_filter_by_date;
+  String get cashierFilterByDate;
 
-  /// No description provided for @cashier_finances.
+  /// No description provided for @cashierFinances.
   ///
   /// In en, this message translates to:
   /// **'Finances'**
-  String get cashier_finances;
+  String get cashierFinances;
 
-  /// No description provided for @cashier_firstName.
+  /// No description provided for @cashierFirstname.
   ///
   /// In en, this message translates to:
   /// **'First name'**
-  String get cashier_firstName;
+  String get cashierFirstname;
 
-  /// No description provided for @cashier_forfeit.
+  /// No description provided for @cashierForfeit.
   ///
   /// In en, this message translates to:
   /// **'Forfeit'**
-  String get cashier_forfeit;
+  String get cashierForfeit;
 
-  /// No description provided for @cashier_from_date.
+  /// No description provided for @cashierFromDate.
   ///
   /// In en, this message translates to:
   /// **'From'**
-  String get cashier_from_date;
+  String get cashierFromDate;
 
-  /// No description provided for @cashier_funds_available.
+  /// No description provided for @cashierFundsAvailable.
   ///
   /// In en, this message translates to:
   /// **'{amount} {currency} Available'**
-  String cashier_funds_available(Object amount, Object currency);
+  String cashierFundsAvailable(Object amount, Object currency);
 
-  /// No description provided for @cashier_get_bitcoins.
+  /// No description provided for @cashierGetBitcoins.
   ///
   /// In en, this message translates to:
   /// **'Buy bitcoins'**
-  String get cashier_get_bitcoins;
+  String get cashierGetBitcoins;
 
-  /// No description provided for @cashier_get_bitcoins_fee.
+  /// No description provided for @cashierGetBitcoinsFee.
   ///
   /// In en, this message translates to:
-  /// **'Fee: {value} (included)'**
-  String cashier_get_bitcoins_fee(Object value);
+  /// **'Fee {value} _included_'**
+  String cashierGetBitcoinsFee(Object value);
 
-  /// No description provided for @cashier_get_bitcoins_total.
+  /// No description provided for @cashierGetBitcoinsTotal.
   ///
   /// In en, this message translates to:
-  /// **'Total: '**
-  String get cashier_get_bitcoins_total;
+  /// **'Total '**
+  String get cashierGetBitcoinsTotal;
 
-  /// No description provided for @cashier_gift_card_voucher.
+  /// No description provided for @cashierGiftCardVoucher.
   ///
   /// In en, this message translates to:
   /// **'Gift card voucher'**
-  String get cashier_gift_card_voucher;
+  String get cashierGiftCardVoucher;
 
-  /// No description provided for @cashier_global_methods.
+  /// No description provided for @cashierGlobalMethods.
   ///
   /// In en, this message translates to:
   /// **'Global methods'**
-  String get cashier_global_methods;
+  String get cashierGlobalMethods;
 
-  /// No description provided for @cashier_go_back.
+  /// No description provided for @cashierGoBack.
   ///
   /// In en, this message translates to:
   /// **'Go back'**
-  String get cashier_go_back;
+  String get cashierGoBack;
 
-  /// No description provided for @cashier_help_centre.
+  /// No description provided for @cashierHelpCentre.
   ///
   /// In en, this message translates to:
   /// **'Help Centre'**
-  String get cashier_help_centre;
+  String get cashierHelpCentre;
 
-  /// No description provided for @cashier_hide_deposit_history.
+  /// No description provided for @cashierHideDepositHistory.
   ///
   /// In en, this message translates to:
   /// **'Hide deposit history'**
-  String get cashier_hide_deposit_history;
+  String get cashierHideDepositHistory;
 
-  /// No description provided for @cashier_hide_other_payment_options.
+  /// No description provided for @cashierHideOtherPaymentOptions.
   ///
   /// In en, this message translates to:
   /// **'Hide other payment options'**
-  String get cashier_hide_other_payment_options;
+  String get cashierHideOtherPaymentOptions;
 
-  /// No description provided for @cashier_hide_withdraw_history.
+  /// No description provided for @cashierHideWithdrawHistory.
   ///
   /// In en, this message translates to:
   /// **'Hide withdrawal history'**
-  String get cashier_hide_withdraw_history;
+  String get cashierHideWithdrawHistory;
 
-  /// No description provided for @cashier_HKD.
+  /// No description provided for @cashierHkd.
   ///
   /// In en, this message translates to:
   /// **'Hong Kong Dollar'**
-  String get cashier_HKD;
+  String get cashierHkd;
 
-  /// No description provided for @cashier_if_you_dont_have_btc.
+  /// No description provided for @cashierIfYouDontHaveBtc.
   ///
   /// In en, this message translates to:
   /// **'You can purchase Bitcoins by clicking this link'**
-  String get cashier_if_you_dont_have_btc;
+  String get cashierIfYouDontHaveBtc;
 
-  /// No description provided for @cashier_in_order_to_make_a_deposit.
+  /// No description provided for @cashierInOrderToMakeADeposit.
   ///
   /// In en, this message translates to:
-  /// **'In order to make a deposit, you need to send bitcoins to our address shown in the cashier menu or scan the deposit QR code. Please note that you cannot use the same deposit address twice.'**
-  String get cashier_in_order_to_make_a_deposit;
+  /// **'In order to make a deposit, you need to send bitcoins to our address shown in the cashier menu or scan the deposit QR code Please note that you cannot use the same deposit address twice'**
+  String get cashierInOrderToMakeADeposit;
 
-  /// No description provided for @cashier_initialize_account_web_resource.
+  /// No description provided for @cashierInitializeAccountWebResource.
   ///
   /// In en, this message translates to:
-  /// **'Initializing account web-resource'**
-  String get cashier_initialize_account_web_resource;
+  /// **'Initializing account web_resource'**
+  String get cashierInitializeAccountWebResource;
 
-  /// No description provided for @cashier_INR.
+  /// No description provided for @cashierInr.
   ///
   /// In en, this message translates to:
   /// **'Indian Rupee'**
-  String get cashier_INR;
+  String get cashierInr;
 
-  /// No description provided for @cashier_instant_bank_transfer_success.
+  /// No description provided for @cashierInstantBankTransferSuccess.
   ///
   /// In en, this message translates to:
   /// **'Success! Click on Instant Bank Transfer to complete the transaction'**
-  String get cashier_instant_bank_transfer_success;
+  String get cashierInstantBankTransferSuccess;
 
-  /// No description provided for @cashier_instructions.
+  /// No description provided for @cashierInstructions.
   ///
   /// In en, this message translates to:
   /// **'Instructions'**
-  String get cashier_instructions;
+  String get cashierInstructions;
 
-  /// No description provided for @cashier_invalid_email_format.
+  /// No description provided for @cashierInvalidEmailFormat.
   ///
   /// In en, this message translates to:
   /// **'Invalid email format'**
-  String get cashier_invalid_email_format;
+  String get cashierInvalidEmailFormat;
 
-  /// No description provided for @cashier_invalid_form_data.
+  /// No description provided for @cashierInvalidFormData.
   ///
   /// In en, this message translates to:
   /// **'Invalid form data'**
-  String get cashier_invalid_form_data;
+  String get cashierInvalidFormData;
 
-  /// No description provided for @cashier_invoice_address.
+  /// No description provided for @cashierInvoiceAddress.
   ///
   /// In en, this message translates to:
   /// **'Invoice address'**
-  String get cashier_invoice_address;
+  String get cashierInvoiceAddress;
 
-  /// No description provided for @cashier_jeton_title.
+  /// No description provided for @cashierJetonTitle.
   ///
   /// In en, this message translates to:
   /// **'Instant Bank Transfer'**
-  String get cashier_jeton_title;
+  String get cashierJetonTitle;
 
-  /// No description provided for @cashier_JPY.
+  /// No description provided for @cashierJpy.
   ///
   /// In en, this message translates to:
   /// **'Japanese Yen'**
-  String get cashier_JPY;
+  String get cashierJpy;
 
-  /// No description provided for @cashier_JPY_deposit_jeton_description.
+  /// No description provided for @cashierJpyDepositJetonDescription.
   ///
   /// In en, this message translates to:
   /// **'Your funds are transferred instantly'**
-  String get cashier_JPY_deposit_jeton_description;
+  String get cashierJpyDepositJetonDescription;
 
-  /// No description provided for @cashier_JPY_deposit_jpysecure_description.
+  /// No description provided for @cashierJpyDepositJpysecureDescription.
   ///
   /// In en, this message translates to:
   /// **'JPY Bank Transfer'**
-  String get cashier_JPY_deposit_jpysecure_description;
+  String get cashierJpyDepositJpysecureDescription;
 
-  /// No description provided for @cashier_JPY_deposit_jpysecure_title.
+  /// No description provided for @cashierJpyDepositJpysecureTitle.
   ///
   /// In en, this message translates to:
   /// **'Barupay'**
-  String get cashier_JPY_deposit_jpysecure_title;
+  String get cashierJpyDepositJpysecureTitle;
 
-  /// No description provided for @cashier_JPY_deposit_pagava_description.
+  /// No description provided for @cashierJpyDepositPagavaDescription.
   ///
   /// In en, this message translates to:
   /// **'Easy online banking transfer‎'**
-  String get cashier_JPY_deposit_pagava_description;
+  String get cashierJpyDepositPagavaDescription;
 
-  /// No description provided for @cashier_JPY_withdraw_jeton_description.
+  /// No description provided for @cashierJpyWithdrawJetonDescription.
   ///
   /// In en, this message translates to:
-  /// **'Reflection time: Around 2 business days after the request is approved'**
-  String get cashier_JPY_withdraw_jeton_description;
+  /// **'Reflection time Around 2 business days after the request is approved'**
+  String get cashierJpyWithdrawJetonDescription;
 
-  /// No description provided for @cashier_JPY_withdraw_jpysecure_description.
+  /// No description provided for @cashierJpyWithdrawJpysecureDescription.
   ///
   /// In en, this message translates to:
   /// **'JPY Bank Transfer'**
-  String get cashier_JPY_withdraw_jpysecure_description;
+  String get cashierJpyWithdrawJpysecureDescription;
 
-  /// No description provided for @cashier_JPY_withdraw_jpysecure_title.
+  /// No description provided for @cashierJpyWithdrawJpysecureTitle.
   ///
   /// In en, this message translates to:
   /// **'Barupay'**
-  String get cashier_JPY_withdraw_jpysecure_title;
+  String get cashierJpyWithdrawJpysecureTitle;
 
-  /// No description provided for @cashier_JPY_withdraw_pagava_description.
+  /// No description provided for @cashierJpyWithdrawPagavaDescription.
   ///
   /// In en, this message translates to:
   /// **'Easy online banking transfer‎'**
-  String get cashier_JPY_withdraw_pagava_description;
+  String get cashierJpyWithdrawPagavaDescription;
 
-  /// No description provided for @cashier_kyc_banner_body_id_expired.
+  /// No description provided for @cashierKycBannerBodyIdExpired.
   ///
   /// In en, this message translates to:
-  /// **'Please verify your identity again using a valid document.'**
-  String get cashier_kyc_banner_body_id_expired;
+  /// **'Please verify your identity again using a valid document'**
+  String get cashierKycBannerBodyIdExpired;
 
-  /// No description provided for @cashier_kyc_banner_body_threshold_1.
+  /// No description provided for @cashierKycBannerBodyThreshold1.
   ///
   /// In en, this message translates to:
-  /// **'Verify your account for seamless withdrawals.'**
-  String get cashier_kyc_banner_body_threshold_1;
+  /// **'Verify your account for seamless withdrawals'**
+  String get cashierKycBannerBodyThreshold1;
 
-  /// No description provided for @cashier_kyc_banner_body_threshold_1_reminders.
+  /// No description provided for @cashierKycBannerBodyThreshold1Reminders.
   ///
   /// In en, this message translates to:
-  /// **'Lift your restrictions & claim rewards in a few easy steps.'**
-  String get cashier_kyc_banner_body_threshold_1_reminders;
+  /// **'Lift your restrictions & claim rewards in a few easy steps'**
+  String get cashierKycBannerBodyThreshold1Reminders;
 
-  /// No description provided for @cashier_kyc_banner_body_threshold_2.
+  /// No description provided for @cashierKycBannerBodyThreshold2.
   ///
   /// In en, this message translates to:
   /// **'Please complete your identity verification to lift your withdrawal restrictions!'**
-  String get cashier_kyc_banner_body_threshold_2;
+  String get cashierKycBannerBodyThreshold2;
 
-  /// No description provided for @cashier_kyc_banner_title.
+  /// No description provided for @cashierKycBannerTitle.
   ///
   /// In en, this message translates to:
   /// **'Verify your account'**
-  String get cashier_kyc_banner_title;
+  String get cashierKycBannerTitle;
 
-  /// No description provided for @cashier_kyc_banner_verify.
+  /// No description provided for @cashierKycBannerVerify.
   ///
   /// In en, this message translates to:
   /// **'Verify now'**
-  String get cashier_kyc_banner_verify;
+  String get cashierKycBannerVerify;
 
-  /// No description provided for @cashier_kyc_modal_body.
+  /// No description provided for @cashierKycModalBody.
   ///
   /// In en, this message translates to:
-  /// **'To be compliant and protect your account, please verify your identity.'**
-  String get cashier_kyc_modal_body;
+  /// **'To be compliant and protect your account, please verify your identity'**
+  String get cashierKycModalBody;
 
-  /// No description provided for @cashier_kyc_modal_get_started.
+  /// No description provided for @cashierKycModalGetStarted.
   ///
   /// In en, this message translates to:
   /// **'Get started'**
-  String get cashier_kyc_modal_get_started;
+  String get cashierKycModalGetStarted;
 
-  /// No description provided for @cashier_kyc_modal_title.
+  /// No description provided for @cashierKycModalTitle.
   ///
   /// In en, this message translates to:
   /// **'Identity verification'**
-  String get cashier_kyc_modal_title;
+  String get cashierKycModalTitle;
 
-  /// No description provided for @cashier_labels_kyc_required.
+  /// No description provided for @cashierLabelsKycRequired.
   ///
   /// In en, this message translates to:
   /// **'KYC Required'**
-  String get cashier_labels_kyc_required;
+  String get cashierLabelsKycRequired;
 
-  /// No description provided for @cashier_labels_verify_email.
+  /// No description provided for @cashierLabelsVerifyEmail.
   ///
   /// In en, this message translates to:
   /// **'Verify email'**
-  String get cashier_labels_verify_email;
+  String get cashierLabelsVerifyEmail;
 
-  /// No description provided for @cashier_labels_verify_phone_number.
+  /// No description provided for @cashierLabelsVerifyPhoneNumber.
   ///
   /// In en, this message translates to:
   /// **'Verify phone number'**
-  String get cashier_labels_verify_phone_number;
+  String get cashierLabelsVerifyPhoneNumber;
 
-  /// No description provided for @cashier_lastName.
+  /// No description provided for @cashierLastname.
   ///
   /// In en, this message translates to:
   /// **'Last name'**
-  String get cashier_lastName;
+  String get cashierLastname;
 
-  /// No description provided for @cashier_less_options.
+  /// No description provided for @cashierLessOptions.
   ///
   /// In en, this message translates to:
   /// **'Less options'**
-  String get cashier_less_options;
+  String get cashierLessOptions;
 
-  /// No description provided for @cashier_live_support.
+  /// No description provided for @cashierLiveSupport.
   ///
   /// In en, this message translates to:
   /// **'Live Support'**
-  String get cashier_live_support;
+  String get cashierLiveSupport;
 
-  /// No description provided for @cashier_load_more.
+  /// No description provided for @cashierLoadMore.
   ///
   /// In en, this message translates to:
   /// **'Load More'**
-  String get cashier_load_more;
+  String get cashierLoadMore;
 
-  /// No description provided for @cashier_LTC.
+  /// No description provided for @cashierLtc.
   ///
   /// In en, this message translates to:
   /// **'Litecoin'**
-  String get cashier_LTC;
+  String get cashierLtc;
 
-  /// No description provided for @cashier_MATIC.
+  /// No description provided for @cashierMatic.
   ///
   /// In en, this message translates to:
-  /// **'Polygon (Matic)'**
-  String get cashier_MATIC;
+  /// **'Polygon _Matic_'**
+  String get cashierMatic;
 
-  /// No description provided for @cashier_max_deposit.
+  /// No description provided for @cashierMaxDeposit.
   ///
   /// In en, this message translates to:
   /// **'Max Deposit'**
-  String get cashier_max_deposit;
+  String get cashierMaxDeposit;
 
-  /// No description provided for @cashier_max_withdraw.
+  /// No description provided for @cashierMaxWithdraw.
   ///
   /// In en, this message translates to:
   /// **'Max Withdraw'**
-  String get cashier_max_withdraw;
+  String get cashierMaxWithdraw;
 
-  /// No description provided for @cashier_maximum_deposit.
+  /// No description provided for @cashierMaximumDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Maximum deposit amount: <b>{amount} {currency}</b>'**
-  String cashier_maximum_deposit(Object amount, Object currency);
+  /// **'Maximum deposit amount <b>{amount} {currency}</b>'**
+  String cashierMaximumDeposit(Object amount, Object currency);
 
-  /// No description provided for @cashier_metamask.
+  /// No description provided for @cashierMetamask.
   ///
   /// In en, this message translates to:
   /// **'MetaMask'**
-  String get cashier_metamask;
+  String get cashierMetamask;
 
-  /// No description provided for @cashier_metamask_desc.
+  /// No description provided for @cashierMetamaskDesc.
   ///
   /// In en, this message translates to:
-  /// **'ERC-20 Tokens'**
-  String get cashier_metamask_desc;
+  /// **'ERC_20 Tokens'**
+  String get cashierMetamaskDesc;
 
-  /// No description provided for @cashier_metamask_wallet.
+  /// No description provided for @cashierMetamaskWallet.
   ///
   /// In en, this message translates to:
   /// **'Metamask wallet'**
-  String get cashier_metamask_wallet;
+  String get cashierMetamaskWallet;
 
-  /// No description provided for @cashier_metamask_INSUFFICIENT_FUNDS.
+  /// No description provided for @cashierMetamaskInsufficientFunds.
   ///
   /// In en, this message translates to:
   /// **'Not enough funds in the balance'**
-  String get cashier_metamask_INSUFFICIENT_FUNDS;
+  String get cashierMetamaskInsufficientFunds;
 
-  /// No description provided for @cashier_metric_prefix_BTC.
+  /// No description provided for @cashierMetricPrefixBtc.
   ///
   /// In en, this message translates to:
   /// **'Bitcoin metric prefix'**
-  String get cashier_metric_prefix_BTC;
+  String get cashierMetricPrefixBtc;
 
-  /// No description provided for @cashier_minimum_conversion_amount.
+  /// No description provided for @cashierMinimumConversionAmount.
   ///
   /// In en, this message translates to:
   /// **'Minimum conversion is {amount} {currency}'**
-  String cashier_minimum_conversion_amount(Object amount, Object currency);
+  String cashierMinimumConversionAmount(Object amount, Object currency);
 
-  /// No description provided for @cashier_minimum_deposit.
+  /// No description provided for @cashierMinimumDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit amount: <b>{amount} {currency}</b>'**
-  String cashier_minimum_deposit(Object amount, Object currency);
+  /// **'Minimum deposit amount <b>{amount} {currency}</b>'**
+  String cashierMinimumDeposit(Object amount, Object currency);
 
-  /// No description provided for @cashier_minimum_deposit_ada.
+  /// No description provided for @cashierMinimumDepositAda.
   ///
   /// In en, this message translates to:
   /// **'Minimum deposit is 5 ADA'**
-  String get cashier_minimum_deposit_ada;
+  String get cashierMinimumDepositAda;
 
-  /// No description provided for @cashier_minimum_deposit_amount.
+  /// No description provided for @cashierMinimumDepositAmount.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit amount:'**
-  String get cashier_minimum_deposit_amount;
+  /// **'Minimum deposit amount'**
+  String get cashierMinimumDepositAmount;
 
-  /// No description provided for @cashier_minimum_deposit_eth.
+  /// No description provided for @cashierMinimumDepositEth.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit is ETH 0.005'**
-  String get cashier_minimum_deposit_eth;
+  /// **'Minimum deposit is ETH 0005'**
+  String get cashierMinimumDepositEth;
 
-  /// No description provided for @cashier_minimum_deposit_ltc.
+  /// No description provided for @cashierMinimumDepositLtc.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit is LTC 0.1'**
-  String get cashier_minimum_deposit_ltc;
+  /// **'Minimum deposit is LTC 01'**
+  String get cashierMinimumDepositLtc;
 
-  /// No description provided for @cashier_minimum_deposit_mbtc.
+  /// No description provided for @cashierMinimumDepositMbtc.
   ///
   /// In en, this message translates to:
   /// **'Minimum deposit is 1 mBTC'**
-  String get cashier_minimum_deposit_mbtc;
+  String get cashierMinimumDepositMbtc;
 
-  /// No description provided for @cashier_minimum_deposit_soc.
+  /// No description provided for @cashierMinimumDepositSoc.
   ///
   /// In en, this message translates to:
   /// **'The minimum SOC deposit amount is 100'**
-  String get cashier_minimum_deposit_soc;
+  String get cashierMinimumDepositSoc;
 
-  /// No description provided for @cashier_minimum_deposit_text_ada.
+  /// No description provided for @cashierMinimumDepositTextAda.
   ///
   /// In en, this message translates to:
   /// **'5 ADA'**
-  String get cashier_minimum_deposit_text_ada;
+  String get cashierMinimumDepositTextAda;
 
-  /// No description provided for @cashier_minimum_deposit_text_btc.
+  /// No description provided for @cashierMinimumDepositTextBtc.
   ///
   /// In en, this message translates to:
-  /// **'0.00025 BTC = 0.25 mBTC = 250 μBTC. Please ensure before making any transactions that the address entered matches the address displayed here. '**
-  String get cashier_minimum_deposit_text_btc;
+  /// **'000025 BTC = 025 mBTC = 250 μBTC Please ensure before making any transactions that the address entered matches the address displayed here '**
+  String get cashierMinimumDepositTextBtc;
 
-  /// No description provided for @cashier_minimum_deposit_text_cad.
+  /// No description provided for @cashierMinimumDepositTextCad.
   ///
   /// In en, this message translates to:
-  /// **'10 CAD. Please ensure before making any transactions that the address entered matches the address displayed here. '**
-  String get cashier_minimum_deposit_text_cad;
+  /// **'10 CAD Please ensure before making any transactions that the address entered matches the address displayed here '**
+  String get cashierMinimumDepositTextCad;
 
-  /// No description provided for @cashier_minimum_deposit_text_doge.
+  /// No description provided for @cashierMinimumDepositTextDoge.
   ///
   /// In en, this message translates to:
   /// **'50 DOGE'**
-  String get cashier_minimum_deposit_text_doge;
+  String get cashierMinimumDepositTextDoge;
 
-  /// No description provided for @cashier_minimum_deposit_text_eth.
+  /// No description provided for @cashierMinimumDepositTextEth.
   ///
   /// In en, this message translates to:
-  /// **'0.005 ETH'**
-  String get cashier_minimum_deposit_text_eth;
+  /// **'0005 ETH'**
+  String get cashierMinimumDepositTextEth;
 
-  /// No description provided for @cashier_minimum_deposit_text_eur.
+  /// No description provided for @cashierMinimumDepositTextEur.
   ///
   /// In en, this message translates to:
   /// **'10 EUR'**
-  String get cashier_minimum_deposit_text_eur;
+  String get cashierMinimumDepositTextEur;
 
-  /// No description provided for @cashier_minimum_deposit_text_jpy.
+  /// No description provided for @cashierMinimumDepositTextJpy.
   ///
   /// In en, this message translates to:
   /// **'  2500 JPY'**
-  String get cashier_minimum_deposit_text_jpy;
+  String get cashierMinimumDepositTextJpy;
 
-  /// No description provided for @cashier_minimum_deposit_text_ltc.
+  /// No description provided for @cashierMinimumDepositTextLtc.
   ///
   /// In en, this message translates to:
-  /// **'0.05 LTC. Please ensure before making any transactions that the address entered matches the address displayed here. '**
-  String get cashier_minimum_deposit_text_ltc;
+  /// **'005 LTC Please ensure before making any transactions that the address entered matches the address displayed here '**
+  String get cashierMinimumDepositTextLtc;
 
-  /// No description provided for @cashier_minimum_deposit_text_mbtc.
+  /// No description provided for @cashierMinimumDepositTextMbtc.
   ///
   /// In en, this message translates to:
-  /// **'0.5 mBTC = 500 μBTC'**
-  String get cashier_minimum_deposit_text_mbtc;
+  /// **'05 mBTC = 500 μBTC'**
+  String get cashierMinimumDepositTextMbtc;
 
-  /// No description provided for @cashier_minimum_deposit_text_soc.
+  /// No description provided for @cashierMinimumDepositTextSoc.
   ///
   /// In en, this message translates to:
   /// **'100 SOC'**
-  String get cashier_minimum_deposit_text_soc;
+  String get cashierMinimumDepositTextSoc;
 
-  /// No description provided for @cashier_minimum_deposit_text_thb.
+  /// No description provided for @cashierMinimumDepositTextThb.
   ///
   /// In en, this message translates to:
   /// **'200 THB'**
-  String get cashier_minimum_deposit_text_thb;
+  String get cashierMinimumDepositTextThb;
 
-  /// No description provided for @cashier_minimum_deposit_text_trx.
+  /// No description provided for @cashierMinimumDepositTextTrx.
   ///
   /// In en, this message translates to:
-  /// **'100 TRX. Please ensure before making any transactions that the address entered matches the address displayed here. '**
-  String get cashier_minimum_deposit_text_trx;
+  /// **'100 TRX Please ensure before making any transactions that the address entered matches the address displayed here '**
+  String get cashierMinimumDepositTextTrx;
 
-  /// No description provided for @cashier_minimum_deposit_text_ubtc.
+  /// No description provided for @cashierMinimumDepositTextUbtc.
   ///
   /// In en, this message translates to:
-  /// **'500 μBTC = 0.5 mBTC'**
-  String get cashier_minimum_deposit_text_ubtc;
+  /// **'500 μBTC = 05 mBTC'**
+  String get cashierMinimumDepositTextUbtc;
 
-  /// No description provided for @cashier_minimum_deposit_text_usdt.
+  /// No description provided for @cashierMinimumDepositTextUsdt.
   ///
   /// In en, this message translates to:
   /// **'Minimum deposit is 10 USDT'**
-  String get cashier_minimum_deposit_text_usdt;
+  String get cashierMinimumDepositTextUsdt;
 
-  /// No description provided for @cashier_minimum_deposit_text_xrp.
+  /// No description provided for @cashierMinimumDepositTextXrp.
   ///
   /// In en, this message translates to:
-  /// **'10 XRP. Does your wallet require a destination tag? Get the account address and destination tag from https://xrpaddress.info.'**
-  String get cashier_minimum_deposit_text_xrp;
+  /// **'10 XRP Does your wallet require a destination tag? Get the account address and destination tag from https//xrpaddressinfo'**
+  String get cashierMinimumDepositTextXrp;
 
-  /// No description provided for @cashier_minimum_deposit_title.
+  /// No description provided for @cashierMinimumDepositTitle.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit:'**
-  String get cashier_minimum_deposit_title;
+  /// **'Minimum deposit'**
+  String get cashierMinimumDepositTitle;
 
-  /// No description provided for @cashier_minimum_deposit_trx.
+  /// No description provided for @cashierMinimumDepositTrx.
   ///
   /// In en, this message translates to:
   /// **'Minimum deposit is 100 TRX'**
-  String get cashier_minimum_deposit_trx;
+  String get cashierMinimumDepositTrx;
 
-  /// No description provided for @cashier_minimum_deposit_ubtc.
+  /// No description provided for @cashierMinimumDepositUbtc.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit is 1,000 μBTC.'**
-  String get cashier_minimum_deposit_ubtc;
+  /// **'Minimum deposit is 1,000 μBTC'**
+  String get cashierMinimumDepositUbtc;
 
-  /// No description provided for @cashier_minimum_deposit_usdt.
+  /// No description provided for @cashierMinimumDepositUsdt.
   ///
   /// In en, this message translates to:
   /// **'Minimum deposit is 10 USDT'**
-  String get cashier_minimum_deposit_usdt;
+  String get cashierMinimumDepositUsdt;
 
-  /// No description provided for @cashier_minimum_deposit_xrp.
+  /// No description provided for @cashierMinimumDepositXrp.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit is 10 XRP. Does your wallet require a destination tag? Get the account address and destination tag from https://xrpaddress.info.'**
-  String get cashier_minimum_deposit_xrp;
+  /// **'Minimum deposit is 10 XRP Does your wallet require a destination tag? Get the account address and destination tag from https//xrpaddressinfo'**
+  String get cashierMinimumDepositXrp;
 
-  /// No description provided for @cashier_minimum_is.
+  /// No description provided for @cashierMinimumIs.
   ///
   /// In en, this message translates to:
   /// **'Minimum is'**
-  String get cashier_minimum_is;
+  String get cashierMinimumIs;
 
-  /// No description provided for @cashier_minimum_withdraw_amount.
+  /// No description provided for @cashierMinimumWithdrawAmount.
   ///
   /// In en, this message translates to:
   /// **'Minimum withdraw amount'**
-  String get cashier_minimum_withdraw_amount;
+  String get cashierMinimumWithdrawAmount;
 
-  /// No description provided for @cashier_minimum_withdrawal.
+  /// No description provided for @cashierMinimumWithdrawal.
   ///
   /// In en, this message translates to:
-  /// **'Minimum withdrawal amount: <b>{amount} {currency}</b>'**
-  String cashier_minimum_withdrawal(Object amount, Object currency);
+  /// **'Minimum withdrawal amount <b>{amount} {currency}</b>'**
+  String cashierMinimumWithdrawal(Object amount, Object currency);
 
-  /// No description provided for @cashier_moonpay_deposits_are_disabled.
+  /// No description provided for @cashierMoonpayDepositsAreDisabled.
   ///
   /// In en, this message translates to:
-  /// **'Purchasing cryptocurrency via MoonPay feature is currently disabled.'**
-  String get cashier_moonpay_deposits_are_disabled;
+  /// **'Purchasing cryptocurrency via MoonPay feature is currently disabled'**
+  String get cashierMoonpayDepositsAreDisabled;
 
-  /// No description provided for @cashier_moonpay_purchase_description.
+  /// No description provided for @cashierMoonpayPurchaseDescription.
   ///
   /// In en, this message translates to:
   /// **'Do you want to use your card for buying Bitcoin, Ethereum, etc?'**
-  String get cashier_moonpay_purchase_description;
+  String get cashierMoonpayPurchaseDescription;
 
-  /// No description provided for @cashier_moonpay_purchase_title.
+  /// No description provided for @cashierMoonpayPurchaseTitle.
   ///
   /// In en, this message translates to:
   /// **'Purchase crypto with MoonPay'**
-  String get cashier_moonpay_purchase_title;
+  String get cashierMoonpayPurchaseTitle;
 
-  /// No description provided for @cashier_moonpay_title.
+  /// No description provided for @cashierMoonpayTitle.
   ///
   /// In en, this message translates to:
   /// **'MoonPay'**
-  String get cashier_moonpay_title;
+  String get cashierMoonpayTitle;
 
-  /// No description provided for @cashier_more_about_depositing_altcoins.
+  /// No description provided for @cashierMoreAboutDepositingAltcoins.
   ///
   /// In en, this message translates to:
   /// **'More about depositing altcoins'**
-  String get cashier_more_about_depositing_altcoins;
+  String get cashierMoreAboutDepositingAltcoins;
 
-  /// No description provided for @cashier_more_about_depositing_bitcoins.
+  /// No description provided for @cashierMoreAboutDepositingBitcoins.
   ///
   /// In en, this message translates to:
   /// **'More about depositing bitcoins'**
-  String get cashier_more_about_depositing_bitcoins;
+  String get cashierMoreAboutDepositingBitcoins;
 
-  /// No description provided for @cashier_more_deposit_options.
+  /// No description provided for @cashierMoreDepositOptions.
   ///
   /// In en, this message translates to:
   /// **'More deposit options'**
-  String get cashier_more_deposit_options;
+  String get cashierMoreDepositOptions;
 
-  /// No description provided for @cashier_more_options.
+  /// No description provided for @cashierMoreOptions.
   ///
   /// In en, this message translates to:
   /// **'More options'**
-  String get cashier_more_options;
+  String get cashierMoreOptions;
 
-  /// No description provided for @cashier_more_withdraw_options.
+  /// No description provided for @cashierMoreWithdrawOptions.
   ///
   /// In en, this message translates to:
   /// **'More withdraw options'**
-  String get cashier_more_withdraw_options;
+  String get cashierMoreWithdrawOptions;
 
-  /// No description provided for @cashier_my_balance.
+  /// No description provided for @cashierMyBalance.
   ///
   /// In en, this message translates to:
   /// **'My balance'**
-  String get cashier_my_balance;
+  String get cashierMyBalance;
 
-  /// No description provided for @cashier_my_balance_in.
+  /// No description provided for @cashierMyBalanceIn.
   ///
   /// In en, this message translates to:
   /// **'My balance in'**
-  String get cashier_my_balance_in;
+  String get cashierMyBalanceIn;
 
-  /// No description provided for @cashier_my_rewards.
+  /// No description provided for @cashierMyRewards.
   ///
   /// In en, this message translates to:
   /// **'My Rewards'**
-  String get cashier_my_rewards;
+  String get cashierMyRewards;
 
-  /// No description provided for @cashier_network.
+  /// No description provided for @cashierNetwork.
   ///
   /// In en, this message translates to:
   /// **'Network'**
-  String get cashier_network;
+  String get cashierNetwork;
 
-  /// No description provided for @cashier_network_binance_smart_chain.
+  /// No description provided for @cashierNetworkBinanceSmartChain.
   ///
   /// In en, this message translates to:
-  /// **'Binance Smart Chain (BSC)'**
-  String get cashier_network_binance_smart_chain;
+  /// **'Binance Smart Chain _BSC_'**
+  String get cashierNetworkBinanceSmartChain;
 
-  /// No description provided for @cashier_network_btc_lightning.
+  /// No description provided for @cashierNetworkBtcLightning.
   ///
   /// In en, this message translates to:
   /// **'Lightning Network'**
-  String get cashier_network_btc_lightning;
+  String get cashierNetworkBtcLightning;
 
-  /// No description provided for @cashier_network_btc_mainnet.
+  /// No description provided for @cashierNetworkBtcMainnet.
   ///
   /// In en, this message translates to:
   /// **'Bitcoin Network'**
-  String get cashier_network_btc_mainnet;
+  String get cashierNetworkBtcMainnet;
 
-  /// No description provided for @cashier_network_erc20.
+  /// No description provided for @cashierNetworkErc20.
   ///
   /// In en, this message translates to:
-  /// **'Ethereum (ERC20)'**
-  String get cashier_network_erc20;
+  /// **'Ethereum _ERC20_'**
+  String get cashierNetworkErc20;
 
-  /// No description provided for @cashier_network_polygon.
+  /// No description provided for @cashierNetworkPolygon.
   ///
   /// In en, this message translates to:
   /// **'Polygon'**
-  String get cashier_network_polygon;
+  String get cashierNetworkPolygon;
 
-  /// No description provided for @cashier_network_ton.
+  /// No description provided for @cashierNetworkTon.
   ///
   /// In en, this message translates to:
   /// **'The Open Network'**
-  String get cashier_network_ton;
+  String get cashierNetworkTon;
 
-  /// No description provided for @cashier_network_trc20.
+  /// No description provided for @cashierNetworkTrc20.
   ///
   /// In en, this message translates to:
-  /// **'Tron (TRC20)'**
-  String get cashier_network_trc20;
+  /// **'Tron _TRC20_'**
+  String get cashierNetworkTrc20;
 
-  /// No description provided for @cashier_new_method.
+  /// No description provided for @cashierNewMethod.
   ///
   /// In en, this message translates to:
   /// **'New method'**
-  String get cashier_new_method;
+  String get cashierNewMethod;
 
-  /// No description provided for @cashier_next.
+  /// No description provided for @cashierNext.
   ///
   /// In en, this message translates to:
   /// **'Next'**
-  String get cashier_next;
+  String get cashierNext;
 
-  /// No description provided for @cashier_no_deposits.
+  /// No description provided for @cashierNoDeposits.
   ///
   /// In en, this message translates to:
   /// **'You have no deposits'**
-  String get cashier_no_deposits;
+  String get cashierNoDeposits;
 
-  /// No description provided for @cashier_no_money_for_withdrawal.
+  /// No description provided for @cashierNoMoneyForWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'You don\'t have any money for withdrawal'**
-  String get cashier_no_money_for_withdrawal;
+  String get cashierNoMoneyForWithdrawal;
 
-  /// No description provided for @cashier_no_special_characters.
+  /// No description provided for @cashierNoSpecialCharacters.
   ///
   /// In en, this message translates to:
   /// **'No special characters'**
-  String get cashier_no_special_characters;
+  String get cashierNoSpecialCharacters;
 
-  /// No description provided for @cashier_no_transactions_found.
+  /// No description provided for @cashierNoTransactionsFound.
   ///
   /// In en, this message translates to:
   /// **'No transactions found for this time period'**
-  String get cashier_no_transactions_found;
+  String get cashierNoTransactionsFound;
 
-  /// No description provided for @cashier_no_withdraws.
+  /// No description provided for @cashierNoWithdraws.
   ///
   /// In en, this message translates to:
   /// **'You do not have any withdrawals'**
-  String get cashier_no_withdraws;
+  String get cashierNoWithdraws;
 
-  /// No description provided for @cashier_not_enough_crypto_to_convert.
+  /// No description provided for @cashierNotEnoughCryptoToConvert.
   ///
   /// In en, this message translates to:
-  /// **'* You don\'t have enough cryptocurrency to convert it to {currency}, please deposit cryptocurrency before you convert it to {currency}.'**
-  String cashier_not_enough_crypto_to_convert(Object currency);
+  /// **'* You don\'t have enough cryptocurrency to convert it to {currency}, please deposit cryptocurrency before you convert it to {currency}'**
+  String cashierNotEnoughCryptoToConvert(Object currency);
 
   /// Are you looking for a different currency?
   ///
   /// In en, this message translates to:
   /// **'Looking for a different currency?'**
-  String get cashier_onboarding_balance_new_users;
+  String get cashierOnboardingBalanceNewUsers;
 
-  /// No description provided for @cashier_onramper_purchase_description.
+  /// No description provided for @cashierOnramperPurchaseDescription.
   ///
   /// In en, this message translates to:
   /// **'Do you want to use your card for buying Bitcoin, Ethereum, etc?'**
-  String get cashier_onramper_purchase_description;
+  String get cashierOnramperPurchaseDescription;
 
-  /// No description provided for @cashier_onramper_title.
+  /// No description provided for @cashierOnramperTitle.
   ///
   /// In en, this message translates to:
   /// **'Onramper'**
-  String get cashier_onramper_title;
+  String get cashierOnramperTitle;
 
-  /// No description provided for @cashier_or.
+  /// No description provided for @cashierOr.
   ///
   /// In en, this message translates to:
   /// **'or'**
-  String get cashier_or;
+  String get cashierOr;
 
-  /// No description provided for @cashier_other_wallet.
+  /// No description provided for @cashierOtherWallet.
   ///
   /// In en, this message translates to:
   /// **'Other wallet'**
-  String get cashier_other_wallet;
+  String get cashierOtherWallet;
 
-  /// No description provided for @cashier_past_month.
+  /// No description provided for @cashierPastMonth.
   ///
   /// In en, this message translates to:
   /// **'Past month'**
-  String get cashier_past_month;
+  String get cashierPastMonth;
 
-  /// No description provided for @cashier_past_week.
+  /// No description provided for @cashierPastWeek.
   ///
   /// In en, this message translates to:
   /// **'Past week'**
-  String get cashier_past_week;
+  String get cashierPastWeek;
 
-  /// No description provided for @cashier_paxful_purchase_description.
+  /// No description provided for @cashierPaxfulPurchaseDescription.
   ///
   /// In en, this message translates to:
   /// **'Buy BTC using any of your country\'s payment methods'**
-  String get cashier_paxful_purchase_description;
+  String get cashierPaxfulPurchaseDescription;
 
-  /// No description provided for @cashier_paxful_title.
+  /// No description provided for @cashierPaxfulTitle.
   ///
   /// In en, this message translates to:
   /// **'Paxful'**
-  String get cashier_paxful_title;
+  String get cashierPaxfulTitle;
 
-  /// No description provided for @cashier_pay_with_shapeshift.
+  /// No description provided for @cashierPayWithShapeshift.
   ///
   /// In en, this message translates to:
   /// **'Pay with ShapeShift'**
-  String get cashier_pay_with_shapeshift;
+  String get cashierPayWithShapeshift;
 
-  /// No description provided for @cashier_payment_method_bank_transfer.
+  /// No description provided for @cashierPaymentMethodBankTransfer.
   ///
   /// In en, this message translates to:
   /// **'Bank transfer'**
-  String get cashier_payment_method_bank_transfer;
+  String get cashierPaymentMethodBankTransfer;
 
-  /// No description provided for @cashier_payment_method_credit_card.
+  /// No description provided for @cashierPaymentMethodCreditCard.
   ///
   /// In en, this message translates to:
   /// **'Credit/Debit card'**
-  String get cashier_payment_method_credit_card;
+  String get cashierPaymentMethodCreditCard;
 
-  /// No description provided for @cashier_payment_amount.
+  /// No description provided for @cashierPaymentAmount.
   ///
   /// In en, this message translates to:
-  /// **'Amount:'**
-  String get cashier_payment_amount;
+  /// **'Amount'**
+  String get cashierPaymentAmount;
 
-  /// No description provided for @cashier_payment_amount_received.
+  /// No description provided for @cashierPaymentAmountReceived.
   ///
   /// In en, this message translates to:
-  /// **'Amount received:'**
-  String get cashier_payment_amount_received;
+  /// **'Amount received'**
+  String get cashierPaymentAmountReceived;
 
-  /// No description provided for @cashier_payment_amount_spent.
+  /// No description provided for @cashierPaymentAmountSpent.
   ///
   /// In en, this message translates to:
-  /// **'Amount spent:'**
-  String get cashier_payment_amount_spent;
+  /// **'Amount spent'**
+  String get cashierPaymentAmountSpent;
 
-  /// No description provided for @cashier_payment_buy_more_bitcoins.
+  /// No description provided for @cashierPaymentBuyMoreBitcoins.
   ///
   /// In en, this message translates to:
   /// **'Buy more bitcoins'**
-  String get cashier_payment_buy_more_bitcoins;
+  String get cashierPaymentBuyMoreBitcoins;
 
-  /// No description provided for @cashier_payment_company_address.
+  /// No description provided for @cashierPaymentCompanyAddress.
   ///
   /// In en, this message translates to:
-  /// **'135, Nouv MT, Kyle Buildings, Triq il-Mediterran, St. Julian’s STJ 1870, Malta'**
-  String get cashier_payment_company_address;
+  /// **'135, Nouv MT, Kyle Buildings, Triq il_Mediterran, St Julian’s STJ 1870, Malta'**
+  String get cashierPaymentCompanyAddress;
 
-  /// No description provided for @cashier_payment_company_name.
+  /// No description provided for @cashierPaymentCompanyName.
   ///
   /// In en, this message translates to:
-  /// **'Block Technology Ltd., Registration number: C81495, DPA Reference Number: 11961'**
-  String get cashier_payment_company_name;
+  /// **'Block Technology Ltd, Registration number C81495, DPA Reference Number 11961'**
+  String get cashierPaymentCompanyName;
 
-  /// No description provided for @cashier_payment_processing_fee.
+  /// No description provided for @cashierPaymentProcessingFee.
   ///
   /// In en, this message translates to:
-  /// **'Processing fee:'**
-  String get cashier_payment_processing_fee;
+  /// **'Processing fee'**
+  String get cashierPaymentProcessingFee;
 
-  /// No description provided for @cashier_payment_provider.
+  /// No description provided for @cashierPaymentProvider.
   ///
   /// In en, this message translates to:
   /// **'Provider'**
-  String get cashier_payment_provider;
+  String get cashierPaymentProvider;
 
-  /// No description provided for @cashier_payment_referral_code.
+  /// No description provided for @cashierPaymentReferralCode.
   ///
   /// In en, this message translates to:
-  /// **'Transaction ID:'**
-  String get cashier_payment_referral_code;
+  /// **'Transaction ID'**
+  String get cashierPaymentReferralCode;
 
-  /// No description provided for @cashier_payment_track_payment_status.
+  /// No description provided for @cashierPaymentTrackPaymentStatus.
   ///
   /// In en, this message translates to:
   /// **'You can track your payment status in '**
-  String get cashier_payment_track_payment_status;
+  String get cashierPaymentTrackPaymentStatus;
 
-  /// No description provided for @cashier_payment_transaction_link.
+  /// No description provided for @cashierPaymentTransactionLink.
   ///
   /// In en, this message translates to:
-  /// **'Blockchain transaction:'**
-  String get cashier_payment_transaction_link;
+  /// **'Blockchain transaction'**
+  String get cashierPaymentTransactionLink;
 
-  /// No description provided for @cashier_payment_transaction_registered.
+  /// No description provided for @cashierPaymentTransactionRegistered.
   ///
   /// In en, this message translates to:
   /// **'Transaction has been registered!'**
-  String get cashier_payment_transaction_registered;
+  String get cashierPaymentTransactionRegistered;
 
-  /// No description provided for @cashier_payment_transaction_will_show.
+  /// No description provided for @cashierPaymentTransactionWillShow.
   ///
   /// In en, this message translates to:
   /// **'This transaction will show on your bank account as Block Technology / +3562021345009'**
-  String get cashier_payment_transaction_will_show;
+  String get cashierPaymentTransactionWillShow;
 
-  /// No description provided for @cashier_paypay_deposit_page_title.
+  /// No description provided for @cashierPaypayDepositPageTitle.
   ///
   /// In en, this message translates to:
   /// **'Deposit via Bank Transfer'**
-  String get cashier_paypay_deposit_page_title;
+  String get cashierPaypayDepositPageTitle;
 
-  /// No description provided for @cashier_paypay_description.
+  /// No description provided for @cashierPaypayDescription.
   ///
   /// In en, this message translates to:
-  /// **'Use your online banking for depositing and withdrawing.'**
-  String get cashier_paypay_description;
+  /// **'Use your online banking for depositing and withdrawing'**
+  String get cashierPaypayDescription;
 
-  /// No description provided for @cashier_paypay_description_JPY.
+  /// No description provided for @cashierPaypayDescriptionJpy.
   ///
   /// In en, this message translates to:
-  /// **'After buying, your active wallet will be changed to USDT.'**
-  String get cashier_paypay_description_JPY;
+  /// **'After buying, your active wallet will be changed to USDT'**
+  String get cashierPaypayDescriptionJpy;
 
-  /// No description provided for @cashier_paypay_disabled_payout.
+  /// No description provided for @cashierPaypayDisabledPayout.
   ///
   /// In en, this message translates to:
   /// **'Unfortunately payouts are not available at this time'**
-  String get cashier_paypay_disabled_payout;
+  String get cashierPaypayDisabledPayout;
 
-  /// No description provided for @cashier_paypay_disabled_region.
+  /// No description provided for @cashierPaypayDisabledRegion.
   ///
   /// In en, this message translates to:
-  /// **'This payment method is only available in Japan.'**
-  String get cashier_paypay_disabled_region;
+  /// **'This payment method is only available in Japan'**
+  String get cashierPaypayDisabledRegion;
 
-  /// No description provided for @cashier_paypay_title.
+  /// No description provided for @cashierPaypayTitle.
   ///
   /// In en, this message translates to:
   /// **'Banking transfer'**
-  String get cashier_paypay_title;
+  String get cashierPaypayTitle;
 
-  /// No description provided for @cashier_paypay_withdraw_page_title.
+  /// No description provided for @cashierPaypayWithdrawPageTitle.
   ///
   /// In en, this message translates to:
   /// **'Withdraw via Bank Transfer'**
-  String get cashier_paypay_withdraw_page_title;
+  String get cashierPaypayWithdrawPageTitle;
 
-  /// No description provided for @cashier_personal_details.
+  /// No description provided for @cashierPersonalDetails.
   ///
   /// In en, this message translates to:
   /// **'Personal details'**
-  String get cashier_personal_details;
+  String get cashierPersonalDetails;
 
-  /// No description provided for @cashier_placed_order_description.
+  /// No description provided for @cashierPlacedOrderDescription.
   ///
   /// In en, this message translates to:
   /// **'You’ve successfully placed an order to buy {amount} worth of {currency}'**
-  String cashier_placed_order_description(Object amount, Object currency);
+  String cashierPlacedOrderDescription(Object amount, Object currency);
 
-  /// No description provided for @cashier_placed_order_description_no_amount.
+  /// No description provided for @cashierPlacedOrderDescriptionNoAmount.
   ///
   /// In en, this message translates to:
   /// **'You’ve successfully placed an order to buy {currency}'**
-  String cashier_placed_order_description_no_amount(Object currency);
+  String cashierPlacedOrderDescriptionNoAmount(Object currency);
 
-  /// No description provided for @cashier_placed_order_title.
+  /// No description provided for @cashierPlacedOrderTitle.
   ///
   /// In en, this message translates to:
   /// **'Order has been placed!'**
-  String get cashier_placed_order_title;
+  String get cashierPlacedOrderTitle;
 
-  /// No description provided for @cashier_play_now_in.
+  /// No description provided for @cashierPlayNowIn.
   ///
   /// In en, this message translates to:
   /// **'Play now in {currency}'**
-  String cashier_play_now_in(Object currency);
+  String cashierPlayNowIn(Object currency);
 
-  /// No description provided for @cashier_popular_methods.
+  /// No description provided for @cashierPopularMethods.
   ///
   /// In en, this message translates to:
   /// **'Popular methods'**
-  String get cashier_popular_methods;
+  String get cashierPopularMethods;
 
-  /// No description provided for @cashier_powered_by.
+  /// No description provided for @cashierPoweredBy.
   ///
   /// In en, this message translates to:
-  /// **'Powered by:'**
-  String get cashier_powered_by;
+  /// **'Powered by'**
+  String get cashierPoweredBy;
 
-  /// No description provided for @cashier_preferred_fiat_currency.
+  /// No description provided for @cashierPreferredFiatCurrency.
   ///
   /// In en, this message translates to:
   /// **'Preferred FIAT currency'**
-  String get cashier_preferred_fiat_currency;
+  String get cashierPreferredFiatCurrency;
 
-  /// No description provided for @cashier_preview_deposit.
+  /// No description provided for @cashierPreviewDeposit.
   ///
   /// In en, this message translates to:
   /// **'Preview deposit'**
-  String get cashier_preview_deposit;
+  String get cashierPreviewDeposit;
 
-  /// No description provided for @cashier_preview_deposit_desc.
+  /// No description provided for @cashierPreviewDepositDesc.
   ///
   /// In en, this message translates to:
   /// **'Make sure everything is correct'**
-  String get cashier_preview_deposit_desc;
+  String get cashierPreviewDepositDesc;
 
-  /// No description provided for @cashier_preview_withdraw.
+  /// No description provided for @cashierPreviewWithdraw.
   ///
   /// In en, this message translates to:
   /// **'Preview withdraw'**
-  String get cashier_preview_withdraw;
+  String get cashierPreviewWithdraw;
 
-  /// No description provided for @cashier_preview_withdraw_desc.
+  /// No description provided for @cashierPreviewWithdrawDesc.
   ///
   /// In en, this message translates to:
   /// **'Make sure everything is correct'**
-  String get cashier_preview_withdraw_desc;
+  String get cashierPreviewWithdrawDesc;
 
-  /// No description provided for @cashier_processing_fee.
+  /// No description provided for @cashierProcessingFee.
   ///
   /// In en, this message translates to:
-  /// **'{amount} {currency} fee (included)'**
-  String cashier_processing_fee(Object amount, Object currency);
+  /// **'{amount} {currency} fee _included_'**
+  String cashierProcessingFee(Object amount, Object currency);
 
-  /// No description provided for @cashier_promotion_code.
+  /// No description provided for @cashierPromotionCode.
   ///
   /// In en, this message translates to:
   /// **'Promotion code'**
-  String get cashier_promotion_code;
+  String get cashierPromotionCode;
 
-  /// No description provided for @cashier_provider.
+  /// No description provided for @cashierProvider.
   ///
   /// In en, this message translates to:
   /// **'Network'**
-  String get cashier_provider;
+  String get cashierProvider;
 
-  /// No description provided for @cashier_purchase_bitcoin.
+  /// No description provided for @cashierPurchaseBitcoin.
   ///
   /// In en, this message translates to:
   /// **'Purchase Bitcoin'**
-  String get cashier_purchase_bitcoin;
+  String get cashierPurchaseBitcoin;
 
-  /// No description provided for @cashier_purchase_bitcoin_using_credit_card.
+  /// No description provided for @cashierPurchaseBitcoinUsingCreditCard.
   ///
   /// In en, this message translates to:
   /// **'Purchase Bitcoin using your credit card'**
-  String get cashier_purchase_bitcoin_using_credit_card;
+  String get cashierPurchaseBitcoinUsingCreditCard;
 
-  /// No description provided for @cashier_quick_tips.
+  /// No description provided for @cashierQuickTips.
   ///
   /// In en, this message translates to:
   /// **'Quick tips'**
-  String get cashier_quick_tips;
+  String get cashierQuickTips;
 
-  /// No description provided for @cashier_rate_guaranteed_for.
+  /// No description provided for @cashierRateGuaranteedFor.
   ///
   /// In en, this message translates to:
   /// **'Rate guaranteed for '**
-  String get cashier_rate_guaranteed_for;
+  String get cashierRateGuaranteedFor;
 
-  /// No description provided for @cashier_receive.
+  /// No description provided for @cashierReceive.
   ///
   /// In en, this message translates to:
   /// **'Receive'**
-  String get cashier_receive;
+  String get cashierReceive;
 
-  /// No description provided for @cashier_recent_transactions.
+  /// No description provided for @cashierRecentTransactions.
   ///
   /// In en, this message translates to:
   /// **'Recent transactions'**
-  String get cashier_recent_transactions;
+  String get cashierRecentTransactions;
 
-  /// No description provided for @cashier_recommended.
+  /// No description provided for @cashierRecommended.
   ///
   /// In en, this message translates to:
   /// **'Recommended'**
-  String get cashier_recommended;
+  String get cashierRecommended;
 
   /// Reference code
   ///
   /// In en, this message translates to:
   /// **'Reference code'**
-  String get cashier_refcode;
+  String get cashierRefcode;
 
-  /// No description provided for @cashier_required_integer_value.
+  /// No description provided for @cashierRequiredIntegerValue.
   ///
   /// In en, this message translates to:
   /// **'Required value to be an integer'**
-  String get cashier_required_integer_value;
+  String get cashierRequiredIntegerValue;
 
-  /// No description provided for @cashier_return_to_funds.
+  /// No description provided for @cashierReturnToFunds.
   ///
   /// In en, this message translates to:
   /// **'Return to funds'**
-  String get cashier_return_to_funds;
+  String get cashierReturnToFunds;
 
-  /// No description provided for @cashier_return_to_home.
+  /// No description provided for @cashierReturnToHome.
   ///
   /// In en, this message translates to:
   /// **'Return to home'**
-  String get cashier_return_to_home;
+  String get cashierReturnToHome;
 
-  /// No description provided for @cashier_reward_active_description.
+  /// No description provided for @cashierRewardActiveDescription.
   ///
   /// In en, this message translates to:
-  /// **'Before you can activate your new reward, you must first forfeit your current active reward.'**
-  String get cashier_reward_active_description;
+  /// **'Before you can activate your new reward, you must first forfeit your current active reward'**
+  String get cashierRewardActiveDescription;
 
-  /// No description provided for @cashier_reward_active_title.
+  /// No description provided for @cashierRewardActiveTitle.
   ///
   /// In en, this message translates to:
-  /// **'Active reward in use.'**
-  String get cashier_reward_active_title;
+  /// **'Active reward in use'**
+  String get cashierRewardActiveTitle;
 
-  /// No description provided for @cashier_reward_bonus.
+  /// No description provided for @cashierRewardBonus.
   ///
   /// In en, this message translates to:
-  /// **'Your bonus has been activated. Deposit {amount} {currency} now to receive your bonus.'**
-  String cashier_reward_bonus(Object amount, Object currency);
+  /// **'Your bonus has been activated Deposit {amount} {currency} now to receive your bonus'**
+  String cashierRewardBonus(Object amount, Object currency);
 
-  /// No description provided for @cashier_reward_enter_code.
+  /// No description provided for @cashierRewardEnterCode.
   ///
   /// In en, this message translates to:
   /// **'Enter reward code'**
-  String get cashier_reward_enter_code;
+  String get cashierRewardEnterCode;
 
-  /// No description provided for @cashier_reward_generic.
+  /// No description provided for @cashierRewardGeneric.
   ///
   /// In en, this message translates to:
   /// **'New reward added'**
-  String get cashier_reward_generic;
+  String get cashierRewardGeneric;
 
-  /// No description provided for @cashier_reward_invalid_code.
+  /// No description provided for @cashierRewardInvalidCode.
   ///
   /// In en, this message translates to:
-  /// **'Reward code is not valid.'**
-  String get cashier_reward_invalid_code;
+  /// **'Reward code is not valid'**
+  String get cashierRewardInvalidCode;
 
-  /// No description provided for @cashier_reward_redeem_code.
+  /// No description provided for @cashierRewardRedeemCode.
   ///
   /// In en, this message translates to:
   /// **'Redeem code'**
-  String get cashier_reward_redeem_code;
+  String get cashierRewardRedeemCode;
 
-  /// No description provided for @cashier_reward_social_media.
+  /// No description provided for @cashierRewardSocialMedia.
   ///
   /// In en, this message translates to:
   /// **'We regularly post these on our social media channels'**
-  String get cashier_reward_social_media;
+  String get cashierRewardSocialMedia;
 
-  /// No description provided for @cashier_reward_swich_currency_btn.
+  /// No description provided for @cashierRewardSwichCurrencyBtn.
   ///
   /// In en, this message translates to:
   /// **'Switch to {currency}'**
-  String cashier_reward_swich_currency_btn(Object currency);
+  String cashierRewardSwichCurrencyBtn(Object currency);
 
-  /// No description provided for @cashier_reward_swich_currency_deposit_btn.
+  /// No description provided for @cashierRewardSwichCurrencyDepositBtn.
   ///
   /// In en, this message translates to:
   /// **'Switch to {currency} and deposit'**
-  String cashier_reward_swich_currency_deposit_btn(Object currency, Object curreny);
+  String cashierRewardSwichCurrencyDepositBtn(Object currency);
 
-  /// No description provided for @cashier_reward_swich_currency_deposit_description.
+  /// No description provided for @cashierRewardSwichCurrencyDepositDescription.
   ///
   /// In en, this message translates to:
-  /// **'You\'ve activated a deposit bonus reward in a different currency. Please switch to {currency} wallet and deposit {amount} {currency} in order to play the reward or you can forfeit it and try another reward.'**
-  String cashier_reward_swich_currency_deposit_description(Object currency, Object amount);
+  /// **'You\'ve activated a deposit bonus reward in a different currency Please switch to {currency} wallet and deposit {amount} {currency} in order to play the reward or you can forfeit it and try another reward'**
+  String cashierRewardSwichCurrencyDepositDescription(Object currency, Object amount);
 
-  /// No description provided for @cashier_reward_swich_currency_description.
+  /// No description provided for @cashierRewardSwichCurrencyDescription.
   ///
   /// In en, this message translates to:
-  /// **'You\'ve activated a reward in a different currency. Please switch to {currency} wallet in order to play the reward or you can forfeit it and try another reward.'**
-  String cashier_reward_swich_currency_description(Object currency);
+  /// **'You\'ve activated a reward in a different currency Please switch to {currency} wallet in order to play the reward or you can forfeit it and try another reward'**
+  String cashierRewardSwichCurrencyDescription(Object currency);
 
-  /// No description provided for @cashier_reward_swich_currency_title.
+  /// No description provided for @cashierRewardSwichCurrencyTitle.
   ///
   /// In en, this message translates to:
-  /// **'Active reward currency.'**
-  String get cashier_reward_swich_currency_title;
+  /// **'Active reward currency'**
+  String get cashierRewardSwichCurrencyTitle;
 
-  /// No description provided for @cashier_rewards.
+  /// No description provided for @cashierRewards.
   ///
   /// In en, this message translates to:
   /// **'Rewards'**
-  String get cashier_rewards;
+  String get cashierRewards;
 
-  /// No description provided for @cashier_save_details.
+  /// No description provided for @cashierSaveDetails.
   ///
   /// In en, this message translates to:
   /// **'Save your details for the next time'**
-  String get cashier_save_details;
+  String get cashierSaveDetails;
 
-  /// No description provided for @cashier_scan_qr_address.
+  /// No description provided for @cashierScanQrAddress.
   ///
   /// In en, this message translates to:
   /// **'Scan QR address'**
-  String get cashier_scan_qr_address;
+  String get cashierScanQrAddress;
 
-  /// No description provided for @cashier_security.
+  /// No description provided for @cashierSecurity.
   ///
   /// In en, this message translates to:
   /// **'Security'**
-  String get cashier_security;
+  String get cashierSecurity;
 
-  /// No description provided for @cashier_security_2fa_checkout.
+  /// No description provided for @cashierSecurity2faCheckout.
   ///
   /// In en, this message translates to:
-  /// **'Require Two-factor authentication at Checkout'**
-  String get cashier_security_2fa_checkout;
+  /// **'Require Two_factor authentication at Checkout'**
+  String get cashierSecurity2faCheckout;
 
-  /// No description provided for @cashier_security_password_checkout.
+  /// No description provided for @cashierSecurityPasswordCheckout.
   ///
   /// In en, this message translates to:
   /// **'Require Password at Checkout'**
-  String get cashier_security_password_checkout;
+  String get cashierSecurityPasswordCheckout;
 
-  /// No description provided for @cashier_select_deposit_network.
+  /// No description provided for @cashierSelectDepositNetwork.
   ///
   /// In en, this message translates to:
   /// **'Select deposit network'**
-  String get cashier_select_deposit_network;
+  String get cashierSelectDepositNetwork;
 
-  /// No description provided for @cashier_select_deposit_network_description.
+  /// No description provided for @cashierSelectDepositNetworkDescription.
   ///
   /// In en, this message translates to:
-  /// **'Please always check your deposit wallet address on our site before making your transactions.'**
-  String get cashier_select_deposit_network_description;
+  /// **'Please always check your deposit wallet address on our site before making your transactions'**
+  String get cashierSelectDepositNetworkDescription;
 
-  /// No description provided for @cashier_select_voucher.
+  /// No description provided for @cashierSelectVoucher.
   ///
   /// In en, this message translates to:
   /// **'Select voucher'**
-  String get cashier_select_voucher;
+  String get cashierSelectVoucher;
 
-  /// No description provided for @cashier_select_withdraw_network.
+  /// No description provided for @cashierSelectWithdrawNetwork.
   ///
   /// In en, this message translates to:
   /// **'Select withdraw network'**
-  String get cashier_select_withdraw_network;
+  String get cashierSelectWithdrawNetwork;
 
-  /// No description provided for @cashier_select_withdraw_network_description.
+  /// No description provided for @cashierSelectWithdrawNetworkDescription.
   ///
   /// In en, this message translates to:
-  /// **'Please always check your withdraw wallet address on our site before making your transactions.'**
-  String get cashier_select_withdraw_network_description;
+  /// **'Please always check your withdraw wallet address on our site before making your transactions'**
+  String get cashierSelectWithdrawNetworkDescription;
 
-  /// No description provided for @cashier_select_withdrawal_network.
+  /// No description provided for @cashierSelectWithdrawalNetwork.
   ///
   /// In en, this message translates to:
   /// **'Select withdrawal network'**
-  String get cashier_select_withdrawal_network;
+  String get cashierSelectWithdrawalNetwork;
 
-  /// No description provided for @cashier_select_withdrawal_network_description.
+  /// No description provided for @cashierSelectWithdrawalNetworkDescription.
   ///
   /// In en, this message translates to:
-  /// **'Please always check your withdrawal wallet address on our site before making your transactions.'**
-  String get cashier_select_withdrawal_network_description;
+  /// **'Please always check your withdrawal wallet address on our site before making your transactions'**
+  String get cashierSelectWithdrawalNetworkDescription;
 
-  /// No description provided for @cashier_sell.
+  /// No description provided for @cashierSell.
   ///
   /// In en, this message translates to:
   /// **'Withdraw'**
-  String get cashier_sell;
+  String get cashierSell;
 
-  /// No description provided for @cashier_send.
+  /// No description provided for @cashierSend.
   ///
   /// In en, this message translates to:
   /// **'Send'**
-  String get cashier_send;
+  String get cashierSend;
 
-  /// No description provided for @cashier_send_email.
+  /// No description provided for @cashierSendEmail.
   ///
   /// In en, this message translates to:
   /// **'Send us email'**
-  String get cashier_send_email;
+  String get cashierSendEmail;
 
-  /// No description provided for @cashier_send_to.
+  /// No description provided for @cashierSendTo.
   ///
   /// In en, this message translates to:
   /// **'Send to'**
-  String get cashier_send_to;
+  String get cashierSendTo;
 
-  /// No description provided for @cashier_send_your_ADA_deposit.
+  /// No description provided for @cashierSendYourAdaDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Send your ADA deposit to:'**
-  String get cashier_send_your_ADA_deposit;
+  /// **'Send your ADA deposit to'**
+  String get cashierSendYourAdaDeposit;
 
-  /// No description provided for @cashier_send_your_ADA_withdraw.
+  /// No description provided for @cashierSendYourAdaWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your ADA withdrawal to:'**
-  String get cashier_send_your_ADA_withdraw;
+  /// **'Send your ADA withdrawal to'**
+  String get cashierSendYourAdaWithdraw;
 
-  /// No description provided for @cashier_send_your_BTC_deposit.
+  /// No description provided for @cashierSendYourBtcDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Send your bitcoin deposit to:'**
-  String get cashier_send_your_BTC_deposit;
+  /// **'Send your bitcoin deposit to'**
+  String get cashierSendYourBtcDeposit;
 
-  /// No description provided for @cashier_send_your_BTC_withdraw.
+  /// No description provided for @cashierSendYourBtcWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your Bitcoin withdrawal to: '**
-  String get cashier_send_your_BTC_withdraw;
+  /// **'Send your Bitcoin withdrawal to '**
+  String get cashierSendYourBtcWithdraw;
 
-  /// No description provided for @cashier_send_your_DOGE_deposit.
+  /// No description provided for @cashierSendYourDogeDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Send your DOGE deposit to:'**
-  String get cashier_send_your_DOGE_deposit;
+  /// **'Send your DOGE deposit to'**
+  String get cashierSendYourDogeDeposit;
 
-  /// No description provided for @cashier_send_your_DOGE_withdraw.
+  /// No description provided for @cashierSendYourDogeWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your DOGE withdrawal to:'**
-  String get cashier_send_your_DOGE_withdraw;
+  /// **'Send your DOGE withdrawal to'**
+  String get cashierSendYourDogeWithdraw;
 
-  /// No description provided for @cashier_send_your_ETH_withdraw.
+  /// No description provided for @cashierSendYourEthWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your ETH (ERC-20) withdrawal to:'**
-  String get cashier_send_your_ETH_withdraw;
+  /// **'Send your ETH _ERC_20_ withdrawal to'**
+  String get cashierSendYourEthWithdraw;
 
-  /// No description provided for @cashier_send_your_LTC_deposit.
+  /// No description provided for @cashierSendYourLtcDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Send your litecoin deposit to:'**
-  String get cashier_send_your_LTC_deposit;
+  /// **'Send your litecoin deposit to'**
+  String get cashierSendYourLtcDeposit;
 
-  /// No description provided for @cashier_send_your_LTC_withdraw.
+  /// No description provided for @cashierSendYourLtcWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your LTC withdrawal to:'**
-  String get cashier_send_your_LTC_withdraw;
+  /// **'Send your LTC withdrawal to'**
+  String get cashierSendYourLtcWithdraw;
 
-  /// No description provided for @cashier_send_your_SOC_deposit.
+  /// No description provided for @cashierSendYourSocDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Send your SOC deposit to:'**
-  String get cashier_send_your_SOC_deposit;
+  /// **'Send your SOC deposit to'**
+  String get cashierSendYourSocDeposit;
 
-  /// No description provided for @cashier_send_your_TRX_deposit.
+  /// No description provided for @cashierSendYourTrxDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Send your TRX deposit to:'**
-  String get cashier_send_your_TRX_deposit;
+  /// **'Send your TRX deposit to'**
+  String get cashierSendYourTrxDeposit;
 
-  /// No description provided for @cashier_send_your_TRX_withdraw.
+  /// No description provided for @cashierSendYourTrxWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your TRX withdrawal to: '**
-  String get cashier_send_your_TRX_withdraw;
+  /// **'Send your TRX withdrawal to '**
+  String get cashierSendYourTrxWithdraw;
 
-  /// No description provided for @cashier_send_your_USDT_deposit.
+  /// No description provided for @cashierSendYourUsdtDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Send your USDT (ERC-20) deposit to:'**
-  String get cashier_send_your_USDT_deposit;
+  /// **'Send your USDT _ERC_20_ deposit to'**
+  String get cashierSendYourUsdtDeposit;
 
-  /// No description provided for @cashier_send_your_USDT_withdraw.
+  /// No description provided for @cashierSendYourUsdtWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your USDT (ERC-20) withdrawal to: '**
-  String get cashier_send_your_USDT_withdraw;
+  /// **'Send your USDT _ERC_20_ withdrawal to '**
+  String get cashierSendYourUsdtWithdraw;
 
-  /// No description provided for @cashier_send_your_USDT_TRON__withdraw.
+  /// No description provided for @cashierSendYourUsdt_tron_Withdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your USDT (TRC-20) withdrawal to:'**
-  String get cashier_send_your_USDT_TRON__withdraw;
+  /// **'Send your USDT _TRC_20_ withdrawal to'**
+  String get cashierSendYourUsdt_tron_Withdraw;
 
-  /// No description provided for @cashier_send_your_XRP_deposit.
+  /// No description provided for @cashierSendYourXrpDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Send your XRP deposit to:'**
-  String get cashier_send_your_XRP_deposit;
+  /// **'Send your XRP deposit to'**
+  String get cashierSendYourXrpDeposit;
 
-  /// No description provided for @cashier_send_your_XRP_withdraw.
+  /// No description provided for @cashierSendYourXrpWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your XRP withdrawal to: '**
-  String get cashier_send_your_XRP_withdraw;
+  /// **'Send your XRP withdrawal to '**
+  String get cashierSendYourXrpWithdraw;
 
-  /// No description provided for @cashier_show_less.
+  /// No description provided for @cashierShowLess.
   ///
   /// In en, this message translates to:
   /// **'Show less'**
-  String get cashier_show_less;
+  String get cashierShowLess;
 
-  /// No description provided for @cashier_show_more.
+  /// No description provided for @cashierShowMore.
   ///
   /// In en, this message translates to:
   /// **'Show more'**
-  String get cashier_show_more;
+  String get cashierShowMore;
 
-  /// No description provided for @cashier_show_more_methods.
+  /// No description provided for @cashierShowMoreMethods.
   ///
   /// In en, this message translates to:
-  /// **'Show more ({qty})'**
-  String cashier_show_more_methods(Object qty);
+  /// **'Show more _{qty}_'**
+  String cashierShowMoreMethods(Object qty);
 
-  /// No description provided for @cashier_simplex_instruction.
+  /// No description provided for @cashierSimplexInstruction.
   ///
   /// In en, this message translates to:
-  /// **'You will receive the confirmation in instants\nand your balance will be updated according\nto the transaction amount.'**
-  String get cashier_simplex_instruction;
+  /// **'You will receive the confirmation in instants\nand your balance will be updated according\nto the transaction amount'**
+  String get cashierSimplexInstruction;
 
-  /// No description provided for @cashier_SOC.
+  /// No description provided for @cashierSoc.
   ///
   /// In en, this message translates to:
   /// **'SOC'**
-  String get cashier_SOC;
+  String get cashierSoc;
 
-  /// No description provided for @cashier_SOC_deposit_description.
+  /// No description provided for @cashierSocDepositDescription.
   ///
   /// In en, this message translates to:
-  /// **'SOC sent to the above address will be credited to your balance for playing.'**
-  String get cashier_SOC_deposit_description;
+  /// **'SOC sent to the above address will be credited to your balance for playing'**
+  String get cashierSocDepositDescription;
 
-  /// No description provided for @cashier_social_bitcasino_instagram.
+  /// No description provided for @cashierSocialBitcasinoInstagram.
   ///
   /// In en, this message translates to:
-  /// **'https://www.instagram.com/bitcasinoio/'**
-  String get cashier_social_bitcasino_instagram;
+  /// **'https//wwwinstagramcom/bitcasinoio/'**
+  String get cashierSocialBitcasinoInstagram;
 
-  /// No description provided for @cashier_social_bitcasino_tiktok.
+  /// No description provided for @cashierSocialBitcasinoTiktok.
   ///
   /// In en, this message translates to:
-  /// **'https://www.tiktok.com/@bitcasino.io'**
-  String get cashier_social_bitcasino_tiktok;
+  /// **'https//wwwtiktokcom/@bitcasinoio'**
+  String get cashierSocialBitcasinoTiktok;
 
-  /// No description provided for @cashier_social_bitcasino_x.
+  /// No description provided for @cashierSocialBitcasinoX.
   ///
   /// In en, this message translates to:
-  /// **'https://twitter.com/Bitcasinoio'**
-  String get cashier_social_bitcasino_x;
+  /// **'https//twittercom/Bitcasinoio'**
+  String get cashierSocialBitcasinoX;
 
-  /// No description provided for @cashier_social_bitcasino_youtube.
+  /// No description provided for @cashierSocialBitcasinoYoutube.
   ///
   /// In en, this message translates to:
-  /// **'https://www.youtube.com/@BitcasinoioVIP'**
-  String get cashier_social_bitcasino_youtube;
+  /// **'https//wwwyoutubecom/@BitcasinoioVIP'**
+  String get cashierSocialBitcasinoYoutube;
 
-  /// No description provided for @cashier_social_sportsbet_instagram.
+  /// No description provided for @cashierSocialSportsbetInstagram.
   ///
   /// In en, this message translates to:
-  /// **'https://www.instagram.com/sportsbet.io'**
-  String get cashier_social_sportsbet_instagram;
+  /// **'https//wwwinstagramcom/sportsbetio'**
+  String get cashierSocialSportsbetInstagram;
 
-  /// No description provided for @cashier_social_sportsbet_tiktok.
+  /// No description provided for @cashierSocialSportsbetTiktok.
   ///
   /// In en, this message translates to:
-  /// **'https://www.tiktok.com/@sportsbetio'**
-  String get cashier_social_sportsbet_tiktok;
+  /// **'https//wwwtiktokcom/@sportsbetio'**
+  String get cashierSocialSportsbetTiktok;
 
-  /// No description provided for @cashier_social_sportsbet_x.
+  /// No description provided for @cashierSocialSportsbetX.
   ///
   /// In en, this message translates to:
-  /// **'https://twitter.com/Sportsbetio'**
-  String get cashier_social_sportsbet_x;
+  /// **'https//twittercom/Sportsbetio'**
+  String get cashierSocialSportsbetX;
 
-  /// No description provided for @cashier_social_sportsbet_youtube.
+  /// No description provided for @cashierSocialSportsbetYoutube.
   ///
   /// In en, this message translates to:
-  /// **'https://youtube.com/@clubhouse-tv'**
-  String get cashier_social_sportsbet_youtube;
+  /// **'https//youtubecom/@clubhouse_tv'**
+  String get cashierSocialSportsbetYoutube;
 
-  /// No description provided for @cashier_sort_filter.
+  /// No description provided for @cashierSortFilter.
   ///
   /// In en, this message translates to:
   /// **'Sort and filter'**
-  String get cashier_sort_filter;
+  String get cashierSortFilter;
 
-  /// No description provided for @cashier_start_deposit.
+  /// No description provided for @cashierStartDeposit.
   ///
   /// In en, this message translates to:
   /// **'Start your deposit '**
-  String get cashier_start_deposit;
+  String get cashierStartDeposit;
 
-  /// No description provided for @cashier_start_first_deposit.
+  /// No description provided for @cashierStartFirstDeposit.
   ///
   /// In en, this message translates to:
   /// **'Start your first deposit '**
-  String get cashier_start_first_deposit;
+  String get cashierStartFirstDeposit;
 
-  /// No description provided for @cashier_start_transfer.
+  /// No description provided for @cashierStartTransfer.
   ///
   /// In en, this message translates to:
   /// **'Start Transfer'**
-  String get cashier_start_transfer;
+  String get cashierStartTransfer;
 
-  /// No description provided for @cashier_submit.
+  /// No description provided for @cashierSubmit.
   ///
   /// In en, this message translates to:
   /// **'Submit'**
-  String get cashier_submit;
+  String get cashierSubmit;
 
-  /// No description provided for @cashier_success.
+  /// No description provided for @cashierSuccess.
   ///
   /// In en, this message translates to:
   /// **'Success'**
-  String get cashier_success;
+  String get cashierSuccess;
 
-  /// No description provided for @cashier_summary.
+  /// No description provided for @cashierSummary.
   ///
   /// In en, this message translates to:
   /// **'Summary'**
-  String get cashier_summary;
+  String get cashierSummary;
 
-  /// No description provided for @cashier_sumopay_title.
+  /// No description provided for @cashierSumopayTitle.
   ///
   /// In en, this message translates to:
   /// **'Sumopay'**
-  String get cashier_sumopay_title;
+  String get cashierSumopayTitle;
 
-  /// No description provided for @cashier_support.
+  /// No description provided for @cashierSupport.
   ///
   /// In en, this message translates to:
   /// **'Support'**
-  String get cashier_support;
+  String get cashierSupport;
 
-  /// No description provided for @cashier_support_settings.
+  /// No description provided for @cashierSupportSettings.
   ///
   /// In en, this message translates to:
   /// **'Support & Settings'**
-  String get cashier_support_settings;
+  String get cashierSupportSettings;
 
-  /// No description provided for @cashier_THB.
+  /// No description provided for @cashierThb.
   ///
   /// In en, this message translates to:
   /// **'THB'**
-  String get cashier_THB;
+  String get cashierThb;
 
-  /// No description provided for @cashier_to_date.
+  /// No description provided for @cashierToDate.
   ///
   /// In en, this message translates to:
   /// **'To'**
-  String get cashier_to_date;
+  String get cashierToDate;
 
-  /// No description provided for @cashier_today.
+  /// No description provided for @cashierToday.
   ///
   /// In en, this message translates to:
   /// **'Today'**
-  String get cashier_today;
+  String get cashierToday;
 
-  /// No description provided for @cashier_TON.
+  /// No description provided for @cashierTon.
   ///
   /// In en, this message translates to:
   /// **'The Open Network'**
-  String get cashier_TON;
+  String get cashierTon;
 
-  /// No description provided for @cashier_ton_message_copied.
+  /// No description provided for @cashierTonMessageCopied.
   ///
   /// In en, this message translates to:
   /// **'Message copied'**
-  String get cashier_ton_message_copied;
+  String get cashierTonMessageCopied;
 
-  /// No description provided for @cashier_TON_wallets.
+  /// No description provided for @cashierTonWallets.
   ///
   /// In en, this message translates to:
   /// **'TON Wallets'**
-  String get cashier_TON_wallets;
+  String get cashierTonWallets;
 
-  /// No description provided for @cashier_TON_wallets_description.
+  /// No description provided for @cashierTonWalletsDescription.
   ///
   /// In en, this message translates to:
-  /// **'Deposit with any ton.org Wallet.'**
-  String get cashier_TON_wallets_description;
+  /// **'Deposit with any tonorg Wallet'**
+  String get cashierTonWalletsDescription;
 
-  /// No description provided for @cashier_ton_invoice_id_copied.
+  /// No description provided for @cashierTonInvoiceIdCopied.
   ///
   /// In en, this message translates to:
   /// **'Invoice ID copied'**
-  String get cashier_ton_invoice_id_copied;
+  String get cashierTonInvoiceIdCopied;
 
-  /// No description provided for @cashier_tooltip_fee.
+  /// No description provided for @cashierTooltipFee.
   ///
   /// In en, this message translates to:
-  /// **'Processing fee depends on payment option and might be reduced.'**
-  String get cashier_tooltip_fee;
+  /// **'Processing fee depends on payment option and might be reduced'**
+  String get cashierTooltipFee;
 
-  /// No description provided for @cashier_tooltip_rate.
+  /// No description provided for @cashierTooltipRate.
   ///
   /// In en, this message translates to:
-  /// **'Rate is refreshed every 5 minutes.'**
-  String get cashier_tooltip_rate;
+  /// **'Rate is refreshed every 5 minutes'**
+  String get cashierTooltipRate;
 
-  /// No description provided for @cashier_tooltip_use_mobile_or_qr_eth.
+  /// No description provided for @cashierTooltipUseMobileOrQrEth.
   ///
   /// In en, this message translates to:
-  /// **'This QR code can be scanned with your mobile Ethereum wallet. Once scanned, your bitcoin wallet will immediately know the Ethereum wallet address where you need to send your deposit for playing.'**
-  String get cashier_tooltip_use_mobile_or_qr_eth;
+  /// **'This QR code can be scanned with your mobile Ethereum wallet Once scanned, your bitcoin wallet will immediately know the Ethereum wallet address where you need to send your deposit for playing'**
+  String get cashierTooltipUseMobileOrQrEth;
 
-  /// No description provided for @cashier_tooltip_use_mobile_or_qr_soc.
+  /// No description provided for @cashierTooltipUseMobileOrQrSoc.
   ///
   /// In en, this message translates to:
-  /// **'This QR code can be scanned with your mobile SOC wallet. Once scanned your wallet will immediately know the SOC wallet address where you need to send your deposit for playing.'**
-  String get cashier_tooltip_use_mobile_or_qr_soc;
+  /// **'This QR code can be scanned with your mobile SOC wallet Once scanned your wallet will immediately know the SOC wallet address where you need to send your deposit for playing'**
+  String get cashierTooltipUseMobileOrQrSoc;
 
-  /// No description provided for @cashier_tooltip_your_bitcoin_depositing_address.
+  /// No description provided for @cashierTooltipYourBitcoinDepositingAddress.
   ///
   /// In en, this message translates to:
-  /// **'In order to get Bitcoins into your account you need to transfer them to the address below. You can do this from any Bitcoin wallet you use.'**
-  String get cashier_tooltip_your_bitcoin_depositing_address;
+  /// **'In order to get Bitcoins into your account you need to transfer them to the address below You can do this from any Bitcoin wallet you use'**
+  String get cashierTooltipYourBitcoinDepositingAddress;
 
-  /// No description provided for @cashier_transaction_date_at.
+  /// No description provided for @cashierTransactionDateAt.
   ///
   /// In en, this message translates to:
   /// **'at'**
-  String get cashier_transaction_date_at;
+  String get cashierTransactionDateAt;
 
-  /// No description provided for @cashier_transaction_details.
+  /// No description provided for @cashierTransactionDetails.
   ///
   /// In en, this message translates to:
   /// **'Transaction details'**
-  String get cashier_transaction_details;
+  String get cashierTransactionDetails;
 
-  /// No description provided for @cashier_transaction_history.
+  /// No description provided for @cashierTransactionHistory.
   ///
   /// In en, this message translates to:
   /// **'Transaction history'**
-  String get cashier_transaction_history;
+  String get cashierTransactionHistory;
 
-  /// No description provided for @cashier_transaction_amount.
+  /// No description provided for @cashierTransactionAmount.
   ///
   /// In en, this message translates to:
   /// **'Amount'**
-  String get cashier_transaction_amount;
+  String get cashierTransactionAmount;
 
-  /// No description provided for @cashier_transaction_approved.
+  /// No description provided for @cashierTransactionApproved.
   ///
   /// In en, this message translates to:
   /// **'Transaction approved'**
-  String get cashier_transaction_approved;
+  String get cashierTransactionApproved;
 
-  /// No description provided for @cashier_transaction_APPROVED.
-  ///
-  /// In en, this message translates to:
-  /// **'Transaction approved'**
-  String get cashier_transaction_APPROVED;
-
-  /// No description provided for @cashier_transaction_approving.
+  /// No description provided for @cashierTransactionApproving.
   ///
   /// In en, this message translates to:
   /// **'Approving transaction'**
-  String get cashier_transaction_approving;
+  String get cashierTransactionApproving;
 
-  /// No description provided for @cashier_transaction_APPROVING.
-  ///
-  /// In en, this message translates to:
-  /// **'Approving transaction'**
-  String get cashier_transaction_APPROVING;
-
-  /// No description provided for @cashier_transaction_AUTHORIZED.
+  /// No description provided for @cashierTransactionAuthorized.
   ///
   /// In en, this message translates to:
   /// **'Authorized'**
-  String get cashier_transaction_AUTHORIZED;
+  String get cashierTransactionAuthorized;
 
-  /// No description provided for @cashier_transaction_bet.
+  /// No description provided for @cashierTransactionBet.
   ///
   /// In en, this message translates to:
   /// **'Bet'**
-  String get cashier_transaction_bet;
+  String get cashierTransactionBet;
 
-  /// No description provided for @cashier_transaction_bitcoin_rate_applied.
+  /// No description provided for @cashierTransactionBitcoinRateApplied.
   ///
   /// In en, this message translates to:
-  /// **'Bitcoin rate applied: '**
-  String get cashier_transaction_bitcoin_rate_applied;
+  /// **'Bitcoin rate applied '**
+  String get cashierTransactionBitcoinRateApplied;
 
-  /// No description provided for @cashier_transaction_CANCELLED.
+  /// No description provided for @cashierTransactionCancelled.
   ///
   /// In en, this message translates to:
   /// **'Cancelled'**
-  String get cashier_transaction_CANCELLED;
+  String get cashierTransactionCancelled;
 
-  /// No description provided for @cashier_transaction_CANCELLED_BY_USER.
+  /// No description provided for @cashierTransactionCancelledByUser.
   ///
   /// In en, this message translates to:
   /// **'Cancelled by user'**
-  String get cashier_transaction_CANCELLED_BY_USER;
+  String get cashierTransactionCancelledByUser;
 
-  /// No description provided for @cashier_transaction_cancelled_by_user.
-  ///
-  /// In en, this message translates to:
-  /// **'Cancelled by user'**
-  String get cashier_transaction_cancelled_by_user;
-
-  /// No description provided for @cashier_transaction_confirmation_pending.
+  /// No description provided for @cashierTransactionConfirmationPending.
   ///
   /// In en, this message translates to:
   /// **'Pending'**
-  String get cashier_transaction_confirmation_pending;
+  String get cashierTransactionConfirmationPending;
 
-  /// No description provided for @cashier_transaction_confirmations.
+  /// No description provided for @cashierTransactionConfirmations.
   ///
   /// In en, this message translates to:
   /// **'Confirmations'**
-  String get cashier_transaction_confirmations;
+  String get cashierTransactionConfirmations;
 
-  /// No description provided for @cashier_transaction_CONFIRMED.
+  /// No description provided for @cashierTransactionConfirmed.
   ///
   /// In en, this message translates to:
   /// **'Confirmed'**
-  String get cashier_transaction_CONFIRMED;
+  String get cashierTransactionConfirmed;
 
-  /// No description provided for @cashier_transaction_credit.
+  /// No description provided for @cashierTransactionCredit.
   ///
   /// In en, this message translates to:
   /// **'Exchange credit'**
-  String get cashier_transaction_credit;
+  String get cashierTransactionCredit;
 
-  /// No description provided for @cashier_transaction_date.
+  /// No description provided for @cashierTransactionDate.
   ///
   /// In en, this message translates to:
   /// **'Date'**
-  String get cashier_transaction_date;
+  String get cashierTransactionDate;
 
-  /// No description provided for @cashier_transaction_date_time.
+  /// No description provided for @cashierTransactionDateTime.
   ///
   /// In en, this message translates to:
   /// **'Date and time'**
-  String get cashier_transaction_date_time;
+  String get cashierTransactionDateTime;
 
-  /// No description provided for @cashier_transaction_debit.
+  /// No description provided for @cashierTransactionDebit.
   ///
   /// In en, this message translates to:
   /// **'Exchange debit'**
-  String get cashier_transaction_debit;
+  String get cashierTransactionDebit;
 
-  /// No description provided for @cashier_transaction_declined.
-  ///
-  /// In en, this message translates to:
-  /// **'{description}'**
-  String cashier_transaction_declined(Object description);
-
-  /// No description provided for @cashier_transaction_DECLINED.
+  /// No description provided for @cashierTransactionDeclined.
   ///
   /// In en, this message translates to:
   /// **'Declined'**
-  String get cashier_transaction_DECLINED;
+  String get cashierTransactionDeclined;
 
-  /// No description provided for @cashier_transaction_DELETED.
+  /// No description provided for @cashierTransactionDeleted.
   ///
   /// In en, this message translates to:
   /// **'Deleted '**
-  String get cashier_transaction_DELETED;
+  String get cashierTransactionDeleted;
 
-  /// No description provided for @cashier_transaction_deposit.
+  /// No description provided for @cashierTransactionDeposit.
   ///
   /// In en, this message translates to:
   /// **'Deposit'**
-  String get cashier_transaction_deposit;
+  String get cashierTransactionDeposit;
 
-  /// No description provided for @cashier_transaction_description.
+  /// No description provided for @cashierTransactionDescription.
   ///
   /// In en, this message translates to:
   /// **'{description}'**
-  String cashier_transaction_description(Object description);
+  String cashierTransactionDescription(Object description);
 
-  /// No description provided for @cashier_transaction_description_title.
+  /// No description provided for @cashierTransactionDescriptionTitle.
   ///
   /// In en, this message translates to:
   /// **'Description'**
-  String get cashier_transaction_description_title;
+  String get cashierTransactionDescriptionTitle;
 
-  /// No description provided for @cashier_transaction_ending_balance.
+  /// No description provided for @cashierTransactionEndingBalance.
   ///
   /// In en, this message translates to:
   /// **'Ending'**
-  String get cashier_transaction_ending_balance;
+  String get cashierTransactionEndingBalance;
 
-  /// No description provided for @cashier_transaction_Expired.
+  /// No description provided for @cashierTransactionExpired.
   ///
   /// In en, this message translates to:
   /// **'Expired'**
-  String get cashier_transaction_Expired;
+  String get cashierTransactionExpired;
 
-  /// No description provided for @cashier_transaction_EXPIRED.
-  ///
-  /// In en, this message translates to:
-  /// **'Expired'**
-  String get cashier_transaction_EXPIRED;
-
-  /// No description provided for @cashier_transaction_FAILED.
+  /// No description provided for @cashierTransactionFailed.
   ///
   /// In en, this message translates to:
   /// **'Failed'**
-  String get cashier_transaction_FAILED;
+  String get cashierTransactionFailed;
 
-  /// No description provided for @cashier_transaction_from.
+  /// No description provided for @cashierTransactionFrom.
   ///
   /// In en, this message translates to:
   /// **'From'**
-  String get cashier_transaction_from;
+  String get cashierTransactionFrom;
 
-  /// No description provided for @cashier_transaction_IN_PROGRESS.
+  /// No description provided for @cashierTransactionInProgress.
   ///
   /// In en, this message translates to:
   /// **'In progress'**
-  String get cashier_transaction_IN_PROGRESS;
+  String get cashierTransactionInProgress;
 
-  /// No description provided for @cashier_transaction_info_bet.
+  /// No description provided for @cashierTransactionInfoBet.
   ///
   /// In en, this message translates to:
   /// **'Bet in'**
-  String get cashier_transaction_info_bet;
+  String get cashierTransactionInfoBet;
 
-  /// No description provided for @cashier_transaction_info_rollback.
+  /// No description provided for @cashierTransactionInfoRollback.
   ///
   /// In en, this message translates to:
   /// **'Rollback in'**
-  String get cashier_transaction_info_rollback;
+  String get cashierTransactionInfoRollback;
 
-  /// No description provided for @cashier_transaction_info_win.
+  /// No description provided for @cashierTransactionInfoWin.
   ///
   /// In en, this message translates to:
   /// **'Win in'**
-  String get cashier_transaction_info_win;
+  String get cashierTransactionInfoWin;
 
-  /// No description provided for @cashier_transaction_INPUT_REQUIRED.
+  /// No description provided for @cashierTransactionInputRequired.
   ///
   /// In en, this message translates to:
   /// **'Input required'**
-  String get cashier_transaction_INPUT_REQUIRED;
+  String get cashierTransactionInputRequired;
 
-  /// No description provided for @cashier_transaction_link.
+  /// No description provided for @cashierTransactionLink.
   ///
   /// In en, this message translates to:
   /// **'Transaction link'**
-  String get cashier_transaction_link;
+  String get cashierTransactionLink;
 
-  /// No description provided for @cashier_transaction_NEW.
+  /// No description provided for @cashierTransactionNew.
   ///
   /// In en, this message translates to:
   /// **'Pending'**
-  String get cashier_transaction_NEW;
+  String get cashierTransactionNew;
 
-  /// No description provided for @cashier_transaction_payment_time.
+  /// No description provided for @cashierTransactionPaymentTime.
   ///
   /// In en, this message translates to:
-  /// **'Time of payment transaction: {datetime}'**
-  String cashier_transaction_payment_time(Object datetime);
+  /// **'Time of payment transaction {datetime}'**
+  String cashierTransactionPaymentTime(Object datetime);
 
-  /// No description provided for @cashier_transaction_pending.
-  ///
-  /// In en, this message translates to:
-  /// **'Pending'**
-  String get cashier_transaction_pending;
-
-  /// No description provided for @cashier_transaction_PENDING.
+  /// No description provided for @cashierTransactionPending.
   ///
   /// In en, this message translates to:
   /// **'Pending'**
-  String get cashier_transaction_PENDING;
+  String get cashierTransactionPending;
 
-  /// No description provided for @cashier_transaction_PROCESSING.
+  /// No description provided for @cashierTransactionProcessing.
   ///
   /// In en, this message translates to:
   /// **'Processing'**
-  String get cashier_transaction_PROCESSING;
+  String get cashierTransactionProcessing;
 
-  /// No description provided for @cashier_transaction_REJECTED.
+  /// No description provided for @cashierTransactionRejected.
   ///
   /// In en, this message translates to:
   /// **'Rejected'**
-  String get cashier_transaction_REJECTED;
+  String get cashierTransactionRejected;
 
-  /// No description provided for @cashier_transaction_resume_transaction.
+  /// No description provided for @cashierTransactionResumeTransaction.
   ///
   /// In en, this message translates to:
   /// **'Resume transaction'**
-  String get cashier_transaction_resume_transaction;
+  String get cashierTransactionResumeTransaction;
 
-  /// No description provided for @cashier_transaction_rollback.
+  /// No description provided for @cashierTransactionRollback.
   ///
   /// In en, this message translates to:
   /// **'Rollback'**
-  String get cashier_transaction_rollback;
+  String get cashierTransactionRollback;
 
-  /// No description provided for @cashier_transaction_round_id.
+  /// No description provided for @cashierTransactionRoundId.
   ///
   /// In en, this message translates to:
   /// **'Bet ID'**
-  String get cashier_transaction_round_id;
+  String get cashierTransactionRoundId;
 
-  /// No description provided for @cashier_transaction_STARTED.
+  /// No description provided for @cashierTransactionStarted.
   ///
   /// In en, this message translates to:
   /// **'Started'**
-  String get cashier_transaction_STARTED;
+  String get cashierTransactionStarted;
 
-  /// No description provided for @cashier_transaction_status.
+  /// No description provided for @cashierTransactionStatus.
   ///
   /// In en, this message translates to:
   /// **'Status'**
-  String get cashier_transaction_status;
+  String get cashierTransactionStatus;
 
-  /// No description provided for @cashier_transaction_to.
+  /// No description provided for @cashierTransactionTo.
   ///
   /// In en, this message translates to:
   /// **'To'**
-  String get cashier_transaction_to;
+  String get cashierTransactionTo;
 
-  /// No description provided for @cashier_transaction_transaction_id.
+  /// No description provided for @cashierTransactionTransactionId.
   ///
   /// In en, this message translates to:
   /// **'Transaction ID'**
-  String get cashier_transaction_transaction_id;
+  String get cashierTransactionTransactionId;
 
-  /// No description provided for @cashier_transaction_transaction_status.
+  /// No description provided for @cashierTransactionTransactionStatus.
   ///
   /// In en, this message translates to:
   /// **'Transaction status'**
-  String get cashier_transaction_transaction_status;
+  String get cashierTransactionTransactionStatus;
 
-  /// No description provided for @cashier_transaction_win.
+  /// No description provided for @cashierTransactionWin.
   ///
   /// In en, this message translates to:
   /// **'Win'**
-  String get cashier_transaction_win;
+  String get cashierTransactionWin;
 
-  /// No description provided for @cashier_transaction_withdraw.
+  /// No description provided for @cashierTransactionWithdraw.
   ///
   /// In en, this message translates to:
   /// **'Withdraw'**
-  String get cashier_transaction_withdraw;
+  String get cashierTransactionWithdraw;
 
-  /// No description provided for @cashier_transactions_empty.
+  /// No description provided for @cashierTransactionsEmpty.
   ///
   /// In en, this message translates to:
   /// **'No transaction in your history to display yet'**
-  String get cashier_transactions_empty;
+  String get cashierTransactionsEmpty;
 
-  /// No description provided for @cashier_transactions_beginning.
+  /// No description provided for @cashierTransactionsBeginning.
   ///
   /// In en, this message translates to:
   /// **'From beginning'**
-  String get cashier_transactions_beginning;
+  String get cashierTransactionsBeginning;
 
-  /// No description provided for @cashier_transfer_is_required.
+  /// No description provided for @cashierTransferIsRequired.
   ///
   /// In en, this message translates to:
   /// **'Incorrect Amount!!'**
-  String get cashier_transfer_is_required;
+  String get cashierTransferIsRequired;
 
-  /// No description provided for @cashier_tronlink.
+  /// No description provided for @cashierTronlink.
   ///
   /// In en, this message translates to:
   /// **'Tronlink'**
-  String get cashier_tronlink;
+  String get cashierTronlink;
 
-  /// No description provided for @cashier_tronlink_wallet_balance.
+  /// No description provided for @cashierTronlinkWalletBalance.
   ///
   /// In en, this message translates to:
   /// **'TronLink wallet balance, TRX'**
-  String get cashier_tronlink_wallet_balance;
+  String get cashierTronlinkWalletBalance;
 
-  /// No description provided for @cashier_TRX.
+  /// No description provided for @cashierTrx.
   ///
   /// In en, this message translates to:
   /// **'Tron'**
-  String get cashier_TRX;
+  String get cashierTrx;
 
-  /// No description provided for @cashier_trx_deposit.
+  /// No description provided for @cashierTrxDeposit.
   ///
   /// In en, this message translates to:
   /// **'TRX deposit'**
-  String get cashier_trx_deposit;
+  String get cashierTrxDeposit;
 
-  /// No description provided for @cashier_tx_destination_tag_copied.
+  /// No description provided for @cashierTxDestinationTagCopied.
   ///
   /// In en, this message translates to:
   /// **'Destination Tag copied'**
-  String get cashier_tx_destination_tag_copied;
+  String get cashierTxDestinationTagCopied;
 
-  /// No description provided for @cashier_tx_id_copied.
+  /// No description provided for @cashierTxIdCopied.
   ///
   /// In en, this message translates to:
   /// **'Transaction ID copied'**
-  String get cashier_tx_id_copied;
+  String get cashierTxIdCopied;
 
-  /// No description provided for @cashier_tx_wallet_id_copied.
+  /// No description provided for @cashierTxWalletIdCopied.
   ///
   /// In en, this message translates to:
   /// **'Wallet address copied'**
-  String get cashier_tx_wallet_id_copied;
+  String get cashierTxWalletIdCopied;
 
-  /// No description provided for @cashier_ultra_fast_deposit.
+  /// No description provided for @cashierUltraFastDeposit.
   ///
   /// In en, this message translates to:
   /// **'Ultra fast depositing'**
-  String get cashier_ultra_fast_deposit;
+  String get cashierUltraFastDeposit;
 
-  /// No description provided for @cashier_update_rate.
+  /// No description provided for @cashierUpdateRate.
   ///
   /// In en, this message translates to:
   /// **'Update the rate'**
-  String get cashier_update_rate;
+  String get cashierUpdateRate;
 
-  /// No description provided for @cashier_USDC.
+  /// No description provided for @cashierUsdc.
   ///
   /// In en, this message translates to:
   /// **'USD Coin'**
-  String get cashier_USDC;
+  String get cashierUsdc;
 
-  /// No description provided for @cashier_USDT.
+  /// No description provided for @cashierUsdt.
   ///
   /// In en, this message translates to:
   /// **'Tether'**
-  String get cashier_USDT;
+  String get cashierUsdt;
 
-  /// No description provided for @cashier_USDT_ERC_deposit.
+  /// No description provided for @cashierUsdtErcDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Ethereum (ERC20)'**
-  String get cashier_USDT_ERC_deposit;
+  /// **'Ethereum _ERC20_'**
+  String get cashierUsdtErcDeposit;
 
-  /// No description provided for @cashier_USDT_TRC_deposit.
+  /// No description provided for @cashierUsdtTrcDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Tron (TRC20)'**
-  String get cashier_USDT_TRC_deposit;
+  /// **'Tron _TRC20_'**
+  String get cashierUsdtTrcDeposit;
 
-  /// No description provided for @cashier_USDT_deposit_jeton_description.
+  /// No description provided for @cashierUsdtDepositJetonDescription.
   ///
   /// In en, this message translates to:
   /// **'Pay with JPY to get USDT'**
-  String get cashier_USDT_deposit_jeton_description;
+  String get cashierUsdtDepositJetonDescription;
 
-  /// No description provided for @cashier_USDT_withdraw_jeton_description.
+  /// No description provided for @cashierUsdtWithdrawJetonDescription.
   ///
   /// In en, this message translates to:
   /// **'Withdraw USDT and get JPY'**
-  String get cashier_USDT_withdraw_jeton_description;
+  String get cashierUsdtWithdrawJetonDescription;
 
-  /// No description provided for @cashier_use_mobile_or_qr.
+  /// No description provided for @cashierUseMobileOrQr.
   ///
   /// In en, this message translates to:
   /// **'Use mobile for QR'**
-  String get cashier_use_mobile_or_qr;
+  String get cashierUseMobileOrQr;
 
-  /// No description provided for @cashier_utorg_purchase_description.
+  /// No description provided for @cashierUtorgPurchaseDescription.
   ///
   /// In en, this message translates to:
   /// **'Do you want to use your card for buying Bitcoin, Ethereum, etc?'**
-  String get cashier_utorg_purchase_description;
+  String get cashierUtorgPurchaseDescription;
 
-  /// No description provided for @cashier_utorg_purchase_license.
+  /// No description provided for @cashierUtorgPurchaseLicense.
   ///
   /// In en, this message translates to:
-  /// **'UTORG is a licensed 3rd party cryptocurrency service provider. By proceeding, you acknowledge and accept the exchange of fiat for cryptocurrency. UTORG bears no responsibility for the further cryptocurrency application, once it is sent to your wallet address.'**
-  String get cashier_utorg_purchase_license;
+  /// **'UTORG is a licensed 3rd party cryptocurrency service provider By proceeding, you acknowledge and accept the exchange of fiat for cryptocurrency UTORG bears no responsibility for the further cryptocurrency application, once it is sent to your wallet address'**
+  String get cashierUtorgPurchaseLicense;
 
-  /// No description provided for @cashier_utorg_purchase_title.
+  /// No description provided for @cashierUtorgPurchaseTitle.
   ///
   /// In en, this message translates to:
   /// **'Purchase crypto with Card'**
-  String get cashier_utorg_purchase_title;
+  String get cashierUtorgPurchaseTitle;
 
-  /// No description provided for @cashier_utorg_title.
+  /// No description provided for @cashierUtorgTitle.
   ///
   /// In en, this message translates to:
   /// **'UTORG'**
-  String get cashier_utorg_title;
+  String get cashierUtorgTitle;
 
-  /// No description provided for @cashier_view_deposit_history.
+  /// No description provided for @cashierViewDepositHistory.
   ///
   /// In en, this message translates to:
   /// **'View deposit history'**
-  String get cashier_view_deposit_history;
+  String get cashierViewDepositHistory;
 
-  /// No description provided for @cashier_view_other_payment_options.
+  /// No description provided for @cashierViewOtherPaymentOptions.
   ///
   /// In en, this message translates to:
   /// **'View other payment options'**
-  String get cashier_view_other_payment_options;
+  String get cashierViewOtherPaymentOptions;
 
-  /// No description provided for @cashier_view_withdraw_history.
+  /// No description provided for @cashierViewWithdrawHistory.
   ///
   /// In en, this message translates to:
   /// **'View withdrawal history'**
-  String get cashier_view_withdraw_history;
+  String get cashierViewWithdrawHistory;
 
-  /// No description provided for @cashier_wallet.
+  /// No description provided for @cashierWallet.
   ///
   /// In en, this message translates to:
   /// **'Wallet'**
-  String get cashier_wallet;
+  String get cashierWallet;
 
-  /// No description provided for @cashier_wallet_address.
+  /// No description provided for @cashierWalletAddress.
   ///
   /// In en, this message translates to:
   /// **'Wallet address'**
-  String get cashier_wallet_address;
+  String get cashierWalletAddress;
 
-  /// No description provided for @cashier_wallet_methods.
+  /// No description provided for @cashierWalletMethods.
   ///
   /// In en, this message translates to:
   /// **'Wallet methods'**
-  String get cashier_wallet_methods;
+  String get cashierWalletMethods;
 
-  /// No description provided for @cashier_wallet_settings.
+  /// No description provided for @cashierWalletSettings.
   ///
   /// In en, this message translates to:
   /// **'Wallet settings'**
-  String get cashier_wallet_settings;
+  String get cashierWalletSettings;
 
-  /// No description provided for @cashier_walletconnect.
+  /// No description provided for @cashierWalletconnect.
   ///
   /// In en, this message translates to:
   /// **'WalletConnect'**
-  String get cashier_walletconnect;
+  String get cashierWalletconnect;
 
-  /// No description provided for @cashier_walletconnect_desc.
+  /// No description provided for @cashierWalletconnectDesc.
   ///
   /// In en, this message translates to:
   /// **'Connect your wallet'**
-  String get cashier_walletconnect_desc;
+  String get cashierWalletconnectDesc;
 
-  /// No description provided for @cashier_we_are_not_accepting.
+  /// No description provided for @cashierWeAreNotAccepting.
   ///
   /// In en, this message translates to:
-  /// **'We only accept cards that are 3D Secure enrolled.'**
-  String get cashier_we_are_not_accepting;
+  /// **'We only accept cards that are 3D Secure enrolled'**
+  String get cashierWeAreNotAccepting;
 
-  /// No description provided for @cashier_web3wallet_account.
+  /// No description provided for @cashierWeb3walletAccount.
   ///
   /// In en, this message translates to:
   /// **'Account'**
-  String get cashier_web3wallet_account;
+  String get cashierWeb3walletAccount;
 
-  /// No description provided for @cashier_web3wallet_chain_disconnected.
+  /// No description provided for @cashierWeb3walletChainDisconnected.
   ///
   /// In en, this message translates to:
   /// **'Disconnected'**
-  String get cashier_web3wallet_chain_disconnected;
+  String get cashierWeb3walletChainDisconnected;
 
-  /// No description provided for @cashier_web3wallet_chain_unsupported_network.
+  /// No description provided for @cashierWeb3walletChainUnsupportedNetwork.
   ///
   /// In en, this message translates to:
   /// **'Unsupported network'**
-  String get cashier_web3wallet_chain_unsupported_network;
+  String get cashierWeb3walletChainUnsupportedNetwork;
 
-  /// No description provided for @cashier_web3wallet_continue_with_wallet.
+  /// No description provided for @cashierWeb3walletContinueWithWallet.
   ///
   /// In en, this message translates to:
-  /// **'Please continue with connected wallet to complete the transaction.'**
-  String get cashier_web3wallet_continue_with_wallet;
+  /// **'Please continue with connected wallet to complete the transaction'**
+  String get cashierWeb3walletContinueWithWallet;
 
-  /// No description provided for @cashier_web3wallet_disconnect_wallet.
+  /// No description provided for @cashierWeb3walletDisconnectWallet.
   ///
   /// In en, this message translates to:
   /// **'Disconnect wallet'**
-  String get cashier_web3wallet_disconnect_wallet;
+  String get cashierWeb3walletDisconnectWallet;
 
-  /// No description provided for @cashier_web3wallet_disconnect_wallet_desc.
+  /// No description provided for @cashierWeb3walletDisconnectWalletDesc.
   ///
   /// In en, this message translates to:
-  /// **'You can always connect your account later.'**
-  String get cashier_web3wallet_disconnect_wallet_desc;
+  /// **'You can always connect your account later'**
+  String get cashierWeb3walletDisconnectWalletDesc;
 
-  /// No description provided for @cashier_web3wallet_disconnect_wallet_title.
+  /// No description provided for @cashierWeb3walletDisconnectWalletTitle.
   ///
   /// In en, this message translates to:
   /// **'Are you sure?'**
-  String get cashier_web3wallet_disconnect_wallet_title;
+  String get cashierWeb3walletDisconnectWalletTitle;
 
-  /// No description provided for @cashier_web3wallet_enter_deposit_amount.
+  /// No description provided for @cashierWeb3walletEnterDepositAmount.
   ///
   /// In en, this message translates to:
   /// **'Enter deposit amount'**
-  String get cashier_web3wallet_enter_deposit_amount;
+  String get cashierWeb3walletEnterDepositAmount;
 
-  /// No description provided for @cashier_web3wallet_error_contract.
+  /// No description provided for @cashierWeb3walletErrorContract.
   ///
   /// In en, this message translates to:
   /// **'Contract write error'**
-  String get cashier_web3wallet_error_contract;
+  String get cashierWeb3walletErrorContract;
 
-  /// No description provided for @cashier_web3wallet_error_estimate_gas.
+  /// No description provided for @cashierWeb3walletErrorEstimateGas.
   ///
   /// In en, this message translates to:
-  /// **'Estimate gas error: make sure everything is correct and enough balance for gas price.'**
-  String get cashier_web3wallet_error_estimate_gas;
+  /// **'Estimate gas error make sure everything is correct and enough balance for gas price'**
+  String get cashierWeb3walletErrorEstimateGas;
 
-  /// No description provided for @cashier_web3wallet_error_exceeds_wallet_balance.
+  /// No description provided for @cashierWeb3walletErrorExceedsWalletBalance.
   ///
   /// In en, this message translates to:
   /// **'Exceeds wallets balance amount {walletBalance} {currency}'**
-  String cashier_web3wallet_error_exceeds_wallet_balance(Object walletBalance, Object currency);
+  String cashierWeb3walletErrorExceedsWalletBalance(Object walletBalance, Object currency);
 
-  /// No description provided for @cashier_web3wallet_error_invalid_amount.
+  /// No description provided for @cashierWeb3walletErrorInvalidAmount.
   ///
   /// In en, this message translates to:
   /// **'Invalid amount'**
-  String get cashier_web3wallet_error_invalid_amount;
+  String get cashierWeb3walletErrorInvalidAmount;
 
-  /// No description provided for @cashier_web3wallet_error_min_deposit_amount.
+  /// No description provided for @cashierWeb3walletErrorMinDepositAmount.
   ///
   /// In en, this message translates to:
   /// **'Minimum deposit amount {minDeposit} {currency}'**
-  String cashier_web3wallet_error_min_deposit_amount(Object minDeposit, Object currency);
+  String cashierWeb3walletErrorMinDepositAmount(Object minDeposit, Object currency);
 
-  /// No description provided for @cashier_web3wallet_error_prepare_contract.
+  /// No description provided for @cashierWeb3walletErrorPrepareContract.
   ///
   /// In en, this message translates to:
-  /// **'Prepare contract error: make sure everything is correct and you have enough ETH for this transfer.'**
-  String get cashier_web3wallet_error_prepare_contract;
+  /// **'Prepare contract error make sure everything is correct and you have enough ETH for this transfer'**
+  String get cashierWeb3walletErrorPrepareContract;
 
-  /// No description provided for @cashier_web3wallet_error_prepare_transaction.
+  /// No description provided for @cashierWeb3walletErrorPrepareTransaction.
   ///
   /// In en, this message translates to:
-  /// **'Prepare transaction error: make sure everything is correct and you have enough ETH for this transfer'**
-  String get cashier_web3wallet_error_prepare_transaction;
+  /// **'Prepare transaction error make sure everything is correct and you have enough ETH for this transfer'**
+  String get cashierWeb3walletErrorPrepareTransaction;
 
-  /// No description provided for @cashier_web3wallet_error_transaction.
+  /// No description provided for @cashierWeb3walletErrorTransaction.
   ///
   /// In en, this message translates to:
   /// **'Send transaction error'**
-  String get cashier_web3wallet_error_transaction;
+  String get cashierWeb3walletErrorTransaction;
 
-  /// No description provided for @cashier_web3wallet_error_user_rejected.
+  /// No description provided for @cashierWeb3walletErrorUserRejected.
   ///
   /// In en, this message translates to:
-  /// **'User rejected the request.'**
-  String get cashier_web3wallet_error_user_rejected;
+  /// **'User rejected the request'**
+  String get cashierWeb3walletErrorUserRejected;
 
-  /// No description provided for @cashier_web3wallet_transaction_error.
+  /// No description provided for @cashierWeb3walletTransactionError.
   ///
   /// In en, this message translates to:
   /// **'Payment failed'**
-  String get cashier_web3wallet_transaction_error;
+  String get cashierWeb3walletTransactionError;
 
-  /// No description provided for @cashier_web3wallet_transaction_progress.
+  /// No description provided for @cashierWeb3walletTransactionProgress.
   ///
   /// In en, this message translates to:
-  /// **'You\'ve successfully sent a payment. We are waiting for the payment to be verified by the network.'**
-  String get cashier_web3wallet_transaction_progress;
+  /// **'You\'ve successfully sent a payment We are waiting for the payment to be verified by the network'**
+  String get cashierWeb3walletTransactionProgress;
 
-  /// No description provided for @cashier_web3wallet_transaction_success.
+  /// No description provided for @cashierWeb3walletTransactionSuccess.
   ///
   /// In en, this message translates to:
-  /// **'Payment success.'**
-  String get cashier_web3wallet_transaction_success;
+  /// **'Payment success'**
+  String get cashierWeb3walletTransactionSuccess;
 
-  /// No description provided for @cashier_web3wallet_view_on_blockchain.
+  /// No description provided for @cashierWeb3walletViewOnBlockchain.
   ///
   /// In en, this message translates to:
   /// **'View on Blockchain'**
-  String get cashier_web3wallet_view_on_blockchain;
+  String get cashierWeb3walletViewOnBlockchain;
 
-  /// No description provided for @cashier_web3wallet_wallet_deposit.
+  /// No description provided for @cashierWeb3walletWalletDeposit.
   ///
   /// In en, this message translates to:
   /// **'Wallet Deposit'**
-  String get cashier_web3wallet_wallet_deposit;
+  String get cashierWeb3walletWalletDeposit;
 
-  /// No description provided for @cashier_web3wallet_wallet_linked.
+  /// No description provided for @cashierWeb3walletWalletLinked.
   ///
   /// In en, this message translates to:
   /// **'Wallet Linked'**
-  String get cashier_web3wallet_wallet_linked;
+  String get cashierWeb3walletWalletLinked;
 
-  /// No description provided for @cashier_web3wallet_wallet_linked_btn_title.
+  /// No description provided for @cashierWeb3walletWalletLinkedBtnTitle.
   ///
   /// In en, this message translates to:
   /// **'Deposit via {walletName} now'**
-  String cashier_web3wallet_wallet_linked_btn_title(Object walletName);
+  String cashierWeb3walletWalletLinkedBtnTitle(Object walletName);
 
-  /// No description provided for @cashier_web3wallet_wallet_linked_desc.
+  /// No description provided for @cashierWeb3walletWalletLinkedDesc.
   ///
   /// In en, this message translates to:
   /// **'You have successfully linked your {walletName} wallet, enjoy even faster deposits & withdrawals now!'**
-  String cashier_web3wallet_wallet_linked_desc(Object walletName);
+  String cashierWeb3walletWalletLinkedDesc(Object walletName);
 
-  /// No description provided for @cashier_web3wallet_warn_disconnect_active_wallet.
+  /// No description provided for @cashierWeb3walletWarnDisconnectActiveWallet.
   ///
   /// In en, this message translates to:
-  /// **'Please disconnect the active wallet: {wallet}'**
-  String cashier_web3wallet_warn_disconnect_active_wallet(Object wallet);
+  /// **'Please disconnect the active wallet {wallet}'**
+  String cashierWeb3walletWarnDisconnectActiveWallet(Object wallet);
 
-  /// No description provided for @cashier_webview_page.
+  /// No description provided for @cashierWebviewPage.
   ///
   /// In en, this message translates to:
   /// **'Webview page'**
-  String get cashier_webview_page;
+  String get cashierWebviewPage;
 
-  /// No description provided for @cashier_win.
+  /// No description provided for @cashierWin.
   ///
   /// In en, this message translates to:
   /// **'Win'**
-  String get cashier_win;
+  String get cashierWin;
 
-  /// No description provided for @cashier_withdraw.
+  /// No description provided for @cashierWithdraw.
   ///
   /// In en, this message translates to:
   /// **'Withdraw'**
-  String get cashier_withdraw;
+  String get cashierWithdraw;
 
-  /// No description provided for @cashier_withdraw_3_confirmations.
+  /// No description provided for @cashierWithdraw3Confirmations.
   ///
   /// In en, this message translates to:
-  /// **'A deposit can be withdrawn as soon as it gets at least 3 confirmations. '**
-  String get cashier_withdraw_3_confirmations;
+  /// **'A deposit can be withdrawn as soon as it gets at least 3 confirmations '**
+  String get cashierWithdraw3Confirmations;
 
-  /// No description provided for @cashier_withdraw_48h_restriction.
+  /// No description provided for @cashierWithdraw48hRestriction.
   ///
   /// In en, this message translates to:
-  /// **'You are unable to withdraw for 48 hours after changing your password due to security reasons.'**
-  String get cashier_withdraw_48h_restriction;
+  /// **'You are unable to withdraw for 48 hours after changing your password due to security reasons'**
+  String get cashierWithdraw48hRestriction;
 
-  /// No description provided for @cashier_withdraw_ADA.
+  /// No description provided for @cashierWithdrawAda.
   ///
   /// In en, this message translates to:
   /// **'Withdraw ADA'**
-  String get cashier_withdraw_ADA;
+  String get cashierWithdrawAda;
 
-  /// No description provided for @cashier_withdraw_BNB.
+  /// No description provided for @cashierWithdrawBnb.
   ///
   /// In en, this message translates to:
   /// **'Withdraw BNB'**
-  String get cashier_withdraw_BNB;
+  String get cashierWithdrawBnb;
 
-  /// No description provided for @cashier_withdraw_BTC.
+  /// No description provided for @cashierWithdrawBtc.
   ///
   /// In en, this message translates to:
   /// **'Withdraw Bitcoin'**
-  String get cashier_withdraw_BTC;
+  String get cashierWithdrawBtc;
 
-  /// No description provided for @cashier_withdraw_BUSD.
+  /// No description provided for @cashierWithdrawBusd.
   ///
   /// In en, this message translates to:
   /// **'Withdraw BUSD'**
-  String get cashier_withdraw_BUSD;
+  String get cashierWithdrawBusd;
 
-  /// No description provided for @cashier_withdraw_CAD.
+  /// No description provided for @cashierWithdrawCad.
   ///
   /// In en, this message translates to:
   /// **'Withdraw CAD'**
-  String get cashier_withdraw_CAD;
+  String get cashierWithdrawCad;
 
-  /// No description provided for @cashier_withdraw_confirm.
+  /// No description provided for @cashierWithdrawConfirm.
   ///
   /// In en, this message translates to:
   /// **'Confirm'**
-  String get cashier_withdraw_confirm;
+  String get cashierWithdrawConfirm;
 
-  /// No description provided for @cashier_withdraw_DAI.
+  /// No description provided for @cashierWithdrawDai.
   ///
   /// In en, this message translates to:
   /// **'Withdraw DAI'**
-  String get cashier_withdraw_DAI;
+  String get cashierWithdrawDai;
 
-  /// No description provided for @cashier_withdraw_DOGE.
+  /// No description provided for @cashierWithdrawDoge.
   ///
   /// In en, this message translates to:
   /// **'Withdraw DOGE'**
-  String get cashier_withdraw_DOGE;
+  String get cashierWithdrawDoge;
 
-  /// No description provided for @cashier_withdraw_ETH.
+  /// No description provided for @cashierWithdrawEth.
   ///
   /// In en, this message translates to:
   /// **'Withdraw ETH '**
-  String get cashier_withdraw_ETH;
+  String get cashierWithdrawEth;
 
-  /// No description provided for @cashier_withdraw_EUR.
+  /// No description provided for @cashierWithdrawEur.
   ///
   /// In en, this message translates to:
   /// **'Withdraw EUR'**
-  String get cashier_withdraw_EUR;
+  String get cashierWithdrawEur;
 
-  /// No description provided for @cashier_withdraw_funds.
+  /// No description provided for @cashierWithdrawFunds.
   ///
   /// In en, this message translates to:
   /// **'Withdraw funds'**
-  String get cashier_withdraw_funds;
+  String get cashierWithdrawFunds;
 
-  /// No description provided for @cashier_withdraw_history.
+  /// No description provided for @cashierWithdrawHistory.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal history'**
-  String get cashier_withdraw_history;
+  String get cashierWithdrawHistory;
 
-  /// No description provided for @cashier_withdraw_in_progress.
+  /// No description provided for @cashierWithdrawInProgress.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal in progress'**
-  String get cashier_withdraw_in_progress;
+  String get cashierWithdrawInProgress;
 
-  /// No description provided for @cashier_withdraw_info_correct_fields.
+  /// No description provided for @cashierWithdrawInfoCorrectFields.
   ///
   /// In en, this message translates to:
-  /// **'Please ensure that all fields have been correctly selected or filled in. We cannot recover incorrectly transferred funds.'**
-  String get cashier_withdraw_info_correct_fields;
+  /// **'Please ensure that all fields have been correctly selected or filled in We cannot recover incorrectly transferred funds'**
+  String get cashierWithdrawInfoCorrectFields;
 
-  /// No description provided for @cashier_withdraw_info_xrp.
+  /// No description provided for @cashierWithdrawInfoXrp.
   ///
   /// In en, this message translates to:
-  /// **'Do you need to specify a destination tag? Generate an X-address using'**
-  String get cashier_withdraw_info_xrp;
+  /// **'Do you need to specify a destination tag? Generate an X_address using'**
+  String get cashierWithdrawInfoXrp;
 
-  /// No description provided for @cashier_withdraw_is_complete.
+  /// No description provided for @cashierWithdrawIsComplete.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal is complete'**
-  String get cashier_withdraw_is_complete;
+  String get cashierWithdrawIsComplete;
 
-  /// No description provided for @cashier_withdraw_JPY.
+  /// No description provided for @cashierWithdrawJpy.
   ///
   /// In en, this message translates to:
   /// **'Withdraw JPY'**
-  String get cashier_withdraw_JPY;
+  String get cashierWithdrawJpy;
 
-  /// No description provided for @cashier_withdraw_LTC.
+  /// No description provided for @cashierWithdrawLtc.
   ///
   /// In en, this message translates to:
   /// **'Withdraw LTC'**
-  String get cashier_withdraw_LTC;
+  String get cashierWithdrawLtc;
 
-  /// No description provided for @cashier_withdraw_MATIC.
+  /// No description provided for @cashierWithdrawMatic.
   ///
   /// In en, this message translates to:
   /// **'Withdraw Polygon'**
-  String get cashier_withdraw_MATIC;
+  String get cashierWithdrawMatic;
 
-  /// No description provided for @cashier_withdraw_next.
+  /// No description provided for @cashierWithdrawNext.
   ///
   /// In en, this message translates to:
   /// **'Next'**
-  String get cashier_withdraw_next;
+  String get cashierWithdrawNext;
 
   /// SOC Withdrawal
   ///
   /// In en, this message translates to:
   /// **'Withdraw SOC'**
-  String get cashier_withdraw_SOC;
+  String get cashierWithdrawSoc;
 
-  /// No description provided for @cashier_withdraw_successful.
+  /// No description provided for @cashierWithdrawSuccessful.
   ///
   /// In en, this message translates to:
-  /// **'Your withdrawal of {currency} {amount} is confirmed.'**
-  String cashier_withdraw_successful(Object currency, Object amount);
+  /// **'Your withdrawal of {currency} {amount} is confirmed'**
+  String cashierWithdrawSuccessful(Object currency, Object amount);
 
-  /// No description provided for @cashier_withdraw_THB.
+  /// No description provided for @cashierWithdrawThb.
   ///
   /// In en, this message translates to:
   /// **'Withdraw THB'**
-  String get cashier_withdraw_THB;
+  String get cashierWithdrawThb;
 
-  /// No description provided for @cashier_withdraw_TON.
+  /// No description provided for @cashierWithdrawTon.
   ///
   /// In en, this message translates to:
   /// **'Withdraw TON'**
-  String get cashier_withdraw_TON;
+  String get cashierWithdrawTon;
 
-  /// No description provided for @cashier_withdraw_TRX.
+  /// No description provided for @cashierWithdrawTrx.
   ///
   /// In en, this message translates to:
   /// **'Withdraw TRX'**
-  String get cashier_withdraw_TRX;
+  String get cashierWithdrawTrx;
 
-  /// No description provided for @cashier_withdraw_USDC.
+  /// No description provided for @cashierWithdrawUsdc.
   ///
   /// In en, this message translates to:
   /// **'Withdraw USDC'**
-  String get cashier_withdraw_USDC;
+  String get cashierWithdrawUsdc;
 
-  /// No description provided for @cashier_withdraw_USDT.
+  /// No description provided for @cashierWithdrawUsdt.
   ///
   /// In en, this message translates to:
   /// **'Withdraw USDT'**
-  String get cashier_withdraw_USDT;
+  String get cashierWithdrawUsdt;
 
-  /// No description provided for @cashier_withdraw_view_status.
+  /// No description provided for @cashierWithdrawViewStatus.
   ///
   /// In en, this message translates to:
   /// **'Click here to view status'**
-  String get cashier_withdraw_view_status;
+  String get cashierWithdrawViewStatus;
 
-  /// No description provided for @cashier_withdraw_XRP.
+  /// No description provided for @cashierWithdrawXrp.
   ///
   /// In en, this message translates to:
   /// **'Withdraw XRP'**
-  String get cashier_withdraw_XRP;
+  String get cashierWithdrawXrp;
 
-  /// No description provided for @cashier_withdraw_animex_bank_transfer_title.
+  /// No description provided for @cashierWithdrawAnimex_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_withdraw_animex_bank_transfer_title;
+  String get cashierWithdrawAnimex_bankTransferTitle;
 
-  /// No description provided for @cashier_withdraw_cancel.
+  /// No description provided for @cashierWithdrawCancel.
   ///
   /// In en, this message translates to:
   /// **'Cancel withdraw'**
-  String get cashier_withdraw_cancel;
+  String get cashierWithdrawCancel;
 
-  /// No description provided for @cashier_withdraw_ezeebill_bank_transfer_INR_title.
+  /// No description provided for @cashierWithdrawEzeebill_bankTransfer_inrTitle.
   ///
   /// In en, this message translates to:
   /// **'Instant INR Bank Transfer'**
-  String get cashier_withdraw_ezeebill_bank_transfer_INR_title;
+  String get cashierWithdrawEzeebill_bankTransfer_inrTitle;
 
-  /// No description provided for @cashier_withdraw_ezeebill_bank_transfer_JPY_title.
+  /// No description provided for @cashierWithdrawEzeebill_bankTransfer_jpyTitle.
   ///
   /// In en, this message translates to:
   /// **'Instant JPY Bank Transfer'**
-  String get cashier_withdraw_ezeebill_bank_transfer_JPY_title;
+  String get cashierWithdrawEzeebill_bankTransfer_jpyTitle;
 
   /// Ezeebill subtitle
   ///
   /// In en, this message translates to:
-  /// **'Reflection time: 2 business days (varies by bank)'**
-  String get cashier_withdraw_ezeebill_bank_transfer_description;
+  /// **'Reflection time 2 business days _varies by bank_'**
+  String get cashierWithdrawEzeebill_bankTransferDescription;
 
-  /// No description provided for @cashier_withdraw_ezeebill_bank_transfer_title.
+  /// No description provided for @cashierWithdrawEzeebill_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Ezeebill Bank Transfer'**
-  String get cashier_withdraw_ezeebill_bank_transfer_title;
+  String get cashierWithdrawEzeebill_bankTransferTitle;
 
-  /// No description provided for @cashier_withdraw_inovapay_bank_transfer_description.
+  /// No description provided for @cashierWithdrawInovapay_bankTransferDescription.
   ///
   /// In en, this message translates to:
   /// **'Transactions can take up to 6 business day to confirm'**
-  String get cashier_withdraw_inovapay_bank_transfer_description;
+  String get cashierWithdrawInovapay_bankTransferDescription;
 
-  /// No description provided for @cashier_withdraw_inovapay_bank_transfer_title.
+  /// No description provided for @cashierWithdrawInovapay_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Bank transfer'**
-  String get cashier_withdraw_inovapay_bank_transfer_title;
+  String get cashierWithdrawInovapay_bankTransferTitle;
 
-  /// No description provided for @cashier_withdraw_inovapay_pix_title.
+  /// No description provided for @cashierWithdrawInovapay_pixTitle.
   ///
   /// In en, this message translates to:
   /// **'PIX'**
-  String get cashier_withdraw_inovapay_pix_title;
+  String get cashierWithdrawInovapay_pixTitle;
 
-  /// No description provided for @cashier_withdraw_interac_interac_title.
+  /// No description provided for @cashierWithdrawInterac_interacTitle.
   ///
   /// In en, this message translates to:
   /// **'Payment'**
-  String get cashier_withdraw_interac_interac_title;
+  String get cashierWithdrawInterac_interacTitle;
 
-  /// No description provided for @cashier_withdraw_jeton_JPY_title.
+  /// No description provided for @cashierWithdrawJeton_jpyTitle.
   ///
   /// In en, this message translates to:
   /// **'JPY Bank Transfer'**
-  String get cashier_withdraw_jeton_JPY_title;
+  String get cashierWithdrawJeton_jpyTitle;
 
-  /// No description provided for @cashier_withdraw_jeton_pix_title.
+  /// No description provided for @cashierWithdrawJeton_pixTitle.
   ///
   /// In en, this message translates to:
   /// **'PIX'**
-  String get cashier_withdraw_jeton_pix_title;
+  String get cashierWithdrawJeton_pixTitle;
 
-  /// No description provided for @cashier_withdraw_jeton_description.
+  /// No description provided for @cashierWithdrawJetonDescription.
   ///
   /// In en, this message translates to:
-  /// **'Reflection time: Around 2 business days after the request is approved'**
-  String get cashier_withdraw_jeton_description;
+  /// **'Reflection time Around 2 business days after the request is approved'**
+  String get cashierWithdrawJetonDescription;
 
-  /// No description provided for @cashier_withdraw_jeton_title.
+  /// No description provided for @cashierWithdrawJetonTitle.
   ///
   /// In en, this message translates to:
   /// **'JPY Bank Transfer'**
-  String get cashier_withdraw_jeton_title;
+  String get cashierWithdrawJetonTitle;
 
   /// Please choose the correct network before withdrawal
   ///
   /// In en, this message translates to:
-  /// **'Before withdrawing, pick correct network.'**
-  String get cashier_withdraw_network_tooltip;
+  /// **'Before withdrawing, pick correct network'**
+  String get cashierWithdrawNetworkTooltip;
 
-  /// No description provided for @cashier_withdraw_pagava_title.
+  /// No description provided for @cashierWithdrawPagavaTitle.
   ///
   /// In en, this message translates to:
   /// **'Internet Banking Transfer'**
-  String get cashier_withdraw_pagava_title;
+  String get cashierWithdrawPagavaTitle;
 
-  /// No description provided for @cashier_withdraw_pagsmile_pix_description.
+  /// No description provided for @cashierWithdrawPagsmile_pixDescription.
   ///
   /// In en, this message translates to:
   /// **'Transactions can take up to 1 business day to confirm'**
-  String get cashier_withdraw_pagsmile_pix_description;
+  String get cashierWithdrawPagsmile_pixDescription;
 
-  /// No description provided for @cashier_withdraw_pagsmile_pix_title.
+  /// No description provided for @cashierWithdrawPagsmile_pixTitle.
   ///
   /// In en, this message translates to:
   /// **'PIX'**
-  String get cashier_withdraw_pagsmile_pix_title;
+  String get cashierWithdrawPagsmile_pixTitle;
 
-  /// No description provided for @cashier_withdraw_pay4fun_pay4fun_description.
+  /// No description provided for @cashierWithdrawPay4fun_pay4funDescription.
   ///
   /// In en, this message translates to:
   /// **'Instant transfer'**
-  String get cashier_withdraw_pay4fun_pay4fun_description;
+  String get cashierWithdrawPay4fun_pay4funDescription;
 
-  /// No description provided for @cashier_withdraw_pay4fun_pay4fun_title.
+  /// No description provided for @cashierWithdrawPay4fun_pay4funTitle.
   ///
   /// In en, this message translates to:
   /// **'Pay4Fun'**
-  String get cashier_withdraw_pay4fun_pay4fun_title;
+  String get cashierWithdrawPay4fun_pay4funTitle;
 
-  /// No description provided for @cashier_withdraw_paymentrush_payment_rush_title.
+  /// No description provided for @cashierWithdrawPaymentrush_paymentRushTitle.
   ///
   /// In en, this message translates to:
   /// **'Instant Pay'**
-  String get cashier_withdraw_paymentrush_payment_rush_title;
+  String get cashierWithdrawPaymentrush_paymentRushTitle;
 
-  /// No description provided for @cashier_withdraw_pin_bank_bank_transfer_title.
+  /// No description provided for @cashierWithdrawPinBank_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Bank transfer'**
-  String get cashier_withdraw_pin_bank_bank_transfer_title;
+  String get cashierWithdrawPinBank_bankTransferTitle;
 
-  /// No description provided for @cashier_withdraw_pinbank_bank_transfer_title.
+  /// No description provided for @cashierWithdrawPinbank_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'PIX and Bank transfer'**
-  String get cashier_withdraw_pinbank_bank_transfer_title;
+  String get cashierWithdrawPinbank_bankTransferTitle;
 
-  /// No description provided for @cashier_withdraw_qaicash_local_bank_transfer_title.
+  /// No description provided for @cashierWithdrawQaicash_localBankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_withdraw_qaicash_local_bank_transfer_title;
+  String get cashierWithdrawQaicash_localBankTransferTitle;
 
-  /// No description provided for @cashier_withdraw_rupeepayments_bank_transfer_title.
+  /// No description provided for @cashierWithdrawRupeepayments_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Popular methods'**
-  String get cashier_withdraw_rupeepayments_bank_transfer_title;
+  String get cashierWithdrawRupeepayments_bankTransferTitle;
 
-  /// No description provided for @cashier_withdraw_sumopay_bank_transfer_title.
+  /// No description provided for @cashierWithdrawSumopay_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Sumopay'**
-  String get cashier_withdraw_sumopay_bank_transfer_title;
+  String get cashierWithdrawSumopay_bankTransferTitle;
 
-  /// No description provided for @cashier_withdraw_vrio_bank_transfer_title.
+  /// No description provided for @cashierWithdrawVrio_bankTransferTitle.
   ///
   /// In en, this message translates to:
   /// **'Bank Transfer'**
-  String get cashier_withdraw_vrio_bank_transfer_title;
+  String get cashierWithdrawVrio_bankTransferTitle;
 
-  /// No description provided for @cashier_withdraw_wallet_details.
+  /// No description provided for @cashierWithdrawWalletDetails.
   ///
   /// In en, this message translates to:
   /// **'Wallet details'**
-  String get cashier_withdraw_wallet_details;
+  String get cashierWithdrawWalletDetails;
 
-  /// No description provided for @cashier_withdraw_warning_confirm_address.
+  /// No description provided for @cashierWithdrawWarningConfirmAddress.
   ///
   /// In en, this message translates to:
-  /// **'Please always check your withdrawal wallet address before making your transactions.'**
-  String get cashier_withdraw_warning_confirm_address;
+  /// **'Please always check your withdrawal wallet address before making your transactions'**
+  String get cashierWithdrawWarningConfirmAddress;
 
-  /// No description provided for @cashier_withdrawal_agents.
+  /// No description provided for @cashierWithdrawalAgents.
   ///
   /// In en, this message translates to:
   /// **'Agents'**
-  String get cashier_withdrawal_agents;
+  String get cashierWithdrawalAgents;
 
-  /// No description provided for @cashier_withdrawal_amount.
+  /// No description provided for @cashierWithdrawalAmount.
   ///
   /// In en, this message translates to:
-  /// **'Withdrawal amount:'**
-  String get cashier_withdrawal_amount;
+  /// **'Withdrawal amount'**
+  String get cashierWithdrawalAmount;
 
-  /// No description provided for @cashier_withdrawal_BRL.
+  /// No description provided for @cashierWithdrawalBrl.
   ///
   /// In en, this message translates to:
   /// **'Withdraw BRL'**
-  String get cashier_withdrawal_BRL;
+  String get cashierWithdrawalBrl;
 
-  /// No description provided for @cashier_withdrawal_CAD.
+  /// No description provided for @cashierWithdrawalCad.
   ///
   /// In en, this message translates to:
   /// **'Withdraw CAD'**
-  String get cashier_withdrawal_CAD;
+  String get cashierWithdrawalCad;
 
-  /// No description provided for @cashier_withdrawal_currency.
+  /// No description provided for @cashierWithdrawalCurrency.
   ///
   /// In en, this message translates to:
   /// **'Withdraw {currency}'**
-  String cashier_withdrawal_currency(Object currency);
+  String cashierWithdrawalCurrency(Object currency);
 
-  /// No description provided for @cashier_withdrawal_INR.
+  /// No description provided for @cashierWithdrawalInr.
   ///
   /// In en, this message translates to:
   /// **'Withdraw INR'**
-  String get cashier_withdrawal_INR;
+  String get cashierWithdrawalInr;
 
   /// Withdraw JPY
   ///
   /// In en, this message translates to:
   /// **'Withdraw JPY'**
-  String get cashier_withdrawal_JPY;
+  String get cashierWithdrawalJpy;
 
-  /// No description provided for @cashier_withdrawal_pay_to.
+  /// No description provided for @cashierWithdrawalPayTo.
   ///
   /// In en, this message translates to:
   /// **'Pay to'**
-  String get cashier_withdrawal_pay_to;
+  String get cashierWithdrawalPayTo;
 
   /// Withdraw USDT
   ///
   /// In en, this message translates to:
   /// **'Withdraw USDT'**
-  String get cashier_withdrawal_USDT;
+  String get cashierWithdrawalUsdt;
 
-  /// No description provided for @cashier_would_you_like_to_cash.
+  /// No description provided for @cashierWouldYouLikeToCash.
   ///
   /// In en, this message translates to:
   /// **'Would like to cash out to bank account?'**
-  String get cashier_would_you_like_to_cash;
+  String get cashierWouldYouLikeToCash;
 
-  /// No description provided for @cashier_XRP.
+  /// No description provided for @cashierXrp.
   ///
   /// In en, this message translates to:
   /// **'Ripple'**
-  String get cashier_XRP;
+  String get cashierXrp;
 
-  /// No description provided for @cashier_you_are_spending.
+  /// No description provided for @cashierYouAreSpending.
   ///
   /// In en, this message translates to:
-  /// **'You are spending {transferAmount} to buy:'**
-  String cashier_you_are_spending(Object transferAmount);
+  /// **'You are spending {transferAmount} to buy'**
+  String cashierYouAreSpending(Object transferAmount);
 
-  /// No description provided for @cashier_you_can_withdraw_bitcoins.
+  /// No description provided for @cashierYouCanWithdrawBitcoins.
   ///
   /// In en, this message translates to:
   /// **'You can withdraw Bitcoins to your Sumopay account '**
-  String get cashier_you_can_withdraw_bitcoins;
+  String get cashierYouCanWithdrawBitcoins;
 
-  /// No description provided for @cashier_you_have_converted.
+  /// No description provided for @cashierYouHaveConverted.
   ///
   /// In en, this message translates to:
   /// **'You have successfully converted {amount} {currency}'**
-  String cashier_you_have_converted(Object amount, Object currency);
+  String cashierYouHaveConverted(Object amount, Object currency);
 
-  /// No description provided for @cashier_your_address.
+  /// No description provided for @cashierYourAddress.
   ///
   /// In en, this message translates to:
   /// **'Your address'**
-  String get cashier_your_address;
+  String get cashierYourAddress;
 
-  /// No description provided for @cashier_your_are_spending.
+  /// No description provided for @cashierYourAreSpending.
   ///
   /// In en, this message translates to:
-  /// **'You are spending <b>{amount} {currency}</b> to buy:'**
-  String cashier_your_are_spending(Object amount, Object currency);
+  /// **'You are spending <b>{amount} {currency}</b> to buy'**
+  String cashierYourAreSpending(Object amount, Object currency);
 
-  /// No description provided for @cashier_your_bitcoin_address.
+  /// No description provided for @cashierYourBitcoinAddress.
   ///
   /// In en, this message translates to:
   /// **'Your bitcoin address'**
-  String get cashier_your_bitcoin_address;
+  String get cashierYourBitcoinAddress;
 
-  /// No description provided for @cashier_your_bitcoin_dep_address.
+  /// No description provided for @cashierYourBitcoinDepAddress.
   ///
   /// In en, this message translates to:
   /// **'Your Bitcoin depositing address'**
-  String get cashier_your_bitcoin_dep_address;
+  String get cashierYourBitcoinDepAddress;
 
-  /// No description provided for @cashier_your_bitcoin_depositing_address.
+  /// No description provided for @cashierYourBitcoinDepositingAddress.
   ///
   /// In en, this message translates to:
-  /// **'Send your Bitcoin deposit to:'**
-  String get cashier_your_bitcoin_depositing_address;
+  /// **'Send your Bitcoin deposit to'**
+  String get cashierYourBitcoinDepositingAddress;
 
-  /// No description provided for @cashier_your_current_balance.
+  /// No description provided for @cashierYourCurrentBalance.
   ///
   /// In en, this message translates to:
-  /// **'Your current balance:'**
-  String get cashier_your_current_balance;
+  /// **'Your current balance'**
+  String get cashierYourCurrentBalance;
 
-  /// No description provided for @cashier_your_deposit_address.
+  /// No description provided for @cashierYourDepositAddress.
   ///
   /// In en, this message translates to:
   /// **'Your deposit address'**
-  String get cashier_your_deposit_address;
+  String get cashierYourDepositAddress;
 
-  /// No description provided for @cashier_your_eth_address.
+  /// No description provided for @cashierYourEthAddress.
   ///
   /// In en, this message translates to:
   /// **'You ethereum address'**
-  String get cashier_your_eth_address;
+  String get cashierYourEthAddress;
 
-  /// No description provided for @cashier_your_eth_dep_address.
+  /// No description provided for @cashierYourEthDepAddress.
   ///
   /// In en, this message translates to:
   /// **'Your Ethereum depositing address '**
-  String get cashier_your_eth_dep_address;
+  String get cashierYourEthDepAddress;
 
-  /// No description provided for @cashier_your_finances.
+  /// No description provided for @cashierYourFinances.
   ///
   /// In en, this message translates to:
   /// **'Your finances'**
-  String get cashier_your_finances;
+  String get cashierYourFinances;
 
-  /// No description provided for @cashier_your_soc_address.
+  /// No description provided for @cashierYourSocAddress.
   ///
   /// In en, this message translates to:
   /// **'Your SOC address'**
-  String get cashier_your_soc_address;
+  String get cashierYourSocAddress;
 
-  /// No description provided for @cashier_your_soc_dep_address.
+  /// No description provided for @cashierYourSocDepAddress.
   ///
   /// In en, this message translates to:
   /// **'Your SOC deposit address'**
-  String get cashier_your_soc_dep_address;
+  String get cashierYourSocDepAddress;
 
-  /// No description provided for @currency_mBtc.
+  /// No description provided for @currencyMbtc.
   ///
   /// In en, this message translates to:
   /// **'μBTC'**
-  String get currency_mBtc;
+  String get currencyMbtc;
 
-  /// No description provided for @errors_404_cta.
+  /// No description provided for @errors404Cta.
   ///
   /// In en, this message translates to:
   /// **'Go to Games'**
-  String get errors_404_cta;
+  String get errors404Cta;
 
-  /// No description provided for @errors_404_error_message_header.
+  /// No description provided for @errors404ErrorMessageHeader.
   ///
   /// In en, this message translates to:
   /// **'Whoops!'**
-  String get errors_404_error_message_header;
+  String get errors404ErrorMessageHeader;
 
-  /// No description provided for @errors_404_errorMessage.
+  /// No description provided for @errors404Errormessage.
   ///
   /// In en, this message translates to:
-  /// **'Whoops! We can\'t seem to find the page you are looking for.'**
-  String get errors_404_errorMessage;
+  /// **'Whoops! We can\'t seem to find the page you are looking for'**
+  String get errors404Errormessage;
 
-  /// No description provided for @errors_404_promo.
+  /// No description provided for @errors404Promo.
   ///
   /// In en, this message translates to:
-  /// **'Whoops! We can\'t seem to find the page you are looking for.'**
-  String get errors_404_promo;
+  /// **'Whoops! We can\'t seem to find the page you are looking for'**
+  String get errors404Promo;
 
-  /// No description provided for @errors_AGE_MUST_BE_OVER_18.
+  /// No description provided for @errorsAgeMustBeOver18.
   ///
   /// In en, this message translates to:
   /// **'You must be at least 18 years old to register'**
-  String get errors_AGE_MUST_BE_OVER_18;
+  String get errorsAgeMustBeOver18;
 
-  /// No description provided for @errors_already_predicted_this_price.
+  /// No description provided for @errorsAlreadyPredictedThisPrice.
   ///
   /// In en, this message translates to:
-  /// **'You have already predicted this price.'**
-  String get errors_already_predicted_this_price;
+  /// **'You have already predicted this price'**
+  String get errorsAlreadyPredictedThisPrice;
 
-  /// No description provided for @errors_AMOUNT_IS_NULL.
+  /// No description provided for @errorsAmountIsNull.
   ///
   /// In en, this message translates to:
   /// **'Amount is null'**
-  String get errors_AMOUNT_IS_NULL;
+  String get errorsAmountIsNull;
 
-  /// No description provided for @errors_article_404_text.
+  /// No description provided for @errorsArticle404Text.
   ///
   /// In en, this message translates to:
-  /// **'Whoops! We can\'t seem to find the page you are looking for.'**
-  String get errors_article_404_text;
+  /// **'Whoops! We can\'t seem to find the page you are looking for'**
+  String get errorsArticle404Text;
 
-  /// No description provided for @errors_BTC_AMOUNT_MUST_BE_GREATER_THAN_1_MBTC.
+  /// No description provided for @errorsBtcAmountMustBeGreaterThan1Mbtc.
   ///
   /// In en, this message translates to:
   /// **'Received amount must be at least 2 mBTC'**
-  String get errors_BTC_AMOUNT_MUST_BE_GREATER_THAN_1_MBTC;
+  String get errorsBtcAmountMustBeGreaterThan1Mbtc;
 
-  /// No description provided for @errors_complete_form.
+  /// No description provided for @errorsCompleteForm.
   ///
   /// In en, this message translates to:
   /// **'Complete form before proceeding!'**
-  String get errors_complete_form;
+  String get errorsCompleteForm;
 
-  /// No description provided for @errors_COOLDOWN_AFTER_PASSWORD_CHANGE.
+  /// No description provided for @errorsCooldownAfterPasswordChange.
   ///
   /// In en, this message translates to:
-  /// **'You are unable to withdraw for 48 hours after changing your password due to security reasons.'**
-  String get errors_COOLDOWN_AFTER_PASSWORD_CHANGE;
+  /// **'You are unable to withdraw for 48 hours after changing your password due to security reasons'**
+  String get errorsCooldownAfterPasswordChange;
 
-  /// No description provided for @errors_CORRUPT_IMAGE.
+  /// No description provided for @errorsCorruptImage.
   ///
   /// In en, this message translates to:
   /// **'Invalid image file'**
-  String get errors_CORRUPT_IMAGE;
+  String get errorsCorruptImage;
 
-  /// No description provided for @errors_COUNTRY_DOES_NOT_HAVE_SUPPORTED_CURRENCIES.
+  /// No description provided for @errorsCountryDoesNotHaveSupportedCurrencies.
   ///
   /// In en, this message translates to:
   /// **'Country does not have supported currencies'**
-  String get errors_COUNTRY_DOES_NOT_HAVE_SUPPORTED_CURRENCIES;
+  String get errorsCountryDoesNotHaveSupportedCurrencies;
 
-  /// No description provided for @errors_COUNTRY_IS_NOT_SUPPORTED.
+  /// No description provided for @errorsCountryIsNotSupported.
   ///
   /// In en, this message translates to:
   /// **'Country is not supported'**
-  String get errors_COUNTRY_IS_NOT_SUPPORTED;
+  String get errorsCountryIsNotSupported;
 
-  /// No description provided for @errors_CPF_CONTACT_SUPPORT.
+  /// No description provided for @errorsCpfContactSupport.
   ///
   /// In en, this message translates to:
   /// **'We couldn\'t validate your CPF, Please contact our support team'**
-  String get errors_CPF_CONTACT_SUPPORT;
+  String get errorsCpfContactSupport;
 
-  /// No description provided for @errors_CURRENCY_MISMATCH_BETWEEN_SELECTED_CURRENCY_AND_MARKET_BTC_RATE.
+  /// No description provided for @errorsCurrencyMismatchBetweenSelectedCurrencyAndMarketBtcRate.
   ///
   /// In en, this message translates to:
   /// **'Currency mismatch between selected currency and market Bitcoin rate'**
-  String get errors_CURRENCY_MISMATCH_BETWEEN_SELECTED_CURRENCY_AND_MARKET_BTC_RATE;
+  String get errorsCurrencyMismatchBetweenSelectedCurrencyAndMarketBtcRate;
 
-  /// No description provided for @errors_DISABLED_WITHDRAWALS.
+  /// No description provided for @errorsDisabledWithdrawals.
   ///
   /// In en, this message translates to:
-  /// **'An error occurred. Please contact Support.'**
-  String get errors_DISABLED_WITHDRAWALS;
+  /// **'An error occurred Please contact Support'**
+  String get errorsDisabledWithdrawals;
 
-  /// No description provided for @errors_DISABLED_WITHDRAWALS_sportsbet.
+  /// No description provided for @errorsDisabledWithdrawalsSportsbet.
   ///
   /// In en, this message translates to:
-  /// **'An error occurred. Please contact us at <a class=\'text-piccolo\' href=\"mailto:safety@sportsbet.io\">safety@sportsbet.io </a>'**
-  String get errors_DISABLED_WITHDRAWALS_sportsbet;
+  /// **'An error occurred Please contact us at <a class=\'text_piccolo\' href=\"mailtosafety@sportsbetio\">safety@sportsbetio </a>'**
+  String get errorsDisabledWithdrawalsSportsbet;
 
-  /// No description provided for @errors_EMAIL_ALREADY_EXISTS.
+  /// No description provided for @errorsEmailAlreadyExists.
   ///
   /// In en, this message translates to:
   /// **'Email already exists'**
-  String get errors_EMAIL_ALREADY_EXISTS;
+  String get errorsEmailAlreadyExists;
 
-  /// No description provided for @errors_email_is_taken.
+  /// No description provided for @errorsEmailIsTaken.
   ///
   /// In en, this message translates to:
   /// **'Email is already taken'**
-  String get errors_email_is_taken;
+  String get errorsEmailIsTaken;
 
-  /// No description provided for @errors_exchange_MIN_WITHDRAW.
+  /// No description provided for @errorsExchangeMinWithdraw.
   ///
   /// In en, this message translates to:
   /// **'The minimum amount you can convert is {currency} {amount}'**
-  String errors_exchange_MIN_WITHDRAW(Object currency, Object amount);
+  String errorsExchangeMinWithdraw(Object currency, Object amount);
 
-  /// No description provided for @errors_FAILED_TO_SUBMIT.
+  /// No description provided for @errorsFailedToSubmit.
   ///
   /// In en, this message translates to:
   /// **'Failed to submit transaction! Verify if your your input is valid'**
-  String get errors_FAILED_TO_SUBMIT;
+  String get errorsFailedToSubmit;
 
-  /// No description provided for @errors_gameGeneral_cta.
+  /// No description provided for @errorsGamegeneralCta.
   ///
   /// In en, this message translates to:
   /// **'Refresh'**
-  String get errors_gameGeneral_cta;
+  String get errorsGamegeneralCta;
 
-  /// No description provided for @errors_gameGeneral_errorMessage.
+  /// No description provided for @errorsGamegeneralErrormessage.
   ///
   /// In en, this message translates to:
-  /// **'Something went wrong. Try again!'**
-  String get errors_gameGeneral_errorMessage;
+  /// **'Something went wrong Try again!'**
+  String get errorsGamegeneralErrormessage;
 
-  /// No description provided for @errors_general.
+  /// No description provided for @errorsGeneral.
   ///
   /// In en, this message translates to:
-  /// **'Something went wrong.'**
-  String get errors_general;
+  /// **'Something went wrong'**
+  String get errorsGeneral;
 
   /// General error description
   ///
   /// In en, this message translates to:
-  /// **'Things don\'t appear to work at the moment. Please try again later'**
-  String get errors_GENERAL_DESCRIPTION;
+  /// **'Things don\'t appear to work at the moment Please try again later'**
+  String get errorsGeneralDescription;
 
-  /// No description provided for @errors_general_support.
+  /// No description provided for @errorsGeneralSupport.
   ///
   /// In en, this message translates to:
-  /// **'Oops, something went wrong. Please contact support'**
-  String get errors_general_support;
+  /// **'Oops, something went wrong Please contact support'**
+  String get errorsGeneralSupport;
 
-  /// No description provided for @errors_HIGHER_THAN_LIMIT.
+  /// No description provided for @errorsHigherThanLimit.
   ///
   /// In en, this message translates to:
   /// **'The amount you entered is more than the maximum amount'**
-  String get errors_HIGHER_THAN_LIMIT;
+  String get errorsHigherThanLimit;
 
-  /// No description provided for @errors_IMAGE_TOO_BIG.
+  /// No description provided for @errorsImageTooBig.
   ///
   /// In en, this message translates to:
   /// **'Image must be smaller than 10 Mb'**
-  String get errors_IMAGE_TOO_BIG;
+  String get errorsImageTooBig;
 
-  /// No description provided for @errors_input_max_length.
+  /// No description provided for @errorsInputMaxLength.
   ///
   /// In en, this message translates to:
   /// **'Max length exceeded'**
-  String get errors_input_max_length;
+  String get errorsInputMaxLength;
 
-  /// No description provided for @errors_input_max_value.
+  /// No description provided for @errorsInputMaxValue.
   ///
   /// In en, this message translates to:
   /// **'Entered value is too high'**
-  String get errors_input_max_value;
+  String get errorsInputMaxValue;
 
-  /// No description provided for @errors_input_min_value.
+  /// No description provided for @errorsInputMinValue.
   ///
   /// In en, this message translates to:
   /// **'Entered value is too low'**
-  String get errors_input_min_value;
+  String get errorsInputMinValue;
 
-  /// No description provided for @errors_input_required.
+  /// No description provided for @errorsInputRequired.
   ///
   /// In en, this message translates to:
   /// **'Field is required'**
-  String get errors_input_required;
+  String get errorsInputRequired;
 
-  /// No description provided for @errors_INVALID.
+  /// No description provided for @errorsInvalid.
   ///
   /// In en, this message translates to:
   /// **'Invalid'**
-  String get errors_INVALID;
+  String get errorsInvalid;
 
-  /// No description provided for @errors_INVALID_ADDRESS.
+  /// No description provided for @errorsInvalidAddress.
   ///
   /// In en, this message translates to:
   /// **'Invalid address'**
-  String get errors_INVALID_ADDRESS;
+  String get errorsInvalidAddress;
 
-  /// No description provided for @errors_INVALID_ADDRESS_address.
+  /// No description provided for @errorsInvalidAddressAddress.
   ///
   /// In en, this message translates to:
   /// **'Invalid wallet address'**
-  String get errors_INVALID_ADDRESS_address;
+  String get errorsInvalidAddressAddress;
 
-  /// No description provided for @errors_INVALID_CPF.
+  /// No description provided for @errorsInvalidCpf.
   ///
   /// In en, this message translates to:
   /// **'Invalid CPF'**
-  String get errors_INVALID_CPF;
+  String get errorsInvalidCpf;
 
-  /// No description provided for @errors_INVALID_DATE.
+  /// No description provided for @errorsInvalidDate.
   ///
   /// In en, this message translates to:
   /// **'Invalid date'**
-  String get errors_INVALID_DATE;
+  String get errorsInvalidDate;
 
-  /// No description provided for @errors_invalid_date_range.
+  /// No description provided for @errorsInvalidDateRange.
   ///
   /// In en, this message translates to:
   /// **'\'From\' date must be earlier than \'To\' date'**
-  String get errors_invalid_date_range;
+  String get errorsInvalidDateRange;
 
-  /// No description provided for @errors_INVALID_EMAIL.
+  /// No description provided for @errorsInvalidEmail.
   ///
   /// In en, this message translates to:
   /// **'Invalid email address'**
-  String get errors_INVALID_EMAIL;
+  String get errorsInvalidEmail;
 
-  /// No description provided for @errors_INVALID_MARKET_BTC_RATE_ID.
+  /// No description provided for @errorsInvalidMarketBtcRateId.
   ///
   /// In en, this message translates to:
   /// **'Invalid market Bitcoin rate ID'**
-  String get errors_INVALID_MARKET_BTC_RATE_ID;
+  String get errorsInvalidMarketBtcRateId;
 
-  /// No description provided for @errors_INVALID_PASSWORD.
+  /// No description provided for @errorsInvalidPassword.
   ///
   /// In en, this message translates to:
   /// **'Invalid password'**
-  String get errors_INVALID_PASSWORD;
+  String get errorsInvalidPassword;
 
-  /// No description provided for @errors_INVALID_PASSWORD_RESET_TOKEN.
+  /// No description provided for @errorsInvalidPasswordResetToken.
   ///
   /// In en, this message translates to:
   /// **'Please check your password reset link'**
-  String get errors_INVALID_PASSWORD_RESET_TOKEN;
+  String get errorsInvalidPasswordResetToken;
 
-  /// No description provided for @errors_INVALID_PAYMENT_ID.
+  /// No description provided for @errorsInvalidPaymentId.
   ///
   /// In en, this message translates to:
   /// **'Invalid payment ID'**
-  String get errors_INVALID_PAYMENT_ID;
+  String get errorsInvalidPaymentId;
 
-  /// No description provided for @errors_INVALID_PHONE.
+  /// No description provided for @errorsInvalidPhone.
   ///
   /// In en, this message translates to:
   /// **'The phone number must be in a valid format'**
-  String get errors_INVALID_PHONE;
+  String get errorsInvalidPhone;
 
-  /// No description provided for @errors_INVALID_REQUEST.
+  /// No description provided for @errorsInvalidRequest.
   ///
   /// In en, this message translates to:
-  /// **'An error occurred. Please contact Support.'**
-  String get errors_INVALID_REQUEST;
+  /// **'An error occurred Please contact Support'**
+  String get errorsInvalidRequest;
 
-  /// No description provided for @errors_INVALID_RFC.
+  /// No description provided for @errorsInvalidRfc.
   ///
   /// In en, this message translates to:
   /// **'Invalid RFC'**
-  String get errors_INVALID_RFC;
+  String get errorsInvalidRfc;
 
-  /// No description provided for @errors_INVALID_STATUS.
+  /// No description provided for @errorsInvalidStatus.
   ///
   /// In en, this message translates to:
   /// **'Invalid status'**
-  String get errors_INVALID_STATUS;
+  String get errorsInvalidStatus;
 
-  /// No description provided for @errors_INVALID_STATUS_UPDATE.
+  /// No description provided for @errorsInvalidStatusUpdate.
   ///
   /// In en, this message translates to:
   /// **'Invalid status update'**
-  String get errors_INVALID_STATUS_UPDATE;
+  String get errorsInvalidStatusUpdate;
 
-  /// No description provided for @errors_INVALID_USERNAME.
+  /// No description provided for @errorsInvalidUsername.
   ///
   /// In en, this message translates to:
-  /// **'A username must be 3-20 characters long and can contain only letters, numbers and _'**
-  String get errors_INVALID_USERNAME;
+  /// **'A username must be 3_20 characters long and can contain only letters, numbers and '**
+  String get errorsInvalidUsername;
 
-  /// No description provided for @errors_INVALID_USERNAME_OR_PASSWORD.
+  /// No description provided for @errorsInvalidUsernameOrPassword.
   ///
   /// In en, this message translates to:
   /// **'Invalid username or password'**
-  String get errors_INVALID_USERNAME_OR_PASSWORD;
+  String get errorsInvalidUsernameOrPassword;
 
-  /// No description provided for @errors_INVALID_USERNAME_PASSWORD_OR_OTP.
+  /// No description provided for @errorsInvalidUsernamePasswordOrOtp.
   ///
   /// In en, this message translates to:
   /// **'Please check your login, password or Google Authenticator code'**
-  String get errors_INVALID_USERNAME_PASSWORD_OR_OTP;
+  String get errorsInvalidUsernamePasswordOrOtp;
 
-  /// No description provided for @errors_INVALID_LIGHTNING_NETWORK_INVOICE.
+  /// No description provided for @errorsInvalidLightningNetworkInvoice.
   ///
   /// In en, this message translates to:
-  /// **'The invoice cannot be used twice. <br />Please create new one on your wallet application to start your withdrawal.'**
-  String get errors_INVALID_LIGHTNING_NETWORK_INVOICE;
+  /// **'The invoice cannot be used twice <br />Please create new one on your wallet application to start your withdrawal'**
+  String get errorsInvalidLightningNetworkInvoice;
 
-  /// No description provided for @errors_INVOICE_EXPIRED_address.
+  /// No description provided for @errorsInvoiceExpiredAddress.
   ///
   /// In en, this message translates to:
-  /// **'Withdrawal request is expired. <br /> Please create new one on your wallet application to start your withdrawal.'**
-  String get errors_INVOICE_EXPIRED_address;
+  /// **'Withdrawal request is expired <br /> Please create new one on your wallet application to start your withdrawal'**
+  String get errorsInvoiceExpiredAddress;
 
-  /// No description provided for @errors_IS_REQUIRED.
+  /// No description provided for @errorsIsRequired.
   ///
   /// In en, this message translates to:
   /// **'This is required'**
-  String get errors_IS_REQUIRED;
+  String get errorsIsRequired;
 
-  /// No description provided for @errors_login_authentication_failed.
+  /// No description provided for @errorsLoginAuthenticationFailed.
   ///
   /// In en, this message translates to:
-  /// **'Sign-in failed. Please try again!'**
-  String get errors_login_authentication_failed;
+  /// **'Sign_in failed Please try again!'**
+  String get errorsLoginAuthenticationFailed;
 
-  /// No description provided for @errors_LOWER_THAN_LIMIT.
+  /// No description provided for @errorsLowerThanLimit.
   ///
   /// In en, this message translates to:
   /// **'The amount you entered is less than the minimum amount'**
-  String get errors_LOWER_THAN_LIMIT;
+  String get errorsLowerThanLimit;
 
-  /// No description provided for @errors_MAX_WITHDRAW.
+  /// No description provided for @errorsMaxWithdraw.
   ///
   /// In en, this message translates to:
   /// **'This exceeds the maximum withdrawal amount'**
-  String get errors_MAX_WITHDRAW;
+  String get errorsMaxWithdraw;
 
   /// Payment method is not available
   ///
   /// In en, this message translates to:
   /// **'Selected method is not available'**
-  String get errors_METHOD_NOT_FOUND;
+  String get errorsMethodNotFound;
 
-  /// No description provided for @errors_MIN_WITHDRAW.
+  /// No description provided for @errorsMinWithdraw.
   ///
   /// In en, this message translates to:
   /// **'The minimum amount you can withdraw is {minAmount} {currency}'**
-  String errors_MIN_WITHDRAW(Object minAmount, Object currency, Object amount);
+  String errorsMinWithdraw(Object minAmount, Object currency, Object amount);
 
-  /// No description provided for @errors_MUST_BE_LOGGED_IN.
+  /// No description provided for @errorsMustBeLoggedIn.
   ///
   /// In en, this message translates to:
   /// **'Must be signed in'**
-  String get errors_MUST_BE_LOGGED_IN;
+  String get errorsMustBeLoggedIn;
 
-  /// No description provided for @errors_NEWER_MARKET_RATE_EXISTS.
+  /// No description provided for @errorsNewerMarketRateExists.
   ///
   /// In en, this message translates to:
   /// **'Newer market rate exists'**
-  String get errors_NEWER_MARKET_RATE_EXISTS;
+  String get errorsNewerMarketRateExists;
 
-  /// No description provided for @errors_no_deposits_available_at_this_time.
+  /// No description provided for @errorsNoDepositsAvailableAtThisTime.
   ///
   /// In en, this message translates to:
   /// **'Unfortunately {currency} deposits are not available at this time'**
-  String errors_no_deposits_available_at_this_time(Object currency);
+  String errorsNoDepositsAvailableAtThisTime(Object currency);
 
-  /// No description provided for @errors_no_exchange_currency_available.
+  /// No description provided for @errorsNoExchangeCurrencyAvailable.
   ///
   /// In en, this message translates to:
   /// **'No exchange currency available'**
-  String get errors_no_exchange_currency_available;
+  String get errorsNoExchangeCurrencyAvailable;
 
   /// Indicates when device is not connected to the internet
   ///
   /// In en, this message translates to:
-  /// **'Not connected to the internet. Please try again'**
-  String get errors_NO_INTERNET_CONNECTION;
+  /// **'Not connected to the internet Please try again'**
+  String get errorsNoInternetConnection;
 
-  /// No description provided for @errors_NO_MARKET_BTC_RATE_AVAILABLE_FOR_SELECTED_CURRENCY.
+  /// No description provided for @errorsNoMarketBtcRateAvailableForSelectedCurrency.
   ///
   /// In en, this message translates to:
   /// **'No market Bitcoin rate available for selected currency'**
-  String get errors_NO_MARKET_BTC_RATE_AVAILABLE_FOR_SELECTED_CURRENCY;
+  String get errorsNoMarketBtcRateAvailableForSelectedCurrency;
 
-  /// No description provided for @errors_no_withdrawals_available_at_this_time.
+  /// No description provided for @errorsNoWithdrawalsAvailableAtThisTime.
   ///
   /// In en, this message translates to:
   /// **'Unfortunately {currency} withdrawals are not available at this time'**
-  String errors_no_withdrawals_available_at_this_time(Object currency);
+  String errorsNoWithdrawalsAvailableAtThisTime(Object currency);
 
-  /// No description provided for @errors_NOT_ALLOWED.
+  /// No description provided for @errorsNotAllowed.
   ///
   /// In en, this message translates to:
   /// **'Please check your Google Authenticator code'**
-  String get errors_NOT_ALLOWED;
+  String get errorsNotAllowed;
 
-  /// No description provided for @errors_NOT_ALLOWED_TO_USE_APP.
+  /// No description provided for @errorsNotAllowedToUseApp.
   ///
   /// In en, this message translates to:
   /// **'Sorry! You are not allowed to use this application from your location'**
-  String get errors_NOT_ALLOWED_TO_USE_APP;
+  String get errorsNotAllowedToUseApp;
 
-  /// No description provided for @errors_not_allowed_to_use_exchange_method.
+  /// No description provided for @errorsNotAllowedToUseExchangeMethod.
   ///
   /// In en, this message translates to:
   /// **'You\'re not allowed to use exchange method'**
-  String get errors_not_allowed_to_use_exchange_method;
+  String get errorsNotAllowedToUseExchangeMethod;
 
-  /// No description provided for @errors_NOT_ALLOWED_TO_USE_SITE.
+  /// No description provided for @errorsNotAllowedToUseSite.
   ///
   /// In en, this message translates to:
   /// **'You are not allowed to use the site from your location'**
-  String get errors_NOT_ALLOWED_TO_USE_SITE;
+  String get errorsNotAllowedToUseSite;
 
-  /// No description provided for @errors_NOT_ENOUGH_FUNDS.
+  /// No description provided for @errorsNotEnoughFunds.
   ///
   /// In en, this message translates to:
-  /// **'You do not have enough funds to proceed.'**
-  String get errors_NOT_ENOUGH_FUNDS;
+  /// **'You do not have enough funds to proceed'**
+  String get errorsNotEnoughFunds;
 
-  /// No description provided for @errors_NOT_ENOUGH_FUNDS_amount.
+  /// No description provided for @errorsNotEnoughFundsAmount.
   ///
   /// In en, this message translates to:
-  /// **'Not enough funds for withdrawal. Please top up your account.'**
-  String get errors_NOT_ENOUGH_FUNDS_amount;
+  /// **'Not enough funds for withdrawal Please top up your account'**
+  String get errorsNotEnoughFundsAmount;
 
-  /// No description provided for @errors_NOT_FOUND.
+  /// No description provided for @errorsNotFound.
   ///
   /// In en, this message translates to:
   /// **'Not found'**
-  String get errors_NOT_FOUND;
+  String get errorsNotFound;
 
-  /// No description provided for @errors_OTP_IS_REQUIRED.
+  /// No description provided for @errorsOtpIsRequired.
   ///
   /// In en, this message translates to:
   /// **'Please enter your Google Authenticator code'**
-  String get errors_OTP_IS_REQUIRED;
+  String get errorsOtpIsRequired;
 
-  /// No description provided for @errors_OTP_MUST_BE_DISABLED.
+  /// No description provided for @errorsOtpMustBeDisabled.
   ///
   /// In en, this message translates to:
-  /// **'In order to link your existing account with your Facebook account, you first need to disable Google Authenticator.'**
-  String get errors_OTP_MUST_BE_DISABLED;
+  /// **'In order to link your existing account with your Facebook account, you first need to disable Google Authenticator'**
+  String get errorsOtpMustBeDisabled;
 
-  /// No description provided for @errors_OTP_VERIFICATION_FAILED.
+  /// No description provided for @errorsOtpVerificationFailed.
   ///
   /// In en, this message translates to:
-  /// **'Your Google Authenticator code was incorrect. '**
-  String get errors_OTP_VERIFICATION_FAILED;
+  /// **'Your Google Authenticator code was incorrect '**
+  String get errorsOtpVerificationFailed;
 
-  /// No description provided for @errors_OTP_VERIFICATION_FAILED_otp_bitcasino.
-  ///
-  /// In en, this message translates to:
-  /// **'One time password verification failed'**
-  String get errors_OTP_VERIFICATION_FAILED_otp_bitcasino;
-
-  /// No description provided for @errors_OTP_VERIFICATION_FAILED_otp_empire.
+  /// No description provided for @errorsOtpVerificationFailedOtpBitcasino.
   ///
   /// In en, this message translates to:
   /// **'One time password verification failed'**
-  String get errors_OTP_VERIFICATION_FAILED_otp_empire;
+  String get errorsOtpVerificationFailedOtpBitcasino;
 
-  /// No description provided for @errors_OTP_VERIFICATION_FAILED_otp_sportsbet.
+  /// No description provided for @errorsOtpVerificationFailedOtpEmpire.
   ///
   /// In en, this message translates to:
   /// **'One time password verification failed'**
-  String get errors_OTP_VERIFICATION_FAILED_otp_sportsbet;
+  String get errorsOtpVerificationFailedOtpEmpire;
 
-  /// No description provided for @errors_PASSWORD_DOES_NOT_MATCH.
+  /// No description provided for @errorsOtpVerificationFailedOtpSportsbet.
+  ///
+  /// In en, this message translates to:
+  /// **'One time password verification failed'**
+  String get errorsOtpVerificationFailedOtpSportsbet;
+
+  /// No description provided for @errorsPasswordDoesNotMatch.
   ///
   /// In en, this message translates to:
   /// **'The passwords do not match'**
-  String get errors_PASSWORD_DOES_NOT_MATCH;
+  String get errorsPasswordDoesNotMatch;
 
-  /// No description provided for @errors_password_recovery_email_not_found.
+  /// No description provided for @errorsPasswordRecoveryEmailNotFound.
   ///
   /// In en, this message translates to:
-  /// **'Incorrect email address. Please double check and try again'**
-  String get errors_password_recovery_email_not_found;
+  /// **'Incorrect email address Please double check and try again'**
+  String get errorsPasswordRecoveryEmailNotFound;
 
-  /// No description provided for @errors_password_recovery_unable_to_change_password.
+  /// No description provided for @errorsPasswordRecoveryUnableToChangePassword.
   ///
   /// In en, this message translates to:
   /// **'Password change failed'**
-  String get errors_password_recovery_unable_to_change_password;
+  String get errorsPasswordRecoveryUnableToChangePassword;
 
-  /// No description provided for @errors_PASSWORD_RESET_DENIED_FOR_SOCIAL_USER.
+  /// No description provided for @errorsPasswordResetDeniedForSocialUser.
   ///
   /// In en, this message translates to:
-  /// **'You have registered via social media. To login, click on the button of the social media you used to register.'**
-  String get errors_PASSWORD_RESET_DENIED_FOR_SOCIAL_USER;
+  /// **'You have registered via social media To login, click on the button of the social media you used to register'**
+  String get errorsPasswordResetDeniedForSocialUser;
 
-  /// No description provided for @errors_PASSWORD_RESET_DENIED_USER_DELETED.
+  /// No description provided for @errorsPasswordResetDeniedUserDeleted.
   ///
   /// In en, this message translates to:
-  /// **'Password reset unsuccessful. Account has been removed.'**
-  String get errors_PASSWORD_RESET_DENIED_USER_DELETED;
+  /// **'Password reset unsuccessful Account has been removed'**
+  String get errorsPasswordResetDeniedUserDeleted;
 
-  /// No description provided for @errors_PASSWORD_TOO_SHORT.
+  /// No description provided for @errorsPasswordTooShort.
   ///
   /// In en, this message translates to:
   /// **'Your password must be at least 6 characters long'**
-  String get errors_PASSWORD_TOO_SHORT;
+  String get errorsPasswordTooShort;
 
-  /// No description provided for @errors_PASSWORD_TOO_WEAK.
+  /// No description provided for @errorsPasswordTooWeak.
   ///
   /// In en, this message translates to:
-  /// **'This password is too weak. Try adding numbers or upper case letters to make it stronger'**
-  String get errors_PASSWORD_TOO_WEAK;
+  /// **'This password is too weak Try adding numbers or upper case letters to make it stronger'**
+  String get errorsPasswordTooWeak;
 
-  /// No description provided for @errors_PATTERN_DOES_NOT_MATCH.
+  /// No description provided for @errorsPatternDoesNotMatch.
   ///
   /// In en, this message translates to:
   /// **'Incorrect input'**
-  String get errors_PATTERN_DOES_NOT_MATCH;
+  String get errorsPatternDoesNotMatch;
 
-  /// No description provided for @errors_PAYMENT_AMOUNT_TOO_LARGE.
+  /// No description provided for @errorsPaymentAmountTooLarge.
   ///
   /// In en, this message translates to:
-  /// **'Payment amount is too large.'**
-  String get errors_PAYMENT_AMOUNT_TOO_LARGE;
+  /// **'Payment amount is too large'**
+  String get errorsPaymentAmountTooLarge;
 
-  /// No description provided for @errors_PAYMENT_METHOD_IS_NOT_SUPPORTED.
+  /// No description provided for @errorsPaymentMethodIsNotSupported.
   ///
   /// In en, this message translates to:
   /// **'Payment method is not supported'**
-  String get errors_PAYMENT_METHOD_IS_NOT_SUPPORTED;
+  String get errorsPaymentMethodIsNotSupported;
 
-  /// No description provided for @errors_PAYMENT_METHOD_IS_NOT_SUPPORTED_IN_CURRENT_COUNTRY.
+  /// No description provided for @errorsPaymentMethodIsNotSupportedInCurrentCountry.
   ///
   /// In en, this message translates to:
   /// **'Payment method is not supported in current country'**
-  String get errors_PAYMENT_METHOD_IS_NOT_SUPPORTED_IN_CURRENT_COUNTRY;
+  String get errorsPaymentMethodIsNotSupportedInCurrentCountry;
 
-  /// No description provided for @errors_PAYMENT_METHOD_IS_NOT_SUPPORTED_WITH_SELECTED_CURRENCY.
+  /// No description provided for @errorsPaymentMethodIsNotSupportedWithSelectedCurrency.
   ///
   /// In en, this message translates to:
   /// **'Payment method is not supported with selected currency'**
-  String get errors_PAYMENT_METHOD_IS_NOT_SUPPORTED_WITH_SELECTED_CURRENCY;
+  String get errorsPaymentMethodIsNotSupportedWithSelectedCurrency;
 
-  /// No description provided for @errors_PAYMENT_STATUS_MUST_BE_NEW.
+  /// No description provided for @errorsPaymentStatusMustBeNew.
   ///
   /// In en, this message translates to:
   /// **'Payment status must be new'**
-  String get errors_PAYMENT_STATUS_MUST_BE_NEW;
+  String get errorsPaymentStatusMustBeNew;
 
-  /// No description provided for @errors_PROCESSING_FEE_TOO_HIGH.
+  /// No description provided for @errorsProcessingFeeTooHigh.
   ///
   /// In en, this message translates to:
   /// **'Processing fee too high'**
-  String get errors_PROCESSING_FEE_TOO_HIGH;
+  String get errorsProcessingFeeTooHigh;
 
-  /// No description provided for @errors_PROCESSING_FEE_TOO_LOW.
+  /// No description provided for @errorsProcessingFeeTooLow.
   ///
   /// In en, this message translates to:
   /// **'Processing fee too low'**
-  String get errors_PROCESSING_FEE_TOO_LOW;
+  String get errorsProcessingFeeTooLow;
 
-  /// No description provided for @errors_profile_authentication_failed.
+  /// No description provided for @errorsProfileAuthenticationFailed.
   ///
   /// In en, this message translates to:
   /// **'Authentication failed'**
-  String get errors_profile_authentication_failed;
+  String get errorsProfileAuthenticationFailed;
 
-  /// No description provided for @errors_profile_otp_verification_failed.
+  /// No description provided for @errorsProfileOtpVerificationFailed.
   ///
   /// In en, this message translates to:
   /// **'Google Authenticator verification failed'**
-  String get errors_profile_otp_verification_failed;
+  String get errorsProfileOtpVerificationFailed;
 
-  /// No description provided for @errors_profile_user_not_found.
+  /// No description provided for @errorsProfileUserNotFound.
   ///
   /// In en, this message translates to:
   /// **'User not found'**
-  String get errors_profile_user_not_found;
+  String get errorsProfileUserNotFound;
 
   /// Indicates a request has timeout
   ///
   /// In en, this message translates to:
   /// **'Request timeout!'**
-  String get errors_REQUEST_TIMEOUT;
+  String get errorsRequestTimeout;
 
-  /// No description provided for @errors_required.
+  /// No description provided for @errorsRequired.
   ///
   /// In en, this message translates to:
   /// **'Required'**
-  String get errors_required;
+  String get errorsRequired;
 
-  /// No description provided for @errors_REQUIRES_DESTINATION_TAG.
+  /// No description provided for @errorsRequiresDestinationTag.
   ///
   /// In en, this message translates to:
-  /// **'A destination tag is required. Generate an X-address using https://xrpaddress.info.'**
-  String get errors_REQUIRES_DESTINATION_TAG;
+  /// **'A destination tag is required Generate an X_address using https//xrpaddressinfo'**
+  String get errorsRequiresDestinationTag;
 
-  /// No description provided for @errors_SELECTED_CURRENCY_IS_NOT_SUPPORTED.
+  /// No description provided for @errorsSelectedCurrencyIsNotSupported.
   ///
   /// In en, this message translates to:
   /// **'Selected currency is not supported'**
-  String get errors_SELECTED_CURRENCY_IS_NOT_SUPPORTED;
+  String get errorsSelectedCurrencyIsNotSupported;
 
-  /// No description provided for @errors_SELECTED_CURRENCY_IS_NOT_SUPPORTED_IN_CURRENT_COUNTRY.
+  /// No description provided for @errorsSelectedCurrencyIsNotSupportedInCurrentCountry.
   ///
   /// In en, this message translates to:
   /// **'Selected currency is not supported in current country'**
-  String get errors_SELECTED_CURRENCY_IS_NOT_SUPPORTED_IN_CURRENT_COUNTRY;
+  String get errorsSelectedCurrencyIsNotSupportedInCurrentCountry;
 
-  /// No description provided for @errors_sign_up_email_or_username_is_taken.
+  /// No description provided for @errorsSignUpEmailOrUsernameIsTaken.
   ///
   /// In en, this message translates to:
   /// **'Email or username is taken'**
-  String get errors_sign_up_email_or_username_is_taken;
+  String get errorsSignUpEmailOrUsernameIsTaken;
 
-  /// No description provided for @errors_SMS_2FA_INVALID_SESSION_ID.
+  /// No description provided for @errorsSms2faInvalidSessionId.
   ///
   /// In en, this message translates to:
-  /// **'Invalid session, please try again.'**
-  String get errors_SMS_2FA_INVALID_SESSION_ID;
+  /// **'Invalid session, please try again'**
+  String get errorsSms2faInvalidSessionId;
 
-  /// No description provided for @errors_SMS_2FA_SEESION_ID_EXPIRED.
+  /// No description provided for @errorsSms2faSeesionIdExpired.
   ///
   /// In en, this message translates to:
   /// **'OTP is expired'**
-  String get errors_SMS_2FA_SEESION_ID_EXPIRED;
+  String get errorsSms2faSeesionIdExpired;
 
-  /// No description provided for @errors_SMS_2FA_VERIFICATION_FAILED.
+  /// No description provided for @errorsSms2faVerificationFailed.
   ///
   /// In en, this message translates to:
   /// **'Invalid otp code'**
-  String get errors_SMS_2FA_VERIFICATION_FAILED;
+  String get errorsSms2faVerificationFailed;
 
-  /// No description provided for @errors_SOCIAL_AUTH_CONNECT_VERIFY_EMAIL.
+  /// No description provided for @errorsSocialAuthConnectVerifyEmail.
   ///
   /// In en, this message translates to:
   /// **'To use this login method, first login to your account and verify your email address'**
-  String get errors_SOCIAL_AUTH_CONNECT_VERIFY_EMAIL;
+  String get errorsSocialAuthConnectVerifyEmail;
 
-  /// No description provided for @errors_something_went_wrong.
+  /// No description provided for @errorsSomethingWentWrong.
   ///
   /// In en, this message translates to:
   /// **'Something went wrong'**
-  String get errors_something_went_wrong;
+  String get errorsSomethingWentWrong;
 
-  /// No description provided for @errors_SPREAD_TOO_HIGH.
+  /// No description provided for @errorsSpreadTooHigh.
   ///
   /// In en, this message translates to:
   /// **'Spread too high'**
-  String get errors_SPREAD_TOO_HIGH;
+  String get errorsSpreadTooHigh;
 
-  /// No description provided for @errors_SPREAD_TOO_LOW.
+  /// No description provided for @errorsSpreadTooLow.
   ///
   /// In en, this message translates to:
   /// **'Spread too low'**
-  String get errors_SPREAD_TOO_LOW;
+  String get errorsSpreadTooLow;
 
-  /// No description provided for @errors_SYSTEM_ERROR.
+  /// No description provided for @errorsSystemError.
   ///
   /// In en, this message translates to:
-  /// **'System error. Please contact support.'**
-  String get errors_SYSTEM_ERROR;
+  /// **'System error Please contact support'**
+  String get errorsSystemError;
 
-  /// No description provided for @errors_TOKEN_EXPIRED.
+  /// No description provided for @errorsTokenExpired.
   ///
   /// In en, this message translates to:
   /// **'Token has expired'**
-  String get errors_TOKEN_EXPIRED;
+  String get errorsTokenExpired;
 
-  /// No description provided for @errors_TOO_LONG.
+  /// No description provided for @errorsTooLong.
   ///
   /// In en, this message translates to:
   /// **'Input too long'**
-  String get errors_TOO_LONG;
+  String get errorsTooLong;
 
-  /// No description provided for @errors_TOO_MANY_LOGIN_ATTEMPTS.
+  /// No description provided for @errorsTooManyLoginAttempts.
   ///
   /// In en, this message translates to:
-  /// **'Too many sign-in attempts! Please try again in 15 minutes.'**
-  String get errors_TOO_MANY_LOGIN_ATTEMPTS;
+  /// **'Too many sign_in attempts! Please try again in 15 minutes'**
+  String get errorsTooManyLoginAttempts;
 
-  /// No description provided for @errors_TOO_MANY_PASSWORD_RESET_ATTEMPTS.
+  /// No description provided for @errorsTooManyPasswordResetAttempts.
   ///
   /// In en, this message translates to:
-  /// **'Too many password reset attempts! Please try again later.'**
-  String get errors_TOO_MANY_PASSWORD_RESET_ATTEMPTS;
+  /// **'Too many password reset attempts! Please try again later'**
+  String get errorsTooManyPasswordResetAttempts;
 
-  /// No description provided for @errors_TOO_MANY_SMS_2FA_ATTEMPTS.
+  /// No description provided for @errorsTooManySms2faAttempts.
   ///
   /// In en, this message translates to:
-  /// **'Too many SMS authentication attempts! Please try again in 15 minutes.'**
-  String get errors_TOO_MANY_SMS_2FA_ATTEMPTS;
+  /// **'Too many SMS authentication attempts! Please try again in 15 minutes'**
+  String get errorsTooManySms2faAttempts;
 
-  /// No description provided for @errors_TOO_MANY_SMS_SENT.
+  /// No description provided for @errorsTooManySmsSent.
   ///
   /// In en, this message translates to:
-  /// **'Too many SMS sent. Please try again in 15 minutes.'**
-  String get errors_TOO_MANY_SMS_SENT;
+  /// **'Too many SMS sent Please try again in 15 minutes'**
+  String get errorsTooManySmsSent;
 
-  /// No description provided for @errors_transaction_amount.
+  /// No description provided for @errorsTransactionAmount.
   ///
   /// In en, this message translates to:
   /// **'Invalid transaction amount value!'**
-  String get errors_transaction_amount;
+  String get errorsTransactionAmount;
 
-  /// No description provided for @errors_TRANSACTION_REFERENCE_IS_NULL.
+  /// No description provided for @errorsTransactionReferenceIsNull.
   ///
   /// In en, this message translates to:
   /// **'Transaction reference is null'**
-  String get errors_TRANSACTION_REFERENCE_IS_NULL;
+  String get errorsTransactionReferenceIsNull;
 
-  /// No description provided for @errors_type_mismatch.
+  /// No description provided for @errorsTypeMismatch.
   ///
   /// In en, this message translates to:
   /// **'Type mismatch'**
-  String get errors_type_mismatch;
+  String get errorsTypeMismatch;
 
-  /// No description provided for @errors_ubtc_must_be_greater.
+  /// No description provided for @errorsUbtcMustBeGreater.
   ///
   /// In en, this message translates to:
   /// **'Received amount must be at least µBTC 2,000'**
-  String get errors_ubtc_must_be_greater;
+  String get errorsUbtcMustBeGreater;
 
-  /// No description provided for @errors_UNCONFIRMED_DEPOSIT.
+  /// No description provided for @errorsUnconfirmedDeposit.
   ///
   /// In en, this message translates to:
   /// **'You must first wait for your deposit to be confirmed before you can withdraw money'**
-  String get errors_UNCONFIRMED_DEPOSIT;
+  String get errorsUnconfirmedDeposit;
 
-  /// No description provided for @errors_UNVERIFIED_EMAIL.
+  /// No description provided for @errorsUnverifiedEmail.
   ///
   /// In en, this message translates to:
   /// **'The email address is unverified'**
-  String get errors_UNVERIFIED_EMAIL;
+  String get errorsUnverifiedEmail;
 
-  /// No description provided for @errors_USER_SELF_EXCLUSION_IS_ACTIVE.
+  /// No description provided for @errorsUserSelfExclusionIsActive.
   ///
   /// In en, this message translates to:
-  /// **'You are currently logged out for the total duration of 24 hours after activating the panic button. You can log back into your account once the time period has passed.'**
-  String get errors_USER_SELF_EXCLUSION_IS_ACTIVE;
+  /// **'You are currently logged out for the total duration of 24 hours after activating the panic button You can log back into your account once the time period has passed'**
+  String get errorsUserSelfExclusionIsActive;
 
-  /// No description provided for @errors_USERNAME_ALREADY_EXISTS.
+  /// No description provided for @errorsUsernameAlreadyExists.
   ///
   /// In en, this message translates to:
   /// **'This username already exists'**
-  String get errors_USERNAME_ALREADY_EXISTS;
+  String get errorsUsernameAlreadyExists;
 
-  /// No description provided for @errors_username_is_taken.
+  /// No description provided for @errorsUsernameIsTaken.
   ///
   /// In en, this message translates to:
   /// **'This username is already taken'**
-  String get errors_username_is_taken;
+  String get errorsUsernameIsTaken;
 
-  /// No description provided for @errors_validation_errors.
+  /// No description provided for @errorsValidationErrors.
   ///
   /// In en, this message translates to:
-  /// **'Validation errors.'**
-  String get errors_validation_errors;
+  /// **'Validation errors'**
+  String get errorsValidationErrors;
 
-  /// No description provided for @errors_value_missing.
+  /// No description provided for @errorsValueMissing.
   ///
   /// In en, this message translates to:
   /// **'Required'**
-  String get errors_value_missing;
+  String get errorsValueMissing;
 
-  /// No description provided for @errors_WALLET_ADDRESS_CONFLICT.
+  /// No description provided for @errorsWalletAddressConflict.
   ///
   /// In en, this message translates to:
   /// **'Cannot withdraw to deposit address'**
-  String get errors_WALLET_ADDRESS_CONFLICT;
+  String get errorsWalletAddressConflict;
 
-  /// No description provided for @errors_WALLET_ADDRESS_CONFLICT_address.
+  /// No description provided for @errorsWalletAddressConflictAddress.
   ///
   /// In en, this message translates to:
   /// **'Cannot withdraw to deposit address'**
-  String get errors_WALLET_ADDRESS_CONFLICT_address;
+  String get errorsWalletAddressConflictAddress;
 
-  /// No description provided for @errors_YOUR_ACCOUNT_IS_DISABLED.
+  /// No description provided for @errorsYourAccountIsDisabled.
   ///
   /// In en, this message translates to:
-  /// **'Your account is disabled - please contact support'**
-  String get errors_YOUR_ACCOUNT_IS_DISABLED;
+  /// **'Your account is disabled _ please contact support'**
+  String get errorsYourAccountIsDisabled;
 
-  /// No description provided for @errors_YOUR_ACCOUNT_IS_DISABLED_SECURITY.
+  /// No description provided for @errorsYourAccountIsDisabledSecurity.
   ///
   /// In en, this message translates to:
-  /// **'Your account is disabled. Please contact our support for more information.'**
-  String get errors_YOUR_ACCOUNT_IS_DISABLED_SECURITY;
+  /// **'Your account is disabled Please contact our support for more information'**
+  String get errorsYourAccountIsDisabledSecurity;
 
-  /// No description provided for @errors_YOUR_ACCOUNT_IS_DORMANT.
+  /// No description provided for @errorsYourAccountIsDormant.
   ///
   /// In en, this message translates to:
-  /// **'This account has been suspended for your own security and safety due to long inactivity. Please contact security@bitcasino.io for assistance.'**
-  String get errors_YOUR_ACCOUNT_IS_DORMANT;
+  /// **'This account has been suspended for your own security and safety due to long inactivity Please contact security@bitcasinoio for assistance'**
+  String get errorsYourAccountIsDormant;
 
-  /// No description provided for @funds_balance.
+  /// No description provided for @fundsBalance.
   ///
   /// In en, this message translates to:
   /// **'Active balance'**
-  String get funds_balance;
+  String get fundsBalance;
 
-  /// No description provided for @funds_converted_balance.
+  /// No description provided for @fundsConvertedBalance.
   ///
   /// In en, this message translates to:
   /// **'Converted balance'**
-  String get funds_converted_balance;
+  String get fundsConvertedBalance;
 
-  /// No description provided for @funds_funds.
+  /// No description provided for @fundsFunds.
   ///
   /// In en, this message translates to:
   /// **'Funds'**
-  String get funds_funds;
+  String get fundsFunds;
 
-  /// No description provided for @funds_go_to_the_funds.
+  /// No description provided for @fundsGo_to_the_funds.
   ///
   /// In en, this message translates to:
   /// **'Go to the Funds'**
-  String get funds_go_to_the_funds;
+  String get fundsGo_to_the_funds;
 
-  /// No description provided for @metamask_connect_eth_mainnet_chain.
+  /// No description provided for @metamaskConnectEthMainnetChain.
   ///
   /// In en, this message translates to:
   /// **'Connect Ethereum Mainnet chain'**
-  String get metamask_connect_eth_mainnet_chain;
+  String get metamaskConnectEthMainnetChain;
 
-  /// No description provided for @metamask_connected_to.
+  /// No description provided for @metamaskConnectedTo.
   ///
   /// In en, this message translates to:
   /// **'Connected to'**
-  String get metamask_connected_to;
+  String get metamaskConnectedTo;
 
-  /// No description provided for @metamask_link_account.
+  /// No description provided for @metamaskLinkAccount.
   ///
   /// In en, this message translates to:
   /// **'Link account'**
-  String get metamask_link_account;
+  String get metamaskLinkAccount;
 
-  /// No description provided for @metamask_wallet_successfully_linked.
+  /// No description provided for @metamaskWalletSuccessfullyLinked.
   ///
   /// In en, this message translates to:
   /// **'Wallet successfully linked'**
-  String get metamask_wallet_successfully_linked;
+  String get metamaskWalletSuccessfullyLinked;
 
-  /// No description provided for @transaction_bet.
+  /// No description provided for @transactionBet.
   ///
   /// In en, this message translates to:
   /// **'bet'**
-  String get transaction_bet;
+  String get transactionBet;
 
-  /// No description provided for @transaction_bitcoin.
+  /// No description provided for @transactionBitcoin.
   ///
   /// In en, this message translates to:
   /// **'Bitcoin'**
-  String get transaction_bitcoin;
+  String get transactionBitcoin;
 
-  /// No description provided for @transaction_bitcoin_deposit.
+  /// No description provided for @transactionBitcoinDeposit.
   ///
   /// In en, this message translates to:
   /// **'BTC deposit'**
-  String get transaction_bitcoin_deposit;
+  String get transactionBitcoinDeposit;
 
-  /// No description provided for @transaction_bitcoin_withdrawal.
+  /// No description provided for @transactionBitcoinWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'BTC withdrawal'**
-  String get transaction_bitcoin_withdrawal;
+  String get transactionBitcoinWithdrawal;
 
-  /// No description provided for @transaction_deposit.
+  /// No description provided for @transactionDeposit.
   ///
   /// In en, this message translates to:
   /// **'Deposit'**
-  String get transaction_deposit;
+  String get transactionDeposit;
 
-  /// No description provided for @transaction_deposit_acknowledged.
+  /// No description provided for @transactionDepositAcknowledged.
   ///
   /// In en, this message translates to:
   /// **'Acknowledged'**
-  String get transaction_deposit_acknowledged;
+  String get transactionDepositAcknowledged;
 
-  /// No description provided for @transaction_deposit_authorised.
+  /// No description provided for @transactionDepositAuthorised.
   ///
   /// In en, this message translates to:
   /// **'Authorised'**
-  String get transaction_deposit_authorised;
+  String get transactionDepositAuthorised;
 
-  /// No description provided for @transaction_deposit_cancellation_by_user.
+  /// No description provided for @transactionDepositCancellationByUser.
   ///
   /// In en, this message translates to:
   /// **'Cancellation by user'**
-  String get transaction_deposit_cancellation_by_user;
+  String get transactionDepositCancellationByUser;
 
-  /// No description provided for @transaction_deposit_cancellation_return.
+  /// No description provided for @transactionDepositCancellationReturn.
   ///
   /// In en, this message translates to:
-  /// **'Funds returned (withdrawal cancelled by user)'**
-  String get transaction_deposit_cancellation_return;
+  /// **'Funds returned _withdrawal cancelled by user_'**
+  String get transactionDepositCancellationReturn;
 
-  /// No description provided for @transaction_deposit_cancelled.
+  /// No description provided for @transactionDepositCancelled.
   ///
   /// In en, this message translates to:
   /// **'Cancelled'**
-  String get transaction_deposit_cancelled;
+  String get transactionDepositCancelled;
 
-  /// No description provided for @transaction_deposit_deleted.
+  /// No description provided for @transactionDepositDeleted.
   ///
   /// In en, this message translates to:
   /// **'Deleted'**
-  String get transaction_deposit_deleted;
+  String get transactionDepositDeleted;
 
-  /// No description provided for @transaction_deposit_expired.
+  /// No description provided for @transactionDepositExpired.
   ///
   /// In en, this message translates to:
   /// **'Expired'**
-  String get transaction_deposit_expired;
+  String get transactionDepositExpired;
 
-  /// No description provided for @transaction_deposit_failed.
+  /// No description provided for @transactionDepositFailed.
   ///
   /// In en, this message translates to:
   /// **'Failed'**
-  String get transaction_deposit_failed;
+  String get transactionDepositFailed;
 
-  /// No description provided for @transaction_deposit_input_required.
+  /// No description provided for @transactionDepositInputRequired.
   ///
   /// In en, this message translates to:
   /// **'Input required'**
-  String get transaction_deposit_input_required;
+  String get transactionDepositInputRequired;
 
-  /// No description provided for @transaction_deposit_new.
+  /// No description provided for @transactionDepositNew.
   ///
   /// In en, this message translates to:
   /// **'Pending'**
-  String get transaction_deposit_new;
+  String get transactionDepositNew;
 
-  /// No description provided for @transaction_deposit_pending.
+  /// No description provided for @transactionDepositPending.
   ///
   /// In en, this message translates to:
   /// **'Pending'**
-  String get transaction_deposit_pending;
+  String get transactionDepositPending;
 
-  /// No description provided for @transaction_deposit_rejected.
+  /// No description provided for @transactionDepositRejected.
   ///
   /// In en, this message translates to:
   /// **'Rejected'**
-  String get transaction_deposit_rejected;
+  String get transactionDepositRejected;
 
-  /// No description provided for @transaction_deposit_reverted.
+  /// No description provided for @transactionDepositReverted.
   ///
   /// In en, this message translates to:
   /// **'Reverted'**
-  String get transaction_deposit_reverted;
+  String get transactionDepositReverted;
 
-  /// No description provided for @transaction_deposit_started.
+  /// No description provided for @transactionDepositStarted.
   ///
   /// In en, this message translates to:
   /// **'Started'**
-  String get transaction_deposit_started;
+  String get transactionDepositStarted;
 
-  /// No description provided for @transaction_description.
+  /// No description provided for @transactionDescription.
   ///
   /// In en, this message translates to:
   /// **'Description'**
-  String get transaction_description;
+  String get transactionDescription;
 
-  /// No description provided for @transaction_details.
+  /// No description provided for @transactionDetails.
   ///
   /// In en, this message translates to:
   /// **'Details'**
-  String get transaction_details;
+  String get transactionDetails;
 
-  /// No description provided for @transaction_end_balance.
+  /// No description provided for @transactionEndBalance.
   ///
   /// In en, this message translates to:
   /// **'Ending balance'**
-  String get transaction_end_balance;
+  String get transactionEndBalance;
 
-  /// No description provided for @transaction_eth_deposit.
+  /// No description provided for @transactionEthDeposit.
   ///
   /// In en, this message translates to:
   /// **'ETH deposit'**
-  String get transaction_eth_deposit;
+  String get transactionEthDeposit;
 
-  /// No description provided for @transaction_eth_withdrawal.
+  /// No description provided for @transactionEthWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'ETH withdrawal'**
-  String get transaction_eth_withdrawal;
+  String get transactionEthWithdrawal;
 
-  /// No description provided for @transaction_ethereum_deposit.
+  /// No description provided for @transactionEthereumDeposit.
   ///
   /// In en, this message translates to:
   /// **'ETH deposit'**
-  String get transaction_ethereum_deposit;
+  String get transactionEthereumDeposit;
 
-  /// No description provided for @transaction_ethereum_eth_deposit.
+  /// No description provided for @transactionEthereumEthDeposit.
   ///
   /// In en, this message translates to:
   /// **'ETH deposit'**
-  String get transaction_ethereum_eth_deposit;
+  String get transactionEthereumEthDeposit;
 
-  /// No description provided for @transaction_ethereum_eth_withdrawal.
+  /// No description provided for @transactionEthereumEthWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'Ethereum withdrawal'**
-  String get transaction_ethereum_eth_withdrawal;
+  String get transactionEthereumEthWithdrawal;
 
-  /// No description provided for @transaction_ethereum_soc_deposit.
+  /// No description provided for @transactionEthereumSocDeposit.
   ///
   /// In en, this message translates to:
   /// **'SOC deposit'**
-  String get transaction_ethereum_soc_deposit;
+  String get transactionEthereumSocDeposit;
 
-  /// No description provided for @transaction_ethereum_soc_withdrawal.
+  /// No description provided for @transactionEthereumSocWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'Withdraw SOC'**
-  String get transaction_ethereum_soc_withdrawal;
+  String get transactionEthereumSocWithdrawal;
 
-  /// No description provided for @transaction_ethereum_usdt_deposit.
+  /// No description provided for @transactionEthereumUsdtDeposit.
   ///
   /// In en, this message translates to:
   /// **'USDT deposit'**
-  String get transaction_ethereum_usdt_deposit;
+  String get transactionEthereumUsdtDeposit;
 
-  /// No description provided for @transaction_ethereum_usdt_withdrawal.
+  /// No description provided for @transactionEthereumUsdtWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'USDT withdrawal'**
-  String get transaction_ethereum_usdt_withdrawal;
+  String get transactionEthereumUsdtWithdrawal;
 
-  /// No description provided for @transaction_ethereum_withdrawal.
+  /// No description provided for @transactionEthereumWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'Ethereum withdrawal'**
-  String get transaction_ethereum_withdrawal;
+  String get transactionEthereumWithdrawal;
 
-  /// No description provided for @transaction_exchange_deposit.
+  /// No description provided for @transactionExchangeDeposit.
   ///
   /// In en, this message translates to:
   /// **'{from} to {to} conversion'**
-  String transaction_exchange_deposit(Object from, Object to);
+  String transactionExchangeDeposit(Object from, Object to);
 
-  /// No description provided for @transaction_exchange_deposit_btc.
+  /// No description provided for @transactionExchangeDepositBtc.
   ///
   /// In en, this message translates to:
   /// **'CNY to BTC conversion'**
-  String get transaction_exchange_deposit_btc;
+  String get transactionExchangeDepositBtc;
 
-  /// No description provided for @transaction_exchange_deposit_cny.
+  /// No description provided for @transactionExchangeDepositCny.
   ///
   /// In en, this message translates to:
   /// **'BTC to CNY conversion '**
-  String get transaction_exchange_deposit_cny;
+  String get transactionExchangeDepositCny;
 
-  /// No description provided for @transaction_exchange_deposit_eur.
+  /// No description provided for @transactionExchangeDepositEur.
   ///
   /// In en, this message translates to:
   /// **'BTC to EUR conversion'**
-  String get transaction_exchange_deposit_eur;
+  String get transactionExchangeDepositEur;
 
-  /// No description provided for @transaction_exchange_deposit_jpy.
+  /// No description provided for @transactionExchangeDepositJpy.
   ///
   /// In en, this message translates to:
   /// **'BTC to JPY conversion'**
-  String get transaction_exchange_deposit_jpy;
+  String get transactionExchangeDepositJpy;
 
-  /// No description provided for @transaction_exchange_from.
+  /// No description provided for @transactionExchangeFrom.
   ///
   /// In en, this message translates to:
   /// **'Exchange from'**
-  String get transaction_exchange_from;
+  String get transactionExchangeFrom;
 
-  /// No description provided for @transaction_exchange_to.
+  /// No description provided for @transactionExchangeTo.
   ///
   /// In en, this message translates to:
   /// **'Exchange to'**
-  String get transaction_exchange_to;
+  String get transactionExchangeTo;
 
-  /// No description provided for @transaction_exchange_withdrawal.
+  /// No description provided for @transactionExchangeWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'{from} to {to} conversion'**
-  String transaction_exchange_withdrawal(Object from, Object to);
+  String transactionExchangeWithdrawal(Object from, Object to);
 
-  /// No description provided for @transaction_exchange_withdrawal_btc.
+  /// No description provided for @transactionExchangeWithdrawalBtc.
   ///
   /// In en, this message translates to:
   /// **'BTC to CNY conversion'**
-  String get transaction_exchange_withdrawal_btc;
+  String get transactionExchangeWithdrawalBtc;
 
-  /// No description provided for @transaction_exchange_withdrawal_cny.
+  /// No description provided for @transactionExchangeWithdrawalCny.
   ///
   /// In en, this message translates to:
   /// **'CNY to BTC conversion'**
-  String get transaction_exchange_withdrawal_cny;
+  String get transactionExchangeWithdrawalCny;
 
-  /// No description provided for @transaction_exchange_withdrawal_eur.
+  /// No description provided for @transactionExchangeWithdrawalEur.
   ///
   /// In en, this message translates to:
   /// **'EUR to BTC conversion'**
-  String get transaction_exchange_withdrawal_eur;
+  String get transactionExchangeWithdrawalEur;
 
-  /// No description provided for @transaction_exchange_withdrawal_jpy.
+  /// No description provided for @transactionExchangeWithdrawalJpy.
   ///
   /// In en, this message translates to:
   /// **'JPY to BTC conversion'**
-  String get transaction_exchange_withdrawal_jpy;
+  String get transactionExchangeWithdrawalJpy;
 
-  /// No description provided for @transaction_incomplete_BTC.
+  /// No description provided for @transactionIncompleteBtc.
   ///
   /// In en, this message translates to:
-  /// **'Your BTC purchase is incomplete. In order to complete the transaction you are required to add some additional information.'**
-  String get transaction_incomplete_BTC;
+  /// **'Your BTC purchase is incomplete In order to complete the transaction you are required to add some additional information'**
+  String get transactionIncompleteBtc;
 
-  /// No description provided for @transaction_link.
+  /// No description provided for @transactionLink.
   ///
   /// In en, this message translates to:
   /// **'Transaction ID'**
-  String get transaction_link;
+  String get transactionLink;
 
-  /// No description provided for @transaction_litecoin_deposit.
+  /// No description provided for @transactionLitecoinDeposit.
   ///
   /// In en, this message translates to:
   /// **'LTC deposit'**
-  String get transaction_litecoin_deposit;
+  String get transactionLitecoinDeposit;
 
-  /// No description provided for @transaction_litecoin_withdrawal.
+  /// No description provided for @transactionLitecoinWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'LTC withdrawal'**
-  String get transaction_litecoin_withdrawal;
+  String get transactionLitecoinWithdrawal;
 
-  /// No description provided for @transaction_manual_deposit.
+  /// No description provided for @transactionManualDeposit.
   ///
   /// In en, this message translates to:
   /// **'Manual deposit'**
-  String get transaction_manual_deposit;
+  String get transactionManualDeposit;
 
-  /// No description provided for @transaction_manual_dormant_credit.
+  /// No description provided for @transactionManualDormantCredit.
   ///
   /// In en, this message translates to:
   /// **'Dormant account refund'**
-  String get transaction_manual_dormant_credit;
+  String get transactionManualDormantCredit;
 
-  /// No description provided for @transaction_manual_dormant_debit.
+  /// No description provided for @transactionManualDormantDebit.
   ///
   /// In en, this message translates to:
   /// **'Dormant account funds removal'**
-  String get transaction_manual_dormant_debit;
+  String get transactionManualDormantDebit;
 
-  /// No description provided for @transaction_manual_withdrawal.
+  /// No description provided for @transactionManualWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'Manual withdrawal'**
-  String get transaction_manual_withdrawal;
+  String get transactionManualWithdrawal;
 
-  /// No description provided for @transaction_p2p_deposit.
+  /// No description provided for @transactionP2pDeposit.
   ///
   /// In en, this message translates to:
   /// **'P2P deposit'**
-  String get transaction_p2p_deposit;
+  String get transactionP2pDeposit;
 
-  /// No description provided for @transaction_p2p_withdrawal.
+  /// No description provided for @transactionP2pWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'P2P debit'**
-  String get transaction_p2p_withdrawal;
+  String get transactionP2pWithdrawal;
 
-  /// No description provided for @transaction_pay88_ada_deposit.
+  /// No description provided for @transactionPay88AdaDeposit.
   ///
   /// In en, this message translates to:
   /// **'ADA deposit'**
-  String get transaction_pay88_ada_deposit;
+  String get transactionPay88AdaDeposit;
 
-  /// No description provided for @transaction_pay88_ada_withdrawal.
+  /// No description provided for @transactionPay88AdaWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'ADA withdrawal'**
-  String get transaction_pay88_ada_withdrawal;
+  String get transactionPay88AdaWithdrawal;
 
-  /// No description provided for @transaction_pay88_bnb_deposit.
+  /// No description provided for @transactionPay88BnbDeposit.
   ///
   /// In en, this message translates to:
   /// **'BNB Deposit'**
-  String get transaction_pay88_bnb_deposit;
+  String get transactionPay88BnbDeposit;
 
-  /// No description provided for @transaction_pay88_bnb_withdrawal.
+  /// No description provided for @transactionPay88BnbWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'BNB Withdrawal'**
-  String get transaction_pay88_bnb_withdrawal;
+  String get transactionPay88BnbWithdrawal;
 
   /// BRL Deposit
   ///
   /// In en, this message translates to:
   /// **'Deposit'**
-  String get transaction_pay88_brl_deposit;
+  String get transactionPay88BrlDeposit;
 
   /// Cashier BRL withdrawal
   ///
   /// In en, this message translates to:
   /// **'BRL withdrawal'**
-  String get transaction_pay88_brl_withdrawal;
+  String get transactionPay88BrlWithdrawal;
 
-  /// No description provided for @transaction_pay88_btc_deposit.
+  /// No description provided for @transactionPay88BtcDeposit.
   ///
   /// In en, this message translates to:
   /// **'BTC Deposit'**
-  String get transaction_pay88_btc_deposit;
+  String get transactionPay88BtcDeposit;
 
-  /// No description provided for @transaction_pay88_btc_withdrawal.
+  /// No description provided for @transactionPay88BtcWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'BTC Withdrawal'**
-  String get transaction_pay88_btc_withdrawal;
+  String get transactionPay88BtcWithdrawal;
 
-  /// No description provided for @transaction_pay88_busd_deposit.
+  /// No description provided for @transactionPay88BusdDeposit.
   ///
   /// In en, this message translates to:
   /// **'Deposit BUSD'**
-  String get transaction_pay88_busd_deposit;
+  String get transactionPay88BusdDeposit;
 
-  /// No description provided for @transaction_pay88_busd_withdrawal.
+  /// No description provided for @transactionPay88BusdWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'BUSD Withdrawal'**
-  String get transaction_pay88_busd_withdrawal;
+  String get transactionPay88BusdWithdrawal;
 
-  /// No description provided for @transaction_pay88_cad_deposit.
+  /// No description provided for @transactionPay88CadDeposit.
   ///
   /// In en, this message translates to:
   /// **'CAD deposit'**
-  String get transaction_pay88_cad_deposit;
+  String get transactionPay88CadDeposit;
 
-  /// No description provided for @transaction_pay88_cad_withdrawal.
+  /// No description provided for @transactionPay88CadWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'CAD withdrawal'**
-  String get transaction_pay88_cad_withdrawal;
+  String get transactionPay88CadWithdrawal;
 
-  /// No description provided for @transaction_pay88_cny_deposit.
+  /// No description provided for @transactionPay88CnyDeposit.
   ///
   /// In en, this message translates to:
   /// **'CNY deposit'**
-  String get transaction_pay88_cny_deposit;
+  String get transactionPay88CnyDeposit;
 
-  /// No description provided for @transaction_pay88_cny_withdrawal.
+  /// No description provided for @transactionPay88CnyWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'CNY withdrawal'**
-  String get transaction_pay88_cny_withdrawal;
+  String get transactionPay88CnyWithdrawal;
 
-  /// No description provided for @transaction_pay88_deposit.
+  /// No description provided for @transactionPay88Deposit.
   ///
   /// In en, this message translates to:
   /// **'Deposit'**
-  String get transaction_pay88_deposit;
+  String get transactionPay88Deposit;
 
-  /// No description provided for @transaction_pay88_doge_deposit.
+  /// No description provided for @transactionPay88DogeDeposit.
   ///
   /// In en, this message translates to:
   /// **'DOGE deposit'**
-  String get transaction_pay88_doge_deposit;
+  String get transactionPay88DogeDeposit;
 
-  /// No description provided for @transaction_pay88_doge_withdrawal.
+  /// No description provided for @transactionPay88DogeWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'DOGE withdrawal'**
-  String get transaction_pay88_doge_withdrawal;
+  String get transactionPay88DogeWithdrawal;
 
-  /// No description provided for @transaction_pay88_eur_deposit.
+  /// No description provided for @transactionPay88EurDeposit.
   ///
   /// In en, this message translates to:
   /// **'EUR deposit'**
-  String get transaction_pay88_eur_deposit;
+  String get transactionPay88EurDeposit;
 
-  /// No description provided for @transaction_pay88_eur_withdrawal.
+  /// No description provided for @transactionPay88EurWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'EUR withdrawal'**
-  String get transaction_pay88_eur_withdrawal;
+  String get transactionPay88EurWithdrawal;
 
   /// INR Deposit
   ///
   /// In en, this message translates to:
   /// **'Manual deposit'**
-  String get transaction_pay88_inr_deposit;
+  String get transactionPay88InrDeposit;
 
-  /// No description provided for @transaction_pay88_inr_withdrawal.
+  /// No description provided for @transactionPay88InrWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'INR withdrawal'**
-  String get transaction_pay88_inr_withdrawal;
+  String get transactionPay88InrWithdrawal;
 
-  /// No description provided for @transaction_pay88_jpy_deposit.
+  /// No description provided for @transactionPay88JpyDeposit.
   ///
   /// In en, this message translates to:
   /// **'JPY deposit'**
-  String get transaction_pay88_jpy_deposit;
+  String get transactionPay88JpyDeposit;
 
-  /// No description provided for @transaction_pay88_jpy_withdrawal.
+  /// No description provided for @transactionPay88JpyWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'JPY withdrawal'**
-  String get transaction_pay88_jpy_withdrawal;
+  String get transactionPay88JpyWithdrawal;
 
-  /// No description provided for @transaction_pay88_matic_deposit.
+  /// No description provided for @transactionPay88MaticDeposit.
   ///
   /// In en, this message translates to:
   /// **'MATIC deposit'**
-  String get transaction_pay88_matic_deposit;
+  String get transactionPay88MaticDeposit;
 
-  /// No description provided for @transaction_pay88_matic_withdrawal.
+  /// No description provided for @transactionPay88MaticWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'MATIC withdrawal'**
-  String get transaction_pay88_matic_withdrawal;
+  String get transactionPay88MaticWithdrawal;
 
-  /// No description provided for @transaction_pay88_thb_deposit.
+  /// No description provided for @transactionPay88ThbDeposit.
   ///
   /// In en, this message translates to:
   /// **'THB deposit'**
-  String get transaction_pay88_thb_deposit;
+  String get transactionPay88ThbDeposit;
 
-  /// No description provided for @transaction_pay88_thb_withdrawal.
+  /// No description provided for @transactionPay88ThbWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'THB withdrawal'**
-  String get transaction_pay88_thb_withdrawal;
+  String get transactionPay88ThbWithdrawal;
 
-  /// No description provided for @transaction_pay88_ton_deposit.
+  /// No description provided for @transactionPay88TonDeposit.
   ///
   /// In en, this message translates to:
   /// **'TON deposit'**
-  String get transaction_pay88_ton_deposit;
+  String get transactionPay88TonDeposit;
 
-  /// No description provided for @transaction_pay88_ton_withdrawal.
+  /// No description provided for @transactionPay88TonWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'TON withdrawal'**
-  String get transaction_pay88_ton_withdrawal;
+  String get transactionPay88TonWithdrawal;
 
-  /// No description provided for @transaction_pay88_trx_deposit.
+  /// No description provided for @transactionPay88TrxDeposit.
   ///
   /// In en, this message translates to:
   /// **'TRX deposit'**
-  String get transaction_pay88_trx_deposit;
+  String get transactionPay88TrxDeposit;
 
-  /// No description provided for @transaction_pay88_trx_withdrawal.
+  /// No description provided for @transactionPay88TrxWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'TRX withdrawal'**
-  String get transaction_pay88_trx_withdrawal;
+  String get transactionPay88TrxWithdrawal;
 
-  /// No description provided for @transaction_pay88_usdc_deposit.
+  /// No description provided for @transactionPay88UsdcDeposit.
   ///
   /// In en, this message translates to:
   /// **'USDC deposit'**
-  String get transaction_pay88_usdc_deposit;
+  String get transactionPay88UsdcDeposit;
 
-  /// No description provided for @transaction_pay88_usdc_withdrawal.
+  /// No description provided for @transactionPay88UsdcWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'USDC withdrawal'**
-  String get transaction_pay88_usdc_withdrawal;
+  String get transactionPay88UsdcWithdrawal;
 
-  /// No description provided for @transaction_pay88_usdt_deposit.
+  /// No description provided for @transactionPay88UsdtDeposit.
   ///
   /// In en, this message translates to:
   /// **'USDT deposit'**
-  String get transaction_pay88_usdt_deposit;
+  String get transactionPay88UsdtDeposit;
 
-  /// No description provided for @transaction_pay88_usdt_withdrawal.
+  /// No description provided for @transactionPay88UsdtWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'USDT withdrawal'**
-  String get transaction_pay88_usdt_withdrawal;
+  String get transactionPay88UsdtWithdrawal;
 
-  /// No description provided for @transaction_pay88_withdrawal.
+  /// No description provided for @transactionPay88Withdrawal.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal'**
-  String get transaction_pay88_withdrawal;
+  String get transactionPay88Withdrawal;
 
-  /// No description provided for @transaction_pay88_xrp_deposit.
+  /// No description provided for @transactionPay88XrpDeposit.
   ///
   /// In en, this message translates to:
   /// **'XRP deposit'**
-  String get transaction_pay88_xrp_deposit;
+  String get transactionPay88XrpDeposit;
 
-  /// No description provided for @transaction_pay88_xrp_withdrawal.
+  /// No description provided for @transactionPay88XrpWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'XRP withdrawal'**
-  String get transaction_pay88_xrp_withdrawal;
+  String get transactionPay88XrpWithdrawal;
 
-  /// No description provided for @transaction_paymentiq_deposit.
+  /// No description provided for @transactionPaymentiqDeposit.
   ///
   /// In en, this message translates to:
   /// **'Online deposit'**
-  String get transaction_paymentiq_deposit;
+  String get transactionPaymentiqDeposit;
 
-  /// No description provided for @transaction_paymentiq_withdrawal.
+  /// No description provided for @transactionPaymentiqWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'Online withdrawal'**
-  String get transaction_paymentiq_withdrawal;
+  String get transactionPaymentiqWithdrawal;
 
-  /// No description provided for @transaction_powered_by.
+  /// No description provided for @transactionPoweredBy.
   ///
   /// In en, this message translates to:
   /// **'Powered by'**
-  String get transaction_powered_by;
+  String get transactionPoweredBy;
 
-  /// No description provided for @transaction_processing_fee.
+  /// No description provided for @transactionProcessingFee.
   ///
   /// In en, this message translates to:
   /// **'Processing fee'**
-  String get transaction_processing_fee;
+  String get transactionProcessingFee;
 
-  /// No description provided for @transaction_rate.
+  /// No description provided for @transactionRate.
   ///
   /// In en, this message translates to:
   /// **'Rate'**
-  String get transaction_rate;
+  String get transactionRate;
 
-  /// No description provided for @transaction_resume.
+  /// No description provided for @transactionResume.
   ///
   /// In en, this message translates to:
   /// **'Resume transaction'**
-  String get transaction_resume;
+  String get transactionResume;
 
-  /// No description provided for @transaction_soc_deposit.
+  /// No description provided for @transactionSocDeposit.
   ///
   /// In en, this message translates to:
   /// **'SOC deposit'**
-  String get transaction_soc_deposit;
+  String get transactionSocDeposit;
 
-  /// No description provided for @transaction_soc_withdrawal.
+  /// No description provided for @transactionSocWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'SOC withdrawal'**
-  String get transaction_soc_withdrawal;
+  String get transactionSocWithdrawal;
 
-  /// No description provided for @transaction_spent.
+  /// No description provided for @transactionSpent.
   ///
   /// In en, this message translates to:
-  /// **'Spent (inc. fee)'**
-  String get transaction_spent;
+  /// **'Spent _inc fee_'**
+  String get transactionSpent;
 
-  /// No description provided for @transaction_start_balance.
+  /// No description provided for @transactionStartBalance.
   ///
   /// In en, this message translates to:
   /// **'Starting balance'**
-  String get transaction_start_balance;
+  String get transactionStartBalance;
 
-  /// No description provided for @transaction_total_received.
+  /// No description provided for @transactionTotalReceived.
   ///
   /// In en, this message translates to:
   /// **'Total received'**
-  String get transaction_total_received;
+  String get transactionTotalReceived;
 
-  /// No description provided for @transaction_type.
+  /// No description provided for @transactionType.
   ///
   /// In en, this message translates to:
   /// **'Transaction type'**
-  String get transaction_type;
+  String get transactionType;
 
-  /// No description provided for @transaction_type_BITCOIN_DEPOSIT.
+  /// No description provided for @transactionTypeBitcoinDeposit.
   ///
   /// In en, this message translates to:
   /// **'Bitcoin deposit'**
-  String get transaction_type_BITCOIN_DEPOSIT;
+  String get transactionTypeBitcoinDeposit;
 
-  /// No description provided for @transaction_win.
+  /// No description provided for @transactionWin.
   ///
   /// In en, this message translates to:
   /// **'win'**
-  String get transaction_win;
+  String get transactionWin;
 
-  /// No description provided for @transaction_withdrawal.
+  /// No description provided for @transactionWithdrawal.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal'**
-  String get transaction_withdrawal;
+  String get transactionWithdrawal;
 
-  /// No description provided for @transaction_withdrawal_approved.
+  /// No description provided for @transactionWithdrawalApproved.
   ///
   /// In en, this message translates to:
   /// **'Approved'**
-  String get transaction_withdrawal_approved;
+  String get transactionWithdrawalApproved;
 
-  /// No description provided for @transaction_withdrawal_cancellation_by_user.
+  /// No description provided for @transactionWithdrawalCancellationByUser.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal cancelled by user'**
-  String get transaction_withdrawal_cancellation_by_user;
+  String get transactionWithdrawalCancellationByUser;
 
-  /// No description provided for @transaction_withdrawal_cancellation_return.
+  /// No description provided for @transactionWithdrawalCancellationReturn.
   ///
   /// In en, this message translates to:
   /// **'Cancellation return'**
-  String get transaction_withdrawal_cancellation_return;
+  String get transactionWithdrawalCancellationReturn;
 
-  /// No description provided for @transaction_withdrawal_deleted.
+  /// No description provided for @transactionWithdrawalDeleted.
   ///
   /// In en, this message translates to:
   /// **'Deleted'**
-  String get transaction_withdrawal_deleted;
+  String get transactionWithdrawalDeleted;
 
-  /// No description provided for @transaction_withdrawal_new.
+  /// No description provided for @transactionWithdrawalNew.
   ///
   /// In en, this message translates to:
   /// **'New'**
-  String get transaction_withdrawal_new;
+  String get transactionWithdrawalNew;
 
-  /// No description provided for @transaction_withdrawal_pending.
+  /// No description provided for @transactionWithdrawalPending.
   ///
   /// In en, this message translates to:
   /// **'Pending'**
-  String get transaction_withdrawal_pending;
+  String get transactionWithdrawalPending;
 
-  /// No description provided for @transaction_withdrawal_processing.
+  /// No description provided for @transactionWithdrawalProcessing.
   ///
   /// In en, this message translates to:
   /// **'Withdrawal processing'**
-  String get transaction_withdrawal_processing;
+  String get transactionWithdrawalProcessing;
 
-  /// No description provided for @transaction_withdrawal_reverted.
+  /// No description provided for @transactionWithdrawalReverted.
   ///
   /// In en, this message translates to:
   /// **'Reverted'**
-  String get transaction_withdrawal_reverted;
+  String get transactionWithdrawalReverted;
 
-  /// No description provided for @transactions_bets.
+  /// No description provided for @transactionsBets.
   ///
   /// In en, this message translates to:
   /// **'Bets'**
-  String get transactions_bets;
+  String get transactionsBets;
 
-  /// No description provided for @transactions_deposits.
+  /// No description provided for @transactionsDeposits.
   ///
   /// In en, this message translates to:
   /// **'Deposits'**
-  String get transactions_deposits;
+  String get transactionsDeposits;
 
-  /// No description provided for @transactions_filter.
+  /// No description provided for @transactionsFilter.
   ///
   /// In en, this message translates to:
   /// **'Transactions filter'**
-  String get transactions_filter;
+  String get transactionsFilter;
 
-  /// No description provided for @transactions_load_more.
+  /// No description provided for @transactionsLoadMore.
   ///
   /// In en, this message translates to:
   /// **'Load more'**
-  String get transactions_load_more;
+  String get transactionsLoadMore;
 
-  /// No description provided for @transactions_modify_filters.
+  /// No description provided for @transactionsModifyFilters.
   ///
   /// In en, this message translates to:
   /// **'Modify filters'**
-  String get transactions_modify_filters;
+  String get transactionsModifyFilters;
 
-  /// No description provided for @transactions_none.
+  /// No description provided for @transactionsNone.
   ///
   /// In en, this message translates to:
   /// **'No transactions yet'**
-  String get transactions_none;
+  String get transactionsNone;
 
-  /// No description provided for @transactions_see_all_transactions.
+  /// No description provided for @transactionsSeeAllTransactions.
   ///
   /// In en, this message translates to:
   /// **'See all transactions'**
-  String get transactions_see_all_transactions;
+  String get transactionsSeeAllTransactions;
 
-  /// No description provided for @transactions_wins.
+  /// No description provided for @transactionsWins.
   ///
   /// In en, this message translates to:
   /// **'Wins'**
-  String get transactions_wins;
+  String get transactionsWins;
 
-  /// No description provided for @transactions_withdrawals.
+  /// No description provided for @transactionsWithdrawals.
   ///
   /// In en, this message translates to:
   /// **'Withdrawals'**
-  String get transactions_withdrawals;
+  String get transactionsWithdrawals;
 
-  /// No description provided for @wallet_deposit.
+  /// No description provided for @walletDeposit.
   ///
   /// In en, this message translates to:
   /// **'Deposit'**
-  String get wallet_deposit;
+  String get walletDeposit;
 
-  /// No description provided for @wallet_deposit_history.
+  /// No description provided for @walletDepositHistory.
   ///
   /// In en, this message translates to:
   /// **'Deposit history'**
-  String get wallet_deposit_history;
+  String get walletDepositHistory;
 
-  /// No description provided for @wallet_get_bitcoins.
+  /// No description provided for @walletGetBitcoins.
   ///
   /// In en, this message translates to:
   /// **'Get bitcoins'**
-  String get wallet_get_bitcoins;
+  String get walletGetBitcoins;
 
-  /// No description provided for @wallet_my_balance.
+  /// No description provided for @walletMyBalance.
   ///
   /// In en, this message translates to:
   /// **'My balance'**
-  String get wallet_my_balance;
+  String get walletMyBalance;
 
-  /// No description provided for @wallet_transaction_amount.
+  /// No description provided for @walletTransactionAmount.
   ///
   /// In en, this message translates to:
   /// **'Amount'**
-  String get wallet_transaction_amount;
+  String get walletTransactionAmount;
 
-  /// No description provided for @wallet_transaction_transaction_id.
+  /// No description provided for @walletTransactionTransactionId.
   ///
   /// In en, this message translates to:
   /// **'Transaction ID'**
-  String get wallet_transaction_transaction_id;
+  String get walletTransactionTransactionId;
 
-  /// No description provided for @wallet_withdraw.
+  /// No description provided for @walletWithdraw.
   ///
   /// In en, this message translates to:
   /// **'Withdraw'**
-  String get wallet_withdraw;
+  String get walletWithdraw;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

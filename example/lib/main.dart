@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      onGenerateTitle: (context) => context.l10n.cashier_accounts_desc,
+      onGenerateTitle: (context) => context.l10n.cashierAccountsDesc,
       theme: ThemeData(primarySwatch: Colors.blue),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
@@ -29,15 +29,25 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(context.parseL10n('localeName')),
-          Text(context.parseL10n('cashier_accounts_desc')),
-          Text(context.parseL10n('cashier_convert_before_withdraw', arguments: ['BTC', 'USD'])),
-          Text(context.parseL10n('cashier_convert_to', arguments: ['EUR'])),
-          Text(context.parseL10n('transaction_exchange_withdrawal', arguments: ['BTC', 'USD'])),
-        ],
+          child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(context.parseL10n('localeName')),
+            const SizedBox(height: 20),
+            Text(context.parseL10n('ecPop_message', arguments: ['404'])),
+            const SizedBox(height: 20),
+            Text(context.parseL10n('cashierAccountsDesc')),
+            const SizedBox(height: 20),
+            Text(context.parseL10n('cashierConvertBeforeWithdraw', arguments: ['BTC', 'USD'])),
+            const SizedBox(height: 20),
+            Text(context.parseL10n('cashierConvertTo', arguments: ['EUR'])),
+            const SizedBox(height: 20),
+            Text(context.parseL10n('transactionExchangeWithdrawal', arguments: ['BTC', 'USD'])),
+          ],
+        ),
       )),
     );
   }

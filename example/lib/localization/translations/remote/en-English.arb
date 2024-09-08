@@ -1,5 +1,14 @@
 {
   "@@locale": "en_GB",
+  "ec.pop-message": "Unexpected error occured. Please try later. {ERROR_CODE}",
+  "@ec.pop-message": {
+      "placeholders": {
+          "ERROR_CODE": {
+              "type": "String",
+              "example": "1234"
+          }
+      }
+  },
   "cashier.accounts_desc": "Select the account to proceed",
   "@cashier.accounts_desc": {
     "type": "text",

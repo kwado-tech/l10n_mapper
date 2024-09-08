@@ -1,5 +1,14 @@
 {
   "@@locale": "ar",
+  "ec.pop-message": "Unexpected error occured. Please try later. {ERROR_CODE}",
+  "@ec.pop-message": {
+      "placeholders": {
+          "ERROR_CODE": {
+              "type": "String",
+              "example": "1234"
+          }
+      }
+  },
   "cashier.acquisition_promo": "تعزيز 10% لأرباحك عند اول إيداع",
   "@cashier.acquisition_promo": {
     "type": "text"
@@ -4210,11 +4219,11 @@
       }
     }
   },
-  "cashier.reward_swich_currency_deposit_btn": "تغيير العملة إلى {curreny} والإيداع",
+  "cashier.reward_swich_currency_deposit_btn": "تغيير العملة إلى {currency} والإيداع",
   "@cashier.reward_swich_currency_deposit_btn": {
     "type": "text",
     "placeholders": {
-      "curreny": {
+      "currency": {
       }
     }
   },
