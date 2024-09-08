@@ -1,5 +1,14 @@
 {
   "@@locale": "en_GB",
+  "ec.pop-message": "Unexpected error occured. Please try later. {ERROR_CODE}",
+  "@ec.pop-message": {
+      "placeholders": {
+          "ERROR_CODE": {
+              "type": "String",
+              "example": "1234"
+          }
+      }
+  },
   "cashier.accounts_desc": "Select the account to proceed",
   "@cashier.accounts_desc": {
     "type": "text",
@@ -7,6 +16,10 @@
   },
   "cashier.acquisition_promo": "10% first deposit boost for your winnings",
   "@cashier.acquisition_promo": {
+    "type": "text"
+  },
+  "Cashier.Test_Translation": "10% first deposit boost for your winnings",
+  "@Cashier.Test_Translation": {
     "type": "text"
   },
   "cashier.activate_tronlink": "To use TronLink, first click on your TronLink extension and log in.",
@@ -369,13 +382,13 @@
   "@cashier.CONTACT_US": {
     "type": "text"
   },
-  "cashier.convert_before_withdraw": "* For withdrawing your {convertFrom} you first need to convert it back to {convertTo}",
+  "cashier.convert_before_withdraw": "* For withdrawing your {CONVERT_FROM} you first need to convert it back to {CONVERT_TO}",
   "@cashier.convert_before_withdraw": {
     "type": "text",
     "placeholders": {
-      "convertFrom": {
+      "CONVERT_FROM": {
       },
-      "convertTo": {
+      "CONVERT_TO": {
       }
     }
   },

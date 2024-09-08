@@ -6,5 +6,5 @@
 # generate localization-files using the formatted translation files in `translations/local`. See l10n.yaml file for configurations
 (cd ../ && flutter gen-l10n)
 
-# generate code
+# # generate code
 (cd ../ && flutter pub run build_runner build --delete-conflicting-outputs)
