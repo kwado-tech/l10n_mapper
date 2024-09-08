@@ -302,7 +302,7 @@ packages:
       path: "../l10n_mapper_generator"
       relative: true
     source: path
-    version: "2.1.0"
+    version: "2.1.1"
   leak_tracker:
     dependency: transitive
     description:

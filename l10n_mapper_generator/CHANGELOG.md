@@ -42,3 +42,8 @@
 * Fixes readme issues
 * Changed generated file extension to `.mapper.dart`.
 
+## 2.1.1
+
+* Fixes inconsistent formatting of placeholders
+* Updated readme
+
