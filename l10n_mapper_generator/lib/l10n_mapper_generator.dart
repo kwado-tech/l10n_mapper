@@ -27,6 +27,7 @@ class L10nMapperGenerator extends Generator {
   @override
   FutureOr<String?> generate(LibraryReader library, BuildStep buildStep) {
     final buffer = StringBuffer();
+    buffer.writeln('// ignore_for_file: non_constant_identifier_names');
 
     for (var classElement in library.classes.where((c) => c.isAbstract)) {
       if (classElement.displayName == 'AppLocalizations') {

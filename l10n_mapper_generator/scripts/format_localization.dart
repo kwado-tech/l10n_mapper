@@ -18,12 +18,10 @@ class FormatLocalization {
 
   bool startsWithUppercase(String input) {
     final substring = input.substring(0, 1);
-
     if (substring == '@') {
-      return input.substring(0, 2).toLowerCase() == input.substring(0, 2);
+      return input.substring(0, 2).isLowerCase();
     }
-
-    return substring.toUpperCase() == substring;
+    return substring.isUpperCase();
   }
 
   String toLocalizationKeyCase(String input) {
@@ -33,20 +31,7 @@ class FormatLocalization {
       return input.substring(0, 2).toLowerCase() + input.substring(2);
     }
 
-    return substring.toLowerCase() + input.substring(1);
-  }
-
-  bool isDirectSubKeyOfPlaceholders(Map<String, dynamic> json, String keyToCheck) {
-    for (var key in json.keys) {
-      if (json[key] is Map && json[key].containsKey('placeholders')) {
-        final placeholders = json[key]['placeholders'];
-
-        if (placeholders is Map) {
-          return placeholders.containsKey(keyToCheck);
-        }
-      }
-    }
-    return false;
+    return substring + input.substring(1);
   }
 
   String toCamelCase(String input, List<String> separators) {
@@ -59,7 +44,7 @@ class FormatLocalization {
     if (words.isEmpty) return input;
 
     // convert the first word to lowercase
-    String camelCaseString = words[0].toLowerCase();
+    String camelCaseString = words[0];
 
     // capitalize the first letter of each subsequent word
     for (int i = 1; i < words.length; i++) {
@@ -164,10 +149,10 @@ class FormatLocalization {
           }
 
           // format translation-value
-          modifiedTranslationValue = convertPlaceholdersToCamelCase(modifiedTranslationValue, emptyPredicateKeys);
+          // modifiedTranslationValue = convertPlaceholdersToCamelCase(modifiedTranslationValue, emptyPredicateKeys);
 
-          modifiedTranslationValue =
-              modifiedTranslationValue.split(StringConstants.emptyString).map((e) => predicates[e] ?? e).join().trim();
+          // modifiedTranslationValue =
+          //     modifiedTranslationValue.split(StringConstants.emptyString).map((e) => predicates[e] ?? e).join().trim();
 
           if ('"$modifiedTranslationKey"' == '"@@locale"') {
             lines.add('"$modifiedTranslationKey": "${option.locale.getValue()}",');
@@ -190,5 +175,17 @@ class FormatLocalization {
         logger(stackTrace.toString(), () => exit(1), type: LogType.error);
       }
     }
+  }
+}
+
+extension Case on String {
+  bool isUpperCase() {
+    int ascii = codeUnitAt(0);
+    return ascii >= 65 && ascii <= 90;
+  }
+
+  bool isLowerCase() {
+    int ascii = codeUnitAt(0);
+    return ascii >= 97 && ascii <= 122;
   }
 }
