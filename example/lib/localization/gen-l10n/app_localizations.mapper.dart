@@ -4,7 +4,7 @@
 // L10nMapperGenerator
 // **************************************************************************
 
-import 'package:example/localization/gen-l10n/app_localizations.dart';
+import 'app_localizations.dart';
 import 'package:flutter/widgets.dart';
 
 extension AppLocalizationsExtension on BuildContext {
