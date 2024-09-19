@@ -98,7 +98,7 @@ abstract class AppLocalizations {
   /// No description provided for @ecPop_message.
   ///
   /// In en, this message translates to:
-  /// **'Unexpected error occured Please try later {errorCode}'**
+  /// **'Unexpected error occured. Please try later. {errorCode}'**
   String ecPop_message(String errorCode);
 
   /// Select the account to proceed
@@ -122,7 +122,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierActivateTronlink.
   ///
   /// In en, this message translates to:
-  /// **'To use TronLink, first click on your TronLink extension and log in'**
+  /// **'To use TronLink, first click on your TronLink extension and log in.'**
   String get cashierActivateTronlink;
 
   /// No description provided for @cashierActiveBalance.
@@ -146,7 +146,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierAdd2fa.
   ///
   /// In en, this message translates to:
-  /// **'Add Two_factor authentication'**
+  /// **'Add Two-factor authentication'**
   String get cashierAdd2fa;
 
   /// No description provided for @cashierAddOrRemoveYourIndividualCurrency.
@@ -170,7 +170,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierAgentWithdrawDescription.
   ///
   /// In en, this message translates to:
-  /// **'Use a local agent to withdraw funds'**
+  /// **'Use a local agent to withdraw funds.'**
   String get cashierAgentWithdrawDescription;
 
   /// No description provided for @cashierAgentWithdrawOtp.
@@ -200,7 +200,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierAgentWithdrawUsernameHint.
   ///
   /// In en, this message translates to:
-  /// **'Agent username _same as used in deposit_'**
+  /// **'Agent username (same as used in deposit)'**
   String get cashierAgentWithdrawUsernameHint;
 
   /// No description provided for @cashierAgentWithdrawalStarted.
@@ -314,7 +314,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierBeforeDepositing.
   ///
   /// In en, this message translates to:
-  /// **'Before depositing you need to create Bitcoin wallet, it’s simple'**
+  /// **'Before depositing you need to create Bitcoin wallet, it’s simple.'**
   String get cashierBeforeDepositing;
 
   /// No description provided for @cashierBet.
@@ -332,7 +332,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierBinanceSmartChainMessage.
   ///
   /// In en, this message translates to:
-  /// **'We are currently supporting only Binance Smart Chain network for the deposits ERC_20 coming soon!'**
+  /// **'We are currently supporting only Binance Smart Chain network for the deposits. ERC-20 coming soon!'**
   String get cashierBinanceSmartChainMessage;
 
   /// No description provided for @cashierBitcoinBalance.
@@ -350,25 +350,25 @@ abstract class AppLocalizations {
   /// No description provided for @cashierBitlipaInstructionsAmounts.
   ///
   /// In en, this message translates to:
-  /// **'No amounts will be deducted from your account until you confirm it from your device'**
+  /// **'No amounts will be deducted from your account until you confirm it from your device.'**
   String get cashierBitlipaInstructionsAmounts;
 
   /// No description provided for @cashierBitlipaInstructionsSms.
   ///
   /// In en, this message translates to:
-  /// **'You will receive an SMS on your phone shortly to proceed with the transaction'**
+  /// **'You will receive an SMS on your phone shortly to proceed with the transaction.'**
   String get cashierBitlipaInstructionsSms;
 
   /// No description provided for @cashierBitlipaInstructionsTryagain.
   ///
   /// In en, this message translates to:
-  /// **'If you do not receive any SMS messages, please start from the beginning'**
+  /// **'If you do not receive any SMS messages, please start from the beginning.'**
   String get cashierBitlipaInstructionsTryagain;
 
   /// No description provided for @cashierBitlipaDepositWarning.
   ///
   /// In en, this message translates to:
-  /// **'The mobile money currently offers a Pay_in option Payouts are only available in USDT and USDC cryptocurrencies'**
+  /// **'The mobile money currently offers a Pay-in option. Payouts are only available in USDT and USDC cryptocurrencies.'**
   String get cashierBitlipaDepositWarning;
 
   /// No description provided for @cashierBnb.
@@ -392,7 +392,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierBtcDepositDescription.
   ///
   /// In en, this message translates to:
-  /// **'Bitcoins sent to the above address will be credited to your balance for playing'**
+  /// **'Bitcoins sent to the above address will be credited to your balance for playing.'**
   String get cashierBtcDepositDescription;
 
   /// No description provided for @cashierBtxeWithdrawalsAreDisabled.
@@ -428,7 +428,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierBuyCryptoBitlipaTitle.
   ///
   /// In en, this message translates to:
-  /// **'Buy Crypto via M_Pesa'**
+  /// **'Buy Crypto via M-Pesa'**
   String get cashierBuyCryptoBitlipaTitle;
 
   /// No description provided for @cashierBuyCryptoDesc.
@@ -470,7 +470,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierBuyCryptoTooltip.
   ///
   /// In en, this message translates to:
-  /// **'Now all Buy crypto methods are moved under single tab'**
+  /// **'Now all Buy crypto methods are moved under single tab.'**
   String get cashierBuyCryptoTooltip;
 
   /// No description provided for @cashierBuyCryptoWithCash.
@@ -698,13 +698,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierCpfRfcDescription.
   ///
   /// In en, this message translates to:
-  /// **'Please, specify your personal details All data is encrypted and secure'**
+  /// **'Please, specify your personal details. All data is encrypted and secure.'**
   String get cashierCpfRfcDescription;
 
   /// No description provided for @cashierCpfRfcInfo.
   ///
   /// In en, this message translates to:
-  /// **'We do not store your data on our servers, We store a secure token provided by our payment providers'**
+  /// **'We do not store your data on our servers, We store a secure token provided by our payment providers.'**
   String get cashierCpfRfcInfo;
 
   /// No description provided for @cashierCpfRfcInputCpf.
@@ -722,7 +722,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierCpfRfcProcessingDescription.
   ///
   /// In en, this message translates to:
-  /// **'Your {variant} is being verified Please wait a moment'**
+  /// **'Your {variant} is being verified. Please wait a moment.'**
   String cashierCpfRfcProcessingDescription(Object variant);
 
   /// No description provided for @cashierCpfRfcProcessingTitle.
@@ -752,7 +752,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierCryptoDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Deposit _Crypto_'**
+  /// **'Deposit (Crypto)'**
   String get cashierCryptoDeposit;
 
   /// No description provided for @cashierCryptoWithdrawCorrectInvoice.
@@ -914,7 +914,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierDepositAmountChanging.
   ///
   /// In en, this message translates to:
-  /// **'Changing the deposit amount will require you to generate new deposit request'**
+  /// **'Changing the deposit amount will require you to generate new deposit request.'**
   String get cashierDepositAmountChanging;
 
   /// No description provided for @cashierDepositBnb.
@@ -1058,7 +1058,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierDepositSuccessful.
   ///
   /// In en, this message translates to:
-  /// **'Your deposit of {currency} {amount} is confirmed'**
+  /// **'Your deposit of {currency} {amount} is confirmed.'**
   String cashierDepositSuccessful(Object currency, Object amount);
 
   /// No description provided for @cashierDepositThb.
@@ -1076,19 +1076,19 @@ abstract class AppLocalizations {
   /// No description provided for @cashierDepositTonInfo.
   ///
   /// In en, this message translates to:
-  /// **'To ensure successful deposit, make sure to copy the content of the MESSAGE and paste it into your wallet app before proceeding with the transaction This step is crucial for the funds to be deposited into your account seamlessly'**
+  /// **'To ensure successful deposit, make sure to copy the content of the MESSAGE and paste it into your wallet app before proceeding with the transaction. This step is crucial for the funds to be deposited into your account seamlessly.'**
   String get cashierDepositTonInfo;
 
   /// No description provided for @cashierDepositTonInvoiceId.
   ///
   /// In en, this message translates to:
-  /// **'Invoice ID _Required to complete the transaction_'**
+  /// **'Invoice ID (Required to complete the transaction)'**
   String get cashierDepositTonInvoiceId;
 
   /// No description provided for @cashierDepositTonMessage.
   ///
   /// In en, this message translates to:
-  /// **'Message _Required to complete the transaction_'**
+  /// **'Message (Required to complete the transaction)'**
   String get cashierDepositTonMessage;
 
   /// No description provided for @cashierDepositTrx.
@@ -1118,7 +1118,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierDepositWarningErc20Network.
   ///
   /// In en, this message translates to:
-  /// **'Please make sure you use only the ERC_20 network when depositing {currency}, and not any other network, in order to receive your balance seamlessly'**
+  /// **'Please make sure you use only the ERC-20 network when depositing {currency}, and not any other network, in order to receive your balance seamlessly.'**
   String cashierDepositWarningErc20Network(Object currency);
 
   /// No description provided for @cashierDepositWithAltcoins.
@@ -1184,7 +1184,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierDepositBitlipaTitle.
   ///
   /// In en, this message translates to:
-  /// **'M_Pesa _KES_'**
+  /// **'M-Pesa (KES)'**
   String get cashierDepositBitlipaTitle;
 
   /// No description provided for @cashierDepositBlockfinexDescription.
@@ -1232,7 +1232,7 @@ abstract class AppLocalizations {
   /// Ezeebill subtitle
   ///
   /// In en, this message translates to:
-  /// **'Transactions can take 1_24 hours to complete'**
+  /// **'Transactions can take 1-24 hours to complete'**
   String get cashierDepositEzeebill_bankTransferDescription;
 
   /// No description provided for @cashierDepositEzeebill_bankTransferTitle.
@@ -1292,13 +1292,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierDepositJeton_bankTransferVoucherAtmDescription.
   ///
   /// In en, this message translates to:
-  /// **'Transactions can take 1_24 hours to complete'**
+  /// **'Transactions can take 1-24 hours to complete'**
   String get cashierDepositJeton_bankTransferVoucherAtmDescription;
 
   /// No description provided for @cashierDepositJeton_bankTransferVoucherAtmTitle.
   ///
   /// In en, this message translates to:
-  /// **'Deposit via ATM _domestic transfer only_'**
+  /// **'Deposit via ATM (domestic transfer only)'**
   String get cashierDepositJeton_bankTransferVoucherAtmTitle;
 
   /// No description provided for @cashierDepositJeton_jpyTitle.
@@ -1346,7 +1346,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierDepositNetworkTooltip.
   ///
   /// In en, this message translates to:
-  /// **'Make sure to always double_check that the correct network is selected before depositing'**
+  /// **'Make sure to always double-check that the correct network is selected before depositing.'**
   String get cashierDepositNetworkTooltip;
 
   /// No description provided for @cashierDepositOnrampDescription.
@@ -1520,25 +1520,25 @@ abstract class AppLocalizations {
   /// No description provided for @cashierDepositWalletDepositStarted.
   ///
   /// In en, this message translates to:
-  /// **'Your {amount} {currency} deposit transaction has been initiated\nClick to continue on @Wallet to complete'**
+  /// **'Your {amount} {currency} deposit transaction has been initiated.\nClick to continue on @Wallet to complete.'**
   String cashierDepositWalletDepositStarted(Object amount, Object currency);
 
   /// No description provided for @cashierDepositWarningConfirmAddress.
   ///
   /// In en, this message translates to:
-  /// **'Please always check your deposit wallet address on our site before making your transactions'**
+  /// **'Please always check your deposit wallet address on our site before making your transactions.'**
   String get cashierDepositWarningConfirmAddress;
 
   /// No description provided for @cashierDepositWarningLightningNetwork.
   ///
   /// In en, this message translates to:
-  /// **'Lightning is a network that runs on top of Bitcoin blockchain to enable more uses of for bitcoin <a href=\"https//wwwgooglecom/\" target=\"blank\">Learn more</a>'**
+  /// **'Lightning is a network that runs on top of Bitcoin blockchain to enable more uses of for bitcoin. <a href=\"https//www.google.com/\" target=\"_blank\">Learn more</a>.'**
   String get cashierDepositWarningLightningNetwork;
 
   /// No description provided for @cashierDepositsAreDisabled.
   ///
   /// In en, this message translates to:
-  /// **'Purchasing cryptocurrency via MoonPay feature is currently disabled'**
+  /// **'Purchasing cryptocurrency via MoonPay feature is currently disabled.'**
   String get cashierDepositsAreDisabled;
 
   /// No description provided for @cashierDestinationTagCopied.
@@ -1568,7 +1568,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierDontShowAgain.
   ///
   /// In en, this message translates to:
-  /// **'Don\'t show me again'**
+  /// **'Don\'t show me again.'**
   String get cashierDontShowAgain;
 
   /// No description provided for @cashierEmailUs.
@@ -1604,7 +1604,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierEmailVerificationConfirmSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'By not verifying your email you will not be able to withdraw any funds'**
+  /// **'By not verifying your email you will not be able to withdraw any funds.'**
   String get cashierEmailVerificationConfirmSubtitle;
 
   /// No description provided for @cashierEmailVerificationConfirmTitle.
@@ -1712,7 +1712,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierEthDepositDescription.
   ///
   /// In en, this message translates to:
-  /// **'Ethereum sent to the above address will be credited to your balance for playing'**
+  /// **'Ethereum sent to the above address will be credited to your balance for playing.'**
   String get cashierEthDepositDescription;
 
   /// No description provided for @cashierEur.
@@ -1730,13 +1730,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierExchange3Confirmations.
   ///
   /// In en, this message translates to:
-  /// **'You have a pending deposit of {amount} {currency} This amount is locked for conversion until transaction will get three confirmations'**
+  /// **'You have a pending deposit of {amount} {currency}. This amount is locked for conversion until transaction will get three confirmations.'**
   String cashierExchange3Confirmations(Object amount, Object currency);
 
   /// No description provided for @cashierExchangeFee.
   ///
   /// In en, this message translates to:
-  /// **'Fee {amount} {currency} _{fee}%_'**
+  /// **'Fee {amount} {currency} ({fee}%)'**
   String cashierExchangeFee(Object amount, Object currency, Object fee);
 
   /// No description provided for @cashierExchangeOverallBalance.
@@ -1748,13 +1748,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierExchangeRate.
   ///
   /// In en, this message translates to:
-  /// **'1,000 mBTC _1 BTC_ = {amount} {currency}'**
+  /// **'1,000 mBTC (1 BTC) = {amount} {currency}'**
   String cashierExchangeRate(Object amount, Object currency);
 
   /// No description provided for @cashierExchangeRateChanged.
   ///
   /// In en, this message translates to:
-  /// **'The exchange rate has been changed'**
+  /// **'The exchange rate has been changed.'**
   String get cashierExchangeRateChanged;
 
   /// No description provided for @cashierExchangeRateText.
@@ -1766,7 +1766,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierExchangeRateUpdated.
   ///
   /// In en, this message translates to:
-  /// **'The exchange rate has been updated'**
+  /// **'The exchange rate has been updated.'**
   String get cashierExchangeRateUpdated;
 
   /// No description provided for @cashierExternal.
@@ -1778,7 +1778,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierExternalWalletTonhubDescription.
   ///
   /// In en, this message translates to:
-  /// **'Deposit via Tonhub wallet'**
+  /// **'Deposit via Tonhub wallet.'**
   String get cashierExternalWalletTonhubDescription;
 
   /// No description provided for @cashierExternalWalletTonhubTitle.
@@ -1790,7 +1790,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierExternalWalletTonkeeperDescription.
   ///
   /// In en, this message translates to:
-  /// **'Deposit via TonKeeper wallet'**
+  /// **'Deposit via TonKeeper wallet.'**
   String get cashierExternalWalletTonkeeperDescription;
 
   /// No description provided for @cashierExternalWalletTonkeeperTitle.
@@ -1862,7 +1862,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatContinueExternal.
   ///
   /// In en, this message translates to:
-  /// **'Success! Click \"Continue on {provider}\" to complete the transaction'**
+  /// **'Success! Click \"Continue on {provider}\" to complete the transaction.'**
   String cashierFiatContinueExternal(Object provider);
 
   /// No description provided for @cashierFiatContinueProvider.
@@ -1904,7 +1904,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositAddressPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Motomachi 1_1_1 _English only_'**
+  /// **'e.g. Motomachi 1-1-1 (English only)'**
   String get cashierFiatDepositAddressPlaceholder;
 
   /// No description provided for @cashierFiatDepositAlipay.
@@ -1970,7 +1970,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositBankInteracAlmostDoneMessage.
   ///
   /// In en, this message translates to:
-  /// **' ®Trademark of Interac Corp Used under license '**
+  /// **' ®Trademark of Interac Corp. Used under license. '**
   String get cashierFiatDepositBankInteracAlmostDoneMessage;
 
   /// No description provided for @cashierFiatDepositBankInteracMessage.
@@ -2030,7 +2030,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositBankTransferQaicashFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'Using “Alipay to bankcard” deposit via P2P will cause delay of crediting to your wallet, kindly use “bankcard to bankcard” '**
+  /// **'Using “Alipay to bankcard” deposit via P2P will cause delay of crediting to your wallet, kindly use “bankcard to bankcard”. '**
   String get cashierFiatDepositBankTransferQaicashFormDescription;
 
   /// No description provided for @cashierFiatDepositBankTransferTrustly.
@@ -2072,7 +2072,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'Your deducted amount depends on the bank you use'**
+  /// **'Your deducted amount depends on the bank you use.'**
   String get cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription;
 
   /// No description provided for @cashierFiatDepositBankTransferVoucherAtmFee.
@@ -2090,13 +2090,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositBarupayBankBranch.
   ///
   /// In en, this message translates to:
-  /// **'法人第二営業部 _102_'**
+  /// **'法人第二営業部 (102)'**
   String get cashierFiatDepositBarupayBankBranch;
 
   /// No description provided for @cashierFiatDepositBarupayBankName.
   ///
   /// In en, this message translates to:
-  /// **'GMOあおぞらネット銀行 _0310_'**
+  /// **'GMOあおぞらネット銀行 (0310)'**
   String get cashierFiatDepositBarupayBankName;
 
   /// No description provided for @cashierFiatDepositBarupayBeneficiaryname.
@@ -2186,7 +2186,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositCityPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Yokohama_shi _English only_'**
+  /// **'e.g. Yokohama-shi (English only)'**
   String get cashierFiatDepositCityPlaceholder;
 
   /// No description provided for @cashierFiatDepositCode.
@@ -2294,7 +2294,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositCreditcardEcommpayMessage.
   ///
   /// In en, this message translates to:
-  /// **'Bear with us, you will get your account topped up in a couple of minutes'**
+  /// **'Bear with us, you will get your account topped up in a couple of minutes.'**
   String get cashierFiatDepositCreditcardEcommpayMessage;
 
   /// No description provided for @cashierFiatDepositCreditcardIframeDescription.
@@ -2318,7 +2318,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositCreditcardRavedirectFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'Withdrawals are not available for this payment method\n'**
+  /// **'Withdrawals are not available for this payment method.\n'**
   String get cashierFiatDepositCreditcardRavedirectFormDescription;
 
   /// No description provided for @cashierFiatDepositCreditcardRavedirectMessage.
@@ -2336,7 +2336,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositCustomerFirstNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Satoshi _English or Katakana_'**
+  /// **'e.g. Satoshi (English or Katakana)'**
   String get cashierFiatDepositCustomerFirstNamePlaceholder;
 
   /// No description provided for @cashierFiatDepositCustomerFullName.
@@ -2354,7 +2354,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositCustomerLastNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Nakamoto _English or Katakana_'**
+  /// **'e.g. Nakamoto (English or Katakana)'**
   String get cashierFiatDepositCustomerLastNamePlaceholder;
 
   /// No description provided for @cashierFiatDepositDateOfBirth.
@@ -2438,13 +2438,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositEzeebillCityPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Yokohama shi _English only_'**
+  /// **'e.g. Yokohama shi (English only)'**
   String get cashierFiatDepositEzeebillCityPlaceholder;
 
   /// No description provided for @cashierFiatDepositEzeebillStatePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Kanagawa ken _English only_'**
+  /// **'e.g. Kanagawa ken (English only)'**
   String get cashierFiatDepositEzeebillStatePlaceholder;
 
   /// No description provided for @cashierFiatDepositFailureMessage.
@@ -2588,7 +2588,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositJetonCorefyFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'Your deducted amount depends on the bank you use'**
+  /// **'Your deducted amount depends on the bank you use.'**
   String get cashierFiatDepositJetonCorefyFormDescription;
 
   /// No description provided for @cashierFiatDepositJetonCorefyOpenNewWindowTitle.
@@ -2630,7 +2630,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositKeitapayAddressPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Motomachi 1_1_1 _English, Japanese_'**
+  /// **'Motomachi 1-1-1 (English, Japanese)'**
   String get cashierFiatDepositKeitapayAddressPlaceholder;
 
   /// No description provided for @cashierFiatDepositKeitapayBankBranchPlaceholder.
@@ -2642,31 +2642,31 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositKeitapayCustomerFirstName.
   ///
   /// In en, this message translates to:
-  /// **'eg Satoshi _Katakana only_'**
+  /// **'e.g. Satoshi (Katakana only)'**
   String get cashierFiatDepositKeitapayCustomerFirstName;
 
   /// No description provided for @cashierFiatDepositKeitapayCustomerFirstNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Satoshi _Katakana only_'**
+  /// **'e.g. Satoshi (Katakana only)'**
   String get cashierFiatDepositKeitapayCustomerFirstNamePlaceholder;
 
   /// No description provided for @cashierFiatDepositKeitapayCustomerLastName.
   ///
   /// In en, this message translates to:
-  /// **'eg Nakamoto _Katakana only_'**
+  /// **'e.g. Nakamoto (Katakana only)'**
   String get cashierFiatDepositKeitapayCustomerLastName;
 
   /// No description provided for @cashierFiatDepositKeitapayCustomerLastNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Nakamoto _Katakana only_'**
+  /// **'e.g. Nakamoto (Katakana only)'**
   String get cashierFiatDepositKeitapayCustomerLastNamePlaceholder;
 
   /// No description provided for @cashierFiatDepositKeytaPayBankTransferJpyLimits.
   ///
   /// In en, this message translates to:
-  /// **'Scheduled maintenance will be carried out on every Sunday from 1900 to 800 the following Monday Kindly avoid these hours if you are in a hurry'**
+  /// **'Scheduled maintenance will be carried out on every Sunday from 1900 to 800 the following Monday. Kindly avoid these hours if you are in a hurry.'**
   String get cashierFiatDepositKeytaPayBankTransferJpyLimits;
 
   /// No description provided for @cashierFiatDepositLastname.
@@ -2678,13 +2678,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositLocalBankTransferInovapayFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'To top up your player account, make a deposit via Sportsbetio Do not deposit directly from your bank! '**
+  /// **'To top up your player account, make a deposit via Sportsbet.io. Do not deposit directly from your bank! '**
   String get cashierFiatDepositLocalBankTransferInovapayFormDescription;
 
   /// No description provided for @cashierFiatDepositLocalBankTransferPinBankFormDescription.
   ///
   /// In en, this message translates to:
-  /// **' To top up your player account, make a deposit via Sportsbetio Do not deposit directly from your bank!'**
+  /// **' To top up your player account, make a deposit via Sportsbet.io. Do not deposit directly from your bank!'**
   String get cashierFiatDepositLocalBankTransferPinBankFormDescription;
 
   /// No description provided for @cashierFiatDepositMaxLimit.
@@ -2714,7 +2714,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositModalInstruction.
   ///
   /// In en, this message translates to:
-  /// **'In order to complete the transaction, make a bank transfer to this account with the details following below'**
+  /// **'In order to complete the transaction, make a bank transfer to this account with the details following below.'**
   String get cashierFiatDepositModalInstruction;
 
   /// No description provided for @cashierFiatDepositMuchbetter.
@@ -2726,7 +2726,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositMuchbetterFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'1% fee is applied to all deposits lower than 50 EUR or 80 CAD\n<span>Don\'t have an account? <a href=\"https//aapimuchbettercom/merchant/user?trackingCode=QmwzNTg5ODA\" target=\"blank\">Sign Up</a></span>'**
+  /// **'1% fee is applied to all deposits lower than 50 EUR or 80 CAD.\n<span>Don\'t have an account? <a href=\"https//a.api.muchbetter.com/merchant/user?trackingCode=QmwzNTg5ODA\" target=\"_blank\">Sign Up</a></span>'**
   String get cashierFiatDepositMuchbetterFormDescription;
 
   /// No description provided for @cashierFiatDepositMuchbetterIframeDescription.
@@ -2738,13 +2738,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositMuchbetterMessage.
   ///
   /// In en, this message translates to:
-  /// **'Please now log into your MuchBetter APP and click to confirm your deposit \nYour Account will then be immediately topped up'**
+  /// **'Please now log into your MuchBetter APP and click to confirm your deposit. \nYour Account will then be immediately topped up.'**
   String get cashierFiatDepositMuchbetterMessage;
 
   /// No description provided for @cashierFiatDepositNationalid.
   ///
   /// In en, this message translates to:
-  /// **'CPF/CURP/DNI/CI'**
+  /// **'CPF/CURP/DNI/CI...'**
   String get cashierFiatDepositNationalid;
 
   /// No description provided for @cashierFiatDepositNetBankingQaicash.
@@ -2828,31 +2828,31 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositPagsmileCustomerFirstNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg John'**
+  /// **'e.g. John'**
   String get cashierFiatDepositPagsmileCustomerFirstNamePlaceholder;
 
   /// No description provided for @cashierFiatDepositPagsmileCustomerLastNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Smith'**
+  /// **'e.g. Smith'**
   String get cashierFiatDepositPagsmileCustomerLastNamePlaceholder;
 
   /// No description provided for @cashierFiatDepositPagsmilePhone.
   ///
   /// In en, this message translates to:
-  /// **'Phone number _eg 11999999999_'**
+  /// **'Phone number (eg. 11999999999)'**
   String get cashierFiatDepositPagsmilePhone;
 
   /// No description provided for @cashierFiatDepositPagsmilePhonePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Phone number _eg 11999999999_'**
+  /// **'Phone number (eg. 11999999999)'**
   String get cashierFiatDepositPagsmilePhonePlaceholder;
 
   /// No description provided for @cashierFiatDepositPagsmilePixBrlLimits.
   ///
   /// In en, this message translates to:
-  /// **'PIX deposits can take up to 10 minutes to be confirmed'**
+  /// **'PIX deposits can take up to 10 minutes to be confirmed.'**
   String get cashierFiatDepositPagsmilePixBrlLimits;
 
   /// No description provided for @cashierFiatDepositPassword.
@@ -2906,7 +2906,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositPaysafecardIframeDescription.
   ///
   /// In en, this message translates to:
-  /// **'This transaction may contain a fee'**
+  /// **'This transaction may contain a fee.'**
   String get cashierFiatDepositPaysafecardIframeDescription;
 
   /// No description provided for @cashierFiatDepositPaysafecardMessage.
@@ -2936,31 +2936,31 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositPhonePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Phone number _eg 11999999999_'**
+  /// **'Phone number (eg. 11999999999)'**
   String get cashierFiatDepositPhonePlaceholder;
 
   /// No description provided for @cashierFiatDepositPhonePlaceholderKes.
   ///
   /// In en, this message translates to:
-  /// **'Phone number _eg +254 999 9999999_'**
+  /// **'Phone number (eg. +254 999 9999999)'**
   String get cashierFiatDepositPhonePlaceholderKes;
 
   /// No description provided for @cashierFiatDepositPhonePlaceholderTzs.
   ///
   /// In en, this message translates to:
-  /// **'Phone number _eg +255 999 999 999_'**
+  /// **'Phone number (eg. +255 999 999 999)'**
   String get cashierFiatDepositPhonePlaceholderTzs;
 
   /// No description provided for @cashierFiatDepositPhonePlaceholderUgx.
   ///
   /// In en, this message translates to:
-  /// **'Phone number _eg +256 999 99 9999_'**
+  /// **'Phone number (eg. +256 999 99 9999)'**
   String get cashierFiatDepositPhonePlaceholderUgx;
 
   /// No description provided for @cashierFiatDepositPhonenumberPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Phone _eg UK 4472137127_'**
+  /// **'Phone (e.g. UK 4472137127)'**
   String get cashierFiatDepositPhonenumberPlaceholder;
 
   /// No description provided for @cashierFiatDepositPleaseEnterAmount.
@@ -3020,7 +3020,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositRollingLimitExceed.
   ///
   /// In en, this message translates to:
-  /// **'The amount entered exceeds your deposit limit'**
+  /// **'The amount entered exceeds your deposit limit.'**
   String get cashierFiatDepositRollingLimitExceed;
 
   /// No description provided for @cashierFiatDepositSavedAccounts.
@@ -3188,7 +3188,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositStatePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Kanagawa_ken _English only_'**
+  /// **'e.g. Kanagawa-ken (English only)'**
   String get cashierFiatDepositStatePlaceholder;
 
   /// No description provided for @cashierFiatDepositSubmit.
@@ -3218,7 +3218,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositSumopayAnimexFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'Attention Your bank may charge you an extra fee Please remember to put only the order number on your bank deposit slip _1_ I confirm that I am the account holder that I am using _2_ I confirm that I do not use company account'**
+  /// **'Attention Your bank may charge you an extra fee. Please remember to put only the order number on your bank deposit slip. (1) I confirm that I am the account holder that I am using. (2) I confirm that I do not use company account.'**
   String get cashierFiatDepositSumopayAnimexFormDescription;
 
   /// No description provided for @cashierFiatDepositSumopayAnimexMessage.
@@ -3542,13 +3542,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatDepositXpayQrQaicashAlmostDoneMessage.
   ///
   /// In en, this message translates to:
-  /// **'Please complete the payment within 3 minutes; otherwise the QR code will be expired, thank you  '**
+  /// **'Please complete the payment within 3 minutes; otherwise the QR code will be expired, thank you.  '**
   String get cashierFiatDepositXpayQrQaicashAlmostDoneMessage;
 
   /// No description provided for @cashierFiatDepositXpayQrQaicashFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'There will be a decimal difference of deposit amount added ranging from THB 001 to THB 099 The payment must be made with the exact amount displayed in the amount section to avoid any deposit delays'**
+  /// **'There will be a decimal difference of deposit amount added ranging from THB 0.01 to THB 0.99. The payment must be made with the exact amount displayed in the amount section to avoid any deposit delays.'**
   String get cashierFiatDepositXpayQrQaicashFormDescription;
 
   /// No description provided for @cashierFiatDepositXpayQrQaicashMessage.
@@ -3632,7 +3632,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatExpDate.
   ///
   /// In en, this message translates to:
-  /// **'Exp Date'**
+  /// **'Exp. Date'**
   String get cashierFiatExpDate;
 
   /// No description provided for @cashierFiatFlatFee.
@@ -3734,7 +3734,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatPlacedOrderDescription.
   ///
   /// In en, this message translates to:
-  /// **'You’ve successfully placed an order to buy a <b>{amount}</b> ticket voucher'**
+  /// **'You’ve successfully placed an order to buy a <b>{amount}</b> ticket voucher.'**
   String cashierFiatPlacedOrderDescription(Object amount);
 
   /// No description provided for @cashierFiatRub.
@@ -3746,7 +3746,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatSumopayAmountDesc.
   ///
   /// In en, this message translates to:
-  /// **'<b>{currency}</b> _ This amount could not be deposited with this payment method, please choose one of the following amounts below'**
+  /// **'<b>{currency}</b> - This amount could not be deposited with this payment method, please choose one of the following amounts below.'**
   String cashierFiatSumopayAmountDesc(Object currency);
 
   /// No description provided for @cashierFiatThb.
@@ -3824,7 +3824,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalAddressPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Motomachi 1_1_1 _English, Japanese_'**
+  /// **'Motomachi 1-1-1 (English, Japanese)'**
   String get cashierFiatWithdrawalAddressPlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalAmount.
@@ -3842,7 +3842,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalBankAccountDigit.
   ///
   /// In en, this message translates to:
-  /// **'Bank account digit _1 digit_'**
+  /// **'Bank account digit (1 digit)'**
   String get cashierFiatWithdrawalBankAccountDigit;
 
   /// No description provided for @cashierFiatWithdrawalBankAccountDigitPlaceholder.
@@ -3902,7 +3902,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalBankBranchDigit.
   ///
   /// In en, this message translates to:
-  /// **'Bank branch digit _1 digit_'**
+  /// **'Bank branch digit (1 digit)'**
   String get cashierFiatWithdrawalBankBranchDigit;
 
   /// No description provided for @cashierFiatWithdrawalBankBranchDigitPlaceholder.
@@ -3926,7 +3926,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalBankBranchPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'ヨコハマ _Katakana only_'**
+  /// **'ヨコハマ (Katakana only)'**
   String get cashierFiatWithdrawalBankBranchPlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalBankCardNumber.
@@ -4082,7 +4082,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalCanNotBeFractionAmount.
   ///
   /// In en, this message translates to:
-  /// **'Please note only sum values without decimals are acceptable! _eg 150055 JPY is not acceptable, needs to be 1500 JPY or 1501 JPY_'**
+  /// **'Please note only sum values without decimals are acceptable! (e.g 1500.55 JPY is not acceptable, needs to be 1500 JPY or 1501 JPY).'**
   String get cashierFiatWithdrawalCanNotBeFractionAmount;
 
   /// No description provided for @cashierFiatWithdrawalCardholder.
@@ -4106,7 +4106,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalCityPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Yokohama_shi _English, Japanese_'**
+  /// **'Yokohama-shi (English, Japanese)'**
   String get cashierFiatWithdrawalCityPlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalContinue.
@@ -4124,7 +4124,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalCorefyJetonJpyLimits.
   ///
   /// In en, this message translates to:
-  /// **'Please note that the daily withdrawal limit is 14,000,000 JPY Daily limit refreshes each day at 1800 JST'**
+  /// **'Please note that the daily withdrawal limit is 14,000,000 JPY. Daily limit refreshes each day at 1800 JST.'**
   String get cashierFiatWithdrawalCorefyJetonJpyLimits;
 
   /// No description provided for @cashierFiatWithdrawalCpf.
@@ -4220,7 +4220,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalCustomerLocalNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'タカハシ アキラ _Katakana only_'**
+  /// **'タカハシ アキラ (Katakana only)'**
   String get cashierFiatWithdrawalCustomerLocalNamePlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalCustomerName.
@@ -4232,7 +4232,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalCustomerNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Satoshi Nakamoto _English only_'**
+  /// **'Satoshi Nakamoto (English only)'**
   String get cashierFiatWithdrawalCustomerNamePlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalCustomername.
@@ -4328,7 +4328,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalEzeebillBankAccountNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Name on card _Katakana only_'**
+  /// **'Name on card (Katakana only)'**
   String get cashierFiatWithdrawalEzeebillBankAccountNamePlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalEzeebillBankBranchPlaceholder.
@@ -4352,7 +4352,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalEzeebillCustomerNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'サトシ ナカモト _Katakana only_'**
+  /// **'サトシ ナカモト (Katakana only)'**
   String get cashierFiatWithdrawalEzeebillCustomerNamePlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalFailureMessage.
@@ -4388,7 +4388,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalFirstNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Satoshi _English or Katakana_'**
+  /// **'e.g. Satoshi (English or Katakana)'**
   String get cashierFiatWithdrawalFirstNamePlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalFirstname.
@@ -4418,7 +4418,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalHelp2PayQaicashAlmostDoneMessage.
   ///
   /// In en, this message translates to:
-  /// **'If you don\'t complete your transaction your funds will be back to your player account in 15 mins'**
+  /// **'If you don\'t complete your transaction your funds will be back to your player account in 15 mins.'**
   String get cashierFiatWithdrawalHelp2PayQaicashAlmostDoneMessage;
 
   /// No description provided for @cashierFiatWithdrawalHelp2PayQaicashMessage.
@@ -4436,7 +4436,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalInovapayBankTransferBrlLimits.
   ///
   /// In en, this message translates to:
-  /// **'Bank transfer withdrawals can take up to 6 business days to be confirmed'**
+  /// **'Bank transfer withdrawals can take up to 6 business days to be confirmed.'**
   String get cashierFiatWithdrawalInovapayBankTransferBrlLimits;
 
   /// No description provided for @cashierFiatWithdrawalInterac.
@@ -4448,7 +4448,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalInteracMessage.
   ///
   /// In en, this message translates to:
-  /// **' ®Trademark of Interac Corp Used under license '**
+  /// **' ®Trademark of Interac Corp. Used under license. '**
   String get cashierFiatWithdrawalInteracMessage;
 
   /// No description provided for @cashierFiatWithdrawalInvalidCpfCpf.
@@ -4532,7 +4532,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalInvalidPixKey.
   ///
   /// In en, this message translates to:
-  /// **'You entered invalid PIX key Enter your CPF'**
+  /// **'You entered invalid PIX key. Enter your CPF'**
   String get cashierFiatWithdrawalInvalidPixKey;
 
   /// No description provided for @cashierFiatWithdrawalJetonCorefy.
@@ -4544,7 +4544,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalJetonCorefyFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'I confirm that I am the account holder that I am using'**
+  /// **'I confirm that I am the account holder that I am using.'**
   String get cashierFiatWithdrawalJetonCorefyFormDescription;
 
   /// No description provided for @cashierFiatWithdrawalJetonCorefyMessage.
@@ -4574,7 +4574,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalKeytaPayBankTransferJpyLimits.
   ///
   /// In en, this message translates to:
-  /// **'Scheduled maintenance will be carried on every Sunday from 1900 to 800 the following Monday Kindly avoid these hours if you are in a hurry'**
+  /// **'Scheduled maintenance will be carried on every Sunday from 1900 to 800 the following Monday. Kindly avoid these hours if you are in a hurry.'**
   String get cashierFiatWithdrawalKeytaPayBankTransferJpyLimits;
 
   /// No description provided for @cashierFiatWithdrawalLastName.
@@ -4586,7 +4586,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalLastNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Nakamoto _English or Katakana_'**
+  /// **'e.g. Nakamoto (English or Katakana)'**
   String get cashierFiatWithdrawalLastNamePlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalLastname.
@@ -4598,13 +4598,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalLocalBankTransferQaicash.
   ///
   /// In en, this message translates to:
-  /// **'Bank Transfer _ Withdrawal'**
+  /// **'Bank Transfer - Withdrawal'**
   String get cashierFiatWithdrawalLocalBankTransferQaicash;
 
   /// No description provided for @cashierFiatWithdrawalLocalBankTransferQaicashAlmostDoneMessage.
   ///
   /// In en, this message translates to:
-  /// **'If you don\'t complete your transaction your funds will be back to your player account in 15 mins'**
+  /// **'If you don\'t complete your transaction your funds will be back to your player account in 15 mins.'**
   String get cashierFiatWithdrawalLocalBankTransferQaicashAlmostDoneMessage;
 
   /// No description provided for @cashierFiatWithdrawalLocalBankTransferQaicashFormDescription.
@@ -4670,7 +4670,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalMuchbetterFormDescription.
   ///
   /// In en, this message translates to:
-  /// **'<span>Don\'t have an account? <a href=\"https//aapimuchbettercom/merchant/user?trackingCode=QmwzNTg5ODA\" target=\"blank\">Sign Up</a></span>'**
+  /// **'<span>Don\'t have an account? <a href=\"https//a.api.muchbetter.com/merchant/user?trackingCode=QmwzNTg5ODA\" target=\"_blank\">Sign Up</a></span>'**
   String get cashierFiatWithdrawalMuchbetterFormDescription;
 
   /// No description provided for @cashierFiatWithdrawalMuchbetterMessage.
@@ -4682,7 +4682,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalNationalid.
   ///
   /// In en, this message translates to:
-  /// **'CPF/CURP/DNI/CI'**
+  /// **'CPF/CURP/DNI/CI...'**
   String get cashierFiatWithdrawalNationalid;
 
   /// No description provided for @cashierFiatWithdrawalNationalidtype.
@@ -4724,7 +4724,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalNotFoundSavedAccountUuid.
   ///
   /// In en, this message translates to:
-  /// **'Account is not found Please refresh the page'**
+  /// **'Account is not found. Please refresh the page'**
   String get cashierFiatWithdrawalNotFoundSavedAccountUuid;
 
   /// No description provided for @cashierFiatWithdrawalNull.
@@ -4748,19 +4748,19 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalPagavaBankAccountNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Name on card _Katakana only_'**
+  /// **'Name on card (Katakana only)'**
   String get cashierFiatWithdrawalPagavaBankAccountNamePlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalPagavaCustomerNamePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'サトシ ナカモト _Katakana only_'**
+  /// **'サトシ ナカモト (Katakana only)'**
   String get cashierFiatWithdrawalPagavaCustomerNamePlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalPagsmilePixBrlLimits.
   ///
   /// In en, this message translates to:
-  /// **'PIX withdrawals can take up to 1 business day to be confirmed'**
+  /// **'PIX withdrawals can take up to 1 business day to be confirmed.'**
   String get cashierFiatWithdrawalPagsmilePixBrlLimits;
 
   /// No description provided for @cashierFiatWithdrawalPassword.
@@ -4820,7 +4820,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalPhonenumberPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Phone _eg UK 4472137127_'**
+  /// **'Phone (e.g. UK 4472137127)'**
   String get cashierFiatWithdrawalPhonenumberPlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalPinbankBankBranchPlaceholder.
@@ -4832,7 +4832,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalPixKey.
   ///
   /// In en, this message translates to:
-  /// **'CPF Key _numbers only_'**
+  /// **'CPF Key (numbers only)'**
   String get cashierFiatWithdrawalPixKey;
 
   /// No description provided for @cashierFiatWithdrawalPixKeyPlaceholder.
@@ -4868,7 +4868,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalPostcodePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'120_0003'**
+  /// **'120-0003'**
   String get cashierFiatWithdrawalPostcodePlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalProvince.
@@ -4970,7 +4970,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalStatePlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'eg Kanagawa_ken _English only_'**
+  /// **'e.g. Kanagawa-ken (English only)'**
   String get cashierFiatWithdrawalStatePlaceholder;
 
   /// No description provided for @cashierFiatWithdrawalSticpay.
@@ -5018,7 +5018,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalTimeframeBankTransferAnimex.
   ///
   /// In en, this message translates to:
-  /// **'1_2 business days'**
+  /// **'1-2 business days'**
   String get cashierFiatWithdrawalTimeframeBankTransferAnimex;
 
   /// No description provided for @cashierFiatWithdrawalTimeframeBankTransferTrustly.
@@ -5030,7 +5030,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalTimeframeCreditcard.
   ///
   /// In en, this message translates to:
-  /// **'1_6 business days'**
+  /// **'1-6 business days'**
   String get cashierFiatWithdrawalTimeframeCreditcard;
 
   /// No description provided for @cashierFiatWithdrawalTimeframeCreditcardEcommpay.
@@ -5066,7 +5066,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierFiatWithdrawalTimeframeJetonCorefy.
   ///
   /// In en, this message translates to:
-  /// **'1_2 business days'**
+  /// **'1-2 business days'**
   String get cashierFiatWithdrawalTimeframeJetonCorefy;
 
   /// No description provided for @cashierFiatWithdrawalTimeframeLocalBankTransferQaicash.
@@ -5270,7 +5270,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierGetBitcoinsFee.
   ///
   /// In en, this message translates to:
-  /// **'Fee {value} _included_'**
+  /// **'Fee {value} (included)'**
   String cashierGetBitcoinsFee(Object value);
 
   /// No description provided for @cashierGetBitcoinsTotal.
@@ -5336,13 +5336,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierInOrderToMakeADeposit.
   ///
   /// In en, this message translates to:
-  /// **'In order to make a deposit, you need to send bitcoins to our address shown in the cashier menu or scan the deposit QR code Please note that you cannot use the same deposit address twice'**
+  /// **'In order to make a deposit, you need to send bitcoins to our address shown in the cashier menu or scan the deposit QR code. Please note that you cannot use the same deposit address twice.'**
   String get cashierInOrderToMakeADeposit;
 
   /// No description provided for @cashierInitializeAccountWebResource.
   ///
   /// In en, this message translates to:
-  /// **'Initializing account web_resource'**
+  /// **'Initializing account web-resource'**
   String get cashierInitializeAccountWebResource;
 
   /// No description provided for @cashierInr.
@@ -5444,19 +5444,19 @@ abstract class AppLocalizations {
   /// No description provided for @cashierKycBannerBodyIdExpired.
   ///
   /// In en, this message translates to:
-  /// **'Please verify your identity again using a valid document'**
+  /// **'Please verify your identity again using a valid document.'**
   String get cashierKycBannerBodyIdExpired;
 
   /// No description provided for @cashierKycBannerBodyThreshold1.
   ///
   /// In en, this message translates to:
-  /// **'Verify your account for seamless withdrawals'**
+  /// **'Verify your account for seamless withdrawals.'**
   String get cashierKycBannerBodyThreshold1;
 
   /// No description provided for @cashierKycBannerBodyThreshold1Reminders.
   ///
   /// In en, this message translates to:
-  /// **'Lift your restrictions & claim rewards in a few easy steps'**
+  /// **'Lift your restrictions & claim rewards in a few easy steps.'**
   String get cashierKycBannerBodyThreshold1Reminders;
 
   /// No description provided for @cashierKycBannerBodyThreshold2.
@@ -5480,7 +5480,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierKycModalBody.
   ///
   /// In en, this message translates to:
-  /// **'To be compliant and protect your account, please verify your identity'**
+  /// **'To be compliant and protect your account, please verify your identity.'**
   String get cashierKycModalBody;
 
   /// No description provided for @cashierKycModalGetStarted.
@@ -5546,7 +5546,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMatic.
   ///
   /// In en, this message translates to:
-  /// **'Polygon _Matic_'**
+  /// **'Polygon (Matic)'**
   String get cashierMatic;
 
   /// No description provided for @cashierMaxDeposit.
@@ -5576,7 +5576,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMetamaskDesc.
   ///
   /// In en, this message translates to:
-  /// **'ERC_20 Tokens'**
+  /// **'ERC-20 Tokens'**
   String get cashierMetamaskDesc;
 
   /// No description provided for @cashierMetamaskWallet.
@@ -5624,13 +5624,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMinimumDepositEth.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit is ETH 0005'**
+  /// **'Minimum deposit is ETH 0.005'**
   String get cashierMinimumDepositEth;
 
   /// No description provided for @cashierMinimumDepositLtc.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit is LTC 01'**
+  /// **'Minimum deposit is LTC 0.1'**
   String get cashierMinimumDepositLtc;
 
   /// No description provided for @cashierMinimumDepositMbtc.
@@ -5654,13 +5654,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMinimumDepositTextBtc.
   ///
   /// In en, this message translates to:
-  /// **'000025 BTC = 025 mBTC = 250 μBTC Please ensure before making any transactions that the address entered matches the address displayed here '**
+  /// **'0.00025 BTC = 0.25 mBTC = 250 μBTC. Please ensure before making any transactions that the address entered matches the address displayed here. '**
   String get cashierMinimumDepositTextBtc;
 
   /// No description provided for @cashierMinimumDepositTextCad.
   ///
   /// In en, this message translates to:
-  /// **'10 CAD Please ensure before making any transactions that the address entered matches the address displayed here '**
+  /// **'10 CAD. Please ensure before making any transactions that the address entered matches the address displayed here. '**
   String get cashierMinimumDepositTextCad;
 
   /// No description provided for @cashierMinimumDepositTextDoge.
@@ -5672,7 +5672,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMinimumDepositTextEth.
   ///
   /// In en, this message translates to:
-  /// **'0005 ETH'**
+  /// **'0.005 ETH'**
   String get cashierMinimumDepositTextEth;
 
   /// No description provided for @cashierMinimumDepositTextEur.
@@ -5690,13 +5690,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMinimumDepositTextLtc.
   ///
   /// In en, this message translates to:
-  /// **'005 LTC Please ensure before making any transactions that the address entered matches the address displayed here '**
+  /// **'0.05 LTC. Please ensure before making any transactions that the address entered matches the address displayed here. '**
   String get cashierMinimumDepositTextLtc;
 
   /// No description provided for @cashierMinimumDepositTextMbtc.
   ///
   /// In en, this message translates to:
-  /// **'05 mBTC = 500 μBTC'**
+  /// **'0.5 mBTC = 500 μBTC'**
   String get cashierMinimumDepositTextMbtc;
 
   /// No description provided for @cashierMinimumDepositTextSoc.
@@ -5714,13 +5714,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMinimumDepositTextTrx.
   ///
   /// In en, this message translates to:
-  /// **'100 TRX Please ensure before making any transactions that the address entered matches the address displayed here '**
+  /// **'100 TRX. Please ensure before making any transactions that the address entered matches the address displayed here. '**
   String get cashierMinimumDepositTextTrx;
 
   /// No description provided for @cashierMinimumDepositTextUbtc.
   ///
   /// In en, this message translates to:
-  /// **'500 μBTC = 05 mBTC'**
+  /// **'500 μBTC = 0.5 mBTC'**
   String get cashierMinimumDepositTextUbtc;
 
   /// No description provided for @cashierMinimumDepositTextUsdt.
@@ -5732,7 +5732,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMinimumDepositTextXrp.
   ///
   /// In en, this message translates to:
-  /// **'10 XRP Does your wallet require a destination tag? Get the account address and destination tag from https//xrpaddressinfo'**
+  /// **'10 XRP. Does your wallet require a destination tag? Get the account address and destination tag from https//xrpaddress.info.'**
   String get cashierMinimumDepositTextXrp;
 
   /// No description provided for @cashierMinimumDepositTitle.
@@ -5750,7 +5750,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMinimumDepositUbtc.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit is 1,000 μBTC'**
+  /// **'Minimum deposit is 1,000 μBTC.'**
   String get cashierMinimumDepositUbtc;
 
   /// No description provided for @cashierMinimumDepositUsdt.
@@ -5762,7 +5762,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMinimumDepositXrp.
   ///
   /// In en, this message translates to:
-  /// **'Minimum deposit is 10 XRP Does your wallet require a destination tag? Get the account address and destination tag from https//xrpaddressinfo'**
+  /// **'Minimum deposit is 10 XRP. Does your wallet require a destination tag? Get the account address and destination tag from https//xrpaddress.info.'**
   String get cashierMinimumDepositXrp;
 
   /// No description provided for @cashierMinimumIs.
@@ -5786,7 +5786,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierMoonpayDepositsAreDisabled.
   ///
   /// In en, this message translates to:
-  /// **'Purchasing cryptocurrency via MoonPay feature is currently disabled'**
+  /// **'Purchasing cryptocurrency via MoonPay feature is currently disabled.'**
   String get cashierMoonpayDepositsAreDisabled;
 
   /// No description provided for @cashierMoonpayPurchaseDescription.
@@ -5864,7 +5864,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierNetworkBinanceSmartChain.
   ///
   /// In en, this message translates to:
-  /// **'Binance Smart Chain _BSC_'**
+  /// **'Binance Smart Chain (BSC)'**
   String get cashierNetworkBinanceSmartChain;
 
   /// No description provided for @cashierNetworkBtcLightning.
@@ -5882,7 +5882,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierNetworkErc20.
   ///
   /// In en, this message translates to:
-  /// **'Ethereum _ERC20_'**
+  /// **'Ethereum (ERC20)'**
   String get cashierNetworkErc20;
 
   /// No description provided for @cashierNetworkPolygon.
@@ -5900,7 +5900,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierNetworkTrc20.
   ///
   /// In en, this message translates to:
-  /// **'Tron _TRC20_'**
+  /// **'Tron (TRC20)'**
   String get cashierNetworkTrc20;
 
   /// No description provided for @cashierNewMethod.
@@ -5948,7 +5948,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierNotEnoughCryptoToConvert.
   ///
   /// In en, this message translates to:
-  /// **'* You don\'t have enough cryptocurrency to convert it to {currency}, please deposit cryptocurrency before you convert it to {currency}'**
+  /// **'* You don\'t have enough cryptocurrency to convert it to {currency}, please deposit cryptocurrency before you convert it to {currency}.'**
   String cashierNotEnoughCryptoToConvert(Object currency);
 
   /// Are you looking for a different currency?
@@ -6050,13 +6050,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierPaymentCompanyAddress.
   ///
   /// In en, this message translates to:
-  /// **'135, Nouv MT, Kyle Buildings, Triq il_Mediterran, St Julian’s STJ 1870, Malta'**
+  /// **'135, Nouv MT, Kyle Buildings, Triq il-Mediterran, St. Julian’s STJ 1870, Malta'**
   String get cashierPaymentCompanyAddress;
 
   /// No description provided for @cashierPaymentCompanyName.
   ///
   /// In en, this message translates to:
-  /// **'Block Technology Ltd, Registration number C81495, DPA Reference Number 11961'**
+  /// **'Block Technology Ltd., Registration number C81495, DPA Reference Number 11961'**
   String get cashierPaymentCompanyName;
 
   /// No description provided for @cashierPaymentProcessingFee.
@@ -6110,13 +6110,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierPaypayDescription.
   ///
   /// In en, this message translates to:
-  /// **'Use your online banking for depositing and withdrawing'**
+  /// **'Use your online banking for depositing and withdrawing.'**
   String get cashierPaypayDescription;
 
   /// No description provided for @cashierPaypayDescriptionJpy.
   ///
   /// In en, this message translates to:
-  /// **'After buying, your active wallet will be changed to USDT'**
+  /// **'After buying, your active wallet will be changed to USDT.'**
   String get cashierPaypayDescriptionJpy;
 
   /// No description provided for @cashierPaypayDisabledPayout.
@@ -6128,7 +6128,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierPaypayDisabledRegion.
   ///
   /// In en, this message translates to:
-  /// **'This payment method is only available in Japan'**
+  /// **'This payment method is only available in Japan.'**
   String get cashierPaypayDisabledRegion;
 
   /// No description provided for @cashierPaypayTitle.
@@ -6218,7 +6218,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierProcessingFee.
   ///
   /// In en, this message translates to:
-  /// **'{amount} {currency} fee _included_'**
+  /// **'{amount} {currency} fee (included)'**
   String cashierProcessingFee(Object amount, Object currency);
 
   /// No description provided for @cashierPromotionCode.
@@ -6302,19 +6302,19 @@ abstract class AppLocalizations {
   /// No description provided for @cashierRewardActiveDescription.
   ///
   /// In en, this message translates to:
-  /// **'Before you can activate your new reward, you must first forfeit your current active reward'**
+  /// **'Before you can activate your new reward, you must first forfeit your current active reward.'**
   String get cashierRewardActiveDescription;
 
   /// No description provided for @cashierRewardActiveTitle.
   ///
   /// In en, this message translates to:
-  /// **'Active reward in use'**
+  /// **'Active reward in use.'**
   String get cashierRewardActiveTitle;
 
   /// No description provided for @cashierRewardBonus.
   ///
   /// In en, this message translates to:
-  /// **'Your bonus has been activated Deposit {amount} {currency} now to receive your bonus'**
+  /// **'Your bonus has been activated. Deposit {amount} {currency} now to receive your bonus.'**
   String cashierRewardBonus(Object amount, Object currency);
 
   /// No description provided for @cashierRewardEnterCode.
@@ -6332,7 +6332,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierRewardInvalidCode.
   ///
   /// In en, this message translates to:
-  /// **'Reward code is not valid'**
+  /// **'Reward code is not valid.'**
   String get cashierRewardInvalidCode;
 
   /// No description provided for @cashierRewardRedeemCode.
@@ -6362,19 +6362,19 @@ abstract class AppLocalizations {
   /// No description provided for @cashierRewardSwichCurrencyDepositDescription.
   ///
   /// In en, this message translates to:
-  /// **'You\'ve activated a deposit bonus reward in a different currency Please switch to {currency} wallet and deposit {amount} {currency} in order to play the reward or you can forfeit it and try another reward'**
+  /// **'You\'ve activated a deposit bonus reward in a different currency. Please switch to {currency} wallet and deposit {amount} {currency} in order to play the reward or you can forfeit it and try another reward.'**
   String cashierRewardSwichCurrencyDepositDescription(Object currency, Object amount);
 
   /// No description provided for @cashierRewardSwichCurrencyDescription.
   ///
   /// In en, this message translates to:
-  /// **'You\'ve activated a reward in a different currency Please switch to {currency} wallet in order to play the reward or you can forfeit it and try another reward'**
+  /// **'You\'ve activated a reward in a different currency. Please switch to {currency} wallet in order to play the reward or you can forfeit it and try another reward.'**
   String cashierRewardSwichCurrencyDescription(Object currency);
 
   /// No description provided for @cashierRewardSwichCurrencyTitle.
   ///
   /// In en, this message translates to:
-  /// **'Active reward currency'**
+  /// **'Active reward currency.'**
   String get cashierRewardSwichCurrencyTitle;
 
   /// No description provided for @cashierRewards.
@@ -6404,7 +6404,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierSecurity2faCheckout.
   ///
   /// In en, this message translates to:
-  /// **'Require Two_factor authentication at Checkout'**
+  /// **'Require Two-factor authentication at Checkout'**
   String get cashierSecurity2faCheckout;
 
   /// No description provided for @cashierSecurityPasswordCheckout.
@@ -6422,7 +6422,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierSelectDepositNetworkDescription.
   ///
   /// In en, this message translates to:
-  /// **'Please always check your deposit wallet address on our site before making your transactions'**
+  /// **'Please always check your deposit wallet address on our site before making your transactions.'**
   String get cashierSelectDepositNetworkDescription;
 
   /// No description provided for @cashierSelectVoucher.
@@ -6440,7 +6440,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierSelectWithdrawNetworkDescription.
   ///
   /// In en, this message translates to:
-  /// **'Please always check your withdraw wallet address on our site before making your transactions'**
+  /// **'Please always check your withdraw wallet address on our site before making your transactions.'**
   String get cashierSelectWithdrawNetworkDescription;
 
   /// No description provided for @cashierSelectWithdrawalNetwork.
@@ -6452,7 +6452,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierSelectWithdrawalNetworkDescription.
   ///
   /// In en, this message translates to:
-  /// **'Please always check your withdrawal wallet address on our site before making your transactions'**
+  /// **'Please always check your withdrawal wallet address on our site before making your transactions.'**
   String get cashierSelectWithdrawalNetworkDescription;
 
   /// No description provided for @cashierSell.
@@ -6518,7 +6518,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierSendYourEthWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your ETH _ERC_20_ withdrawal to'**
+  /// **'Send your ETH (ERC-20) withdrawal to'**
   String get cashierSendYourEthWithdraw;
 
   /// No description provided for @cashierSendYourLtcDeposit.
@@ -6554,19 +6554,19 @@ abstract class AppLocalizations {
   /// No description provided for @cashierSendYourUsdtDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Send your USDT _ERC_20_ deposit to'**
+  /// **'Send your USDT (ERC-20) deposit to'**
   String get cashierSendYourUsdtDeposit;
 
   /// No description provided for @cashierSendYourUsdtWithdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your USDT _ERC_20_ withdrawal to '**
+  /// **'Send your USDT (ERC-20) withdrawal to '**
   String get cashierSendYourUsdtWithdraw;
 
   /// No description provided for @cashierSendYourUsdt_tron_Withdraw.
   ///
   /// In en, this message translates to:
-  /// **'Send your USDT _TRC_20_ withdrawal to'**
+  /// **'Send your USDT (TRC-20) withdrawal to'**
   String get cashierSendYourUsdt_tron_Withdraw;
 
   /// No description provided for @cashierSendYourXrpDeposit.
@@ -6596,13 +6596,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierShowMoreMethods.
   ///
   /// In en, this message translates to:
-  /// **'Show more _{qty}_'**
+  /// **'Show more ({qty})'**
   String cashierShowMoreMethods(Object qty);
 
   /// No description provided for @cashierSimplexInstruction.
   ///
   /// In en, this message translates to:
-  /// **'You will receive the confirmation in instants\nand your balance will be updated according\nto the transaction amount'**
+  /// **'You will receive the confirmation in instants\nand your balance will be updated according\nto the transaction amount.'**
   String get cashierSimplexInstruction;
 
   /// No description provided for @cashierSoc.
@@ -6614,55 +6614,55 @@ abstract class AppLocalizations {
   /// No description provided for @cashierSocDepositDescription.
   ///
   /// In en, this message translates to:
-  /// **'SOC sent to the above address will be credited to your balance for playing'**
+  /// **'SOC sent to the above address will be credited to your balance for playing.'**
   String get cashierSocDepositDescription;
 
   /// No description provided for @cashierSocialBitcasinoInstagram.
   ///
   /// In en, this message translates to:
-  /// **'https//wwwinstagramcom/bitcasinoio/'**
+  /// **'https//www.instagram.com/bitcasinoio/'**
   String get cashierSocialBitcasinoInstagram;
 
   /// No description provided for @cashierSocialBitcasinoTiktok.
   ///
   /// In en, this message translates to:
-  /// **'https//wwwtiktokcom/@bitcasinoio'**
+  /// **'https//www.tiktok.com/@bitcasino.io'**
   String get cashierSocialBitcasinoTiktok;
 
   /// No description provided for @cashierSocialBitcasinoX.
   ///
   /// In en, this message translates to:
-  /// **'https//twittercom/Bitcasinoio'**
+  /// **'https//twitter.com/Bitcasinoio'**
   String get cashierSocialBitcasinoX;
 
   /// No description provided for @cashierSocialBitcasinoYoutube.
   ///
   /// In en, this message translates to:
-  /// **'https//wwwyoutubecom/@BitcasinoioVIP'**
+  /// **'https//www.youtube.com/@BitcasinoioVIP'**
   String get cashierSocialBitcasinoYoutube;
 
   /// No description provided for @cashierSocialSportsbetInstagram.
   ///
   /// In en, this message translates to:
-  /// **'https//wwwinstagramcom/sportsbetio'**
+  /// **'https//www.instagram.com/sportsbet.io'**
   String get cashierSocialSportsbetInstagram;
 
   /// No description provided for @cashierSocialSportsbetTiktok.
   ///
   /// In en, this message translates to:
-  /// **'https//wwwtiktokcom/@sportsbetio'**
+  /// **'https//www.tiktok.com/@sportsbetio'**
   String get cashierSocialSportsbetTiktok;
 
   /// No description provided for @cashierSocialSportsbetX.
   ///
   /// In en, this message translates to:
-  /// **'https//twittercom/Sportsbetio'**
+  /// **'https//twitter.com/Sportsbetio'**
   String get cashierSocialSportsbetX;
 
   /// No description provided for @cashierSocialSportsbetYoutube.
   ///
   /// In en, this message translates to:
-  /// **'https//youtubecom/@clubhouse_tv'**
+  /// **'https//youtube.com/@clubhouse-tv'**
   String get cashierSocialSportsbetYoutube;
 
   /// No description provided for @cashierSortFilter.
@@ -6764,7 +6764,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierTonWalletsDescription.
   ///
   /// In en, this message translates to:
-  /// **'Deposit with any tonorg Wallet'**
+  /// **'Deposit with any ton.org Wallet.'**
   String get cashierTonWalletsDescription;
 
   /// No description provided for @cashierTonInvoiceIdCopied.
@@ -6776,31 +6776,31 @@ abstract class AppLocalizations {
   /// No description provided for @cashierTooltipFee.
   ///
   /// In en, this message translates to:
-  /// **'Processing fee depends on payment option and might be reduced'**
+  /// **'Processing fee depends on payment option and might be reduced.'**
   String get cashierTooltipFee;
 
   /// No description provided for @cashierTooltipRate.
   ///
   /// In en, this message translates to:
-  /// **'Rate is refreshed every 5 minutes'**
+  /// **'Rate is refreshed every 5 minutes.'**
   String get cashierTooltipRate;
 
   /// No description provided for @cashierTooltipUseMobileOrQrEth.
   ///
   /// In en, this message translates to:
-  /// **'This QR code can be scanned with your mobile Ethereum wallet Once scanned, your bitcoin wallet will immediately know the Ethereum wallet address where you need to send your deposit for playing'**
+  /// **'This QR code can be scanned with your mobile Ethereum wallet. Once scanned, your bitcoin wallet will immediately know the Ethereum wallet address where you need to send your deposit for playing.'**
   String get cashierTooltipUseMobileOrQrEth;
 
   /// No description provided for @cashierTooltipUseMobileOrQrSoc.
   ///
   /// In en, this message translates to:
-  /// **'This QR code can be scanned with your mobile SOC wallet Once scanned your wallet will immediately know the SOC wallet address where you need to send your deposit for playing'**
+  /// **'This QR code can be scanned with your mobile SOC wallet. Once scanned your wallet will immediately know the SOC wallet address where you need to send your deposit for playing.'**
   String get cashierTooltipUseMobileOrQrSoc;
 
   /// No description provided for @cashierTooltipYourBitcoinDepositingAddress.
   ///
   /// In en, this message translates to:
-  /// **'In order to get Bitcoins into your account you need to transfer them to the address below You can do this from any Bitcoin wallet you use'**
+  /// **'In order to get Bitcoins into your account you need to transfer them to the address below. You can do this from any Bitcoin wallet you use.'**
   String get cashierTooltipYourBitcoinDepositingAddress;
 
   /// No description provided for @cashierTransactionDateAt.
@@ -7178,13 +7178,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierUsdtErcDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Ethereum _ERC20_'**
+  /// **'Ethereum (ERC20)'**
   String get cashierUsdtErcDeposit;
 
   /// No description provided for @cashierUsdtTrcDeposit.
   ///
   /// In en, this message translates to:
-  /// **'Tron _TRC20_'**
+  /// **'Tron (TRC20)'**
   String get cashierUsdtTrcDeposit;
 
   /// No description provided for @cashierUsdtDepositJetonDescription.
@@ -7214,7 +7214,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierUtorgPurchaseLicense.
   ///
   /// In en, this message translates to:
-  /// **'UTORG is a licensed 3rd party cryptocurrency service provider By proceeding, you acknowledge and accept the exchange of fiat for cryptocurrency UTORG bears no responsibility for the further cryptocurrency application, once it is sent to your wallet address'**
+  /// **'UTORG is a licensed 3rd party cryptocurrency service provider. By proceeding, you acknowledge and accept the exchange of fiat for cryptocurrency. UTORG bears no responsibility for the further cryptocurrency application, once it is sent to your wallet address.'**
   String get cashierUtorgPurchaseLicense;
 
   /// No description provided for @cashierUtorgPurchaseTitle.
@@ -7286,7 +7286,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWeAreNotAccepting.
   ///
   /// In en, this message translates to:
-  /// **'We only accept cards that are 3D Secure enrolled'**
+  /// **'We only accept cards that are 3D Secure enrolled.'**
   String get cashierWeAreNotAccepting;
 
   /// No description provided for @cashierWeb3walletAccount.
@@ -7310,7 +7310,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWeb3walletContinueWithWallet.
   ///
   /// In en, this message translates to:
-  /// **'Please continue with connected wallet to complete the transaction'**
+  /// **'Please continue with connected wallet to complete the transaction.'**
   String get cashierWeb3walletContinueWithWallet;
 
   /// No description provided for @cashierWeb3walletDisconnectWallet.
@@ -7322,7 +7322,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWeb3walletDisconnectWalletDesc.
   ///
   /// In en, this message translates to:
-  /// **'You can always connect your account later'**
+  /// **'You can always connect your account later.'**
   String get cashierWeb3walletDisconnectWalletDesc;
 
   /// No description provided for @cashierWeb3walletDisconnectWalletTitle.
@@ -7346,7 +7346,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWeb3walletErrorEstimateGas.
   ///
   /// In en, this message translates to:
-  /// **'Estimate gas error make sure everything is correct and enough balance for gas price'**
+  /// **'Estimate gas error make sure everything is correct and enough balance for gas price.'**
   String get cashierWeb3walletErrorEstimateGas;
 
   /// No description provided for @cashierWeb3walletErrorExceedsWalletBalance.
@@ -7370,7 +7370,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWeb3walletErrorPrepareContract.
   ///
   /// In en, this message translates to:
-  /// **'Prepare contract error make sure everything is correct and you have enough ETH for this transfer'**
+  /// **'Prepare contract error make sure everything is correct and you have enough ETH for this transfer.'**
   String get cashierWeb3walletErrorPrepareContract;
 
   /// No description provided for @cashierWeb3walletErrorPrepareTransaction.
@@ -7388,7 +7388,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWeb3walletErrorUserRejected.
   ///
   /// In en, this message translates to:
-  /// **'User rejected the request'**
+  /// **'User rejected the request.'**
   String get cashierWeb3walletErrorUserRejected;
 
   /// No description provided for @cashierWeb3walletTransactionError.
@@ -7400,13 +7400,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWeb3walletTransactionProgress.
   ///
   /// In en, this message translates to:
-  /// **'You\'ve successfully sent a payment We are waiting for the payment to be verified by the network'**
+  /// **'You\'ve successfully sent a payment. We are waiting for the payment to be verified by the network.'**
   String get cashierWeb3walletTransactionProgress;
 
   /// No description provided for @cashierWeb3walletTransactionSuccess.
   ///
   /// In en, this message translates to:
-  /// **'Payment success'**
+  /// **'Payment success.'**
   String get cashierWeb3walletTransactionSuccess;
 
   /// No description provided for @cashierWeb3walletViewOnBlockchain.
@@ -7466,13 +7466,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWithdraw3Confirmations.
   ///
   /// In en, this message translates to:
-  /// **'A deposit can be withdrawn as soon as it gets at least 3 confirmations '**
+  /// **'A deposit can be withdrawn as soon as it gets at least 3 confirmations. '**
   String get cashierWithdraw3Confirmations;
 
   /// No description provided for @cashierWithdraw48hRestriction.
   ///
   /// In en, this message translates to:
-  /// **'You are unable to withdraw for 48 hours after changing your password due to security reasons'**
+  /// **'You are unable to withdraw for 48 hours after changing your password due to security reasons.'**
   String get cashierWithdraw48hRestriction;
 
   /// No description provided for @cashierWithdrawAda.
@@ -7556,13 +7556,13 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWithdrawInfoCorrectFields.
   ///
   /// In en, this message translates to:
-  /// **'Please ensure that all fields have been correctly selected or filled in We cannot recover incorrectly transferred funds'**
+  /// **'Please ensure that all fields have been correctly selected or filled in. We cannot recover incorrectly transferred funds.'**
   String get cashierWithdrawInfoCorrectFields;
 
   /// No description provided for @cashierWithdrawInfoXrp.
   ///
   /// In en, this message translates to:
-  /// **'Do you need to specify a destination tag? Generate an X_address using'**
+  /// **'Do you need to specify a destination tag? Generate an X-address using'**
   String get cashierWithdrawInfoXrp;
 
   /// No description provided for @cashierWithdrawIsComplete.
@@ -7604,7 +7604,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWithdrawSuccessful.
   ///
   /// In en, this message translates to:
-  /// **'Your withdrawal of {currency} {amount} is confirmed'**
+  /// **'Your withdrawal of {currency} {amount} is confirmed.'**
   String cashierWithdrawSuccessful(Object currency, Object amount);
 
   /// No description provided for @cashierWithdrawThb.
@@ -7676,7 +7676,7 @@ abstract class AppLocalizations {
   /// Ezeebill subtitle
   ///
   /// In en, this message translates to:
-  /// **'Reflection time 2 business days _varies by bank_'**
+  /// **'Reflection time 2 business days (varies by bank)'**
   String get cashierWithdrawEzeebill_bankTransferDescription;
 
   /// No description provided for @cashierWithdrawEzeebill_bankTransferTitle.
@@ -7736,7 +7736,7 @@ abstract class AppLocalizations {
   /// Please choose the correct network before withdrawal
   ///
   /// In en, this message translates to:
-  /// **'Before withdrawing, pick correct network'**
+  /// **'Before withdrawing, pick correct network.'**
   String get cashierWithdrawNetworkTooltip;
 
   /// No description provided for @cashierWithdrawPagavaTitle.
@@ -7820,7 +7820,7 @@ abstract class AppLocalizations {
   /// No description provided for @cashierWithdrawWarningConfirmAddress.
   ///
   /// In en, this message translates to:
-  /// **'Please always check your withdrawal wallet address before making your transactions'**
+  /// **'Please always check your withdrawal wallet address before making your transactions.'**
   String get cashierWithdrawWarningConfirmAddress;
 
   /// No description provided for @cashierWithdrawalAgents.
@@ -8000,13 +8000,13 @@ abstract class AppLocalizations {
   /// No description provided for @errors404Errormessage.
   ///
   /// In en, this message translates to:
-  /// **'Whoops! We can\'t seem to find the page you are looking for'**
+  /// **'Whoops! We can\'t seem to find the page you are looking for.'**
   String get errors404Errormessage;
 
   /// No description provided for @errors404Promo.
   ///
   /// In en, this message translates to:
-  /// **'Whoops! We can\'t seem to find the page you are looking for'**
+  /// **'Whoops! We can\'t seem to find the page you are looking for.'**
   String get errors404Promo;
 
   /// No description provided for @errorsAgeMustBeOver18.
@@ -8018,7 +8018,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsAlreadyPredictedThisPrice.
   ///
   /// In en, this message translates to:
-  /// **'You have already predicted this price'**
+  /// **'You have already predicted this price.'**
   String get errorsAlreadyPredictedThisPrice;
 
   /// No description provided for @errorsAmountIsNull.
@@ -8030,7 +8030,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsArticle404Text.
   ///
   /// In en, this message translates to:
-  /// **'Whoops! We can\'t seem to find the page you are looking for'**
+  /// **'Whoops! We can\'t seem to find the page you are looking for.'**
   String get errorsArticle404Text;
 
   /// No description provided for @errorsBtcAmountMustBeGreaterThan1Mbtc.
@@ -8048,7 +8048,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsCooldownAfterPasswordChange.
   ///
   /// In en, this message translates to:
-  /// **'You are unable to withdraw for 48 hours after changing your password due to security reasons'**
+  /// **'You are unable to withdraw for 48 hours after changing your password due to security reasons.'**
   String get errorsCooldownAfterPasswordChange;
 
   /// No description provided for @errorsCorruptImage.
@@ -8084,13 +8084,13 @@ abstract class AppLocalizations {
   /// No description provided for @errorsDisabledWithdrawals.
   ///
   /// In en, this message translates to:
-  /// **'An error occurred Please contact Support'**
+  /// **'An error occurred. Please contact Support.'**
   String get errorsDisabledWithdrawals;
 
   /// No description provided for @errorsDisabledWithdrawalsSportsbet.
   ///
   /// In en, this message translates to:
-  /// **'An error occurred Please contact us at <a class=\'text_piccolo\' href=\"mailtosafety@sportsbetio\">safety@sportsbetio </a>'**
+  /// **'An error occurred. Please contact us at <a class=\'text-piccolo\' href=\"mailtosafety@sportsbet.io\">safety@sportsbet.io </a>'**
   String get errorsDisabledWithdrawalsSportsbet;
 
   /// No description provided for @errorsEmailAlreadyExists.
@@ -8126,25 +8126,25 @@ abstract class AppLocalizations {
   /// No description provided for @errorsGamegeneralErrormessage.
   ///
   /// In en, this message translates to:
-  /// **'Something went wrong Try again!'**
+  /// **'Something went wrong. Try again!'**
   String get errorsGamegeneralErrormessage;
 
   /// No description provided for @errorsGeneral.
   ///
   /// In en, this message translates to:
-  /// **'Something went wrong'**
+  /// **'Something went wrong.'**
   String get errorsGeneral;
 
   /// General error description
   ///
   /// In en, this message translates to:
-  /// **'Things don\'t appear to work at the moment Please try again later'**
+  /// **'Things don\'t appear to work at the moment. Please try again later'**
   String get errorsGeneralDescription;
 
   /// No description provided for @errorsGeneralSupport.
   ///
   /// In en, this message translates to:
-  /// **'Oops, something went wrong Please contact support'**
+  /// **'Oops, something went wrong. Please contact support'**
   String get errorsGeneralSupport;
 
   /// No description provided for @errorsHigherThanLimit.
@@ -8258,7 +8258,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsInvalidRequest.
   ///
   /// In en, this message translates to:
-  /// **'An error occurred Please contact Support'**
+  /// **'An error occurred. Please contact Support.'**
   String get errorsInvalidRequest;
 
   /// No description provided for @errorsInvalidRfc.
@@ -8282,7 +8282,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsInvalidUsername.
   ///
   /// In en, this message translates to:
-  /// **'A username must be 3_20 characters long and can contain only letters, numbers and '**
+  /// **'A username must be 3-20 characters long and can contain only letters, numbers and _'**
   String get errorsInvalidUsername;
 
   /// No description provided for @errorsInvalidUsernameOrPassword.
@@ -8300,13 +8300,13 @@ abstract class AppLocalizations {
   /// No description provided for @errorsInvalidLightningNetworkInvoice.
   ///
   /// In en, this message translates to:
-  /// **'The invoice cannot be used twice <br />Please create new one on your wallet application to start your withdrawal'**
+  /// **'The invoice cannot be used twice. <br />Please create new one on your wallet application to start your withdrawal.'**
   String get errorsInvalidLightningNetworkInvoice;
 
   /// No description provided for @errorsInvoiceExpiredAddress.
   ///
   /// In en, this message translates to:
-  /// **'Withdrawal request is expired <br /> Please create new one on your wallet application to start your withdrawal'**
+  /// **'Withdrawal request is expired. <br /> Please create new one on your wallet application to start your withdrawal.'**
   String get errorsInvoiceExpiredAddress;
 
   /// No description provided for @errorsIsRequired.
@@ -8318,7 +8318,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsLoginAuthenticationFailed.
   ///
   /// In en, this message translates to:
-  /// **'Sign_in failed Please try again!'**
+  /// **'Sign-in failed. Please try again!'**
   String get errorsLoginAuthenticationFailed;
 
   /// No description provided for @errorsLowerThanLimit.
@@ -8372,7 +8372,7 @@ abstract class AppLocalizations {
   /// Indicates when device is not connected to the internet
   ///
   /// In en, this message translates to:
-  /// **'Not connected to the internet Please try again'**
+  /// **'Not connected to the internet. Please try again'**
   String get errorsNoInternetConnection;
 
   /// No description provided for @errorsNoMarketBtcRateAvailableForSelectedCurrency.
@@ -8414,13 +8414,13 @@ abstract class AppLocalizations {
   /// No description provided for @errorsNotEnoughFunds.
   ///
   /// In en, this message translates to:
-  /// **'You do not have enough funds to proceed'**
+  /// **'You do not have enough funds to proceed.'**
   String get errorsNotEnoughFunds;
 
   /// No description provided for @errorsNotEnoughFundsAmount.
   ///
   /// In en, this message translates to:
-  /// **'Not enough funds for withdrawal Please top up your account'**
+  /// **'Not enough funds for withdrawal. Please top up your account.'**
   String get errorsNotEnoughFundsAmount;
 
   /// No description provided for @errorsNotFound.
@@ -8438,13 +8438,13 @@ abstract class AppLocalizations {
   /// No description provided for @errorsOtpMustBeDisabled.
   ///
   /// In en, this message translates to:
-  /// **'In order to link your existing account with your Facebook account, you first need to disable Google Authenticator'**
+  /// **'In order to link your existing account with your Facebook account, you first need to disable Google Authenticator.'**
   String get errorsOtpMustBeDisabled;
 
   /// No description provided for @errorsOtpVerificationFailed.
   ///
   /// In en, this message translates to:
-  /// **'Your Google Authenticator code was incorrect '**
+  /// **'Your Google Authenticator code was incorrect. '**
   String get errorsOtpVerificationFailed;
 
   /// No description provided for @errorsOtpVerificationFailedOtpBitcasino.
@@ -8474,7 +8474,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsPasswordRecoveryEmailNotFound.
   ///
   /// In en, this message translates to:
-  /// **'Incorrect email address Please double check and try again'**
+  /// **'Incorrect email address. Please double check and try again'**
   String get errorsPasswordRecoveryEmailNotFound;
 
   /// No description provided for @errorsPasswordRecoveryUnableToChangePassword.
@@ -8486,13 +8486,13 @@ abstract class AppLocalizations {
   /// No description provided for @errorsPasswordResetDeniedForSocialUser.
   ///
   /// In en, this message translates to:
-  /// **'You have registered via social media To login, click on the button of the social media you used to register'**
+  /// **'You have registered via social media. To login, click on the button of the social media you used to register.'**
   String get errorsPasswordResetDeniedForSocialUser;
 
   /// No description provided for @errorsPasswordResetDeniedUserDeleted.
   ///
   /// In en, this message translates to:
-  /// **'Password reset unsuccessful Account has been removed'**
+  /// **'Password reset unsuccessful. Account has been removed.'**
   String get errorsPasswordResetDeniedUserDeleted;
 
   /// No description provided for @errorsPasswordTooShort.
@@ -8504,7 +8504,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsPasswordTooWeak.
   ///
   /// In en, this message translates to:
-  /// **'This password is too weak Try adding numbers or upper case letters to make it stronger'**
+  /// **'This password is too weak. Try adding numbers or upper case letters to make it stronger'**
   String get errorsPasswordTooWeak;
 
   /// No description provided for @errorsPatternDoesNotMatch.
@@ -8516,7 +8516,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsPaymentAmountTooLarge.
   ///
   /// In en, this message translates to:
-  /// **'Payment amount is too large'**
+  /// **'Payment amount is too large.'**
   String get errorsPaymentAmountTooLarge;
 
   /// No description provided for @errorsPaymentMethodIsNotSupported.
@@ -8588,7 +8588,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsRequiresDestinationTag.
   ///
   /// In en, this message translates to:
-  /// **'A destination tag is required Generate an X_address using https//xrpaddressinfo'**
+  /// **'A destination tag is required. Generate an X-address using https//xrpaddress.info.'**
   String get errorsRequiresDestinationTag;
 
   /// No description provided for @errorsSelectedCurrencyIsNotSupported.
@@ -8612,7 +8612,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsSms2faInvalidSessionId.
   ///
   /// In en, this message translates to:
-  /// **'Invalid session, please try again'**
+  /// **'Invalid session, please try again.'**
   String get errorsSms2faInvalidSessionId;
 
   /// No description provided for @errorsSms2faSeesionIdExpired.
@@ -8654,7 +8654,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsSystemError.
   ///
   /// In en, this message translates to:
-  /// **'System error Please contact support'**
+  /// **'System error. Please contact support.'**
   String get errorsSystemError;
 
   /// No description provided for @errorsTokenExpired.
@@ -8672,25 +8672,25 @@ abstract class AppLocalizations {
   /// No description provided for @errorsTooManyLoginAttempts.
   ///
   /// In en, this message translates to:
-  /// **'Too many sign_in attempts! Please try again in 15 minutes'**
+  /// **'Too many sign-in attempts! Please try again in 15 minutes.'**
   String get errorsTooManyLoginAttempts;
 
   /// No description provided for @errorsTooManyPasswordResetAttempts.
   ///
   /// In en, this message translates to:
-  /// **'Too many password reset attempts! Please try again later'**
+  /// **'Too many password reset attempts! Please try again later.'**
   String get errorsTooManyPasswordResetAttempts;
 
   /// No description provided for @errorsTooManySms2faAttempts.
   ///
   /// In en, this message translates to:
-  /// **'Too many SMS authentication attempts! Please try again in 15 minutes'**
+  /// **'Too many SMS authentication attempts! Please try again in 15 minutes.'**
   String get errorsTooManySms2faAttempts;
 
   /// No description provided for @errorsTooManySmsSent.
   ///
   /// In en, this message translates to:
-  /// **'Too many SMS sent Please try again in 15 minutes'**
+  /// **'Too many SMS sent. Please try again in 15 minutes.'**
   String get errorsTooManySmsSent;
 
   /// No description provided for @errorsTransactionAmount.
@@ -8732,7 +8732,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsUserSelfExclusionIsActive.
   ///
   /// In en, this message translates to:
-  /// **'You are currently logged out for the total duration of 24 hours after activating the panic button You can log back into your account once the time period has passed'**
+  /// **'You are currently logged out for the total duration of 24 hours after activating the panic button. You can log back into your account once the time period has passed.'**
   String get errorsUserSelfExclusionIsActive;
 
   /// No description provided for @errorsUsernameAlreadyExists.
@@ -8750,7 +8750,7 @@ abstract class AppLocalizations {
   /// No description provided for @errorsValidationErrors.
   ///
   /// In en, this message translates to:
-  /// **'Validation errors'**
+  /// **'Validation errors.'**
   String get errorsValidationErrors;
 
   /// No description provided for @errorsValueMissing.
@@ -8774,19 +8774,19 @@ abstract class AppLocalizations {
   /// No description provided for @errorsYourAccountIsDisabled.
   ///
   /// In en, this message translates to:
-  /// **'Your account is disabled _ please contact support'**
+  /// **'Your account is disabled - please contact support'**
   String get errorsYourAccountIsDisabled;
 
   /// No description provided for @errorsYourAccountIsDisabledSecurity.
   ///
   /// In en, this message translates to:
-  /// **'Your account is disabled Please contact our support for more information'**
+  /// **'Your account is disabled. Please contact our support for more information.'**
   String get errorsYourAccountIsDisabledSecurity;
 
   /// No description provided for @errorsYourAccountIsDormant.
   ///
   /// In en, this message translates to:
-  /// **'This account has been suspended for your own security and safety due to long inactivity Please contact security@bitcasinoio for assistance'**
+  /// **'This account has been suspended for your own security and safety due to long inactivity. Please contact security@bitcasino.io for assistance.'**
   String get errorsYourAccountIsDormant;
 
   /// No description provided for @fundsBalance.
@@ -8888,7 +8888,7 @@ abstract class AppLocalizations {
   /// No description provided for @transactionDepositCancellationReturn.
   ///
   /// In en, this message translates to:
-  /// **'Funds returned _withdrawal cancelled by user_'**
+  /// **'Funds returned (withdrawal cancelled by user)'**
   String get transactionDepositCancellationReturn;
 
   /// No description provided for @transactionDepositCancelled.
@@ -9104,7 +9104,7 @@ abstract class AppLocalizations {
   /// No description provided for @transactionIncompleteBtc.
   ///
   /// In en, this message translates to:
-  /// **'Your BTC purchase is incomplete In order to complete the transaction you are required to add some additional information'**
+  /// **'Your BTC purchase is incomplete. In order to complete the transaction you are required to add some additional information.'**
   String get transactionIncompleteBtc;
 
   /// No description provided for @transactionLink.
@@ -9440,7 +9440,7 @@ abstract class AppLocalizations {
   /// No description provided for @transactionSpent.
   ///
   /// In en, this message translates to:
-  /// **'Spent _inc fee_'**
+  /// **'Spent (inc. fee)'**
   String get transactionSpent;
 
   /// No description provided for @transactionStartBalance.

@@ -11,43 +11,13 @@ import '../core/models/l10n_mapper_config.dart';
 // TODO: write test coverage
 class FormatLocalization {
   bool isCamelCase(String input) {
+    // RegExp camelCaseRegExp = RegExp(r'^[a-z]+([A-Z0-9][a-z0-9]*)*(?:[_\-\s][a-z]+([A-Z0-9][a-z0-9]*)*)*$');
     RegExp camelCaseRegExp = RegExp(r'^[a-z]+(?:[A-Z][a-z]*)*$');
 
     return camelCaseRegExp.hasMatch(input);
   }
 
-  bool startsWithUppercase(String input) {
-    final substring = input.substring(0, 1);
-
-    if (substring == '@') {
-      return input.substring(0, 2).toLowerCase() == input.substring(0, 2);
-    }
-
-    return substring.toUpperCase() == substring;
-  }
-
-  String toLocalizationKeyCase(String input) {
-    final substring = input.substring(0, 1);
-
-    if (substring == '@') {
-      return input.substring(0, 2).toLowerCase() + input.substring(2);
-    }
-
-    return substring.toLowerCase() + input.substring(1);
-  }
-
-  bool isDirectSubKeyOfPlaceholders(Map<String, dynamic> json, String keyToCheck) {
-    for (var key in json.keys) {
-      if (json[key] is Map && json[key].containsKey('placeholders')) {
-        final placeholders = json[key]['placeholders'];
-
-        if (placeholders is Map) {
-          return placeholders.containsKey(keyToCheck);
-        }
-      }
-    }
-    return false;
-  }
+  bool isLowerCase(String input) => input == input.toLowerCase();
 
   String toCamelCase(String input, List<String> separators) {
     if (separators.isEmpty || isCamelCase(input)) return input;
@@ -70,23 +40,64 @@ class FormatLocalization {
     return camelCaseString;
   }
 
-  String convertPlaceholdersToCamelCase(String input, List<String> separators) {
-    if (separators.isEmpty || isCamelCase(input)) return input;
+  String handleDefaultCase(String input) {
+    if (input.isEmpty) return input; // Early return for empty string
+
+    final firstChar = input[0];
+
+    if (firstChar == '@' && input.length > 1 && input[1] == input[1].toUpperCase()) {
+      return input.toLowerCase();
+    }
+    
+    if (firstChar == firstChar.toUpperCase()) return input.toLowerCase();
+
+    return input;
+  }
+
+  String formatKeys({
+    required String input,
+    required Map<String, dynamic> predicates,
+    required List<String> emptyPredicateKeys,
+  }) {
+    String key = input.replaceAll('"', '').trim();
+
+    // format translation-value
+    // modify key to replace matching predicates and convert match to camel-case if predicate-value is empty (if its not a placeholder object)
+    key = toCamelCase(key, emptyPredicateKeys)
+        .split(StringConstants.emptyString)
+        .map((e) => predicates[e] ?? e)
+        .join()
+        .trim();
+
+    final substring = key.substring(0, 1);
+
+    // return key;
+
+    return substring == '@' ? '@${handleDefaultCase(key.substring(1))}' : handleDefaultCase(key);
+  }
+
+  String formatValuePlaceHolders({
+    required List<String> input,
+    required Map<String, dynamic> predicates,
+    required List<String> emptyPredicateKeys,
+  }) {
+    String value = input.join().trimLeft();
 
     final placeholderPattern = RegExp(r'\{\s*(.*?)\s*\}');
 
     // use String.replaceAllMapped to process each placeholder
-    return input.replaceAllMapped(placeholderPattern, (match) {
+    return value.replaceAllMapped(placeholderPattern, (match) {
       // extract the placeholder content without the curly braces
-      String placeholderContent = match.group(1) ?? '';
+      String content = match.group(1) ?? '';
 
-      // if (isCamelCase(placeholderContent)) return '{$placeholderContent}';
-
-      // convert the placeholder content to camel case
-      String camelCasePlaceholder = toCamelCase(placeholderContent, separators);
+      final placeholder = toCamelCase(content, emptyPredicateKeys)
+          .split(StringConstants.emptyString)
+          .map((e) => predicates[e] ?? e)
+          .join()
+          .trim();
 
       // rebuild the placeholder with curly braces
-      return '{$camelCasePlaceholder}';
+      return '{${handleDefaultCase(placeholder)}}';
     });
   }
 
@@ -148,34 +159,25 @@ class FormatLocalization {
         await inputFile.openRead().transform(utf8.decoder).transform(const LineSplitter()).forEach((line) {
           final parts = line.split(':');
 
-          String modifiedTranslationKey = parts[0].replaceAll('"', '').trim();
-          String modifiedTranslationValue = parts.sublist(1).join().trimLeft();
+          final translationKey = formatKeys(
+            input: parts[0],
+            predicates: predicates,
+            emptyPredicateKeys: emptyPredicateKeys,
+          );
 
-          // format translation-value
-          // modify key to replace matching predicates and convert match to camel-case if predicate-value is empty (if its not a placeholder object)
-          modifiedTranslationKey = toCamelCase(modifiedTranslationKey, emptyPredicateKeys);
+          final translationValue = formatValuePlaceHolders(
+            input: parts.sublist(1),
+            predicates: predicates,
+            emptyPredicateKeys: emptyPredicateKeys,
+          );
 
-          modifiedTranslationKey =
-              modifiedTranslationKey.split(StringConstants.emptyString).map((e) => predicates[e] ?? e).join().trim();
-
-          // convert the key to camel-case if it's not in a placeholders block and not camel-case
-          if (startsWithUppercase(modifiedTranslationKey)) {
-            modifiedTranslationKey = toLocalizationKeyCase(modifiedTranslationKey);
-          }
-
-          // format translation-value
-          modifiedTranslationValue = convertPlaceholdersToCamelCase(modifiedTranslationValue, emptyPredicateKeys);
-
-          modifiedTranslationValue =
-              modifiedTranslationValue.split(StringConstants.emptyString).map((e) => predicates[e] ?? e).join().trim();
-
-          if ('"$modifiedTranslationKey"' == '"@@locale"') {
-            lines.add('"$modifiedTranslationKey": "${option.locale.getValue()}",');
+          if ('"$translationKey"' == '"@@locale"') {
+            lines.add('"$translationKey": "${option.locale.getValue()}",');
           } else {
-            if (modifiedTranslationValue.isEmpty) {
-              lines.add(modifiedTranslationKey);
+            if (translationValue.isEmpty) {
+              lines.add(translationKey);
             } else {
-              lines.add('"$modifiedTranslationKey": $modifiedTranslationValue');
+              lines.add('"$translationKey": $translationValue');
             }
           }
         });
