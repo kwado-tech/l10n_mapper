@@ -11,7 +11,6 @@ import '../core/models/l10n_mapper_config.dart';
 // TODO: write test coverage
 class FormatLocalization {
   bool isCamelCase(String input) {
-    // RegExp camelCaseRegExp = RegExp(r'^[a-z]+([A-Z0-9][a-z0-9]*)*(?:[_\-\s][a-z]+([A-Z0-9][a-z0-9]*)*)*$');
     RegExp camelCaseRegExp = RegExp(r'^[a-z]+(?:[A-Z][a-z]*)*$');
 
     return camelCaseRegExp.hasMatch(input);
@@ -19,6 +18,7 @@ class FormatLocalization {
 
   bool isLowerCase(String input) => input == input.toLowerCase();
 
+  /// Modifies key to replace matching predicates and convert match to camel-case if predicate-value is empty (if its not a placeholder object)
   String toCamelCase(String input, List<String> separators) {
     if (separators.isEmpty || isCamelCase(input)) return input;
 
@@ -41,14 +41,14 @@ class FormatLocalization {
   }
 
   String handleDefaultCase(String input) {
-    if (input.isEmpty) return input; // Early return for empty string
+    if (input.isEmpty) return input;
 
     final firstChar = input[0];
 
     if (firstChar == '@' && input.length > 1 && input[1] == input[1].toUpperCase()) {
       return input.toLowerCase();
     }
-    
+
     if (firstChar == firstChar.toUpperCase()) return input.toLowerCase();
 
     return input;
@@ -61,8 +61,6 @@ class FormatLocalization {
   }) {
     String key = input.replaceAll('"', '').trim();
 
-    // format translation-value
-    // modify key to replace matching predicates and convert match to camel-case if predicate-value is empty (if its not a placeholder object)
     key = toCamelCase(key, emptyPredicateKeys)
         .split(StringConstants.emptyString)
         .map((e) => predicates[e] ?? e)
