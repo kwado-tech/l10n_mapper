@@ -69,8 +69,6 @@ class FormatLocalization {
 
     final substring = key.substring(0, 1);
 
-    // return key;
-
     return substring == '@' ? '@${handleDefaultCase(key.substring(1))}' : handleDefaultCase(key);
   }
 
