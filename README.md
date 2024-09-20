@@ -198,6 +198,44 @@ Note: You can parse the directory path to find `l10n_mapper.json` if it is not d
 dart pub run l10n_mapper_generator --config=lib/config # directory contains `l10n_mapper.json` configuration file
 ```
 ####
+Note: Providing formatter config with `keyPredicateMatch` values, ensures matched predicate are replaced with specified value in the config e.g `{"^": "_"}` means thats all `^` found in translation-keys will be replaced with `_` (underscore) instead.
+
+```json
+// before formatting
+"test^send^your^usdt": "Send your USDT (TRC-20) withdrawal to:",
+```
+
+```json
+// after formatting
+"test_send_your_usdt": "Send your USDT (TRC-20) withdrawal to:",
+```
+
+When a an empty value is defined for `keyPredicateMatch` like below
+```dart
+"keyPredicateMatch": {
+        "-": "",
+        ".": "",
+        "^": "_",
+        "(": "_",
+        ")": "_"
+    }
+```
+
+The translation-keys are formatted using camel-case where a key-predicate is matched for `-` and `.`. Given the previous example, the key will be formatted as below
+
+```json
+// before formatting
+"test^send.your-usdt": "Send your USDT (TRC-20) withdrawal to:",
+```
+
+```json
+// after formatting
+"test_sendYourUsdt": "Send your USDT (TRC-20) withdrawal to:",
+```
+
+With this flexibility, one can decide to prefer camel or snake casing which are both compatible with dart method naming signature and suitable for dart generated translation objects.
+
+####
 **Helper extensions**
 
 To access translations dynamically and parse placeholder parameters, a part file of `app-localizations.dart` is generated consisting of an access extension on build-context and a mapper.

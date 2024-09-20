@@ -9,7 +9,7 @@ env:
   java_version: 17
   flutter_channel: 'stable'
   ruby_version: '2.7.5'
-  release_version: '2.1.0'
+  release_version: '2.1.2'
 
 jobs:
   git_package_release:
