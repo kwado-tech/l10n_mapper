@@ -26,9 +26,11 @@ class TranslationOptions {
   final Option<String> input;
   final Option<String> output;
 
-  const TranslationOptions({required this.locale, required this.input, required this.output});
+  const TranslationOptions(
+      {required this.locale, required this.input, required this.output});
 
-  factory TranslationOptions.none() => TranslationOptions(locale: none(), input: none(), output: none());
+  factory TranslationOptions.none() =>
+      TranslationOptions(locale: none(), input: none(), output: none());
 
   factory TranslationOptions.fromJson(Map<String, dynamic> json) {
     return TranslationOptions(
@@ -42,14 +44,18 @@ class TranslationOptions {
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
 
-    return other is TranslationOptions && other.locale == locale && other.input == input && other.output == output;
+    return other is TranslationOptions &&
+        other.locale == locale &&
+        other.input == input &&
+        other.output == output;
   }
 
   @override
   int get hashCode => locale.hashCode ^ input.hashCode ^ output.hashCode;
 
   @override
-  String toString() => 'TranslationOptions(locale: $locale, input: $input, output: $output)';
+  String toString() =>
+      'TranslationOptions(locale: $locale, input: $input, output: $output)';
 }
 
 class FormatterOptions {
@@ -83,10 +89,12 @@ class FormatterOptions {
       inputPath: optionOf(json['inputPath'] as String?),
       outputPath: optionOf(json['outputPath'] as String?),
       translations: (json['translations'] as List?)
-              ?.map((e) => TranslationOptions.fromJson(e as Map<String, dynamic>))
+              ?.map(
+                  (e) => TranslationOptions.fromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
-      keyPredicateMatch: optionOf(json['keyPredicateMatch'] as Map<String, dynamic>?),
+      keyPredicateMatch:
+          optionOf(json['keyPredicateMatch'] as Map<String, dynamic>?),
     );
   }
 
