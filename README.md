@@ -197,6 +197,7 @@ Note: You can parse the directory path to find `l10n_mapper.json` if it is not d
 #  provide path to directory where `l10n_mapper.json` is defined
 dart pub run l10n_mapper_generator --config=lib/config # directory contains `l10n_mapper.json` configuration file
 ```
+
 ####
 Note: Providing formatter config with `keyPredicateMatch` values, ensures matched predicate are replaced with specified value in the config e.g `{"^": "_"}` means thats all `^` found in translation-keys will be replaced with `_` (underscore) instead.
 
@@ -250,14 +251,29 @@ To access translations dynamically and parse placeholder parameters, a part file
 import 'app_localizations.dart';
 import 'package:flutter/widgets.dart';
 
-extension AppLocalizationsExtension on BuildContext {
+extension BuildContextExtension on BuildContext {
   AppLocalizations get _localizations => AppLocalizations.of(this)!;
   AppLocalizations get l10n => _localizations;
   Locale get locale => Localizations.localeOf(this);
   String parseL10n(String translationKey, {List<Object>? arguments}) {
+    final localizations = AppLocalizations.of(this)!;
+    return L10nHelper.parseL10n(localizations, translationKey,
+        arguments: arguments);
+  }
+}
+
+extension AppLocalizationsExtension on AppLocalizations {
+  String parseL10n(String translationKey, {List<Object>? arguments}) {
+    return L10nHelper.parseL10n(this, translationKey, arguments: arguments);
+  }
+}
+
+class L10nHelper {
+  static String parseL10n(AppLocalizations localizations, String translationKey,
+      {List<Object>? arguments}) {
     const mapper = AppLocalizationsMapper();
-    final object = mapper.toLocalizationMap(this)[translationKey];
-    if (object == null) return 'Cannot find translation-key!';
+    final object = mapper.toLocalizationMap(localizations)[translationKey];
+    if (object == null) return 'Translation key not found!';
     if (object is String) return object;
     assert(arguments != null, 'Arguments should not be null!');
     assert(arguments!.isNotEmpty, 'Arguments should not be empty!');
@@ -267,8 +283,7 @@ extension AppLocalizationsExtension on BuildContext {
 
 class AppLocalizationsMapper {
   const AppLocalizationsMapper();
-  Map<String, dynamic> toLocalizationMap(BuildContext context) {
-    final localizations = AppLocalizations.of(context)!;
+  Map<String, dynamic> toLocalizationMap(AppLocalizations localizations) {
     return {
       'localeName': localizations.localeName,
       'application_name': localizations.application_name,
