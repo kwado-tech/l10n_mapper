@@ -37,8 +37,8 @@ class L10nMapperGenerator extends Generator {
       if (classNames.contains(classElement.displayName)) {
         final className = classElement.displayName;
         final localizationPath = classElement.source.uri;
-        final mapperName = '${classElement.displayName}Mapper';
-        final appLocalizationsExtensionName = '${classElement.displayName}Extension';
+        final mapperName = '${className}Mapper';
+        final appLocalizationsExtensionName = '${className}Extension';
         final buildContextExtensionName = 'BuildContextExtension';
 
         final nullable = message == null;
@@ -55,7 +55,7 @@ class L10nMapperGenerator extends Generator {
           final bufferL10nHelper = StringBuffer();
 
           bufferBuildContextExtension.writeln('extension $buildContextExtensionName on BuildContext {');
-          bufferAppLocalizationsExtension.writeln('extension $appLocalizationsExtensionName on ${classElement.displayName} {');
+          bufferAppLocalizationsExtension.writeln('extension $appLocalizationsExtensionName on $className {');
 
           bufferBuildContextExtension.writeln('  $className get _localizations => $className.of(this)!;');
 
@@ -81,7 +81,7 @@ class L10nMapperGenerator extends Generator {
             bufferAppLocalizationsExtension.writeln('}');
 
             bufferL10nHelper.writeln('class L10nHelper {');
-            bufferL10nHelper.writeln('static String parseL10n(AppLocalizations localizations, String translationKey, {List<Object>? arguments}) {');
+            bufferL10nHelper.writeln('static String parseL10n($className localizations, String translationKey, {List<Object>? arguments}) {');
 
             bufferL10nHelper.writeln('const mapper = $mapperName();');
             bufferL10nHelper.writeln('final object = mapper.toLocalizationMap(localizations)[translationKey];');
@@ -123,7 +123,7 @@ class L10nMapperGenerator extends Generator {
         buffer.writeln('const $mapperName();');
 
         // toLocalizationMap
-        buffer.writeln('Map<String, dynamic> toLocalizationMap(${classElement.displayName} localizations) {');
+        buffer.writeln('Map<String, dynamic> toLocalizationMap($className localizations) {');
 
         buffer.writeln('return {');
         // all getters
