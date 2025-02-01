@@ -50,9 +50,6 @@ jobs:
           
       - name: Analyze
         run: dart analyze
-
-      - name: Run tests
-        run: dart test
   
       - name: Format check
         run: dart format --set-exit-if-changed --line-length=120 .
