@@ -79,14 +79,14 @@ jobs:
           echo -e "\n$(date +'%Y-%m-%d')" >> release_notes.md
           cat release_notes.md
 
-      - name: Verify package directory
-        run: |
-          echo "Current directory structure:"
-          ls -la
-          echo "Contents of package directory:"
-          ls -la ${{ env.PACKAGE_DIR }}
-          echo "Package pubspec.yaml content:"
-          cat ${{ env.PACKAGE_DIR }}/pubspec.yaml
+      # - name: Verify package directory
+      #   run: |
+      #     echo "Current directory structure:"
+      #     ls -la
+      #     echo "Contents of package directory:"
+      #     ls -la ${{ env.PACKAGE_DIR }}
+      #     echo "Package pubspec.yaml content:"
+      #     cat ${{ env.PACKAGE_DIR }}/pubspec.yaml
         
       - name: Pub publish --dry-run
         run: dart pub publish --dry-run
