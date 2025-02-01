@@ -6,7 +6,7 @@ on:
       - '*.*.*'
 
 env:
-  flutter_version: '3.19.5'
+  flutter_version: '3.27.0'
   java_version: 17
   flutter_channel: 'stable'
   ruby_version: '2.7.5'
@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
+
       - name: Setup Ruby (Install and Cache bundle)
         uses: ruby/setup-ruby@v1
         with:

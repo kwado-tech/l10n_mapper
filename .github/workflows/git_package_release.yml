@@ -5,13 +5,13 @@ on:
     branches: [ main ]
 
 env:
-  flutter_version: '3.19.5'
+  flutter_version: '3.27.0'
   java_version: 17
   flutter_channel: 'stable'
   ruby_version: '2.7.5'
   release_version: '2.1.5'
   PACKAGE_DIR: l10n_mapper_generator
-  
+
 jobs:
   git_package_release:
     name: Test & Release Packages
