@@ -79,6 +79,12 @@ jobs:
           echo -e "\n$(date +'%Y-%m-%d')" >> release_notes.md
           cat release_notes.md
 
+      - name: Create and push tag
+        run: |
+          TAG_VERSION=${{ env.PUBSPEC_VERSION }}
+          git tag $TAG_VERSION
+          git push origin $TAG_VERSION
+
       - name: Publish to Github Releases
         uses: ncipollo/release-action@v1
         with:
@@ -86,3 +92,4 @@ jobs:
           # commit: ${{ vars.RELEASE_TARGET_BRANCH }}
           # tag: ${{ env.PUBSPEC_VERSION }}.${{ github.run_number }}
           tag: ${{ env.PUBSPEC_VERSION }}
+          makeLatest: true
