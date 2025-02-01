@@ -9,7 +9,6 @@ env:
   java_version: 17
   flutter_channel: 'stable'
   ruby_version: '2.7.5'
-  release_version: '2.1.5'
   PACKAGE_DIR: l10n_mapper_generator
 
 jobs:
@@ -85,17 +84,15 @@ jobs:
       - name: Pub publish
         uses: k-paxian/dart-package-publisher@v1.5.1
         with:
-          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
+          force: false
           flutter: true
           skipTests: true
-          force: false
-          relativePath: l10n_mapper_generator
+          relativePath: ${{ env.PACKAGE_DIR }}
+          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
 
       - name: Publish to Github Releases
         uses: ncipollo/release-action@v1
         with:
           generateReleaseNotes: true
-          # commit: ${{ vars.RELEASE_TARGET_BRANCH }}
-          # tag: ${{ env.PUBSPEC_VERSION }}.${{ github.run_number }}
           tag: ${{ env.PUBSPEC_VERSION }}
           makeLatest: true
