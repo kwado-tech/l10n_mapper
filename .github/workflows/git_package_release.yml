@@ -79,26 +79,28 @@ jobs:
           echo -e "\n$(date +'%Y-%m-%d')" >> release_notes.md
           cat release_notes.md
 
-      # - name: Verify package directory
-      #   run: |
-      #     echo "Current directory structure:"
-      #     ls -la
-      #     echo "Contents of package directory:"
-      #     ls -la ${{ env.PACKAGE_DIR }}
-      #     echo "Package pubspec.yaml content:"
-      #     cat ${{ env.PACKAGE_DIR }}/pubspec.yaml
+      - name: Setup pub.dev credentials
+        run: |
+          mkdir -p ~/.pub-cache
+          cat > ~/.pub-cache/credentials.json << 'EOF'
+          ${{ secrets.CREDENTIAL_JSON }}
+          EOF
+          chmod 600 ~/.pub-cache/credentials.json
         
       - name: Pub publish --dry-run
         run: dart pub publish --dry-run
 
-      - name: Pub publish
-        uses: k-paxian/dart-package-publisher@v1.5.1
-        with:
-          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
-          flutter: true
-          skipTests: true
-          force: false
-          package_directory: l10n_mapper_generator
+      - name: Pub publish 
+        run: dart pub publish
+
+      # - name: Pub publish
+      #   uses: k-paxian/dart-package-publisher@v1.5.1
+      #   with:
+      #     credentialJson: ${{ secrets.CREDENTIAL_JSON }}
+      #     flutter: true
+      #     skipTests: true
+      #     force: false
+      #     package_directory: l10n_mapper_generator
 
       - name: Publish to Github Releases
         uses: ncipollo/release-action@v1
