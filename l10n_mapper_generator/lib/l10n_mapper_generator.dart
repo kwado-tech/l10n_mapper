@@ -50,7 +50,8 @@ class L10nMapperGenerator extends Generator {
           final bufferL10nHelper = StringBuffer();
 
           bufferBuildContextExtension.writeln('extension $buildContextExtensionName on BuildContext {');
-          bufferAppLocalizationsExtension.writeln('extension $appLocalizationsExtensionName on ${classElement.displayName} {');
+          bufferAppLocalizationsExtension
+              .writeln('extension $appLocalizationsExtensionName on ${classElement.displayName} {');
 
           bufferBuildContextExtension.writeln('  $className get _localizations => $className.of(this)!;');
 
@@ -69,14 +70,17 @@ class L10nMapperGenerator extends Generator {
                 "${nullable ? 'String?' : 'String'} parseL10n(String translationKey, {List<Object>? arguments}) {");
 
             bufferBuildContextExtension.writeln('final localizations = $className.of(this)!;');
-            bufferBuildContextExtension.writeln('return L10nHelper.parseL10n(localizations, translationKey, arguments: arguments);');
-            bufferAppLocalizationsExtension.writeln('return L10nHelper.parseL10n(this, translationKey, arguments: arguments);');
+            bufferBuildContextExtension
+                .writeln('return L10nHelper.parseL10n(localizations, translationKey, arguments: arguments);');
+            bufferAppLocalizationsExtension
+                .writeln('return L10nHelper.parseL10n(this, translationKey, arguments: arguments);');
 
             bufferBuildContextExtension.writeln('}');
             bufferAppLocalizationsExtension.writeln('}');
 
             bufferL10nHelper.writeln('class L10nHelper {');
-            bufferL10nHelper.writeln('static String parseL10n(AppLocalizations localizations, String translationKey, {List<Object>? arguments}) {');
+            bufferL10nHelper.writeln(
+                'static String parseL10n(AppLocalizations localizations, String translationKey, {List<Object>? arguments}) {');
 
             bufferL10nHelper.writeln('const mapper = $mapperName();');
             bufferL10nHelper.writeln('final object = mapper.toLocalizationMap(localizations)[translationKey];');
@@ -107,7 +111,6 @@ class L10nMapperGenerator extends Generator {
             ..write(bufferAppLocalizationsExtension.toString())
             ..write(bufferL10nHelper.toString());
         }
-
 
         // end of extension
 

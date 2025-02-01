@@ -22,8 +22,7 @@ class LogType {
   int get hashCode => _value.hashCode;
 }
 
-void logger<T>(String log, T Function()? callback,
-    {LogType type = LogType.none}) {
+void logger<T>(String log, T Function()? callback, {LogType type = LogType.none}) {
   if (type != LogType.none) {
     // ignore: avoid_print
     print('${type.toString()}: $log');
