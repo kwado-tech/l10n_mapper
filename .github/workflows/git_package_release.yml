@@ -79,35 +79,35 @@ jobs:
           echo -e "\n$(date +'%Y-%m-%d')" >> release_notes.md
           cat release_notes.md
 
-          - name: Setup pub.dev credentials
-          run: |
-            # Create the directory with proper permissions
-            mkdir -p ~/.pub-cache
-            
-            # Write the credentials file with proper JSON formatting
-            # The EOF syntax preserves JSON structure and spacing
-            cat > ~/.pub-cache/credentials.json << 'EOF'
-            {
-              "accessToken": "${{ fromJson(secrets.CREDENTIAL_JSON).accessToken }}",
-              "refreshToken": "${{ fromJson(secrets.CREDENTIAL_JSON).refreshToken }}",
-              "tokenEndpoint": "https://accounts.google.com/o/oauth2/token",
-              "scopes": ["openid", "https://www.googleapis.com/auth/userinfo.email"],
-              "expiration": ${{ fromJson(secrets.CREDENTIAL_JSON).expiration }}
-            }
-            EOF
-            
-            # Set restrictive permissions for security
-            chmod 600 ~/.pub-cache/credentials.json
-            
-            # Verify the file exists and has correct structure
-            if [ -f ~/.pub-cache/credentials.json ]; then
-              echo "Credentials file created successfully"
-              # Check if file is valid JSON (will exit if invalid)
-              jq empty ~/.pub-cache/credentials.json
-            else
-              echo "Failed to create credentials file"
-              exit 1
-            fi
+      - name: Setup pub.dev credentials
+        run: |
+          # Create the directory with proper permissions
+          mkdir -p ~/.pub-cache
+          
+          # Write the credentials file with proper JSON formatting
+          # The EOF syntax preserves JSON structure and spacing
+          cat > ~/.pub-cache/credentials.json << 'EOF'
+          {
+            "accessToken": "${{ fromJson(secrets.CREDENTIAL_JSON).accessToken }}",
+            "refreshToken": "${{ fromJson(secrets.CREDENTIAL_JSON).refreshToken }}",
+            "tokenEndpoint": "https://accounts.google.com/o/oauth2/token",
+            "scopes": ["openid", "https://www.googleapis.com/auth/userinfo.email"],
+            "expiration": ${{ fromJson(secrets.CREDENTIAL_JSON).expiration }}
+          }
+          EOF
+          
+          # Set restrictive permissions for security
+          chmod 600 ~/.pub-cache/credentials.json
+          
+          # Verify the file exists and has correct structure
+          if [ -f ~/.pub-cache/credentials.json ]; then
+            echo "Credentials file created successfully"
+            # Check if file is valid JSON (will exit if invalid)
+            jq empty ~/.pub-cache/credentials.json
+          else
+            echo "Failed to create credentials file"
+            exit 1
+          fi
         
       - name: Pub publish --dry-run
         run: dart pub publish --dry-run
