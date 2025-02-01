@@ -91,7 +91,7 @@ jobs:
         run: dart pub publish --dry-run
 
       - name: Pub publish 
-        run: dart pub publish
+        run: yes | dart pub publish
 
       # - name: Pub publish
       #   uses: k-paxian/dart-package-publisher@v1.5.1
