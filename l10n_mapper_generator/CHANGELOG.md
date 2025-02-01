@@ -62,3 +62,7 @@
 ## 2.1.5
 
 * Use AppLocalizations directly #31 by @rp84e in #32
+
+## 2.1.6-pre.1
+
+* Create pub workflow to publish package to pub.dev

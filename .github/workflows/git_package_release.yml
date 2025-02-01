@@ -54,6 +54,22 @@ jobs:
       - name: Format check
         run: dart format --set-exit-if-changed --line-length=120 .
 
+      - name: Get pubspec version
+        run: |
+          cat > get_version.dart << 'EOF'
+          import 'dart:io';
+          import 'package:yaml/yaml.dart';
+
+          void main() async {
+            final pubspecFile = File('pubspec.yaml');
+            final pubspecContent = await pubspecFile.readAsString();
+            final pubspec = loadYaml(pubspecContent);
+            print(pubspec['version']);
+          }
+          EOF
+          
+          echo "PUBSPEC_VERSION=$(dart get_version.dart)" >> $GITHUB_ENV
+
       - name: Create Release Notes
         env:
           BEFORE_REF: ${{ github.event.before }}
@@ -68,5 +84,5 @@ jobs:
         with:
           generateReleaseNotes: true
           # commit: ${{ vars.RELEASE_TARGET_BRANCH }}
-          # tag: ${{ env.release_version }}.${{ github.run_number }}
-          tag: ${{ env.release_version }}
+          # tag: ${{ env.PUBSPEC_VERSION }}.${{ github.run_number }}
+          tag: ${{ env.PUBSPEC_VERSION }}
