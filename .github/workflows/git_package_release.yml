@@ -98,6 +98,7 @@ jobs:
           flutter: true
           skipTests: true
           force: false
+          package_directory: l10n_mapper_generator
 
       - name: Publish to Github Releases
         uses: ncipollo/release-action@v1
