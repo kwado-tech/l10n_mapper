@@ -1,8 +1,9 @@
-name: Git Package Release
+name: Pub Package Publish
 
 on:
   push:
-    branches: [ main ]
+    tags:
+      - '*.*.*'
 
 env:
   flutter_version: '3.19.5'
@@ -11,16 +12,21 @@ env:
   ruby_version: '2.7.5'
   release_version: '2.1.5'
   PACKAGE_DIR: l10n_mapper_generator
-  
+
 jobs:
-  git_package_release:
-    name: Test & Release Packages
+  pub_package_publish:
+    name: Test & Publish Package
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ${{ env.PACKAGE_DIR }}
 
     steps:
+      - name: Get version from tag
+        id: get_version
+        working-directory: .
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -45,6 +51,16 @@ jobs:
           channel: ${{ env.flutter_channel }}
           cache: false
 
+      # Verify the version matches pubspec.yaml
+      - name: Verify package version
+        run: |
+          PUBSPEC_VERSION=$(grep 'version:' pubspec.yaml | sed 's/version: //')
+          TAG_VERSION=${GITHUB_REF#refs/tags/}
+          if [ "$PUBSPEC_VERSION" != "$TAG_VERSION" ]; then
+            echo "Version mismatch: pubspec.yaml ($PUBSPEC_VERSION) != tag ($TAG_VERSION)"
+            exit 1
+          fi
+
       - name: Install dependencies
         run: dart pub get
           
@@ -56,20 +72,14 @@ jobs:
   
       - name: Format check
         run: dart format --set-exit-if-changed --line-length=120 .
+  
+      - name: Check Publish Warnings
+        run: dart pub publish --dry-run
 
-      - name: Create Release Notes
-        env:
-          BEFORE_REF: ${{ github.event.before }}
-          AFTER_REF: ${{ github.event.after }}
-        run: |
-          echo "$(git log --pretty=format:'%s: %an' $BEFORE_REF...$AFTER_REF)" >> release_notes.md
-          echo -e "\n$(date +'%Y-%m-%d')" >> release_notes.md
-          cat release_notes.md
-
-      - name: Publish to Github Releases
-        uses: ncipollo/release-action@v1
+      - name: Pub publish
+        uses: k-paxian/dart-package-publisher@v1.5.1
         with:
-          generateReleaseNotes: true
-          # commit: ${{ vars.RELEASE_TARGET_BRANCH }}
-          # tag: ${{ env.release_version }}.${{ github.run_number }}
-          tag: ${{ env.release_version }}
+          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
+          flutter: true
+          skipTests: true
+          force: false
