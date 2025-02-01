@@ -55,3 +55,10 @@
 
 * Fixes bug with placeholder wrong formatting resulting to inconsistencies with placeholder and translation-key objects as mentioned [here](https://github.com/kwado-tech/l10n_mapper/issues/25)
 
+## 2.1.4
+
+* update dependency by @CaoGiaHieu-dev in #30
+
+## 2.1.5
+
+* Use AppLocalizations directly #31 by @rp84e in #32
