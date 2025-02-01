@@ -89,6 +89,7 @@ jobs:
           flutter: true
           skipTests: true
           force: false
+          package_directory: ${{ env.PACKAGE_DIR }}
 
       - name: Publish to Github Releases
         uses: ncipollo/release-action@v1
