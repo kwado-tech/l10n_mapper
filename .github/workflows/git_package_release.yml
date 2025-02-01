@@ -78,12 +78,17 @@ jobs:
           echo "$(git log --pretty=format:'%s: %an' $BEFORE_REF...$AFTER_REF)" >> release_notes.md
           echo -e "\n$(date +'%Y-%m-%d')" >> release_notes.md
           cat release_notes.md
+        
+      - name: Pub publish --dry-run
+        run: dart pub publish --dry-run
 
-      - name: Create and push tag
-        run: |
-          TAG_VERSION=${{ env.PUBSPEC_VERSION }}
-          git tag $TAG_VERSION
-          git push origin $TAG_VERSION
+      - name: Pub publish
+        uses: k-paxian/dart-package-publisher@v1.5.1
+        with:
+          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
+          flutter: true
+          skipTests: true
+          force: false
 
       - name: Publish to Github Releases
         uses: ncipollo/release-action@v1
