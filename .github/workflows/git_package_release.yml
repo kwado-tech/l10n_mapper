@@ -5,23 +5,31 @@ on:
     branches: [ main ]
 
 env:
-  flutter_version: '3.19.5'
+  flutter_version: '3.27.0'
   java_version: 17
   flutter_channel: 'stable'
   ruby_version: '2.7.5'
-  release_version: '2.1.5'
+  PACKAGE_DIR: l10n_mapper_generator
 
 jobs:
   git_package_release:
     name: Test & Release Packages
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.PACKAGE_DIR }}
+
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
       - name: Setup Ruby (Install and Cache bundle)
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.ruby_version }}
           bundler-cache: true
+          working-directory: ${{ env.PACKAGE_DIR }}
 
       - name: Setup Java 17
         uses: actions/setup-java@v3.11.0
@@ -36,6 +44,31 @@ jobs:
           channel: ${{ env.flutter_channel }}
           cache: false
 
+      - name: Install dependencies
+        run: dart pub get
+          
+      - name: Analyze
+        run: dart analyze
+  
+      - name: Format check
+        run: dart format --set-exit-if-changed --line-length=120 .
+
+      - name: Get pubspec version
+        run: |
+          cat > get_version.dart << 'EOF'
+          import 'dart:io';
+          import 'package:yaml/yaml.dart';
+
+          void main() async {
+            final pubspecFile = File('pubspec.yaml');
+            final pubspecContent = await pubspecFile.readAsString();
+            final pubspec = loadYaml(pubspecContent);
+            print(pubspec['version']);
+          }
+          EOF
+          
+          echo "PUBSPEC_VERSION=$(dart get_version.dart)" >> $GITHUB_ENV
+
       - name: Create Release Notes
         env:
           BEFORE_REF: ${{ github.event.before }}
@@ -44,11 +77,22 @@ jobs:
           echo "$(git log --pretty=format:'%s: %an' $BEFORE_REF...$AFTER_REF)" >> release_notes.md
           echo -e "\n$(date +'%Y-%m-%d')" >> release_notes.md
           cat release_notes.md
+        
+      - name: Pub publish --dry-run
+        run: dart pub publish --dry-run
+
+      - name: Pub publish
+        uses: k-paxian/dart-package-publisher@v1.5.1
+        with:
+          force: false
+          flutter: true
+          skipTests: true
+          relativePath: ${{ env.PACKAGE_DIR }}
+          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
 
       - name: Publish to Github Releases
         uses: ncipollo/release-action@v1
         with:
           generateReleaseNotes: true
-          # commit: ${{ vars.RELEASE_TARGET_BRANCH }}
-          # tag: ${{ env.release_version }}.${{ github.run_number }}
-          tag: ${{ env.release_version }}
+          tag: ${{ env.PUBSPEC_VERSION }}
+          makeLatest: true
