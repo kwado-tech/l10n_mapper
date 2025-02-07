@@ -19,7 +19,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierTestTranslation => '10% first deposit boost for your winnings';
 
   @override
-  String get cashierActivateTronlink => 'Um TronLink zu verwenden, klicke zuerst auf deine TronLink-Erweiterung und melde dich an.';
+  String get cashierActivateTronlink =>
+      'Um TronLink zu verwenden, klicke zuerst auf deine TronLink-Erweiterung und melde dich an.';
 
   @override
   String get cashierActiveBalance => 'Aktives Guthaben';
@@ -128,7 +129,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierBinanceSmartChain => 'Binance Smart Chain';
 
   @override
-  String get cashierBinanceSmartChainMessage => 'We are currently supporting only Binance Smart Chain network for the deposits. ERC-20 coming soon!';
+  String get cashierBinanceSmartChainMessage =>
+      'We are currently supporting only Binance Smart Chain network for the deposits. ERC-20 coming soon!';
 
   @override
   String get cashierBitcoinBalance => 'Bitcoin Guthaben';
@@ -137,7 +139,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierBitcoinRate => 'WECHSELKURS FÜR KRYPTOWÄHRUNG';
 
   @override
-  String get cashierBitlipaInstructionsAmounts => 'Es werden keine Beträge von deinem Konto abgebucht, bis du dies auf deinem Gerät bestätigt hast.\n';
+  String get cashierBitlipaInstructionsAmounts =>
+      'Es werden keine Beträge von deinem Konto abgebucht, bis du dies auf deinem Gerät bestätigt hast.\n';
 
   @override
   String get cashierBitlipaInstructionsSms => 'Du erhältst in Kürze eine SMS, um mit der Transaktion fortzufahren.\n';
@@ -146,7 +149,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierBitlipaInstructionsTryagain => 'Solltest du keine SMS erhalten, beginne bitte von vorne.\n';
 
   @override
-  String get cashierBitlipaDepositWarning => 'The mobile money currently offers a Pay-in option. Payouts are only available in USDT and USDC cryptocurrencies.';
+  String get cashierBitlipaDepositWarning =>
+      'The mobile money currently offers a Pay-in option. Payouts are only available in USDT and USDC cryptocurrencies.';
 
   @override
   String get cashierBnb => 'Binance Coin';
@@ -158,10 +162,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierBtc => 'Bitcoin';
 
   @override
-  String get cashierBtcDepositDescription => 'Bitcoins, die auf die oben angezeigte Adresse gesendet wurden, werden zu deinem Spielguthaben hinzugefügt. ';
+  String get cashierBtcDepositDescription =>
+      'Bitcoins, die auf die oben angezeigte Adresse gesendet wurden, werden zu deinem Spielguthaben hinzugefügt. ';
 
   @override
-  String get cashierBtxeWithdrawalsAreDisabled => 'Die Auszahlung auf dein Bankkonto oder Kreditkarte ist aktuell deaktiviert';
+  String get cashierBtxeWithdrawalsAreDisabled =>
+      'Die Auszahlung auf dein Bankkonto oder Kreditkarte ist aktuell deaktiviert';
 
   @override
   String get cashierBusd => 'Binance USD';
@@ -317,10 +323,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierCountryXx => 'Global methods';
 
   @override
-  String get cashierCpfRfcDescription => 'Gib bitte deine persönlichen Informationen ein. Alle Daten sind verschlüsselt und sicher.';
+  String get cashierCpfRfcDescription =>
+      'Gib bitte deine persönlichen Informationen ein. Alle Daten sind verschlüsselt und sicher.';
 
   @override
-  String get cashierCpfRfcInfo => 'Wir speichern deine Daten nicht auf unseren Servern. Wir speichern ein sicheres Token, das uns von unseren Zahlungsanbietern zur Verfügung gestellt wird. ';
+  String get cashierCpfRfcInfo =>
+      'Wir speichern deine Daten nicht auf unseren Servern. Wir speichern ein sicheres Token, das uns von unseren Zahlungsanbietern zur Verfügung gestellt wird. ';
 
   @override
   String get cashierCpfRfcInputCpf => 'CPF eingeben';
@@ -437,7 +445,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierDepositAmount => 'Deposit amount';
 
   @override
-  String get cashierDepositAmountChanging => 'Changing the deposit amount will require you to generate new deposit request.';
+  String get cashierDepositAmountChanging =>
+      'Changing the deposit amount will require you to generate new deposit request.';
 
   @override
   String get cashierDepositBnb => 'BNB einzahlen';
@@ -522,7 +531,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierDepositTon => 'TON einzahlen';
 
   @override
-  String get cashierDepositTonInfo => 'Um eine erfolgreiche Einzahlung sicherzustellen, kopiere unbedingt den Inhalt der NACHRICHT in deine Wallet-App rüber, bevor du mit der Transaktion fortfährst. Dieser Schritt ist entscheidend für die reibungslose Einzahlung des Geldes auf dein Konto.\n';
+  String get cashierDepositTonInfo =>
+      'Um eine erfolgreiche Einzahlung sicherzustellen, kopiere unbedingt den Inhalt der NACHRICHT in deine Wallet-App rüber, bevor du mit der Transaktion fortfährst. Dieser Schritt ist entscheidend für die reibungslose Einzahlung des Geldes auf dein Konto.\n';
 
   @override
   String get cashierDepositTonInvoiceId => 'Rechnungsnummer (erforderlich, um die Transaktion abzuschließen)';
@@ -602,7 +612,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierDepositEzeebill_bankTransfer_inrTitle => 'Instant INR Bank Transfer';
 
   @override
-  String get cashierDepositEzeebill_bankTransferDescription => 'Transaktionen können 1 bis 24 Stunden in Anspruch nehmen';
+  String get cashierDepositEzeebill_bankTransferDescription =>
+      'Transaktionen können 1 bis 24 Stunden in Anspruch nehmen';
 
   @override
   String get cashierDepositEzeebill_bankTransferTitle => 'Ezeebill Banküberweisung';
@@ -614,7 +625,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierDepositGenerateRequest => 'Generate deposit request';
 
   @override
-  String get cashierDepositInovapay_localBankTransferDescription => 'Transactions can take up to 1 business day to confirm';
+  String get cashierDepositInovapay_localBankTransferDescription =>
+      'Transactions can take up to 1 business day to confirm';
 
   @override
   String get cashierDepositInovapay_localBankTransferTitle => 'Banküberweisung';
@@ -632,7 +644,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierDepositJeton_bankTransferVoucherAtmJpyTitle => 'VIP JPY Bank Transfer';
 
   @override
-  String get cashierDepositJeton_bankTransferVoucherAtmDescription => 'Die Abwicklung von Transaktionen kann 1-24 Stunden dauern.';
+  String get cashierDepositJeton_bankTransferVoucherAtmDescription =>
+      'Die Abwicklung von Transaktionen kann 1-24 Stunden dauern.';
 
   @override
   String get cashierDepositJeton_bankTransferVoucherAtmTitle => 'Mit einem Gutschein über Geldautomat einzahlen';
@@ -659,7 +672,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierDepositKrakenTitle => 'Kraken';
 
   @override
-  String get cashierDepositNetworkTooltip => 'Vergewissere dich immer vor dem Einzahlen, dass das richtige Netzwerk ausgewählt worden ist.';
+  String get cashierDepositNetworkTooltip =>
+      'Vergewissere dich immer vor dem Einzahlen, dass das richtige Netzwerk ausgewählt worden ist.';
 
   @override
   String get cashierDepositOnrampDescription => 'Krypto mit INR ₹ über UPI erwerben';
@@ -751,10 +765,12 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashierDepositWarningConfirmAddress => 'Denke bitte immer daran, die Einzahlungs-Wallet-Adresse auf unserer Website zu überprüfen, bevor du Transaktionen durchführst.';
+  String get cashierDepositWarningConfirmAddress =>
+      'Denke bitte immer daran, die Einzahlungs-Wallet-Adresse auf unserer Website zu überprüfen, bevor du Transaktionen durchführst.';
 
   @override
-  String get cashierDepositWarningLightningNetwork => 'Lightning is a network that runs on top of Bitcoin blockchain to enable more uses of for bitcoin. <a href=\"https//www.google.com/\" target=\"_blank\">Learn more</a>.';
+  String get cashierDepositWarningLightningNetwork =>
+      'Lightning is a network that runs on top of Bitcoin blockchain to enable more uses of for bitcoin. <a href=\"https//www.google.com/\" target=\"_blank\">Learn more</a>.';
 
   @override
   String get cashierDepositsAreDisabled => 'Kryptowährungen kaufen mit dem MoonPay-Feature ist zur Zeit  deaktiviert.';
@@ -792,7 +808,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierEmailVerificationBannerTitle => 'Verifiziere deine E-Mail-Adresse';
 
   @override
-  String get cashierEmailVerificationConfirmSubtitle => 'By not verifying your email you will not be able to withdraw any funds.';
+  String get cashierEmailVerificationConfirmSubtitle =>
+      'By not verifying your email you will not be able to withdraw any funds.';
 
   @override
   String get cashierEmailVerificationConfirmTitle => 'Are you sure?';
@@ -848,7 +865,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierEth => 'Ethereum';
 
   @override
-  String get cashierEthDepositDescription => 'Ethereum, das auf die oben angezeigte Adresse gesendet wurde, wird zu deinem Spielguthaben hinzugefügt. ';
+  String get cashierEthDepositDescription =>
+      'Ethereum, das auf die oben angezeigte Adresse gesendet wurde, wird zu deinem Spielguthaben hinzugefügt. ';
 
   @override
   String get cashierEur => 'Euro';
@@ -1021,7 +1039,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositBankTransferKlarnaOpenNewWindowTitle => 'Fast fertig';
 
   @override
-  String get cashierFiatDepositBankTransferQaicashFormDescription => 'Using “Alipay to bankcard” deposit via P2P will cause delay of crediting to your wallet, kindly use “bankcard to bankcard”. ';
+  String get cashierFiatDepositBankTransferQaicashFormDescription =>
+      'Using “Alipay to bankcard” deposit via P2P will cause delay of crediting to your wallet, kindly use “bankcard to bankcard”. ';
 
   @override
   String get cashierFiatDepositBankTransferTrustly => 'Trustly';
@@ -1042,7 +1061,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositBankTransferTrustlyOpenNewWindowTitle => 'Fast fertig';
 
   @override
-  String get cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription => 'Ich bestätige, dass ich der Kontoinhaber von diesem Konto bin.';
+  String get cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription =>
+      'Ich bestätige, dass ich der Kontoinhaber von diesem Konto bin.';
 
   @override
   String get cashierFiatDepositBankTransferVoucherAtmFee => 'Depends on the bank you use';
@@ -1120,7 +1140,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositCpfAlreadyExistsCpf => 'CPF existiert bereits';
 
   @override
-  String get cashierFiatDepositCpfDescription => 'Die angegebenen Daten werden bei allen zukünftigen Transaktionen verwendet\n';
+  String get cashierFiatDepositCpfDescription =>
+      'Die angegebenen Daten werden bei allen zukünftigen Transaktionen verwendet\n';
 
   @override
   String get cashierFiatDepositCpfCpf => 'Ungültiges CPF';
@@ -1153,7 +1174,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositCreditcardEcommpayIframeDescription => '  ';
 
   @override
-  String get cashierFiatDepositCreditcardEcommpayMessage => 'Bitte einen Moment Geduld, dein Konto ist in wenigen Minuten aufgeladen.';
+  String get cashierFiatDepositCreditcardEcommpayMessage =>
+      'Bitte einen Moment Geduld, dein Konto ist in wenigen Minuten aufgeladen.';
 
   @override
   String get cashierFiatDepositCreditcardIframeDescription => ' ';
@@ -1165,7 +1187,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositCreditcardOpenNewWindowTitle => 'Fast fertig\n\n';
 
   @override
-  String get cashierFiatDepositCreditcardRavedirectFormDescription => 'Für diese Zahlungsart sind keine Auszahlungen möglich.';
+  String get cashierFiatDepositCreditcardRavedirectFormDescription =>
+      'Für diese Zahlungsart sind keine Auszahlungen möglich.';
 
   @override
   String get cashierFiatDepositCreditcardRavedirectMessage => ' ';
@@ -1275,7 +1298,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositIban => 'IBAN';
 
   @override
-  String get cashierFiatDepositInovapayLocalBankTransferBrlLimits => 'Bank transfers can take up to 1 business day to be confirmed';
+  String get cashierFiatDepositInovapayLocalBankTransferBrlLimits =>
+      'Bank transfers can take up to 1 business day to be confirmed';
 
   @override
   String get cashierFiatDepositInstant => 'Direkte Gutschrift';
@@ -1304,7 +1328,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositJetonCorefyAlmostDoneMessage => ' ';
 
   @override
-  String get cashierFiatDepositJetonCorefyFormDescription => 'Ich bestätige, dass ich der Kontoinhaber von diesem Konto bin.';
+  String get cashierFiatDepositJetonCorefyFormDescription =>
+      'Ich bestätige, dass ich der Kontoinhaber von diesem Konto bin.';
 
   @override
   String get cashierFiatDepositJetonCorefyOpenNewWindowTitle => 'Fast fertig\n\n';
@@ -1313,7 +1338,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositJetonExchangeRate => 'Geschätzter USDT Preis';
 
   @override
-  String get cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyJpyLimits => 'Daily deposit limit total of USD 500,000 every 24 hours';
+  String get cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyJpyLimits =>
+      'Daily deposit limit total of USD 500,000 every 24 hours';
 
   @override
   String get cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyLimits => '‎';
@@ -1343,16 +1369,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositKeitapayCustomerLastNamePlaceholder => 'z.B. Nakamoto (Katakana)';
 
   @override
-  String get cashierFiatDepositKeytaPayBankTransferJpyLimits => 'Scheduled maintenance will be carried out on every Sunday from 1900 to 800 the following Monday. Kindly avoid these hours if you are in a hurry.';
+  String get cashierFiatDepositKeytaPayBankTransferJpyLimits =>
+      'Scheduled maintenance will be carried out on every Sunday from 1900 to 800 the following Monday. Kindly avoid these hours if you are in a hurry.';
 
   @override
   String get cashierFiatDepositLastname => 'Nachname';
 
   @override
-  String get cashierFiatDepositLocalBankTransferInovapayFormDescription => 'Um dein Guthaben aufzuladen, zahle über Sportsbet.io ein. Mache bitte keine direkten Banküberweisungen von deinem Bankclient!';
+  String get cashierFiatDepositLocalBankTransferInovapayFormDescription =>
+      'Um dein Guthaben aufzuladen, zahle über Sportsbet.io ein. Mache bitte keine direkten Banküberweisungen von deinem Bankclient!';
 
   @override
-  String get cashierFiatDepositLocalBankTransferPinBankFormDescription => 'Um dein Guthaben aufzuladen, zahle über Sportsbet.io ein. Mache bitte keine direkten Banküberweisungen von deinem Bankclient!';
+  String get cashierFiatDepositLocalBankTransferPinBankFormDescription =>
+      'Um dein Guthaben aufzuladen, zahle über Sportsbet.io ein. Mache bitte keine direkten Banküberweisungen von deinem Bankclient!';
 
   @override
   String get cashierFiatDepositMaxLimit => 'Max  ';
@@ -1367,19 +1396,22 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositModalFooter => '&nbsp;';
 
   @override
-  String get cashierFiatDepositModalInstruction => 'Um die Transaktion abzuschließen, mache eine Banküberweisung auf dieses Konto anhand von den unten aufgeführten Angaben.';
+  String get cashierFiatDepositModalInstruction =>
+      'Um die Transaktion abzuschließen, mache eine Banküberweisung auf dieses Konto anhand von den unten aufgeführten Angaben.';
 
   @override
   String get cashierFiatDepositMuchbetter => 'MuchBetter';
 
   @override
-  String get cashierFiatDepositMuchbetterFormDescription => '<span>Du hast noch kein Konto? <a href=\"https//muchbetter.com/all/get-muchbetter/index.html?_branch_match_id=634307144850618811\" target=\"_blank\">Jetzt registrieren</a></span>';
+  String get cashierFiatDepositMuchbetterFormDescription =>
+      '<span>Du hast noch kein Konto? <a href=\"https//muchbetter.com/all/get-muchbetter/index.html?_branch_match_id=634307144850618811\" target=\"_blank\">Jetzt registrieren</a></span>';
 
   @override
   String get cashierFiatDepositMuchbetterIframeDescription => ' ';
 
   @override
-  String get cashierFiatDepositMuchbetterMessage => 'Melde dich jetzt bei deiner MuchBetter-App an und klicke, um deine Einzahlung zu bestätigen. Dein Konto wird dann sofort aufgeladen.\n';
+  String get cashierFiatDepositMuchbetterMessage =>
+      'Melde dich jetzt bei deiner MuchBetter-App an und klicke, um deine Einzahlung zu bestätigen. Dein Konto wird dann sofort aufgeladen.\n';
 
   @override
   String get cashierFiatDepositNationalid => 'Personalausweis';
@@ -1587,7 +1619,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositSofortOpenNewWindowTitle => 'Fast fertig';
 
   @override
-  String get cashierFiatDepositSomethingWentWrong => 'Etwas ist schief gelaufen! Bitte versuche es erneut oder wende dich an den Kundenservice.';
+  String get cashierFiatDepositSomethingWentWrong =>
+      'Etwas ist schief gelaufen! Bitte versuche es erneut oder wende dich an den Kundenservice.';
 
   @override
   String get cashierFiatDepositSportsbetBarupayAccountNumber => '7510561';
@@ -1623,7 +1656,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatDepositSumopayAnimex => 'Sumo Pay';
 
   @override
-  String get cashierFiatDepositSumopayAnimexFormDescription => 'Bitte beachten Ihre Bank kann eine zusätzliche Gebühr berechnen. Bitte  geben Sie bei der Zahlung nur  die Bestellnummer an. \n(1) Ich bestätige, dass ich der Kontoinhaber dieses Zahlungskontos bin. (2) Ich bestätige, dass ich nicht das Firmenkonto benutze.';
+  String get cashierFiatDepositSumopayAnimexFormDescription =>
+      'Bitte beachten Ihre Bank kann eine zusätzliche Gebühr berechnen. Bitte  geben Sie bei der Zahlung nur  die Bestellnummer an. \n(1) Ich bestätige, dass ich der Kontoinhaber dieses Zahlungskontos bin. (2) Ich bestätige, dass ich nicht das Firmenkonto benutze.';
 
   @override
   String get cashierFiatDepositSumopayAnimexMessage => '  ';
@@ -2065,7 +2099,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalCadGlobalDescription => ' ';
 
   @override
-  String get cashierFiatWithdrawalCanNotBeFractionAmount => 'Bitte beachte Summierte Werte werden nur ohne Dezimalstellen akzeptiert! (z.B. werden 1500,55 JPY nicht akzeptiert. Der Wert muss entweder 1500 JPY oder 1501 JPY entsprechen).';
+  String get cashierFiatWithdrawalCanNotBeFractionAmount =>
+      'Bitte beachte Summierte Werte werden nur ohne Dezimalstellen akzeptiert! (z.B. werden 1500,55 JPY nicht akzeptiert. Der Wert muss entweder 1500 JPY oder 1501 JPY entsprechen).';
 
   @override
   String get cashierFiatWithdrawalCardholder => 'Vor- und Zuname';
@@ -2086,7 +2121,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalCopyToClipboard => 'kopieren';
 
   @override
-  String get cashierFiatWithdrawalCorefyJetonJpyLimits => 'Please note that the daily withdrawal limit is 14,000,000 JPY. Daily limit refreshes each day at 1800 JST.';
+  String get cashierFiatWithdrawalCorefyJetonJpyLimits =>
+      'Please note that the daily withdrawal limit is 14,000,000 JPY. Daily limit refreshes each day at 1800 JST.';
 
   @override
   String get cashierFiatWithdrawalCpf => 'CPF eingeben';
@@ -2098,7 +2134,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalCpfAlreadyExistsCpf => 'CPF existiert bereits';
 
   @override
-  String get cashierFiatWithdrawalCpfDescription => 'Die angegebenen Daten werden bei allen zukünftigen Transaktionen verwendet\n';
+  String get cashierFiatWithdrawalCpfDescription =>
+      'Die angegebenen Daten werden bei allen zukünftigen Transaktionen verwendet\n';
 
   @override
   String get cashierFiatWithdrawalCreditCardAcapture => 'Kreditkarte';
@@ -2233,7 +2270,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalGoBack => 'Zurück gehen';
 
   @override
-  String get cashierFiatWithdrawalHelp2PayQaicashAlmostDoneMessage => 'Wenn du die Transaktion nicht abschließt, wird das Guthaben in 15 Minuten wieder auf dein Spielerkonto gutgeschrieben.\n\n';
+  String get cashierFiatWithdrawalHelp2PayQaicashAlmostDoneMessage =>
+      'Wenn du die Transaktion nicht abschließt, wird das Guthaben in 15 Minuten wieder auf dein Spielerkonto gutgeschrieben.\n\n';
 
   @override
   String get cashierFiatWithdrawalHelp2PayQaicashMessage => ' ';
@@ -2242,7 +2280,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalHelp2PayQaicashOpenNewWindowTitle => 'Fast fertig\n\n';
 
   @override
-  String get cashierFiatWithdrawalInovapayBankTransferBrlLimits => 'Bank transfer withdrawals can take up to 6 business days to be confirmed.';
+  String get cashierFiatWithdrawalInovapayBankTransferBrlLimits =>
+      'Bank transfer withdrawals can take up to 6 business days to be confirmed.';
 
   @override
   String get cashierFiatWithdrawalInterac => 'Interac';
@@ -2292,13 +2331,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalInvalidCustomerName => 'Invalid Customer name';
 
   @override
-  String get cashierFiatWithdrawalInvalidPixKey => 'Du hast einen ungültigen PIX-Schlüssel eingegeben. Gib deinen CPF ein. ';
+  String get cashierFiatWithdrawalInvalidPixKey =>
+      'Du hast einen ungültigen PIX-Schlüssel eingegeben. Gib deinen CPF ein. ';
 
   @override
   String get cashierFiatWithdrawalJetonCorefy => 'Überweisung';
 
   @override
-  String get cashierFiatWithdrawalJetonCorefyFormDescription => 'Ich bestätige, dass ich der Besitze dieses Kontos bin.';
+  String get cashierFiatWithdrawalJetonCorefyFormDescription =>
+      'Ich bestätige, dass ich der Besitze dieses Kontos bin.';
 
   @override
   String get cashierFiatWithdrawalJetonCorefyMessage => ' ';
@@ -2313,7 +2354,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalJpyGlobalDescription => ' ';
 
   @override
-  String get cashierFiatWithdrawalKeytaPayBankTransferJpyLimits => 'Scheduled maintenance will be carried on every Sunday from 1900 to 800 the following Monday. Kindly avoid these hours if you are in a hurry.';
+  String get cashierFiatWithdrawalKeytaPayBankTransferJpyLimits =>
+      'Scheduled maintenance will be carried on every Sunday from 1900 to 800 the following Monday. Kindly avoid these hours if you are in a hurry.';
 
   @override
   String get cashierFiatWithdrawalLastName => 'Nachname';
@@ -2328,7 +2370,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalLocalBankTransferQaicash => 'Banküberweisung - Auszahlung';
 
   @override
-  String get cashierFiatWithdrawalLocalBankTransferQaicashAlmostDoneMessage => 'Wenn du die Transaktion nicht abschließt, wird das Guthaben in 15 Minuten wieder auf dein Spielerkonto gutgeschrieben.\n';
+  String get cashierFiatWithdrawalLocalBankTransferQaicashAlmostDoneMessage =>
+      'Wenn du die Transaktion nicht abschließt, wird das Guthaben in 15 Minuten wieder auf dein Spielerkonto gutgeschrieben.\n';
 
   @override
   String get cashierFiatWithdrawalLocalBankTransferQaicashFormDescription => '  ';
@@ -2361,7 +2404,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalMuchbetter => 'MuchBetter';
 
   @override
-  String get cashierFiatWithdrawalMuchbetterFormDescription => '<span>Du hast noch kein Konto? <a href=\"https//muchbetter.com/all/get-muchbetter/index.html?_branch_match_id=634307144850618811\" target=\"_blank\">Jetzt registrieren</a></span>';
+  String get cashierFiatWithdrawalMuchbetterFormDescription =>
+      '<span>Du hast noch kein Konto? <a href=\"https//muchbetter.com/all/get-muchbetter/index.html?_branch_match_id=634307144850618811\" target=\"_blank\">Jetzt registrieren</a></span>';
 
   @override
   String get cashierFiatWithdrawalMuchbetterMessage => ' ';
@@ -2388,7 +2432,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalNotEnoughFundsAmount => 'Nicht genügend Guthaben auf deinem Konto';
 
   @override
-  String get cashierFiatWithdrawalNotFoundSavedAccountUuid => 'Konto konnte nicht gefunden werden. Bitte lade die Seite erneut';
+  String get cashierFiatWithdrawalNotFoundSavedAccountUuid =>
+      'Konto konnte nicht gefunden werden. Bitte lade die Seite erneut';
 
   @override
   String get cashierFiatWithdrawalNull => 'Telefonnummer';
@@ -2406,7 +2451,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierFiatWithdrawalPagavaCustomerNamePlaceholder => 'Satoshi Nakamoto (nur Englisch)';
 
   @override
-  String get cashierFiatWithdrawalPagsmilePixBrlLimits => 'PIX withdrawals can take up to 1 business day to be confirmed.';
+  String get cashierFiatWithdrawalPagsmilePixBrlLimits =>
+      'PIX withdrawals can take up to 1 business day to be confirmed.';
 
   @override
   String get cashierFiatWithdrawalPassword => 'Passwort';
@@ -2700,7 +2746,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierIfYouDontHaveBtc => 'Du kannst Bitcoins kaufen, indem du auf diesen Link klickst';
 
   @override
-  String get cashierInOrderToMakeADeposit => 'Um eine Einzahlung zu tätigen, müssen Sie Bitcoins auf unsere Adresse, die im Kassierer-Menü angezeigt wird, senden oder den Einzahlungs-QR-Code scannen. Beachten Sie, dass Sie die selbe Einzahlungsadresse nicht mehrmals verwenden können. ';
+  String get cashierInOrderToMakeADeposit =>
+      'Um eine Einzahlung zu tätigen, müssen Sie Bitcoins auf unsere Adresse, die im Kassierer-Menü angezeigt wird, senden oder den Einzahlungs-QR-Code scannen. Beachten Sie, dass Sie die selbe Einzahlungsadresse nicht mehrmals verwenden können. ';
 
   @override
   String get cashierInitializeAccountWebResource => 'Initializing account web-resource';
@@ -2709,7 +2756,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierInr => 'Indische Rupee';
 
   @override
-  String get cashierInstantBankTransferSuccess => 'Erfolg! Klicke auf \'Sofort-Überweisung\', um die Transaktion abzuschließen';
+  String get cashierInstantBankTransferSuccess =>
+      'Erfolg! Klicke auf \'Sofort-Überweisung\', um die Transaktion abzuschließen';
 
   @override
   String get cashierInstructions => 'Anweisungen';
@@ -2760,10 +2808,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierKycBannerBodyThreshold1 => 'Verifiziere bitte deine Identität für reibungslose Auszahlungen.';
 
   @override
-  String get cashierKycBannerBodyThreshold1Reminders => 'Heb die Einschränkungen auf und erhalte Belohnungen in nur wenigen leichten Schritten.';
+  String get cashierKycBannerBodyThreshold1Reminders =>
+      'Heb die Einschränkungen auf und erhalte Belohnungen in nur wenigen leichten Schritten.';
 
   @override
-  String get cashierKycBannerBodyThreshold2 => 'Bitte schließe deine Identitätsprüfung ab, um die Auszahlungseinschränkungen aufzuheben!\n';
+  String get cashierKycBannerBodyThreshold2 =>
+      'Bitte schließe deine Identitätsprüfung ab, um die Auszahlungseinschränkungen aufzuheben!\n';
 
   @override
   String get cashierKycBannerTitle => 'Verifiziere dein Konto';
@@ -2865,10 +2915,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierMinimumDepositTextAda => '5 ADA';
 
   @override
-  String get cashierMinimumDepositTextBtc => '0.00025 BTC = 0.25 mBTC = 250 μBTC. Bevor du eine Transaktion tätigst, stell bitte sicher, dass die eingegebene Adresse mit der hier angezeigten übereinstimmt.';
+  String get cashierMinimumDepositTextBtc =>
+      '0.00025 BTC = 0.25 mBTC = 250 μBTC. Bevor du eine Transaktion tätigst, stell bitte sicher, dass die eingegebene Adresse mit der hier angezeigten übereinstimmt.';
 
   @override
-  String get cashierMinimumDepositTextCad => '10 CAD. Bevor du eine Transaktion tätigst, stell bitte sicher, dass die eingegebene Adresse mit der hier angezeigten übereinstimmt.';
+  String get cashierMinimumDepositTextCad =>
+      '10 CAD. Bevor du eine Transaktion tätigst, stell bitte sicher, dass die eingegebene Adresse mit der hier angezeigten übereinstimmt.';
 
   @override
   String get cashierMinimumDepositTextDoge => '50 DOGE';
@@ -2883,7 +2935,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierMinimumDepositTextJpy => '  2500 JPY';
 
   @override
-  String get cashierMinimumDepositTextLtc => '0.05 LTC. Bevor du eine Transaktion tätigst, stell bitte sicher, dass die eingegebene Adresse mit der hier angezeigten übereinstimmt.';
+  String get cashierMinimumDepositTextLtc =>
+      '0.05 LTC. Bevor du eine Transaktion tätigst, stell bitte sicher, dass die eingegebene Adresse mit der hier angezeigten übereinstimmt.';
 
   @override
   String get cashierMinimumDepositTextMbtc => '0.5 mBTC = 500 μBTC';
@@ -2895,7 +2948,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierMinimumDepositTextThb => '200 THB';
 
   @override
-  String get cashierMinimumDepositTextTrx => '100 TRX. Bevor du eine Transaktion tätigst, stell bitte sicher, dass die eingegebene Adresse mit der hier angezeigten übereinstimmt.';
+  String get cashierMinimumDepositTextTrx =>
+      '100 TRX. Bevor du eine Transaktion tätigst, stell bitte sicher, dass die eingegebene Adresse mit der hier angezeigten übereinstimmt.';
 
   @override
   String get cashierMinimumDepositTextUbtc => '500 μBTC = 0.5 mBTC';
@@ -2904,7 +2958,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierMinimumDepositTextUsdt => 'Mindesteinzahlung beträgt 10 USDT. ';
 
   @override
-  String get cashierMinimumDepositTextXrp => '10 XRP. Erfordert deine Wallet einen Destination Tag? Erhalte die Kontoadresse und Destination Tag auf https//xrpaddress.info.';
+  String get cashierMinimumDepositTextXrp =>
+      '10 XRP. Erfordert deine Wallet einen Destination Tag? Erhalte die Kontoadresse und Destination Tag auf https//xrpaddress.info.';
 
   @override
   String get cashierMinimumDepositTitle => 'Mindesteinzahlung';
@@ -2919,7 +2974,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierMinimumDepositUsdt => 'Mindesteinzahlung beträgt 10 USDT. ';
 
   @override
-  String get cashierMinimumDepositXrp => 'Mindesteinzahlung beträgt 10 XRP. Erfordert deine Wallet einen Destination Tag? Erhalte die Kontoadresse und Destination Tag auf https//xrpaddress.info.';
+  String get cashierMinimumDepositXrp =>
+      'Mindesteinzahlung beträgt 10 XRP. Erfordert deine Wallet einen Destination Tag? Erhalte die Kontoadresse und Destination Tag auf https//xrpaddress.info.';
 
   @override
   String get cashierMinimumIs => 'Das Minimum beträgt';
@@ -2933,10 +2989,12 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashierMoonpayDepositsAreDisabled => 'Kryptowährungen kaufen mit dem MoonPay-Feature ist zur Zeit  deaktiviert.';
+  String get cashierMoonpayDepositsAreDisabled =>
+      'Kryptowährungen kaufen mit dem MoonPay-Feature ist zur Zeit  deaktiviert.';
 
   @override
-  String get cashierMoonpayPurchaseDescription => 'Möchtest du deine Karte benutzen, um Bitcoin, Ethereum usw. zu kaufen?';
+  String get cashierMoonpayPurchaseDescription =>
+      'Möchtest du deine Karte benutzen, um Bitcoin, Ethereum usw. zu kaufen?';
 
   @override
   String get cashierMoonpayPurchaseTitle => 'Kaufe Krypto mit MoonPay';
@@ -3022,7 +3080,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierOnboardingBalanceNewUsers => 'Suchst du nach einer anderen Währung?';
 
   @override
-  String get cashierOnramperPurchaseDescription => 'Möchtest du deine Karte benutzen, um Bitcoin, Ethereum usw. zu kaufen?';
+  String get cashierOnramperPurchaseDescription =>
+      'Möchtest du deine Karte benutzen, um Bitcoin, Ethereum usw. zu kaufen?';
 
   @override
   String get cashierOnramperTitle => 'Onramper';
@@ -3067,7 +3126,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierPaymentBuyMoreBitcoins => 'Kaufe mehr Bitcoins';
 
   @override
-  String get cashierPaymentCompanyAddress => '135, Nouv MT, Kyle Buildings, Triq il-Mediterran, St. Julian’s STJ 1870, Malta';
+  String get cashierPaymentCompanyAddress =>
+      '135, Nouv MT, Kyle Buildings, Triq il-Mediterran, St. Julian’s STJ 1870, Malta';
 
   @override
   String get cashierPaymentCompanyName => 'Block Technology GmbH., Registernummer C81495, DPA Referenznummer 11961';
@@ -3091,7 +3151,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierPaymentTransactionRegistered => 'Die Transaktion wurde registriert!';
 
   @override
-  String get cashierPaymentTransactionWillShow => 'Diese Transaktion wird auf deinem Bankkonto als \"Block Technology / +3562021345009\" erscheinen. ';
+  String get cashierPaymentTransactionWillShow =>
+      'Diese Transaktion wird auf deinem Bankkonto als \"Block Technology / +3562021345009\" erscheinen. ';
 
   @override
   String get cashierPaypayDepositPageTitle => 'Einzahlen per Banküberweisung';
@@ -3201,7 +3262,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierReturnToHome => 'Return to home';
 
   @override
-  String get cashierRewardActiveDescription => 'Damit du eine neue Belohnung aktivieren kannst, musst du zunächst deine aktuell aktive Belohnung verwirken.';
+  String get cashierRewardActiveDescription =>
+      'Damit du eine neue Belohnung aktivieren kannst, musst du zunächst deine aktuell aktive Belohnung verwirken.';
 
   @override
   String get cashierRewardActiveTitle => 'Du hast eine aktive Belohnung.';
@@ -3271,7 +3333,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierSelectDepositNetwork => 'Wähle das Einzahlungsnetzwerk';
 
   @override
-  String get cashierSelectDepositNetworkDescription => 'Bitte überprüfe immer die Einzahlungs-Wallet-Adresse auf unserer Website, bevor du deine Transaktionen tätigst.';
+  String get cashierSelectDepositNetworkDescription =>
+      'Bitte überprüfe immer die Einzahlungs-Wallet-Adresse auf unserer Website, bevor du deine Transaktionen tätigst.';
 
   @override
   String get cashierSelectVoucher => 'Gutschein auswählen';
@@ -3280,13 +3343,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierSelectWithdrawNetwork => 'Wähle das Auszahlungsnetzwerk';
 
   @override
-  String get cashierSelectWithdrawNetworkDescription => 'Bitte überprüfe immer die Auszahlungs-Wallet-Adresse auf unserer Website, bevor du deine Transaktionen tätigst.';
+  String get cashierSelectWithdrawNetworkDescription =>
+      'Bitte überprüfe immer die Auszahlungs-Wallet-Adresse auf unserer Website, bevor du deine Transaktionen tätigst.';
 
   @override
   String get cashierSelectWithdrawalNetwork => 'Select withdrawal network';
 
   @override
-  String get cashierSelectWithdrawalNetworkDescription => 'Please always check your withdrawal wallet address on our site before making your transactions.';
+  String get cashierSelectWithdrawalNetworkDescription =>
+      'Please always check your withdrawal wallet address on our site before making your transactions.';
 
   @override
   String get cashierSell => 'Auszahlen';
@@ -3363,13 +3428,15 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashierSimplexInstruction => 'Du erhältst umgehend eine Bestätigung\nund dein Guthaben wird entsprechend\ndem Transaktionsbetrag aktualisiert.\n';
+  String get cashierSimplexInstruction =>
+      'Du erhältst umgehend eine Bestätigung\nund dein Guthaben wird entsprechend\ndem Transaktionsbetrag aktualisiert.\n';
 
   @override
   String get cashierSoc => 'SOC';
 
   @override
-  String get cashierSocDepositDescription => 'SOC, die auf die oben angezeigte Adresse gesendet wurden, werden zu deinem Spielguthaben hinzugefügt. ';
+  String get cashierSocDepositDescription =>
+      'SOC, die auf die oben angezeigte Adresse gesendet wurden, werden zu deinem Spielguthaben hinzugefügt. ';
 
   @override
   String get cashierSocialBitcasinoInstagram => 'https//www.instagram.com/bitcasinoio/';
@@ -3450,19 +3517,23 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierTonInvoiceIdCopied => 'Rechnungsnummer kopiert';
 
   @override
-  String get cashierTooltipFee => 'Die Höhe der Bearbeitungsgebühr hängt von der ausgewählten Zahlungsmethode ab und kann sich deswegen nach der Wahl der einzelnen Zahlungsmethode verringern. ';
+  String get cashierTooltipFee =>
+      'Die Höhe der Bearbeitungsgebühr hängt von der ausgewählten Zahlungsmethode ab und kann sich deswegen nach der Wahl der einzelnen Zahlungsmethode verringern. ';
 
   @override
   String get cashierTooltipRate => 'Der Kurs wird jede 5 Minuten aktualisiert.';
 
   @override
-  String get cashierTooltipUseMobileOrQrEth => 'Dieser QR-Code lässt sich von deiner mobilen Ethereum Wallet lesen. Sobald der Code gescannt wird, bekommt deine Ethereum Wallet die Adresse des Wallets, wohin die Einzahlung des Spielguthabens zu leisten ist.';
+  String get cashierTooltipUseMobileOrQrEth =>
+      'Dieser QR-Code lässt sich von deiner mobilen Ethereum Wallet lesen. Sobald der Code gescannt wird, bekommt deine Ethereum Wallet die Adresse des Wallets, wohin die Einzahlung des Spielguthabens zu leisten ist.';
 
   @override
-  String get cashierTooltipUseMobileOrQrSoc => 'Dieser QR-Code lässt sich von deinem mobilen SOC Wallet lesen. Sobald der Code gescannt wird, bekommt dein SOC Wallet die Adresse des Wallets, wohin die Einzahlung des Spielguthabens zu leisten ist.';
+  String get cashierTooltipUseMobileOrQrSoc =>
+      'Dieser QR-Code lässt sich von deinem mobilen SOC Wallet lesen. Sobald der Code gescannt wird, bekommt dein SOC Wallet die Adresse des Wallets, wohin die Einzahlung des Spielguthabens zu leisten ist.';
 
   @override
-  String get cashierTooltipYourBitcoinDepositingAddress => 'Um Bitcoins auf dein Spielkonto zu bekommen, musst du diese auf die unten angezeigte Adresse schicken. Dies kannst du von einem beliebigen Bitcoin Wallet deiner Wahl tun.';
+  String get cashierTooltipYourBitcoinDepositingAddress =>
+      'Um Bitcoins auf dein Spielkonto zu bekommen, musst du diese auf die unten angezeigte Adresse schicken. Dies kannst du von einem beliebigen Bitcoin Wallet deiner Wahl tun.';
 
   @override
   String get cashierTransactionDateAt => 'at';
@@ -3670,10 +3741,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierUseMobileOrQr => 'Benutze Handy für QR';
 
   @override
-  String get cashierUtorgPurchaseDescription => 'Möchtest du deine Karte benutzen, um Bitcoin, Ethereum usw. zu kaufen?';
+  String get cashierUtorgPurchaseDescription =>
+      'Möchtest du deine Karte benutzen, um Bitcoin, Ethereum usw. zu kaufen?';
 
   @override
-  String get cashierUtorgPurchaseLicense => 'UTORG ist ein lizenzierter Drittdienstleister für Kryptowährungen. Indem Sie fortfahren, bestätigen und akzeptieren Sie den Tausch von Fiat- in Kryptogeld. UTORG übernimmt keine Verantwortung für weitere Verwendung der Kryptowährung, nachdem sie an Ihre Wallet-Adresse geschickt worden ist.';
+  String get cashierUtorgPurchaseLicense =>
+      'UTORG ist ein lizenzierter Drittdienstleister für Kryptowährungen. Indem Sie fortfahren, bestätigen und akzeptieren Sie den Tausch von Fiat- in Kryptogeld. UTORG übernimmt keine Verantwortung für weitere Verwendung der Kryptowährung, nachdem sie an Ihre Wallet-Adresse geschickt worden ist.';
 
   @override
   String get cashierUtorgPurchaseTitle => 'Krypto mit Karte kaufen';
@@ -3721,7 +3794,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierWeb3walletChainUnsupportedNetwork => 'Unsupported network';
 
   @override
-  String get cashierWeb3walletContinueWithWallet => 'Please continue with connected wallet to complete the transaction.';
+  String get cashierWeb3walletContinueWithWallet =>
+      'Please continue with connected wallet to complete the transaction.';
 
   @override
   String get cashierWeb3walletDisconnectWallet => 'Disconnect wallet';
@@ -3739,7 +3813,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierWeb3walletErrorContract => 'Contract write error';
 
   @override
-  String get cashierWeb3walletErrorEstimateGas => 'Estimate gas error make sure everything is correct and enough balance for gas price.';
+  String get cashierWeb3walletErrorEstimateGas =>
+      'Estimate gas error make sure everything is correct and enough balance for gas price.';
 
   @override
   String cashierWeb3walletErrorExceedsWalletBalance(Object walletBalance, Object currency) {
@@ -3755,10 +3830,12 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get cashierWeb3walletErrorPrepareContract => 'Prepare contract error make sure everything is correct and you have enough ETH for this transfer.';
+  String get cashierWeb3walletErrorPrepareContract =>
+      'Prepare contract error make sure everything is correct and you have enough ETH for this transfer.';
 
   @override
-  String get cashierWeb3walletErrorPrepareTransaction => 'Prepare transaction error make sure everything is correct and you have enough ETH for this transfer';
+  String get cashierWeb3walletErrorPrepareTransaction =>
+      'Prepare transaction error make sure everything is correct and you have enough ETH for this transfer';
 
   @override
   String get cashierWeb3walletErrorTransaction => 'Send transaction error';
@@ -3770,7 +3847,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierWeb3walletTransactionError => 'Payment failed';
 
   @override
-  String get cashierWeb3walletTransactionProgress => 'You\'ve successfully sent a payment. We are waiting for the payment to be verified by the network.';
+  String get cashierWeb3walletTransactionProgress =>
+      'You\'ve successfully sent a payment. We are waiting for the payment to be verified by the network.';
 
   @override
   String get cashierWeb3walletTransactionSuccess => 'Payment success.';
@@ -3809,10 +3887,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierWithdraw => 'Auszahlung';
 
   @override
-  String get cashierWithdraw3Confirmations => 'Um all deine Einzahlungen abzuheben, musst du mindestens 3 Bestätigungen haben. ';
+  String get cashierWithdraw3Confirmations =>
+      'Um all deine Einzahlungen abzuheben, musst du mindestens 3 Bestätigungen haben. ';
 
   @override
-  String get cashierWithdraw48hRestriction => 'Aus Sicherheitsgründen kannst du innerhalb von 48 Stunden nach der Änderung des Passwortes keine Beträge abheben.';
+  String get cashierWithdraw48hRestriction =>
+      'Aus Sicherheitsgründen kannst du innerhalb von 48 Stunden nach der Änderung des Passwortes keine Beträge abheben.';
 
   @override
   String get cashierWithdrawAda => 'ADA auszahlen';
@@ -3854,7 +3934,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierWithdrawInProgress => 'Auszahlung in Bearbeitung';
 
   @override
-  String get cashierWithdrawInfoCorrectFields => 'Vergewissere dich bitte, dass alle Felder korrekt ausgewählt oder ausgefüllt sind. Falsch überwiesene Beträge werden nicht erstattet.';
+  String get cashierWithdrawInfoCorrectFields =>
+      'Vergewissere dich bitte, dass alle Felder korrekt ausgewählt oder ausgefüllt sind. Falsch überwiesene Beträge werden nicht erstattet.';
 
   @override
   String get cashierWithdrawInfoXrp => 'Musst du ein Destination-Tag angeben? Generiere eine X-Adresse mit';
@@ -3988,7 +4069,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cashierWithdrawWalletDetails => 'Wallet-Informationen';
 
   @override
-  String get cashierWithdrawWarningConfirmAddress => 'Denke bitte immer daran, deine Auszahlungs-Wallet-Adresse zu überprüfen, bevor du deine Transaktionen tätigst.';
+  String get cashierWithdrawWarningConfirmAddress =>
+      'Denke bitte immer daran, deine Auszahlungs-Wallet-Adresse zu überprüfen, bevor du deine Transaktionen tätigst.';
 
   @override
   String get cashierWithdrawalAgents => 'Vetrteter';
@@ -4110,7 +4192,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsCompleteForm => 'Complete form before proceeding!';
 
   @override
-  String get errorsCooldownAfterPasswordChange => 'Aus Sicherheitsgründen kannst du innerhalb von 48 Stunden nach der Änderung des Passwortes keine Beträge abheben.';
+  String get errorsCooldownAfterPasswordChange =>
+      'Aus Sicherheitsgründen kannst du innerhalb von 48 Stunden nach der Änderung des Passwortes keine Beträge abheben.';
 
   @override
   String get errorsCorruptImage => 'Ungültige Bilddatei';
@@ -4125,13 +4208,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsCpfContactSupport => 'We couldn\'t validate your CPF, Please contact our support team';
 
   @override
-  String get errorsCurrencyMismatchBetweenSelectedCurrencyAndMarketBtcRate => 'Währungsinkongruenz zwischen der ausgewählten Währung und dem Bitcoin-Wechselkurs';
+  String get errorsCurrencyMismatchBetweenSelectedCurrencyAndMarketBtcRate =>
+      'Währungsinkongruenz zwischen der ausgewählten Währung und dem Bitcoin-Wechselkurs';
 
   @override
   String get errorsDisabledWithdrawals => 'Ein Fehler ist aufgetreten. Bitte kontaktiere unseren Support.';
 
   @override
-  String get errorsDisabledWithdrawalsSportsbet => 'Ein Fehler ist aufgetreten. Bitte kontaktieren Sie uns unter <a class=\'text-piccolo\' href=\"mailtosafety@sportsbet.io\">safety@sportsbet.io </a>';
+  String get errorsDisabledWithdrawalsSportsbet =>
+      'Ein Fehler ist aufgetreten. Bitte kontaktieren Sie uns unter <a class=\'text-piccolo\' href=\"mailtosafety@sportsbet.io\">safety@sportsbet.io </a>';
 
   @override
   String get errorsEmailAlreadyExists => 'Diese E-Mail-Adresse existiert schon in unserem System';
@@ -4229,19 +4314,23 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsInvalidStatusUpdate => 'Ungültige Statusaktualisierung';
 
   @override
-  String get errorsInvalidUsername => 'Ein Benutzername muss 3-20 Zeichen lang sein und kann nur Buchstaben, Zahlen und _ beinhalten';
+  String get errorsInvalidUsername =>
+      'Ein Benutzername muss 3-20 Zeichen lang sein und kann nur Buchstaben, Zahlen und _ beinhalten';
 
   @override
   String get errorsInvalidUsernameOrPassword => 'Ungültiger Benutzername oder Passwort';
 
   @override
-  String get errorsInvalidUsernamePasswordOrOtp => 'Bitte überprüfe deinen Login, Passwort oder Google Authenticator Code';
+  String get errorsInvalidUsernamePasswordOrOtp =>
+      'Bitte überprüfe deinen Login, Passwort oder Google Authenticator Code';
 
   @override
-  String get errorsInvalidLightningNetworkInvoice => 'The invoice cannot be used twice. <br />Please create new one on your wallet application to start your withdrawal.';
+  String get errorsInvalidLightningNetworkInvoice =>
+      'The invoice cannot be used twice. <br />Please create new one on your wallet application to start your withdrawal.';
 
   @override
-  String get errorsInvoiceExpiredAddress => 'Withdrawal request is expired. <br /> Please create new one on your wallet application to start your withdrawal.';
+  String get errorsInvoiceExpiredAddress =>
+      'Withdrawal request is expired. <br /> Please create new one on your wallet application to start your withdrawal.';
 
   @override
   String get errorsIsRequired => 'Pflichtfeld';
@@ -4281,7 +4370,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsNoInternetConnection => 'Not connected to the internet. Please try again';
 
   @override
-  String get errorsNoMarketBtcRateAvailableForSelectedCurrency => 'Kein Bitcoin-Wechselkurs verfügbar für die ausgewählte Währung';
+  String get errorsNoMarketBtcRateAvailableForSelectedCurrency =>
+      'Kein Bitcoin-Wechselkurs verfügbar für die ausgewählte Währung';
 
   @override
   String errorsNoWithdrawalsAvailableAtThisTime(Object currency) {
@@ -4295,7 +4385,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsNotAllowedToUseApp => 'Sorry! You are not allowed to use this application from your location';
 
   @override
-  String get errorsNotAllowedToUseExchangeMethod => 'Du hast keine Berechtigung, die ausgewählte Umrechnungsmethode zu nutzen';
+  String get errorsNotAllowedToUseExchangeMethod =>
+      'Du hast keine Berechtigung, die ausgewählte Umrechnungsmethode zu nutzen';
 
   @override
   String get errorsNotAllowedToUseSite => 'Es ist verboten, diese Webseite von deinem Standort aus zu nutzen';
@@ -4313,7 +4404,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsOtpIsRequired => 'Bitte gib deinen Google Authenticator Code ein';
 
   @override
-  String get errorsOtpMustBeDisabled => 'Um dein bestehendes Konto mit deinem Facebook-Konto zu verlinken, musst du zuerst den Google Authenticator deaktivieren. ';
+  String get errorsOtpMustBeDisabled =>
+      'Um dein bestehendes Konto mit deinem Facebook-Konto zu verlinken, musst du zuerst den Google Authenticator deaktivieren. ';
 
   @override
   String get errorsOtpVerificationFailed => 'Dein Google Authenticator Code ist falsch.';
@@ -4331,13 +4423,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsPasswordDoesNotMatch => 'Die Kennwörter stimmen nicht überein';
 
   @override
-  String get errorsPasswordRecoveryEmailNotFound => 'Falsche E-Mail-Adresse. Bitte überprüfe deine Eingabe und versuche es erneut.';
+  String get errorsPasswordRecoveryEmailNotFound =>
+      'Falsche E-Mail-Adresse. Bitte überprüfe deine Eingabe und versuche es erneut.';
 
   @override
   String get errorsPasswordRecoveryUnableToChangePassword => 'Änderung des Passwortes fehlgeschlagen';
 
   @override
-  String get errorsPasswordResetDeniedForSocialUser => 'Du hast dich über ein soziales Netzwerk registriert. Für die Anmeldung, klicke bitte auf den Button des Sozialnetzwerkes, mit dem du dich registriert hast. ';
+  String get errorsPasswordResetDeniedForSocialUser =>
+      'Du hast dich über ein soziales Netzwerk registriert. Für die Anmeldung, klicke bitte auf den Button des Sozialnetzwerkes, mit dem du dich registriert hast. ';
 
   @override
   String get errorsPasswordResetDeniedUserDeleted => 'Passwortzurücksetzung fehlgeschlagen. Das Konto wurde entfernt.';
@@ -4346,7 +4440,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsPasswordTooShort => 'Dein Passwort muss mindestens 6 Zeichen lang sein';
 
   @override
-  String get errorsPasswordTooWeak => 'Dieses Kennwort ist zu unsicher. Ein sicheres Kennwort enthält Großbuchstaben und Zahlen';
+  String get errorsPasswordTooWeak =>
+      'Dieses Kennwort ist zu unsicher. Ein sicheres Kennwort enthält Großbuchstaben und Zahlen';
 
   @override
   String get errorsPatternDoesNotMatch => 'Ungültige Eingabe';
@@ -4358,10 +4453,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsPaymentMethodIsNotSupported => 'Diese Zahlungsmethode wird nicht unterstützt';
 
   @override
-  String get errorsPaymentMethodIsNotSupportedInCurrentCountry => 'Diese Zahlungsmethode wird im aktuellen Land nicht unterstützt';
+  String get errorsPaymentMethodIsNotSupportedInCurrentCountry =>
+      'Diese Zahlungsmethode wird im aktuellen Land nicht unterstützt';
 
   @override
-  String get errorsPaymentMethodIsNotSupportedWithSelectedCurrency => 'Diese Zahlungsmethode wird mit der ausgewählten Währung nicht unterstützt';
+  String get errorsPaymentMethodIsNotSupportedWithSelectedCurrency =>
+      'Diese Zahlungsmethode wird mit der ausgewählten Währung nicht unterstützt';
 
   @override
   String get errorsPaymentStatusMustBeNew => 'Der Zahlungsstatus muss neu sein';
@@ -4388,13 +4485,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsRequired => 'Pflichtfeld';
 
   @override
-  String get errorsRequiresDestinationTag => 'Ein Destinations Tag wird benötigt. Generiere eine X-Adresse unter Benutzung von https//xrpaddress.info.';
+  String get errorsRequiresDestinationTag =>
+      'Ein Destinations Tag wird benötigt. Generiere eine X-Adresse unter Benutzung von https//xrpaddress.info.';
 
   @override
   String get errorsSelectedCurrencyIsNotSupported => 'Die ausgewählte Währung wird nicht unterstützt';
 
   @override
-  String get errorsSelectedCurrencyIsNotSupportedInCurrentCountry => 'Die ausgewählte Währung wird im aktuellen Land nicht unterstützt';
+  String get errorsSelectedCurrencyIsNotSupportedInCurrentCountry =>
+      'Die ausgewählte Währung wird im aktuellen Land nicht unterstützt';
 
   @override
   String get errorsSignUpEmailOrUsernameIsTaken => 'E-Mail-Adresse oder Benutzername schon vergeben';
@@ -4409,10 +4508,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsSms2faVerificationFailed => 'Ungültiger OTP Code';
 
   @override
-  String get errorsSocialAuthConnectVerifyEmail => 'Um diese Login-Methode zu benutzen, melde dich zeurst bei deinem Konto an und verifiziere deine E-Mail-Adresse';
+  String get errorsSocialAuthConnectVerifyEmail =>
+      'Um diese Login-Methode zu benutzen, melde dich zeurst bei deinem Konto an und verifiziere deine E-Mail-Adresse';
 
   @override
-  String get errorsSomethingWentWrong => 'Etwas ist schief gelaufen! Bitte versuche es erneut oder wende dich an den Kundenservice.';
+  String get errorsSomethingWentWrong =>
+      'Etwas ist schief gelaufen! Bitte versuche es erneut oder wende dich an den Kundenservice.';
 
   @override
   String get errorsSpreadTooHigh => 'Spread zu hoch';
@@ -4433,10 +4534,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsTooManyLoginAttempts => 'Zu viele Anmeldungsversuche! Bitte versuche es später erneut. ';
 
   @override
-  String get errorsTooManyPasswordResetAttempts => 'Zu viele Versuche das Passwort zurückzusetzen. Bitte versuche es später noch einmal.';
+  String get errorsTooManyPasswordResetAttempts =>
+      'Zu viele Versuche das Passwort zurückzusetzen. Bitte versuche es später noch einmal.';
 
   @override
-  String get errorsTooManySms2faAttempts => 'Zu viele Authentifizierungsversuche über SMS! Bitte versuche es in 15 Minuten erneut. ';
+  String get errorsTooManySms2faAttempts =>
+      'Zu viele Authentifizierungsversuche über SMS! Bitte versuche es in 15 Minuten erneut. ';
 
   @override
   String get errorsTooManySmsSent => 'Zu viele SMS verschickt. Bitte versuche es in 15 Minuten erneut. ';
@@ -4454,13 +4557,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsUbtcMustBeGreater => 'Der Betrag muss mindestens 2,000 µBTC sein';
 
   @override
-  String get errorsUnconfirmedDeposit => 'Deine Einzahlung muss zuerst bestätigt werden, bevor du eine Auszahlung tätigen kannst. ';
+  String get errorsUnconfirmedDeposit =>
+      'Deine Einzahlung muss zuerst bestätigt werden, bevor du eine Auszahlung tätigen kannst. ';
 
   @override
   String get errorsUnverifiedEmail => 'Die E-Mail-Adresse ist nicht verifiziert';
 
   @override
-  String get errorsUserSelfExclusionIsActive => 'Du bist aktuell für insgesamt 24 Stunden von deinem Konto ausgeschlossen, nachdem du den “Panik Knopf” betätigt hast. Nach Ablauf der 24 Stunden kannst du dich wieder wie gewohnt in deinem Konto anmelden.';
+  String get errorsUserSelfExclusionIsActive =>
+      'Du bist aktuell für insgesamt 24 Stunden von deinem Konto ausgeschlossen, nachdem du den “Panik Knopf” betätigt hast. Nach Ablauf der 24 Stunden kannst du dich wieder wie gewohnt in deinem Konto anmelden.';
 
   @override
   String get errorsUsernameAlreadyExists => 'Dieser Benutzername existiert schon';
@@ -4484,10 +4589,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get errorsYourAccountIsDisabled => 'Dein Konto ist deaktiviert - bitte kontaktier die Kundenbetreuung';
 
   @override
-  String get errorsYourAccountIsDisabledSecurity => 'Dein Konto ist deaktiviert. Kontaktiere bitte unseren Kundendienst für weitere Informationen. ';
+  String get errorsYourAccountIsDisabledSecurity =>
+      'Dein Konto ist deaktiviert. Kontaktiere bitte unseren Kundendienst für weitere Informationen. ';
 
   @override
-  String get errorsYourAccountIsDormant => 'Dieses Spielerkonto wurde wegen langer Inaktivität zu deiner Sicherheit geschlossen. Bitte kontaktiere security@bitcasino.io für Hilfe.';
+  String get errorsYourAccountIsDormant =>
+      'Dieses Spielerkonto wurde wegen langer Inaktivität zu deiner Sicherheit geschlossen. Bitte kontaktiere security@bitcasino.io für Hilfe.';
 
   @override
   String get fundsBalance => 'Guthaben';
@@ -4650,7 +4757,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get transactionExchangeWithdrawalJpy => 'JPY zu BTC Umrechnung';
 
   @override
-  String get transactionIncompleteBtc => 'Dein BTC-Kauf ist unvollständig. Um die Transaktion abzuschließen, musst du weitere Informationen hinzufügen.';
+  String get transactionIncompleteBtc =>
+      'Dein BTC-Kauf ist unvollständig. Um die Transaktion abzuschließen, musst du weitere Informationen hinzufügen.';
 
   @override
   String get transactionLink => 'Transaktions-ID';
