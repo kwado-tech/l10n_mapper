@@ -70,5 +70,6 @@
 ## 2.2.0
 * Update build dependency :
     - build: ^2.4.2 -> ^3.0.0
+    - build: ^2.4.14 -> ^2.6.0
     - source_gen: ^2.0.0 -> ^3.0.0
     - flutter_lints: ^5.0.0 -> ^6.0.0
