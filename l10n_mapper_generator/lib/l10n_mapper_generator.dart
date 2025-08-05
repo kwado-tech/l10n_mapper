@@ -42,7 +42,7 @@ class L10nMapperGenerator extends Generator {
     for (var classElement in library.classes.where((c) => c.isAbstract)) {
       if (classNames.contains(classElement.displayName)) {
         final className = classElement.displayName;
-        final localizationPath = classElement.source.uri;
+        final localizationPath = classElement.library2.uri;
         final mapperName = '${className}Mapper';
         final appLocalizationsExtensionName = '${className}Extension';
         final buildContextExtensionName = 'BuildContextExtension';
@@ -135,8 +135,8 @@ class L10nMapperGenerator extends Generator {
 
         buffer.writeln('return {');
         // all getters
-        for (final field in classElement.fields) {
-          final name = field.name;
+        for (final field in classElement.fields2) {
+          final name = field.displayName;
 
           // skips gen-exceptions
           if (genExceptions.contains(name)) continue;
@@ -145,12 +145,12 @@ class L10nMapperGenerator extends Generator {
         }
 
         // all methods
-        for (final method in classElement.methods) {
-          final name = method.name;
+        for (final method in classElement.methods2) {
+          final name = method.displayName;
 
           // skips gen-exceptions
           if (genExceptions.contains(name)) continue;
-          final parameters = method.parameters.map((e) => e.name).join(', ');
+          final parameters = method.formalParameters.map((e) => e.displayName).join(', ');
 
           buffer.writeln("'$name': ($parameters) => localizations.$name($parameters),");
         }
