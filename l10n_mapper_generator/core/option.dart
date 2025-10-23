@@ -6,10 +6,10 @@ class Option<T> {
   bool get isSome => _value != null;
   bool get isNone => _value == null;
 
-  T getOrElse(T Function() _) {
+  T getOrElse(T Function() cover) {
     if (isSome) return _value!;
 
-    return _();
+    return cover();
   }
 
   @override
