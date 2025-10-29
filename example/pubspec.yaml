@@ -24,4 +24,5 @@ dev_dependencies:
     path: ../l10n_mapper_generator
 
 flutter:
+  generate: true
   uses-material-design: true
