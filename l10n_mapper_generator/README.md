@@ -7,9 +7,10 @@ A dart package to support parsing dynamic translation keys (as flutter-localizat
 #### 📚 Documentation
 
 For detailed documentation about performance optimization and implementation details, see the [docs/](../docs/) directory:
-- [Performance Guide](../docs/PERFORMANCE.md) - Benchmarks and technical details
-- [Before & After Comparison](../docs/BEFORE_AFTER.md) - Visual examples and metrics
-- [Implementation Summary](../docs/IMPLEMENTATION_SUMMARY.md) - Complete technical documentation
+- **[Quick Start](../docs/getting-started/QUICK_START.md)** - 60-second overview ⭐
+- **[Performance Guide](../docs/technical/PERFORMANCE.md)** - Benchmarks and technical details
+- **[Before & After Comparison](../docs/technical/BEFORE_AFTER.md)** - Visual examples and metrics
+- **[Complete Documentation](../docs/)** - All guides organized by topic
 
 #### Getting started
 *`l10n_mapper_generator: >=2.0.0` deprecates the use of [l10n_mapper_annotation](https://pub.dev/packages/l10n_mapper_annotation) as annotation is no longer required to work with `>=2.0.0`*
@@ -57,7 +58,7 @@ The generator includes automatic performance optimization with **lazy-initialize
 - **Memory efficient**: Single map per active locale, minimal GC pressure
 - **Zero configuration**: Works automatically, no setup required
 
-For large translation files (1000+ keys), this provides significant performance improvements. See [docs/PERFORMANCE.md](../docs/PERFORMANCE.md) for detailed benchmarks and implementation details.
+For large translation files (1000+ keys), this provides significant performance improvements. See [docs/technical/PERFORMANCE.md](../docs/technical/PERFORMANCE.md) for detailed benchmarks and implementation details.
 
 #### Mapper
 This generates a `app_localizations.g.dart` file provided your project already setup localization. With generated `app_localizations.dart`, utility methods are generated for dynamic localization-keys access by the generator.

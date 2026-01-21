@@ -81,4 +81,4 @@
     - Reduced memory allocations and GC pressure significantly
     - Added `L10nHelper.clearCache()` method for cache management
     - Zero configuration required - automatic performance optimization
-    - See [docs/PERFORMANCE.md](../docs/PERFORMANCE.md) for detailed benchmarks
+    - See [docs/technical/PERFORMANCE.md](../docs/technical/PERFORMANCE.md) for detailed benchmarks

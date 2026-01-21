@@ -1,80 +1,57 @@
 # Documentation
 
-This directory contains comprehensive documentation for the l10n_mapper performance optimization.
+Welcome to l10n_mapper documentation! This directory contains comprehensive guides for using, understanding, and maintaining the l10n_mapper package.
 
-## 🚀 Start Here
+---
 
-**New to this optimization?** Start with [QUICK_START.md](./QUICK_START.md) - Get up to speed in 60 seconds!
+## 🚀 Getting Started
 
-## 📚 Available Documentation
+Quick guides to get you up and running:
 
-### [QUICK_START.md](./QUICK_START.md) ⭐
-60-second overview for quick reference:
-- What changed and why
-- Do you need to change your code?
-- Simple examples
-- Quick links to detailed docs
+### 📁 [getting-started/](./getting-started/)
 
-### [WORKFLOW.md](./WORKFLOW.md) 🔍
-Complete workflow explanation:
-- How `context.l10n.key` works (direct property access)
-- How `context.parseL10n('key')` works (dynamic lookup)
-- Step-by-step flow diagrams with caching
-- Performance comparison
-- When to use each approach
-- Multi-locale scenarios
+- **[Quick Start](./getting-started/QUICK_START.md)** - 60-second overview of l10n_mapper ⭐
+- **[Release Guide](./getting-started/RELEASE_GUIDE.md)** - Release a new version in 30 seconds
+- **[Choosing Release Method](./getting-started/CHOOSING_RELEASE_METHOD.md)** - Manual vs Automated releases
 
-### [STATIC_VS_SINGLETON.md](./STATIC_VS_SINGLETON.md) 🏗️
-Technical deep-dive on the implementation:
-- Why static members work like a singleton
-- Memory analysis and proof of cache sharing
-- Static vs Singleton pattern comparison
-- Why the current approach is optimal
-- Testing strategies
+**New here?** Start with [Quick Start](./getting-started/QUICK_START.md)!
 
-### [PERFORMANCE.md](./PERFORMANCE.md)
-Detailed performance documentation including:
-- Problem identification and analysis
-- Solution implementation details
-- Benchmarking results and methodology
-- Usage examples and best practices
-- When to clear cache
-- Testing recommendations
+---
 
-### [BEFORE_AFTER.md](./BEFORE_AFTER.md)
-Visual before/after comparison featuring:
-- Side-by-side code comparison
-- Performance metrics tables
-- Real-world examples
-- Memory usage comparison
-- Multi-locale support demonstration
+## 🔄 Migration Information
 
-### [IMPLEMENTATION_SUMMARY.md](./IMPLEMENTATION_SUMMARY.md)
-Complete implementation documentation covering:
-- Problem statement and impact
-- Solution architecture
-- Code changes made
-- Test results
-- API changes and backward compatibility
-- Files modified
-- Verification steps
+Transitioning from old workflows:
 
-## 🚀 Quick Links
+### 📁 [migration/](./migration/)
 
-### For New Users
-Start here: [QUICK_START.md](./QUICK_START.md) - 60-second overview
+- **[What's New](./migration/WHATS_NEW.md)** - Overview of automation features
+- **[Automation Summary](./migration/AUTOMATION_SUMMARY.md)** - Detailed explanation of changes
 
-### For Understanding How It Works
-Read this: [WORKFLOW.md](./WORKFLOW.md) - Complete workflow explanation
+**Note:** These docs help with the transition to GitHub Actions. Can be archived once your team is fully onboarded.
 
-### For Visual Comparison
-Check out: [BEFORE_AFTER.md](./BEFORE_AFTER.md) - Easy to understand examples
+---
 
-### For Developers
-Deep dive: [PERFORMANCE.md](./PERFORMANCE.md) - Technical details and benchmarks
+## 🔧 Technical Documentation
 
-### For Contributors
-Implementation details: [IMPLEMENTATION_SUMMARY.md](./IMPLEMENTATION_SUMMARY.md) - Full technical documentation
+Deep dives and implementation details:
+
+### 📁 [technical/](./technical/)
+
+#### Complete Guides
+- **[Automated Releases](./technical/AUTOMATED_RELEASES.md)** - Full GitHub Actions automation guide
+
+#### Performance
+- **[Performance Optimization](./technical/PERFORMANCE.md)** - Caching mechanism details
+- **[Before & After Comparison](./technical/BEFORE_AFTER.md)** - Visual performance comparison
+
+#### System Understanding
+- **[System Workflow](./technical/WORKFLOW.md)** - How localization works end-to-end
+- **[Implementation Summary](./technical/IMPLEMENTATION_SUMMARY.md)** - Technical implementation notes
+
+#### Reference
+- **[Legacy Versioning](./technical/VERSIONING_LEGACY.md)** - Historical local script reference
+
+---
 
 ## 📊 Performance Highlights
 
@@ -84,19 +61,56 @@ Implementation details: [IMPLEMENTATION_SUMMARY.md](./IMPLEMENTATION_SUMMARY.md)
 - ✨ **Zero configuration** - works automatically
 - ✅ **100% backward compatible** - no code changes needed
 
-## 🎯 TL;DR
+---
 
-The optimization adds lazy-initialized caching to translation lookups:
-- First lookup creates and caches the translation map
-- All subsequent lookups use the cached map (O(1) access)
-- Separate cache per locale (e.g., "en", "de", "ar")
-- Optional `L10nHelper.clearCache()` for manual cache management
+## 🎯 Quick Navigation
 
-**Result**: From O(n) to O(1) lookup time, with massive memory savings.
+### For New Users
+👉 [Quick Start](./getting-started/QUICK_START.md) - Get started in 60 seconds
+
+### For Maintainers
+👉 [Release Guide](./getting-started/RELEASE_GUIDE.md) - Release in 30 seconds  
+👉 [Choosing Method](./getting-started/CHOOSING_RELEASE_METHOD.md) - Which workflow to use
+
+### For Understanding How It Works
+👉 [System Workflow](./technical/WORKFLOW.md) - Complete explanation  
+👉 [Before & After](./technical/BEFORE_AFTER.md) - Visual examples
+
+### For Developers & Contributors
+👉 [Performance Details](./technical/PERFORMANCE.md) - Technical deep dive  
+👉 [Implementation Summary](./technical/IMPLEMENTATION_SUMMARY.md) - Full technical docs
+
+---
 
 ## 🔗 Related Files
 
-- Main README: [../README.md](../README.md)
-- Generator README: [../l10n_mapper_generator/README.md](../l10n_mapper_generator/README.md)
-- Changelog: [../l10n_mapper_generator/CHANGELOG.md](../l10n_mapper_generator/CHANGELOG.md)
-- Performance Tests: [../example/test/localization_performance_test.dart](../example/test/localization_performance_test.dart)
+- **Main README:** [../README.md](../README.md)
+- **Generator README:** [../l10n_mapper_generator/README.md](../l10n_mapper_generator/README.md)
+- **Changelog:** [../l10n_mapper_generator/CHANGELOG.md](../l10n_mapper_generator/CHANGELOG.md)
+- **Performance Tests:** [../example/test/localization_performance_test.dart](../example/test/localization_performance_test.dart)
+
+---
+
+## 📂 Directory Structure
+
+```
+docs/
+├── README.md (this file)
+│
+├── getting-started/        ← Quick guides for new users
+│   ├── QUICK_START.md
+│   ├── RELEASE_GUIDE.md
+│   └── CHOOSING_RELEASE_METHOD.md
+│
+├── migration/             ← Transition documentation
+│   ├── WHATS_NEW.md
+│   └── AUTOMATION_SUMMARY.md
+│
+└── technical/             ← Deep dives and implementation
+    ├── AUTOMATED_RELEASES.md
+    ├── PERFORMANCE.md
+    ├── BEFORE_AFTER.md
+    ├── WORKFLOW.md
+    ├── IMPLEMENTATION_SUMMARY.md
+    └── VERSIONING_LEGACY.md
+```

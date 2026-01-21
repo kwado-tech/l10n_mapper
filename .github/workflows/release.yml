@@ -1,0 +1,177 @@
+name: Release Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (e.g., 2.3.0)'
+        required: true
+        type: string
+      changelog:
+        description: 'Changelog entry (what changed in this version)'
+        required: true
+        type: string
+
+env:
+  flutter_version: '3.32.8'
+  java_version: 17
+  flutter_channel: 'stable'
+  PACKAGE_DIR: l10n_mapper_generator
+
+jobs:
+  release:
+    name: Release Package
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Validate version format
+        run: |
+          VERSION="${{ github.event.inputs.version }}"
+          if ! [[ $VERSION =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+(\.[0-9]+)?)?$ ]]; then
+            echo "❌ Invalid version format: $VERSION"
+            echo "Expected format: X.Y.Z or X.Y.Z-prerelease"
+            exit 1
+          fi
+          echo "✅ Version format valid: $VERSION"
+          
+      - name: Check if version already exists
+        run: |
+          VERSION="${{ github.event.inputs.version }}"
+          if git tag | grep -q "^$VERSION$"; then
+            echo "❌ Version $VERSION already exists!"
+            exit 1
+          fi
+          echo "✅ Version $VERSION is new"
+          
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.5'
+          bundler-cache: true
+          working-directory: ${{ env.PACKAGE_DIR }}
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v3.11.0
+        with:
+          java-version: ${{ env.java_version }}
+          distribution: 'zulu'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.10.0
+        with:
+          flutter-version: ${{ env.flutter_version }}
+          channel: ${{ env.flutter_channel }}
+          cache: false
+          
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+      - name: Update pubspec.yaml version
+        working-directory: ${{ env.PACKAGE_DIR }}
+        run: |
+          VERSION="${{ github.event.inputs.version }}"
+          sed -i "s/^version:.*/version: $VERSION/" pubspec.yaml
+          echo "✅ Updated pubspec.yaml to version $VERSION"
+          
+      - name: Update CHANGELOG.md
+        working-directory: ${{ env.PACKAGE_DIR }}
+        run: |
+          VERSION="${{ github.event.inputs.version }}"
+          DATE=$(date +%Y-%m-%d)
+          CHANGELOG="${{ github.event.inputs.changelog }}"
+          
+          # Create changelog entry
+          cat > /tmp/new_changelog.md << EOF
+          ## $VERSION
+          $(echo "$CHANGELOG" | sed 's/^/* /')
+          
+          EOF
+          
+          # Insert at the beginning of changelog (after any header)
+          if grep -q "^## [0-9]" CHANGELOG.md; then
+            awk -v new="$(cat /tmp/new_changelog.md)" '/^## [0-9]/ && !found {print new; found=1} 1' CHANGELOG.md > CHANGELOG.md.tmp
+            mv CHANGELOG.md.tmp CHANGELOG.md
+          else
+            # If no version entries exist yet, append
+            echo "$(cat /tmp/new_changelog.md)" >> CHANGELOG.md
+          fi
+          
+          echo "✅ Updated CHANGELOG.md"
+          cat CHANGELOG.md | head -20
+          
+      - name: Install dependencies
+        working-directory: ${{ env.PACKAGE_DIR }}
+        run: dart pub get
+          
+      - name: Run analysis
+        working-directory: ${{ env.PACKAGE_DIR }}
+        run: dart analyze
+  
+      - name: Run format check
+        working-directory: ${{ env.PACKAGE_DIR }}
+        run: dart format --set-exit-if-changed --line-length=120 .
+
+      - name: Run tests
+        working-directory: ${{ env.PACKAGE_DIR }}
+        run: dart test
+        
+      - name: Dry-run publish
+        working-directory: ${{ env.PACKAGE_DIR }}
+        run: dart pub publish --dry-run
+        
+      - name: Commit version bump
+        run: |
+          VERSION="${{ github.event.inputs.version }}"
+          git add .
+          git commit -m "chore: bump version to $VERSION"
+          git push origin main
+          
+      - name: Setup pub credentials
+        run: |
+          mkdir -p $HOME/.pub-cache
+          echo '${{ secrets.CREDENTIAL_JSON }}' > $HOME/.pub-cache/credentials.json
+          
+      - name: Publish to pub.dev
+        working-directory: ${{ env.PACKAGE_DIR }}
+        run: dart pub publish --force
+
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ github.event.inputs.version }}
+          name: v${{ github.event.inputs.version }}
+          body: |
+            ## Changes
+            ${{ github.event.inputs.changelog }}
+            
+            ## Installation
+            ```yaml
+            dependencies:
+              l10n_mapper_generator: ^${{ github.event.inputs.version }}
+            ```
+            
+            ## Pub.dev
+            https://pub.dev/packages/l10n_mapper_generator/versions/${{ github.event.inputs.version }}
+          makeLatest: true
+          
+      - name: Release Summary
+        run: |
+          VERSION="${{ github.event.inputs.version }}"
+          echo "### 🎉 Release Complete!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Version:** $VERSION" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Published to:**" >> $GITHUB_STEP_SUMMARY
+          echo "- 📦 [pub.dev](https://pub.dev/packages/l10n_mapper_generator/versions/$VERSION)" >> $GITHUB_STEP_SUMMARY
+          echo "- 🏷️ [GitHub Release](https://github.com/${{ github.repository }}/releases/tag/$VERSION)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**What's New:**" >> $GITHUB_STEP_SUMMARY
+          echo "${{ github.event.inputs.changelog }}" | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
