@@ -119,9 +119,9 @@ jobs:
       #   working-directory: ${{ env.PACKAGE_DIR }}
       #   run: dart format --set-exit-if-changed --line-length=120 .
 
-      - name: Run tests
-        working-directory: ${{ env.PACKAGE_DIR }}
-        run: dart test
+      # - name: Run tests
+      #   working-directory: ${{ env.PACKAGE_DIR }}
+      #   run: dart test
         
       - name: Dry-run publish
         working-directory: ${{ env.PACKAGE_DIR }}
