@@ -3,6 +3,8 @@ targets:
     builders:
       l10n_mapper_generator:l10n_mapper_builder:
         enabled: true  # enables or disables the builder
+        generate_for:
+          - lib/localization/gen-l10n/app_localizations.dart
         options:
           l10n: true # optional default - true
           locale: true # optional default - true
