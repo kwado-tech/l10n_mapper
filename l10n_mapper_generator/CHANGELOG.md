@@ -1,3 +1,5 @@
+## 2.3.1
+* Fixed L10nHelper.parseL10n return type to be nullable (String?) when no fallback message is configured
 ## 2.3.0
 * **Performance**: Implemented lazy-initialized caching for translation map lookups
     - Added static cache to store localization maps per locale
