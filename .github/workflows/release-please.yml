@@ -35,6 +35,9 @@ jobs:
       version: ${{ steps.release.outputs.version }}
     
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
       - name: Run Release Please
         id: release
         uses: google-github-actions/release-please-action@v4
