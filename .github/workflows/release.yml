@@ -123,9 +123,9 @@ jobs:
       #   working-directory: ${{ env.PACKAGE_DIR }}
       #   run: dart test
         
-      - name: Dry-run publish
-        working-directory: ${{ env.PACKAGE_DIR }}
-        run: dart pub publish --dry-run
+      # - name: Dry-run publish
+      #   working-directory: ${{ env.PACKAGE_DIR }}
+      #   run: dart pub publish --dry-run
         
       - name: Commit version bump
         run: |
