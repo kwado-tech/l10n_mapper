@@ -1,7 +1,32 @@
 ## 2.3.0
-*    Performance improvements with lazy-initialized caching (~2,400x faster lookups). Documentation reorganized into subdirectories. Updated SDK requirements to Dart 3.10.7 and Flutter 3.38.0. Fixed ARB file parameter mismatches. Updated CI/CD workflows to use CREDENTIAL_JSON.
-## 2.3.0
-*    Performance improvements with lazy-initialized caching (~2,400x faster lookups). Documentation reorganized into subdirectories. Updated SDK requirements to Dart 3.10.7 and Flutter 3.38.0. Fixed ARB file parameter mismatches. Updated CI/CD workflows to use CREDENTIAL_JSON.
+* **Performance**: Implemented lazy-initialized caching for translation map lookups
+    - Added static cache to store localization maps per locale
+    - Eliminated map recreation on every `parseL10n` call (~2,400x faster for large translation sets)
+    - Reduced memory allocations and GC pressure significantly
+    - Added `L10nHelper.clearCache()` method for cache management
+    - Zero configuration required - automatic performance optimization
+* **Bug Fixes**:
+    - Fixed parameter mismatch in example ARB files (Arabic and German `errorsMinWithdraw` translations)
+    - Fixed analyzer dependency to use caret syntax (`^8.3.0` instead of `8.3.0`)
+* **Documentation**: 
+    - Reorganized documentation structure into subdirectories (`getting-started/`, `migration/`, `technical/`)
+    - Added README files for each documentation subdirectory
+    - Updated all internal documentation links
+    - Cleaned up root directory structure
+* **CI/CD**: 
+    - Updated GitHub Actions workflows to use `CREDENTIAL_JSON` for pub.dev authentication
+    - Disabled automatic trigger for release-please workflow (manual dispatch only)
+    - Updated workflows to use `k-paxian/dart-package-publisher@v1.5.1`
+    - Commented out format check and tests in release workflow for flexibility
+* **Developer Experience**:
+    - Added comprehensive Makefile with formatting, analysis, and build runner commands
+    - Added `make build-runner`, `make build-watch`, `make build-clean`, `make gen-l10n` commands
+    - Added `make format`, `make analyze`, `make test`, `make check`, `make prepare` commands
+    - Organized Makefile help into logical sections
+* **Dependencies**: 
+    - Updated minimum Dart SDK to 3.10.7
+    - Updated minimum Flutter SDK to 3.38.0
+
 ## 1.0.0
 
 * Defined generator objects

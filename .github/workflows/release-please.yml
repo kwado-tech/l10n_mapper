@@ -14,9 +14,10 @@ name: Release Please (Automated)
 # 5. Package is automatically published
 
 on:
-  push:
-    branches:
-      - main
+  # Disabled automatic trigger - use manual dispatch only
+  # push:
+  #   branches:
+  #     - main
   workflow_dispatch:
 
 env:

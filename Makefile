@@ -1,15 +1,29 @@
-.PHONY: help format format-check analyze test clean get build
+.PHONY: help format format-check analyze test clean get build build-runner build-watch build-clean gen-l10n check prepare
 
 # Default target
 help:
 	@echo "Available commands:"
+	@echo ""
+	@echo "Formatting & Analysis:"
 	@echo "  make format        - Format all Dart files in all packages"
 	@echo "  make format-check  - Check if all files are formatted correctly"
 	@echo "  make analyze       - Run dart analyze on all packages"
 	@echo "  make test          - Run tests for all packages"
+	@echo ""
+	@echo "Dependencies & Build:"
 	@echo "  make get           - Get dependencies for all packages"
 	@echo "  make clean         - Clean build artifacts"
-	@echo "  make build         - Build/generate files for example"
+	@echo "  make build         - Generate l10n + run build_runner"
+	@echo ""
+	@echo "Build Runner:"
+	@echo "  make build-runner  - Run build_runner (clean build)"
+	@echo "  make build-watch   - Run build_runner in watch mode"
+	@echo "  make build-clean   - Clean build_runner cache"
+	@echo "  make gen-l10n      - Generate Flutter localizations only"
+	@echo ""
+	@echo "Quality Checks:"
+	@echo "  make check         - Run format-check + analyze + test"
+	@echo "  make prepare       - Format + analyze + test (ready for release)"
 
 # Format all Dart files
 format:
@@ -64,6 +78,26 @@ build:
 	@echo "🔨 Running build_runner..."
 	@cd example && flutter pub run build_runner build --delete-conflicting-outputs
 	@echo "✅ Build complete!"
+
+# Build runner commands
+build-runner:
+	@echo "🔨 Running build_runner (clean build)..."
+	@cd example && flutter pub run build_runner build --delete-conflicting-outputs
+	@echo "✅ Build complete!"
+
+build-watch:
+	@echo "👀 Running build_runner in watch mode..."
+	@cd example && flutter pub run build_runner watch --delete-conflicting-outputs
+
+build-clean:
+	@echo "🧹 Cleaning build_runner cache..."
+	@cd example && flutter pub run build_runner clean
+	@echo "✅ Build cache cleaned!"
+
+gen-l10n:
+	@echo "🌍 Generating Flutter localizations..."
+	@cd example && flutter gen-l10n
+	@echo "✅ Localizations generated!"
 
 # Full check (format, analyze, test)
 check: format-check analyze test

@@ -92,7 +92,7 @@ class L10nMapperGenerator extends Generator {
             bufferL10nHelper.writeln('static final Map<String, Map<String, dynamic>> _cache = {};');
             bufferL10nHelper.writeln('');
             bufferL10nHelper.writeln(
-              'static String parseL10n($className localizations, String translationKey, {List<Object>? arguments}) {',
+              'static ${nullable ? 'String?' : 'String'} parseL10n($className localizations, String translationKey, {List<Object>? arguments}) {',
             );
 
             bufferL10nHelper.writeln('// Get or create cached map for this locale');
