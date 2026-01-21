@@ -1,3 +1,5 @@
+## 2.3.0
+*    Performance improvements with lazy-initialized caching (~2,400x faster lookups). Documentation reorganized into subdirectories. Updated SDK requirements to Dart 3.10.7 and Flutter 3.38.0. Fixed ARB file parameter mismatches. Updated CI/CD workflows to use CREDENTIAL_JSON.
 ## 1.0.0
 
 * Defined generator objects
