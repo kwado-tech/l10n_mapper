@@ -89,11 +89,24 @@ class L10nMapperGenerator extends Generator {
             bufferAppLocalizationsExtension.writeln('}');
 
             bufferL10nHelper.writeln('class L10nHelper {');
+            bufferL10nHelper.writeln('// Cache to store localization maps per locale');
+            bufferL10nHelper.writeln('static final Map<String, Map<String, dynamic>> _cache = {};');
+            bufferL10nHelper.writeln('');
             bufferL10nHelper.writeln(
                 'static String parseL10n($className localizations, String translationKey, {List<Object>? arguments}) {');
 
-            bufferL10nHelper.writeln('const mapper = $mapperName();');
-            bufferL10nHelper.writeln('final object = mapper.toLocalizationMap(localizations)[translationKey];');
+            bufferL10nHelper.writeln('// Get or create cached map for this locale');
+            bufferL10nHelper.writeln('final localeName = localizations.localeName;');
+            bufferL10nHelper.writeln('final cachedMap = _cache[localeName];');
+            bufferL10nHelper.writeln('');
+            bufferL10nHelper.writeln('final map = cachedMap ?? () {');
+            bufferL10nHelper.writeln('  const mapper = $mapperName();');
+            bufferL10nHelper.writeln('  final newMap = mapper.toLocalizationMap(localizations);');
+            bufferL10nHelper.writeln('  _cache[localeName] = newMap;');
+            bufferL10nHelper.writeln('  return newMap;');
+            bufferL10nHelper.writeln('}();');
+            bufferL10nHelper.writeln('');
+            bufferL10nHelper.writeln('final object = map[translationKey];');
 
             // account for null-case
             if (!nullable) {
@@ -108,6 +121,15 @@ class L10nMapperGenerator extends Generator {
             bufferL10nHelper.writeln("assert(arguments!.isNotEmpty, 'Arguments should not be empty!');");
 
             bufferL10nHelper.writeln('return Function.apply(object, arguments);');
+            bufferL10nHelper.writeln('}');
+            bufferL10nHelper.writeln('');
+            bufferL10nHelper.writeln('/// Clear the cache for a specific locale or all locales');
+            bufferL10nHelper.writeln('static void clearCache([String? localeName]) {');
+            bufferL10nHelper.writeln('  if (localeName != null) {');
+            bufferL10nHelper.writeln('    _cache.remove(localeName);');
+            bufferL10nHelper.writeln('  } else {');
+            bufferL10nHelper.writeln('    _cache.clear();');
+            bufferL10nHelper.writeln('  }');
             bufferL10nHelper.writeln('}');
 
             bufferL10nHelper.writeln('}');

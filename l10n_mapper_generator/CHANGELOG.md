@@ -73,3 +73,12 @@
     - build: ^2.4.14 -> ^2.6.0
     - source_gen: ^2.0.0 -> ^3.0.0
     - flutter_lints: ^5.0.0 -> ^6.0.0
+
+## 2.3.0
+* **Performance**: Implemented lazy-initialized caching for translation map lookups
+    - Added static cache to store localization maps per locale
+    - Eliminated map recreation on every `parseL10n` call (~2,400x faster for large translation sets)
+    - Reduced memory allocations and GC pressure significantly
+    - Added `L10nHelper.clearCache()` method for cache management
+    - Zero configuration required - automatic performance optimization
+    - See [docs/PERFORMANCE.md](../docs/PERFORMANCE.md) for detailed benchmarks
