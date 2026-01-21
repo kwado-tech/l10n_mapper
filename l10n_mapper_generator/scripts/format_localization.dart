@@ -61,11 +61,10 @@ class FormatLocalization {
   }) {
     String key = input.replaceAll('"', '').trim();
 
-    key = toCamelCase(key, emptyPredicateKeys)
-        .split(StringConstants.emptyString)
-        .map((e) => predicates[e] ?? e)
-        .join()
-        .trim();
+    key = toCamelCase(
+      key,
+      emptyPredicateKeys,
+    ).split(StringConstants.emptyString).map((e) => predicates[e] ?? e).join().trim();
 
     final substring = key.substring(0, 1);
 
@@ -86,11 +85,10 @@ class FormatLocalization {
       // extract the placeholder content without the curly braces
       String content = match.group(1) ?? '';
 
-      final placeholder = toCamelCase(content, emptyPredicateKeys)
-          .split(StringConstants.emptyString)
-          .map((e) => predicates[e] ?? e)
-          .join()
-          .trim();
+      final placeholder = toCamelCase(
+        content,
+        emptyPredicateKeys,
+      ).split(StringConstants.emptyString).map((e) => predicates[e] ?? e).join().trim();
 
       // rebuild the placeholder with curly braces
       return '{${handleDefaultCase(placeholder)}}';
@@ -136,9 +134,10 @@ class FormatLocalization {
 
       if (!(await inputFile.exists())) {
         logger(
-            '$inputOptionPath does not exists and will be skipped! Verify this file exists and run build again to format',
-            () {},
-            type: LogType.error);
+          '$inputOptionPath does not exists and will be skipped! Verify this file exists and run build again to format',
+          () {},
+          type: LogType.error,
+        );
 
         continue;
       }
@@ -181,8 +180,11 @@ class FormatLocalization {
         outputSink.writeAll(lines);
         await outputSink.close();
 
-        logger('Formatted and renamed ${option.input.getValue()} to ${option.output.getValue()} successfully!', () {},
-            type: LogType.log);
+        logger(
+          'Formatted and renamed ${option.input.getValue()} to ${option.output.getValue()} successfully!',
+          () {},
+          type: LogType.log,
+        );
       } catch (e, stackTrace) {
         logger(e.toString(), () {}, type: LogType.error);
         logger(stackTrace.toString(), () => exit(1), type: LogType.error);

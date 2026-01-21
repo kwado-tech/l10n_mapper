@@ -12,10 +12,12 @@ Future<void> main(List<String> arguments) async {
   final parser = ArgParser()
     ..addFlag('help', abbr: 'h', negatable: false, help: 'Usage: dart pub run l10_mapper_generator [options]')
     ..addFlag('format', abbr: 'f', negatable: false, help: 'Usage: dart pub run l10_mapper_generator --format')
-    ..addOption('config',
-        abbr: 'c',
-        help:
-            'Provide directory path which `l10_mapper.json` config file is defined if it is not defined in the project`s root directory');
+    ..addOption(
+      'config',
+      abbr: 'c',
+      help:
+          'Provide directory path which `l10_mapper.json` config file is defined if it is not defined in the project`s root directory',
+    );
 
   try {
     final results = parser.parse(arguments);
@@ -33,8 +35,11 @@ Future<void> main(List<String> arguments) async {
     //? formatter
     if ((results['format'] as bool) == true) {
       if (configOptions.formatterOptions == FormatterOptions.none()) {
-        logger('Provide [formatterOptions] configuration in l10n_mapper.json file!', () => exit(1),
-            type: LogType.error);
+        logger(
+          'Provide [formatterOptions] configuration in l10n_mapper.json file!',
+          () => exit(1),
+          type: LogType.error,
+        );
       }
 
       // format localization translation files to match darts naming convention

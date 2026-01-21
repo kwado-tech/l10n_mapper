@@ -6,12 +6,7 @@ import 'package:source_gen/source_gen.dart';
 export 'l10n_mapper_builder.dart';
 
 // indicates methods mapper would not be generated for
-const genExceptions = [
-  'of',
-  'delegate',
-  'localizationsDelegates',
-  'supportedLocales',
-];
+const genExceptions = ['of', 'delegate', 'localizationsDelegates', 'supportedLocales'];
 
 class L10nMapperGenerator extends Generator {
   final bool l10n;
@@ -75,15 +70,19 @@ class L10nMapperGenerator extends Generator {
 
           if (parseL10n) {
             bufferBuildContextExtension.writeln(
-                "${nullable ? 'String?' : 'String'} parseL10n(String translationKey, {List<Object>? arguments}) {");
+              "${nullable ? 'String?' : 'String'} parseL10n(String translationKey, {List<Object>? arguments}) {",
+            );
             bufferAppLocalizationsExtension.writeln(
-                "${nullable ? 'String?' : 'String'} parseL10n(String translationKey, {List<Object>? arguments}) {");
+              "${nullable ? 'String?' : 'String'} parseL10n(String translationKey, {List<Object>? arguments}) {",
+            );
 
             bufferBuildContextExtension.writeln('final localizations = $className.of(this)!;');
-            bufferBuildContextExtension
-                .writeln('return L10nHelper.parseL10n(localizations, translationKey, arguments: arguments);');
-            bufferAppLocalizationsExtension
-                .writeln('return L10nHelper.parseL10n(this, translationKey, arguments: arguments);');
+            bufferBuildContextExtension.writeln(
+              'return L10nHelper.parseL10n(localizations, translationKey, arguments: arguments);',
+            );
+            bufferAppLocalizationsExtension.writeln(
+              'return L10nHelper.parseL10n(this, translationKey, arguments: arguments);',
+            );
 
             bufferBuildContextExtension.writeln('}');
             bufferAppLocalizationsExtension.writeln('}');
@@ -93,7 +92,8 @@ class L10nMapperGenerator extends Generator {
             bufferL10nHelper.writeln('static final Map<String, Map<String, dynamic>> _cache = {};');
             bufferL10nHelper.writeln('');
             bufferL10nHelper.writeln(
-                'static String parseL10n($className localizations, String translationKey, {List<Object>? arguments}) {');
+              'static String parseL10n($className localizations, String translationKey, {List<Object>? arguments}) {',
+            );
 
             bufferL10nHelper.writeln('// Get or create cached map for this locale');
             bufferL10nHelper.writeln('final localeName = localizations.localeName;');

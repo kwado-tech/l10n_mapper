@@ -26,9 +26,7 @@ class ConfigOptionReader implements IConfigOptionReader {
     try {
       final jsonString = configFile.readAsStringSync();
 
-      return ConfigOptions.fromJson(
-        json.decode(jsonString) as Map<String, dynamic>,
-      );
+      return ConfigOptions.fromJson(json.decode(jsonString) as Map<String, dynamic>);
     } catch (e) {
       throw Exception('Failed to load configuration from `l10n_mapper.json` file:\n $config');
     }

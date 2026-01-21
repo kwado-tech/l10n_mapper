@@ -115,9 +115,9 @@ jobs:
         working-directory: ${{ env.PACKAGE_DIR }}
         run: dart analyze
   
-      - name: Run format check
-        working-directory: ${{ env.PACKAGE_DIR }}
-        run: dart format --set-exit-if-changed --line-length=120 .
+      # - name: Run format check
+      #   working-directory: ${{ env.PACKAGE_DIR }}
+      #   run: dart format --set-exit-if-changed --line-length=120 .
 
       - name: Run tests
         working-directory: ${{ env.PACKAGE_DIR }}

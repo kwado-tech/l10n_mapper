@@ -7,14 +7,10 @@ class ConfigOptions {
 
   const ConfigOptions._({required this.formatterOptions});
 
-  factory ConfigOptions.none() => ConfigOptions._(
-        formatterOptions: FormatterOptions.none(),
-      );
+  factory ConfigOptions.none() => ConfigOptions._(formatterOptions: FormatterOptions.none());
 
   factory ConfigOptions.fromJson(Map<String, dynamic> json) {
-    return ConfigOptions._(
-      formatterOptions: FormatterOptions.fromJson(json['formatterOptions']),
-    );
+    return ConfigOptions._(formatterOptions: FormatterOptions.fromJson(json['formatterOptions']));
   }
 
   @override
@@ -68,12 +64,12 @@ class FormatterOptions {
   });
 
   factory FormatterOptions.none() => FormatterOptions(
-        prefix: none(),
-        inputPath: none(),
-        outputPath: none(),
-        translations: [],
-        keyPredicateMatch: none(),
-      );
+    prefix: none(),
+    inputPath: none(),
+    outputPath: none(),
+    translations: [],
+    keyPredicateMatch: none(),
+  );
 
   factory FormatterOptions.fromJson(Map<String, dynamic>? json) {
     if (json == null) return FormatterOptions.none();
@@ -82,7 +78,8 @@ class FormatterOptions {
       prefix: optionOf(json['prefix'] as String?),
       inputPath: optionOf(json['inputPath'] as String?),
       outputPath: optionOf(json['outputPath'] as String?),
-      translations: (json['translations'] as List?)
+      translations:
+          (json['translations'] as List?)
               ?.map((e) => TranslationOptions.fromJson(e as Map<String, dynamic>))
               .toList() ??
           [],

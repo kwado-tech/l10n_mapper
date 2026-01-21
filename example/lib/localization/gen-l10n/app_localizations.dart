@@ -63,8 +63,7 @@ import 'app_localizations_en.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -72,8 +71,7 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate =
-      _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -85,8 +83,7 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
-      <LocalizationsDelegate<dynamic>>[
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
     delegate,
     GlobalMaterialLocalizations.delegate,
     GlobalCupertinoLocalizations.delegate,
@@ -94,11 +91,7 @@ abstract class AppLocalizations {
   ];
 
   /// A list of this localizations delegate's supported locales.
-  static const List<Locale> supportedLocales = <Locale>[
-    Locale('ar'),
-    Locale('de'),
-    Locale('en')
-  ];
+  static const List<Locale> supportedLocales = <Locale>[Locale('ar'), Locale('de'), Locale('en')];
 
   /// No description provided for @ecPop_message.
   ///
@@ -2078,8 +2071,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Your deducted amount depends on the bank you use.'**
-  String
-      get cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription;
+  String get cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription;
 
   /// No description provided for @cashierFiatDepositBankTransferVoucherAtmFee.
   ///
@@ -2439,8 +2431,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Minimum and maximum deposit amounts <b>{min} / {max}</b>\n'**
-  String cashierFiatDepositEzeebillProviderBankTransferJpyLimits(
-      Object min, Object max);
+  String cashierFiatDepositEzeebillProviderBankTransferJpyLimits(Object min, Object max);
 
   /// No description provided for @cashierFiatDepositEzeebillCityPlaceholder.
   ///
@@ -6370,8 +6361,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'You\'ve activated a deposit bonus reward in a different currency. Please switch to {currency} wallet and deposit {amount} {currency} in order to play the reward or you can forfeit it and try another reward.'**
-  String cashierRewardSwichCurrencyDepositDescription(
-      Object currency, Object amount);
+  String cashierRewardSwichCurrencyDepositDescription(Object currency, Object amount);
 
   /// No description provided for @cashierRewardSwichCurrencyDescription.
   ///
@@ -7361,8 +7351,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Exceeds wallets balance amount {walletBalance} {currency}'**
-  String cashierWeb3walletErrorExceedsWalletBalance(
-      Object walletBalance, Object currency);
+  String cashierWeb3walletErrorExceedsWalletBalance(Object walletBalance, Object currency);
 
   /// No description provided for @cashierWeb3walletErrorInvalidAmount.
   ///
@@ -7374,8 +7363,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Minimum deposit amount {minDeposit} {currency}'**
-  String cashierWeb3walletErrorMinDepositAmount(
-      Object minDeposit, Object currency);
+  String cashierWeb3walletErrorMinDepositAmount(Object minDeposit, Object currency);
 
   /// No description provided for @cashierWeb3walletErrorPrepareContract.
   ///
@@ -9634,8 +9622,7 @@ abstract class AppLocalizations {
   String get walletWithdraw;
 }
 
-class _AppLocalizationsDelegate
-    extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -9644,8 +9631,7 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['ar', 'de', 'en'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['ar', 'de', 'en'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -9662,8 +9648,7 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsEn();
   }
 
-  throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+  throw FlutterError('AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
       'an issue with the localizations generation tool. Please file an issue '
       'on GitHub with a reproducible sample app and the gen-l10n configuration '
       'that was used.');
