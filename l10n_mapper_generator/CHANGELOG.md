@@ -92,5 +92,10 @@
     - Updated `release-please.yml` to use `CREDENTIAL_JSON` secret
     - Removed dependency on third-party publishing action
     - Simplified publishing process with native `dart pub publish`
-* **Dependencies**: Updated minimum Dart SDK version
+* **Bug Fixes**: Fixed parameter mismatch in example ARB files
+    - Fixed Arabic translation: `errorsMinWithdraw` now uses correct `{minAmount}` and `{currency}` placeholders
+    - Fixed German translation: `errorsMinWithdraw` now uses correct `{minAmount}` and `{currency}` placeholders
+    - Parameters now match across all language files
+* **Dependencies**: Updated minimum SDK versions
     - Minimum Dart SDK: 3.10.7
+    - Minimum Flutter SDK: 3.38.0

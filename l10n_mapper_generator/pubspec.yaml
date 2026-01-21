@@ -8,7 +8,7 @@ repository: https://github.com/kwado-tech/l10n_mapper/tree/main/l10n_mapper_gene
 
 environment:
   sdk: ">=3.10.7 <4.0.0"
-  flutter: ">=1.17.0"
+  flutter: ">=3.38.0"
 
 dependencies:
   flutter:

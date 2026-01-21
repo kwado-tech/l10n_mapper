@@ -20,7 +20,7 @@ on:
   workflow_dispatch:
 
 env:
-  flutter_version: '3.32.8'
+  flutter_version: '3.38.7'
   java_version: 17
   flutter_channel: 'stable'
   PACKAGE_DIR: l10n_mapper_generator
