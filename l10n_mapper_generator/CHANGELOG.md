@@ -92,3 +92,5 @@
     - Updated `release-please.yml` to use `CREDENTIAL_JSON` secret
     - Removed dependency on third-party publishing action
     - Simplified publishing process with native `dart pub publish`
+* **Dependencies**: Updated minimum Dart SDK version
+    - Minimum Dart SDK: 3.10.7

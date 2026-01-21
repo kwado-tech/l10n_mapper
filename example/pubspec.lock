@@ -270,7 +270,7 @@ packages:
       path: "../l10n_mapper_generator"
       relative: true
     source: path
-    version: "2.2.1"
+    version: "2.3.0"
   leak_tracker:
     dependency: transitive
     description:
@@ -533,5 +533,5 @@ packages:
     source: hosted
     version: "3.1.3"
 sdks:
-  dart: ">=3.9.0 <4.0.0"
+  dart: ">=3.10.7 <4.0.0"
   flutter: ">=3.18.0-18.0.pre.54"
