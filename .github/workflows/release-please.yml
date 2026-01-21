@@ -93,13 +93,16 @@ jobs:
       - name: Dry-run publish
         run: dart pub publish --dry-run
         
-      - name: Setup pub credentials
-        run: |
-          mkdir -p $HOME/.pub-cache
-          echo '${{ secrets.CREDENTIAL_JSON }}' > $HOME/.pub-cache/credentials.json
-          
       - name: Publish to pub.dev
-        run: dart pub publish --force
+        uses: k-paxian/dart-package-publisher@v1.5.1
+        with:
+          # accessToken: ${{ secrets.OAUTH_ACCESS_TOKEN }}
+          # refreshToken: ${{ secrets.OAUTH_REFRESH_TOKEN }}
+          force: true
+          flutter: true
+          skipTests: true
+          relativePath: ${{ env.PACKAGE_DIR }}
+          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
           
       - name: Update release notes
         uses: actions/github-script@v7

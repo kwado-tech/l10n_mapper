@@ -134,14 +134,14 @@ jobs:
           git commit -m "chore: bump version to $VERSION"
           git push origin main
           
-      - name: Setup pub credentials
-        run: |
-          mkdir -p $HOME/.pub-cache
-          echo '${{ secrets.CREDENTIAL_JSON }}' > $HOME/.pub-cache/credentials.json
-          
       - name: Publish to pub.dev
-        working-directory: ${{ env.PACKAGE_DIR }}
-        run: dart pub publish --force
+        uses: k-paxian/dart-package-publisher@v1.5.1
+        with:
+          force: true
+          flutter: true
+          skipTests: true
+          relativePath: ${{ env.PACKAGE_DIR }}
+          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
 
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
