@@ -82,3 +82,13 @@
     - Added `L10nHelper.clearCache()` method for cache management
     - Zero configuration required - automatic performance optimization
     - See [docs/technical/PERFORMANCE.md](../docs/technical/PERFORMANCE.md) for detailed benchmarks
+* **Documentation**: Reorganized documentation structure
+    - Created subdirectories in `docs/` for better organization (`getting-started/`, `migration/`, `technical/`)
+    - Added README files for each subdirectory
+    - Updated all documentation links across the project
+    - Cleaned up root directory (only README.md remains)
+* **CI/CD**: Fixed GitHub Actions workflows
+    - Updated `release.yml` to use `CREDENTIAL_JSON` secret
+    - Updated `release-please.yml` to use `CREDENTIAL_JSON` secret
+    - Removed dependency on third-party publishing action
+    - Simplified publishing process with native `dart pub publish`
