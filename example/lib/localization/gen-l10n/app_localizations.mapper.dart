@@ -1,5 +1,5 @@
-// dart format width=80
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// dart format width=80
 
 // **************************************************************************
 // L10nMapperGenerator
@@ -26,15 +26,38 @@ extension AppLocalizationsExtension on AppLocalizations {
 }
 
 class L10nHelper {
+// Cache to store localization maps per locale
+  static final Map<String, Map<String, dynamic>> _cache = {};
+
   static String parseL10n(AppLocalizations localizations, String translationKey,
       {List<Object>? arguments}) {
-    const mapper = AppLocalizationsMapper();
-    final object = mapper.toLocalizationMap(localizations)[translationKey];
+// Get or create cached map for this locale
+    final localeName = localizations.localeName;
+    final cachedMap = _cache[localeName];
+
+    final map = cachedMap ??
+        () {
+          const mapper = AppLocalizationsMapper();
+          final newMap = mapper.toLocalizationMap(localizations);
+          _cache[localeName] = newMap;
+          return newMap;
+        }();
+
+    final object = map[translationKey];
     if (object == null) return 'Translation key not found!';
     if (object is String) return object;
     assert(arguments != null, 'Arguments should not be null!');
     assert(arguments!.isNotEmpty, 'Arguments should not be empty!');
     return Function.apply(object, arguments);
+  }
+
+  /// Clear the cache for a specific locale or all locales
+  static void clearCache([String? localeName]) {
+    if (localeName != null) {
+      _cache.remove(localeName);
+    } else {
+      _cache.clear();
+    }
   }
 }
 
@@ -2497,8 +2520,8 @@ class AppLocalizationsMapper {
           localizations.cashierYourAreSpending(amount, currency),
       'errorsExchangeMinWithdraw': (currency, amount) =>
           localizations.errorsExchangeMinWithdraw(currency, amount),
-      'errorsMinWithdraw': (minAmount, currency, amount) =>
-          localizations.errorsMinWithdraw(minAmount, currency, amount),
+      'errorsMinWithdraw': (minAmount, currency) =>
+          localizations.errorsMinWithdraw(minAmount, currency),
       'errorsNoDepositsAvailableAtThisTime': (currency) =>
           localizations.errorsNoDepositsAvailableAtThisTime(currency),
       'errorsNoWithdrawalsAvailableAtThisTime': (currency) =>

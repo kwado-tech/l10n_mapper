@@ -1,0 +1,113 @@
+name: Release Please (Automated)
+
+# This workflow uses Release Please to automate releases based on conventional commits
+# It will automatically:
+# - Create release PRs with updated version and CHANGELOG
+# - Publish to pub.dev when PR is merged
+# - Create GitHub releases
+#
+# To use this instead of the manual release.yml:
+# 1. Follow conventional commits (feat:, fix:, chore:, etc.)
+# 2. Merge PRs to main
+# 3. Release Please will create a release PR automatically
+# 4. Review and merge the release PR
+# 5. Package is automatically published
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  flutter_version: '3.32.8'
+  java_version: 17
+  flutter_channel: 'stable'
+  PACKAGE_DIR: l10n_mapper_generator
+
+jobs:
+  release-please:
+    name: Create Release PR
+    runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
+      version: ${{ steps.release.outputs.version }}
+    
+    steps:
+      - name: Run Release Please
+        id: release
+        uses: google-github-actions/release-please-action@v4
+        with:
+          release-type: dart
+          path: l10n_mapper_generator
+          
+  publish:
+    name: Publish to pub.dev
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release_created }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.PACKAGE_DIR }}
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.5'
+          bundler-cache: true
+          working-directory: ${{ env.PACKAGE_DIR }}
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v3.11.0
+        with:
+          java-version: ${{ env.java_version }}
+          distribution: 'zulu'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.10.0
+        with:
+          flutter-version: ${{ env.flutter_version }}
+          channel: ${{ env.flutter_channel }}
+          cache: false
+          
+      - name: Install dependencies
+        run: dart pub get
+          
+      - name: Run analysis
+        run: dart analyze
+  
+      - name: Run format check
+        run: dart format --set-exit-if-changed --line-length=120 .
+
+      - name: Run tests
+        run: dart test
+        
+      - name: Dry-run publish
+        run: dart pub publish --dry-run
+        
+      - name: Setup pub credentials
+        run: |
+          mkdir -p $HOME/.pub-cache
+          echo '${{ secrets.CREDENTIAL_JSON }}' > $HOME/.pub-cache/credentials.json
+          
+      - name: Publish to pub.dev
+        run: dart pub publish --force
+          
+      - name: Update release notes
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const version = '${{ needs.release-please.outputs.version }}';
+            const tagName = '${{ needs.release-please.outputs.tag_name }}';
+            
+            await github.rest.repos.updateRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: context.payload.release.id,
+              body: context.payload.release.body + '\n\n## Installation\n```yaml\ndependencies:\n  l10n_mapper_generator: ^' + version + '\n```\n\n## Pub.dev\nhttps://pub.dev/packages/l10n_mapper_generator/versions/' + version
+            });

@@ -73,3 +73,22 @@
     - build: ^2.4.14 -> ^2.6.0
     - source_gen: ^2.0.0 -> ^3.0.0
     - flutter_lints: ^5.0.0 -> ^6.0.0
+
+## 2.3.0
+* **Performance**: Implemented lazy-initialized caching for translation map lookups
+    - Added static cache to store localization maps per locale
+    - Eliminated map recreation on every `parseL10n` call (~2,400x faster for large translation sets)
+    - Reduced memory allocations and GC pressure significantly
+    - Added `L10nHelper.clearCache()` method for cache management
+    - Zero configuration required - automatic performance optimization
+    - See [docs/technical/PERFORMANCE.md](../docs/technical/PERFORMANCE.md) for detailed benchmarks
+* **Documentation**: Reorganized documentation structure
+    - Created subdirectories in `docs/` for better organization (`getting-started/`, `migration/`, `technical/`)
+    - Added README files for each subdirectory
+    - Updated all documentation links across the project
+    - Cleaned up root directory (only README.md remains)
+* **CI/CD**: Fixed GitHub Actions workflows
+    - Updated `release.yml` to use `CREDENTIAL_JSON` secret
+    - Updated `release-please.yml` to use `CREDENTIAL_JSON` secret
+    - Removed dependency on third-party publishing action
+    - Simplified publishing process with native `dart pub publish`
