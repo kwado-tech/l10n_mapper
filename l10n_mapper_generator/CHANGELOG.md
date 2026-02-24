@@ -1,3 +1,5 @@
+## 2.3.2
+* * Fixed type safety (mapper closures, parseL10n casts) and updated documentation
 ## 2.3.1
 * Fixed L10nHelper.parseL10n return type to be nullable (String?) when no fallback message is configured
 ## 2.3.0
