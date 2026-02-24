@@ -121,7 +121,8 @@ class L10nMapperGenerator extends Generator {
             bufferL10nHelper.writeln("assert(arguments != null, 'Arguments should not be null!');");
             bufferL10nHelper.writeln("assert(arguments!.isNotEmpty, 'Arguments should not be empty!');");
 
-            bufferL10nHelper.writeln('return Function.apply(object, arguments) as String;');
+            bufferL10nHelper.writeln(
+                'return Function.apply(object as Function, arguments) as String;');
             bufferL10nHelper.writeln('}');
             bufferL10nHelper.writeln('');
             bufferL10nHelper.writeln('/// Clear the cache for a specific locale or all locales');

@@ -201,7 +201,7 @@ class L10nHelper {
     if (object is String) return object;
     
     // For parameterized translations
-    return Function.apply(object, arguments) as String;
+    return Function.apply(object as Function, arguments) as String;
   }
 }
 
