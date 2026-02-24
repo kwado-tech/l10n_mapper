@@ -48,7 +48,7 @@ class L10nHelper {
     if (object is String) return object;
     assert(arguments != null, 'Arguments should not be null!');
     assert(arguments!.isNotEmpty, 'Arguments should not be empty!');
-    return Function.apply(object, arguments);
+    return Function.apply(object, arguments) as String;
   }
 
   /// Clear the cache for a specific locale or all locales
@@ -2386,149 +2386,153 @@ class AppLocalizationsMapper {
       'walletTransactionTransactionId':
           localizations.walletTransactionTransactionId,
       'walletWithdraw': localizations.walletWithdraw,
-      'ecPop_message': (errorCode) => localizations.ecPop_message(errorCode),
-      'cashierBalance': (currency) => localizations.cashierBalance(currency),
-      'cashierBalanceReverted': (currency) =>
+      'ecPop_message': (String errorCode) =>
+          localizations.ecPop_message(errorCode),
+      'cashierBalance': (Object currency) =>
+          localizations.cashierBalance(currency),
+      'cashierBalanceReverted': (Object currency) =>
           localizations.cashierBalanceReverted(currency),
-      'cashierBuyCurrency': (currency) =>
+      'cashierBuyCurrency': (Object currency) =>
           localizations.cashierBuyCurrency(currency),
-      'cashierConvertBeforeWithdraw': (convertFrom, convertTo) =>
+      'cashierConvertBeforeWithdraw': (Object convertFrom, Object convertTo) =>
           localizations.cashierConvertBeforeWithdraw(convertFrom, convertTo),
-      'cashierConvertTo': (currency) =>
+      'cashierConvertTo': (Object currency) =>
           localizations.cashierConvertTo(currency),
-      'cashierCpfRfcProcessingDescription': (variant) =>
+      'cashierCpfRfcProcessingDescription': (Object variant) =>
           localizations.cashierCpfRfcProcessingDescription(variant),
-      'cashierCpfRfcProcessingTitle': (variant) =>
+      'cashierCpfRfcProcessingTitle': (Object variant) =>
           localizations.cashierCpfRfcProcessingTitle(variant),
-      'cashierCurrencyDeposit': (currency) =>
+      'cashierCurrencyDeposit': (Object currency) =>
           localizations.cashierCurrencyDeposit(currency),
-      'cashierCurrencyWithdrawal': (currency) =>
+      'cashierCurrencyWithdrawal': (Object currency) =>
           localizations.cashierCurrencyWithdrawal(currency),
-      'cashierCurrentBalance': (amount, currency) =>
+      'cashierCurrentBalance': (Object amount, Object currency) =>
           localizations.cashierCurrentBalance(amount, currency),
-      'cashierDepositAgents': (currency) =>
+      'cashierDepositAgents': (Object currency) =>
           localizations.cashierDepositAgents(currency),
-      'cashierDepositCurrency': (currency) =>
+      'cashierDepositCurrency': (Object currency) =>
           localizations.cashierDepositCurrency(currency),
-      'cashierDepositSuccessful': (currency, amount) =>
+      'cashierDepositSuccessful': (Object currency, Object amount) =>
           localizations.cashierDepositSuccessful(currency, amount),
-      'cashierDepositWarningErc20Network': (currency) =>
+      'cashierDepositWarningErc20Network': (Object currency) =>
           localizations.cashierDepositWarningErc20Network(currency),
-      'cashierDepositWalletDepositStarted': (amount, currency) =>
+      'cashierDepositWalletDepositStarted': (Object amount, Object currency) =>
           localizations.cashierDepositWalletDepositStarted(amount, currency),
-      'cashierEmailVerificationBannerBody': (brandName) =>
+      'cashierEmailVerificationBannerBody': (Object brandName) =>
           localizations.cashierEmailVerificationBannerBody(brandName),
-      'cashierEnterCodeFromSms': (phone) =>
+      'cashierEnterCodeFromSms': (Object phone) =>
           localizations.cashierEnterCodeFromSms(phone),
-      'cashierExchange3Confirmations': (amount, currency) =>
+      'cashierExchange3Confirmations': (Object amount, Object currency) =>
           localizations.cashierExchange3Confirmations(amount, currency),
-      'cashierExchangeFee': (amount, currency, fee) =>
+      'cashierExchangeFee': (Object amount, Object currency, Object fee) =>
           localizations.cashierExchangeFee(amount, currency, fee),
-      'cashierExchangeOverallBalance': (currency, amount) =>
+      'cashierExchangeOverallBalance': (Object currency, Object amount) =>
           localizations.cashierExchangeOverallBalance(currency, amount),
-      'cashierExchangeRate': (amount, currency) =>
+      'cashierExchangeRate': (Object amount, Object currency) =>
           localizations.cashierExchangeRate(amount, currency),
-      'cashierFiatContinueExternal': (provider) =>
+      'cashierFiatContinueExternal': (Object provider) =>
           localizations.cashierFiatContinueExternal(provider),
-      'cashierFiatContinueProvider': (provider) =>
+      'cashierFiatContinueProvider': (Object provider) =>
           localizations.cashierFiatContinueProvider(provider),
-      'cashierFiatDepositAmountPlaceholder': (currency) =>
+      'cashierFiatDepositAmountPlaceholder': (Object currency) =>
           localizations.cashierFiatDepositAmountPlaceholder(currency),
-      'cashierFiatDepositEzeebillProviderBankTransferJpyLimits': (min, max) =>
+      'cashierFiatDepositEzeebillProviderBankTransferJpyLimits': (Object min,
+              Object max) =>
           localizations.cashierFiatDepositEzeebillProviderBankTransferJpyLimits(
               min, max),
-      'cashierFiatDepositInvalidRequest': (field) =>
+      'cashierFiatDepositInvalidRequest': (Object field) =>
           localizations.cashierFiatDepositInvalidRequest(field),
-      'cashierFiatDepositReceived': (moneyIcon) =>
+      'cashierFiatDepositReceived': (Object moneyIcon) =>
           localizations.cashierFiatDepositReceived(moneyIcon),
-      'cashierFiatDepositRequired': (field) =>
+      'cashierFiatDepositRequired': (Object field) =>
           localizations.cashierFiatDepositRequired(field),
-      'cashierFiatEstimatedCurrencyRate': (currency) =>
+      'cashierFiatEstimatedCurrencyRate': (Object currency) =>
           localizations.cashierFiatEstimatedCurrencyRate(currency),
-      'cashierFiatMinMaxDeposit': (min, max) =>
+      'cashierFiatMinMaxDeposit': (Object min, Object max) =>
           localizations.cashierFiatMinMaxDeposit(min, max),
-      'cashierFiatMinMaxWithdraw': (min, max) =>
+      'cashierFiatMinMaxWithdraw': (Object min, Object max) =>
           localizations.cashierFiatMinMaxWithdraw(min, max),
-      'cashierFiatPlacedOrderDescription': (amount) =>
+      'cashierFiatPlacedOrderDescription': (Object amount) =>
           localizations.cashierFiatPlacedOrderDescription(amount),
-      'cashierFiatSumopayAmountDesc': (currency) =>
+      'cashierFiatSumopayAmountDesc': (Object currency) =>
           localizations.cashierFiatSumopayAmountDesc(currency),
-      'cashierFiatWithdrawalInvalidRequest': (field) =>
+      'cashierFiatWithdrawalInvalidRequest': (Object field) =>
           localizations.cashierFiatWithdrawalInvalidRequest(field),
-      'cashierFiatWithdrawalRequired': (field) =>
+      'cashierFiatWithdrawalRequired': (Object field) =>
           localizations.cashierFiatWithdrawalRequired(field),
-      'cashierFundsAvailable': (amount, currency) =>
+      'cashierFundsAvailable': (Object amount, Object currency) =>
           localizations.cashierFundsAvailable(amount, currency),
-      'cashierGetBitcoinsFee': (value) =>
+      'cashierGetBitcoinsFee': (Object value) =>
           localizations.cashierGetBitcoinsFee(value),
-      'cashierMaximumDeposit': (amount, currency) =>
+      'cashierMaximumDeposit': (Object amount, Object currency) =>
           localizations.cashierMaximumDeposit(amount, currency),
-      'cashierMinimumConversionAmount': (amount, currency) =>
+      'cashierMinimumConversionAmount': (Object amount, Object currency) =>
           localizations.cashierMinimumConversionAmount(amount, currency),
-      'cashierMinimumDeposit': (amount, currency) =>
+      'cashierMinimumDeposit': (Object amount, Object currency) =>
           localizations.cashierMinimumDeposit(amount, currency),
-      'cashierMinimumWithdrawal': (amount, currency) =>
+      'cashierMinimumWithdrawal': (Object amount, Object currency) =>
           localizations.cashierMinimumWithdrawal(amount, currency),
-      'cashierNotEnoughCryptoToConvert': (currency) =>
+      'cashierNotEnoughCryptoToConvert': (Object currency) =>
           localizations.cashierNotEnoughCryptoToConvert(currency),
-      'cashierPlacedOrderDescription': (amount, currency) =>
+      'cashierPlacedOrderDescription': (Object amount, Object currency) =>
           localizations.cashierPlacedOrderDescription(amount, currency),
-      'cashierPlacedOrderDescriptionNoAmount': (currency) =>
+      'cashierPlacedOrderDescriptionNoAmount': (Object currency) =>
           localizations.cashierPlacedOrderDescriptionNoAmount(currency),
-      'cashierPlayNowIn': (currency) =>
+      'cashierPlayNowIn': (Object currency) =>
           localizations.cashierPlayNowIn(currency),
-      'cashierProcessingFee': (amount, currency) =>
+      'cashierProcessingFee': (Object amount, Object currency) =>
           localizations.cashierProcessingFee(amount, currency),
-      'cashierRewardBonus': (amount, currency) =>
+      'cashierRewardBonus': (Object amount, Object currency) =>
           localizations.cashierRewardBonus(amount, currency),
-      'cashierRewardSwichCurrencyBtn': (currency) =>
+      'cashierRewardSwichCurrencyBtn': (Object currency) =>
           localizations.cashierRewardSwichCurrencyBtn(currency),
-      'cashierRewardSwichCurrencyDepositBtn': (currency) =>
+      'cashierRewardSwichCurrencyDepositBtn': (Object currency) =>
           localizations.cashierRewardSwichCurrencyDepositBtn(currency),
-      'cashierRewardSwichCurrencyDepositDescription': (currency, amount) =>
-          localizations.cashierRewardSwichCurrencyDepositDescription(
-              currency, amount),
-      'cashierRewardSwichCurrencyDescription': (currency) =>
+      'cashierRewardSwichCurrencyDepositDescription':
+          (Object currency, Object amount) => localizations
+              .cashierRewardSwichCurrencyDepositDescription(currency, amount),
+      'cashierRewardSwichCurrencyDescription': (Object currency) =>
           localizations.cashierRewardSwichCurrencyDescription(currency),
-      'cashierShowMoreMethods': (qty) =>
+      'cashierShowMoreMethods': (Object qty) =>
           localizations.cashierShowMoreMethods(qty),
-      'cashierTransactionDescription': (description) =>
+      'cashierTransactionDescription': (Object description) =>
           localizations.cashierTransactionDescription(description),
-      'cashierTransactionPaymentTime': (datetime) =>
+      'cashierTransactionPaymentTime': (Object datetime) =>
           localizations.cashierTransactionPaymentTime(datetime),
-      'cashierWeb3walletErrorExceedsWalletBalance': (walletBalance, currency) =>
-          localizations.cashierWeb3walletErrorExceedsWalletBalance(
-              walletBalance, currency),
-      'cashierWeb3walletErrorMinDepositAmount': (minDeposit, currency) =>
-          localizations.cashierWeb3walletErrorMinDepositAmount(
-              minDeposit, currency),
-      'cashierWeb3walletWalletLinkedBtnTitle': (walletName) =>
+      'cashierWeb3walletErrorExceedsWalletBalance':
+          (Object walletBalance, Object currency) =>
+              localizations.cashierWeb3walletErrorExceedsWalletBalance(
+                  walletBalance, currency),
+      'cashierWeb3walletErrorMinDepositAmount':
+          (Object minDeposit, Object currency) => localizations
+              .cashierWeb3walletErrorMinDepositAmount(minDeposit, currency),
+      'cashierWeb3walletWalletLinkedBtnTitle': (Object walletName) =>
           localizations.cashierWeb3walletWalletLinkedBtnTitle(walletName),
-      'cashierWeb3walletWalletLinkedDesc': (walletName) =>
+      'cashierWeb3walletWalletLinkedDesc': (Object walletName) =>
           localizations.cashierWeb3walletWalletLinkedDesc(walletName),
-      'cashierWeb3walletWarnDisconnectActiveWallet': (wallet) =>
+      'cashierWeb3walletWarnDisconnectActiveWallet': (Object wallet) =>
           localizations.cashierWeb3walletWarnDisconnectActiveWallet(wallet),
-      'cashierWithdrawSuccessful': (currency, amount) =>
+      'cashierWithdrawSuccessful': (Object currency, Object amount) =>
           localizations.cashierWithdrawSuccessful(currency, amount),
-      'cashierWithdrawalCurrency': (currency) =>
+      'cashierWithdrawalCurrency': (Object currency) =>
           localizations.cashierWithdrawalCurrency(currency),
-      'cashierYouAreSpending': (transferAmount) =>
+      'cashierYouAreSpending': (Object transferAmount) =>
           localizations.cashierYouAreSpending(transferAmount),
-      'cashierYouHaveConverted': (amount, currency) =>
+      'cashierYouHaveConverted': (Object amount, Object currency) =>
           localizations.cashierYouHaveConverted(amount, currency),
-      'cashierYourAreSpending': (amount, currency) =>
+      'cashierYourAreSpending': (Object amount, Object currency) =>
           localizations.cashierYourAreSpending(amount, currency),
-      'errorsExchangeMinWithdraw': (currency, amount) =>
+      'errorsExchangeMinWithdraw': (Object currency, Object amount) =>
           localizations.errorsExchangeMinWithdraw(currency, amount),
-      'errorsMinWithdraw': (minAmount, currency) =>
+      'errorsMinWithdraw': (Object minAmount, Object currency) =>
           localizations.errorsMinWithdraw(minAmount, currency),
-      'errorsNoDepositsAvailableAtThisTime': (currency) =>
+      'errorsNoDepositsAvailableAtThisTime': (Object currency) =>
           localizations.errorsNoDepositsAvailableAtThisTime(currency),
-      'errorsNoWithdrawalsAvailableAtThisTime': (currency) =>
+      'errorsNoWithdrawalsAvailableAtThisTime': (Object currency) =>
           localizations.errorsNoWithdrawalsAvailableAtThisTime(currency),
-      'transactionExchangeDeposit': (from, to) =>
+      'transactionExchangeDeposit': (Object from, Object to) =>
           localizations.transactionExchangeDeposit(from, to),
-      'transactionExchangeWithdrawal': (from, to) =>
+      'transactionExchangeWithdrawal': (Object from, Object to) =>
           localizations.transactionExchangeWithdrawal(from, to),
     };
   }

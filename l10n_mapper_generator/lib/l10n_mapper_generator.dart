@@ -114,13 +114,14 @@ class L10nMapperGenerator extends Generator {
 
               bufferL10nHelper.writeln('if (object is String) return object;');
             } else {
-              bufferL10nHelper.writeln('if (object is String || object == null) return object;');
+              bufferL10nHelper.writeln(
+                  'if (object is String || object == null) return object as String?;');
             }
 
             bufferL10nHelper.writeln("assert(arguments != null, 'Arguments should not be null!');");
             bufferL10nHelper.writeln("assert(arguments!.isNotEmpty, 'Arguments should not be empty!');");
 
-            bufferL10nHelper.writeln('return Function.apply(object, arguments);');
+            bufferL10nHelper.writeln('return Function.apply(object, arguments) as String;');
             bufferL10nHelper.writeln('}');
             bufferL10nHelper.writeln('');
             bufferL10nHelper.writeln('/// Clear the cache for a specific locale or all locales');
@@ -172,9 +173,15 @@ class L10nMapperGenerator extends Generator {
 
           // skips gen-exceptions
           if (genExceptions.contains(name)) continue;
-          final parameters = method.formalParameters.map((e) => e.displayName).join(', ');
+          final positionalParams = method.formalParameters
+              .where((p) => !p.isNamed)
+              .toList();
+          final paramList = positionalParams
+              .map((p) => '${p.type.getDisplayString()} ${p.displayName}')
+              .join(', ');
+          final paramNames = positionalParams.map((p) => p.displayName).join(', ');
 
-          buffer.writeln("'$name': ($parameters) => localizations.$name($parameters),");
+          buffer.writeln("'$name': ($paramList) => localizations.$name($paramNames),");
         }
 
         buffer.writeln('};');
