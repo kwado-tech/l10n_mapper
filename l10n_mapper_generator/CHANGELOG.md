@@ -1,3 +1,5 @@
+## 2.3.3
+* * Fixed type safety (mapper closures, parseL10n casts, Function.apply argument) and updated documentation
 ## 2.3.2
 * * Fixed type safety (mapper closures, parseL10n casts) and updated documentation
 ## 2.3.1
