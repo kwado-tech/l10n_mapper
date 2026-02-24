@@ -16,9 +16,9 @@ After:  100 lookups = ~0.01ms
 
 ### Example
 ```dart
-// This is now ~10,000x faster, but you don't need to change anything!
-final text = context.parseL10n('deposit');
-final text2 = context.parseL10n('minimumDeposit', arguments: [100, 'USD']);
+// Keys match your Flutter-generated localization (camelCase)
+final text = context.parseL10n('cashierDeposit');
+final text2 = context.parseL10n('cashierMinimumDeposit', arguments: [100, 'USD']);
 ```
 
 ### Optional: Cache Management
@@ -32,9 +32,10 @@ L10nHelper.clearCache('en');    // Clear specific locale
 
 | If you want to... | Read this |
 |-------------------|-----------|
-| See visual before/after | [BEFORE_AFTER.md](./BEFORE_AFTER.md) |
-| Understand the optimization | [PERFORMANCE.md](./PERFORMANCE.md) |
-| Get technical details | [IMPLEMENTATION_SUMMARY.md](./IMPLEMENTATION_SUMMARY.md) |
+| See generated output structure | [GENERATED_OUTPUT.md](../technical/GENERATED_OUTPUT.md) |
+| See visual before/after | [BEFORE_AFTER.md](../technical/BEFORE_AFTER.md) |
+| Understand the optimization | [PERFORMANCE.md](../technical/PERFORMANCE.md) |
+| Get technical details | [IMPLEMENTATION_SUMMARY.md](../technical/IMPLEMENTATION_SUMMARY.md) |
 
 ## ✅ That's It!
 

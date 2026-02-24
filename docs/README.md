@@ -49,6 +49,7 @@ Deep dives and implementation details:
 - **[Implementation Summary](./technical/IMPLEMENTATION_SUMMARY.md)** - Technical implementation notes
 
 #### Reference
+- **[Generated Output](./technical/GENERATED_OUTPUT.md)** - Exact structure of generated code
 - **[Legacy Versioning](./technical/VERSIONING_LEGACY.md)** - Historical local script reference
 
 ---
@@ -111,6 +112,7 @@ docs/
     ├── PERFORMANCE.md
     ├── BEFORE_AFTER.md
     ├── WORKFLOW.md
+    ├── GENERATED_OUTPUT.md
     ├── IMPLEMENTATION_SUMMARY.md
     └── VERSIONING_LEGACY.md
 ```
