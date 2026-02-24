@@ -201,7 +201,7 @@ class L10nHelper {
     if (object is String) return object;
     
     // For parameterized translations
-    return Function.apply(object, arguments);
+    return Function.apply(object, arguments) as String;
   }
 }
 
@@ -211,7 +211,7 @@ class AppLocalizationsMapper {
     return {
       'cashierDeposit': localizations.cashierDeposit,
       'cashierWithdraw': localizations.cashierWithdraw,
-      'cashierMinimumDeposit': (amount, currency) => 
+      'cashierMinimumDeposit': (Object amount, Object currency) =>
           localizations.cashierMinimumDeposit(amount, currency),
       // ... ~2,400 more entries
     };

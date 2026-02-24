@@ -5462,11 +5462,11 @@
     "type": "text",
     "description": "Payment method is not available"
   },
-  "errors.MIN_WITHDRAW": "اقل قيمة يمكنك سحبها {amount}{currency}",
+  "errors.MIN_WITHDRAW": "اقل قيمة يمكنك سحبها {minAmount}{currency}",
   "@errors.MIN_WITHDRAW": {
     "type": "text",
     "placeholders": {
-      "amount": {
+      "minAmount": {
       },
       "currency": {
       }

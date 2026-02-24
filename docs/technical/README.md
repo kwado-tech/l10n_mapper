@@ -18,6 +18,7 @@ Deep dives into the l10n_mapper system, implementation details, and advanced top
 
 ## 📖 Reference
 
+- **[Generated Output](./GENERATED_OUTPUT.md)** - Exact structure of generated code (authoritative reference)
 - **[Legacy Versioning](./VERSIONING_LEGACY.md)** - Historical reference for old local script workflow
 
 ## 🔙 Back to Documentation Index

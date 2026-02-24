@@ -20,7 +20,7 @@ class L10nHelper {
     
     if (object == null) return 'Translation key not found!';
     if (object is String) return object;
-    return Function.apply(object, arguments);
+    return Function.apply(object, arguments) as String;
   }
 }
 ```

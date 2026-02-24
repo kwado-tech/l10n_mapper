@@ -5388,11 +5388,11 @@
   "@errors.MAX_WITHDRAW": {
     "type": "text"
   },
-  "errors.MIN_WITHDRAW": "Die Mindestauszahlung beträgt {amount} {currency}",
+  "errors.MIN_WITHDRAW": "Die Mindestauszahlung beträgt {minAmount} {currency}",
   "@errors.MIN_WITHDRAW": {
     "type": "text",
     "placeholders": {
-      "amount": {
+      "minAmount": {
       },
       "currency": {
       }
