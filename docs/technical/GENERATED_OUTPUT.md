@@ -82,7 +82,7 @@ class L10nHelper {
     if (object is String) return object;
     assert(arguments != null, 'Arguments should not be null!');
     assert(arguments!.isNotEmpty, 'Arguments should not be empty!');
-    return Function.apply(object, arguments) as String;
+    return Function.apply(object as Function, arguments) as String;
   }
 
   static void clearCache([String? localeName]) {
