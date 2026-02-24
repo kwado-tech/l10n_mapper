@@ -281,7 +281,7 @@ extension AppLocalizationsExtension on BuildContext {
     if (object is String) return object;
     assert(arguments != null, 'Arguments should not be null!');
     assert(arguments!.isNotEmpty, 'Arguments should not be empty!');
-    return Function.apply(object, arguments);
+    return Function.apply(object, arguments) as String;
   }
 }
 
@@ -293,9 +293,11 @@ class AppLocalizationsMapper {
       'localeName': localizations.localeName,
       'application_name': localizations.application_name,
       'deposit_timeframe': localizations.deposit_timeframe,
-      'balance_reverted': (currency) => localizations.balance_reverted(currency),
-      'convert_before_withdraw': (convertFrom, convertTo) => localizations.convert_before_withdraw(convertFrom, convertTo),
-      'convert_before_withdraw_again': (convertFrom, convertTo) => localizations.convert_before_withdraw_again(convertFrom, convertTo),
+      'balance_reverted': (Object currency) => localizations.balance_reverted(currency),
+      'convert_before_withdraw': (Object convertFrom, Object convertTo) =>
+          localizations.convert_before_withdraw(convertFrom, convertTo),
+      'convert_before_withdraw_again': (Object convertFrom, Object convertTo) =>
+          localizations.convert_before_withdraw_again(convertFrom, convertTo),
     };
   }
 }
