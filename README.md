@@ -50,22 +50,20 @@ Arguments must match the order of placeholders in your ARB file.
 
 #### ⚡ Performance
 
-The generator includes automatic performance optimization with **lazy-initialized caching**:
-- **First lookup**: Creates translation map once per locale
-- **Subsequent lookups**: O(1) hash map access (~2,400x faster for large translation sets)
-- **Memory efficient**: Single map per active locale, minimal GC pressure
-- **Zero configuration**: Works automatically, no setup required
+The generator uses a **switch expression** for lookups (no map, no cache):
+- **Zero allocation**: No map creation, no closures, no static cache
+- **O(1) lookup**: Compiler-optimized switch (hash jump table)
+- **Tree-shakeable**: Unused translation keys can be eliminated
+- **No memory leaks**: Safe for apps that cycle through many locales
 
-For large translation files (1000+ keys), this provides significant performance improvements. See [docs/technical/PERFORMANCE.md](./docs/technical/PERFORMANCE.md) for detailed benchmarks and implementation details.
+See [docs/technical/PERFORMANCE.md](./docs/technical/PERFORMANCE.md) for details.
 
 #### Mapper
 
 The generator produces `app_localizations.mapper.dart` alongside your Flutter-generated `app_localizations.dart`. It adds:
 
 - **BuildContextExtension**: `l10n`, `locale`, and `parseL10n` on `BuildContext`
-- **AppLocalizationsExtension**: `parseL10n` on `AppLocalizations`
-- **L10nHelper**: Cached lookup with `parseL10n` and `clearCache`
-- **AppLocalizationsMapper**: Maps keys to translations (getters) or typed closures (methods)
+- **AppLocalizationsExtension**: `lookupKey` (switch-based) and `parseL10n` on `AppLocalizations`
 
 See [Generated Output Reference](./docs/technical/GENERATED_OUTPUT.md) for the exact structure.
 
@@ -93,7 +91,7 @@ targets:
 |--------|---------|-------------|
 | `l10n` | `true` | Generate `l10n` getter on `BuildContext` |
 | `locale` | `true` | Generate `locale` getter on `BuildContext` |
-| `parseL10n` | `true` | Generate `parseL10n` and `L10nHelper` |
+| `parseL10n` | `true` | Generate `parseL10n` and `lookupKey` on `AppLocalizations` |
 | `message` | `null` | Fallback when key not found. If set, returns `String`; if `null`, returns `String?` |
 | `classNames` | `"AppLocalizations"` | Comma-separated class names for multi-localization setups |
 
@@ -263,7 +261,7 @@ With this flexibility, one can decide to prefer camel or snake casing which are 
 
 #### Generated output
 
-The mapper file adds extensions and a cached helper. Structure (simplified):
+The mapper file adds extensions with switch-based lookup. Structure (simplified):
 
 ```dart
 // app_localizations.mapper.dart (generated)
@@ -275,21 +273,8 @@ extension BuildContextExtension on BuildContext {
 }
 
 extension AppLocalizationsExtension on AppLocalizations {
+  Object? lookupKey(String key, [List<Object>? args]) { /* switch expression */ }
   String parseL10n(String translationKey, {List<Object>? arguments}) { ... }
-}
-
-class L10nHelper {
-  static String parseL10n(AppLocalizations localizations, String translationKey, {List<Object>? arguments}) { ... }
-  static void clearCache([String? localeName]) { ... }
-}
-
-class AppLocalizationsMapper {
-  Map<String, dynamic> toLocalizationMap(AppLocalizations localizations) => {
-    'localeName': localizations.localeName,
-    'cashierMinimumDeposit': (Object amount, Object currency) =>
-        localizations.cashierMinimumDeposit(amount, currency),
-    // ...
-  };
 }
 ```
 
