@@ -14,2526 +14,2405 @@ extension BuildContextExtension on BuildContext {
   Locale get locale => Localizations.localeOf(this);
   String parseL10n(String translationKey, {List<Object>? arguments}) {
     final localizations = AppLocalizations.of(this)!;
-    return L10nHelper.parseL10n(localizations, translationKey,
-        arguments: arguments);
+    return localizations.parseL10n(translationKey, arguments: arguments);
   }
 }
 
 extension AppLocalizationsExtension on AppLocalizations {
-  String parseL10n(String translationKey, {List<Object>? arguments}) {
-    return L10nHelper.parseL10n(this, translationKey, arguments: arguments);
-  }
-}
-
-class L10nHelper {
-// Cache to store localization maps per locale
-  static final Map<String, Map<String, dynamic>> _cache = {};
-
-  static String parseL10n(AppLocalizations localizations, String translationKey,
-      {List<Object>? arguments}) {
-// Get or create cached map for this locale
-    final localeName = localizations.localeName;
-    final cachedMap = _cache[localeName];
-
-    final map = cachedMap ??
-        () {
-          const mapper = AppLocalizationsMapper();
-          final newMap = mapper.toLocalizationMap(localizations);
-          _cache[localeName] = newMap;
-          return newMap;
-        }();
-
-    final object = map[translationKey];
-    if (object == null) return 'Translation key not found!';
-    if (object is String) return object;
-    assert(arguments != null, 'Arguments should not be null!');
-    assert(arguments!.isNotEmpty, 'Arguments should not be empty!');
-    return Function.apply(object as Function, arguments) as String;
-  }
-
-  /// Clear the cache for a specific locale or all locales
-  static void clearCache([String? localeName]) {
-    if (localeName != null) {
-      _cache.remove(localeName);
-    } else {
-      _cache.clear();
-    }
-  }
-}
-
-class AppLocalizationsMapper {
-  const AppLocalizationsMapper();
-  Map<String, dynamic> toLocalizationMap(AppLocalizations localizations) {
-    return {
-      'localeName': localizations.localeName,
-      'cashierAccountsDesc': localizations.cashierAccountsDesc,
-      'cashierAcquisitionPromo': localizations.cashierAcquisitionPromo,
-      'cashierTestTranslation': localizations.cashierTestTranslation,
-      'cashierActivateTronlink': localizations.cashierActivateTronlink,
-      'cashierActiveBalance': localizations.cashierActiveBalance,
-      'cashierActiveBalanceDesc': localizations.cashierActiveBalanceDesc,
-      'cashierAda': localizations.cashierAda,
-      'cashierAdd2fa': localizations.cashierAdd2fa,
-      'cashierAddOrRemoveYourIndividualCurrency':
-          localizations.cashierAddOrRemoveYourIndividualCurrency,
-      'cashierAddRemoveWallets': localizations.cashierAddRemoveWallets,
-      'cashierAddress': localizations.cashierAddress,
-      'cashierAgentWithdrawDescription':
-          localizations.cashierAgentWithdrawDescription,
-      'cashierAgentWithdrawOtp': localizations.cashierAgentWithdrawOtp,
-      'cashierAgentWithdrawTitle': localizations.cashierAgentWithdrawTitle,
-      'cashierAgentWithdrawTransfer':
-          localizations.cashierAgentWithdrawTransfer,
-      'cashierAgentWithdrawUsername':
-          localizations.cashierAgentWithdrawUsername,
-      'cashierAgentWithdrawUsernameHint':
-          localizations.cashierAgentWithdrawUsernameHint,
-      'cashierAgentWithdrawalStarted':
-          localizations.cashierAgentWithdrawalStarted,
-      'cashierAgents': localizations.cashierAgents,
-      'cashierAllMethods': localizations.cashierAllMethods,
-      'cashierAllTime': localizations.cashierAllTime,
-      'cashierAmountIn': localizations.cashierAmountIn,
-      'cashierAmountOfEth': localizations.cashierAmountOfEth,
-      'cashierAmountOfMbtc': localizations.cashierAmountOfMbtc,
-      'cashierAmountOfSoc': localizations.cashierAmountOfSoc,
-      'cashierAmountOfUbtc': localizations.cashierAmountOfUbtc,
-      'cashierAnimex_bankTransferTitle':
-          localizations.cashierAnimex_bankTransferTitle,
-      'cashierAnimex_sumopayTitle': localizations.cashierAnimex_sumopayTitle,
-      'cashierApplyFilters': localizations.cashierApplyFilters,
-      'cashierBankTransferAccount': localizations.cashierBankTransferAccount,
-      'cashierBanking': localizations.cashierBanking,
-      'cashierBankingAndCreditCards':
-          localizations.cashierBankingAndCreditCards,
-      'cashierBarupayModalTitle': localizations.cashierBarupayModalTitle,
-      'cashierBeforeDepositing': localizations.cashierBeforeDepositing,
-      'cashierBet': localizations.cashierBet,
-      'cashierBinanceSmartChain': localizations.cashierBinanceSmartChain,
-      'cashierBinanceSmartChainMessage':
-          localizations.cashierBinanceSmartChainMessage,
-      'cashierBitcoinBalance': localizations.cashierBitcoinBalance,
-      'cashierBitcoinRate': localizations.cashierBitcoinRate,
-      'cashierBitlipaInstructionsAmounts':
-          localizations.cashierBitlipaInstructionsAmounts,
-      'cashierBitlipaInstructionsSms':
-          localizations.cashierBitlipaInstructionsSms,
-      'cashierBitlipaInstructionsTryagain':
-          localizations.cashierBitlipaInstructionsTryagain,
-      'cashierBitlipaDepositWarning':
-          localizations.cashierBitlipaDepositWarning,
-      'cashierBnb': localizations.cashierBnb,
-      'cashierBrl': localizations.cashierBrl,
-      'cashierBtc': localizations.cashierBtc,
-      'cashierBtcDepositDescription':
-          localizations.cashierBtcDepositDescription,
-      'cashierBtxeWithdrawalsAreDisabled':
-          localizations.cashierBtxeWithdrawalsAreDisabled,
-      'cashierBusd': localizations.cashierBusd,
-      'cashierBuy': localizations.cashierBuy,
-      'cashierBuyAndSell': localizations.cashierBuyAndSell,
-      'cashierBuyCrypto': localizations.cashierBuyCrypto,
-      'cashierBuyCryptoBitlipaTitle':
-          localizations.cashierBuyCryptoBitlipaTitle,
-      'cashierBuyCryptoDesc': localizations.cashierBuyCryptoDesc,
-      'cashierBuyCryptoMoonpay': localizations.cashierBuyCryptoMoonpay,
-      'cashierBuyCryptoNeocryptoDescription':
-          localizations.cashierBuyCryptoNeocryptoDescription,
-      'cashierBuyCryptoNeocryptoTitle':
-          localizations.cashierBuyCryptoNeocryptoTitle,
-      'cashierBuyCryptoOnrampTitle': localizations.cashierBuyCryptoOnrampTitle,
-      'cashierBuyCryptoTitle': localizations.cashierBuyCryptoTitle,
-      'cashierBuyCryptoTooltip': localizations.cashierBuyCryptoTooltip,
-      'cashierBuyCryptoWithCash': localizations.cashierBuyCryptoWithCash,
-      'cashierBuyOrCashoutBitcoin': localizations.cashierBuyOrCashoutBitcoin,
-      'cashierBuyTonWalletBot': localizations.cashierBuyTonWalletBot,
-      'cashierCad': localizations.cashierCad,
-      'cashierCancel': localizations.cashierCancel,
-      'cashierCashout': localizations.cashierCashout,
-      'cashierCashoutBitcoin': localizations.cashierCashoutBitcoin,
-      'cashierChooseDepositNetwork': localizations.cashierChooseDepositNetwork,
-      'cashierChoosePaymentMethod': localizations.cashierChoosePaymentMethod,
-      'cashierChoosePaymentOptions': localizations.cashierChoosePaymentOptions,
-      'cashierChooseWithdrawNetwork':
-          localizations.cashierChooseWithdrawNetwork,
-      'cashierClaim': localizations.cashierClaim,
-      'cashierClear': localizations.cashierClear,
-      'cashierClearAll': localizations.cashierClearAll,
-      'cashierClipboardCopied': localizations.cashierClipboardCopied,
-      'cashierClose': localizations.cashierClose,
-      'cashierCny': localizations.cashierCny,
-      'cashierCoinbasewallet': localizations.cashierCoinbasewallet,
-      'cashierCoinbasewalletDesc': localizations.cashierCoinbasewalletDesc,
-      'cashierConfiguration': localizations.cashierConfiguration,
-      'cashierConfirmInstantBankTransfer':
-          localizations.cashierConfirmInstantBankTransfer,
-      'cashierConfirmTransactionInTronlinkPopup':
-          localizations.cashierConfirmTransactionInTronlinkPopup,
-      'cashierConnectWallet': localizations.cashierConnectWallet,
-      'cashierContactUs': localizations.cashierContactUs,
-      'cashierCopyLink': localizations.cashierCopyLink,
-      'cashierCopyTxId': localizations.cashierCopyTxId,
-      'cashierCorefy_jetonTitle': localizations.cashierCorefy_jetonTitle,
-      'cashierCountryCn': localizations.cashierCountryCn,
-      'cashierCountryEe': localizations.cashierCountryEe,
-      'cashierCountryIe': localizations.cashierCountryIe,
-      'cashierCountryJp': localizations.cashierCountryJp,
-      'cashierCountryTr': localizations.cashierCountryTr,
-      'cashierCountryUk': localizations.cashierCountryUk,
-      'cashierCountryXx': localizations.cashierCountryXx,
-      'cashierCpfRfcDescription': localizations.cashierCpfRfcDescription,
-      'cashierCpfRfcInfo': localizations.cashierCpfRfcInfo,
-      'cashierCpfRfcInputCpf': localizations.cashierCpfRfcInputCpf,
-      'cashierCpfRfcInputRfc': localizations.cashierCpfRfcInputRfc,
-      'cashierCpfRfcTitle': localizations.cashierCpfRfcTitle,
-      'cashierCreateWallet': localizations.cashierCreateWallet,
-      'cashierCrypto': localizations.cashierCrypto,
-      'cashierCryptoDeposit': localizations.cashierCryptoDeposit,
-      'cashierCryptoWithdrawCorrectInvoice':
-          localizations.cashierCryptoWithdrawCorrectInvoice,
-      'cashierCryptoWithdrawInvoiceWithAmount':
-          localizations.cashierCryptoWithdrawInvoiceWithAmount,
-      'cashierCryptoWithdrawValidInvoice':
-          localizations.cashierCryptoWithdrawValidInvoice,
-      'cashierCryptoWithdrawValidWalletAddress':
-          localizations.cashierCryptoWithdrawValidWalletAddress,
-      'cashierCurrency': localizations.cashierCurrency,
-      'cashierCurrencyMbtc': localizations.cashierCurrencyMbtc,
-      'cashierCurrencyUbtc': localizations.cashierCurrencyUbtc,
-      'cashierCurrencyEur': localizations.cashierCurrencyEur,
-      'cashierCurrencyJpy': localizations.cashierCurrencyJpy,
-      'cashierCurrencyTry': localizations.cashierCurrencyTry,
-      'cashierCurrencyUsd': localizations.cashierCurrencyUsd,
-      'cashierCurrentBitcoinBalance':
-          localizations.cashierCurrentBitcoinBalance,
-      'cashierCustom': localizations.cashierCustom,
-      'cashierCustomDate': localizations.cashierCustomDate,
-      'cashierCustomDateRange': localizations.cashierCustomDateRange,
-      'cashierCustomerDetails': localizations.cashierCustomerDetails,
-      'cashierCustomerDetailsDesc': localizations.cashierCustomerDetailsDesc,
-      'cashierDai': localizations.cashierDai,
-      'cashierDeposit': localizations.cashierDeposit,
-      'cashierDepositAda': localizations.cashierDepositAda,
-      'cashierDepositAgentsDesc': localizations.cashierDepositAgentsDesc,
-      'cashierDepositAmount': localizations.cashierDepositAmount,
-      'cashierDepositAmountChanging':
-          localizations.cashierDepositAmountChanging,
-      'cashierDepositBnb': localizations.cashierDepositBnb,
-      'cashierDepositBrl': localizations.cashierDepositBrl,
-      'cashierDepositBtc': localizations.cashierDepositBtc,
-      'cashierDepositBusd': localizations.cashierDepositBusd,
-      'cashierDepositCad': localizations.cashierDepositCad,
-      'cashierDepositCrypto': localizations.cashierDepositCrypto,
-      'cashierDepositDai': localizations.cashierDepositDai,
-      'cashierDepositDestinationTag':
-          localizations.cashierDepositDestinationTag,
-      'cashierDepositDoge': localizations.cashierDepositDoge,
-      'cashierDepositEth': localizations.cashierDepositEth,
-      'cashierDepositEur': localizations.cashierDepositEur,
-      'cashierDepositHistory': localizations.cashierDepositHistory,
-      'cashierDepositHkd': localizations.cashierDepositHkd,
-      'cashierDepositInr': localizations.cashierDepositInr,
-      'cashierDepositJpy': localizations.cashierDepositJpy,
-      'cashierDepositLtc': localizations.cashierDepositLtc,
-      'cashierDepositMatic': localizations.cashierDepositMatic,
-      'cashierDepositMethods': localizations.cashierDepositMethods,
-      'cashierDepositMethodsDesc': localizations.cashierDepositMethodsDesc,
-      'cashierDepositNetwork': localizations.cashierDepositNetwork,
-      'cashierDepositRegular': localizations.cashierDepositRegular,
-      'cashierDepositSoc': localizations.cashierDepositSoc,
-      'cashierDepositThb': localizations.cashierDepositThb,
-      'cashierDepositTon': localizations.cashierDepositTon,
-      'cashierDepositTonInfo': localizations.cashierDepositTonInfo,
-      'cashierDepositTonInvoiceId': localizations.cashierDepositTonInvoiceId,
-      'cashierDepositTonMessage': localizations.cashierDepositTonMessage,
-      'cashierDepositTrx': localizations.cashierDepositTrx,
-      'cashierDepositUsdc': localizations.cashierDepositUsdc,
-      'cashierDepositUsdt': localizations.cashierDepositUsdt,
-      'cashierDepositViaMetamask': localizations.cashierDepositViaMetamask,
-      'cashierDepositWithAltcoins': localizations.cashierDepositWithAltcoins,
-      'cashierDepositXrp': localizations.cashierDepositXrp,
-      'cashierDepositAnimex_sumopayTitle':
-          localizations.cashierDepositAnimex_sumopayTitle,
-      'cashierDepositBinanceDescription':
-          localizations.cashierDepositBinanceDescription,
-      'cashierDepositBinanceTitle': localizations.cashierDepositBinanceTitle,
-      'cashierDepositBitflyerDescription':
-          localizations.cashierDepositBitflyerDescription,
-      'cashierDepositBitflyerTitle': localizations.cashierDepositBitflyerTitle,
-      'cashierDepositBitgetDescription':
-          localizations.cashierDepositBitgetDescription,
-      'cashierDepositBitgetTitle': localizations.cashierDepositBitgetTitle,
-      'cashierDepositBitlipaDescription':
-          localizations.cashierDepositBitlipaDescription,
-      'cashierDepositBitlipaTitle': localizations.cashierDepositBitlipaTitle,
-      'cashierDepositBlockfinexDescription':
-          localizations.cashierDepositBlockfinexDescription,
-      'cashierDepositBlockfinexTitle':
-          localizations.cashierDepositBlockfinexTitle,
-      'cashierDepositBybitDescription':
-          localizations.cashierDepositBybitDescription,
-      'cashierDepositBybitTitle': localizations.cashierDepositBybitTitle,
-      'cashierDepositContinueTransactionWithWallet':
-          localizations.cashierDepositContinueTransactionWithWallet,
-      'cashierDepositDepositViaPayixi':
-          localizations.cashierDepositDepositViaPayixi,
-      'cashierDepositEzeebill_bankTransfer_inrTitle':
-          localizations.cashierDepositEzeebill_bankTransfer_inrTitle,
-      'cashierDepositEzeebill_bankTransferDescription':
-          localizations.cashierDepositEzeebill_bankTransferDescription,
-      'cashierDepositEzeebill_bankTransferTitle':
-          localizations.cashierDepositEzeebill_bankTransferTitle,
-      'cashierDepositEzeebill_ezeebillTitle':
-          localizations.cashierDepositEzeebill_ezeebillTitle,
-      'cashierDepositGenerateRequest':
-          localizations.cashierDepositGenerateRequest,
-      'cashierDepositInovapay_localBankTransferDescription':
-          localizations.cashierDepositInovapay_localBankTransferDescription,
-      'cashierDepositInovapay_localBankTransferTitle':
-          localizations.cashierDepositInovapay_localBankTransferTitle,
-      'cashierDepositInovapay_pixTitle':
-          localizations.cashierDepositInovapay_pixTitle,
-      'cashierDepositInterac_bankTitle':
-          localizations.cashierDepositInterac_bankTitle,
-      'cashierDepositJeton_bankTransferVoucherAtmJpyDescription': localizations
-          .cashierDepositJeton_bankTransferVoucherAtmJpyDescription,
-      'cashierDepositJeton_bankTransferVoucherAtmJpyTitle':
-          localizations.cashierDepositJeton_bankTransferVoucherAtmJpyTitle,
-      'cashierDepositJeton_bankTransferVoucherAtmDescription':
-          localizations.cashierDepositJeton_bankTransferVoucherAtmDescription,
-      'cashierDepositJeton_bankTransferVoucherAtmTitle':
-          localizations.cashierDepositJeton_bankTransferVoucherAtmTitle,
-      'cashierDepositJeton_jpyTitle':
-          localizations.cashierDepositJeton_jpyTitle,
-      'cashierDepositJeton_pixDescription':
-          localizations.cashierDepositJeton_pixDescription,
-      'cashierDepositJeton_pixTitle':
-          localizations.cashierDepositJeton_pixTitle,
-      'cashierDepositJetonDescription':
-          localizations.cashierDepositJetonDescription,
-      'cashierDepositJetonTitle': localizations.cashierDepositJetonTitle,
-      'cashierDepositKrakenDescription':
-          localizations.cashierDepositKrakenDescription,
-      'cashierDepositKrakenTitle': localizations.cashierDepositKrakenTitle,
-      'cashierDepositNetworkTooltip':
-          localizations.cashierDepositNetworkTooltip,
-      'cashierDepositOnrampDescription':
-          localizations.cashierDepositOnrampDescription,
-      'cashierDepositOnrampTitle': localizations.cashierDepositOnrampTitle,
-      'cashierDepositOnramperDescription':
-          localizations.cashierDepositOnramperDescription,
-      'cashierDepositOnramperTitle': localizations.cashierDepositOnramperTitle,
-      'cashierDepositPagava_jpyTitle':
-          localizations.cashierDepositPagava_jpyTitle,
-      'cashierDepositPagavaTitle': localizations.cashierDepositPagavaTitle,
-      'cashierDepositPagsmile_pixDescription':
-          localizations.cashierDepositPagsmile_pixDescription,
-      'cashierDepositPagsmile_pixTitle':
-          localizations.cashierDepositPagsmile_pixTitle,
-      'cashierDepositPaxfulDescription':
-          localizations.cashierDepositPaxfulDescription,
-      'cashierDepositPaxfulTitle': localizations.cashierDepositPaxfulTitle,
-      'cashierDepositPay4fun_webredirectDescription':
-          localizations.cashierDepositPay4fun_webredirectDescription,
-      'cashierDepositPay4fun_webredirectTitle':
-          localizations.cashierDepositPay4fun_webredirectTitle,
-      'cashierDepositPayixiDeposit': localizations.cashierDepositPayixiDeposit,
-      'cashierDepositPayixiDepositAlmostDoneMessage':
-          localizations.cashierDepositPayixiDepositAlmostDoneMessage,
-      'cashierDepositPaymentrush_paymentRushTitle':
-          localizations.cashierDepositPaymentrush_paymentRushTitle,
-      'cashierDepositPaytm10pay_paytm10payTitle':
-          localizations.cashierDepositPaytm10pay_paytm10payTitle,
-      'cashierDepositPinbank_localBankTransferTitle':
-          localizations.cashierDepositPinbank_localBankTransferTitle,
-      'cashierDepositQaicash_bankTransferTitle':
-          localizations.cashierDepositQaicash_bankTransferTitle,
-      'cashierDepositRemitanoDescription':
-          localizations.cashierDepositRemitanoDescription,
-      'cashierDepositRemitanoTitle': localizations.cashierDepositRemitanoTitle,
-      'cashierDepositRupeepayments_bankTransferTitle':
-          localizations.cashierDepositRupeepayments_bankTransferTitle,
-      'cashierDepositSimplexDescription':
-          localizations.cashierDepositSimplexDescription,
-      'cashierDepositSimplexTitle': localizations.cashierDepositSimplexTitle,
-      'cashierDepositSumopayTitle': localizations.cashierDepositSumopayTitle,
-      'cashierDepositUpi10pay_upi10payTitle':
-          localizations.cashierDepositUpi10pay_upi10payTitle,
-      'cashierDepositUtorgTitle': localizations.cashierDepositUtorgTitle,
-      'cashierDepositVrio_upiTitle': localizations.cashierDepositVrio_upiTitle,
-      'cashierDepositWalletDeposit': localizations.cashierDepositWalletDeposit,
-      'cashierDepositWarningConfirmAddress':
-          localizations.cashierDepositWarningConfirmAddress,
-      'cashierDepositWarningLightningNetwork':
-          localizations.cashierDepositWarningLightningNetwork,
-      'cashierDepositsAreDisabled': localizations.cashierDepositsAreDisabled,
-      'cashierDestinationTagCopied': localizations.cashierDestinationTagCopied,
-      'cashierDisconnect': localizations.cashierDisconnect,
-      'cashierDoge': localizations.cashierDoge,
-      'cashierDone': localizations.cashierDone,
-      'cashierDontShowAgain': localizations.cashierDontShowAgain,
-      'cashierEmailUs': localizations.cashierEmailUs,
-      'cashierEmailVerificationBannerResend':
-          localizations.cashierEmailVerificationBannerResend,
-      'cashierEmailVerificationBannerSuccess':
-          localizations.cashierEmailVerificationBannerSuccess,
-      'cashierEmailVerificationBannerTitle':
-          localizations.cashierEmailVerificationBannerTitle,
-      'cashierEmailVerificationConfirmSubtitle':
-          localizations.cashierEmailVerificationConfirmSubtitle,
-      'cashierEmailVerificationConfirmTitle':
-          localizations.cashierEmailVerificationConfirmTitle,
-      'cashierEmailVerificationConfirmVerify':
-          localizations.cashierEmailVerificationConfirmVerify,
-      'cashierEmailVerificationResendLink':
-          localizations.cashierEmailVerificationResendLink,
-      'cashierEmptyDepositOptions': localizations.cashierEmptyDepositOptions,
-      'cashierEmptyWithdrawalOptions':
-          localizations.cashierEmptyWithdrawalOptions,
-      'cashierEnglishInputRequried': localizations.cashierEnglishInputRequried,
-      'cashierEnterAmount': localizations.cashierEnterAmount,
-      'cashierEnterKatakanaInput': localizations.cashierEnterKatakanaInput,
-      'cashierEnterOtp': localizations.cashierEnterOtp,
-      'cashierEnterValidInput': localizations.cashierEnterValidInput,
-      'cashierEnterValidPhoneNumber':
-          localizations.cashierEnterValidPhoneNumber,
-      'cashierEnterValidZipCode': localizations.cashierEnterValidZipCode,
-      'cashierEnterWithdrawalAmount':
-          localizations.cashierEnterWithdrawalAmount,
-      'cashierEnterYourAddress': localizations.cashierEnterYourAddress,
-      'cashierEstimatedQuantity': localizations.cashierEstimatedQuantity,
-      'cashierEth': localizations.cashierEth,
-      'cashierEthDepositDescription':
-          localizations.cashierEthDepositDescription,
-      'cashierEur': localizations.cashierEur,
-      'cashierExchange': localizations.cashierExchange,
-      'cashierExchangeRateChanged': localizations.cashierExchangeRateChanged,
-      'cashierExchangeRateText': localizations.cashierExchangeRateText,
-      'cashierExchangeRateUpdated': localizations.cashierExchangeRateUpdated,
-      'cashierExternal': localizations.cashierExternal,
-      'cashierExternalWalletTonhubDescription':
-          localizations.cashierExternalWalletTonhubDescription,
-      'cashierExternalWalletTonhubTitle':
-          localizations.cashierExternalWalletTonhubTitle,
-      'cashierExternalWalletTonkeeperDescription':
-          localizations.cashierExternalWalletTonkeeperDescription,
-      'cashierExternalWalletTonkeeperTitle':
-          localizations.cashierExternalWalletTonkeeperTitle,
-      'cashierFaq': localizations.cashierFaq,
-      'cashierFastDeposit': localizations.cashierFastDeposit,
-      'cashierFiatAmountUsdtPlaceholder':
-          localizations.cashierFiatAmountUsdtPlaceholder,
-      'cashierFiatEstimatedTotal': localizations.cashierFiatEstimatedTotal,
-      'cashierFiatArs': localizations.cashierFiatArs,
-      'cashierFiatBdt': localizations.cashierFiatBdt,
-      'cashierFiatBrl': localizations.cashierFiatBrl,
-      'cashierFiatCad': localizations.cashierFiatCad,
-      'cashierFiatClp': localizations.cashierFiatClp,
-      'cashierFiatCny': localizations.cashierFiatCny,
-      'cashierFiatCorefyJetonTitle': localizations.cashierFiatCorefyJetonTitle,
-      'cashierFiatDeposit': localizations.cashierFiatDeposit,
-      'cashierFiatDepositStarted': localizations.cashierFiatDepositStarted,
-      'cashierFiatDepositAddMoreFunds':
-          localizations.cashierFiatDepositAddMoreFunds,
-      'cashierFiatDepositAddress': localizations.cashierFiatDepositAddress,
-      'cashierFiatDepositAddressPlaceholder':
-          localizations.cashierFiatDepositAddressPlaceholder,
-      'cashierFiatDepositAlipay': localizations.cashierFiatDepositAlipay,
-      'cashierFiatDepositAmount': localizations.cashierFiatDepositAmount,
-      'cashierFiatDepositBank': localizations.cashierFiatDepositBank,
-      'cashierFiatDepositBankAccountNumber':
-          localizations.cashierFiatDepositBankAccountNumber,
-      'cashierFiatDepositBankAccountNumberPlaceholder':
-          localizations.cashierFiatDepositBankAccountNumberPlaceholder,
-      'cashierFiatDepositBankBranch':
-          localizations.cashierFiatDepositBankBranch,
-      'cashierFiatDepositBankCode': localizations.cashierFiatDepositBankCode,
-      'cashierFiatDepositBankCodePlaceholder':
-          localizations.cashierFiatDepositBankCodePlaceholder,
-      'cashierFiatDepositBankInterac':
-          localizations.cashierFiatDepositBankInterac,
-      'cashierFiatDepositBankInteracAlmostDoneMessage':
-          localizations.cashierFiatDepositBankInteracAlmostDoneMessage,
-      'cashierFiatDepositBankInteracMessage':
-          localizations.cashierFiatDepositBankInteracMessage,
-      'cashierFiatDepositBankInteracOpenNewWindowTitle':
-          localizations.cashierFiatDepositBankInteracOpenNewWindowTitle,
-      'cashierFiatDepositBankPlaceholder':
-          localizations.cashierFiatDepositBankPlaceholder,
-      'cashierFiatDepositBankTransfer':
-          localizations.cashierFiatDepositBankTransfer,
-      'cashierFiatDepositBankTransferKlarna':
-          localizations.cashierFiatDepositBankTransferKlarna,
-      'cashierFiatDepositBankTransferKlarnaAlmostDoneMessage':
-          localizations.cashierFiatDepositBankTransferKlarnaAlmostDoneMessage,
-      'cashierFiatDepositBankTransferKlarnaFormDescription':
-          localizations.cashierFiatDepositBankTransferKlarnaFormDescription,
-      'cashierFiatDepositBankTransferKlarnaMessage':
-          localizations.cashierFiatDepositBankTransferKlarnaMessage,
-      'cashierFiatDepositBankTransferKlarnaOpenNewWindowTitle':
-          localizations.cashierFiatDepositBankTransferKlarnaOpenNewWindowTitle,
-      'cashierFiatDepositBankTransferQaicashFormDescription':
-          localizations.cashierFiatDepositBankTransferQaicashFormDescription,
-      'cashierFiatDepositBankTransferTrustly':
-          localizations.cashierFiatDepositBankTransferTrustly,
-      'cashierFiatDepositBankTransferTrustlyAlmostDoneMessage':
-          localizations.cashierFiatDepositBankTransferTrustlyAlmostDoneMessage,
-      'cashierFiatDepositBankTransferTrustlyFormDescription':
-          localizations.cashierFiatDepositBankTransferTrustlyFormDescription,
-      'cashierFiatDepositBankTransferTrustlyIframeDescription':
-          localizations.cashierFiatDepositBankTransferTrustlyIframeDescription,
-      'cashierFiatDepositBankTransferTrustlyMessage':
-          localizations.cashierFiatDepositBankTransferTrustlyMessage,
-      'cashierFiatDepositBankTransferTrustlyOpenNewWindowTitle':
-          localizations.cashierFiatDepositBankTransferTrustlyOpenNewWindowTitle,
-      'cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription':
-          localizations
-              .cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription,
-      'cashierFiatDepositBankTransferVoucherAtmFee':
-          localizations.cashierFiatDepositBankTransferVoucherAtmFee,
-      'cashierFiatDepositBarupayAccountNumber':
-          localizations.cashierFiatDepositBarupayAccountNumber,
-      'cashierFiatDepositBarupayBankBranch':
-          localizations.cashierFiatDepositBarupayBankBranch,
-      'cashierFiatDepositBarupayBankName':
-          localizations.cashierFiatDepositBarupayBankName,
-      'cashierFiatDepositBarupayBeneficiaryname':
-          localizations.cashierFiatDepositBarupayBeneficiaryname,
-      'cashierFiatDepositBic': localizations.cashierFiatDepositBic,
-      'cashierFiatDepositBitcasinoBarupayAccountNumber':
-          localizations.cashierFiatDepositBitcasinoBarupayAccountNumber,
-      'cashierFiatDepositBitcasinoBarupayBankBranch':
-          localizations.cashierFiatDepositBitcasinoBarupayBankBranch,
-      'cashierFiatDepositBitcasinoBarupayBankName':
-          localizations.cashierFiatDepositBitcasinoBarupayBankName,
-      'cashierFiatDepositBitcasinoBarupayBeneficiaryname':
-          localizations.cashierFiatDepositBitcasinoBarupayBeneficiaryname,
-      'cashierFiatDepositBrite': localizations.cashierFiatDepositBrite,
-      'cashierFiatDepositBusinessLogicInvalid':
-          localizations.cashierFiatDepositBusinessLogicInvalid,
-      'cashierFiatDepositBusinessLogicRequired':
-          localizations.cashierFiatDepositBusinessLogicRequired,
-      'cashierFiatDepositCadGlobalDescription':
-          localizations.cashierFiatDepositCadGlobalDescription,
-      'cashierFiatDepositCardholder':
-          localizations.cashierFiatDepositCardholder,
-      'cashierFiatDepositCardnumber':
-          localizations.cashierFiatDepositCardnumber,
-      'cashierFiatDepositChoosePaymentMethod':
-          localizations.cashierFiatDepositChoosePaymentMethod,
-      'cashierFiatDepositCity': localizations.cashierFiatDepositCity,
-      'cashierFiatDepositCityPlaceholder':
-          localizations.cashierFiatDepositCityPlaceholder,
-      'cashierFiatDepositCode': localizations.cashierFiatDepositCode,
-      'cashierFiatDepositContinue': localizations.cashierFiatDepositContinue,
-      'cashierFiatDepositContinueDeposit':
-          localizations.cashierFiatDepositContinueDeposit,
-      'cashierFiatDepositCopyToClipboard':
-          localizations.cashierFiatDepositCopyToClipboard,
-      'cashierFiatDepositCpf': localizations.cashierFiatDepositCpf,
-      'cashierFiatDepositCpfAlreadyExistsCpf':
-          localizations.cashierFiatDepositCpfAlreadyExistsCpf,
-      'cashierFiatDepositCpfDescription':
-          localizations.cashierFiatDepositCpfDescription,
-      'cashierFiatDepositCpfCpf': localizations.cashierFiatDepositCpfCpf,
-      'cashierFiatDepositCreditCardAcapture':
-          localizations.cashierFiatDepositCreditCardAcapture,
-      'cashierFiatDepositCreditCardAcaptureFormDescription':
-          localizations.cashierFiatDepositCreditCardAcaptureFormDescription,
-      'cashierFiatDepositCreditCardEMerchantPay':
-          localizations.cashierFiatDepositCreditCardEMerchantPay,
-      'cashierFiatDepositCreditCardEMerchantPayFormDescription':
-          localizations.cashierFiatDepositCreditCardEMerchantPayFormDescription,
-      'cashierFiatDepositCreditcard':
-          localizations.cashierFiatDepositCreditcard,
-      'cashierFiatDepositCreditcardAlmostDoneMessage':
-          localizations.cashierFiatDepositCreditcardAlmostDoneMessage,
-      'cashierFiatDepositCreditcardEcommpay':
-          localizations.cashierFiatDepositCreditcardEcommpay,
-      'cashierFiatDepositCreditcardEcommpayFormDescription':
-          localizations.cashierFiatDepositCreditcardEcommpayFormDescription,
-      'cashierFiatDepositCreditcardEcommpayIframeDescription':
-          localizations.cashierFiatDepositCreditcardEcommpayIframeDescription,
-      'cashierFiatDepositCreditcardEcommpayMessage':
-          localizations.cashierFiatDepositCreditcardEcommpayMessage,
-      'cashierFiatDepositCreditcardIframeDescription':
-          localizations.cashierFiatDepositCreditcardIframeDescription,
-      'cashierFiatDepositCreditcardMessage':
-          localizations.cashierFiatDepositCreditcardMessage,
-      'cashierFiatDepositCreditcardOpenNewWindowTitle':
-          localizations.cashierFiatDepositCreditcardOpenNewWindowTitle,
-      'cashierFiatDepositCreditcardRavedirectFormDescription':
-          localizations.cashierFiatDepositCreditcardRavedirectFormDescription,
-      'cashierFiatDepositCreditcardRavedirectMessage':
-          localizations.cashierFiatDepositCreditcardRavedirectMessage,
-      'cashierFiatDepositCustomerFirstName':
-          localizations.cashierFiatDepositCustomerFirstName,
-      'cashierFiatDepositCustomerFirstNamePlaceholder':
-          localizations.cashierFiatDepositCustomerFirstNamePlaceholder,
-      'cashierFiatDepositCustomerFullName':
-          localizations.cashierFiatDepositCustomerFullName,
-      'cashierFiatDepositCustomerLastName':
-          localizations.cashierFiatDepositCustomerLastName,
-      'cashierFiatDepositCustomerLastNamePlaceholder':
-          localizations.cashierFiatDepositCustomerLastNamePlaceholder,
-      'cashierFiatDepositDateOfBirth':
-          localizations.cashierFiatDepositDateOfBirth,
-      'cashierFiatDepositDelete': localizations.cashierFiatDepositDelete,
-      'cashierFiatDepositDependsOnAmount':
-          localizations.cashierFiatDepositDependsOnAmount,
-      'cashierFiatDepositEcopayz': localizations.cashierFiatDepositEcopayz,
-      'cashierFiatDepositEcopayzFormDescription':
-          localizations.cashierFiatDepositEcopayzFormDescription,
-      'cashierFiatDepositEcopayzIframeDescription':
-          localizations.cashierFiatDepositEcopayzIframeDescription,
-      'cashierFiatDepositEcopayzMessage':
-          localizations.cashierFiatDepositEcopayzMessage,
-      'cashierFiatDepositEnccreditcardnumber':
-          localizations.cashierFiatDepositEnccreditcardnumber,
-      'cashierFiatDepositEnccvv': localizations.cashierFiatDepositEnccvv,
-      'cashierFiatDepositEurGlobalDescription':
-          localizations.cashierFiatDepositEurGlobalDescription,
-      'cashierFiatDepositExpirymonth':
-          localizations.cashierFiatDepositExpirymonth,
-      'cashierFiatDepositExpiryyear':
-          localizations.cashierFiatDepositExpiryyear,
-      'cashierFiatDepositEzeebillCityPlaceholder':
-          localizations.cashierFiatDepositEzeebillCityPlaceholder,
-      'cashierFiatDepositEzeebillStatePlaceholder':
-          localizations.cashierFiatDepositEzeebillStatePlaceholder,
-      'cashierFiatDepositFailureMessage':
-          localizations.cashierFiatDepositFailureMessage,
-      'cashierFiatDepositFee': localizations.cashierFiatDepositFee,
-      'cashierFiatDepositFeeAdd': localizations.cashierFiatDepositFeeAdd,
-      'cashierFiatDepositFeeDeduct': localizations.cashierFiatDepositFeeDeduct,
-      'cashierFiatDepositFirstname': localizations.cashierFiatDepositFirstname,
-      'cashierFiatDepositFree': localizations.cashierFiatDepositFree,
-      'cashierFiatDepositGlobalDescription':
-          localizations.cashierFiatDepositGlobalDescription,
-      'cashierFiatDepositGoBack': localizations.cashierFiatDepositGoBack,
-      'cashierFiatDepositHelp2PayQaicash':
-          localizations.cashierFiatDepositHelp2PayQaicash,
-      'cashierFiatDepositHelp2PayQaicashAlmostDoneMessage':
-          localizations.cashierFiatDepositHelp2PayQaicashAlmostDoneMessage,
-      'cashierFiatDepositHelp2PayQaicashFormDescription':
-          localizations.cashierFiatDepositHelp2PayQaicashFormDescription,
-      'cashierFiatDepositHelp2PayQaicashMessage':
-          localizations.cashierFiatDepositHelp2PayQaicashMessage,
-      'cashierFiatDepositHelp2PayQaicashOpenNewWindowTitle':
-          localizations.cashierFiatDepositHelp2PayQaicashOpenNewWindowTitle,
-      'cashierFiatDepositIban': localizations.cashierFiatDepositIban,
-      'cashierFiatDepositInovapayLocalBankTransferBrlLimits':
-          localizations.cashierFiatDepositInovapayLocalBankTransferBrlLimits,
-      'cashierFiatDepositInstant': localizations.cashierFiatDepositInstant,
-      'cashierFiatDepositInvalidCpfCpf':
-          localizations.cashierFiatDepositInvalidCpfCpf,
-      'cashierFiatDepositInvalidPhonePhone':
-          localizations.cashierFiatDepositInvalidPhonePhone,
-      'cashierFiatDepositInvalidBankAccountNumber':
-          localizations.cashierFiatDepositInvalidBankAccountNumber,
-      'cashierFiatDepositIsNotPositiveAmount':
-          localizations.cashierFiatDepositIsNotPositiveAmount,
-      'cashierFiatDepositJetonCorefy':
-          localizations.cashierFiatDepositJetonCorefy,
-      'cashierFiatDepositJetonCorefyAlmostDoneMessage':
-          localizations.cashierFiatDepositJetonCorefyAlmostDoneMessage,
-      'cashierFiatDepositJetonCorefyFormDescription':
-          localizations.cashierFiatDepositJetonCorefyFormDescription,
-      'cashierFiatDepositJetonCorefyOpenNewWindowTitle':
-          localizations.cashierFiatDepositJetonCorefyOpenNewWindowTitle,
-      'cashierFiatDepositJetonExchangeRate':
-          localizations.cashierFiatDepositJetonExchangeRate,
-      'cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyJpyLimits':
-          localizations
-              .cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyJpyLimits,
-      'cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyLimits':
-          localizations
-              .cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyLimits,
-      'cashierFiatDepositJpy_instantBankTransferFee':
-          localizations.cashierFiatDepositJpy_instantBankTransferFee,
-      'cashierFiatDepositJpyGlobalDescription':
-          localizations.cashierFiatDepositJpyGlobalDescription,
-      'cashierFiatDepositKeitapayAddressPlaceholder':
-          localizations.cashierFiatDepositKeitapayAddressPlaceholder,
-      'cashierFiatDepositKeitapayBankBranchPlaceholder':
-          localizations.cashierFiatDepositKeitapayBankBranchPlaceholder,
-      'cashierFiatDepositKeitapayCustomerFirstName':
-          localizations.cashierFiatDepositKeitapayCustomerFirstName,
-      'cashierFiatDepositKeitapayCustomerFirstNamePlaceholder':
-          localizations.cashierFiatDepositKeitapayCustomerFirstNamePlaceholder,
-      'cashierFiatDepositKeitapayCustomerLastName':
-          localizations.cashierFiatDepositKeitapayCustomerLastName,
-      'cashierFiatDepositKeitapayCustomerLastNamePlaceholder':
-          localizations.cashierFiatDepositKeitapayCustomerLastNamePlaceholder,
-      'cashierFiatDepositKeytaPayBankTransferJpyLimits':
-          localizations.cashierFiatDepositKeytaPayBankTransferJpyLimits,
-      'cashierFiatDepositLastname': localizations.cashierFiatDepositLastname,
-      'cashierFiatDepositLocalBankTransferInovapayFormDescription':
-          localizations
-              .cashierFiatDepositLocalBankTransferInovapayFormDescription,
-      'cashierFiatDepositLocalBankTransferPinBankFormDescription': localizations
-          .cashierFiatDepositLocalBankTransferPinBankFormDescription,
-      'cashierFiatDepositMaxLimit': localizations.cashierFiatDepositMaxLimit,
-      'cashierFiatDepositMinAmount': localizations.cashierFiatDepositMinAmount,
-      'cashierFiatDepositMinLimit': localizations.cashierFiatDepositMinLimit,
-      'cashierFiatDepositModalFooter':
-          localizations.cashierFiatDepositModalFooter,
-      'cashierFiatDepositModalInstruction':
-          localizations.cashierFiatDepositModalInstruction,
-      'cashierFiatDepositMuchbetter':
-          localizations.cashierFiatDepositMuchbetter,
-      'cashierFiatDepositMuchbetterFormDescription':
-          localizations.cashierFiatDepositMuchbetterFormDescription,
-      'cashierFiatDepositMuchbetterIframeDescription':
-          localizations.cashierFiatDepositMuchbetterIframeDescription,
-      'cashierFiatDepositMuchbetterMessage':
-          localizations.cashierFiatDepositMuchbetterMessage,
-      'cashierFiatDepositNationalid':
-          localizations.cashierFiatDepositNationalid,
-      'cashierFiatDepositNetBankingQaicash':
-          localizations.cashierFiatDepositNetBankingQaicash,
-      'cashierFiatDepositNetBankingQaicashAlmostDoneMessage':
-          localizations.cashierFiatDepositNetBankingQaicashAlmostDoneMessage,
-      'cashierFiatDepositNetBankingQaicashMessage':
-          localizations.cashierFiatDepositNetBankingQaicashMessage,
-      'cashierFiatDepositNetBankingQaicashOpenNewWindowTitle':
-          localizations.cashierFiatDepositNetBankingQaicashOpenNewWindowTitle,
-      'cashierFiatDepositNeteller': localizations.cashierFiatDepositNeteller,
-      'cashierFiatDepositNetellerAlmostDoneMessage':
-          localizations.cashierFiatDepositNetellerAlmostDoneMessage,
-      'cashierFiatDepositNetellerFormDescription':
-          localizations.cashierFiatDepositNetellerFormDescription,
-      'cashierFiatDepositNetellerMessage':
-          localizations.cashierFiatDepositNetellerMessage,
-      'cashierFiatDepositNetellerOpenNewWindowTitle':
-          localizations.cashierFiatDepositNetellerOpenNewWindowTitle,
-      'cashierFiatDepositNextStep': localizations.cashierFiatDepositNextStep,
-      'cashierFiatDepositNip': localizations.cashierFiatDepositNip,
-      'cashierFiatDepositNoExtraInfoNeeded':
-          localizations.cashierFiatDepositNoExtraInfoNeeded,
-      'cashierFiatDepositOverview': localizations.cashierFiatDepositOverview,
-      'cashierFiatDepositPagsmileCustomerFirstNamePlaceholder':
-          localizations.cashierFiatDepositPagsmileCustomerFirstNamePlaceholder,
-      'cashierFiatDepositPagsmileCustomerLastNamePlaceholder':
-          localizations.cashierFiatDepositPagsmileCustomerLastNamePlaceholder,
-      'cashierFiatDepositPagsmilePhone':
-          localizations.cashierFiatDepositPagsmilePhone,
-      'cashierFiatDepositPagsmilePhonePlaceholder':
-          localizations.cashierFiatDepositPagsmilePhonePlaceholder,
-      'cashierFiatDepositPagsmilePixBrlLimits':
-          localizations.cashierFiatDepositPagsmilePixBrlLimits,
-      'cashierFiatDepositPassword': localizations.cashierFiatDepositPassword,
-      'cashierFiatDepositPay4funWebredirectBrlLimits':
-          localizations.cashierFiatDepositPay4funWebredirectBrlLimits,
-      'cashierFiatDepositPaymentMethods':
-          localizations.cashierFiatDepositPaymentMethods,
-      'cashierFiatDepositPaypayCorefy':
-          localizations.cashierFiatDepositPaypayCorefy,
-      'cashierFiatDepositPaypayCorefyAlmostDoneMessage':
-          localizations.cashierFiatDepositPaypayCorefyAlmostDoneMessage,
-      'cashierFiatDepositPaypayCorefyOpenNewWindowTitle':
-          localizations.cashierFiatDepositPaypayCorefyOpenNewWindowTitle,
-      'cashierFiatDepositPaysafecard':
-          localizations.cashierFiatDepositPaysafecard,
-      'cashierFiatDepositPaysafecardFormDescription':
-          localizations.cashierFiatDepositPaysafecardFormDescription,
-      'cashierFiatDepositPaysafecardIframeDescription':
-          localizations.cashierFiatDepositPaysafecardIframeDescription,
-      'cashierFiatDepositPaysafecardMessage':
-          localizations.cashierFiatDepositPaysafecardMessage,
-      'cashierFiatDepositPersonalDetails':
-          localizations.cashierFiatDepositPersonalDetails,
-      'cashierFiatDepositPhone': localizations.cashierFiatDepositPhone,
-      'cashierFiatDepositPhoneNumber':
-          localizations.cashierFiatDepositPhoneNumber,
-      'cashierFiatDepositPhonePlaceholder':
-          localizations.cashierFiatDepositPhonePlaceholder,
-      'cashierFiatDepositPhonePlaceholderKes':
-          localizations.cashierFiatDepositPhonePlaceholderKes,
-      'cashierFiatDepositPhonePlaceholderTzs':
-          localizations.cashierFiatDepositPhonePlaceholderTzs,
-      'cashierFiatDepositPhonePlaceholderUgx':
-          localizations.cashierFiatDepositPhonePlaceholderUgx,
-      'cashierFiatDepositPhonenumberPlaceholder':
-          localizations.cashierFiatDepositPhonenumberPlaceholder,
-      'cashierFiatDepositPleaseEnterAmount':
-          localizations.cashierFiatDepositPleaseEnterAmount,
-      'cashierFiatDepositPleaseEnterCpfMessage':
-          localizations.cashierFiatDepositPleaseEnterCpfMessage,
-      'cashierFiatDepositPleaseEnterPersonalDetailsMessage':
-          localizations.cashierFiatDepositPleaseEnterPersonalDetailsMessage,
-      'cashierFiatDepositPostcode': localizations.cashierFiatDepositPostcode,
-      'cashierFiatDepositRequiredCpf':
-          localizations.cashierFiatDepositRequiredCpf,
-      'cashierFiatDepositRequiredFirstname':
-          localizations.cashierFiatDepositRequiredFirstname,
-      'cashierFiatDepositRequiredLastname':
-          localizations.cashierFiatDepositRequiredLastname,
-      'cashierFiatDepositRollingLimitExceed':
-          localizations.cashierFiatDepositRollingLimitExceed,
-      'cashierFiatDepositSavedAccounts':
-          localizations.cashierFiatDepositSavedAccounts,
-      'cashierFiatDepositService': localizations.cashierFiatDepositService,
-      'cashierFiatDepositSkrill': localizations.cashierFiatDepositSkrill,
-      'cashierFiatDepositSkrillAlmostDoneMessage':
-          localizations.cashierFiatDepositSkrillAlmostDoneMessage,
-      'cashierFiatDepositSkrillFormDescription':
-          localizations.cashierFiatDepositSkrillFormDescription,
-      'cashierFiatDepositSkrillIframeDescription':
-          localizations.cashierFiatDepositSkrillIframeDescription,
-      'cashierFiatDepositSkrillMessage':
-          localizations.cashierFiatDepositSkrillMessage,
-      'cashierFiatDepositSkrillOpenNewWindowTitle':
-          localizations.cashierFiatDepositSkrillOpenNewWindowTitle,
-      'cashierFiatDepositSkrillqcoIframeDescription':
-          localizations.cashierFiatDepositSkrillqcoIframeDescription,
-      'cashierFiatDepositSkrillqcoMessage':
-          localizations.cashierFiatDepositSkrillqcoMessage,
-      'cashierFiatDepositSkrillqcoRapidtransfer':
-          localizations.cashierFiatDepositSkrillqcoRapidtransfer,
-      'cashierFiatDepositSkrillqcoRapidtransferAlmostDoneMessage': localizations
-          .cashierFiatDepositSkrillqcoRapidtransferAlmostDoneMessage,
-      'cashierFiatDepositSkrillqcoRapidtransferFormDescription':
-          localizations.cashierFiatDepositSkrillqcoRapidtransferFormDescription,
-      'cashierFiatDepositSkrillqcoRapidtransferIframeDescription': localizations
-          .cashierFiatDepositSkrillqcoRapidtransferIframeDescription,
-      'cashierFiatDepositSkrillqcoRapidtransferMessage':
-          localizations.cashierFiatDepositSkrillqcoRapidtransferMessage,
-      'cashierFiatDepositSkrillqcoRapidtransferOpenNewWindowTitle':
-          localizations
-              .cashierFiatDepositSkrillqcoRapidtransferOpenNewWindowTitle,
-      'cashierFiatDepositSofort': localizations.cashierFiatDepositSofort,
-      'cashierFiatDepositSofortFormDescription':
-          localizations.cashierFiatDepositSofortFormDescription,
-      'cashierFiatDepositSofortMessage':
-          localizations.cashierFiatDepositSofortMessage,
-      'cashierFiatDepositSofortOpenNewWindowTitle':
-          localizations.cashierFiatDepositSofortOpenNewWindowTitle,
-      'cashierFiatDepositSomethingWentWrong':
-          localizations.cashierFiatDepositSomethingWentWrong,
-      'cashierFiatDepositSportsbetBarupayAccountNumber':
-          localizations.cashierFiatDepositSportsbetBarupayAccountNumber,
-      'cashierFiatDepositSportsbetBarupayBankBranch':
-          localizations.cashierFiatDepositSportsbetBarupayBankBranch,
-      'cashierFiatDepositSportsbetBarupayBankName':
-          localizations.cashierFiatDepositSportsbetBarupayBankName,
-      'cashierFiatDepositSportsbetBarupayBeneficiaryname':
-          localizations.cashierFiatDepositSportsbetBarupayBeneficiaryname,
-      'cashierFiatDepositSsn': localizations.cashierFiatDepositSsn,
-      'cashierFiatDepositState': localizations.cashierFiatDepositState,
-      'cashierFiatDepositStatePlaceholder':
-          localizations.cashierFiatDepositStatePlaceholder,
-      'cashierFiatDepositSubmit': localizations.cashierFiatDepositSubmit,
-      'cashierFiatDepositSubtotal': localizations.cashierFiatDepositSubtotal,
-      'cashierFiatDepositSuccessMessage':
-          localizations.cashierFiatDepositSuccessMessage,
-      'cashierFiatDepositSumopayAnimex':
-          localizations.cashierFiatDepositSumopayAnimex,
-      'cashierFiatDepositSumopayAnimexFormDescription':
-          localizations.cashierFiatDepositSumopayAnimexFormDescription,
-      'cashierFiatDepositSumopayAnimexMessage':
-          localizations.cashierFiatDepositSumopayAnimexMessage,
-      'cashierFiatDepositSumopayAnimexOpenNewWindowTitle':
-          localizations.cashierFiatDepositSumopayAnimexOpenNewWindowTitle,
-      'cashierFiatDepositThbGlobalDescription':
-          localizations.cashierFiatDepositThbGlobalDescription,
-      'cashierFiatDepositTimeframeBankBrite':
-          localizations.cashierFiatDepositTimeframeBankBrite,
-      'cashierFiatDepositTimeframeBankInterac':
-          localizations.cashierFiatDepositTimeframeBankInterac,
-      'cashierFiatDepositTimeframeBankTransferKlarna':
-          localizations.cashierFiatDepositTimeframeBankTransferKlarna,
-      'cashierFiatDepositTimeframeBankTransferTrustly':
-          localizations.cashierFiatDepositTimeframeBankTransferTrustly,
-      'cashierFiatDepositTimeframeCreditcard':
-          localizations.cashierFiatDepositTimeframeCreditcard,
-      'cashierFiatDepositTimeframeCreditcardEcommpay':
-          localizations.cashierFiatDepositTimeframeCreditcardEcommpay,
-      'cashierFiatDepositTimeframeCreditcardRavedirect':
-          localizations.cashierFiatDepositTimeframeCreditcardRavedirect,
-      'cashierFiatDepositTimeframeEcopayz':
-          localizations.cashierFiatDepositTimeframeEcopayz,
-      'cashierFiatDepositTimeframeHelp2PayQaicash':
-          localizations.cashierFiatDepositTimeframeHelp2PayQaicash,
-      'cashierFiatDepositTimeframeJetonCorefy':
-          localizations.cashierFiatDepositTimeframeJetonCorefy,
-      'cashierFiatDepositTimeframeMuchbetter':
-          localizations.cashierFiatDepositTimeframeMuchbetter,
-      'cashierFiatDepositTimeframeNetBankingQaicash':
-          localizations.cashierFiatDepositTimeframeNetBankingQaicash,
-      'cashierFiatDepositTimeframeNeteller':
-          localizations.cashierFiatDepositTimeframeNeteller,
-      'cashierFiatDepositTimeframePaypayCorefy':
-          localizations.cashierFiatDepositTimeframePaypayCorefy,
-      'cashierFiatDepositTimeframePaysafecard':
-          localizations.cashierFiatDepositTimeframePaysafecard,
-      'cashierFiatDepositTimeframeSkrill':
-          localizations.cashierFiatDepositTimeframeSkrill,
-      'cashierFiatDepositTimeframeSkrillqco':
-          localizations.cashierFiatDepositTimeframeSkrillqco,
-      'cashierFiatDepositTimeframeSkrillqcoRapidtransfer':
-          localizations.cashierFiatDepositTimeframeSkrillqcoRapidtransfer,
-      'cashierFiatDepositTimeframeSofort':
-          localizations.cashierFiatDepositTimeframeSofort,
-      'cashierFiatDepositTimeframeSumopayAnimex':
-          localizations.cashierFiatDepositTimeframeSumopayAnimex,
-      'cashierFiatDepositTimeframeTrinityQaicash':
-          localizations.cashierFiatDepositTimeframeTrinityQaicash,
-      'cashierFiatDepositTimeframeTrustly':
-          localizations.cashierFiatDepositTimeframeTrustly,
-      'cashierFiatDepositTimeframeWebredirectSticpay':
-          localizations.cashierFiatDepositTimeframeWebredirectSticpay,
-      'cashierFiatDepositTimeframeXpayQrQaicash':
-          localizations.cashierFiatDepositTimeframeXpayQrQaicash,
-      'cashierFiatDepositTimeframeZimpler':
-          localizations.cashierFiatDepositTimeframeZimpler,
-      'cashierFiatDepositTotal': localizations.cashierFiatDepositTotal,
-      'cashierFiatDepositTotalAdd': localizations.cashierFiatDepositTotalAdd,
-      'cashierFiatDepositTotalDeduct':
-          localizations.cashierFiatDepositTotalDeduct,
-      'cashierFiatDepositTransactionId':
-          localizations.cashierFiatDepositTransactionId,
-      'cashierFiatDepositTrinityQaicash':
-          localizations.cashierFiatDepositTrinityQaicash,
-      'cashierFiatDepositTrinityQaicashAlmostDoneMessage':
-          localizations.cashierFiatDepositTrinityQaicashAlmostDoneMessage,
-      'cashierFiatDepositTrinityQaicashFormDescription':
-          localizations.cashierFiatDepositTrinityQaicashFormDescription,
-      'cashierFiatDepositTrinityQaicashMessage':
-          localizations.cashierFiatDepositTrinityQaicashMessage,
-      'cashierFiatDepositTrinityQaicashOpenNewWindowTitle':
-          localizations.cashierFiatDepositTrinityQaicashOpenNewWindowTitle,
-      'cashierFiatDepositTrustly': localizations.cashierFiatDepositTrustly,
-      'cashierFiatDepositTrustlyFormDescription':
-          localizations.cashierFiatDepositTrustlyFormDescription,
-      'cashierFiatDepositTrustlyIframeDescription':
-          localizations.cashierFiatDepositTrustlyIframeDescription,
-      'cashierFiatDepositTrustlyMessage':
-          localizations.cashierFiatDepositTrustlyMessage,
-      'cashierFiatDepositTryAgain': localizations.cashierFiatDepositTryAgain,
-      'cashierFiatDepositUnionpay': localizations.cashierFiatDepositUnionpay,
-      'cashierFiatDepositUnionpayQr':
-          localizations.cashierFiatDepositUnionpayQr,
-      'cashierFiatDepositUpTo48h': localizations.cashierFiatDepositUpTo48h,
-      'cashierFiatDepositUsdtGlobalDescription':
-          localizations.cashierFiatDepositUsdtGlobalDescription,
-      'cashierFiatDepositUsername': localizations.cashierFiatDepositUsername,
-      'cashierFiatDepositWebredirectSticpay':
-          localizations.cashierFiatDepositWebredirectSticpay,
-      'cashierFiatDepositWebredirectSticpayFormDescription':
-          localizations.cashierFiatDepositWebredirectSticpayFormDescription,
-      'cashierFiatDepositWebredirectSticpayIframeDescription':
-          localizations.cashierFiatDepositWebredirectSticpayIframeDescription,
-      'cashierFiatDepositWebredirectSticpayMessage':
-          localizations.cashierFiatDepositWebredirectSticpayMessage,
-      'cashierFiatDepositWechat': localizations.cashierFiatDepositWechat,
-      'cashierFiatDepositXpayQrQaicash':
-          localizations.cashierFiatDepositXpayQrQaicash,
-      'cashierFiatDepositXpayQrQaicashAlmostDoneMessage':
-          localizations.cashierFiatDepositXpayQrQaicashAlmostDoneMessage,
-      'cashierFiatDepositXpayQrQaicashFormDescription':
-          localizations.cashierFiatDepositXpayQrQaicashFormDescription,
-      'cashierFiatDepositXpayQrQaicashMessage':
-          localizations.cashierFiatDepositXpayQrQaicashMessage,
-      'cashierFiatDepositXpayQrQaicashOpenNewWindowTitle':
-          localizations.cashierFiatDepositXpayQrQaicashOpenNewWindowTitle,
-      'cashierFiatDepositYouWillBeRedirected':
-          localizations.cashierFiatDepositYouWillBeRedirected,
-      'cashierFiatDepositZimpler': localizations.cashierFiatDepositZimpler,
-      'cashierFiatDepositZimplerAlmostDoneMessage':
-          localizations.cashierFiatDepositZimplerAlmostDoneMessage,
-      'cashierFiatDepositZimplerFormDescription':
-          localizations.cashierFiatDepositZimplerFormDescription,
-      'cashierFiatDepositZimplerIframeDescription':
-          localizations.cashierFiatDepositZimplerIframeDescription,
-      'cashierFiatDepositZimplerMessage':
-          localizations.cashierFiatDepositZimplerMessage,
-      'cashierFiatDepositZimplerOpenNewWindowTitle':
-          localizations.cashierFiatDepositZimplerOpenNewWindowTitle,
-      'cashierFiatDepositZipCode': localizations.cashierFiatDepositZipCode,
-      'cashierFiatDepositZipCodePlaceholder':
-          localizations.cashierFiatDepositZipCodePlaceholder,
-      'cashierFiatEur': localizations.cashierFiatEur,
-      'cashierFiatExpDate': localizations.cashierFiatExpDate,
-      'cashierFiatFlatFee': localizations.cashierFiatFlatFee,
-      'cashierFiatGel': localizations.cashierFiatGel,
-      'cashierFiatIdr': localizations.cashierFiatIdr,
-      'cashierFiatInr': localizations.cashierFiatInr,
-      'cashierFiatIqd': localizations.cashierFiatIqd,
-      'cashierFiatJetonProviderBankTransferVoucherAtmTitle':
-          localizations.cashierFiatJetonProviderBankTransferVoucherAtmTitle,
-      'cashierFiatJpy': localizations.cashierFiatJpy,
-      'cashierFiatKrw': localizations.cashierFiatKrw,
-      'cashierFiatMinMaxDepositLabel':
-          localizations.cashierFiatMinMaxDepositLabel,
-      'cashierFiatMinMaxWithdrawalLabel':
-          localizations.cashierFiatMinMaxWithdrawalLabel,
-      'cashierFiatMxn': localizations.cashierFiatMxn,
-      'cashierFiatMyr': localizations.cashierFiatMyr,
-      'cashierFiatPen': localizations.cashierFiatPen,
-      'cashierFiatPkr': localizations.cashierFiatPkr,
-      'cashierFiatRub': localizations.cashierFiatRub,
-      'cashierFiatThb': localizations.cashierFiatThb,
-      'cashierFiatTry': localizations.cashierFiatTry,
-      'cashierFiatUah': localizations.cashierFiatUah,
-      'cashierFiatUsd': localizations.cashierFiatUsd,
-      'cashierFiatUsdt': localizations.cashierFiatUsdt,
-      'cashierFiatVnd': localizations.cashierFiatVnd,
-      'cashierFiatWithdrawal': localizations.cashierFiatWithdrawal,
-      'cashierFiatWithdrawalStarted':
-          localizations.cashierFiatWithdrawalStarted,
-      'cashierFiatWithdrawalAccountid':
-          localizations.cashierFiatWithdrawalAccountid,
-      'cashierFiatWithdrawalAccountnumber':
-          localizations.cashierFiatWithdrawalAccountnumber,
-      'cashierFiatWithdrawalAccounttype':
-          localizations.cashierFiatWithdrawalAccounttype,
-      'cashierFiatWithdrawalAddress':
-          localizations.cashierFiatWithdrawalAddress,
-      'cashierFiatWithdrawalAddressPlaceholder':
-          localizations.cashierFiatWithdrawalAddressPlaceholder,
-      'cashierFiatWithdrawalAmount': localizations.cashierFiatWithdrawalAmount,
-      'cashierFiatWithdrawalAmountExchangeRate':
-          localizations.cashierFiatWithdrawalAmountExchangeRate,
-      'cashierFiatWithdrawalBankAccountDigit':
-          localizations.cashierFiatWithdrawalBankAccountDigit,
-      'cashierFiatWithdrawalBankAccountDigitPlaceholder':
-          localizations.cashierFiatWithdrawalBankAccountDigitPlaceholder,
-      'cashierFiatWithdrawalBankAccountName':
-          localizations.cashierFiatWithdrawalBankAccountName,
-      'cashierFiatWithdrawalBankAccountNamePlaceholder':
-          localizations.cashierFiatWithdrawalBankAccountNamePlaceholder,
-      'cashierFiatWithdrawalBankAccountNumber':
-          localizations.cashierFiatWithdrawalBankAccountNumber,
-      'cashierFiatWithdrawalBankAccountNumberPlaceholder':
-          localizations.cashierFiatWithdrawalBankAccountNumberPlaceholder,
-      'cashierFiatWithdrawalBankAccountType':
-          localizations.cashierFiatWithdrawalBankAccountType,
-      'cashierFiatWithdrawalBankAccountTypePlaceholder':
-          localizations.cashierFiatWithdrawalBankAccountTypePlaceholder,
-      'cashierFiatWithdrawalBankAddress':
-          localizations.cashierFiatWithdrawalBankAddress,
-      'cashierFiatWithdrawalBankBranch':
-          localizations.cashierFiatWithdrawalBankBranch,
-      'cashierFiatWithdrawalBankBranchDigit':
-          localizations.cashierFiatWithdrawalBankBranchDigit,
-      'cashierFiatWithdrawalBankBranchDigitPlaceholder':
-          localizations.cashierFiatWithdrawalBankBranchDigitPlaceholder,
-      'cashierFiatWithdrawalBankBranchNumber':
-          localizations.cashierFiatWithdrawalBankBranchNumber,
-      'cashierFiatWithdrawalBankBranchNumberPlaceholder':
-          localizations.cashierFiatWithdrawalBankBranchNumberPlaceholder,
-      'cashierFiatWithdrawalBankBranchPlaceholder':
-          localizations.cashierFiatWithdrawalBankBranchPlaceholder,
-      'cashierFiatWithdrawalBankCardNumber':
-          localizations.cashierFiatWithdrawalBankCardNumber,
-      'cashierFiatWithdrawalBankCode':
-          localizations.cashierFiatWithdrawalBankCode,
-      'cashierFiatWithdrawalBankCodePlaceholder':
-          localizations.cashierFiatWithdrawalBankCodePlaceholder,
-      'cashierFiatWithdrawalBankId': localizations.cashierFiatWithdrawalBankId,
-      'cashierFiatWithdrawalBankIfsc':
-          localizations.cashierFiatWithdrawalBankIfsc,
-      'cashierFiatWithdrawalBankIfscPlaceholder':
-          localizations.cashierFiatWithdrawalBankIfscPlaceholder,
-      'cashierFiatWithdrawalBankName':
-          localizations.cashierFiatWithdrawalBankName,
-      'cashierFiatWithdrawalBankNamePlaceholder':
-          localizations.cashierFiatWithdrawalBankNamePlaceholder,
-      'cashierFiatWithdrawalBankSwift':
-          localizations.cashierFiatWithdrawalBankSwift,
-      'cashierFiatWithdrawalBankTransfer':
-          localizations.cashierFiatWithdrawalBankTransfer,
-      'cashierFiatWithdrawalBankTransferAnimex':
-          localizations.cashierFiatWithdrawalBankTransferAnimex,
-      'cashierFiatWithdrawalBankTransferAnimexMessage':
-          localizations.cashierFiatWithdrawalBankTransferAnimexMessage,
-      'cashierFiatWithdrawalBankTransferBrite':
-          localizations.cashierFiatWithdrawalBankTransferBrite,
-      'cashierFiatWithdrawalBankTransferBriteFormDescription':
-          localizations.cashierFiatWithdrawalBankTransferBriteFormDescription,
-      'cashierFiatWithdrawalBankTransferBriteMessage':
-          localizations.cashierFiatWithdrawalBankTransferBriteMessage,
-      'cashierFiatWithdrawalBankTransferTrustly':
-          localizations.cashierFiatWithdrawalBankTransferTrustly,
-      'cashierFiatWithdrawalBankTransferTrustlyAlmostDoneMessage': localizations
-          .cashierFiatWithdrawalBankTransferTrustlyAlmostDoneMessage,
-      'cashierFiatWithdrawalBankTransferTrustlyFormDescription':
-          localizations.cashierFiatWithdrawalBankTransferTrustlyFormDescription,
-      'cashierFiatWithdrawalBankTransferTrustlyMessage':
-          localizations.cashierFiatWithdrawalBankTransferTrustlyMessage,
-      'cashierFiatWithdrawalBankTransferTrustlyOpenNewWindowTitle':
-          localizations
-              .cashierFiatWithdrawalBankTransferTrustlyOpenNewWindowTitle,
-      'cashierFiatWithdrawalBankaccount':
-          localizations.cashierFiatWithdrawalBankaccount,
-      'cashierFiatWithdrawalBankbranch':
-          localizations.cashierFiatWithdrawalBankbranch,
-      'cashierFiatWithdrawalBankcode':
-          localizations.cashierFiatWithdrawalBankcode,
-      'cashierFiatWithdrawalBeneficiaryname':
-          localizations.cashierFiatWithdrawalBeneficiaryname,
-      'cashierFiatWithdrawalCadGlobalDescription':
-          localizations.cashierFiatWithdrawalCadGlobalDescription,
-      'cashierFiatWithdrawalCanNotBeFractionAmount':
-          localizations.cashierFiatWithdrawalCanNotBeFractionAmount,
-      'cashierFiatWithdrawalCardholder':
-          localizations.cashierFiatWithdrawalCardholder,
-      'cashierFiatWithdrawalChoosePaymentMethod':
-          localizations.cashierFiatWithdrawalChoosePaymentMethod,
-      'cashierFiatWithdrawalCity': localizations.cashierFiatWithdrawalCity,
-      'cashierFiatWithdrawalCityPlaceholder':
-          localizations.cashierFiatWithdrawalCityPlaceholder,
-      'cashierFiatWithdrawalContinue':
-          localizations.cashierFiatWithdrawalContinue,
-      'cashierFiatWithdrawalCopyToClipboard':
-          localizations.cashierFiatWithdrawalCopyToClipboard,
-      'cashierFiatWithdrawalCorefyJetonJpyLimits':
-          localizations.cashierFiatWithdrawalCorefyJetonJpyLimits,
-      'cashierFiatWithdrawalCpf': localizations.cashierFiatWithdrawalCpf,
-      'cashierFiatWithdrawalCpfAlreadyExists':
-          localizations.cashierFiatWithdrawalCpfAlreadyExists,
-      'cashierFiatWithdrawalCpfAlreadyExistsCpf':
-          localizations.cashierFiatWithdrawalCpfAlreadyExistsCpf,
-      'cashierFiatWithdrawalCpfDescription':
-          localizations.cashierFiatWithdrawalCpfDescription,
-      'cashierFiatWithdrawalCreditCardAcapture':
-          localizations.cashierFiatWithdrawalCreditCardAcapture,
-      'cashierFiatWithdrawalCreditCardEMerchantPay':
-          localizations.cashierFiatWithdrawalCreditCardEMerchantPay,
-      'cashierFiatWithdrawalCreditcard':
-          localizations.cashierFiatWithdrawalCreditcard,
-      'cashierFiatWithdrawalCreditcardEcommpay':
-          localizations.cashierFiatWithdrawalCreditcardEcommpay,
-      'cashierFiatWithdrawalCreditcardEcommpayFormDescription':
-          localizations.cashierFiatWithdrawalCreditcardEcommpayFormDescription,
-      'cashierFiatWithdrawalCreditcardEcommpayMessage':
-          localizations.cashierFiatWithdrawalCreditcardEcommpayMessage,
-      'cashierFiatWithdrawalCreditcardFormDescription':
-          localizations.cashierFiatWithdrawalCreditcardFormDescription,
-      'cashierFiatWithdrawalCreditcardMessage':
-          localizations.cashierFiatWithdrawalCreditcardMessage,
-      'cashierFiatWithdrawalCreditcardRavedirectFormDescription': localizations
-          .cashierFiatWithdrawalCreditcardRavedirectFormDescription,
-      'cashierFiatWithdrawalCreditcardRavedirectMessage':
-          localizations.cashierFiatWithdrawalCreditcardRavedirectMessage,
-      'cashierFiatWithdrawalCustomerLocalName':
-          localizations.cashierFiatWithdrawalCustomerLocalName,
-      'cashierFiatWithdrawalCustomerLocalNamePlaceholder':
-          localizations.cashierFiatWithdrawalCustomerLocalNamePlaceholder,
-      'cashierFiatWithdrawalCustomerName':
-          localizations.cashierFiatWithdrawalCustomerName,
-      'cashierFiatWithdrawalCustomerNamePlaceholder':
-          localizations.cashierFiatWithdrawalCustomerNamePlaceholder,
-      'cashierFiatWithdrawalCustomername':
-          localizations.cashierFiatWithdrawalCustomername,
-      'cashierFiatWithdrawalCustomernumber':
-          localizations.cashierFiatWithdrawalCustomernumber,
-      'cashierFiatWithdrawalDateOfBirth':
-          localizations.cashierFiatWithdrawalDateOfBirth,
-      'cashierFiatWithdrawalDateOfBirthPlaceholder':
-          localizations.cashierFiatWithdrawalDateOfBirthPlaceholder,
-      'cashierFiatWithdrawalDelete': localizations.cashierFiatWithdrawalDelete,
-      'cashierFiatWithdrawalDependsOnAmount':
-          localizations.cashierFiatWithdrawalDependsOnAmount,
-      'cashierFiatWithdrawalEcopayz':
-          localizations.cashierFiatWithdrawalEcopayz,
-      'cashierFiatWithdrawalEcopayzFormDescription':
-          localizations.cashierFiatWithdrawalEcopayzFormDescription,
-      'cashierFiatWithdrawalEcopayzMessage':
-          localizations.cashierFiatWithdrawalEcopayzMessage,
-      'cashierFiatWithdrawalEmail': localizations.cashierFiatWithdrawalEmail,
-      'cashierFiatWithdrawalEnccreditcardnumber':
-          localizations.cashierFiatWithdrawalEnccreditcardnumber,
-      'cashierFiatWithdrawalEurGlobalDescription':
-          localizations.cashierFiatWithdrawalEurGlobalDescription,
-      'cashierFiatWithdrawalExpirymonth':
-          localizations.cashierFiatWithdrawalExpirymonth,
-      'cashierFiatWithdrawalExpiryyear':
-          localizations.cashierFiatWithdrawalExpiryyear,
-      'cashierFiatWithdrawalEzeebillBankAccountName':
-          localizations.cashierFiatWithdrawalEzeebillBankAccountName,
-      'cashierFiatWithdrawalEzeebillBankAccountNamePlaceholder':
-          localizations.cashierFiatWithdrawalEzeebillBankAccountNamePlaceholder,
-      'cashierFiatWithdrawalEzeebillBankBranchPlaceholder':
-          localizations.cashierFiatWithdrawalEzeebillBankBranchPlaceholder,
-      'cashierFiatWithdrawalEzeebillBankName':
-          localizations.cashierFiatWithdrawalEzeebillBankName,
-      'cashierFiatWithdrawalEzeebillBankNamePlaceholder':
-          localizations.cashierFiatWithdrawalEzeebillBankNamePlaceholder,
-      'cashierFiatWithdrawalEzeebillCustomerNamePlaceholder':
-          localizations.cashierFiatWithdrawalEzeebillCustomerNamePlaceholder,
-      'cashierFiatWithdrawalFailureMessage':
-          localizations.cashierFiatWithdrawalFailureMessage,
-      'cashierFiatWithdrawalFee': localizations.cashierFiatWithdrawalFee,
-      'cashierFiatWithdrawalFeeAdd': localizations.cashierFiatWithdrawalFeeAdd,
-      'cashierFiatWithdrawalFeeDeduct':
-          localizations.cashierFiatWithdrawalFeeDeduct,
-      'cashierFiatWithdrawalFirstName':
-          localizations.cashierFiatWithdrawalFirstName,
-      'cashierFiatWithdrawalFirstNamePlaceholder':
-          localizations.cashierFiatWithdrawalFirstNamePlaceholder,
-      'cashierFiatWithdrawalFirstname':
-          localizations.cashierFiatWithdrawalFirstname,
-      'cashierFiatWithdrawalFree': localizations.cashierFiatWithdrawalFree,
-      'cashierFiatWithdrawalGlobalDescription':
-          localizations.cashierFiatWithdrawalGlobalDescription,
-      'cashierFiatWithdrawalGoBack': localizations.cashierFiatWithdrawalGoBack,
-      'cashierFiatWithdrawalHelp2PayQaicashAlmostDoneMessage':
-          localizations.cashierFiatWithdrawalHelp2PayQaicashAlmostDoneMessage,
-      'cashierFiatWithdrawalHelp2PayQaicashMessage':
-          localizations.cashierFiatWithdrawalHelp2PayQaicashMessage,
-      'cashierFiatWithdrawalHelp2PayQaicashOpenNewWindowTitle':
-          localizations.cashierFiatWithdrawalHelp2PayQaicashOpenNewWindowTitle,
-      'cashierFiatWithdrawalInovapayBankTransferBrlLimits':
-          localizations.cashierFiatWithdrawalInovapayBankTransferBrlLimits,
-      'cashierFiatWithdrawalInterac':
-          localizations.cashierFiatWithdrawalInterac,
-      'cashierFiatWithdrawalInteracMessage':
-          localizations.cashierFiatWithdrawalInteracMessage,
-      'cashierFiatWithdrawalInvalidCpfCpf':
-          localizations.cashierFiatWithdrawalInvalidCpfCpf,
-      'cashierFiatWithdrawalInvalidFormatBankaccount':
-          localizations.cashierFiatWithdrawalInvalidFormatBankaccount,
-      'cashierFiatWithdrawalInvalidFormatBankbranch':
-          localizations.cashierFiatWithdrawalInvalidFormatBankbranch,
-      'cashierFiatWithdrawalInvalidAddress':
-          localizations.cashierFiatWithdrawalInvalidAddress,
-      'cashierFiatWithdrawalInvalidBankAccountNumber':
-          localizations.cashierFiatWithdrawalInvalidBankAccountNumber,
-      'cashierFiatWithdrawalInvalidBankBranch':
-          localizations.cashierFiatWithdrawalInvalidBankBranch,
-      'cashierFiatWithdrawalInvalidBankBranchNumber':
-          localizations.cashierFiatWithdrawalInvalidBankBranchNumber,
-      'cashierFiatWithdrawalInvalidBankCode':
-          localizations.cashierFiatWithdrawalInvalidBankCode,
-      'cashierFiatWithdrawalInvalidBankIfsc':
-          localizations.cashierFiatWithdrawalInvalidBankIfsc,
-      'cashierFiatWithdrawalInvalidBankName':
-          localizations.cashierFiatWithdrawalInvalidBankName,
-      'cashierFiatWithdrawalInvalidCustomerLocalName':
-          localizations.cashierFiatWithdrawalInvalidCustomerLocalName,
-      'cashierFiatWithdrawalInvalidCustomerName':
-          localizations.cashierFiatWithdrawalInvalidCustomerName,
-      'cashierFiatWithdrawalInvalidPixKey':
-          localizations.cashierFiatWithdrawalInvalidPixKey,
-      'cashierFiatWithdrawalJetonCorefy':
-          localizations.cashierFiatWithdrawalJetonCorefy,
-      'cashierFiatWithdrawalJetonCorefyFormDescription':
-          localizations.cashierFiatWithdrawalJetonCorefyFormDescription,
-      'cashierFiatWithdrawalJetonCorefyMessage':
-          localizations.cashierFiatWithdrawalJetonCorefyMessage,
-      'cashierFiatWithdrawalJetonExchangeRate':
-          localizations.cashierFiatWithdrawalJetonExchangeRate,
-      'cashierFiatWithdrawalJetonCustomerName':
-          localizations.cashierFiatWithdrawalJetonCustomerName,
-      'cashierFiatWithdrawalJpyGlobalDescription':
-          localizations.cashierFiatWithdrawalJpyGlobalDescription,
-      'cashierFiatWithdrawalKeytaPayBankTransferJpyLimits':
-          localizations.cashierFiatWithdrawalKeytaPayBankTransferJpyLimits,
-      'cashierFiatWithdrawalLastName':
-          localizations.cashierFiatWithdrawalLastName,
-      'cashierFiatWithdrawalLastNamePlaceholder':
-          localizations.cashierFiatWithdrawalLastNamePlaceholder,
-      'cashierFiatWithdrawalLastname':
-          localizations.cashierFiatWithdrawalLastname,
-      'cashierFiatWithdrawalLocalBankTransferQaicash':
-          localizations.cashierFiatWithdrawalLocalBankTransferQaicash,
-      'cashierFiatWithdrawalLocalBankTransferQaicashAlmostDoneMessage':
-          localizations
-              .cashierFiatWithdrawalLocalBankTransferQaicashAlmostDoneMessage,
-      'cashierFiatWithdrawalLocalBankTransferQaicashFormDescription':
-          localizations
-              .cashierFiatWithdrawalLocalBankTransferQaicashFormDescription,
-      'cashierFiatWithdrawalLocalBankTransferQaicashIframeDescription':
-          localizations
-              .cashierFiatWithdrawalLocalBankTransferQaicashIframeDescription,
-      'cashierFiatWithdrawalLocalBankTransferQaicashMessage':
-          localizations.cashierFiatWithdrawalLocalBankTransferQaicashMessage,
-      'cashierFiatWithdrawalLocalBankTransferQaicashOpenNewWindowTitle':
-          localizations
-              .cashierFiatWithdrawalLocalBankTransferQaicashOpenNewWindowTitle,
-      'cashierFiatWithdrawalMaxLimit':
-          localizations.cashierFiatWithdrawalMaxLimit,
-      'cashierFiatWithdrawalMinAmount':
-          localizations.cashierFiatWithdrawalMinAmount,
-      'cashierFiatWithdrawalMinLimit':
-          localizations.cashierFiatWithdrawalMinLimit,
-      'cashierFiatWithdrawalMinWithdrawal':
-          localizations.cashierFiatWithdrawalMinWithdrawal,
-      'cashierFiatWithdrawalMobile': localizations.cashierFiatWithdrawalMobile,
-      'cashierFiatWithdrawalMuchbetter':
-          localizations.cashierFiatWithdrawalMuchbetter,
-      'cashierFiatWithdrawalMuchbetterFormDescription':
-          localizations.cashierFiatWithdrawalMuchbetterFormDescription,
-      'cashierFiatWithdrawalMuchbetterMessage':
-          localizations.cashierFiatWithdrawalMuchbetterMessage,
-      'cashierFiatWithdrawalNationalid':
-          localizations.cashierFiatWithdrawalNationalid,
-      'cashierFiatWithdrawalNationalidtype':
-          localizations.cashierFiatWithdrawalNationalidtype,
-      'cashierFiatWithdrawalNeteller':
-          localizations.cashierFiatWithdrawalNeteller,
-      'cashierFiatWithdrawalNetellerFormDescription':
-          localizations.cashierFiatWithdrawalNetellerFormDescription,
-      'cashierFiatWithdrawalNetellerMessage':
-          localizations.cashierFiatWithdrawalNetellerMessage,
-      'cashierFiatWithdrawalNextStep':
-          localizations.cashierFiatWithdrawalNextStep,
-      'cashierFiatWithdrawalNotEnoughFundsAmount':
-          localizations.cashierFiatWithdrawalNotEnoughFundsAmount,
-      'cashierFiatWithdrawalNotFoundSavedAccountUuid':
-          localizations.cashierFiatWithdrawalNotFoundSavedAccountUuid,
-      'cashierFiatWithdrawalNull': localizations.cashierFiatWithdrawalNull,
-      'cashierFiatWithdrawalOverview':
-          localizations.cashierFiatWithdrawalOverview,
-      'cashierFiatWithdrawalPagavaBankAccountName':
-          localizations.cashierFiatWithdrawalPagavaBankAccountName,
-      'cashierFiatWithdrawalPagavaBankAccountNamePlaceholder':
-          localizations.cashierFiatWithdrawalPagavaBankAccountNamePlaceholder,
-      'cashierFiatWithdrawalPagavaCustomerNamePlaceholder':
-          localizations.cashierFiatWithdrawalPagavaCustomerNamePlaceholder,
-      'cashierFiatWithdrawalPagsmilePixBrlLimits':
-          localizations.cashierFiatWithdrawalPagsmilePixBrlLimits,
-      'cashierFiatWithdrawalPassword':
-          localizations.cashierFiatWithdrawalPassword,
-      'cashierFiatWithdrawalPay4funWebredirectBrlLimits':
-          localizations.cashierFiatWithdrawalPay4funWebredirectBrlLimits,
-      'cashierFiatWithdrawalPaymentMethods':
-          localizations.cashierFiatWithdrawalPaymentMethods,
-      'cashierFiatWithdrawalPaysafecard':
-          localizations.cashierFiatWithdrawalPaysafecard,
-      'cashierFiatWithdrawalPaysafecardFormDescription':
-          localizations.cashierFiatWithdrawalPaysafecardFormDescription,
-      'cashierFiatWithdrawalPaysafecardMessage':
-          localizations.cashierFiatWithdrawalPaysafecardMessage,
-      'cashierFiatWithdrawalPersonalDetails':
-          localizations.cashierFiatWithdrawalPersonalDetails,
-      'cashierFiatWithdrawalPhoneNumber':
-          localizations.cashierFiatWithdrawalPhoneNumber,
-      'cashierFiatWithdrawalPhoneNumberPlaceholder':
-          localizations.cashierFiatWithdrawalPhoneNumberPlaceholder,
-      'cashierFiatWithdrawalPhonenumberPlaceholder':
-          localizations.cashierFiatWithdrawalPhonenumberPlaceholder,
-      'cashierFiatWithdrawalPinbankBankBranchPlaceholder':
-          localizations.cashierFiatWithdrawalPinbankBankBranchPlaceholder,
-      'cashierFiatWithdrawalPixKey': localizations.cashierFiatWithdrawalPixKey,
-      'cashierFiatWithdrawalPixKeyPlaceholder':
-          localizations.cashierFiatWithdrawalPixKeyPlaceholder,
-      'cashierFiatWithdrawalPleaseEnterAmount':
-          localizations.cashierFiatWithdrawalPleaseEnterAmount,
-      'cashierFiatWithdrawalPleaseEnterCpfMessage':
-          localizations.cashierFiatWithdrawalPleaseEnterCpfMessage,
-      'cashierFiatWithdrawalPleaseEnterPersonalDetailsMessage':
-          localizations.cashierFiatWithdrawalPleaseEnterPersonalDetailsMessage,
-      'cashierFiatWithdrawalPostcode':
-          localizations.cashierFiatWithdrawalPostcode,
-      'cashierFiatWithdrawalPostcodePlaceholder':
-          localizations.cashierFiatWithdrawalPostcodePlaceholder,
-      'cashierFiatWithdrawalProvince':
-          localizations.cashierFiatWithdrawalProvince,
-      'cashierFiatWithdrawalRequiredCardholder':
-          localizations.cashierFiatWithdrawalRequiredCardholder,
-      'cashierFiatWithdrawalSavedAccounts':
-          localizations.cashierFiatWithdrawalSavedAccounts,
-      'cashierFiatWithdrawalService':
-          localizations.cashierFiatWithdrawalService,
-      'cashierFiatWithdrawalSkrill': localizations.cashierFiatWithdrawalSkrill,
-      'cashierFiatWithdrawalSkrillFormDescription':
-          localizations.cashierFiatWithdrawalSkrillFormDescription,
-      'cashierFiatWithdrawalSkrillMessage':
-          localizations.cashierFiatWithdrawalSkrillMessage,
-      'cashierFiatWithdrawalSkrillqcoMessage':
-          localizations.cashierFiatWithdrawalSkrillqcoMessage,
-      'cashierFiatWithdrawalSkrillqcoRapidtransfer':
-          localizations.cashierFiatWithdrawalSkrillqcoRapidtransfer,
-      'cashierFiatWithdrawalSkrillqcoRapidtransferFormDescription':
-          localizations
-              .cashierFiatWithdrawalSkrillqcoRapidtransferFormDescription,
-      'cashierFiatWithdrawalSkrillqcoRapidtransferMessage':
-          localizations.cashierFiatWithdrawalSkrillqcoRapidtransferMessage,
-      'cashierFiatWithdrawalSofort': localizations.cashierFiatWithdrawalSofort,
-      'cashierFiatWithdrawalSofortFormDescription':
-          localizations.cashierFiatWithdrawalSofortFormDescription,
-      'cashierFiatWithdrawalSofortMessage':
-          localizations.cashierFiatWithdrawalSofortMessage,
-      'cashierFiatWithdrawalState': localizations.cashierFiatWithdrawalState,
-      'cashierFiatWithdrawalStatePlaceholder':
-          localizations.cashierFiatWithdrawalStatePlaceholder,
-      'cashierFiatWithdrawalSticpay':
-          localizations.cashierFiatWithdrawalSticpay,
-      'cashierFiatWithdrawalSticpayFormDescription':
-          localizations.cashierFiatWithdrawalSticpayFormDescription,
-      'cashierFiatWithdrawalSticpayMessage':
-          localizations.cashierFiatWithdrawalSticpayMessage,
-      'cashierFiatWithdrawalSubmit': localizations.cashierFiatWithdrawalSubmit,
-      'cashierFiatWithdrawalSubtotal':
-          localizations.cashierFiatWithdrawalSubtotal,
-      'cashierFiatWithdrawalSuccessMessage':
-          localizations.cashierFiatWithdrawalSuccessMessage,
-      'cashierFiatWithdrawalThbGlobalDescription':
-          localizations.cashierFiatWithdrawalThbGlobalDescription,
-      'cashierFiatWithdrawalTimeframeBankTransferAnimex':
-          localizations.cashierFiatWithdrawalTimeframeBankTransferAnimex,
-      'cashierFiatWithdrawalTimeframeBankTransferTrustly':
-          localizations.cashierFiatWithdrawalTimeframeBankTransferTrustly,
-      'cashierFiatWithdrawalTimeframeCreditcard':
-          localizations.cashierFiatWithdrawalTimeframeCreditcard,
-      'cashierFiatWithdrawalTimeframeCreditcardEcommpay':
-          localizations.cashierFiatWithdrawalTimeframeCreditcardEcommpay,
-      'cashierFiatWithdrawalTimeframeCreditcardRavedirect':
-          localizations.cashierFiatWithdrawalTimeframeCreditcardRavedirect,
-      'cashierFiatWithdrawalTimeframeEcopayz':
-          localizations.cashierFiatWithdrawalTimeframeEcopayz,
-      'cashierFiatWithdrawalTimeframeHelp2PayQaicash':
-          localizations.cashierFiatWithdrawalTimeframeHelp2PayQaicash,
-      'cashierFiatWithdrawalTimeframeInterac':
-          localizations.cashierFiatWithdrawalTimeframeInterac,
-      'cashierFiatWithdrawalTimeframeJetonCorefy':
-          localizations.cashierFiatWithdrawalTimeframeJetonCorefy,
-      'cashierFiatWithdrawalTimeframeLocalBankTransferQaicash':
-          localizations.cashierFiatWithdrawalTimeframeLocalBankTransferQaicash,
-      'cashierFiatWithdrawalTimeframeMuchbetter':
-          localizations.cashierFiatWithdrawalTimeframeMuchbetter,
-      'cashierFiatWithdrawalTimeframeNeteller':
-          localizations.cashierFiatWithdrawalTimeframeNeteller,
-      'cashierFiatWithdrawalTimeframePaysafecard':
-          localizations.cashierFiatWithdrawalTimeframePaysafecard,
-      'cashierFiatWithdrawalTimeframeSkrill':
-          localizations.cashierFiatWithdrawalTimeframeSkrill,
-      'cashierFiatWithdrawalTimeframeSkrillqco':
-          localizations.cashierFiatWithdrawalTimeframeSkrillqco,
-      'cashierFiatWithdrawalTimeframeSkrillqcoRapidtransfer':
-          localizations.cashierFiatWithdrawalTimeframeSkrillqcoRapidtransfer,
-      'cashierFiatWithdrawalTimeframeSofort':
-          localizations.cashierFiatWithdrawalTimeframeSofort,
-      'cashierFiatWithdrawalTimeframeSticpay':
-          localizations.cashierFiatWithdrawalTimeframeSticpay,
-      'cashierFiatWithdrawalTimeframeTrustly':
-          localizations.cashierFiatWithdrawalTimeframeTrustly,
-      'cashierFiatWithdrawalTimeframeZimpler':
-          localizations.cashierFiatWithdrawalTimeframeZimpler,
-      'cashierFiatWithdrawalTotal': localizations.cashierFiatWithdrawalTotal,
-      'cashierFiatWithdrawalTotalAdd':
-          localizations.cashierFiatWithdrawalTotalAdd,
-      'cashierFiatWithdrawalTotalDeduct':
-          localizations.cashierFiatWithdrawalTotalDeduct,
-      'cashierFiatWithdrawalTransactionId':
-          localizations.cashierFiatWithdrawalTransactionId,
-      'cashierFiatWithdrawalTrustly':
-          localizations.cashierFiatWithdrawalTrustly,
-      'cashierFiatWithdrawalTrustlyFormDescription':
-          localizations.cashierFiatWithdrawalTrustlyFormDescription,
-      'cashierFiatWithdrawalTrustlyIframeDescription':
-          localizations.cashierFiatWithdrawalTrustlyIframeDescription,
-      'cashierFiatWithdrawalTrustlyMessage':
-          localizations.cashierFiatWithdrawalTrustlyMessage,
-      'cashierFiatWithdrawalTryAgain':
-          localizations.cashierFiatWithdrawalTryAgain,
-      'cashierFiatWithdrawalUsername':
-          localizations.cashierFiatWithdrawalUsername,
-      'cashierFiatWithdrawalWebredirectSticpay':
-          localizations.cashierFiatWithdrawalWebredirectSticpay,
-      'cashierFiatWithdrawalZimpler':
-          localizations.cashierFiatWithdrawalZimpler,
-      'cashierFiatWithdrawalZimplerFormDescription':
-          localizations.cashierFiatWithdrawalZimplerFormDescription,
-      'cashierFiatWithdrawalZimplerMessage':
-          localizations.cashierFiatWithdrawalZimplerMessage,
-      'cashierFilerByDate': localizations.cashierFilerByDate,
-      'cashierFilterByDate': localizations.cashierFilterByDate,
-      'cashierFinances': localizations.cashierFinances,
-      'cashierFirstname': localizations.cashierFirstname,
-      'cashierForfeit': localizations.cashierForfeit,
-      'cashierFromDate': localizations.cashierFromDate,
-      'cashierGetBitcoins': localizations.cashierGetBitcoins,
-      'cashierGetBitcoinsTotal': localizations.cashierGetBitcoinsTotal,
-      'cashierGiftCardVoucher': localizations.cashierGiftCardVoucher,
-      'cashierGlobalMethods': localizations.cashierGlobalMethods,
-      'cashierGoBack': localizations.cashierGoBack,
-      'cashierHelpCentre': localizations.cashierHelpCentre,
-      'cashierHideDepositHistory': localizations.cashierHideDepositHistory,
-      'cashierHideOtherPaymentOptions':
-          localizations.cashierHideOtherPaymentOptions,
-      'cashierHideWithdrawHistory': localizations.cashierHideWithdrawHistory,
-      'cashierHkd': localizations.cashierHkd,
-      'cashierIfYouDontHaveBtc': localizations.cashierIfYouDontHaveBtc,
-      'cashierInOrderToMakeADeposit':
-          localizations.cashierInOrderToMakeADeposit,
-      'cashierInitializeAccountWebResource':
-          localizations.cashierInitializeAccountWebResource,
-      'cashierInr': localizations.cashierInr,
-      'cashierInstantBankTransferSuccess':
-          localizations.cashierInstantBankTransferSuccess,
-      'cashierInstructions': localizations.cashierInstructions,
-      'cashierInvalidEmailFormat': localizations.cashierInvalidEmailFormat,
-      'cashierInvalidFormData': localizations.cashierInvalidFormData,
-      'cashierInvoiceAddress': localizations.cashierInvoiceAddress,
-      'cashierJetonTitle': localizations.cashierJetonTitle,
-      'cashierJpy': localizations.cashierJpy,
-      'cashierJpyDepositJetonDescription':
-          localizations.cashierJpyDepositJetonDescription,
-      'cashierJpyDepositJpysecureDescription':
-          localizations.cashierJpyDepositJpysecureDescription,
-      'cashierJpyDepositJpysecureTitle':
-          localizations.cashierJpyDepositJpysecureTitle,
-      'cashierJpyDepositPagavaDescription':
-          localizations.cashierJpyDepositPagavaDescription,
-      'cashierJpyWithdrawJetonDescription':
-          localizations.cashierJpyWithdrawJetonDescription,
-      'cashierJpyWithdrawJpysecureDescription':
-          localizations.cashierJpyWithdrawJpysecureDescription,
-      'cashierJpyWithdrawJpysecureTitle':
-          localizations.cashierJpyWithdrawJpysecureTitle,
-      'cashierJpyWithdrawPagavaDescription':
-          localizations.cashierJpyWithdrawPagavaDescription,
-      'cashierKycBannerBodyIdExpired':
-          localizations.cashierKycBannerBodyIdExpired,
-      'cashierKycBannerBodyThreshold1':
-          localizations.cashierKycBannerBodyThreshold1,
-      'cashierKycBannerBodyThreshold1Reminders':
-          localizations.cashierKycBannerBodyThreshold1Reminders,
-      'cashierKycBannerBodyThreshold2':
-          localizations.cashierKycBannerBodyThreshold2,
-      'cashierKycBannerTitle': localizations.cashierKycBannerTitle,
-      'cashierKycBannerVerify': localizations.cashierKycBannerVerify,
-      'cashierKycModalBody': localizations.cashierKycModalBody,
-      'cashierKycModalGetStarted': localizations.cashierKycModalGetStarted,
-      'cashierKycModalTitle': localizations.cashierKycModalTitle,
-      'cashierLabelsKycRequired': localizations.cashierLabelsKycRequired,
-      'cashierLabelsVerifyEmail': localizations.cashierLabelsVerifyEmail,
-      'cashierLabelsVerifyPhoneNumber':
-          localizations.cashierLabelsVerifyPhoneNumber,
-      'cashierLastname': localizations.cashierLastname,
-      'cashierLessOptions': localizations.cashierLessOptions,
-      'cashierLiveSupport': localizations.cashierLiveSupport,
-      'cashierLoadMore': localizations.cashierLoadMore,
-      'cashierLtc': localizations.cashierLtc,
-      'cashierMatic': localizations.cashierMatic,
-      'cashierMaxDeposit': localizations.cashierMaxDeposit,
-      'cashierMaxWithdraw': localizations.cashierMaxWithdraw,
-      'cashierMetamask': localizations.cashierMetamask,
-      'cashierMetamaskDesc': localizations.cashierMetamaskDesc,
-      'cashierMetamaskWallet': localizations.cashierMetamaskWallet,
-      'cashierMetamaskInsufficientFunds':
-          localizations.cashierMetamaskInsufficientFunds,
-      'cashierMetricPrefixBtc': localizations.cashierMetricPrefixBtc,
-      'cashierMinimumDepositAda': localizations.cashierMinimumDepositAda,
-      'cashierMinimumDepositAmount': localizations.cashierMinimumDepositAmount,
-      'cashierMinimumDepositEth': localizations.cashierMinimumDepositEth,
-      'cashierMinimumDepositLtc': localizations.cashierMinimumDepositLtc,
-      'cashierMinimumDepositMbtc': localizations.cashierMinimumDepositMbtc,
-      'cashierMinimumDepositSoc': localizations.cashierMinimumDepositSoc,
-      'cashierMinimumDepositTextAda':
-          localizations.cashierMinimumDepositTextAda,
-      'cashierMinimumDepositTextBtc':
-          localizations.cashierMinimumDepositTextBtc,
-      'cashierMinimumDepositTextCad':
-          localizations.cashierMinimumDepositTextCad,
-      'cashierMinimumDepositTextDoge':
-          localizations.cashierMinimumDepositTextDoge,
-      'cashierMinimumDepositTextEth':
-          localizations.cashierMinimumDepositTextEth,
-      'cashierMinimumDepositTextEur':
-          localizations.cashierMinimumDepositTextEur,
-      'cashierMinimumDepositTextJpy':
-          localizations.cashierMinimumDepositTextJpy,
-      'cashierMinimumDepositTextLtc':
-          localizations.cashierMinimumDepositTextLtc,
-      'cashierMinimumDepositTextMbtc':
-          localizations.cashierMinimumDepositTextMbtc,
-      'cashierMinimumDepositTextSoc':
-          localizations.cashierMinimumDepositTextSoc,
-      'cashierMinimumDepositTextThb':
-          localizations.cashierMinimumDepositTextThb,
-      'cashierMinimumDepositTextTrx':
-          localizations.cashierMinimumDepositTextTrx,
-      'cashierMinimumDepositTextUbtc':
-          localizations.cashierMinimumDepositTextUbtc,
-      'cashierMinimumDepositTextUsdt':
-          localizations.cashierMinimumDepositTextUsdt,
-      'cashierMinimumDepositTextXrp':
-          localizations.cashierMinimumDepositTextXrp,
-      'cashierMinimumDepositTitle': localizations.cashierMinimumDepositTitle,
-      'cashierMinimumDepositTrx': localizations.cashierMinimumDepositTrx,
-      'cashierMinimumDepositUbtc': localizations.cashierMinimumDepositUbtc,
-      'cashierMinimumDepositUsdt': localizations.cashierMinimumDepositUsdt,
-      'cashierMinimumDepositXrp': localizations.cashierMinimumDepositXrp,
-      'cashierMinimumIs': localizations.cashierMinimumIs,
-      'cashierMinimumWithdrawAmount':
-          localizations.cashierMinimumWithdrawAmount,
-      'cashierMoonpayDepositsAreDisabled':
-          localizations.cashierMoonpayDepositsAreDisabled,
-      'cashierMoonpayPurchaseDescription':
-          localizations.cashierMoonpayPurchaseDescription,
-      'cashierMoonpayPurchaseTitle': localizations.cashierMoonpayPurchaseTitle,
-      'cashierMoonpayTitle': localizations.cashierMoonpayTitle,
-      'cashierMoreAboutDepositingAltcoins':
-          localizations.cashierMoreAboutDepositingAltcoins,
-      'cashierMoreAboutDepositingBitcoins':
-          localizations.cashierMoreAboutDepositingBitcoins,
-      'cashierMoreDepositOptions': localizations.cashierMoreDepositOptions,
-      'cashierMoreOptions': localizations.cashierMoreOptions,
-      'cashierMoreWithdrawOptions': localizations.cashierMoreWithdrawOptions,
-      'cashierMyBalance': localizations.cashierMyBalance,
-      'cashierMyBalanceIn': localizations.cashierMyBalanceIn,
-      'cashierMyRewards': localizations.cashierMyRewards,
-      'cashierNetwork': localizations.cashierNetwork,
-      'cashierNetworkBinanceSmartChain':
-          localizations.cashierNetworkBinanceSmartChain,
-      'cashierNetworkBtcLightning': localizations.cashierNetworkBtcLightning,
-      'cashierNetworkBtcMainnet': localizations.cashierNetworkBtcMainnet,
-      'cashierNetworkErc20': localizations.cashierNetworkErc20,
-      'cashierNetworkPolygon': localizations.cashierNetworkPolygon,
-      'cashierNetworkTon': localizations.cashierNetworkTon,
-      'cashierNetworkTrc20': localizations.cashierNetworkTrc20,
-      'cashierNewMethod': localizations.cashierNewMethod,
-      'cashierNext': localizations.cashierNext,
-      'cashierNoDeposits': localizations.cashierNoDeposits,
-      'cashierNoMoneyForWithdrawal': localizations.cashierNoMoneyForWithdrawal,
-      'cashierNoSpecialCharacters': localizations.cashierNoSpecialCharacters,
-      'cashierNoTransactionsFound': localizations.cashierNoTransactionsFound,
-      'cashierNoWithdraws': localizations.cashierNoWithdraws,
-      'cashierOnboardingBalanceNewUsers':
-          localizations.cashierOnboardingBalanceNewUsers,
-      'cashierOnramperPurchaseDescription':
-          localizations.cashierOnramperPurchaseDescription,
-      'cashierOnramperTitle': localizations.cashierOnramperTitle,
-      'cashierOr': localizations.cashierOr,
-      'cashierOtherWallet': localizations.cashierOtherWallet,
-      'cashierPastMonth': localizations.cashierPastMonth,
-      'cashierPastWeek': localizations.cashierPastWeek,
-      'cashierPaxfulPurchaseDescription':
-          localizations.cashierPaxfulPurchaseDescription,
-      'cashierPaxfulTitle': localizations.cashierPaxfulTitle,
-      'cashierPayWithShapeshift': localizations.cashierPayWithShapeshift,
-      'cashierPaymentMethodBankTransfer':
-          localizations.cashierPaymentMethodBankTransfer,
-      'cashierPaymentMethodCreditCard':
-          localizations.cashierPaymentMethodCreditCard,
-      'cashierPaymentAmount': localizations.cashierPaymentAmount,
-      'cashierPaymentAmountReceived':
-          localizations.cashierPaymentAmountReceived,
-      'cashierPaymentAmountSpent': localizations.cashierPaymentAmountSpent,
-      'cashierPaymentBuyMoreBitcoins':
-          localizations.cashierPaymentBuyMoreBitcoins,
-      'cashierPaymentCompanyAddress':
-          localizations.cashierPaymentCompanyAddress,
-      'cashierPaymentCompanyName': localizations.cashierPaymentCompanyName,
-      'cashierPaymentProcessingFee': localizations.cashierPaymentProcessingFee,
-      'cashierPaymentProvider': localizations.cashierPaymentProvider,
-      'cashierPaymentReferralCode': localizations.cashierPaymentReferralCode,
-      'cashierPaymentTrackPaymentStatus':
-          localizations.cashierPaymentTrackPaymentStatus,
-      'cashierPaymentTransactionLink':
-          localizations.cashierPaymentTransactionLink,
-      'cashierPaymentTransactionRegistered':
-          localizations.cashierPaymentTransactionRegistered,
-      'cashierPaymentTransactionWillShow':
-          localizations.cashierPaymentTransactionWillShow,
-      'cashierPaypayDepositPageTitle':
-          localizations.cashierPaypayDepositPageTitle,
-      'cashierPaypayDescription': localizations.cashierPaypayDescription,
-      'cashierPaypayDescriptionJpy': localizations.cashierPaypayDescriptionJpy,
-      'cashierPaypayDisabledPayout': localizations.cashierPaypayDisabledPayout,
-      'cashierPaypayDisabledRegion': localizations.cashierPaypayDisabledRegion,
-      'cashierPaypayTitle': localizations.cashierPaypayTitle,
-      'cashierPaypayWithdrawPageTitle':
-          localizations.cashierPaypayWithdrawPageTitle,
-      'cashierPersonalDetails': localizations.cashierPersonalDetails,
-      'cashierPlacedOrderTitle': localizations.cashierPlacedOrderTitle,
-      'cashierPopularMethods': localizations.cashierPopularMethods,
-      'cashierPoweredBy': localizations.cashierPoweredBy,
-      'cashierPreferredFiatCurrency':
-          localizations.cashierPreferredFiatCurrency,
-      'cashierPreviewDeposit': localizations.cashierPreviewDeposit,
-      'cashierPreviewDepositDesc': localizations.cashierPreviewDepositDesc,
-      'cashierPreviewWithdraw': localizations.cashierPreviewWithdraw,
-      'cashierPreviewWithdrawDesc': localizations.cashierPreviewWithdrawDesc,
-      'cashierPromotionCode': localizations.cashierPromotionCode,
-      'cashierProvider': localizations.cashierProvider,
-      'cashierPurchaseBitcoin': localizations.cashierPurchaseBitcoin,
-      'cashierPurchaseBitcoinUsingCreditCard':
-          localizations.cashierPurchaseBitcoinUsingCreditCard,
-      'cashierQuickTips': localizations.cashierQuickTips,
-      'cashierRateGuaranteedFor': localizations.cashierRateGuaranteedFor,
-      'cashierReceive': localizations.cashierReceive,
-      'cashierRecentTransactions': localizations.cashierRecentTransactions,
-      'cashierRecommended': localizations.cashierRecommended,
-      'cashierRefcode': localizations.cashierRefcode,
-      'cashierRequiredIntegerValue': localizations.cashierRequiredIntegerValue,
-      'cashierReturnToFunds': localizations.cashierReturnToFunds,
-      'cashierReturnToHome': localizations.cashierReturnToHome,
-      'cashierRewardActiveDescription':
-          localizations.cashierRewardActiveDescription,
-      'cashierRewardActiveTitle': localizations.cashierRewardActiveTitle,
-      'cashierRewardEnterCode': localizations.cashierRewardEnterCode,
-      'cashierRewardGeneric': localizations.cashierRewardGeneric,
-      'cashierRewardInvalidCode': localizations.cashierRewardInvalidCode,
-      'cashierRewardRedeemCode': localizations.cashierRewardRedeemCode,
-      'cashierRewardSocialMedia': localizations.cashierRewardSocialMedia,
-      'cashierRewardSwichCurrencyTitle':
-          localizations.cashierRewardSwichCurrencyTitle,
-      'cashierRewards': localizations.cashierRewards,
-      'cashierSaveDetails': localizations.cashierSaveDetails,
-      'cashierScanQrAddress': localizations.cashierScanQrAddress,
-      'cashierSecurity': localizations.cashierSecurity,
-      'cashierSecurity2faCheckout': localizations.cashierSecurity2faCheckout,
-      'cashierSecurityPasswordCheckout':
-          localizations.cashierSecurityPasswordCheckout,
-      'cashierSelectDepositNetwork': localizations.cashierSelectDepositNetwork,
-      'cashierSelectDepositNetworkDescription':
-          localizations.cashierSelectDepositNetworkDescription,
-      'cashierSelectVoucher': localizations.cashierSelectVoucher,
-      'cashierSelectWithdrawNetwork':
-          localizations.cashierSelectWithdrawNetwork,
-      'cashierSelectWithdrawNetworkDescription':
-          localizations.cashierSelectWithdrawNetworkDescription,
-      'cashierSelectWithdrawalNetwork':
-          localizations.cashierSelectWithdrawalNetwork,
-      'cashierSelectWithdrawalNetworkDescription':
-          localizations.cashierSelectWithdrawalNetworkDescription,
-      'cashierSell': localizations.cashierSell,
-      'cashierSend': localizations.cashierSend,
-      'cashierSendEmail': localizations.cashierSendEmail,
-      'cashierSendTo': localizations.cashierSendTo,
-      'cashierSendYourAdaDeposit': localizations.cashierSendYourAdaDeposit,
-      'cashierSendYourAdaWithdraw': localizations.cashierSendYourAdaWithdraw,
-      'cashierSendYourBtcDeposit': localizations.cashierSendYourBtcDeposit,
-      'cashierSendYourBtcWithdraw': localizations.cashierSendYourBtcWithdraw,
-      'cashierSendYourDogeDeposit': localizations.cashierSendYourDogeDeposit,
-      'cashierSendYourDogeWithdraw': localizations.cashierSendYourDogeWithdraw,
-      'cashierSendYourEthWithdraw': localizations.cashierSendYourEthWithdraw,
-      'cashierSendYourLtcDeposit': localizations.cashierSendYourLtcDeposit,
-      'cashierSendYourLtcWithdraw': localizations.cashierSendYourLtcWithdraw,
-      'cashierSendYourSocDeposit': localizations.cashierSendYourSocDeposit,
-      'cashierSendYourTrxDeposit': localizations.cashierSendYourTrxDeposit,
-      'cashierSendYourTrxWithdraw': localizations.cashierSendYourTrxWithdraw,
-      'cashierSendYourUsdtDeposit': localizations.cashierSendYourUsdtDeposit,
-      'cashierSendYourUsdtWithdraw': localizations.cashierSendYourUsdtWithdraw,
-      'cashierSendYourUsdt_tron_Withdraw':
-          localizations.cashierSendYourUsdt_tron_Withdraw,
-      'cashierSendYourXrpDeposit': localizations.cashierSendYourXrpDeposit,
-      'cashierSendYourXrpWithdraw': localizations.cashierSendYourXrpWithdraw,
-      'cashierShowLess': localizations.cashierShowLess,
-      'cashierShowMore': localizations.cashierShowMore,
-      'cashierSimplexInstruction': localizations.cashierSimplexInstruction,
-      'cashierSoc': localizations.cashierSoc,
-      'cashierSocDepositDescription':
-          localizations.cashierSocDepositDescription,
-      'cashierSocialBitcasinoInstagram':
-          localizations.cashierSocialBitcasinoInstagram,
-      'cashierSocialBitcasinoTiktok':
-          localizations.cashierSocialBitcasinoTiktok,
-      'cashierSocialBitcasinoX': localizations.cashierSocialBitcasinoX,
-      'cashierSocialBitcasinoYoutube':
-          localizations.cashierSocialBitcasinoYoutube,
-      'cashierSocialSportsbetInstagram':
-          localizations.cashierSocialSportsbetInstagram,
-      'cashierSocialSportsbetTiktok':
-          localizations.cashierSocialSportsbetTiktok,
-      'cashierSocialSportsbetX': localizations.cashierSocialSportsbetX,
-      'cashierSocialSportsbetYoutube':
-          localizations.cashierSocialSportsbetYoutube,
-      'cashierSortFilter': localizations.cashierSortFilter,
-      'cashierStartDeposit': localizations.cashierStartDeposit,
-      'cashierStartFirstDeposit': localizations.cashierStartFirstDeposit,
-      'cashierStartTransfer': localizations.cashierStartTransfer,
-      'cashierSubmit': localizations.cashierSubmit,
-      'cashierSuccess': localizations.cashierSuccess,
-      'cashierSummary': localizations.cashierSummary,
-      'cashierSumopayTitle': localizations.cashierSumopayTitle,
-      'cashierSupport': localizations.cashierSupport,
-      'cashierSupportSettings': localizations.cashierSupportSettings,
-      'cashierThb': localizations.cashierThb,
-      'cashierToDate': localizations.cashierToDate,
-      'cashierToday': localizations.cashierToday,
-      'cashierTon': localizations.cashierTon,
-      'cashierTonMessageCopied': localizations.cashierTonMessageCopied,
-      'cashierTonWallets': localizations.cashierTonWallets,
-      'cashierTonWalletsDescription':
-          localizations.cashierTonWalletsDescription,
-      'cashierTonInvoiceIdCopied': localizations.cashierTonInvoiceIdCopied,
-      'cashierTooltipFee': localizations.cashierTooltipFee,
-      'cashierTooltipRate': localizations.cashierTooltipRate,
-      'cashierTooltipUseMobileOrQrEth':
-          localizations.cashierTooltipUseMobileOrQrEth,
-      'cashierTooltipUseMobileOrQrSoc':
-          localizations.cashierTooltipUseMobileOrQrSoc,
-      'cashierTooltipYourBitcoinDepositingAddress':
-          localizations.cashierTooltipYourBitcoinDepositingAddress,
-      'cashierTransactionDateAt': localizations.cashierTransactionDateAt,
-      'cashierTransactionDetails': localizations.cashierTransactionDetails,
-      'cashierTransactionHistory': localizations.cashierTransactionHistory,
-      'cashierTransactionAmount': localizations.cashierTransactionAmount,
-      'cashierTransactionApproved': localizations.cashierTransactionApproved,
-      'cashierTransactionApproving': localizations.cashierTransactionApproving,
-      'cashierTransactionAuthorized':
-          localizations.cashierTransactionAuthorized,
-      'cashierTransactionBet': localizations.cashierTransactionBet,
-      'cashierTransactionBitcoinRateApplied':
-          localizations.cashierTransactionBitcoinRateApplied,
-      'cashierTransactionCancelled': localizations.cashierTransactionCancelled,
-      'cashierTransactionCancelledByUser':
-          localizations.cashierTransactionCancelledByUser,
-      'cashierTransactionConfirmationPending':
-          localizations.cashierTransactionConfirmationPending,
-      'cashierTransactionConfirmations':
-          localizations.cashierTransactionConfirmations,
-      'cashierTransactionConfirmed': localizations.cashierTransactionConfirmed,
-      'cashierTransactionCredit': localizations.cashierTransactionCredit,
-      'cashierTransactionDate': localizations.cashierTransactionDate,
-      'cashierTransactionDateTime': localizations.cashierTransactionDateTime,
-      'cashierTransactionDebit': localizations.cashierTransactionDebit,
-      'cashierTransactionDeclined': localizations.cashierTransactionDeclined,
-      'cashierTransactionDeleted': localizations.cashierTransactionDeleted,
-      'cashierTransactionDeposit': localizations.cashierTransactionDeposit,
-      'cashierTransactionDescriptionTitle':
-          localizations.cashierTransactionDescriptionTitle,
-      'cashierTransactionEndingBalance':
-          localizations.cashierTransactionEndingBalance,
-      'cashierTransactionExpired': localizations.cashierTransactionExpired,
-      'cashierTransactionFailed': localizations.cashierTransactionFailed,
-      'cashierTransactionFrom': localizations.cashierTransactionFrom,
-      'cashierTransactionInProgress':
-          localizations.cashierTransactionInProgress,
-      'cashierTransactionInfoBet': localizations.cashierTransactionInfoBet,
-      'cashierTransactionInfoRollback':
-          localizations.cashierTransactionInfoRollback,
-      'cashierTransactionInfoWin': localizations.cashierTransactionInfoWin,
-      'cashierTransactionInputRequired':
-          localizations.cashierTransactionInputRequired,
-      'cashierTransactionLink': localizations.cashierTransactionLink,
-      'cashierTransactionNew': localizations.cashierTransactionNew,
-      'cashierTransactionPending': localizations.cashierTransactionPending,
-      'cashierTransactionProcessing':
-          localizations.cashierTransactionProcessing,
-      'cashierTransactionRejected': localizations.cashierTransactionRejected,
-      'cashierTransactionResumeTransaction':
-          localizations.cashierTransactionResumeTransaction,
-      'cashierTransactionRollback': localizations.cashierTransactionRollback,
-      'cashierTransactionRoundId': localizations.cashierTransactionRoundId,
-      'cashierTransactionStarted': localizations.cashierTransactionStarted,
-      'cashierTransactionStatus': localizations.cashierTransactionStatus,
-      'cashierTransactionTo': localizations.cashierTransactionTo,
-      'cashierTransactionTransactionId':
-          localizations.cashierTransactionTransactionId,
-      'cashierTransactionTransactionStatus':
-          localizations.cashierTransactionTransactionStatus,
-      'cashierTransactionWin': localizations.cashierTransactionWin,
-      'cashierTransactionWithdraw': localizations.cashierTransactionWithdraw,
-      'cashierTransactionsEmpty': localizations.cashierTransactionsEmpty,
-      'cashierTransactionsBeginning':
-          localizations.cashierTransactionsBeginning,
-      'cashierTransferIsRequired': localizations.cashierTransferIsRequired,
-      'cashierTronlink': localizations.cashierTronlink,
-      'cashierTronlinkWalletBalance':
-          localizations.cashierTronlinkWalletBalance,
-      'cashierTrx': localizations.cashierTrx,
-      'cashierTrxDeposit': localizations.cashierTrxDeposit,
-      'cashierTxDestinationTagCopied':
-          localizations.cashierTxDestinationTagCopied,
-      'cashierTxIdCopied': localizations.cashierTxIdCopied,
-      'cashierTxWalletIdCopied': localizations.cashierTxWalletIdCopied,
-      'cashierUltraFastDeposit': localizations.cashierUltraFastDeposit,
-      'cashierUpdateRate': localizations.cashierUpdateRate,
-      'cashierUsdc': localizations.cashierUsdc,
-      'cashierUsdt': localizations.cashierUsdt,
-      'cashierUsdtErcDeposit': localizations.cashierUsdtErcDeposit,
-      'cashierUsdtTrcDeposit': localizations.cashierUsdtTrcDeposit,
-      'cashierUsdtDepositJetonDescription':
-          localizations.cashierUsdtDepositJetonDescription,
-      'cashierUsdtWithdrawJetonDescription':
-          localizations.cashierUsdtWithdrawJetonDescription,
-      'cashierUseMobileOrQr': localizations.cashierUseMobileOrQr,
-      'cashierUtorgPurchaseDescription':
-          localizations.cashierUtorgPurchaseDescription,
-      'cashierUtorgPurchaseLicense': localizations.cashierUtorgPurchaseLicense,
-      'cashierUtorgPurchaseTitle': localizations.cashierUtorgPurchaseTitle,
-      'cashierUtorgTitle': localizations.cashierUtorgTitle,
-      'cashierViewDepositHistory': localizations.cashierViewDepositHistory,
-      'cashierViewOtherPaymentOptions':
-          localizations.cashierViewOtherPaymentOptions,
-      'cashierViewWithdrawHistory': localizations.cashierViewWithdrawHistory,
-      'cashierWallet': localizations.cashierWallet,
-      'cashierWalletAddress': localizations.cashierWalletAddress,
-      'cashierWalletMethods': localizations.cashierWalletMethods,
-      'cashierWalletSettings': localizations.cashierWalletSettings,
-      'cashierWalletconnect': localizations.cashierWalletconnect,
-      'cashierWalletconnectDesc': localizations.cashierWalletconnectDesc,
-      'cashierWeAreNotAccepting': localizations.cashierWeAreNotAccepting,
-      'cashierWeb3walletAccount': localizations.cashierWeb3walletAccount,
-      'cashierWeb3walletChainDisconnected':
-          localizations.cashierWeb3walletChainDisconnected,
-      'cashierWeb3walletChainUnsupportedNetwork':
-          localizations.cashierWeb3walletChainUnsupportedNetwork,
-      'cashierWeb3walletContinueWithWallet':
-          localizations.cashierWeb3walletContinueWithWallet,
-      'cashierWeb3walletDisconnectWallet':
-          localizations.cashierWeb3walletDisconnectWallet,
-      'cashierWeb3walletDisconnectWalletDesc':
-          localizations.cashierWeb3walletDisconnectWalletDesc,
-      'cashierWeb3walletDisconnectWalletTitle':
-          localizations.cashierWeb3walletDisconnectWalletTitle,
-      'cashierWeb3walletEnterDepositAmount':
-          localizations.cashierWeb3walletEnterDepositAmount,
-      'cashierWeb3walletErrorContract':
-          localizations.cashierWeb3walletErrorContract,
-      'cashierWeb3walletErrorEstimateGas':
-          localizations.cashierWeb3walletErrorEstimateGas,
-      'cashierWeb3walletErrorInvalidAmount':
-          localizations.cashierWeb3walletErrorInvalidAmount,
-      'cashierWeb3walletErrorPrepareContract':
-          localizations.cashierWeb3walletErrorPrepareContract,
-      'cashierWeb3walletErrorPrepareTransaction':
-          localizations.cashierWeb3walletErrorPrepareTransaction,
-      'cashierWeb3walletErrorTransaction':
-          localizations.cashierWeb3walletErrorTransaction,
-      'cashierWeb3walletErrorUserRejected':
-          localizations.cashierWeb3walletErrorUserRejected,
-      'cashierWeb3walletTransactionError':
-          localizations.cashierWeb3walletTransactionError,
-      'cashierWeb3walletTransactionProgress':
-          localizations.cashierWeb3walletTransactionProgress,
-      'cashierWeb3walletTransactionSuccess':
-          localizations.cashierWeb3walletTransactionSuccess,
-      'cashierWeb3walletViewOnBlockchain':
-          localizations.cashierWeb3walletViewOnBlockchain,
-      'cashierWeb3walletWalletDeposit':
-          localizations.cashierWeb3walletWalletDeposit,
-      'cashierWeb3walletWalletLinked':
-          localizations.cashierWeb3walletWalletLinked,
-      'cashierWebviewPage': localizations.cashierWebviewPage,
-      'cashierWin': localizations.cashierWin,
-      'cashierWithdraw': localizations.cashierWithdraw,
-      'cashierWithdraw3Confirmations':
-          localizations.cashierWithdraw3Confirmations,
-      'cashierWithdraw48hRestriction':
-          localizations.cashierWithdraw48hRestriction,
-      'cashierWithdrawAda': localizations.cashierWithdrawAda,
-      'cashierWithdrawBnb': localizations.cashierWithdrawBnb,
-      'cashierWithdrawBtc': localizations.cashierWithdrawBtc,
-      'cashierWithdrawBusd': localizations.cashierWithdrawBusd,
-      'cashierWithdrawCad': localizations.cashierWithdrawCad,
-      'cashierWithdrawConfirm': localizations.cashierWithdrawConfirm,
-      'cashierWithdrawDai': localizations.cashierWithdrawDai,
-      'cashierWithdrawDoge': localizations.cashierWithdrawDoge,
-      'cashierWithdrawEth': localizations.cashierWithdrawEth,
-      'cashierWithdrawEur': localizations.cashierWithdrawEur,
-      'cashierWithdrawFunds': localizations.cashierWithdrawFunds,
-      'cashierWithdrawHistory': localizations.cashierWithdrawHistory,
-      'cashierWithdrawInProgress': localizations.cashierWithdrawInProgress,
-      'cashierWithdrawInfoCorrectFields':
-          localizations.cashierWithdrawInfoCorrectFields,
-      'cashierWithdrawInfoXrp': localizations.cashierWithdrawInfoXrp,
-      'cashierWithdrawIsComplete': localizations.cashierWithdrawIsComplete,
-      'cashierWithdrawJpy': localizations.cashierWithdrawJpy,
-      'cashierWithdrawLtc': localizations.cashierWithdrawLtc,
-      'cashierWithdrawMatic': localizations.cashierWithdrawMatic,
-      'cashierWithdrawNext': localizations.cashierWithdrawNext,
-      'cashierWithdrawSoc': localizations.cashierWithdrawSoc,
-      'cashierWithdrawThb': localizations.cashierWithdrawThb,
-      'cashierWithdrawTon': localizations.cashierWithdrawTon,
-      'cashierWithdrawTrx': localizations.cashierWithdrawTrx,
-      'cashierWithdrawUsdc': localizations.cashierWithdrawUsdc,
-      'cashierWithdrawUsdt': localizations.cashierWithdrawUsdt,
-      'cashierWithdrawViewStatus': localizations.cashierWithdrawViewStatus,
-      'cashierWithdrawXrp': localizations.cashierWithdrawXrp,
-      'cashierWithdrawAnimex_bankTransferTitle':
-          localizations.cashierWithdrawAnimex_bankTransferTitle,
-      'cashierWithdrawCancel': localizations.cashierWithdrawCancel,
-      'cashierWithdrawEzeebill_bankTransfer_inrTitle':
-          localizations.cashierWithdrawEzeebill_bankTransfer_inrTitle,
-      'cashierWithdrawEzeebill_bankTransfer_jpyTitle':
-          localizations.cashierWithdrawEzeebill_bankTransfer_jpyTitle,
-      'cashierWithdrawEzeebill_bankTransferDescription':
-          localizations.cashierWithdrawEzeebill_bankTransferDescription,
-      'cashierWithdrawEzeebill_bankTransferTitle':
-          localizations.cashierWithdrawEzeebill_bankTransferTitle,
-      'cashierWithdrawInovapay_bankTransferDescription':
-          localizations.cashierWithdrawInovapay_bankTransferDescription,
-      'cashierWithdrawInovapay_bankTransferTitle':
-          localizations.cashierWithdrawInovapay_bankTransferTitle,
-      'cashierWithdrawInovapay_pixTitle':
-          localizations.cashierWithdrawInovapay_pixTitle,
-      'cashierWithdrawInterac_interacTitle':
-          localizations.cashierWithdrawInterac_interacTitle,
-      'cashierWithdrawJeton_jpyTitle':
-          localizations.cashierWithdrawJeton_jpyTitle,
-      'cashierWithdrawJeton_pixTitle':
-          localizations.cashierWithdrawJeton_pixTitle,
-      'cashierWithdrawJetonDescription':
-          localizations.cashierWithdrawJetonDescription,
-      'cashierWithdrawJetonTitle': localizations.cashierWithdrawJetonTitle,
-      'cashierWithdrawNetworkTooltip':
-          localizations.cashierWithdrawNetworkTooltip,
-      'cashierWithdrawPagavaTitle': localizations.cashierWithdrawPagavaTitle,
-      'cashierWithdrawPagsmile_pixDescription':
-          localizations.cashierWithdrawPagsmile_pixDescription,
-      'cashierWithdrawPagsmile_pixTitle':
-          localizations.cashierWithdrawPagsmile_pixTitle,
-      'cashierWithdrawPay4fun_pay4funDescription':
-          localizations.cashierWithdrawPay4fun_pay4funDescription,
-      'cashierWithdrawPay4fun_pay4funTitle':
-          localizations.cashierWithdrawPay4fun_pay4funTitle,
-      'cashierWithdrawPaymentrush_paymentRushTitle':
-          localizations.cashierWithdrawPaymentrush_paymentRushTitle,
-      'cashierWithdrawPinBank_bankTransferTitle':
-          localizations.cashierWithdrawPinBank_bankTransferTitle,
-      'cashierWithdrawPinbank_bankTransferTitle':
-          localizations.cashierWithdrawPinbank_bankTransferTitle,
-      'cashierWithdrawQaicash_localBankTransferTitle':
-          localizations.cashierWithdrawQaicash_localBankTransferTitle,
-      'cashierWithdrawRupeepayments_bankTransferTitle':
-          localizations.cashierWithdrawRupeepayments_bankTransferTitle,
-      'cashierWithdrawSumopay_bankTransferTitle':
-          localizations.cashierWithdrawSumopay_bankTransferTitle,
-      'cashierWithdrawVrio_bankTransferTitle':
-          localizations.cashierWithdrawVrio_bankTransferTitle,
-      'cashierWithdrawWalletDetails':
-          localizations.cashierWithdrawWalletDetails,
-      'cashierWithdrawWarningConfirmAddress':
-          localizations.cashierWithdrawWarningConfirmAddress,
-      'cashierWithdrawalAgents': localizations.cashierWithdrawalAgents,
-      'cashierWithdrawalAmount': localizations.cashierWithdrawalAmount,
-      'cashierWithdrawalBrl': localizations.cashierWithdrawalBrl,
-      'cashierWithdrawalCad': localizations.cashierWithdrawalCad,
-      'cashierWithdrawalInr': localizations.cashierWithdrawalInr,
-      'cashierWithdrawalJpy': localizations.cashierWithdrawalJpy,
-      'cashierWithdrawalPayTo': localizations.cashierWithdrawalPayTo,
-      'cashierWithdrawalUsdt': localizations.cashierWithdrawalUsdt,
-      'cashierWouldYouLikeToCash': localizations.cashierWouldYouLikeToCash,
-      'cashierXrp': localizations.cashierXrp,
-      'cashierYouCanWithdrawBitcoins':
-          localizations.cashierYouCanWithdrawBitcoins,
-      'cashierYourAddress': localizations.cashierYourAddress,
-      'cashierYourBitcoinAddress': localizations.cashierYourBitcoinAddress,
-      'cashierYourBitcoinDepAddress':
-          localizations.cashierYourBitcoinDepAddress,
-      'cashierYourBitcoinDepositingAddress':
-          localizations.cashierYourBitcoinDepositingAddress,
-      'cashierYourCurrentBalance': localizations.cashierYourCurrentBalance,
-      'cashierYourDepositAddress': localizations.cashierYourDepositAddress,
-      'cashierYourEthAddress': localizations.cashierYourEthAddress,
-      'cashierYourEthDepAddress': localizations.cashierYourEthDepAddress,
-      'cashierYourFinances': localizations.cashierYourFinances,
-      'cashierYourSocAddress': localizations.cashierYourSocAddress,
-      'cashierYourSocDepAddress': localizations.cashierYourSocDepAddress,
-      'currencyMbtc': localizations.currencyMbtc,
-      'errors404Cta': localizations.errors404Cta,
-      'errors404ErrorMessageHeader': localizations.errors404ErrorMessageHeader,
-      'errors404Errormessage': localizations.errors404Errormessage,
-      'errors404Promo': localizations.errors404Promo,
-      'errorsAgeMustBeOver18': localizations.errorsAgeMustBeOver18,
-      'errorsAlreadyPredictedThisPrice':
-          localizations.errorsAlreadyPredictedThisPrice,
-      'errorsAmountIsNull': localizations.errorsAmountIsNull,
-      'errorsArticle404Text': localizations.errorsArticle404Text,
-      'errorsBtcAmountMustBeGreaterThan1Mbtc':
-          localizations.errorsBtcAmountMustBeGreaterThan1Mbtc,
-      'errorsCompleteForm': localizations.errorsCompleteForm,
-      'errorsCooldownAfterPasswordChange':
-          localizations.errorsCooldownAfterPasswordChange,
-      'errorsCorruptImage': localizations.errorsCorruptImage,
-      'errorsCountryDoesNotHaveSupportedCurrencies':
-          localizations.errorsCountryDoesNotHaveSupportedCurrencies,
-      'errorsCountryIsNotSupported': localizations.errorsCountryIsNotSupported,
-      'errorsCpfContactSupport': localizations.errorsCpfContactSupport,
-      'errorsCurrencyMismatchBetweenSelectedCurrencyAndMarketBtcRate':
-          localizations
-              .errorsCurrencyMismatchBetweenSelectedCurrencyAndMarketBtcRate,
-      'errorsDisabledWithdrawals': localizations.errorsDisabledWithdrawals,
-      'errorsDisabledWithdrawalsSportsbet':
-          localizations.errorsDisabledWithdrawalsSportsbet,
-      'errorsEmailAlreadyExists': localizations.errorsEmailAlreadyExists,
-      'errorsEmailIsTaken': localizations.errorsEmailIsTaken,
-      'errorsFailedToSubmit': localizations.errorsFailedToSubmit,
-      'errorsGamegeneralCta': localizations.errorsGamegeneralCta,
-      'errorsGamegeneralErrormessage':
-          localizations.errorsGamegeneralErrormessage,
-      'errorsGeneral': localizations.errorsGeneral,
-      'errorsGeneralDescription': localizations.errorsGeneralDescription,
-      'errorsGeneralSupport': localizations.errorsGeneralSupport,
-      'errorsHigherThanLimit': localizations.errorsHigherThanLimit,
-      'errorsImageTooBig': localizations.errorsImageTooBig,
-      'errorsInputMaxLength': localizations.errorsInputMaxLength,
-      'errorsInputMaxValue': localizations.errorsInputMaxValue,
-      'errorsInputMinValue': localizations.errorsInputMinValue,
-      'errorsInputRequired': localizations.errorsInputRequired,
-      'errorsInvalid': localizations.errorsInvalid,
-      'errorsInvalidAddress': localizations.errorsInvalidAddress,
-      'errorsInvalidAddressAddress': localizations.errorsInvalidAddressAddress,
-      'errorsInvalidCpf': localizations.errorsInvalidCpf,
-      'errorsInvalidDate': localizations.errorsInvalidDate,
-      'errorsInvalidDateRange': localizations.errorsInvalidDateRange,
-      'errorsInvalidEmail': localizations.errorsInvalidEmail,
-      'errorsInvalidMarketBtcRateId':
-          localizations.errorsInvalidMarketBtcRateId,
-      'errorsInvalidPassword': localizations.errorsInvalidPassword,
-      'errorsInvalidPasswordResetToken':
-          localizations.errorsInvalidPasswordResetToken,
-      'errorsInvalidPaymentId': localizations.errorsInvalidPaymentId,
-      'errorsInvalidPhone': localizations.errorsInvalidPhone,
-      'errorsInvalidRequest': localizations.errorsInvalidRequest,
-      'errorsInvalidRfc': localizations.errorsInvalidRfc,
-      'errorsInvalidStatus': localizations.errorsInvalidStatus,
-      'errorsInvalidStatusUpdate': localizations.errorsInvalidStatusUpdate,
-      'errorsInvalidUsername': localizations.errorsInvalidUsername,
-      'errorsInvalidUsernameOrPassword':
-          localizations.errorsInvalidUsernameOrPassword,
-      'errorsInvalidUsernamePasswordOrOtp':
-          localizations.errorsInvalidUsernamePasswordOrOtp,
-      'errorsInvalidLightningNetworkInvoice':
-          localizations.errorsInvalidLightningNetworkInvoice,
-      'errorsInvoiceExpiredAddress': localizations.errorsInvoiceExpiredAddress,
-      'errorsIsRequired': localizations.errorsIsRequired,
-      'errorsLoginAuthenticationFailed':
-          localizations.errorsLoginAuthenticationFailed,
-      'errorsLowerThanLimit': localizations.errorsLowerThanLimit,
-      'errorsMaxWithdraw': localizations.errorsMaxWithdraw,
-      'errorsMethodNotFound': localizations.errorsMethodNotFound,
-      'errorsMustBeLoggedIn': localizations.errorsMustBeLoggedIn,
-      'errorsNewerMarketRateExists': localizations.errorsNewerMarketRateExists,
-      'errorsNoExchangeCurrencyAvailable':
-          localizations.errorsNoExchangeCurrencyAvailable,
-      'errorsNoInternetConnection': localizations.errorsNoInternetConnection,
-      'errorsNoMarketBtcRateAvailableForSelectedCurrency':
-          localizations.errorsNoMarketBtcRateAvailableForSelectedCurrency,
-      'errorsNotAllowed': localizations.errorsNotAllowed,
-      'errorsNotAllowedToUseApp': localizations.errorsNotAllowedToUseApp,
-      'errorsNotAllowedToUseExchangeMethod':
-          localizations.errorsNotAllowedToUseExchangeMethod,
-      'errorsNotAllowedToUseSite': localizations.errorsNotAllowedToUseSite,
-      'errorsNotEnoughFunds': localizations.errorsNotEnoughFunds,
-      'errorsNotEnoughFundsAmount': localizations.errorsNotEnoughFundsAmount,
-      'errorsNotFound': localizations.errorsNotFound,
-      'errorsOtpIsRequired': localizations.errorsOtpIsRequired,
-      'errorsOtpMustBeDisabled': localizations.errorsOtpMustBeDisabled,
-      'errorsOtpVerificationFailed': localizations.errorsOtpVerificationFailed,
-      'errorsOtpVerificationFailedOtpBitcasino':
-          localizations.errorsOtpVerificationFailedOtpBitcasino,
-      'errorsOtpVerificationFailedOtpEmpire':
-          localizations.errorsOtpVerificationFailedOtpEmpire,
-      'errorsOtpVerificationFailedOtpSportsbet':
-          localizations.errorsOtpVerificationFailedOtpSportsbet,
-      'errorsPasswordDoesNotMatch': localizations.errorsPasswordDoesNotMatch,
-      'errorsPasswordRecoveryEmailNotFound':
-          localizations.errorsPasswordRecoveryEmailNotFound,
-      'errorsPasswordRecoveryUnableToChangePassword':
-          localizations.errorsPasswordRecoveryUnableToChangePassword,
-      'errorsPasswordResetDeniedForSocialUser':
-          localizations.errorsPasswordResetDeniedForSocialUser,
-      'errorsPasswordResetDeniedUserDeleted':
-          localizations.errorsPasswordResetDeniedUserDeleted,
-      'errorsPasswordTooShort': localizations.errorsPasswordTooShort,
-      'errorsPasswordTooWeak': localizations.errorsPasswordTooWeak,
-      'errorsPatternDoesNotMatch': localizations.errorsPatternDoesNotMatch,
-      'errorsPaymentAmountTooLarge': localizations.errorsPaymentAmountTooLarge,
-      'errorsPaymentMethodIsNotSupported':
-          localizations.errorsPaymentMethodIsNotSupported,
-      'errorsPaymentMethodIsNotSupportedInCurrentCountry':
-          localizations.errorsPaymentMethodIsNotSupportedInCurrentCountry,
-      'errorsPaymentMethodIsNotSupportedWithSelectedCurrency':
-          localizations.errorsPaymentMethodIsNotSupportedWithSelectedCurrency,
-      'errorsPaymentStatusMustBeNew':
-          localizations.errorsPaymentStatusMustBeNew,
-      'errorsProcessingFeeTooHigh': localizations.errorsProcessingFeeTooHigh,
-      'errorsProcessingFeeTooLow': localizations.errorsProcessingFeeTooLow,
-      'errorsProfileAuthenticationFailed':
-          localizations.errorsProfileAuthenticationFailed,
-      'errorsProfileOtpVerificationFailed':
-          localizations.errorsProfileOtpVerificationFailed,
-      'errorsProfileUserNotFound': localizations.errorsProfileUserNotFound,
-      'errorsRequestTimeout': localizations.errorsRequestTimeout,
-      'errorsRequired': localizations.errorsRequired,
-      'errorsRequiresDestinationTag':
-          localizations.errorsRequiresDestinationTag,
-      'errorsSelectedCurrencyIsNotSupported':
-          localizations.errorsSelectedCurrencyIsNotSupported,
-      'errorsSelectedCurrencyIsNotSupportedInCurrentCountry':
-          localizations.errorsSelectedCurrencyIsNotSupportedInCurrentCountry,
-      'errorsSignUpEmailOrUsernameIsTaken':
-          localizations.errorsSignUpEmailOrUsernameIsTaken,
-      'errorsSms2faInvalidSessionId':
-          localizations.errorsSms2faInvalidSessionId,
-      'errorsSms2faSeesionIdExpired':
-          localizations.errorsSms2faSeesionIdExpired,
-      'errorsSms2faVerificationFailed':
-          localizations.errorsSms2faVerificationFailed,
-      'errorsSocialAuthConnectVerifyEmail':
-          localizations.errorsSocialAuthConnectVerifyEmail,
-      'errorsSomethingWentWrong': localizations.errorsSomethingWentWrong,
-      'errorsSpreadTooHigh': localizations.errorsSpreadTooHigh,
-      'errorsSpreadTooLow': localizations.errorsSpreadTooLow,
-      'errorsSystemError': localizations.errorsSystemError,
-      'errorsTokenExpired': localizations.errorsTokenExpired,
-      'errorsTooLong': localizations.errorsTooLong,
-      'errorsTooManyLoginAttempts': localizations.errorsTooManyLoginAttempts,
-      'errorsTooManyPasswordResetAttempts':
-          localizations.errorsTooManyPasswordResetAttempts,
-      'errorsTooManySms2faAttempts': localizations.errorsTooManySms2faAttempts,
-      'errorsTooManySmsSent': localizations.errorsTooManySmsSent,
-      'errorsTransactionAmount': localizations.errorsTransactionAmount,
-      'errorsTransactionReferenceIsNull':
-          localizations.errorsTransactionReferenceIsNull,
-      'errorsTypeMismatch': localizations.errorsTypeMismatch,
-      'errorsUbtcMustBeGreater': localizations.errorsUbtcMustBeGreater,
-      'errorsUnconfirmedDeposit': localizations.errorsUnconfirmedDeposit,
-      'errorsUnverifiedEmail': localizations.errorsUnverifiedEmail,
-      'errorsUserSelfExclusionIsActive':
-          localizations.errorsUserSelfExclusionIsActive,
-      'errorsUsernameAlreadyExists': localizations.errorsUsernameAlreadyExists,
-      'errorsUsernameIsTaken': localizations.errorsUsernameIsTaken,
-      'errorsValidationErrors': localizations.errorsValidationErrors,
-      'errorsValueMissing': localizations.errorsValueMissing,
-      'errorsWalletAddressConflict': localizations.errorsWalletAddressConflict,
-      'errorsWalletAddressConflictAddress':
-          localizations.errorsWalletAddressConflictAddress,
-      'errorsYourAccountIsDisabled': localizations.errorsYourAccountIsDisabled,
-      'errorsYourAccountIsDisabledSecurity':
-          localizations.errorsYourAccountIsDisabledSecurity,
-      'errorsYourAccountIsDormant': localizations.errorsYourAccountIsDormant,
-      'fundsBalance': localizations.fundsBalance,
-      'fundsConvertedBalance': localizations.fundsConvertedBalance,
-      'fundsFunds': localizations.fundsFunds,
-      'fundsGo_to_the_funds': localizations.fundsGo_to_the_funds,
-      'metamaskConnectEthMainnetChain':
-          localizations.metamaskConnectEthMainnetChain,
-      'metamaskConnectedTo': localizations.metamaskConnectedTo,
-      'metamaskLinkAccount': localizations.metamaskLinkAccount,
-      'metamaskWalletSuccessfullyLinked':
-          localizations.metamaskWalletSuccessfullyLinked,
-      'transactionBet': localizations.transactionBet,
-      'transactionBitcoin': localizations.transactionBitcoin,
-      'transactionBitcoinDeposit': localizations.transactionBitcoinDeposit,
-      'transactionBitcoinWithdrawal':
-          localizations.transactionBitcoinWithdrawal,
-      'transactionDeposit': localizations.transactionDeposit,
-      'transactionDepositAcknowledged':
-          localizations.transactionDepositAcknowledged,
-      'transactionDepositAuthorised':
-          localizations.transactionDepositAuthorised,
-      'transactionDepositCancellationByUser':
-          localizations.transactionDepositCancellationByUser,
-      'transactionDepositCancellationReturn':
-          localizations.transactionDepositCancellationReturn,
-      'transactionDepositCancelled': localizations.transactionDepositCancelled,
-      'transactionDepositDeleted': localizations.transactionDepositDeleted,
-      'transactionDepositExpired': localizations.transactionDepositExpired,
-      'transactionDepositFailed': localizations.transactionDepositFailed,
-      'transactionDepositInputRequired':
-          localizations.transactionDepositInputRequired,
-      'transactionDepositNew': localizations.transactionDepositNew,
-      'transactionDepositPending': localizations.transactionDepositPending,
-      'transactionDepositRejected': localizations.transactionDepositRejected,
-      'transactionDepositReverted': localizations.transactionDepositReverted,
-      'transactionDepositStarted': localizations.transactionDepositStarted,
-      'transactionDescription': localizations.transactionDescription,
-      'transactionDetails': localizations.transactionDetails,
-      'transactionEndBalance': localizations.transactionEndBalance,
-      'transactionEthDeposit': localizations.transactionEthDeposit,
-      'transactionEthWithdrawal': localizations.transactionEthWithdrawal,
-      'transactionEthereumDeposit': localizations.transactionEthereumDeposit,
-      'transactionEthereumEthDeposit':
-          localizations.transactionEthereumEthDeposit,
-      'transactionEthereumEthWithdrawal':
-          localizations.transactionEthereumEthWithdrawal,
-      'transactionEthereumSocDeposit':
-          localizations.transactionEthereumSocDeposit,
-      'transactionEthereumSocWithdrawal':
-          localizations.transactionEthereumSocWithdrawal,
-      'transactionEthereumUsdtDeposit':
-          localizations.transactionEthereumUsdtDeposit,
-      'transactionEthereumUsdtWithdrawal':
-          localizations.transactionEthereumUsdtWithdrawal,
-      'transactionEthereumWithdrawal':
-          localizations.transactionEthereumWithdrawal,
-      'transactionExchangeDepositBtc':
-          localizations.transactionExchangeDepositBtc,
-      'transactionExchangeDepositCny':
-          localizations.transactionExchangeDepositCny,
-      'transactionExchangeDepositEur':
-          localizations.transactionExchangeDepositEur,
-      'transactionExchangeDepositJpy':
-          localizations.transactionExchangeDepositJpy,
-      'transactionExchangeFrom': localizations.transactionExchangeFrom,
-      'transactionExchangeTo': localizations.transactionExchangeTo,
-      'transactionExchangeWithdrawalBtc':
-          localizations.transactionExchangeWithdrawalBtc,
-      'transactionExchangeWithdrawalCny':
-          localizations.transactionExchangeWithdrawalCny,
-      'transactionExchangeWithdrawalEur':
-          localizations.transactionExchangeWithdrawalEur,
-      'transactionExchangeWithdrawalJpy':
-          localizations.transactionExchangeWithdrawalJpy,
-      'transactionIncompleteBtc': localizations.transactionIncompleteBtc,
-      'transactionLink': localizations.transactionLink,
-      'transactionLitecoinDeposit': localizations.transactionLitecoinDeposit,
-      'transactionLitecoinWithdrawal':
-          localizations.transactionLitecoinWithdrawal,
-      'transactionManualDeposit': localizations.transactionManualDeposit,
-      'transactionManualDormantCredit':
-          localizations.transactionManualDormantCredit,
-      'transactionManualDormantDebit':
-          localizations.transactionManualDormantDebit,
-      'transactionManualWithdrawal': localizations.transactionManualWithdrawal,
-      'transactionP2pDeposit': localizations.transactionP2pDeposit,
-      'transactionP2pWithdrawal': localizations.transactionP2pWithdrawal,
-      'transactionPay88AdaDeposit': localizations.transactionPay88AdaDeposit,
-      'transactionPay88AdaWithdrawal':
-          localizations.transactionPay88AdaWithdrawal,
-      'transactionPay88BnbDeposit': localizations.transactionPay88BnbDeposit,
-      'transactionPay88BnbWithdrawal':
-          localizations.transactionPay88BnbWithdrawal,
-      'transactionPay88BrlDeposit': localizations.transactionPay88BrlDeposit,
-      'transactionPay88BrlWithdrawal':
-          localizations.transactionPay88BrlWithdrawal,
-      'transactionPay88BtcDeposit': localizations.transactionPay88BtcDeposit,
-      'transactionPay88BtcWithdrawal':
-          localizations.transactionPay88BtcWithdrawal,
-      'transactionPay88BusdDeposit': localizations.transactionPay88BusdDeposit,
-      'transactionPay88BusdWithdrawal':
-          localizations.transactionPay88BusdWithdrawal,
-      'transactionPay88CadDeposit': localizations.transactionPay88CadDeposit,
-      'transactionPay88CadWithdrawal':
-          localizations.transactionPay88CadWithdrawal,
-      'transactionPay88CnyDeposit': localizations.transactionPay88CnyDeposit,
-      'transactionPay88CnyWithdrawal':
-          localizations.transactionPay88CnyWithdrawal,
-      'transactionPay88Deposit': localizations.transactionPay88Deposit,
-      'transactionPay88DogeDeposit': localizations.transactionPay88DogeDeposit,
-      'transactionPay88DogeWithdrawal':
-          localizations.transactionPay88DogeWithdrawal,
-      'transactionPay88EurDeposit': localizations.transactionPay88EurDeposit,
-      'transactionPay88EurWithdrawal':
-          localizations.transactionPay88EurWithdrawal,
-      'transactionPay88InrDeposit': localizations.transactionPay88InrDeposit,
-      'transactionPay88InrWithdrawal':
-          localizations.transactionPay88InrWithdrawal,
-      'transactionPay88JpyDeposit': localizations.transactionPay88JpyDeposit,
-      'transactionPay88JpyWithdrawal':
-          localizations.transactionPay88JpyWithdrawal,
-      'transactionPay88MaticDeposit':
-          localizations.transactionPay88MaticDeposit,
-      'transactionPay88MaticWithdrawal':
-          localizations.transactionPay88MaticWithdrawal,
-      'transactionPay88ThbDeposit': localizations.transactionPay88ThbDeposit,
-      'transactionPay88ThbWithdrawal':
-          localizations.transactionPay88ThbWithdrawal,
-      'transactionPay88TonDeposit': localizations.transactionPay88TonDeposit,
-      'transactionPay88TonWithdrawal':
-          localizations.transactionPay88TonWithdrawal,
-      'transactionPay88TrxDeposit': localizations.transactionPay88TrxDeposit,
-      'transactionPay88TrxWithdrawal':
-          localizations.transactionPay88TrxWithdrawal,
-      'transactionPay88UsdcDeposit': localizations.transactionPay88UsdcDeposit,
-      'transactionPay88UsdcWithdrawal':
-          localizations.transactionPay88UsdcWithdrawal,
-      'transactionPay88UsdtDeposit': localizations.transactionPay88UsdtDeposit,
-      'transactionPay88UsdtWithdrawal':
-          localizations.transactionPay88UsdtWithdrawal,
-      'transactionPay88Withdrawal': localizations.transactionPay88Withdrawal,
-      'transactionPay88XrpDeposit': localizations.transactionPay88XrpDeposit,
-      'transactionPay88XrpWithdrawal':
-          localizations.transactionPay88XrpWithdrawal,
-      'transactionPaymentiqDeposit': localizations.transactionPaymentiqDeposit,
-      'transactionPaymentiqWithdrawal':
-          localizations.transactionPaymentiqWithdrawal,
-      'transactionPoweredBy': localizations.transactionPoweredBy,
-      'transactionProcessingFee': localizations.transactionProcessingFee,
-      'transactionRate': localizations.transactionRate,
-      'transactionResume': localizations.transactionResume,
-      'transactionSocDeposit': localizations.transactionSocDeposit,
-      'transactionSocWithdrawal': localizations.transactionSocWithdrawal,
-      'transactionSpent': localizations.transactionSpent,
-      'transactionStartBalance': localizations.transactionStartBalance,
-      'transactionTotalReceived': localizations.transactionTotalReceived,
-      'transactionType': localizations.transactionType,
-      'transactionTypeBitcoinDeposit':
-          localizations.transactionTypeBitcoinDeposit,
-      'transactionWin': localizations.transactionWin,
-      'transactionWithdrawal': localizations.transactionWithdrawal,
-      'transactionWithdrawalApproved':
-          localizations.transactionWithdrawalApproved,
-      'transactionWithdrawalCancellationByUser':
-          localizations.transactionWithdrawalCancellationByUser,
-      'transactionWithdrawalCancellationReturn':
-          localizations.transactionWithdrawalCancellationReturn,
-      'transactionWithdrawalDeleted':
-          localizations.transactionWithdrawalDeleted,
-      'transactionWithdrawalNew': localizations.transactionWithdrawalNew,
-      'transactionWithdrawalPending':
-          localizations.transactionWithdrawalPending,
-      'transactionWithdrawalProcessing':
-          localizations.transactionWithdrawalProcessing,
-      'transactionWithdrawalReverted':
-          localizations.transactionWithdrawalReverted,
-      'transactionsBets': localizations.transactionsBets,
-      'transactionsDeposits': localizations.transactionsDeposits,
-      'transactionsFilter': localizations.transactionsFilter,
-      'transactionsLoadMore': localizations.transactionsLoadMore,
-      'transactionsModifyFilters': localizations.transactionsModifyFilters,
-      'transactionsNone': localizations.transactionsNone,
-      'transactionsSeeAllTransactions':
-          localizations.transactionsSeeAllTransactions,
-      'transactionsWins': localizations.transactionsWins,
-      'transactionsWithdrawals': localizations.transactionsWithdrawals,
-      'walletDeposit': localizations.walletDeposit,
-      'walletDepositHistory': localizations.walletDepositHistory,
-      'walletGetBitcoins': localizations.walletGetBitcoins,
-      'walletMyBalance': localizations.walletMyBalance,
-      'walletTransactionAmount': localizations.walletTransactionAmount,
-      'walletTransactionTransactionId':
-          localizations.walletTransactionTransactionId,
-      'walletWithdraw': localizations.walletWithdraw,
-      'ecPop_message': (String errorCode) =>
-          localizations.ecPop_message(errorCode),
-      'cashierBalance': (Object currency) =>
-          localizations.cashierBalance(currency),
-      'cashierBalanceReverted': (Object currency) =>
-          localizations.cashierBalanceReverted(currency),
-      'cashierBuyCurrency': (Object currency) =>
-          localizations.cashierBuyCurrency(currency),
-      'cashierConvertBeforeWithdraw': (Object convertFrom, Object convertTo) =>
-          localizations.cashierConvertBeforeWithdraw(convertFrom, convertTo),
-      'cashierConvertTo': (Object currency) =>
-          localizations.cashierConvertTo(currency),
-      'cashierCpfRfcProcessingDescription': (Object variant) =>
-          localizations.cashierCpfRfcProcessingDescription(variant),
-      'cashierCpfRfcProcessingTitle': (Object variant) =>
-          localizations.cashierCpfRfcProcessingTitle(variant),
-      'cashierCurrencyDeposit': (Object currency) =>
-          localizations.cashierCurrencyDeposit(currency),
-      'cashierCurrencyWithdrawal': (Object currency) =>
-          localizations.cashierCurrencyWithdrawal(currency),
-      'cashierCurrentBalance': (Object amount, Object currency) =>
-          localizations.cashierCurrentBalance(amount, currency),
-      'cashierDepositAgents': (Object currency) =>
-          localizations.cashierDepositAgents(currency),
-      'cashierDepositCurrency': (Object currency) =>
-          localizations.cashierDepositCurrency(currency),
-      'cashierDepositSuccessful': (Object currency, Object amount) =>
-          localizations.cashierDepositSuccessful(currency, amount),
-      'cashierDepositWarningErc20Network': (Object currency) =>
-          localizations.cashierDepositWarningErc20Network(currency),
-      'cashierDepositWalletDepositStarted': (Object amount, Object currency) =>
-          localizations.cashierDepositWalletDepositStarted(amount, currency),
-      'cashierEmailVerificationBannerBody': (Object brandName) =>
-          localizations.cashierEmailVerificationBannerBody(brandName),
-      'cashierEnterCodeFromSms': (Object phone) =>
-          localizations.cashierEnterCodeFromSms(phone),
-      'cashierExchange3Confirmations': (Object amount, Object currency) =>
-          localizations.cashierExchange3Confirmations(amount, currency),
-      'cashierExchangeFee': (Object amount, Object currency, Object fee) =>
-          localizations.cashierExchangeFee(amount, currency, fee),
-      'cashierExchangeOverallBalance': (Object currency, Object amount) =>
-          localizations.cashierExchangeOverallBalance(currency, amount),
-      'cashierExchangeRate': (Object amount, Object currency) =>
-          localizations.cashierExchangeRate(amount, currency),
-      'cashierFiatContinueExternal': (Object provider) =>
-          localizations.cashierFiatContinueExternal(provider),
-      'cashierFiatContinueProvider': (Object provider) =>
-          localizations.cashierFiatContinueProvider(provider),
-      'cashierFiatDepositAmountPlaceholder': (Object currency) =>
-          localizations.cashierFiatDepositAmountPlaceholder(currency),
-      'cashierFiatDepositEzeebillProviderBankTransferJpyLimits': (Object min,
-              Object max) =>
-          localizations.cashierFiatDepositEzeebillProviderBankTransferJpyLimits(
-              min, max),
-      'cashierFiatDepositInvalidRequest': (Object field) =>
-          localizations.cashierFiatDepositInvalidRequest(field),
-      'cashierFiatDepositReceived': (Object moneyIcon) =>
-          localizations.cashierFiatDepositReceived(moneyIcon),
-      'cashierFiatDepositRequired': (Object field) =>
-          localizations.cashierFiatDepositRequired(field),
-      'cashierFiatEstimatedCurrencyRate': (Object currency) =>
-          localizations.cashierFiatEstimatedCurrencyRate(currency),
-      'cashierFiatMinMaxDeposit': (Object min, Object max) =>
-          localizations.cashierFiatMinMaxDeposit(min, max),
-      'cashierFiatMinMaxWithdraw': (Object min, Object max) =>
-          localizations.cashierFiatMinMaxWithdraw(min, max),
-      'cashierFiatPlacedOrderDescription': (Object amount) =>
-          localizations.cashierFiatPlacedOrderDescription(amount),
-      'cashierFiatSumopayAmountDesc': (Object currency) =>
-          localizations.cashierFiatSumopayAmountDesc(currency),
-      'cashierFiatWithdrawalInvalidRequest': (Object field) =>
-          localizations.cashierFiatWithdrawalInvalidRequest(field),
-      'cashierFiatWithdrawalRequired': (Object field) =>
-          localizations.cashierFiatWithdrawalRequired(field),
-      'cashierFundsAvailable': (Object amount, Object currency) =>
-          localizations.cashierFundsAvailable(amount, currency),
-      'cashierGetBitcoinsFee': (Object value) =>
-          localizations.cashierGetBitcoinsFee(value),
-      'cashierMaximumDeposit': (Object amount, Object currency) =>
-          localizations.cashierMaximumDeposit(amount, currency),
-      'cashierMinimumConversionAmount': (Object amount, Object currency) =>
-          localizations.cashierMinimumConversionAmount(amount, currency),
-      'cashierMinimumDeposit': (Object amount, Object currency) =>
-          localizations.cashierMinimumDeposit(amount, currency),
-      'cashierMinimumWithdrawal': (Object amount, Object currency) =>
-          localizations.cashierMinimumWithdrawal(amount, currency),
-      'cashierNotEnoughCryptoToConvert': (Object currency) =>
-          localizations.cashierNotEnoughCryptoToConvert(currency),
-      'cashierPlacedOrderDescription': (Object amount, Object currency) =>
-          localizations.cashierPlacedOrderDescription(amount, currency),
-      'cashierPlacedOrderDescriptionNoAmount': (Object currency) =>
-          localizations.cashierPlacedOrderDescriptionNoAmount(currency),
-      'cashierPlayNowIn': (Object currency) =>
-          localizations.cashierPlayNowIn(currency),
-      'cashierProcessingFee': (Object amount, Object currency) =>
-          localizations.cashierProcessingFee(amount, currency),
-      'cashierRewardBonus': (Object amount, Object currency) =>
-          localizations.cashierRewardBonus(amount, currency),
-      'cashierRewardSwichCurrencyBtn': (Object currency) =>
-          localizations.cashierRewardSwichCurrencyBtn(currency),
-      'cashierRewardSwichCurrencyDepositBtn': (Object currency) =>
-          localizations.cashierRewardSwichCurrencyDepositBtn(currency),
-      'cashierRewardSwichCurrencyDepositDescription':
-          (Object currency, Object amount) => localizations
-              .cashierRewardSwichCurrencyDepositDescription(currency, amount),
-      'cashierRewardSwichCurrencyDescription': (Object currency) =>
-          localizations.cashierRewardSwichCurrencyDescription(currency),
-      'cashierShowMoreMethods': (Object qty) =>
-          localizations.cashierShowMoreMethods(qty),
-      'cashierTransactionDescription': (Object description) =>
-          localizations.cashierTransactionDescription(description),
-      'cashierTransactionPaymentTime': (Object datetime) =>
-          localizations.cashierTransactionPaymentTime(datetime),
-      'cashierWeb3walletErrorExceedsWalletBalance':
-          (Object walletBalance, Object currency) =>
-              localizations.cashierWeb3walletErrorExceedsWalletBalance(
-                  walletBalance, currency),
-      'cashierWeb3walletErrorMinDepositAmount':
-          (Object minDeposit, Object currency) => localizations
-              .cashierWeb3walletErrorMinDepositAmount(minDeposit, currency),
-      'cashierWeb3walletWalletLinkedBtnTitle': (Object walletName) =>
-          localizations.cashierWeb3walletWalletLinkedBtnTitle(walletName),
-      'cashierWeb3walletWalletLinkedDesc': (Object walletName) =>
-          localizations.cashierWeb3walletWalletLinkedDesc(walletName),
-      'cashierWeb3walletWarnDisconnectActiveWallet': (Object wallet) =>
-          localizations.cashierWeb3walletWarnDisconnectActiveWallet(wallet),
-      'cashierWithdrawSuccessful': (Object currency, Object amount) =>
-          localizations.cashierWithdrawSuccessful(currency, amount),
-      'cashierWithdrawalCurrency': (Object currency) =>
-          localizations.cashierWithdrawalCurrency(currency),
-      'cashierYouAreSpending': (Object transferAmount) =>
-          localizations.cashierYouAreSpending(transferAmount),
-      'cashierYouHaveConverted': (Object amount, Object currency) =>
-          localizations.cashierYouHaveConverted(amount, currency),
-      'cashierYourAreSpending': (Object amount, Object currency) =>
-          localizations.cashierYourAreSpending(amount, currency),
-      'errorsExchangeMinWithdraw': (Object currency, Object amount) =>
-          localizations.errorsExchangeMinWithdraw(currency, amount),
-      'errorsMinWithdraw': (Object minAmount, Object currency) =>
-          localizations.errorsMinWithdraw(minAmount, currency),
-      'errorsNoDepositsAvailableAtThisTime': (Object currency) =>
-          localizations.errorsNoDepositsAvailableAtThisTime(currency),
-      'errorsNoWithdrawalsAvailableAtThisTime': (Object currency) =>
-          localizations.errorsNoWithdrawalsAvailableAtThisTime(currency),
-      'transactionExchangeDeposit': (Object from, Object to) =>
-          localizations.transactionExchangeDeposit(from, to),
-      'transactionExchangeWithdrawal': (Object from, Object to) =>
-          localizations.transactionExchangeWithdrawal(from, to),
+  Object? lookupKey(String key, [List<Object>? args]) {
+    return switch (key) {
+      'localeName' => localeName,
+      'cashierAccountsDesc' => cashierAccountsDesc,
+      'cashierAcquisitionPromo' => cashierAcquisitionPromo,
+      'cashierTestTranslation' => cashierTestTranslation,
+      'cashierActivateTronlink' => cashierActivateTronlink,
+      'cashierActiveBalance' => cashierActiveBalance,
+      'cashierActiveBalanceDesc' => cashierActiveBalanceDesc,
+      'cashierAda' => cashierAda,
+      'cashierAdd2fa' => cashierAdd2fa,
+      'cashierAddOrRemoveYourIndividualCurrency' =>
+        cashierAddOrRemoveYourIndividualCurrency,
+      'cashierAddRemoveWallets' => cashierAddRemoveWallets,
+      'cashierAddress' => cashierAddress,
+      'cashierAgentWithdrawDescription' => cashierAgentWithdrawDescription,
+      'cashierAgentWithdrawOtp' => cashierAgentWithdrawOtp,
+      'cashierAgentWithdrawTitle' => cashierAgentWithdrawTitle,
+      'cashierAgentWithdrawTransfer' => cashierAgentWithdrawTransfer,
+      'cashierAgentWithdrawUsername' => cashierAgentWithdrawUsername,
+      'cashierAgentWithdrawUsernameHint' => cashierAgentWithdrawUsernameHint,
+      'cashierAgentWithdrawalStarted' => cashierAgentWithdrawalStarted,
+      'cashierAgents' => cashierAgents,
+      'cashierAllMethods' => cashierAllMethods,
+      'cashierAllTime' => cashierAllTime,
+      'cashierAmountIn' => cashierAmountIn,
+      'cashierAmountOfEth' => cashierAmountOfEth,
+      'cashierAmountOfMbtc' => cashierAmountOfMbtc,
+      'cashierAmountOfSoc' => cashierAmountOfSoc,
+      'cashierAmountOfUbtc' => cashierAmountOfUbtc,
+      'cashierAnimex_bankTransferTitle' => cashierAnimex_bankTransferTitle,
+      'cashierAnimex_sumopayTitle' => cashierAnimex_sumopayTitle,
+      'cashierApplyFilters' => cashierApplyFilters,
+      'cashierBankTransferAccount' => cashierBankTransferAccount,
+      'cashierBanking' => cashierBanking,
+      'cashierBankingAndCreditCards' => cashierBankingAndCreditCards,
+      'cashierBarupayModalTitle' => cashierBarupayModalTitle,
+      'cashierBeforeDepositing' => cashierBeforeDepositing,
+      'cashierBet' => cashierBet,
+      'cashierBinanceSmartChain' => cashierBinanceSmartChain,
+      'cashierBinanceSmartChainMessage' => cashierBinanceSmartChainMessage,
+      'cashierBitcoinBalance' => cashierBitcoinBalance,
+      'cashierBitcoinRate' => cashierBitcoinRate,
+      'cashierBitlipaInstructionsAmounts' => cashierBitlipaInstructionsAmounts,
+      'cashierBitlipaInstructionsSms' => cashierBitlipaInstructionsSms,
+      'cashierBitlipaInstructionsTryagain' =>
+        cashierBitlipaInstructionsTryagain,
+      'cashierBitlipaDepositWarning' => cashierBitlipaDepositWarning,
+      'cashierBnb' => cashierBnb,
+      'cashierBrl' => cashierBrl,
+      'cashierBtc' => cashierBtc,
+      'cashierBtcDepositDescription' => cashierBtcDepositDescription,
+      'cashierBtxeWithdrawalsAreDisabled' => cashierBtxeWithdrawalsAreDisabled,
+      'cashierBusd' => cashierBusd,
+      'cashierBuy' => cashierBuy,
+      'cashierBuyAndSell' => cashierBuyAndSell,
+      'cashierBuyCrypto' => cashierBuyCrypto,
+      'cashierBuyCryptoBitlipaTitle' => cashierBuyCryptoBitlipaTitle,
+      'cashierBuyCryptoDesc' => cashierBuyCryptoDesc,
+      'cashierBuyCryptoMoonpay' => cashierBuyCryptoMoonpay,
+      'cashierBuyCryptoNeocryptoDescription' =>
+        cashierBuyCryptoNeocryptoDescription,
+      'cashierBuyCryptoNeocryptoTitle' => cashierBuyCryptoNeocryptoTitle,
+      'cashierBuyCryptoOnrampTitle' => cashierBuyCryptoOnrampTitle,
+      'cashierBuyCryptoTitle' => cashierBuyCryptoTitle,
+      'cashierBuyCryptoTooltip' => cashierBuyCryptoTooltip,
+      'cashierBuyCryptoWithCash' => cashierBuyCryptoWithCash,
+      'cashierBuyOrCashoutBitcoin' => cashierBuyOrCashoutBitcoin,
+      'cashierBuyTonWalletBot' => cashierBuyTonWalletBot,
+      'cashierCad' => cashierCad,
+      'cashierCancel' => cashierCancel,
+      'cashierCashout' => cashierCashout,
+      'cashierCashoutBitcoin' => cashierCashoutBitcoin,
+      'cashierChooseDepositNetwork' => cashierChooseDepositNetwork,
+      'cashierChoosePaymentMethod' => cashierChoosePaymentMethod,
+      'cashierChoosePaymentOptions' => cashierChoosePaymentOptions,
+      'cashierChooseWithdrawNetwork' => cashierChooseWithdrawNetwork,
+      'cashierClaim' => cashierClaim,
+      'cashierClear' => cashierClear,
+      'cashierClearAll' => cashierClearAll,
+      'cashierClipboardCopied' => cashierClipboardCopied,
+      'cashierClose' => cashierClose,
+      'cashierCny' => cashierCny,
+      'cashierCoinbasewallet' => cashierCoinbasewallet,
+      'cashierCoinbasewalletDesc' => cashierCoinbasewalletDesc,
+      'cashierConfiguration' => cashierConfiguration,
+      'cashierConfirmInstantBankTransfer' => cashierConfirmInstantBankTransfer,
+      'cashierConfirmTransactionInTronlinkPopup' =>
+        cashierConfirmTransactionInTronlinkPopup,
+      'cashierConnectWallet' => cashierConnectWallet,
+      'cashierContactUs' => cashierContactUs,
+      'cashierCopyLink' => cashierCopyLink,
+      'cashierCopyTxId' => cashierCopyTxId,
+      'cashierCorefy_jetonTitle' => cashierCorefy_jetonTitle,
+      'cashierCountryCn' => cashierCountryCn,
+      'cashierCountryEe' => cashierCountryEe,
+      'cashierCountryIe' => cashierCountryIe,
+      'cashierCountryJp' => cashierCountryJp,
+      'cashierCountryTr' => cashierCountryTr,
+      'cashierCountryUk' => cashierCountryUk,
+      'cashierCountryXx' => cashierCountryXx,
+      'cashierCpfRfcDescription' => cashierCpfRfcDescription,
+      'cashierCpfRfcInfo' => cashierCpfRfcInfo,
+      'cashierCpfRfcInputCpf' => cashierCpfRfcInputCpf,
+      'cashierCpfRfcInputRfc' => cashierCpfRfcInputRfc,
+      'cashierCpfRfcTitle' => cashierCpfRfcTitle,
+      'cashierCreateWallet' => cashierCreateWallet,
+      'cashierCrypto' => cashierCrypto,
+      'cashierCryptoDeposit' => cashierCryptoDeposit,
+      'cashierCryptoWithdrawCorrectInvoice' =>
+        cashierCryptoWithdrawCorrectInvoice,
+      'cashierCryptoWithdrawInvoiceWithAmount' =>
+        cashierCryptoWithdrawInvoiceWithAmount,
+      'cashierCryptoWithdrawValidInvoice' => cashierCryptoWithdrawValidInvoice,
+      'cashierCryptoWithdrawValidWalletAddress' =>
+        cashierCryptoWithdrawValidWalletAddress,
+      'cashierCurrency' => cashierCurrency,
+      'cashierCurrencyMbtc' => cashierCurrencyMbtc,
+      'cashierCurrencyUbtc' => cashierCurrencyUbtc,
+      'cashierCurrencyEur' => cashierCurrencyEur,
+      'cashierCurrencyJpy' => cashierCurrencyJpy,
+      'cashierCurrencyTry' => cashierCurrencyTry,
+      'cashierCurrencyUsd' => cashierCurrencyUsd,
+      'cashierCurrentBitcoinBalance' => cashierCurrentBitcoinBalance,
+      'cashierCustom' => cashierCustom,
+      'cashierCustomDate' => cashierCustomDate,
+      'cashierCustomDateRange' => cashierCustomDateRange,
+      'cashierCustomerDetails' => cashierCustomerDetails,
+      'cashierCustomerDetailsDesc' => cashierCustomerDetailsDesc,
+      'cashierDai' => cashierDai,
+      'cashierDeposit' => cashierDeposit,
+      'cashierDepositAda' => cashierDepositAda,
+      'cashierDepositAgentsDesc' => cashierDepositAgentsDesc,
+      'cashierDepositAmount' => cashierDepositAmount,
+      'cashierDepositAmountChanging' => cashierDepositAmountChanging,
+      'cashierDepositBnb' => cashierDepositBnb,
+      'cashierDepositBrl' => cashierDepositBrl,
+      'cashierDepositBtc' => cashierDepositBtc,
+      'cashierDepositBusd' => cashierDepositBusd,
+      'cashierDepositCad' => cashierDepositCad,
+      'cashierDepositCrypto' => cashierDepositCrypto,
+      'cashierDepositDai' => cashierDepositDai,
+      'cashierDepositDestinationTag' => cashierDepositDestinationTag,
+      'cashierDepositDoge' => cashierDepositDoge,
+      'cashierDepositEth' => cashierDepositEth,
+      'cashierDepositEur' => cashierDepositEur,
+      'cashierDepositHistory' => cashierDepositHistory,
+      'cashierDepositHkd' => cashierDepositHkd,
+      'cashierDepositInr' => cashierDepositInr,
+      'cashierDepositJpy' => cashierDepositJpy,
+      'cashierDepositLtc' => cashierDepositLtc,
+      'cashierDepositMatic' => cashierDepositMatic,
+      'cashierDepositMethods' => cashierDepositMethods,
+      'cashierDepositMethodsDesc' => cashierDepositMethodsDesc,
+      'cashierDepositNetwork' => cashierDepositNetwork,
+      'cashierDepositRegular' => cashierDepositRegular,
+      'cashierDepositSoc' => cashierDepositSoc,
+      'cashierDepositThb' => cashierDepositThb,
+      'cashierDepositTon' => cashierDepositTon,
+      'cashierDepositTonInfo' => cashierDepositTonInfo,
+      'cashierDepositTonInvoiceId' => cashierDepositTonInvoiceId,
+      'cashierDepositTonMessage' => cashierDepositTonMessage,
+      'cashierDepositTrx' => cashierDepositTrx,
+      'cashierDepositUsdc' => cashierDepositUsdc,
+      'cashierDepositUsdt' => cashierDepositUsdt,
+      'cashierDepositViaMetamask' => cashierDepositViaMetamask,
+      'cashierDepositWithAltcoins' => cashierDepositWithAltcoins,
+      'cashierDepositXrp' => cashierDepositXrp,
+      'cashierDepositAnimex_sumopayTitle' => cashierDepositAnimex_sumopayTitle,
+      'cashierDepositBinanceDescription' => cashierDepositBinanceDescription,
+      'cashierDepositBinanceTitle' => cashierDepositBinanceTitle,
+      'cashierDepositBitflyerDescription' => cashierDepositBitflyerDescription,
+      'cashierDepositBitflyerTitle' => cashierDepositBitflyerTitle,
+      'cashierDepositBitgetDescription' => cashierDepositBitgetDescription,
+      'cashierDepositBitgetTitle' => cashierDepositBitgetTitle,
+      'cashierDepositBitlipaDescription' => cashierDepositBitlipaDescription,
+      'cashierDepositBitlipaTitle' => cashierDepositBitlipaTitle,
+      'cashierDepositBlockfinexDescription' =>
+        cashierDepositBlockfinexDescription,
+      'cashierDepositBlockfinexTitle' => cashierDepositBlockfinexTitle,
+      'cashierDepositBybitDescription' => cashierDepositBybitDescription,
+      'cashierDepositBybitTitle' => cashierDepositBybitTitle,
+      'cashierDepositContinueTransactionWithWallet' =>
+        cashierDepositContinueTransactionWithWallet,
+      'cashierDepositDepositViaPayixi' => cashierDepositDepositViaPayixi,
+      'cashierDepositEzeebill_bankTransfer_inrTitle' =>
+        cashierDepositEzeebill_bankTransfer_inrTitle,
+      'cashierDepositEzeebill_bankTransferDescription' =>
+        cashierDepositEzeebill_bankTransferDescription,
+      'cashierDepositEzeebill_bankTransferTitle' =>
+        cashierDepositEzeebill_bankTransferTitle,
+      'cashierDepositEzeebill_ezeebillTitle' =>
+        cashierDepositEzeebill_ezeebillTitle,
+      'cashierDepositGenerateRequest' => cashierDepositGenerateRequest,
+      'cashierDepositInovapay_localBankTransferDescription' =>
+        cashierDepositInovapay_localBankTransferDescription,
+      'cashierDepositInovapay_localBankTransferTitle' =>
+        cashierDepositInovapay_localBankTransferTitle,
+      'cashierDepositInovapay_pixTitle' => cashierDepositInovapay_pixTitle,
+      'cashierDepositInterac_bankTitle' => cashierDepositInterac_bankTitle,
+      'cashierDepositJeton_bankTransferVoucherAtmJpyDescription' =>
+        cashierDepositJeton_bankTransferVoucherAtmJpyDescription,
+      'cashierDepositJeton_bankTransferVoucherAtmJpyTitle' =>
+        cashierDepositJeton_bankTransferVoucherAtmJpyTitle,
+      'cashierDepositJeton_bankTransferVoucherAtmDescription' =>
+        cashierDepositJeton_bankTransferVoucherAtmDescription,
+      'cashierDepositJeton_bankTransferVoucherAtmTitle' =>
+        cashierDepositJeton_bankTransferVoucherAtmTitle,
+      'cashierDepositJeton_jpyTitle' => cashierDepositJeton_jpyTitle,
+      'cashierDepositJeton_pixDescription' =>
+        cashierDepositJeton_pixDescription,
+      'cashierDepositJeton_pixTitle' => cashierDepositJeton_pixTitle,
+      'cashierDepositJetonDescription' => cashierDepositJetonDescription,
+      'cashierDepositJetonTitle' => cashierDepositJetonTitle,
+      'cashierDepositKrakenDescription' => cashierDepositKrakenDescription,
+      'cashierDepositKrakenTitle' => cashierDepositKrakenTitle,
+      'cashierDepositNetworkTooltip' => cashierDepositNetworkTooltip,
+      'cashierDepositOnrampDescription' => cashierDepositOnrampDescription,
+      'cashierDepositOnrampTitle' => cashierDepositOnrampTitle,
+      'cashierDepositOnramperDescription' => cashierDepositOnramperDescription,
+      'cashierDepositOnramperTitle' => cashierDepositOnramperTitle,
+      'cashierDepositPagava_jpyTitle' => cashierDepositPagava_jpyTitle,
+      'cashierDepositPagavaTitle' => cashierDepositPagavaTitle,
+      'cashierDepositPagsmile_pixDescription' =>
+        cashierDepositPagsmile_pixDescription,
+      'cashierDepositPagsmile_pixTitle' => cashierDepositPagsmile_pixTitle,
+      'cashierDepositPaxfulDescription' => cashierDepositPaxfulDescription,
+      'cashierDepositPaxfulTitle' => cashierDepositPaxfulTitle,
+      'cashierDepositPay4fun_webredirectDescription' =>
+        cashierDepositPay4fun_webredirectDescription,
+      'cashierDepositPay4fun_webredirectTitle' =>
+        cashierDepositPay4fun_webredirectTitle,
+      'cashierDepositPayixiDeposit' => cashierDepositPayixiDeposit,
+      'cashierDepositPayixiDepositAlmostDoneMessage' =>
+        cashierDepositPayixiDepositAlmostDoneMessage,
+      'cashierDepositPaymentrush_paymentRushTitle' =>
+        cashierDepositPaymentrush_paymentRushTitle,
+      'cashierDepositPaytm10pay_paytm10payTitle' =>
+        cashierDepositPaytm10pay_paytm10payTitle,
+      'cashierDepositPinbank_localBankTransferTitle' =>
+        cashierDepositPinbank_localBankTransferTitle,
+      'cashierDepositQaicash_bankTransferTitle' =>
+        cashierDepositQaicash_bankTransferTitle,
+      'cashierDepositRemitanoDescription' => cashierDepositRemitanoDescription,
+      'cashierDepositRemitanoTitle' => cashierDepositRemitanoTitle,
+      'cashierDepositRupeepayments_bankTransferTitle' =>
+        cashierDepositRupeepayments_bankTransferTitle,
+      'cashierDepositSimplexDescription' => cashierDepositSimplexDescription,
+      'cashierDepositSimplexTitle' => cashierDepositSimplexTitle,
+      'cashierDepositSumopayTitle' => cashierDepositSumopayTitle,
+      'cashierDepositUpi10pay_upi10payTitle' =>
+        cashierDepositUpi10pay_upi10payTitle,
+      'cashierDepositUtorgTitle' => cashierDepositUtorgTitle,
+      'cashierDepositVrio_upiTitle' => cashierDepositVrio_upiTitle,
+      'cashierDepositWalletDeposit' => cashierDepositWalletDeposit,
+      'cashierDepositWarningConfirmAddress' =>
+        cashierDepositWarningConfirmAddress,
+      'cashierDepositWarningLightningNetwork' =>
+        cashierDepositWarningLightningNetwork,
+      'cashierDepositsAreDisabled' => cashierDepositsAreDisabled,
+      'cashierDestinationTagCopied' => cashierDestinationTagCopied,
+      'cashierDisconnect' => cashierDisconnect,
+      'cashierDoge' => cashierDoge,
+      'cashierDone' => cashierDone,
+      'cashierDontShowAgain' => cashierDontShowAgain,
+      'cashierEmailUs' => cashierEmailUs,
+      'cashierEmailVerificationBannerResend' =>
+        cashierEmailVerificationBannerResend,
+      'cashierEmailVerificationBannerSuccess' =>
+        cashierEmailVerificationBannerSuccess,
+      'cashierEmailVerificationBannerTitle' =>
+        cashierEmailVerificationBannerTitle,
+      'cashierEmailVerificationConfirmSubtitle' =>
+        cashierEmailVerificationConfirmSubtitle,
+      'cashierEmailVerificationConfirmTitle' =>
+        cashierEmailVerificationConfirmTitle,
+      'cashierEmailVerificationConfirmVerify' =>
+        cashierEmailVerificationConfirmVerify,
+      'cashierEmailVerificationResendLink' =>
+        cashierEmailVerificationResendLink,
+      'cashierEmptyDepositOptions' => cashierEmptyDepositOptions,
+      'cashierEmptyWithdrawalOptions' => cashierEmptyWithdrawalOptions,
+      'cashierEnglishInputRequried' => cashierEnglishInputRequried,
+      'cashierEnterAmount' => cashierEnterAmount,
+      'cashierEnterKatakanaInput' => cashierEnterKatakanaInput,
+      'cashierEnterOtp' => cashierEnterOtp,
+      'cashierEnterValidInput' => cashierEnterValidInput,
+      'cashierEnterValidPhoneNumber' => cashierEnterValidPhoneNumber,
+      'cashierEnterValidZipCode' => cashierEnterValidZipCode,
+      'cashierEnterWithdrawalAmount' => cashierEnterWithdrawalAmount,
+      'cashierEnterYourAddress' => cashierEnterYourAddress,
+      'cashierEstimatedQuantity' => cashierEstimatedQuantity,
+      'cashierEth' => cashierEth,
+      'cashierEthDepositDescription' => cashierEthDepositDescription,
+      'cashierEur' => cashierEur,
+      'cashierExchange' => cashierExchange,
+      'cashierExchangeRateChanged' => cashierExchangeRateChanged,
+      'cashierExchangeRateText' => cashierExchangeRateText,
+      'cashierExchangeRateUpdated' => cashierExchangeRateUpdated,
+      'cashierExternal' => cashierExternal,
+      'cashierExternalWalletTonhubDescription' =>
+        cashierExternalWalletTonhubDescription,
+      'cashierExternalWalletTonhubTitle' => cashierExternalWalletTonhubTitle,
+      'cashierExternalWalletTonkeeperDescription' =>
+        cashierExternalWalletTonkeeperDescription,
+      'cashierExternalWalletTonkeeperTitle' =>
+        cashierExternalWalletTonkeeperTitle,
+      'cashierFaq' => cashierFaq,
+      'cashierFastDeposit' => cashierFastDeposit,
+      'cashierFiatAmountUsdtPlaceholder' => cashierFiatAmountUsdtPlaceholder,
+      'cashierFiatEstimatedTotal' => cashierFiatEstimatedTotal,
+      'cashierFiatArs' => cashierFiatArs,
+      'cashierFiatBdt' => cashierFiatBdt,
+      'cashierFiatBrl' => cashierFiatBrl,
+      'cashierFiatCad' => cashierFiatCad,
+      'cashierFiatClp' => cashierFiatClp,
+      'cashierFiatCny' => cashierFiatCny,
+      'cashierFiatCorefyJetonTitle' => cashierFiatCorefyJetonTitle,
+      'cashierFiatDeposit' => cashierFiatDeposit,
+      'cashierFiatDepositStarted' => cashierFiatDepositStarted,
+      'cashierFiatDepositAddMoreFunds' => cashierFiatDepositAddMoreFunds,
+      'cashierFiatDepositAddress' => cashierFiatDepositAddress,
+      'cashierFiatDepositAddressPlaceholder' =>
+        cashierFiatDepositAddressPlaceholder,
+      'cashierFiatDepositAlipay' => cashierFiatDepositAlipay,
+      'cashierFiatDepositAmount' => cashierFiatDepositAmount,
+      'cashierFiatDepositBank' => cashierFiatDepositBank,
+      'cashierFiatDepositBankAccountNumber' =>
+        cashierFiatDepositBankAccountNumber,
+      'cashierFiatDepositBankAccountNumberPlaceholder' =>
+        cashierFiatDepositBankAccountNumberPlaceholder,
+      'cashierFiatDepositBankBranch' => cashierFiatDepositBankBranch,
+      'cashierFiatDepositBankCode' => cashierFiatDepositBankCode,
+      'cashierFiatDepositBankCodePlaceholder' =>
+        cashierFiatDepositBankCodePlaceholder,
+      'cashierFiatDepositBankInterac' => cashierFiatDepositBankInterac,
+      'cashierFiatDepositBankInteracAlmostDoneMessage' =>
+        cashierFiatDepositBankInteracAlmostDoneMessage,
+      'cashierFiatDepositBankInteracMessage' =>
+        cashierFiatDepositBankInteracMessage,
+      'cashierFiatDepositBankInteracOpenNewWindowTitle' =>
+        cashierFiatDepositBankInteracOpenNewWindowTitle,
+      'cashierFiatDepositBankPlaceholder' => cashierFiatDepositBankPlaceholder,
+      'cashierFiatDepositBankTransfer' => cashierFiatDepositBankTransfer,
+      'cashierFiatDepositBankTransferKlarna' =>
+        cashierFiatDepositBankTransferKlarna,
+      'cashierFiatDepositBankTransferKlarnaAlmostDoneMessage' =>
+        cashierFiatDepositBankTransferKlarnaAlmostDoneMessage,
+      'cashierFiatDepositBankTransferKlarnaFormDescription' =>
+        cashierFiatDepositBankTransferKlarnaFormDescription,
+      'cashierFiatDepositBankTransferKlarnaMessage' =>
+        cashierFiatDepositBankTransferKlarnaMessage,
+      'cashierFiatDepositBankTransferKlarnaOpenNewWindowTitle' =>
+        cashierFiatDepositBankTransferKlarnaOpenNewWindowTitle,
+      'cashierFiatDepositBankTransferQaicashFormDescription' =>
+        cashierFiatDepositBankTransferQaicashFormDescription,
+      'cashierFiatDepositBankTransferTrustly' =>
+        cashierFiatDepositBankTransferTrustly,
+      'cashierFiatDepositBankTransferTrustlyAlmostDoneMessage' =>
+        cashierFiatDepositBankTransferTrustlyAlmostDoneMessage,
+      'cashierFiatDepositBankTransferTrustlyFormDescription' =>
+        cashierFiatDepositBankTransferTrustlyFormDescription,
+      'cashierFiatDepositBankTransferTrustlyIframeDescription' =>
+        cashierFiatDepositBankTransferTrustlyIframeDescription,
+      'cashierFiatDepositBankTransferTrustlyMessage' =>
+        cashierFiatDepositBankTransferTrustlyMessage,
+      'cashierFiatDepositBankTransferTrustlyOpenNewWindowTitle' =>
+        cashierFiatDepositBankTransferTrustlyOpenNewWindowTitle,
+      'cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription' =>
+        cashierFiatDepositBankTransferVoucherAtmJetonProviderFormDescription,
+      'cashierFiatDepositBankTransferVoucherAtmFee' =>
+        cashierFiatDepositBankTransferVoucherAtmFee,
+      'cashierFiatDepositBarupayAccountNumber' =>
+        cashierFiatDepositBarupayAccountNumber,
+      'cashierFiatDepositBarupayBankBranch' =>
+        cashierFiatDepositBarupayBankBranch,
+      'cashierFiatDepositBarupayBankName' => cashierFiatDepositBarupayBankName,
+      'cashierFiatDepositBarupayBeneficiaryname' =>
+        cashierFiatDepositBarupayBeneficiaryname,
+      'cashierFiatDepositBic' => cashierFiatDepositBic,
+      'cashierFiatDepositBitcasinoBarupayAccountNumber' =>
+        cashierFiatDepositBitcasinoBarupayAccountNumber,
+      'cashierFiatDepositBitcasinoBarupayBankBranch' =>
+        cashierFiatDepositBitcasinoBarupayBankBranch,
+      'cashierFiatDepositBitcasinoBarupayBankName' =>
+        cashierFiatDepositBitcasinoBarupayBankName,
+      'cashierFiatDepositBitcasinoBarupayBeneficiaryname' =>
+        cashierFiatDepositBitcasinoBarupayBeneficiaryname,
+      'cashierFiatDepositBrite' => cashierFiatDepositBrite,
+      'cashierFiatDepositBusinessLogicInvalid' =>
+        cashierFiatDepositBusinessLogicInvalid,
+      'cashierFiatDepositBusinessLogicRequired' =>
+        cashierFiatDepositBusinessLogicRequired,
+      'cashierFiatDepositCadGlobalDescription' =>
+        cashierFiatDepositCadGlobalDescription,
+      'cashierFiatDepositCardholder' => cashierFiatDepositCardholder,
+      'cashierFiatDepositCardnumber' => cashierFiatDepositCardnumber,
+      'cashierFiatDepositChoosePaymentMethod' =>
+        cashierFiatDepositChoosePaymentMethod,
+      'cashierFiatDepositCity' => cashierFiatDepositCity,
+      'cashierFiatDepositCityPlaceholder' => cashierFiatDepositCityPlaceholder,
+      'cashierFiatDepositCode' => cashierFiatDepositCode,
+      'cashierFiatDepositContinue' => cashierFiatDepositContinue,
+      'cashierFiatDepositContinueDeposit' => cashierFiatDepositContinueDeposit,
+      'cashierFiatDepositCopyToClipboard' => cashierFiatDepositCopyToClipboard,
+      'cashierFiatDepositCpf' => cashierFiatDepositCpf,
+      'cashierFiatDepositCpfAlreadyExistsCpf' =>
+        cashierFiatDepositCpfAlreadyExistsCpf,
+      'cashierFiatDepositCpfDescription' => cashierFiatDepositCpfDescription,
+      'cashierFiatDepositCpfCpf' => cashierFiatDepositCpfCpf,
+      'cashierFiatDepositCreditCardAcapture' =>
+        cashierFiatDepositCreditCardAcapture,
+      'cashierFiatDepositCreditCardAcaptureFormDescription' =>
+        cashierFiatDepositCreditCardAcaptureFormDescription,
+      'cashierFiatDepositCreditCardEMerchantPay' =>
+        cashierFiatDepositCreditCardEMerchantPay,
+      'cashierFiatDepositCreditCardEMerchantPayFormDescription' =>
+        cashierFiatDepositCreditCardEMerchantPayFormDescription,
+      'cashierFiatDepositCreditcard' => cashierFiatDepositCreditcard,
+      'cashierFiatDepositCreditcardAlmostDoneMessage' =>
+        cashierFiatDepositCreditcardAlmostDoneMessage,
+      'cashierFiatDepositCreditcardEcommpay' =>
+        cashierFiatDepositCreditcardEcommpay,
+      'cashierFiatDepositCreditcardEcommpayFormDescription' =>
+        cashierFiatDepositCreditcardEcommpayFormDescription,
+      'cashierFiatDepositCreditcardEcommpayIframeDescription' =>
+        cashierFiatDepositCreditcardEcommpayIframeDescription,
+      'cashierFiatDepositCreditcardEcommpayMessage' =>
+        cashierFiatDepositCreditcardEcommpayMessage,
+      'cashierFiatDepositCreditcardIframeDescription' =>
+        cashierFiatDepositCreditcardIframeDescription,
+      'cashierFiatDepositCreditcardMessage' =>
+        cashierFiatDepositCreditcardMessage,
+      'cashierFiatDepositCreditcardOpenNewWindowTitle' =>
+        cashierFiatDepositCreditcardOpenNewWindowTitle,
+      'cashierFiatDepositCreditcardRavedirectFormDescription' =>
+        cashierFiatDepositCreditcardRavedirectFormDescription,
+      'cashierFiatDepositCreditcardRavedirectMessage' =>
+        cashierFiatDepositCreditcardRavedirectMessage,
+      'cashierFiatDepositCustomerFirstName' =>
+        cashierFiatDepositCustomerFirstName,
+      'cashierFiatDepositCustomerFirstNamePlaceholder' =>
+        cashierFiatDepositCustomerFirstNamePlaceholder,
+      'cashierFiatDepositCustomerFullName' =>
+        cashierFiatDepositCustomerFullName,
+      'cashierFiatDepositCustomerLastName' =>
+        cashierFiatDepositCustomerLastName,
+      'cashierFiatDepositCustomerLastNamePlaceholder' =>
+        cashierFiatDepositCustomerLastNamePlaceholder,
+      'cashierFiatDepositDateOfBirth' => cashierFiatDepositDateOfBirth,
+      'cashierFiatDepositDelete' => cashierFiatDepositDelete,
+      'cashierFiatDepositDependsOnAmount' => cashierFiatDepositDependsOnAmount,
+      'cashierFiatDepositEcopayz' => cashierFiatDepositEcopayz,
+      'cashierFiatDepositEcopayzFormDescription' =>
+        cashierFiatDepositEcopayzFormDescription,
+      'cashierFiatDepositEcopayzIframeDescription' =>
+        cashierFiatDepositEcopayzIframeDescription,
+      'cashierFiatDepositEcopayzMessage' => cashierFiatDepositEcopayzMessage,
+      'cashierFiatDepositEnccreditcardnumber' =>
+        cashierFiatDepositEnccreditcardnumber,
+      'cashierFiatDepositEnccvv' => cashierFiatDepositEnccvv,
+      'cashierFiatDepositEurGlobalDescription' =>
+        cashierFiatDepositEurGlobalDescription,
+      'cashierFiatDepositExpirymonth' => cashierFiatDepositExpirymonth,
+      'cashierFiatDepositExpiryyear' => cashierFiatDepositExpiryyear,
+      'cashierFiatDepositEzeebillCityPlaceholder' =>
+        cashierFiatDepositEzeebillCityPlaceholder,
+      'cashierFiatDepositEzeebillStatePlaceholder' =>
+        cashierFiatDepositEzeebillStatePlaceholder,
+      'cashierFiatDepositFailureMessage' => cashierFiatDepositFailureMessage,
+      'cashierFiatDepositFee' => cashierFiatDepositFee,
+      'cashierFiatDepositFeeAdd' => cashierFiatDepositFeeAdd,
+      'cashierFiatDepositFeeDeduct' => cashierFiatDepositFeeDeduct,
+      'cashierFiatDepositFirstname' => cashierFiatDepositFirstname,
+      'cashierFiatDepositFree' => cashierFiatDepositFree,
+      'cashierFiatDepositGlobalDescription' =>
+        cashierFiatDepositGlobalDescription,
+      'cashierFiatDepositGoBack' => cashierFiatDepositGoBack,
+      'cashierFiatDepositHelp2PayQaicash' => cashierFiatDepositHelp2PayQaicash,
+      'cashierFiatDepositHelp2PayQaicashAlmostDoneMessage' =>
+        cashierFiatDepositHelp2PayQaicashAlmostDoneMessage,
+      'cashierFiatDepositHelp2PayQaicashFormDescription' =>
+        cashierFiatDepositHelp2PayQaicashFormDescription,
+      'cashierFiatDepositHelp2PayQaicashMessage' =>
+        cashierFiatDepositHelp2PayQaicashMessage,
+      'cashierFiatDepositHelp2PayQaicashOpenNewWindowTitle' =>
+        cashierFiatDepositHelp2PayQaicashOpenNewWindowTitle,
+      'cashierFiatDepositIban' => cashierFiatDepositIban,
+      'cashierFiatDepositInovapayLocalBankTransferBrlLimits' =>
+        cashierFiatDepositInovapayLocalBankTransferBrlLimits,
+      'cashierFiatDepositInstant' => cashierFiatDepositInstant,
+      'cashierFiatDepositInvalidCpfCpf' => cashierFiatDepositInvalidCpfCpf,
+      'cashierFiatDepositInvalidPhonePhone' =>
+        cashierFiatDepositInvalidPhonePhone,
+      'cashierFiatDepositInvalidBankAccountNumber' =>
+        cashierFiatDepositInvalidBankAccountNumber,
+      'cashierFiatDepositIsNotPositiveAmount' =>
+        cashierFiatDepositIsNotPositiveAmount,
+      'cashierFiatDepositJetonCorefy' => cashierFiatDepositJetonCorefy,
+      'cashierFiatDepositJetonCorefyAlmostDoneMessage' =>
+        cashierFiatDepositJetonCorefyAlmostDoneMessage,
+      'cashierFiatDepositJetonCorefyFormDescription' =>
+        cashierFiatDepositJetonCorefyFormDescription,
+      'cashierFiatDepositJetonCorefyOpenNewWindowTitle' =>
+        cashierFiatDepositJetonCorefyOpenNewWindowTitle,
+      'cashierFiatDepositJetonExchangeRate' =>
+        cashierFiatDepositJetonExchangeRate,
+      'cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyJpyLimits' =>
+        cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyJpyLimits,
+      'cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyLimits' =>
+        cashierFiatDepositJetonProviderBankTransferVoucherAtmJpyLimits,
+      'cashierFiatDepositJpy_instantBankTransferFee' =>
+        cashierFiatDepositJpy_instantBankTransferFee,
+      'cashierFiatDepositJpyGlobalDescription' =>
+        cashierFiatDepositJpyGlobalDescription,
+      'cashierFiatDepositKeitapayAddressPlaceholder' =>
+        cashierFiatDepositKeitapayAddressPlaceholder,
+      'cashierFiatDepositKeitapayBankBranchPlaceholder' =>
+        cashierFiatDepositKeitapayBankBranchPlaceholder,
+      'cashierFiatDepositKeitapayCustomerFirstName' =>
+        cashierFiatDepositKeitapayCustomerFirstName,
+      'cashierFiatDepositKeitapayCustomerFirstNamePlaceholder' =>
+        cashierFiatDepositKeitapayCustomerFirstNamePlaceholder,
+      'cashierFiatDepositKeitapayCustomerLastName' =>
+        cashierFiatDepositKeitapayCustomerLastName,
+      'cashierFiatDepositKeitapayCustomerLastNamePlaceholder' =>
+        cashierFiatDepositKeitapayCustomerLastNamePlaceholder,
+      'cashierFiatDepositKeytaPayBankTransferJpyLimits' =>
+        cashierFiatDepositKeytaPayBankTransferJpyLimits,
+      'cashierFiatDepositLastname' => cashierFiatDepositLastname,
+      'cashierFiatDepositLocalBankTransferInovapayFormDescription' =>
+        cashierFiatDepositLocalBankTransferInovapayFormDescription,
+      'cashierFiatDepositLocalBankTransferPinBankFormDescription' =>
+        cashierFiatDepositLocalBankTransferPinBankFormDescription,
+      'cashierFiatDepositMaxLimit' => cashierFiatDepositMaxLimit,
+      'cashierFiatDepositMinAmount' => cashierFiatDepositMinAmount,
+      'cashierFiatDepositMinLimit' => cashierFiatDepositMinLimit,
+      'cashierFiatDepositModalFooter' => cashierFiatDepositModalFooter,
+      'cashierFiatDepositModalInstruction' =>
+        cashierFiatDepositModalInstruction,
+      'cashierFiatDepositMuchbetter' => cashierFiatDepositMuchbetter,
+      'cashierFiatDepositMuchbetterFormDescription' =>
+        cashierFiatDepositMuchbetterFormDescription,
+      'cashierFiatDepositMuchbetterIframeDescription' =>
+        cashierFiatDepositMuchbetterIframeDescription,
+      'cashierFiatDepositMuchbetterMessage' =>
+        cashierFiatDepositMuchbetterMessage,
+      'cashierFiatDepositNationalid' => cashierFiatDepositNationalid,
+      'cashierFiatDepositNetBankingQaicash' =>
+        cashierFiatDepositNetBankingQaicash,
+      'cashierFiatDepositNetBankingQaicashAlmostDoneMessage' =>
+        cashierFiatDepositNetBankingQaicashAlmostDoneMessage,
+      'cashierFiatDepositNetBankingQaicashMessage' =>
+        cashierFiatDepositNetBankingQaicashMessage,
+      'cashierFiatDepositNetBankingQaicashOpenNewWindowTitle' =>
+        cashierFiatDepositNetBankingQaicashOpenNewWindowTitle,
+      'cashierFiatDepositNeteller' => cashierFiatDepositNeteller,
+      'cashierFiatDepositNetellerAlmostDoneMessage' =>
+        cashierFiatDepositNetellerAlmostDoneMessage,
+      'cashierFiatDepositNetellerFormDescription' =>
+        cashierFiatDepositNetellerFormDescription,
+      'cashierFiatDepositNetellerMessage' => cashierFiatDepositNetellerMessage,
+      'cashierFiatDepositNetellerOpenNewWindowTitle' =>
+        cashierFiatDepositNetellerOpenNewWindowTitle,
+      'cashierFiatDepositNextStep' => cashierFiatDepositNextStep,
+      'cashierFiatDepositNip' => cashierFiatDepositNip,
+      'cashierFiatDepositNoExtraInfoNeeded' =>
+        cashierFiatDepositNoExtraInfoNeeded,
+      'cashierFiatDepositOverview' => cashierFiatDepositOverview,
+      'cashierFiatDepositPagsmileCustomerFirstNamePlaceholder' =>
+        cashierFiatDepositPagsmileCustomerFirstNamePlaceholder,
+      'cashierFiatDepositPagsmileCustomerLastNamePlaceholder' =>
+        cashierFiatDepositPagsmileCustomerLastNamePlaceholder,
+      'cashierFiatDepositPagsmilePhone' => cashierFiatDepositPagsmilePhone,
+      'cashierFiatDepositPagsmilePhonePlaceholder' =>
+        cashierFiatDepositPagsmilePhonePlaceholder,
+      'cashierFiatDepositPagsmilePixBrlLimits' =>
+        cashierFiatDepositPagsmilePixBrlLimits,
+      'cashierFiatDepositPassword' => cashierFiatDepositPassword,
+      'cashierFiatDepositPay4funWebredirectBrlLimits' =>
+        cashierFiatDepositPay4funWebredirectBrlLimits,
+      'cashierFiatDepositPaymentMethods' => cashierFiatDepositPaymentMethods,
+      'cashierFiatDepositPaypayCorefy' => cashierFiatDepositPaypayCorefy,
+      'cashierFiatDepositPaypayCorefyAlmostDoneMessage' =>
+        cashierFiatDepositPaypayCorefyAlmostDoneMessage,
+      'cashierFiatDepositPaypayCorefyOpenNewWindowTitle' =>
+        cashierFiatDepositPaypayCorefyOpenNewWindowTitle,
+      'cashierFiatDepositPaysafecard' => cashierFiatDepositPaysafecard,
+      'cashierFiatDepositPaysafecardFormDescription' =>
+        cashierFiatDepositPaysafecardFormDescription,
+      'cashierFiatDepositPaysafecardIframeDescription' =>
+        cashierFiatDepositPaysafecardIframeDescription,
+      'cashierFiatDepositPaysafecardMessage' =>
+        cashierFiatDepositPaysafecardMessage,
+      'cashierFiatDepositPersonalDetails' => cashierFiatDepositPersonalDetails,
+      'cashierFiatDepositPhone' => cashierFiatDepositPhone,
+      'cashierFiatDepositPhoneNumber' => cashierFiatDepositPhoneNumber,
+      'cashierFiatDepositPhonePlaceholder' =>
+        cashierFiatDepositPhonePlaceholder,
+      'cashierFiatDepositPhonePlaceholderKes' =>
+        cashierFiatDepositPhonePlaceholderKes,
+      'cashierFiatDepositPhonePlaceholderTzs' =>
+        cashierFiatDepositPhonePlaceholderTzs,
+      'cashierFiatDepositPhonePlaceholderUgx' =>
+        cashierFiatDepositPhonePlaceholderUgx,
+      'cashierFiatDepositPhonenumberPlaceholder' =>
+        cashierFiatDepositPhonenumberPlaceholder,
+      'cashierFiatDepositPleaseEnterAmount' =>
+        cashierFiatDepositPleaseEnterAmount,
+      'cashierFiatDepositPleaseEnterCpfMessage' =>
+        cashierFiatDepositPleaseEnterCpfMessage,
+      'cashierFiatDepositPleaseEnterPersonalDetailsMessage' =>
+        cashierFiatDepositPleaseEnterPersonalDetailsMessage,
+      'cashierFiatDepositPostcode' => cashierFiatDepositPostcode,
+      'cashierFiatDepositRequiredCpf' => cashierFiatDepositRequiredCpf,
+      'cashierFiatDepositRequiredFirstname' =>
+        cashierFiatDepositRequiredFirstname,
+      'cashierFiatDepositRequiredLastname' =>
+        cashierFiatDepositRequiredLastname,
+      'cashierFiatDepositRollingLimitExceed' =>
+        cashierFiatDepositRollingLimitExceed,
+      'cashierFiatDepositSavedAccounts' => cashierFiatDepositSavedAccounts,
+      'cashierFiatDepositService' => cashierFiatDepositService,
+      'cashierFiatDepositSkrill' => cashierFiatDepositSkrill,
+      'cashierFiatDepositSkrillAlmostDoneMessage' =>
+        cashierFiatDepositSkrillAlmostDoneMessage,
+      'cashierFiatDepositSkrillFormDescription' =>
+        cashierFiatDepositSkrillFormDescription,
+      'cashierFiatDepositSkrillIframeDescription' =>
+        cashierFiatDepositSkrillIframeDescription,
+      'cashierFiatDepositSkrillMessage' => cashierFiatDepositSkrillMessage,
+      'cashierFiatDepositSkrillOpenNewWindowTitle' =>
+        cashierFiatDepositSkrillOpenNewWindowTitle,
+      'cashierFiatDepositSkrillqcoIframeDescription' =>
+        cashierFiatDepositSkrillqcoIframeDescription,
+      'cashierFiatDepositSkrillqcoMessage' =>
+        cashierFiatDepositSkrillqcoMessage,
+      'cashierFiatDepositSkrillqcoRapidtransfer' =>
+        cashierFiatDepositSkrillqcoRapidtransfer,
+      'cashierFiatDepositSkrillqcoRapidtransferAlmostDoneMessage' =>
+        cashierFiatDepositSkrillqcoRapidtransferAlmostDoneMessage,
+      'cashierFiatDepositSkrillqcoRapidtransferFormDescription' =>
+        cashierFiatDepositSkrillqcoRapidtransferFormDescription,
+      'cashierFiatDepositSkrillqcoRapidtransferIframeDescription' =>
+        cashierFiatDepositSkrillqcoRapidtransferIframeDescription,
+      'cashierFiatDepositSkrillqcoRapidtransferMessage' =>
+        cashierFiatDepositSkrillqcoRapidtransferMessage,
+      'cashierFiatDepositSkrillqcoRapidtransferOpenNewWindowTitle' =>
+        cashierFiatDepositSkrillqcoRapidtransferOpenNewWindowTitle,
+      'cashierFiatDepositSofort' => cashierFiatDepositSofort,
+      'cashierFiatDepositSofortFormDescription' =>
+        cashierFiatDepositSofortFormDescription,
+      'cashierFiatDepositSofortMessage' => cashierFiatDepositSofortMessage,
+      'cashierFiatDepositSofortOpenNewWindowTitle' =>
+        cashierFiatDepositSofortOpenNewWindowTitle,
+      'cashierFiatDepositSomethingWentWrong' =>
+        cashierFiatDepositSomethingWentWrong,
+      'cashierFiatDepositSportsbetBarupayAccountNumber' =>
+        cashierFiatDepositSportsbetBarupayAccountNumber,
+      'cashierFiatDepositSportsbetBarupayBankBranch' =>
+        cashierFiatDepositSportsbetBarupayBankBranch,
+      'cashierFiatDepositSportsbetBarupayBankName' =>
+        cashierFiatDepositSportsbetBarupayBankName,
+      'cashierFiatDepositSportsbetBarupayBeneficiaryname' =>
+        cashierFiatDepositSportsbetBarupayBeneficiaryname,
+      'cashierFiatDepositSsn' => cashierFiatDepositSsn,
+      'cashierFiatDepositState' => cashierFiatDepositState,
+      'cashierFiatDepositStatePlaceholder' =>
+        cashierFiatDepositStatePlaceholder,
+      'cashierFiatDepositSubmit' => cashierFiatDepositSubmit,
+      'cashierFiatDepositSubtotal' => cashierFiatDepositSubtotal,
+      'cashierFiatDepositSuccessMessage' => cashierFiatDepositSuccessMessage,
+      'cashierFiatDepositSumopayAnimex' => cashierFiatDepositSumopayAnimex,
+      'cashierFiatDepositSumopayAnimexFormDescription' =>
+        cashierFiatDepositSumopayAnimexFormDescription,
+      'cashierFiatDepositSumopayAnimexMessage' =>
+        cashierFiatDepositSumopayAnimexMessage,
+      'cashierFiatDepositSumopayAnimexOpenNewWindowTitle' =>
+        cashierFiatDepositSumopayAnimexOpenNewWindowTitle,
+      'cashierFiatDepositThbGlobalDescription' =>
+        cashierFiatDepositThbGlobalDescription,
+      'cashierFiatDepositTimeframeBankBrite' =>
+        cashierFiatDepositTimeframeBankBrite,
+      'cashierFiatDepositTimeframeBankInterac' =>
+        cashierFiatDepositTimeframeBankInterac,
+      'cashierFiatDepositTimeframeBankTransferKlarna' =>
+        cashierFiatDepositTimeframeBankTransferKlarna,
+      'cashierFiatDepositTimeframeBankTransferTrustly' =>
+        cashierFiatDepositTimeframeBankTransferTrustly,
+      'cashierFiatDepositTimeframeCreditcard' =>
+        cashierFiatDepositTimeframeCreditcard,
+      'cashierFiatDepositTimeframeCreditcardEcommpay' =>
+        cashierFiatDepositTimeframeCreditcardEcommpay,
+      'cashierFiatDepositTimeframeCreditcardRavedirect' =>
+        cashierFiatDepositTimeframeCreditcardRavedirect,
+      'cashierFiatDepositTimeframeEcopayz' =>
+        cashierFiatDepositTimeframeEcopayz,
+      'cashierFiatDepositTimeframeHelp2PayQaicash' =>
+        cashierFiatDepositTimeframeHelp2PayQaicash,
+      'cashierFiatDepositTimeframeJetonCorefy' =>
+        cashierFiatDepositTimeframeJetonCorefy,
+      'cashierFiatDepositTimeframeMuchbetter' =>
+        cashierFiatDepositTimeframeMuchbetter,
+      'cashierFiatDepositTimeframeNetBankingQaicash' =>
+        cashierFiatDepositTimeframeNetBankingQaicash,
+      'cashierFiatDepositTimeframeNeteller' =>
+        cashierFiatDepositTimeframeNeteller,
+      'cashierFiatDepositTimeframePaypayCorefy' =>
+        cashierFiatDepositTimeframePaypayCorefy,
+      'cashierFiatDepositTimeframePaysafecard' =>
+        cashierFiatDepositTimeframePaysafecard,
+      'cashierFiatDepositTimeframeSkrill' => cashierFiatDepositTimeframeSkrill,
+      'cashierFiatDepositTimeframeSkrillqco' =>
+        cashierFiatDepositTimeframeSkrillqco,
+      'cashierFiatDepositTimeframeSkrillqcoRapidtransfer' =>
+        cashierFiatDepositTimeframeSkrillqcoRapidtransfer,
+      'cashierFiatDepositTimeframeSofort' => cashierFiatDepositTimeframeSofort,
+      'cashierFiatDepositTimeframeSumopayAnimex' =>
+        cashierFiatDepositTimeframeSumopayAnimex,
+      'cashierFiatDepositTimeframeTrinityQaicash' =>
+        cashierFiatDepositTimeframeTrinityQaicash,
+      'cashierFiatDepositTimeframeTrustly' =>
+        cashierFiatDepositTimeframeTrustly,
+      'cashierFiatDepositTimeframeWebredirectSticpay' =>
+        cashierFiatDepositTimeframeWebredirectSticpay,
+      'cashierFiatDepositTimeframeXpayQrQaicash' =>
+        cashierFiatDepositTimeframeXpayQrQaicash,
+      'cashierFiatDepositTimeframeZimpler' =>
+        cashierFiatDepositTimeframeZimpler,
+      'cashierFiatDepositTotal' => cashierFiatDepositTotal,
+      'cashierFiatDepositTotalAdd' => cashierFiatDepositTotalAdd,
+      'cashierFiatDepositTotalDeduct' => cashierFiatDepositTotalDeduct,
+      'cashierFiatDepositTransactionId' => cashierFiatDepositTransactionId,
+      'cashierFiatDepositTrinityQaicash' => cashierFiatDepositTrinityQaicash,
+      'cashierFiatDepositTrinityQaicashAlmostDoneMessage' =>
+        cashierFiatDepositTrinityQaicashAlmostDoneMessage,
+      'cashierFiatDepositTrinityQaicashFormDescription' =>
+        cashierFiatDepositTrinityQaicashFormDescription,
+      'cashierFiatDepositTrinityQaicashMessage' =>
+        cashierFiatDepositTrinityQaicashMessage,
+      'cashierFiatDepositTrinityQaicashOpenNewWindowTitle' =>
+        cashierFiatDepositTrinityQaicashOpenNewWindowTitle,
+      'cashierFiatDepositTrustly' => cashierFiatDepositTrustly,
+      'cashierFiatDepositTrustlyFormDescription' =>
+        cashierFiatDepositTrustlyFormDescription,
+      'cashierFiatDepositTrustlyIframeDescription' =>
+        cashierFiatDepositTrustlyIframeDescription,
+      'cashierFiatDepositTrustlyMessage' => cashierFiatDepositTrustlyMessage,
+      'cashierFiatDepositTryAgain' => cashierFiatDepositTryAgain,
+      'cashierFiatDepositUnionpay' => cashierFiatDepositUnionpay,
+      'cashierFiatDepositUnionpayQr' => cashierFiatDepositUnionpayQr,
+      'cashierFiatDepositUpTo48h' => cashierFiatDepositUpTo48h,
+      'cashierFiatDepositUsdtGlobalDescription' =>
+        cashierFiatDepositUsdtGlobalDescription,
+      'cashierFiatDepositUsername' => cashierFiatDepositUsername,
+      'cashierFiatDepositWebredirectSticpay' =>
+        cashierFiatDepositWebredirectSticpay,
+      'cashierFiatDepositWebredirectSticpayFormDescription' =>
+        cashierFiatDepositWebredirectSticpayFormDescription,
+      'cashierFiatDepositWebredirectSticpayIframeDescription' =>
+        cashierFiatDepositWebredirectSticpayIframeDescription,
+      'cashierFiatDepositWebredirectSticpayMessage' =>
+        cashierFiatDepositWebredirectSticpayMessage,
+      'cashierFiatDepositWechat' => cashierFiatDepositWechat,
+      'cashierFiatDepositXpayQrQaicash' => cashierFiatDepositXpayQrQaicash,
+      'cashierFiatDepositXpayQrQaicashAlmostDoneMessage' =>
+        cashierFiatDepositXpayQrQaicashAlmostDoneMessage,
+      'cashierFiatDepositXpayQrQaicashFormDescription' =>
+        cashierFiatDepositXpayQrQaicashFormDescription,
+      'cashierFiatDepositXpayQrQaicashMessage' =>
+        cashierFiatDepositXpayQrQaicashMessage,
+      'cashierFiatDepositXpayQrQaicashOpenNewWindowTitle' =>
+        cashierFiatDepositXpayQrQaicashOpenNewWindowTitle,
+      'cashierFiatDepositYouWillBeRedirected' =>
+        cashierFiatDepositYouWillBeRedirected,
+      'cashierFiatDepositZimpler' => cashierFiatDepositZimpler,
+      'cashierFiatDepositZimplerAlmostDoneMessage' =>
+        cashierFiatDepositZimplerAlmostDoneMessage,
+      'cashierFiatDepositZimplerFormDescription' =>
+        cashierFiatDepositZimplerFormDescription,
+      'cashierFiatDepositZimplerIframeDescription' =>
+        cashierFiatDepositZimplerIframeDescription,
+      'cashierFiatDepositZimplerMessage' => cashierFiatDepositZimplerMessage,
+      'cashierFiatDepositZimplerOpenNewWindowTitle' =>
+        cashierFiatDepositZimplerOpenNewWindowTitle,
+      'cashierFiatDepositZipCode' => cashierFiatDepositZipCode,
+      'cashierFiatDepositZipCodePlaceholder' =>
+        cashierFiatDepositZipCodePlaceholder,
+      'cashierFiatEur' => cashierFiatEur,
+      'cashierFiatExpDate' => cashierFiatExpDate,
+      'cashierFiatFlatFee' => cashierFiatFlatFee,
+      'cashierFiatGel' => cashierFiatGel,
+      'cashierFiatIdr' => cashierFiatIdr,
+      'cashierFiatInr' => cashierFiatInr,
+      'cashierFiatIqd' => cashierFiatIqd,
+      'cashierFiatJetonProviderBankTransferVoucherAtmTitle' =>
+        cashierFiatJetonProviderBankTransferVoucherAtmTitle,
+      'cashierFiatJpy' => cashierFiatJpy,
+      'cashierFiatKrw' => cashierFiatKrw,
+      'cashierFiatMinMaxDepositLabel' => cashierFiatMinMaxDepositLabel,
+      'cashierFiatMinMaxWithdrawalLabel' => cashierFiatMinMaxWithdrawalLabel,
+      'cashierFiatMxn' => cashierFiatMxn,
+      'cashierFiatMyr' => cashierFiatMyr,
+      'cashierFiatPen' => cashierFiatPen,
+      'cashierFiatPkr' => cashierFiatPkr,
+      'cashierFiatRub' => cashierFiatRub,
+      'cashierFiatThb' => cashierFiatThb,
+      'cashierFiatTry' => cashierFiatTry,
+      'cashierFiatUah' => cashierFiatUah,
+      'cashierFiatUsd' => cashierFiatUsd,
+      'cashierFiatUsdt' => cashierFiatUsdt,
+      'cashierFiatVnd' => cashierFiatVnd,
+      'cashierFiatWithdrawal' => cashierFiatWithdrawal,
+      'cashierFiatWithdrawalStarted' => cashierFiatWithdrawalStarted,
+      'cashierFiatWithdrawalAccountid' => cashierFiatWithdrawalAccountid,
+      'cashierFiatWithdrawalAccountnumber' =>
+        cashierFiatWithdrawalAccountnumber,
+      'cashierFiatWithdrawalAccounttype' => cashierFiatWithdrawalAccounttype,
+      'cashierFiatWithdrawalAddress' => cashierFiatWithdrawalAddress,
+      'cashierFiatWithdrawalAddressPlaceholder' =>
+        cashierFiatWithdrawalAddressPlaceholder,
+      'cashierFiatWithdrawalAmount' => cashierFiatWithdrawalAmount,
+      'cashierFiatWithdrawalAmountExchangeRate' =>
+        cashierFiatWithdrawalAmountExchangeRate,
+      'cashierFiatWithdrawalBankAccountDigit' =>
+        cashierFiatWithdrawalBankAccountDigit,
+      'cashierFiatWithdrawalBankAccountDigitPlaceholder' =>
+        cashierFiatWithdrawalBankAccountDigitPlaceholder,
+      'cashierFiatWithdrawalBankAccountName' =>
+        cashierFiatWithdrawalBankAccountName,
+      'cashierFiatWithdrawalBankAccountNamePlaceholder' =>
+        cashierFiatWithdrawalBankAccountNamePlaceholder,
+      'cashierFiatWithdrawalBankAccountNumber' =>
+        cashierFiatWithdrawalBankAccountNumber,
+      'cashierFiatWithdrawalBankAccountNumberPlaceholder' =>
+        cashierFiatWithdrawalBankAccountNumberPlaceholder,
+      'cashierFiatWithdrawalBankAccountType' =>
+        cashierFiatWithdrawalBankAccountType,
+      'cashierFiatWithdrawalBankAccountTypePlaceholder' =>
+        cashierFiatWithdrawalBankAccountTypePlaceholder,
+      'cashierFiatWithdrawalBankAddress' => cashierFiatWithdrawalBankAddress,
+      'cashierFiatWithdrawalBankBranch' => cashierFiatWithdrawalBankBranch,
+      'cashierFiatWithdrawalBankBranchDigit' =>
+        cashierFiatWithdrawalBankBranchDigit,
+      'cashierFiatWithdrawalBankBranchDigitPlaceholder' =>
+        cashierFiatWithdrawalBankBranchDigitPlaceholder,
+      'cashierFiatWithdrawalBankBranchNumber' =>
+        cashierFiatWithdrawalBankBranchNumber,
+      'cashierFiatWithdrawalBankBranchNumberPlaceholder' =>
+        cashierFiatWithdrawalBankBranchNumberPlaceholder,
+      'cashierFiatWithdrawalBankBranchPlaceholder' =>
+        cashierFiatWithdrawalBankBranchPlaceholder,
+      'cashierFiatWithdrawalBankCardNumber' =>
+        cashierFiatWithdrawalBankCardNumber,
+      'cashierFiatWithdrawalBankCode' => cashierFiatWithdrawalBankCode,
+      'cashierFiatWithdrawalBankCodePlaceholder' =>
+        cashierFiatWithdrawalBankCodePlaceholder,
+      'cashierFiatWithdrawalBankId' => cashierFiatWithdrawalBankId,
+      'cashierFiatWithdrawalBankIfsc' => cashierFiatWithdrawalBankIfsc,
+      'cashierFiatWithdrawalBankIfscPlaceholder' =>
+        cashierFiatWithdrawalBankIfscPlaceholder,
+      'cashierFiatWithdrawalBankName' => cashierFiatWithdrawalBankName,
+      'cashierFiatWithdrawalBankNamePlaceholder' =>
+        cashierFiatWithdrawalBankNamePlaceholder,
+      'cashierFiatWithdrawalBankSwift' => cashierFiatWithdrawalBankSwift,
+      'cashierFiatWithdrawalBankTransfer' => cashierFiatWithdrawalBankTransfer,
+      'cashierFiatWithdrawalBankTransferAnimex' =>
+        cashierFiatWithdrawalBankTransferAnimex,
+      'cashierFiatWithdrawalBankTransferAnimexMessage' =>
+        cashierFiatWithdrawalBankTransferAnimexMessage,
+      'cashierFiatWithdrawalBankTransferBrite' =>
+        cashierFiatWithdrawalBankTransferBrite,
+      'cashierFiatWithdrawalBankTransferBriteFormDescription' =>
+        cashierFiatWithdrawalBankTransferBriteFormDescription,
+      'cashierFiatWithdrawalBankTransferBriteMessage' =>
+        cashierFiatWithdrawalBankTransferBriteMessage,
+      'cashierFiatWithdrawalBankTransferTrustly' =>
+        cashierFiatWithdrawalBankTransferTrustly,
+      'cashierFiatWithdrawalBankTransferTrustlyAlmostDoneMessage' =>
+        cashierFiatWithdrawalBankTransferTrustlyAlmostDoneMessage,
+      'cashierFiatWithdrawalBankTransferTrustlyFormDescription' =>
+        cashierFiatWithdrawalBankTransferTrustlyFormDescription,
+      'cashierFiatWithdrawalBankTransferTrustlyMessage' =>
+        cashierFiatWithdrawalBankTransferTrustlyMessage,
+      'cashierFiatWithdrawalBankTransferTrustlyOpenNewWindowTitle' =>
+        cashierFiatWithdrawalBankTransferTrustlyOpenNewWindowTitle,
+      'cashierFiatWithdrawalBankaccount' => cashierFiatWithdrawalBankaccount,
+      'cashierFiatWithdrawalBankbranch' => cashierFiatWithdrawalBankbranch,
+      'cashierFiatWithdrawalBankcode' => cashierFiatWithdrawalBankcode,
+      'cashierFiatWithdrawalBeneficiaryname' =>
+        cashierFiatWithdrawalBeneficiaryname,
+      'cashierFiatWithdrawalCadGlobalDescription' =>
+        cashierFiatWithdrawalCadGlobalDescription,
+      'cashierFiatWithdrawalCanNotBeFractionAmount' =>
+        cashierFiatWithdrawalCanNotBeFractionAmount,
+      'cashierFiatWithdrawalCardholder' => cashierFiatWithdrawalCardholder,
+      'cashierFiatWithdrawalChoosePaymentMethod' =>
+        cashierFiatWithdrawalChoosePaymentMethod,
+      'cashierFiatWithdrawalCity' => cashierFiatWithdrawalCity,
+      'cashierFiatWithdrawalCityPlaceholder' =>
+        cashierFiatWithdrawalCityPlaceholder,
+      'cashierFiatWithdrawalContinue' => cashierFiatWithdrawalContinue,
+      'cashierFiatWithdrawalCopyToClipboard' =>
+        cashierFiatWithdrawalCopyToClipboard,
+      'cashierFiatWithdrawalCorefyJetonJpyLimits' =>
+        cashierFiatWithdrawalCorefyJetonJpyLimits,
+      'cashierFiatWithdrawalCpf' => cashierFiatWithdrawalCpf,
+      'cashierFiatWithdrawalCpfAlreadyExists' =>
+        cashierFiatWithdrawalCpfAlreadyExists,
+      'cashierFiatWithdrawalCpfAlreadyExistsCpf' =>
+        cashierFiatWithdrawalCpfAlreadyExistsCpf,
+      'cashierFiatWithdrawalCpfDescription' =>
+        cashierFiatWithdrawalCpfDescription,
+      'cashierFiatWithdrawalCreditCardAcapture' =>
+        cashierFiatWithdrawalCreditCardAcapture,
+      'cashierFiatWithdrawalCreditCardEMerchantPay' =>
+        cashierFiatWithdrawalCreditCardEMerchantPay,
+      'cashierFiatWithdrawalCreditcard' => cashierFiatWithdrawalCreditcard,
+      'cashierFiatWithdrawalCreditcardEcommpay' =>
+        cashierFiatWithdrawalCreditcardEcommpay,
+      'cashierFiatWithdrawalCreditcardEcommpayFormDescription' =>
+        cashierFiatWithdrawalCreditcardEcommpayFormDescription,
+      'cashierFiatWithdrawalCreditcardEcommpayMessage' =>
+        cashierFiatWithdrawalCreditcardEcommpayMessage,
+      'cashierFiatWithdrawalCreditcardFormDescription' =>
+        cashierFiatWithdrawalCreditcardFormDescription,
+      'cashierFiatWithdrawalCreditcardMessage' =>
+        cashierFiatWithdrawalCreditcardMessage,
+      'cashierFiatWithdrawalCreditcardRavedirectFormDescription' =>
+        cashierFiatWithdrawalCreditcardRavedirectFormDescription,
+      'cashierFiatWithdrawalCreditcardRavedirectMessage' =>
+        cashierFiatWithdrawalCreditcardRavedirectMessage,
+      'cashierFiatWithdrawalCustomerLocalName' =>
+        cashierFiatWithdrawalCustomerLocalName,
+      'cashierFiatWithdrawalCustomerLocalNamePlaceholder' =>
+        cashierFiatWithdrawalCustomerLocalNamePlaceholder,
+      'cashierFiatWithdrawalCustomerName' => cashierFiatWithdrawalCustomerName,
+      'cashierFiatWithdrawalCustomerNamePlaceholder' =>
+        cashierFiatWithdrawalCustomerNamePlaceholder,
+      'cashierFiatWithdrawalCustomername' => cashierFiatWithdrawalCustomername,
+      'cashierFiatWithdrawalCustomernumber' =>
+        cashierFiatWithdrawalCustomernumber,
+      'cashierFiatWithdrawalDateOfBirth' => cashierFiatWithdrawalDateOfBirth,
+      'cashierFiatWithdrawalDateOfBirthPlaceholder' =>
+        cashierFiatWithdrawalDateOfBirthPlaceholder,
+      'cashierFiatWithdrawalDelete' => cashierFiatWithdrawalDelete,
+      'cashierFiatWithdrawalDependsOnAmount' =>
+        cashierFiatWithdrawalDependsOnAmount,
+      'cashierFiatWithdrawalEcopayz' => cashierFiatWithdrawalEcopayz,
+      'cashierFiatWithdrawalEcopayzFormDescription' =>
+        cashierFiatWithdrawalEcopayzFormDescription,
+      'cashierFiatWithdrawalEcopayzMessage' =>
+        cashierFiatWithdrawalEcopayzMessage,
+      'cashierFiatWithdrawalEmail' => cashierFiatWithdrawalEmail,
+      'cashierFiatWithdrawalEnccreditcardnumber' =>
+        cashierFiatWithdrawalEnccreditcardnumber,
+      'cashierFiatWithdrawalEurGlobalDescription' =>
+        cashierFiatWithdrawalEurGlobalDescription,
+      'cashierFiatWithdrawalExpirymonth' => cashierFiatWithdrawalExpirymonth,
+      'cashierFiatWithdrawalExpiryyear' => cashierFiatWithdrawalExpiryyear,
+      'cashierFiatWithdrawalEzeebillBankAccountName' =>
+        cashierFiatWithdrawalEzeebillBankAccountName,
+      'cashierFiatWithdrawalEzeebillBankAccountNamePlaceholder' =>
+        cashierFiatWithdrawalEzeebillBankAccountNamePlaceholder,
+      'cashierFiatWithdrawalEzeebillBankBranchPlaceholder' =>
+        cashierFiatWithdrawalEzeebillBankBranchPlaceholder,
+      'cashierFiatWithdrawalEzeebillBankName' =>
+        cashierFiatWithdrawalEzeebillBankName,
+      'cashierFiatWithdrawalEzeebillBankNamePlaceholder' =>
+        cashierFiatWithdrawalEzeebillBankNamePlaceholder,
+      'cashierFiatWithdrawalEzeebillCustomerNamePlaceholder' =>
+        cashierFiatWithdrawalEzeebillCustomerNamePlaceholder,
+      'cashierFiatWithdrawalFailureMessage' =>
+        cashierFiatWithdrawalFailureMessage,
+      'cashierFiatWithdrawalFee' => cashierFiatWithdrawalFee,
+      'cashierFiatWithdrawalFeeAdd' => cashierFiatWithdrawalFeeAdd,
+      'cashierFiatWithdrawalFeeDeduct' => cashierFiatWithdrawalFeeDeduct,
+      'cashierFiatWithdrawalFirstName' => cashierFiatWithdrawalFirstName,
+      'cashierFiatWithdrawalFirstNamePlaceholder' =>
+        cashierFiatWithdrawalFirstNamePlaceholder,
+      'cashierFiatWithdrawalFirstname' => cashierFiatWithdrawalFirstname,
+      'cashierFiatWithdrawalFree' => cashierFiatWithdrawalFree,
+      'cashierFiatWithdrawalGlobalDescription' =>
+        cashierFiatWithdrawalGlobalDescription,
+      'cashierFiatWithdrawalGoBack' => cashierFiatWithdrawalGoBack,
+      'cashierFiatWithdrawalHelp2PayQaicashAlmostDoneMessage' =>
+        cashierFiatWithdrawalHelp2PayQaicashAlmostDoneMessage,
+      'cashierFiatWithdrawalHelp2PayQaicashMessage' =>
+        cashierFiatWithdrawalHelp2PayQaicashMessage,
+      'cashierFiatWithdrawalHelp2PayQaicashOpenNewWindowTitle' =>
+        cashierFiatWithdrawalHelp2PayQaicashOpenNewWindowTitle,
+      'cashierFiatWithdrawalInovapayBankTransferBrlLimits' =>
+        cashierFiatWithdrawalInovapayBankTransferBrlLimits,
+      'cashierFiatWithdrawalInterac' => cashierFiatWithdrawalInterac,
+      'cashierFiatWithdrawalInteracMessage' =>
+        cashierFiatWithdrawalInteracMessage,
+      'cashierFiatWithdrawalInvalidCpfCpf' =>
+        cashierFiatWithdrawalInvalidCpfCpf,
+      'cashierFiatWithdrawalInvalidFormatBankaccount' =>
+        cashierFiatWithdrawalInvalidFormatBankaccount,
+      'cashierFiatWithdrawalInvalidFormatBankbranch' =>
+        cashierFiatWithdrawalInvalidFormatBankbranch,
+      'cashierFiatWithdrawalInvalidAddress' =>
+        cashierFiatWithdrawalInvalidAddress,
+      'cashierFiatWithdrawalInvalidBankAccountNumber' =>
+        cashierFiatWithdrawalInvalidBankAccountNumber,
+      'cashierFiatWithdrawalInvalidBankBranch' =>
+        cashierFiatWithdrawalInvalidBankBranch,
+      'cashierFiatWithdrawalInvalidBankBranchNumber' =>
+        cashierFiatWithdrawalInvalidBankBranchNumber,
+      'cashierFiatWithdrawalInvalidBankCode' =>
+        cashierFiatWithdrawalInvalidBankCode,
+      'cashierFiatWithdrawalInvalidBankIfsc' =>
+        cashierFiatWithdrawalInvalidBankIfsc,
+      'cashierFiatWithdrawalInvalidBankName' =>
+        cashierFiatWithdrawalInvalidBankName,
+      'cashierFiatWithdrawalInvalidCustomerLocalName' =>
+        cashierFiatWithdrawalInvalidCustomerLocalName,
+      'cashierFiatWithdrawalInvalidCustomerName' =>
+        cashierFiatWithdrawalInvalidCustomerName,
+      'cashierFiatWithdrawalInvalidPixKey' =>
+        cashierFiatWithdrawalInvalidPixKey,
+      'cashierFiatWithdrawalJetonCorefy' => cashierFiatWithdrawalJetonCorefy,
+      'cashierFiatWithdrawalJetonCorefyFormDescription' =>
+        cashierFiatWithdrawalJetonCorefyFormDescription,
+      'cashierFiatWithdrawalJetonCorefyMessage' =>
+        cashierFiatWithdrawalJetonCorefyMessage,
+      'cashierFiatWithdrawalJetonExchangeRate' =>
+        cashierFiatWithdrawalJetonExchangeRate,
+      'cashierFiatWithdrawalJetonCustomerName' =>
+        cashierFiatWithdrawalJetonCustomerName,
+      'cashierFiatWithdrawalJpyGlobalDescription' =>
+        cashierFiatWithdrawalJpyGlobalDescription,
+      'cashierFiatWithdrawalKeytaPayBankTransferJpyLimits' =>
+        cashierFiatWithdrawalKeytaPayBankTransferJpyLimits,
+      'cashierFiatWithdrawalLastName' => cashierFiatWithdrawalLastName,
+      'cashierFiatWithdrawalLastNamePlaceholder' =>
+        cashierFiatWithdrawalLastNamePlaceholder,
+      'cashierFiatWithdrawalLastname' => cashierFiatWithdrawalLastname,
+      'cashierFiatWithdrawalLocalBankTransferQaicash' =>
+        cashierFiatWithdrawalLocalBankTransferQaicash,
+      'cashierFiatWithdrawalLocalBankTransferQaicashAlmostDoneMessage' =>
+        cashierFiatWithdrawalLocalBankTransferQaicashAlmostDoneMessage,
+      'cashierFiatWithdrawalLocalBankTransferQaicashFormDescription' =>
+        cashierFiatWithdrawalLocalBankTransferQaicashFormDescription,
+      'cashierFiatWithdrawalLocalBankTransferQaicashIframeDescription' =>
+        cashierFiatWithdrawalLocalBankTransferQaicashIframeDescription,
+      'cashierFiatWithdrawalLocalBankTransferQaicashMessage' =>
+        cashierFiatWithdrawalLocalBankTransferQaicashMessage,
+      'cashierFiatWithdrawalLocalBankTransferQaicashOpenNewWindowTitle' =>
+        cashierFiatWithdrawalLocalBankTransferQaicashOpenNewWindowTitle,
+      'cashierFiatWithdrawalMaxLimit' => cashierFiatWithdrawalMaxLimit,
+      'cashierFiatWithdrawalMinAmount' => cashierFiatWithdrawalMinAmount,
+      'cashierFiatWithdrawalMinLimit' => cashierFiatWithdrawalMinLimit,
+      'cashierFiatWithdrawalMinWithdrawal' =>
+        cashierFiatWithdrawalMinWithdrawal,
+      'cashierFiatWithdrawalMobile' => cashierFiatWithdrawalMobile,
+      'cashierFiatWithdrawalMuchbetter' => cashierFiatWithdrawalMuchbetter,
+      'cashierFiatWithdrawalMuchbetterFormDescription' =>
+        cashierFiatWithdrawalMuchbetterFormDescription,
+      'cashierFiatWithdrawalMuchbetterMessage' =>
+        cashierFiatWithdrawalMuchbetterMessage,
+      'cashierFiatWithdrawalNationalid' => cashierFiatWithdrawalNationalid,
+      'cashierFiatWithdrawalNationalidtype' =>
+        cashierFiatWithdrawalNationalidtype,
+      'cashierFiatWithdrawalNeteller' => cashierFiatWithdrawalNeteller,
+      'cashierFiatWithdrawalNetellerFormDescription' =>
+        cashierFiatWithdrawalNetellerFormDescription,
+      'cashierFiatWithdrawalNetellerMessage' =>
+        cashierFiatWithdrawalNetellerMessage,
+      'cashierFiatWithdrawalNextStep' => cashierFiatWithdrawalNextStep,
+      'cashierFiatWithdrawalNotEnoughFundsAmount' =>
+        cashierFiatWithdrawalNotEnoughFundsAmount,
+      'cashierFiatWithdrawalNotFoundSavedAccountUuid' =>
+        cashierFiatWithdrawalNotFoundSavedAccountUuid,
+      'cashierFiatWithdrawalNull' => cashierFiatWithdrawalNull,
+      'cashierFiatWithdrawalOverview' => cashierFiatWithdrawalOverview,
+      'cashierFiatWithdrawalPagavaBankAccountName' =>
+        cashierFiatWithdrawalPagavaBankAccountName,
+      'cashierFiatWithdrawalPagavaBankAccountNamePlaceholder' =>
+        cashierFiatWithdrawalPagavaBankAccountNamePlaceholder,
+      'cashierFiatWithdrawalPagavaCustomerNamePlaceholder' =>
+        cashierFiatWithdrawalPagavaCustomerNamePlaceholder,
+      'cashierFiatWithdrawalPagsmilePixBrlLimits' =>
+        cashierFiatWithdrawalPagsmilePixBrlLimits,
+      'cashierFiatWithdrawalPassword' => cashierFiatWithdrawalPassword,
+      'cashierFiatWithdrawalPay4funWebredirectBrlLimits' =>
+        cashierFiatWithdrawalPay4funWebredirectBrlLimits,
+      'cashierFiatWithdrawalPaymentMethods' =>
+        cashierFiatWithdrawalPaymentMethods,
+      'cashierFiatWithdrawalPaysafecard' => cashierFiatWithdrawalPaysafecard,
+      'cashierFiatWithdrawalPaysafecardFormDescription' =>
+        cashierFiatWithdrawalPaysafecardFormDescription,
+      'cashierFiatWithdrawalPaysafecardMessage' =>
+        cashierFiatWithdrawalPaysafecardMessage,
+      'cashierFiatWithdrawalPersonalDetails' =>
+        cashierFiatWithdrawalPersonalDetails,
+      'cashierFiatWithdrawalPhoneNumber' => cashierFiatWithdrawalPhoneNumber,
+      'cashierFiatWithdrawalPhoneNumberPlaceholder' =>
+        cashierFiatWithdrawalPhoneNumberPlaceholder,
+      'cashierFiatWithdrawalPhonenumberPlaceholder' =>
+        cashierFiatWithdrawalPhonenumberPlaceholder,
+      'cashierFiatWithdrawalPinbankBankBranchPlaceholder' =>
+        cashierFiatWithdrawalPinbankBankBranchPlaceholder,
+      'cashierFiatWithdrawalPixKey' => cashierFiatWithdrawalPixKey,
+      'cashierFiatWithdrawalPixKeyPlaceholder' =>
+        cashierFiatWithdrawalPixKeyPlaceholder,
+      'cashierFiatWithdrawalPleaseEnterAmount' =>
+        cashierFiatWithdrawalPleaseEnterAmount,
+      'cashierFiatWithdrawalPleaseEnterCpfMessage' =>
+        cashierFiatWithdrawalPleaseEnterCpfMessage,
+      'cashierFiatWithdrawalPleaseEnterPersonalDetailsMessage' =>
+        cashierFiatWithdrawalPleaseEnterPersonalDetailsMessage,
+      'cashierFiatWithdrawalPostcode' => cashierFiatWithdrawalPostcode,
+      'cashierFiatWithdrawalPostcodePlaceholder' =>
+        cashierFiatWithdrawalPostcodePlaceholder,
+      'cashierFiatWithdrawalProvince' => cashierFiatWithdrawalProvince,
+      'cashierFiatWithdrawalRequiredCardholder' =>
+        cashierFiatWithdrawalRequiredCardholder,
+      'cashierFiatWithdrawalSavedAccounts' =>
+        cashierFiatWithdrawalSavedAccounts,
+      'cashierFiatWithdrawalService' => cashierFiatWithdrawalService,
+      'cashierFiatWithdrawalSkrill' => cashierFiatWithdrawalSkrill,
+      'cashierFiatWithdrawalSkrillFormDescription' =>
+        cashierFiatWithdrawalSkrillFormDescription,
+      'cashierFiatWithdrawalSkrillMessage' =>
+        cashierFiatWithdrawalSkrillMessage,
+      'cashierFiatWithdrawalSkrillqcoMessage' =>
+        cashierFiatWithdrawalSkrillqcoMessage,
+      'cashierFiatWithdrawalSkrillqcoRapidtransfer' =>
+        cashierFiatWithdrawalSkrillqcoRapidtransfer,
+      'cashierFiatWithdrawalSkrillqcoRapidtransferFormDescription' =>
+        cashierFiatWithdrawalSkrillqcoRapidtransferFormDescription,
+      'cashierFiatWithdrawalSkrillqcoRapidtransferMessage' =>
+        cashierFiatWithdrawalSkrillqcoRapidtransferMessage,
+      'cashierFiatWithdrawalSofort' => cashierFiatWithdrawalSofort,
+      'cashierFiatWithdrawalSofortFormDescription' =>
+        cashierFiatWithdrawalSofortFormDescription,
+      'cashierFiatWithdrawalSofortMessage' =>
+        cashierFiatWithdrawalSofortMessage,
+      'cashierFiatWithdrawalState' => cashierFiatWithdrawalState,
+      'cashierFiatWithdrawalStatePlaceholder' =>
+        cashierFiatWithdrawalStatePlaceholder,
+      'cashierFiatWithdrawalSticpay' => cashierFiatWithdrawalSticpay,
+      'cashierFiatWithdrawalSticpayFormDescription' =>
+        cashierFiatWithdrawalSticpayFormDescription,
+      'cashierFiatWithdrawalSticpayMessage' =>
+        cashierFiatWithdrawalSticpayMessage,
+      'cashierFiatWithdrawalSubmit' => cashierFiatWithdrawalSubmit,
+      'cashierFiatWithdrawalSubtotal' => cashierFiatWithdrawalSubtotal,
+      'cashierFiatWithdrawalSuccessMessage' =>
+        cashierFiatWithdrawalSuccessMessage,
+      'cashierFiatWithdrawalThbGlobalDescription' =>
+        cashierFiatWithdrawalThbGlobalDescription,
+      'cashierFiatWithdrawalTimeframeBankTransferAnimex' =>
+        cashierFiatWithdrawalTimeframeBankTransferAnimex,
+      'cashierFiatWithdrawalTimeframeBankTransferTrustly' =>
+        cashierFiatWithdrawalTimeframeBankTransferTrustly,
+      'cashierFiatWithdrawalTimeframeCreditcard' =>
+        cashierFiatWithdrawalTimeframeCreditcard,
+      'cashierFiatWithdrawalTimeframeCreditcardEcommpay' =>
+        cashierFiatWithdrawalTimeframeCreditcardEcommpay,
+      'cashierFiatWithdrawalTimeframeCreditcardRavedirect' =>
+        cashierFiatWithdrawalTimeframeCreditcardRavedirect,
+      'cashierFiatWithdrawalTimeframeEcopayz' =>
+        cashierFiatWithdrawalTimeframeEcopayz,
+      'cashierFiatWithdrawalTimeframeHelp2PayQaicash' =>
+        cashierFiatWithdrawalTimeframeHelp2PayQaicash,
+      'cashierFiatWithdrawalTimeframeInterac' =>
+        cashierFiatWithdrawalTimeframeInterac,
+      'cashierFiatWithdrawalTimeframeJetonCorefy' =>
+        cashierFiatWithdrawalTimeframeJetonCorefy,
+      'cashierFiatWithdrawalTimeframeLocalBankTransferQaicash' =>
+        cashierFiatWithdrawalTimeframeLocalBankTransferQaicash,
+      'cashierFiatWithdrawalTimeframeMuchbetter' =>
+        cashierFiatWithdrawalTimeframeMuchbetter,
+      'cashierFiatWithdrawalTimeframeNeteller' =>
+        cashierFiatWithdrawalTimeframeNeteller,
+      'cashierFiatWithdrawalTimeframePaysafecard' =>
+        cashierFiatWithdrawalTimeframePaysafecard,
+      'cashierFiatWithdrawalTimeframeSkrill' =>
+        cashierFiatWithdrawalTimeframeSkrill,
+      'cashierFiatWithdrawalTimeframeSkrillqco' =>
+        cashierFiatWithdrawalTimeframeSkrillqco,
+      'cashierFiatWithdrawalTimeframeSkrillqcoRapidtransfer' =>
+        cashierFiatWithdrawalTimeframeSkrillqcoRapidtransfer,
+      'cashierFiatWithdrawalTimeframeSofort' =>
+        cashierFiatWithdrawalTimeframeSofort,
+      'cashierFiatWithdrawalTimeframeSticpay' =>
+        cashierFiatWithdrawalTimeframeSticpay,
+      'cashierFiatWithdrawalTimeframeTrustly' =>
+        cashierFiatWithdrawalTimeframeTrustly,
+      'cashierFiatWithdrawalTimeframeZimpler' =>
+        cashierFiatWithdrawalTimeframeZimpler,
+      'cashierFiatWithdrawalTotal' => cashierFiatWithdrawalTotal,
+      'cashierFiatWithdrawalTotalAdd' => cashierFiatWithdrawalTotalAdd,
+      'cashierFiatWithdrawalTotalDeduct' => cashierFiatWithdrawalTotalDeduct,
+      'cashierFiatWithdrawalTransactionId' =>
+        cashierFiatWithdrawalTransactionId,
+      'cashierFiatWithdrawalTrustly' => cashierFiatWithdrawalTrustly,
+      'cashierFiatWithdrawalTrustlyFormDescription' =>
+        cashierFiatWithdrawalTrustlyFormDescription,
+      'cashierFiatWithdrawalTrustlyIframeDescription' =>
+        cashierFiatWithdrawalTrustlyIframeDescription,
+      'cashierFiatWithdrawalTrustlyMessage' =>
+        cashierFiatWithdrawalTrustlyMessage,
+      'cashierFiatWithdrawalTryAgain' => cashierFiatWithdrawalTryAgain,
+      'cashierFiatWithdrawalUsername' => cashierFiatWithdrawalUsername,
+      'cashierFiatWithdrawalWebredirectSticpay' =>
+        cashierFiatWithdrawalWebredirectSticpay,
+      'cashierFiatWithdrawalZimpler' => cashierFiatWithdrawalZimpler,
+      'cashierFiatWithdrawalZimplerFormDescription' =>
+        cashierFiatWithdrawalZimplerFormDescription,
+      'cashierFiatWithdrawalZimplerMessage' =>
+        cashierFiatWithdrawalZimplerMessage,
+      'cashierFilerByDate' => cashierFilerByDate,
+      'cashierFilterByDate' => cashierFilterByDate,
+      'cashierFinances' => cashierFinances,
+      'cashierFirstname' => cashierFirstname,
+      'cashierForfeit' => cashierForfeit,
+      'cashierFromDate' => cashierFromDate,
+      'cashierGetBitcoins' => cashierGetBitcoins,
+      'cashierGetBitcoinsTotal' => cashierGetBitcoinsTotal,
+      'cashierGiftCardVoucher' => cashierGiftCardVoucher,
+      'cashierGlobalMethods' => cashierGlobalMethods,
+      'cashierGoBack' => cashierGoBack,
+      'cashierHelpCentre' => cashierHelpCentre,
+      'cashierHideDepositHistory' => cashierHideDepositHistory,
+      'cashierHideOtherPaymentOptions' => cashierHideOtherPaymentOptions,
+      'cashierHideWithdrawHistory' => cashierHideWithdrawHistory,
+      'cashierHkd' => cashierHkd,
+      'cashierIfYouDontHaveBtc' => cashierIfYouDontHaveBtc,
+      'cashierInOrderToMakeADeposit' => cashierInOrderToMakeADeposit,
+      'cashierInitializeAccountWebResource' =>
+        cashierInitializeAccountWebResource,
+      'cashierInr' => cashierInr,
+      'cashierInstantBankTransferSuccess' => cashierInstantBankTransferSuccess,
+      'cashierInstructions' => cashierInstructions,
+      'cashierInvalidEmailFormat' => cashierInvalidEmailFormat,
+      'cashierInvalidFormData' => cashierInvalidFormData,
+      'cashierInvoiceAddress' => cashierInvoiceAddress,
+      'cashierJetonTitle' => cashierJetonTitle,
+      'cashierJpy' => cashierJpy,
+      'cashierJpyDepositJetonDescription' => cashierJpyDepositJetonDescription,
+      'cashierJpyDepositJpysecureDescription' =>
+        cashierJpyDepositJpysecureDescription,
+      'cashierJpyDepositJpysecureTitle' => cashierJpyDepositJpysecureTitle,
+      'cashierJpyDepositPagavaDescription' =>
+        cashierJpyDepositPagavaDescription,
+      'cashierJpyWithdrawJetonDescription' =>
+        cashierJpyWithdrawJetonDescription,
+      'cashierJpyWithdrawJpysecureDescription' =>
+        cashierJpyWithdrawJpysecureDescription,
+      'cashierJpyWithdrawJpysecureTitle' => cashierJpyWithdrawJpysecureTitle,
+      'cashierJpyWithdrawPagavaDescription' =>
+        cashierJpyWithdrawPagavaDescription,
+      'cashierKycBannerBodyIdExpired' => cashierKycBannerBodyIdExpired,
+      'cashierKycBannerBodyThreshold1' => cashierKycBannerBodyThreshold1,
+      'cashierKycBannerBodyThreshold1Reminders' =>
+        cashierKycBannerBodyThreshold1Reminders,
+      'cashierKycBannerBodyThreshold2' => cashierKycBannerBodyThreshold2,
+      'cashierKycBannerTitle' => cashierKycBannerTitle,
+      'cashierKycBannerVerify' => cashierKycBannerVerify,
+      'cashierKycModalBody' => cashierKycModalBody,
+      'cashierKycModalGetStarted' => cashierKycModalGetStarted,
+      'cashierKycModalTitle' => cashierKycModalTitle,
+      'cashierLabelsKycRequired' => cashierLabelsKycRequired,
+      'cashierLabelsVerifyEmail' => cashierLabelsVerifyEmail,
+      'cashierLabelsVerifyPhoneNumber' => cashierLabelsVerifyPhoneNumber,
+      'cashierLastname' => cashierLastname,
+      'cashierLessOptions' => cashierLessOptions,
+      'cashierLiveSupport' => cashierLiveSupport,
+      'cashierLoadMore' => cashierLoadMore,
+      'cashierLtc' => cashierLtc,
+      'cashierMatic' => cashierMatic,
+      'cashierMaxDeposit' => cashierMaxDeposit,
+      'cashierMaxWithdraw' => cashierMaxWithdraw,
+      'cashierMetamask' => cashierMetamask,
+      'cashierMetamaskDesc' => cashierMetamaskDesc,
+      'cashierMetamaskWallet' => cashierMetamaskWallet,
+      'cashierMetamaskInsufficientFunds' => cashierMetamaskInsufficientFunds,
+      'cashierMetricPrefixBtc' => cashierMetricPrefixBtc,
+      'cashierMinimumDepositAda' => cashierMinimumDepositAda,
+      'cashierMinimumDepositAmount' => cashierMinimumDepositAmount,
+      'cashierMinimumDepositEth' => cashierMinimumDepositEth,
+      'cashierMinimumDepositLtc' => cashierMinimumDepositLtc,
+      'cashierMinimumDepositMbtc' => cashierMinimumDepositMbtc,
+      'cashierMinimumDepositSoc' => cashierMinimumDepositSoc,
+      'cashierMinimumDepositTextAda' => cashierMinimumDepositTextAda,
+      'cashierMinimumDepositTextBtc' => cashierMinimumDepositTextBtc,
+      'cashierMinimumDepositTextCad' => cashierMinimumDepositTextCad,
+      'cashierMinimumDepositTextDoge' => cashierMinimumDepositTextDoge,
+      'cashierMinimumDepositTextEth' => cashierMinimumDepositTextEth,
+      'cashierMinimumDepositTextEur' => cashierMinimumDepositTextEur,
+      'cashierMinimumDepositTextJpy' => cashierMinimumDepositTextJpy,
+      'cashierMinimumDepositTextLtc' => cashierMinimumDepositTextLtc,
+      'cashierMinimumDepositTextMbtc' => cashierMinimumDepositTextMbtc,
+      'cashierMinimumDepositTextSoc' => cashierMinimumDepositTextSoc,
+      'cashierMinimumDepositTextThb' => cashierMinimumDepositTextThb,
+      'cashierMinimumDepositTextTrx' => cashierMinimumDepositTextTrx,
+      'cashierMinimumDepositTextUbtc' => cashierMinimumDepositTextUbtc,
+      'cashierMinimumDepositTextUsdt' => cashierMinimumDepositTextUsdt,
+      'cashierMinimumDepositTextXrp' => cashierMinimumDepositTextXrp,
+      'cashierMinimumDepositTitle' => cashierMinimumDepositTitle,
+      'cashierMinimumDepositTrx' => cashierMinimumDepositTrx,
+      'cashierMinimumDepositUbtc' => cashierMinimumDepositUbtc,
+      'cashierMinimumDepositUsdt' => cashierMinimumDepositUsdt,
+      'cashierMinimumDepositXrp' => cashierMinimumDepositXrp,
+      'cashierMinimumIs' => cashierMinimumIs,
+      'cashierMinimumWithdrawAmount' => cashierMinimumWithdrawAmount,
+      'cashierMoonpayDepositsAreDisabled' => cashierMoonpayDepositsAreDisabled,
+      'cashierMoonpayPurchaseDescription' => cashierMoonpayPurchaseDescription,
+      'cashierMoonpayPurchaseTitle' => cashierMoonpayPurchaseTitle,
+      'cashierMoonpayTitle' => cashierMoonpayTitle,
+      'cashierMoreAboutDepositingAltcoins' =>
+        cashierMoreAboutDepositingAltcoins,
+      'cashierMoreAboutDepositingBitcoins' =>
+        cashierMoreAboutDepositingBitcoins,
+      'cashierMoreDepositOptions' => cashierMoreDepositOptions,
+      'cashierMoreOptions' => cashierMoreOptions,
+      'cashierMoreWithdrawOptions' => cashierMoreWithdrawOptions,
+      'cashierMyBalance' => cashierMyBalance,
+      'cashierMyBalanceIn' => cashierMyBalanceIn,
+      'cashierMyRewards' => cashierMyRewards,
+      'cashierNetwork' => cashierNetwork,
+      'cashierNetworkBinanceSmartChain' => cashierNetworkBinanceSmartChain,
+      'cashierNetworkBtcLightning' => cashierNetworkBtcLightning,
+      'cashierNetworkBtcMainnet' => cashierNetworkBtcMainnet,
+      'cashierNetworkErc20' => cashierNetworkErc20,
+      'cashierNetworkPolygon' => cashierNetworkPolygon,
+      'cashierNetworkTon' => cashierNetworkTon,
+      'cashierNetworkTrc20' => cashierNetworkTrc20,
+      'cashierNewMethod' => cashierNewMethod,
+      'cashierNext' => cashierNext,
+      'cashierNoDeposits' => cashierNoDeposits,
+      'cashierNoMoneyForWithdrawal' => cashierNoMoneyForWithdrawal,
+      'cashierNoSpecialCharacters' => cashierNoSpecialCharacters,
+      'cashierNoTransactionsFound' => cashierNoTransactionsFound,
+      'cashierNoWithdraws' => cashierNoWithdraws,
+      'cashierOnboardingBalanceNewUsers' => cashierOnboardingBalanceNewUsers,
+      'cashierOnramperPurchaseDescription' =>
+        cashierOnramperPurchaseDescription,
+      'cashierOnramperTitle' => cashierOnramperTitle,
+      'cashierOr' => cashierOr,
+      'cashierOtherWallet' => cashierOtherWallet,
+      'cashierPastMonth' => cashierPastMonth,
+      'cashierPastWeek' => cashierPastWeek,
+      'cashierPaxfulPurchaseDescription' => cashierPaxfulPurchaseDescription,
+      'cashierPaxfulTitle' => cashierPaxfulTitle,
+      'cashierPayWithShapeshift' => cashierPayWithShapeshift,
+      'cashierPaymentMethodBankTransfer' => cashierPaymentMethodBankTransfer,
+      'cashierPaymentMethodCreditCard' => cashierPaymentMethodCreditCard,
+      'cashierPaymentAmount' => cashierPaymentAmount,
+      'cashierPaymentAmountReceived' => cashierPaymentAmountReceived,
+      'cashierPaymentAmountSpent' => cashierPaymentAmountSpent,
+      'cashierPaymentBuyMoreBitcoins' => cashierPaymentBuyMoreBitcoins,
+      'cashierPaymentCompanyAddress' => cashierPaymentCompanyAddress,
+      'cashierPaymentCompanyName' => cashierPaymentCompanyName,
+      'cashierPaymentProcessingFee' => cashierPaymentProcessingFee,
+      'cashierPaymentProvider' => cashierPaymentProvider,
+      'cashierPaymentReferralCode' => cashierPaymentReferralCode,
+      'cashierPaymentTrackPaymentStatus' => cashierPaymentTrackPaymentStatus,
+      'cashierPaymentTransactionLink' => cashierPaymentTransactionLink,
+      'cashierPaymentTransactionRegistered' =>
+        cashierPaymentTransactionRegistered,
+      'cashierPaymentTransactionWillShow' => cashierPaymentTransactionWillShow,
+      'cashierPaypayDepositPageTitle' => cashierPaypayDepositPageTitle,
+      'cashierPaypayDescription' => cashierPaypayDescription,
+      'cashierPaypayDescriptionJpy' => cashierPaypayDescriptionJpy,
+      'cashierPaypayDisabledPayout' => cashierPaypayDisabledPayout,
+      'cashierPaypayDisabledRegion' => cashierPaypayDisabledRegion,
+      'cashierPaypayTitle' => cashierPaypayTitle,
+      'cashierPaypayWithdrawPageTitle' => cashierPaypayWithdrawPageTitle,
+      'cashierPersonalDetails' => cashierPersonalDetails,
+      'cashierPlacedOrderTitle' => cashierPlacedOrderTitle,
+      'cashierPopularMethods' => cashierPopularMethods,
+      'cashierPoweredBy' => cashierPoweredBy,
+      'cashierPreferredFiatCurrency' => cashierPreferredFiatCurrency,
+      'cashierPreviewDeposit' => cashierPreviewDeposit,
+      'cashierPreviewDepositDesc' => cashierPreviewDepositDesc,
+      'cashierPreviewWithdraw' => cashierPreviewWithdraw,
+      'cashierPreviewWithdrawDesc' => cashierPreviewWithdrawDesc,
+      'cashierPromotionCode' => cashierPromotionCode,
+      'cashierProvider' => cashierProvider,
+      'cashierPurchaseBitcoin' => cashierPurchaseBitcoin,
+      'cashierPurchaseBitcoinUsingCreditCard' =>
+        cashierPurchaseBitcoinUsingCreditCard,
+      'cashierQuickTips' => cashierQuickTips,
+      'cashierRateGuaranteedFor' => cashierRateGuaranteedFor,
+      'cashierReceive' => cashierReceive,
+      'cashierRecentTransactions' => cashierRecentTransactions,
+      'cashierRecommended' => cashierRecommended,
+      'cashierRefcode' => cashierRefcode,
+      'cashierRequiredIntegerValue' => cashierRequiredIntegerValue,
+      'cashierReturnToFunds' => cashierReturnToFunds,
+      'cashierReturnToHome' => cashierReturnToHome,
+      'cashierRewardActiveDescription' => cashierRewardActiveDescription,
+      'cashierRewardActiveTitle' => cashierRewardActiveTitle,
+      'cashierRewardEnterCode' => cashierRewardEnterCode,
+      'cashierRewardGeneric' => cashierRewardGeneric,
+      'cashierRewardInvalidCode' => cashierRewardInvalidCode,
+      'cashierRewardRedeemCode' => cashierRewardRedeemCode,
+      'cashierRewardSocialMedia' => cashierRewardSocialMedia,
+      'cashierRewardSwichCurrencyTitle' => cashierRewardSwichCurrencyTitle,
+      'cashierRewards' => cashierRewards,
+      'cashierSaveDetails' => cashierSaveDetails,
+      'cashierScanQrAddress' => cashierScanQrAddress,
+      'cashierSecurity' => cashierSecurity,
+      'cashierSecurity2faCheckout' => cashierSecurity2faCheckout,
+      'cashierSecurityPasswordCheckout' => cashierSecurityPasswordCheckout,
+      'cashierSelectDepositNetwork' => cashierSelectDepositNetwork,
+      'cashierSelectDepositNetworkDescription' =>
+        cashierSelectDepositNetworkDescription,
+      'cashierSelectVoucher' => cashierSelectVoucher,
+      'cashierSelectWithdrawNetwork' => cashierSelectWithdrawNetwork,
+      'cashierSelectWithdrawNetworkDescription' =>
+        cashierSelectWithdrawNetworkDescription,
+      'cashierSelectWithdrawalNetwork' => cashierSelectWithdrawalNetwork,
+      'cashierSelectWithdrawalNetworkDescription' =>
+        cashierSelectWithdrawalNetworkDescription,
+      'cashierSell' => cashierSell,
+      'cashierSend' => cashierSend,
+      'cashierSendEmail' => cashierSendEmail,
+      'cashierSendTo' => cashierSendTo,
+      'cashierSendYourAdaDeposit' => cashierSendYourAdaDeposit,
+      'cashierSendYourAdaWithdraw' => cashierSendYourAdaWithdraw,
+      'cashierSendYourBtcDeposit' => cashierSendYourBtcDeposit,
+      'cashierSendYourBtcWithdraw' => cashierSendYourBtcWithdraw,
+      'cashierSendYourDogeDeposit' => cashierSendYourDogeDeposit,
+      'cashierSendYourDogeWithdraw' => cashierSendYourDogeWithdraw,
+      'cashierSendYourEthWithdraw' => cashierSendYourEthWithdraw,
+      'cashierSendYourLtcDeposit' => cashierSendYourLtcDeposit,
+      'cashierSendYourLtcWithdraw' => cashierSendYourLtcWithdraw,
+      'cashierSendYourSocDeposit' => cashierSendYourSocDeposit,
+      'cashierSendYourTrxDeposit' => cashierSendYourTrxDeposit,
+      'cashierSendYourTrxWithdraw' => cashierSendYourTrxWithdraw,
+      'cashierSendYourUsdtDeposit' => cashierSendYourUsdtDeposit,
+      'cashierSendYourUsdtWithdraw' => cashierSendYourUsdtWithdraw,
+      'cashierSendYourUsdt_tron_Withdraw' => cashierSendYourUsdt_tron_Withdraw,
+      'cashierSendYourXrpDeposit' => cashierSendYourXrpDeposit,
+      'cashierSendYourXrpWithdraw' => cashierSendYourXrpWithdraw,
+      'cashierShowLess' => cashierShowLess,
+      'cashierShowMore' => cashierShowMore,
+      'cashierSimplexInstruction' => cashierSimplexInstruction,
+      'cashierSoc' => cashierSoc,
+      'cashierSocDepositDescription' => cashierSocDepositDescription,
+      'cashierSocialBitcasinoInstagram' => cashierSocialBitcasinoInstagram,
+      'cashierSocialBitcasinoTiktok' => cashierSocialBitcasinoTiktok,
+      'cashierSocialBitcasinoX' => cashierSocialBitcasinoX,
+      'cashierSocialBitcasinoYoutube' => cashierSocialBitcasinoYoutube,
+      'cashierSocialSportsbetInstagram' => cashierSocialSportsbetInstagram,
+      'cashierSocialSportsbetTiktok' => cashierSocialSportsbetTiktok,
+      'cashierSocialSportsbetX' => cashierSocialSportsbetX,
+      'cashierSocialSportsbetYoutube' => cashierSocialSportsbetYoutube,
+      'cashierSortFilter' => cashierSortFilter,
+      'cashierStartDeposit' => cashierStartDeposit,
+      'cashierStartFirstDeposit' => cashierStartFirstDeposit,
+      'cashierStartTransfer' => cashierStartTransfer,
+      'cashierSubmit' => cashierSubmit,
+      'cashierSuccess' => cashierSuccess,
+      'cashierSummary' => cashierSummary,
+      'cashierSumopayTitle' => cashierSumopayTitle,
+      'cashierSupport' => cashierSupport,
+      'cashierSupportSettings' => cashierSupportSettings,
+      'cashierThb' => cashierThb,
+      'cashierToDate' => cashierToDate,
+      'cashierToday' => cashierToday,
+      'cashierTon' => cashierTon,
+      'cashierTonMessageCopied' => cashierTonMessageCopied,
+      'cashierTonWallets' => cashierTonWallets,
+      'cashierTonWalletsDescription' => cashierTonWalletsDescription,
+      'cashierTonInvoiceIdCopied' => cashierTonInvoiceIdCopied,
+      'cashierTooltipFee' => cashierTooltipFee,
+      'cashierTooltipRate' => cashierTooltipRate,
+      'cashierTooltipUseMobileOrQrEth' => cashierTooltipUseMobileOrQrEth,
+      'cashierTooltipUseMobileOrQrSoc' => cashierTooltipUseMobileOrQrSoc,
+      'cashierTooltipYourBitcoinDepositingAddress' =>
+        cashierTooltipYourBitcoinDepositingAddress,
+      'cashierTransactionDateAt' => cashierTransactionDateAt,
+      'cashierTransactionDetails' => cashierTransactionDetails,
+      'cashierTransactionHistory' => cashierTransactionHistory,
+      'cashierTransactionAmount' => cashierTransactionAmount,
+      'cashierTransactionApproved' => cashierTransactionApproved,
+      'cashierTransactionApproving' => cashierTransactionApproving,
+      'cashierTransactionAuthorized' => cashierTransactionAuthorized,
+      'cashierTransactionBet' => cashierTransactionBet,
+      'cashierTransactionBitcoinRateApplied' =>
+        cashierTransactionBitcoinRateApplied,
+      'cashierTransactionCancelled' => cashierTransactionCancelled,
+      'cashierTransactionCancelledByUser' => cashierTransactionCancelledByUser,
+      'cashierTransactionConfirmationPending' =>
+        cashierTransactionConfirmationPending,
+      'cashierTransactionConfirmations' => cashierTransactionConfirmations,
+      'cashierTransactionConfirmed' => cashierTransactionConfirmed,
+      'cashierTransactionCredit' => cashierTransactionCredit,
+      'cashierTransactionDate' => cashierTransactionDate,
+      'cashierTransactionDateTime' => cashierTransactionDateTime,
+      'cashierTransactionDebit' => cashierTransactionDebit,
+      'cashierTransactionDeclined' => cashierTransactionDeclined,
+      'cashierTransactionDeleted' => cashierTransactionDeleted,
+      'cashierTransactionDeposit' => cashierTransactionDeposit,
+      'cashierTransactionDescriptionTitle' =>
+        cashierTransactionDescriptionTitle,
+      'cashierTransactionEndingBalance' => cashierTransactionEndingBalance,
+      'cashierTransactionExpired' => cashierTransactionExpired,
+      'cashierTransactionFailed' => cashierTransactionFailed,
+      'cashierTransactionFrom' => cashierTransactionFrom,
+      'cashierTransactionInProgress' => cashierTransactionInProgress,
+      'cashierTransactionInfoBet' => cashierTransactionInfoBet,
+      'cashierTransactionInfoRollback' => cashierTransactionInfoRollback,
+      'cashierTransactionInfoWin' => cashierTransactionInfoWin,
+      'cashierTransactionInputRequired' => cashierTransactionInputRequired,
+      'cashierTransactionLink' => cashierTransactionLink,
+      'cashierTransactionNew' => cashierTransactionNew,
+      'cashierTransactionPending' => cashierTransactionPending,
+      'cashierTransactionProcessing' => cashierTransactionProcessing,
+      'cashierTransactionRejected' => cashierTransactionRejected,
+      'cashierTransactionResumeTransaction' =>
+        cashierTransactionResumeTransaction,
+      'cashierTransactionRollback' => cashierTransactionRollback,
+      'cashierTransactionRoundId' => cashierTransactionRoundId,
+      'cashierTransactionStarted' => cashierTransactionStarted,
+      'cashierTransactionStatus' => cashierTransactionStatus,
+      'cashierTransactionTo' => cashierTransactionTo,
+      'cashierTransactionTransactionId' => cashierTransactionTransactionId,
+      'cashierTransactionTransactionStatus' =>
+        cashierTransactionTransactionStatus,
+      'cashierTransactionWin' => cashierTransactionWin,
+      'cashierTransactionWithdraw' => cashierTransactionWithdraw,
+      'cashierTransactionsEmpty' => cashierTransactionsEmpty,
+      'cashierTransactionsBeginning' => cashierTransactionsBeginning,
+      'cashierTransferIsRequired' => cashierTransferIsRequired,
+      'cashierTronlink' => cashierTronlink,
+      'cashierTronlinkWalletBalance' => cashierTronlinkWalletBalance,
+      'cashierTrx' => cashierTrx,
+      'cashierTrxDeposit' => cashierTrxDeposit,
+      'cashierTxDestinationTagCopied' => cashierTxDestinationTagCopied,
+      'cashierTxIdCopied' => cashierTxIdCopied,
+      'cashierTxWalletIdCopied' => cashierTxWalletIdCopied,
+      'cashierUltraFastDeposit' => cashierUltraFastDeposit,
+      'cashierUpdateRate' => cashierUpdateRate,
+      'cashierUsdc' => cashierUsdc,
+      'cashierUsdt' => cashierUsdt,
+      'cashierUsdtErcDeposit' => cashierUsdtErcDeposit,
+      'cashierUsdtTrcDeposit' => cashierUsdtTrcDeposit,
+      'cashierUsdtDepositJetonDescription' =>
+        cashierUsdtDepositJetonDescription,
+      'cashierUsdtWithdrawJetonDescription' =>
+        cashierUsdtWithdrawJetonDescription,
+      'cashierUseMobileOrQr' => cashierUseMobileOrQr,
+      'cashierUtorgPurchaseDescription' => cashierUtorgPurchaseDescription,
+      'cashierUtorgPurchaseLicense' => cashierUtorgPurchaseLicense,
+      'cashierUtorgPurchaseTitle' => cashierUtorgPurchaseTitle,
+      'cashierUtorgTitle' => cashierUtorgTitle,
+      'cashierViewDepositHistory' => cashierViewDepositHistory,
+      'cashierViewOtherPaymentOptions' => cashierViewOtherPaymentOptions,
+      'cashierViewWithdrawHistory' => cashierViewWithdrawHistory,
+      'cashierWallet' => cashierWallet,
+      'cashierWalletAddress' => cashierWalletAddress,
+      'cashierWalletMethods' => cashierWalletMethods,
+      'cashierWalletSettings' => cashierWalletSettings,
+      'cashierWalletconnect' => cashierWalletconnect,
+      'cashierWalletconnectDesc' => cashierWalletconnectDesc,
+      'cashierWeAreNotAccepting' => cashierWeAreNotAccepting,
+      'cashierWeb3walletAccount' => cashierWeb3walletAccount,
+      'cashierWeb3walletChainDisconnected' =>
+        cashierWeb3walletChainDisconnected,
+      'cashierWeb3walletChainUnsupportedNetwork' =>
+        cashierWeb3walletChainUnsupportedNetwork,
+      'cashierWeb3walletContinueWithWallet' =>
+        cashierWeb3walletContinueWithWallet,
+      'cashierWeb3walletDisconnectWallet' => cashierWeb3walletDisconnectWallet,
+      'cashierWeb3walletDisconnectWalletDesc' =>
+        cashierWeb3walletDisconnectWalletDesc,
+      'cashierWeb3walletDisconnectWalletTitle' =>
+        cashierWeb3walletDisconnectWalletTitle,
+      'cashierWeb3walletEnterDepositAmount' =>
+        cashierWeb3walletEnterDepositAmount,
+      'cashierWeb3walletErrorContract' => cashierWeb3walletErrorContract,
+      'cashierWeb3walletErrorEstimateGas' => cashierWeb3walletErrorEstimateGas,
+      'cashierWeb3walletErrorInvalidAmount' =>
+        cashierWeb3walletErrorInvalidAmount,
+      'cashierWeb3walletErrorPrepareContract' =>
+        cashierWeb3walletErrorPrepareContract,
+      'cashierWeb3walletErrorPrepareTransaction' =>
+        cashierWeb3walletErrorPrepareTransaction,
+      'cashierWeb3walletErrorTransaction' => cashierWeb3walletErrorTransaction,
+      'cashierWeb3walletErrorUserRejected' =>
+        cashierWeb3walletErrorUserRejected,
+      'cashierWeb3walletTransactionError' => cashierWeb3walletTransactionError,
+      'cashierWeb3walletTransactionProgress' =>
+        cashierWeb3walletTransactionProgress,
+      'cashierWeb3walletTransactionSuccess' =>
+        cashierWeb3walletTransactionSuccess,
+      'cashierWeb3walletViewOnBlockchain' => cashierWeb3walletViewOnBlockchain,
+      'cashierWeb3walletWalletDeposit' => cashierWeb3walletWalletDeposit,
+      'cashierWeb3walletWalletLinked' => cashierWeb3walletWalletLinked,
+      'cashierWebviewPage' => cashierWebviewPage,
+      'cashierWin' => cashierWin,
+      'cashierWithdraw' => cashierWithdraw,
+      'cashierWithdraw3Confirmations' => cashierWithdraw3Confirmations,
+      'cashierWithdraw48hRestriction' => cashierWithdraw48hRestriction,
+      'cashierWithdrawAda' => cashierWithdrawAda,
+      'cashierWithdrawBnb' => cashierWithdrawBnb,
+      'cashierWithdrawBtc' => cashierWithdrawBtc,
+      'cashierWithdrawBusd' => cashierWithdrawBusd,
+      'cashierWithdrawCad' => cashierWithdrawCad,
+      'cashierWithdrawConfirm' => cashierWithdrawConfirm,
+      'cashierWithdrawDai' => cashierWithdrawDai,
+      'cashierWithdrawDoge' => cashierWithdrawDoge,
+      'cashierWithdrawEth' => cashierWithdrawEth,
+      'cashierWithdrawEur' => cashierWithdrawEur,
+      'cashierWithdrawFunds' => cashierWithdrawFunds,
+      'cashierWithdrawHistory' => cashierWithdrawHistory,
+      'cashierWithdrawInProgress' => cashierWithdrawInProgress,
+      'cashierWithdrawInfoCorrectFields' => cashierWithdrawInfoCorrectFields,
+      'cashierWithdrawInfoXrp' => cashierWithdrawInfoXrp,
+      'cashierWithdrawIsComplete' => cashierWithdrawIsComplete,
+      'cashierWithdrawJpy' => cashierWithdrawJpy,
+      'cashierWithdrawLtc' => cashierWithdrawLtc,
+      'cashierWithdrawMatic' => cashierWithdrawMatic,
+      'cashierWithdrawNext' => cashierWithdrawNext,
+      'cashierWithdrawSoc' => cashierWithdrawSoc,
+      'cashierWithdrawThb' => cashierWithdrawThb,
+      'cashierWithdrawTon' => cashierWithdrawTon,
+      'cashierWithdrawTrx' => cashierWithdrawTrx,
+      'cashierWithdrawUsdc' => cashierWithdrawUsdc,
+      'cashierWithdrawUsdt' => cashierWithdrawUsdt,
+      'cashierWithdrawViewStatus' => cashierWithdrawViewStatus,
+      'cashierWithdrawXrp' => cashierWithdrawXrp,
+      'cashierWithdrawAnimex_bankTransferTitle' =>
+        cashierWithdrawAnimex_bankTransferTitle,
+      'cashierWithdrawCancel' => cashierWithdrawCancel,
+      'cashierWithdrawEzeebill_bankTransfer_inrTitle' =>
+        cashierWithdrawEzeebill_bankTransfer_inrTitle,
+      'cashierWithdrawEzeebill_bankTransfer_jpyTitle' =>
+        cashierWithdrawEzeebill_bankTransfer_jpyTitle,
+      'cashierWithdrawEzeebill_bankTransferDescription' =>
+        cashierWithdrawEzeebill_bankTransferDescription,
+      'cashierWithdrawEzeebill_bankTransferTitle' =>
+        cashierWithdrawEzeebill_bankTransferTitle,
+      'cashierWithdrawInovapay_bankTransferDescription' =>
+        cashierWithdrawInovapay_bankTransferDescription,
+      'cashierWithdrawInovapay_bankTransferTitle' =>
+        cashierWithdrawInovapay_bankTransferTitle,
+      'cashierWithdrawInovapay_pixTitle' => cashierWithdrawInovapay_pixTitle,
+      'cashierWithdrawInterac_interacTitle' =>
+        cashierWithdrawInterac_interacTitle,
+      'cashierWithdrawJeton_jpyTitle' => cashierWithdrawJeton_jpyTitle,
+      'cashierWithdrawJeton_pixTitle' => cashierWithdrawJeton_pixTitle,
+      'cashierWithdrawJetonDescription' => cashierWithdrawJetonDescription,
+      'cashierWithdrawJetonTitle' => cashierWithdrawJetonTitle,
+      'cashierWithdrawNetworkTooltip' => cashierWithdrawNetworkTooltip,
+      'cashierWithdrawPagavaTitle' => cashierWithdrawPagavaTitle,
+      'cashierWithdrawPagsmile_pixDescription' =>
+        cashierWithdrawPagsmile_pixDescription,
+      'cashierWithdrawPagsmile_pixTitle' => cashierWithdrawPagsmile_pixTitle,
+      'cashierWithdrawPay4fun_pay4funDescription' =>
+        cashierWithdrawPay4fun_pay4funDescription,
+      'cashierWithdrawPay4fun_pay4funTitle' =>
+        cashierWithdrawPay4fun_pay4funTitle,
+      'cashierWithdrawPaymentrush_paymentRushTitle' =>
+        cashierWithdrawPaymentrush_paymentRushTitle,
+      'cashierWithdrawPinBank_bankTransferTitle' =>
+        cashierWithdrawPinBank_bankTransferTitle,
+      'cashierWithdrawPinbank_bankTransferTitle' =>
+        cashierWithdrawPinbank_bankTransferTitle,
+      'cashierWithdrawQaicash_localBankTransferTitle' =>
+        cashierWithdrawQaicash_localBankTransferTitle,
+      'cashierWithdrawRupeepayments_bankTransferTitle' =>
+        cashierWithdrawRupeepayments_bankTransferTitle,
+      'cashierWithdrawSumopay_bankTransferTitle' =>
+        cashierWithdrawSumopay_bankTransferTitle,
+      'cashierWithdrawVrio_bankTransferTitle' =>
+        cashierWithdrawVrio_bankTransferTitle,
+      'cashierWithdrawWalletDetails' => cashierWithdrawWalletDetails,
+      'cashierWithdrawWarningConfirmAddress' =>
+        cashierWithdrawWarningConfirmAddress,
+      'cashierWithdrawalAgents' => cashierWithdrawalAgents,
+      'cashierWithdrawalAmount' => cashierWithdrawalAmount,
+      'cashierWithdrawalBrl' => cashierWithdrawalBrl,
+      'cashierWithdrawalCad' => cashierWithdrawalCad,
+      'cashierWithdrawalInr' => cashierWithdrawalInr,
+      'cashierWithdrawalJpy' => cashierWithdrawalJpy,
+      'cashierWithdrawalPayTo' => cashierWithdrawalPayTo,
+      'cashierWithdrawalUsdt' => cashierWithdrawalUsdt,
+      'cashierWouldYouLikeToCash' => cashierWouldYouLikeToCash,
+      'cashierXrp' => cashierXrp,
+      'cashierYouCanWithdrawBitcoins' => cashierYouCanWithdrawBitcoins,
+      'cashierYourAddress' => cashierYourAddress,
+      'cashierYourBitcoinAddress' => cashierYourBitcoinAddress,
+      'cashierYourBitcoinDepAddress' => cashierYourBitcoinDepAddress,
+      'cashierYourBitcoinDepositingAddress' =>
+        cashierYourBitcoinDepositingAddress,
+      'cashierYourCurrentBalance' => cashierYourCurrentBalance,
+      'cashierYourDepositAddress' => cashierYourDepositAddress,
+      'cashierYourEthAddress' => cashierYourEthAddress,
+      'cashierYourEthDepAddress' => cashierYourEthDepAddress,
+      'cashierYourFinances' => cashierYourFinances,
+      'cashierYourSocAddress' => cashierYourSocAddress,
+      'cashierYourSocDepAddress' => cashierYourSocDepAddress,
+      'currencyMbtc' => currencyMbtc,
+      'errors404Cta' => errors404Cta,
+      'errors404ErrorMessageHeader' => errors404ErrorMessageHeader,
+      'errors404Errormessage' => errors404Errormessage,
+      'errors404Promo' => errors404Promo,
+      'errorsAgeMustBeOver18' => errorsAgeMustBeOver18,
+      'errorsAlreadyPredictedThisPrice' => errorsAlreadyPredictedThisPrice,
+      'errorsAmountIsNull' => errorsAmountIsNull,
+      'errorsArticle404Text' => errorsArticle404Text,
+      'errorsBtcAmountMustBeGreaterThan1Mbtc' =>
+        errorsBtcAmountMustBeGreaterThan1Mbtc,
+      'errorsCompleteForm' => errorsCompleteForm,
+      'errorsCooldownAfterPasswordChange' => errorsCooldownAfterPasswordChange,
+      'errorsCorruptImage' => errorsCorruptImage,
+      'errorsCountryDoesNotHaveSupportedCurrencies' =>
+        errorsCountryDoesNotHaveSupportedCurrencies,
+      'errorsCountryIsNotSupported' => errorsCountryIsNotSupported,
+      'errorsCpfContactSupport' => errorsCpfContactSupport,
+      'errorsCurrencyMismatchBetweenSelectedCurrencyAndMarketBtcRate' =>
+        errorsCurrencyMismatchBetweenSelectedCurrencyAndMarketBtcRate,
+      'errorsDisabledWithdrawals' => errorsDisabledWithdrawals,
+      'errorsDisabledWithdrawalsSportsbet' =>
+        errorsDisabledWithdrawalsSportsbet,
+      'errorsEmailAlreadyExists' => errorsEmailAlreadyExists,
+      'errorsEmailIsTaken' => errorsEmailIsTaken,
+      'errorsFailedToSubmit' => errorsFailedToSubmit,
+      'errorsGamegeneralCta' => errorsGamegeneralCta,
+      'errorsGamegeneralErrormessage' => errorsGamegeneralErrormessage,
+      'errorsGeneral' => errorsGeneral,
+      'errorsGeneralDescription' => errorsGeneralDescription,
+      'errorsGeneralSupport' => errorsGeneralSupport,
+      'errorsHigherThanLimit' => errorsHigherThanLimit,
+      'errorsImageTooBig' => errorsImageTooBig,
+      'errorsInputMaxLength' => errorsInputMaxLength,
+      'errorsInputMaxValue' => errorsInputMaxValue,
+      'errorsInputMinValue' => errorsInputMinValue,
+      'errorsInputRequired' => errorsInputRequired,
+      'errorsInvalid' => errorsInvalid,
+      'errorsInvalidAddress' => errorsInvalidAddress,
+      'errorsInvalidAddressAddress' => errorsInvalidAddressAddress,
+      'errorsInvalidCpf' => errorsInvalidCpf,
+      'errorsInvalidDate' => errorsInvalidDate,
+      'errorsInvalidDateRange' => errorsInvalidDateRange,
+      'errorsInvalidEmail' => errorsInvalidEmail,
+      'errorsInvalidMarketBtcRateId' => errorsInvalidMarketBtcRateId,
+      'errorsInvalidPassword' => errorsInvalidPassword,
+      'errorsInvalidPasswordResetToken' => errorsInvalidPasswordResetToken,
+      'errorsInvalidPaymentId' => errorsInvalidPaymentId,
+      'errorsInvalidPhone' => errorsInvalidPhone,
+      'errorsInvalidRequest' => errorsInvalidRequest,
+      'errorsInvalidRfc' => errorsInvalidRfc,
+      'errorsInvalidStatus' => errorsInvalidStatus,
+      'errorsInvalidStatusUpdate' => errorsInvalidStatusUpdate,
+      'errorsInvalidUsername' => errorsInvalidUsername,
+      'errorsInvalidUsernameOrPassword' => errorsInvalidUsernameOrPassword,
+      'errorsInvalidUsernamePasswordOrOtp' =>
+        errorsInvalidUsernamePasswordOrOtp,
+      'errorsInvalidLightningNetworkInvoice' =>
+        errorsInvalidLightningNetworkInvoice,
+      'errorsInvoiceExpiredAddress' => errorsInvoiceExpiredAddress,
+      'errorsIsRequired' => errorsIsRequired,
+      'errorsLoginAuthenticationFailed' => errorsLoginAuthenticationFailed,
+      'errorsLowerThanLimit' => errorsLowerThanLimit,
+      'errorsMaxWithdraw' => errorsMaxWithdraw,
+      'errorsMethodNotFound' => errorsMethodNotFound,
+      'errorsMustBeLoggedIn' => errorsMustBeLoggedIn,
+      'errorsNewerMarketRateExists' => errorsNewerMarketRateExists,
+      'errorsNoExchangeCurrencyAvailable' => errorsNoExchangeCurrencyAvailable,
+      'errorsNoInternetConnection' => errorsNoInternetConnection,
+      'errorsNoMarketBtcRateAvailableForSelectedCurrency' =>
+        errorsNoMarketBtcRateAvailableForSelectedCurrency,
+      'errorsNotAllowed' => errorsNotAllowed,
+      'errorsNotAllowedToUseApp' => errorsNotAllowedToUseApp,
+      'errorsNotAllowedToUseExchangeMethod' =>
+        errorsNotAllowedToUseExchangeMethod,
+      'errorsNotAllowedToUseSite' => errorsNotAllowedToUseSite,
+      'errorsNotEnoughFunds' => errorsNotEnoughFunds,
+      'errorsNotEnoughFundsAmount' => errorsNotEnoughFundsAmount,
+      'errorsNotFound' => errorsNotFound,
+      'errorsOtpIsRequired' => errorsOtpIsRequired,
+      'errorsOtpMustBeDisabled' => errorsOtpMustBeDisabled,
+      'errorsOtpVerificationFailed' => errorsOtpVerificationFailed,
+      'errorsOtpVerificationFailedOtpBitcasino' =>
+        errorsOtpVerificationFailedOtpBitcasino,
+      'errorsOtpVerificationFailedOtpEmpire' =>
+        errorsOtpVerificationFailedOtpEmpire,
+      'errorsOtpVerificationFailedOtpSportsbet' =>
+        errorsOtpVerificationFailedOtpSportsbet,
+      'errorsPasswordDoesNotMatch' => errorsPasswordDoesNotMatch,
+      'errorsPasswordRecoveryEmailNotFound' =>
+        errorsPasswordRecoveryEmailNotFound,
+      'errorsPasswordRecoveryUnableToChangePassword' =>
+        errorsPasswordRecoveryUnableToChangePassword,
+      'errorsPasswordResetDeniedForSocialUser' =>
+        errorsPasswordResetDeniedForSocialUser,
+      'errorsPasswordResetDeniedUserDeleted' =>
+        errorsPasswordResetDeniedUserDeleted,
+      'errorsPasswordTooShort' => errorsPasswordTooShort,
+      'errorsPasswordTooWeak' => errorsPasswordTooWeak,
+      'errorsPatternDoesNotMatch' => errorsPatternDoesNotMatch,
+      'errorsPaymentAmountTooLarge' => errorsPaymentAmountTooLarge,
+      'errorsPaymentMethodIsNotSupported' => errorsPaymentMethodIsNotSupported,
+      'errorsPaymentMethodIsNotSupportedInCurrentCountry' =>
+        errorsPaymentMethodIsNotSupportedInCurrentCountry,
+      'errorsPaymentMethodIsNotSupportedWithSelectedCurrency' =>
+        errorsPaymentMethodIsNotSupportedWithSelectedCurrency,
+      'errorsPaymentStatusMustBeNew' => errorsPaymentStatusMustBeNew,
+      'errorsProcessingFeeTooHigh' => errorsProcessingFeeTooHigh,
+      'errorsProcessingFeeTooLow' => errorsProcessingFeeTooLow,
+      'errorsProfileAuthenticationFailed' => errorsProfileAuthenticationFailed,
+      'errorsProfileOtpVerificationFailed' =>
+        errorsProfileOtpVerificationFailed,
+      'errorsProfileUserNotFound' => errorsProfileUserNotFound,
+      'errorsRequestTimeout' => errorsRequestTimeout,
+      'errorsRequired' => errorsRequired,
+      'errorsRequiresDestinationTag' => errorsRequiresDestinationTag,
+      'errorsSelectedCurrencyIsNotSupported' =>
+        errorsSelectedCurrencyIsNotSupported,
+      'errorsSelectedCurrencyIsNotSupportedInCurrentCountry' =>
+        errorsSelectedCurrencyIsNotSupportedInCurrentCountry,
+      'errorsSignUpEmailOrUsernameIsTaken' =>
+        errorsSignUpEmailOrUsernameIsTaken,
+      'errorsSms2faInvalidSessionId' => errorsSms2faInvalidSessionId,
+      'errorsSms2faSeesionIdExpired' => errorsSms2faSeesionIdExpired,
+      'errorsSms2faVerificationFailed' => errorsSms2faVerificationFailed,
+      'errorsSocialAuthConnectVerifyEmail' =>
+        errorsSocialAuthConnectVerifyEmail,
+      'errorsSomethingWentWrong' => errorsSomethingWentWrong,
+      'errorsSpreadTooHigh' => errorsSpreadTooHigh,
+      'errorsSpreadTooLow' => errorsSpreadTooLow,
+      'errorsSystemError' => errorsSystemError,
+      'errorsTokenExpired' => errorsTokenExpired,
+      'errorsTooLong' => errorsTooLong,
+      'errorsTooManyLoginAttempts' => errorsTooManyLoginAttempts,
+      'errorsTooManyPasswordResetAttempts' =>
+        errorsTooManyPasswordResetAttempts,
+      'errorsTooManySms2faAttempts' => errorsTooManySms2faAttempts,
+      'errorsTooManySmsSent' => errorsTooManySmsSent,
+      'errorsTransactionAmount' => errorsTransactionAmount,
+      'errorsTransactionReferenceIsNull' => errorsTransactionReferenceIsNull,
+      'errorsTypeMismatch' => errorsTypeMismatch,
+      'errorsUbtcMustBeGreater' => errorsUbtcMustBeGreater,
+      'errorsUnconfirmedDeposit' => errorsUnconfirmedDeposit,
+      'errorsUnverifiedEmail' => errorsUnverifiedEmail,
+      'errorsUserSelfExclusionIsActive' => errorsUserSelfExclusionIsActive,
+      'errorsUsernameAlreadyExists' => errorsUsernameAlreadyExists,
+      'errorsUsernameIsTaken' => errorsUsernameIsTaken,
+      'errorsValidationErrors' => errorsValidationErrors,
+      'errorsValueMissing' => errorsValueMissing,
+      'errorsWalletAddressConflict' => errorsWalletAddressConflict,
+      'errorsWalletAddressConflictAddress' =>
+        errorsWalletAddressConflictAddress,
+      'errorsYourAccountIsDisabled' => errorsYourAccountIsDisabled,
+      'errorsYourAccountIsDisabledSecurity' =>
+        errorsYourAccountIsDisabledSecurity,
+      'errorsYourAccountIsDormant' => errorsYourAccountIsDormant,
+      'fundsBalance' => fundsBalance,
+      'fundsConvertedBalance' => fundsConvertedBalance,
+      'fundsFunds' => fundsFunds,
+      'fundsGo_to_the_funds' => fundsGo_to_the_funds,
+      'metamaskConnectEthMainnetChain' => metamaskConnectEthMainnetChain,
+      'metamaskConnectedTo' => metamaskConnectedTo,
+      'metamaskLinkAccount' => metamaskLinkAccount,
+      'metamaskWalletSuccessfullyLinked' => metamaskWalletSuccessfullyLinked,
+      'transactionBet' => transactionBet,
+      'transactionBitcoin' => transactionBitcoin,
+      'transactionBitcoinDeposit' => transactionBitcoinDeposit,
+      'transactionBitcoinWithdrawal' => transactionBitcoinWithdrawal,
+      'transactionDeposit' => transactionDeposit,
+      'transactionDepositAcknowledged' => transactionDepositAcknowledged,
+      'transactionDepositAuthorised' => transactionDepositAuthorised,
+      'transactionDepositCancellationByUser' =>
+        transactionDepositCancellationByUser,
+      'transactionDepositCancellationReturn' =>
+        transactionDepositCancellationReturn,
+      'transactionDepositCancelled' => transactionDepositCancelled,
+      'transactionDepositDeleted' => transactionDepositDeleted,
+      'transactionDepositExpired' => transactionDepositExpired,
+      'transactionDepositFailed' => transactionDepositFailed,
+      'transactionDepositInputRequired' => transactionDepositInputRequired,
+      'transactionDepositNew' => transactionDepositNew,
+      'transactionDepositPending' => transactionDepositPending,
+      'transactionDepositRejected' => transactionDepositRejected,
+      'transactionDepositReverted' => transactionDepositReverted,
+      'transactionDepositStarted' => transactionDepositStarted,
+      'transactionDescription' => transactionDescription,
+      'transactionDetails' => transactionDetails,
+      'transactionEndBalance' => transactionEndBalance,
+      'transactionEthDeposit' => transactionEthDeposit,
+      'transactionEthWithdrawal' => transactionEthWithdrawal,
+      'transactionEthereumDeposit' => transactionEthereumDeposit,
+      'transactionEthereumEthDeposit' => transactionEthereumEthDeposit,
+      'transactionEthereumEthWithdrawal' => transactionEthereumEthWithdrawal,
+      'transactionEthereumSocDeposit' => transactionEthereumSocDeposit,
+      'transactionEthereumSocWithdrawal' => transactionEthereumSocWithdrawal,
+      'transactionEthereumUsdtDeposit' => transactionEthereumUsdtDeposit,
+      'transactionEthereumUsdtWithdrawal' => transactionEthereumUsdtWithdrawal,
+      'transactionEthereumWithdrawal' => transactionEthereumWithdrawal,
+      'transactionExchangeDepositBtc' => transactionExchangeDepositBtc,
+      'transactionExchangeDepositCny' => transactionExchangeDepositCny,
+      'transactionExchangeDepositEur' => transactionExchangeDepositEur,
+      'transactionExchangeDepositJpy' => transactionExchangeDepositJpy,
+      'transactionExchangeFrom' => transactionExchangeFrom,
+      'transactionExchangeTo' => transactionExchangeTo,
+      'transactionExchangeWithdrawalBtc' => transactionExchangeWithdrawalBtc,
+      'transactionExchangeWithdrawalCny' => transactionExchangeWithdrawalCny,
+      'transactionExchangeWithdrawalEur' => transactionExchangeWithdrawalEur,
+      'transactionExchangeWithdrawalJpy' => transactionExchangeWithdrawalJpy,
+      'transactionIncompleteBtc' => transactionIncompleteBtc,
+      'transactionLink' => transactionLink,
+      'transactionLitecoinDeposit' => transactionLitecoinDeposit,
+      'transactionLitecoinWithdrawal' => transactionLitecoinWithdrawal,
+      'transactionManualDeposit' => transactionManualDeposit,
+      'transactionManualDormantCredit' => transactionManualDormantCredit,
+      'transactionManualDormantDebit' => transactionManualDormantDebit,
+      'transactionManualWithdrawal' => transactionManualWithdrawal,
+      'transactionP2pDeposit' => transactionP2pDeposit,
+      'transactionP2pWithdrawal' => transactionP2pWithdrawal,
+      'transactionPay88AdaDeposit' => transactionPay88AdaDeposit,
+      'transactionPay88AdaWithdrawal' => transactionPay88AdaWithdrawal,
+      'transactionPay88BnbDeposit' => transactionPay88BnbDeposit,
+      'transactionPay88BnbWithdrawal' => transactionPay88BnbWithdrawal,
+      'transactionPay88BrlDeposit' => transactionPay88BrlDeposit,
+      'transactionPay88BrlWithdrawal' => transactionPay88BrlWithdrawal,
+      'transactionPay88BtcDeposit' => transactionPay88BtcDeposit,
+      'transactionPay88BtcWithdrawal' => transactionPay88BtcWithdrawal,
+      'transactionPay88BusdDeposit' => transactionPay88BusdDeposit,
+      'transactionPay88BusdWithdrawal' => transactionPay88BusdWithdrawal,
+      'transactionPay88CadDeposit' => transactionPay88CadDeposit,
+      'transactionPay88CadWithdrawal' => transactionPay88CadWithdrawal,
+      'transactionPay88CnyDeposit' => transactionPay88CnyDeposit,
+      'transactionPay88CnyWithdrawal' => transactionPay88CnyWithdrawal,
+      'transactionPay88Deposit' => transactionPay88Deposit,
+      'transactionPay88DogeDeposit' => transactionPay88DogeDeposit,
+      'transactionPay88DogeWithdrawal' => transactionPay88DogeWithdrawal,
+      'transactionPay88EurDeposit' => transactionPay88EurDeposit,
+      'transactionPay88EurWithdrawal' => transactionPay88EurWithdrawal,
+      'transactionPay88InrDeposit' => transactionPay88InrDeposit,
+      'transactionPay88InrWithdrawal' => transactionPay88InrWithdrawal,
+      'transactionPay88JpyDeposit' => transactionPay88JpyDeposit,
+      'transactionPay88JpyWithdrawal' => transactionPay88JpyWithdrawal,
+      'transactionPay88MaticDeposit' => transactionPay88MaticDeposit,
+      'transactionPay88MaticWithdrawal' => transactionPay88MaticWithdrawal,
+      'transactionPay88ThbDeposit' => transactionPay88ThbDeposit,
+      'transactionPay88ThbWithdrawal' => transactionPay88ThbWithdrawal,
+      'transactionPay88TonDeposit' => transactionPay88TonDeposit,
+      'transactionPay88TonWithdrawal' => transactionPay88TonWithdrawal,
+      'transactionPay88TrxDeposit' => transactionPay88TrxDeposit,
+      'transactionPay88TrxWithdrawal' => transactionPay88TrxWithdrawal,
+      'transactionPay88UsdcDeposit' => transactionPay88UsdcDeposit,
+      'transactionPay88UsdcWithdrawal' => transactionPay88UsdcWithdrawal,
+      'transactionPay88UsdtDeposit' => transactionPay88UsdtDeposit,
+      'transactionPay88UsdtWithdrawal' => transactionPay88UsdtWithdrawal,
+      'transactionPay88Withdrawal' => transactionPay88Withdrawal,
+      'transactionPay88XrpDeposit' => transactionPay88XrpDeposit,
+      'transactionPay88XrpWithdrawal' => transactionPay88XrpWithdrawal,
+      'transactionPaymentiqDeposit' => transactionPaymentiqDeposit,
+      'transactionPaymentiqWithdrawal' => transactionPaymentiqWithdrawal,
+      'transactionPoweredBy' => transactionPoweredBy,
+      'transactionProcessingFee' => transactionProcessingFee,
+      'transactionRate' => transactionRate,
+      'transactionResume' => transactionResume,
+      'transactionSocDeposit' => transactionSocDeposit,
+      'transactionSocWithdrawal' => transactionSocWithdrawal,
+      'transactionSpent' => transactionSpent,
+      'transactionStartBalance' => transactionStartBalance,
+      'transactionTotalReceived' => transactionTotalReceived,
+      'transactionType' => transactionType,
+      'transactionTypeBitcoinDeposit' => transactionTypeBitcoinDeposit,
+      'transactionWin' => transactionWin,
+      'transactionWithdrawal' => transactionWithdrawal,
+      'transactionWithdrawalApproved' => transactionWithdrawalApproved,
+      'transactionWithdrawalCancellationByUser' =>
+        transactionWithdrawalCancellationByUser,
+      'transactionWithdrawalCancellationReturn' =>
+        transactionWithdrawalCancellationReturn,
+      'transactionWithdrawalDeleted' => transactionWithdrawalDeleted,
+      'transactionWithdrawalNew' => transactionWithdrawalNew,
+      'transactionWithdrawalPending' => transactionWithdrawalPending,
+      'transactionWithdrawalProcessing' => transactionWithdrawalProcessing,
+      'transactionWithdrawalReverted' => transactionWithdrawalReverted,
+      'transactionsBets' => transactionsBets,
+      'transactionsDeposits' => transactionsDeposits,
+      'transactionsFilter' => transactionsFilter,
+      'transactionsLoadMore' => transactionsLoadMore,
+      'transactionsModifyFilters' => transactionsModifyFilters,
+      'transactionsNone' => transactionsNone,
+      'transactionsSeeAllTransactions' => transactionsSeeAllTransactions,
+      'transactionsWins' => transactionsWins,
+      'transactionsWithdrawals' => transactionsWithdrawals,
+      'walletDeposit' => walletDeposit,
+      'walletDepositHistory' => walletDepositHistory,
+      'walletGetBitcoins' => walletGetBitcoins,
+      'walletMyBalance' => walletMyBalance,
+      'walletTransactionAmount' => walletTransactionAmount,
+      'walletTransactionTransactionId' => walletTransactionTransactionId,
+      'walletWithdraw' => walletWithdraw,
+      'ecPop_message' => switch (args) {
+          [final String errorCode] => ecPop_message(errorCode),
+          _ => throw ArgumentError('ecPop_message requires 1 arguments'),
+        },
+      'cashierBalance' => switch (args) {
+          [final Object currency] => cashierBalance(currency),
+          _ => throw ArgumentError('cashierBalance requires 1 arguments'),
+        },
+      'cashierBalanceReverted' => switch (args) {
+          [final Object currency] => cashierBalanceReverted(currency),
+          _ =>
+            throw ArgumentError('cashierBalanceReverted requires 1 arguments'),
+        },
+      'cashierBuyCurrency' => switch (args) {
+          [final Object currency] => cashierBuyCurrency(currency),
+          _ => throw ArgumentError('cashierBuyCurrency requires 1 arguments'),
+        },
+      'cashierConvertBeforeWithdraw' => switch (args) {
+          [final Object convertFrom, final Object convertTo] =>
+            cashierConvertBeforeWithdraw(convertFrom, convertTo),
+          _ => throw ArgumentError(
+              'cashierConvertBeforeWithdraw requires 2 arguments'),
+        },
+      'cashierConvertTo' => switch (args) {
+          [final Object currency] => cashierConvertTo(currency),
+          _ => throw ArgumentError('cashierConvertTo requires 1 arguments'),
+        },
+      'cashierCpfRfcProcessingDescription' => switch (args) {
+          [final Object variant] => cashierCpfRfcProcessingDescription(variant),
+          _ => throw ArgumentError(
+              'cashierCpfRfcProcessingDescription requires 1 arguments'),
+        },
+      'cashierCpfRfcProcessingTitle' => switch (args) {
+          [final Object variant] => cashierCpfRfcProcessingTitle(variant),
+          _ => throw ArgumentError(
+              'cashierCpfRfcProcessingTitle requires 1 arguments'),
+        },
+      'cashierCurrencyDeposit' => switch (args) {
+          [final Object currency] => cashierCurrencyDeposit(currency),
+          _ =>
+            throw ArgumentError('cashierCurrencyDeposit requires 1 arguments'),
+        },
+      'cashierCurrencyWithdrawal' => switch (args) {
+          [final Object currency] => cashierCurrencyWithdrawal(currency),
+          _ => throw ArgumentError(
+              'cashierCurrencyWithdrawal requires 1 arguments'),
+        },
+      'cashierCurrentBalance' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierCurrentBalance(amount, currency),
+          _ =>
+            throw ArgumentError('cashierCurrentBalance requires 2 arguments'),
+        },
+      'cashierDepositAgents' => switch (args) {
+          [final Object currency] => cashierDepositAgents(currency),
+          _ => throw ArgumentError('cashierDepositAgents requires 1 arguments'),
+        },
+      'cashierDepositCurrency' => switch (args) {
+          [final Object currency] => cashierDepositCurrency(currency),
+          _ =>
+            throw ArgumentError('cashierDepositCurrency requires 1 arguments'),
+        },
+      'cashierDepositSuccessful' => switch (args) {
+          [final Object currency, final Object amount] =>
+            cashierDepositSuccessful(currency, amount),
+          _ => throw ArgumentError(
+              'cashierDepositSuccessful requires 2 arguments'),
+        },
+      'cashierDepositWarningErc20Network' => switch (args) {
+          [final Object currency] =>
+            cashierDepositWarningErc20Network(currency),
+          _ => throw ArgumentError(
+              'cashierDepositWarningErc20Network requires 1 arguments'),
+        },
+      'cashierDepositWalletDepositStarted' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierDepositWalletDepositStarted(amount, currency),
+          _ => throw ArgumentError(
+              'cashierDepositWalletDepositStarted requires 2 arguments'),
+        },
+      'cashierEmailVerificationBannerBody' => switch (args) {
+          [final Object brandName] =>
+            cashierEmailVerificationBannerBody(brandName),
+          _ => throw ArgumentError(
+              'cashierEmailVerificationBannerBody requires 1 arguments'),
+        },
+      'cashierEnterCodeFromSms' => switch (args) {
+          [final Object phone] => cashierEnterCodeFromSms(phone),
+          _ =>
+            throw ArgumentError('cashierEnterCodeFromSms requires 1 arguments'),
+        },
+      'cashierExchange3Confirmations' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierExchange3Confirmations(amount, currency),
+          _ => throw ArgumentError(
+              'cashierExchange3Confirmations requires 2 arguments'),
+        },
+      'cashierExchangeFee' => switch (args) {
+          [final Object amount, final Object currency, final Object fee] =>
+            cashierExchangeFee(amount, currency, fee),
+          _ => throw ArgumentError('cashierExchangeFee requires 3 arguments'),
+        },
+      'cashierExchangeOverallBalance' => switch (args) {
+          [final Object currency, final Object amount] =>
+            cashierExchangeOverallBalance(currency, amount),
+          _ => throw ArgumentError(
+              'cashierExchangeOverallBalance requires 2 arguments'),
+        },
+      'cashierExchangeRate' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierExchangeRate(amount, currency),
+          _ => throw ArgumentError('cashierExchangeRate requires 2 arguments'),
+        },
+      'cashierFiatContinueExternal' => switch (args) {
+          [final Object provider] => cashierFiatContinueExternal(provider),
+          _ => throw ArgumentError(
+              'cashierFiatContinueExternal requires 1 arguments'),
+        },
+      'cashierFiatContinueProvider' => switch (args) {
+          [final Object provider] => cashierFiatContinueProvider(provider),
+          _ => throw ArgumentError(
+              'cashierFiatContinueProvider requires 1 arguments'),
+        },
+      'cashierFiatDepositAmountPlaceholder' => switch (args) {
+          [final Object currency] =>
+            cashierFiatDepositAmountPlaceholder(currency),
+          _ => throw ArgumentError(
+              'cashierFiatDepositAmountPlaceholder requires 1 arguments'),
+        },
+      'cashierFiatDepositEzeebillProviderBankTransferJpyLimits' => switch (
+            args) {
+          [final Object min, final Object max] =>
+            cashierFiatDepositEzeebillProviderBankTransferJpyLimits(min, max),
+          _ => throw ArgumentError(
+              'cashierFiatDepositEzeebillProviderBankTransferJpyLimits requires 2 arguments'),
+        },
+      'cashierFiatDepositInvalidRequest' => switch (args) {
+          [final Object field] => cashierFiatDepositInvalidRequest(field),
+          _ => throw ArgumentError(
+              'cashierFiatDepositInvalidRequest requires 1 arguments'),
+        },
+      'cashierFiatDepositReceived' => switch (args) {
+          [final Object moneyIcon] => cashierFiatDepositReceived(moneyIcon),
+          _ => throw ArgumentError(
+              'cashierFiatDepositReceived requires 1 arguments'),
+        },
+      'cashierFiatDepositRequired' => switch (args) {
+          [final Object field] => cashierFiatDepositRequired(field),
+          _ => throw ArgumentError(
+              'cashierFiatDepositRequired requires 1 arguments'),
+        },
+      'cashierFiatEstimatedCurrencyRate' => switch (args) {
+          [final Object currency] => cashierFiatEstimatedCurrencyRate(currency),
+          _ => throw ArgumentError(
+              'cashierFiatEstimatedCurrencyRate requires 1 arguments'),
+        },
+      'cashierFiatMinMaxDeposit' => switch (args) {
+          [final Object min, final Object max] =>
+            cashierFiatMinMaxDeposit(min, max),
+          _ => throw ArgumentError(
+              'cashierFiatMinMaxDeposit requires 2 arguments'),
+        },
+      'cashierFiatMinMaxWithdraw' => switch (args) {
+          [final Object min, final Object max] =>
+            cashierFiatMinMaxWithdraw(min, max),
+          _ => throw ArgumentError(
+              'cashierFiatMinMaxWithdraw requires 2 arguments'),
+        },
+      'cashierFiatPlacedOrderDescription' => switch (args) {
+          [final Object amount] => cashierFiatPlacedOrderDescription(amount),
+          _ => throw ArgumentError(
+              'cashierFiatPlacedOrderDescription requires 1 arguments'),
+        },
+      'cashierFiatSumopayAmountDesc' => switch (args) {
+          [final Object currency] => cashierFiatSumopayAmountDesc(currency),
+          _ => throw ArgumentError(
+              'cashierFiatSumopayAmountDesc requires 1 arguments'),
+        },
+      'cashierFiatWithdrawalInvalidRequest' => switch (args) {
+          [final Object field] => cashierFiatWithdrawalInvalidRequest(field),
+          _ => throw ArgumentError(
+              'cashierFiatWithdrawalInvalidRequest requires 1 arguments'),
+        },
+      'cashierFiatWithdrawalRequired' => switch (args) {
+          [final Object field] => cashierFiatWithdrawalRequired(field),
+          _ => throw ArgumentError(
+              'cashierFiatWithdrawalRequired requires 1 arguments'),
+        },
+      'cashierFundsAvailable' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierFundsAvailable(amount, currency),
+          _ =>
+            throw ArgumentError('cashierFundsAvailable requires 2 arguments'),
+        },
+      'cashierGetBitcoinsFee' => switch (args) {
+          [final Object value] => cashierGetBitcoinsFee(value),
+          _ =>
+            throw ArgumentError('cashierGetBitcoinsFee requires 1 arguments'),
+        },
+      'cashierMaximumDeposit' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierMaximumDeposit(amount, currency),
+          _ =>
+            throw ArgumentError('cashierMaximumDeposit requires 2 arguments'),
+        },
+      'cashierMinimumConversionAmount' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierMinimumConversionAmount(amount, currency),
+          _ => throw ArgumentError(
+              'cashierMinimumConversionAmount requires 2 arguments'),
+        },
+      'cashierMinimumDeposit' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierMinimumDeposit(amount, currency),
+          _ =>
+            throw ArgumentError('cashierMinimumDeposit requires 2 arguments'),
+        },
+      'cashierMinimumWithdrawal' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierMinimumWithdrawal(amount, currency),
+          _ => throw ArgumentError(
+              'cashierMinimumWithdrawal requires 2 arguments'),
+        },
+      'cashierNotEnoughCryptoToConvert' => switch (args) {
+          [final Object currency] => cashierNotEnoughCryptoToConvert(currency),
+          _ => throw ArgumentError(
+              'cashierNotEnoughCryptoToConvert requires 1 arguments'),
+        },
+      'cashierPlacedOrderDescription' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierPlacedOrderDescription(amount, currency),
+          _ => throw ArgumentError(
+              'cashierPlacedOrderDescription requires 2 arguments'),
+        },
+      'cashierPlacedOrderDescriptionNoAmount' => switch (args) {
+          [final Object currency] =>
+            cashierPlacedOrderDescriptionNoAmount(currency),
+          _ => throw ArgumentError(
+              'cashierPlacedOrderDescriptionNoAmount requires 1 arguments'),
+        },
+      'cashierPlayNowIn' => switch (args) {
+          [final Object currency] => cashierPlayNowIn(currency),
+          _ => throw ArgumentError('cashierPlayNowIn requires 1 arguments'),
+        },
+      'cashierProcessingFee' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierProcessingFee(amount, currency),
+          _ => throw ArgumentError('cashierProcessingFee requires 2 arguments'),
+        },
+      'cashierRewardBonus' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierRewardBonus(amount, currency),
+          _ => throw ArgumentError('cashierRewardBonus requires 2 arguments'),
+        },
+      'cashierRewardSwichCurrencyBtn' => switch (args) {
+          [final Object currency] => cashierRewardSwichCurrencyBtn(currency),
+          _ => throw ArgumentError(
+              'cashierRewardSwichCurrencyBtn requires 1 arguments'),
+        },
+      'cashierRewardSwichCurrencyDepositBtn' => switch (args) {
+          [final Object currency] =>
+            cashierRewardSwichCurrencyDepositBtn(currency),
+          _ => throw ArgumentError(
+              'cashierRewardSwichCurrencyDepositBtn requires 1 arguments'),
+        },
+      'cashierRewardSwichCurrencyDepositDescription' => switch (args) {
+          [final Object currency, final Object amount] =>
+            cashierRewardSwichCurrencyDepositDescription(currency, amount),
+          _ => throw ArgumentError(
+              'cashierRewardSwichCurrencyDepositDescription requires 2 arguments'),
+        },
+      'cashierRewardSwichCurrencyDescription' => switch (args) {
+          [final Object currency] =>
+            cashierRewardSwichCurrencyDescription(currency),
+          _ => throw ArgumentError(
+              'cashierRewardSwichCurrencyDescription requires 1 arguments'),
+        },
+      'cashierShowMoreMethods' => switch (args) {
+          [final Object qty] => cashierShowMoreMethods(qty),
+          _ =>
+            throw ArgumentError('cashierShowMoreMethods requires 1 arguments'),
+        },
+      'cashierTransactionDescription' => switch (args) {
+          [final Object description] =>
+            cashierTransactionDescription(description),
+          _ => throw ArgumentError(
+              'cashierTransactionDescription requires 1 arguments'),
+        },
+      'cashierTransactionPaymentTime' => switch (args) {
+          [final Object datetime] => cashierTransactionPaymentTime(datetime),
+          _ => throw ArgumentError(
+              'cashierTransactionPaymentTime requires 1 arguments'),
+        },
+      'cashierWeb3walletErrorExceedsWalletBalance' => switch (args) {
+          [final Object walletBalance, final Object currency] =>
+            cashierWeb3walletErrorExceedsWalletBalance(walletBalance, currency),
+          _ => throw ArgumentError(
+              'cashierWeb3walletErrorExceedsWalletBalance requires 2 arguments'),
+        },
+      'cashierWeb3walletErrorMinDepositAmount' => switch (args) {
+          [final Object minDeposit, final Object currency] =>
+            cashierWeb3walletErrorMinDepositAmount(minDeposit, currency),
+          _ => throw ArgumentError(
+              'cashierWeb3walletErrorMinDepositAmount requires 2 arguments'),
+        },
+      'cashierWeb3walletWalletLinkedBtnTitle' => switch (args) {
+          [final Object walletName] =>
+            cashierWeb3walletWalletLinkedBtnTitle(walletName),
+          _ => throw ArgumentError(
+              'cashierWeb3walletWalletLinkedBtnTitle requires 1 arguments'),
+        },
+      'cashierWeb3walletWalletLinkedDesc' => switch (args) {
+          [final Object walletName] =>
+            cashierWeb3walletWalletLinkedDesc(walletName),
+          _ => throw ArgumentError(
+              'cashierWeb3walletWalletLinkedDesc requires 1 arguments'),
+        },
+      'cashierWeb3walletWarnDisconnectActiveWallet' => switch (args) {
+          [final Object wallet] =>
+            cashierWeb3walletWarnDisconnectActiveWallet(wallet),
+          _ => throw ArgumentError(
+              'cashierWeb3walletWarnDisconnectActiveWallet requires 1 arguments'),
+        },
+      'cashierWithdrawSuccessful' => switch (args) {
+          [final Object currency, final Object amount] =>
+            cashierWithdrawSuccessful(currency, amount),
+          _ => throw ArgumentError(
+              'cashierWithdrawSuccessful requires 2 arguments'),
+        },
+      'cashierWithdrawalCurrency' => switch (args) {
+          [final Object currency] => cashierWithdrawalCurrency(currency),
+          _ => throw ArgumentError(
+              'cashierWithdrawalCurrency requires 1 arguments'),
+        },
+      'cashierYouAreSpending' => switch (args) {
+          [final Object transferAmount] =>
+            cashierYouAreSpending(transferAmount),
+          _ =>
+            throw ArgumentError('cashierYouAreSpending requires 1 arguments'),
+        },
+      'cashierYouHaveConverted' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierYouHaveConverted(amount, currency),
+          _ =>
+            throw ArgumentError('cashierYouHaveConverted requires 2 arguments'),
+        },
+      'cashierYourAreSpending' => switch (args) {
+          [final Object amount, final Object currency] =>
+            cashierYourAreSpending(amount, currency),
+          _ =>
+            throw ArgumentError('cashierYourAreSpending requires 2 arguments'),
+        },
+      'errorsExchangeMinWithdraw' => switch (args) {
+          [final Object currency, final Object amount] =>
+            errorsExchangeMinWithdraw(currency, amount),
+          _ => throw ArgumentError(
+              'errorsExchangeMinWithdraw requires 2 arguments'),
+        },
+      'errorsMinWithdraw' => switch (args) {
+          [final Object minAmount, final Object currency] =>
+            errorsMinWithdraw(minAmount, currency),
+          _ => throw ArgumentError('errorsMinWithdraw requires 2 arguments'),
+        },
+      'errorsNoDepositsAvailableAtThisTime' => switch (args) {
+          [final Object currency] =>
+            errorsNoDepositsAvailableAtThisTime(currency),
+          _ => throw ArgumentError(
+              'errorsNoDepositsAvailableAtThisTime requires 1 arguments'),
+        },
+      'errorsNoWithdrawalsAvailableAtThisTime' => switch (args) {
+          [final Object currency] =>
+            errorsNoWithdrawalsAvailableAtThisTime(currency),
+          _ => throw ArgumentError(
+              'errorsNoWithdrawalsAvailableAtThisTime requires 1 arguments'),
+        },
+      'transactionExchangeDeposit' => switch (args) {
+          [final Object from, final Object to] =>
+            transactionExchangeDeposit(from, to),
+          _ => throw ArgumentError(
+              'transactionExchangeDeposit requires 2 arguments'),
+        },
+      'transactionExchangeWithdrawal' => switch (args) {
+          [final Object from, final Object to] =>
+            transactionExchangeWithdrawal(from, to),
+          _ => throw ArgumentError(
+              'transactionExchangeWithdrawal requires 2 arguments'),
+        },
+      _ => null,
     };
+  }
+
+  String parseL10n(String translationKey, {List<Object>? arguments}) {
+    final result = lookupKey(translationKey, arguments);
+    if (result == null) {
+      return 'Translation key not found!';
+    }
+    return result as String;
   }
 }

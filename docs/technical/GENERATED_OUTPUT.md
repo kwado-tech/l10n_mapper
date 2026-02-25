@@ -38,7 +38,7 @@ extension BuildContextExtension on BuildContext {
 
   String parseL10n(String translationKey, {List<Object>? arguments}) {
     final localizations = AppLocalizations.of(this)!;
-    return L10nHelper.parseL10n(localizations, translationKey, arguments: arguments);
+    return localizations.parseL10n(translationKey, arguments: arguments);
   }
 }
 ```
@@ -47,82 +47,45 @@ When `message` is `null`, the return type is `String?` instead of `String`.
 
 ### 2. AppLocalizationsExtension
 
-Extension on `AppLocalizations` for direct access without `BuildContext`:
+Extension on `AppLocalizations` with switch-based `lookupKey` and `parseL10n`:
 
 ```dart
 extension AppLocalizationsExtension on AppLocalizations {
-  String parseL10n(String translationKey, {List<Object>? arguments}) {
-    return L10nHelper.parseL10n(this, translationKey, arguments: arguments);
-  }
-}
-```
-
-### 3. L10nHelper
-
-Static helper with **per-locale caching** for O(1) lookups:
-
-```dart
-class L10nHelper {
-  static final Map<String, Map<String, dynamic>> _cache = {};
-
-  static String parseL10n(AppLocalizations localizations, String translationKey,
-      {List<Object>? arguments}) {
-    final localeName = localizations.localeName;
-    final cachedMap = _cache[localeName];
-
-    final map = cachedMap ?? () {
-      const mapper = AppLocalizationsMapper();
-      final newMap = mapper.toLocalizationMap(localizations);
-      _cache[localeName] = newMap;
-      return newMap;
-    }();
-
-    final object = map[translationKey];
-    if (object == null) return 'Translation key not found!';  // or message option
-    if (object is String) return object;
-    assert(arguments != null, 'Arguments should not be null!');
-    assert(arguments!.isNotEmpty, 'Arguments should not be empty!');
-    return Function.apply(object as Function, arguments) as String;
-  }
-
-  static void clearCache([String? localeName]) {
-    if (localeName != null) {
-      _cache.remove(localeName);
-    } else {
-      _cache.clear();
-    }
-  }
-}
-```
-
-**Nullable mode** (when `message` is `null`): Returns `String?`; `object == null` returns `object as String?` instead of the fallback message.
-
-### 4. AppLocalizationsMapper
-
-Maps translation keys to values. **Getter keys** map to `String`; **method keys** map to typed closures:
-
-```dart
-class AppLocalizationsMapper {
-  const AppLocalizationsMapper();
-
-  Map<String, dynamic> toLocalizationMap(AppLocalizations localizations) {
-    return {
-      // Getters (no parameters)
-      'localeName': localizations.localeName,
-      'cashierDeposit': localizations.cashierDeposit,
-
-      // Methods (with parameters) - types are inferred from AppLocalizations
-      'cashierMinimumDeposit': (Object amount, Object currency) =>
-          localizations.cashierMinimumDeposit(amount, currency),
-      'ecPop_message': (String errorCode) =>
-          localizations.ecPop_message(errorCode),
-      // ... all keys from app_localizations.dart
+  Object? lookupKey(String key, [List<Object>? args]) {
+    return switch (key) {
+      'localeName' => localeName,
+      'cashierDeposit' => cashierDeposit,
+      'cashierMinimumDeposit' => switch (args) {
+        [final Object amount, final Object currency] =>
+          cashierMinimumDeposit(amount, currency),
+        _ => throw ArgumentError('cashierMinimumDeposit requires 2 arguments'),
+      },
+      'ecPop_message' => switch (args) {
+        [final String errorCode] => ecPop_message(errorCode),
+        _ => throw ArgumentError('ecPop_message requires 1 arguments'),
+      },
+      _ => null,
     };
   }
+
+  String parseL10n(String translationKey, {List<Object>? arguments}) {
+    final result = lookupKey(translationKey, arguments);
+    if (result == null) {
+      return 'Translation key not found!';
+    }
+    return result as String;
+  }
 }
 ```
 
-**Key**: Closure parameters use `explicit types` from the analyzer (e.g. `String`, `Object`) to avoid type inference errors.
+**Key benefits of switch-based approach:**
+- **Tree-shakeable** — unused translation keys can be eliminated by the compiler
+- **Zero allocation** — no map creation, no caching, no closures
+- **Type-safe** — parameter types validated at generation time
+- **No memory leaks** — no static cache holding references to `AppLocalizations`
+- **Direct dispatch** — no `Function.apply`, compiler can inline
+
+**Nullable mode** (when `message` is `null`): Returns `String?`; key-not-found returns `null` instead of the fallback message.
 
 ## Configuration Options
 
@@ -130,7 +93,7 @@ class AppLocalizationsMapper {
 |--------|------|---------|-------------|
 | `l10n` | `bool` | `true` | Generate `l10n` getter on `BuildContext` |
 | `locale` | `bool` | `true` | Generate `locale` getter on `BuildContext` |
-| `parseL10n` | `bool` | `true` | Generate `parseL10n` method and `L10nHelper` |
+| `parseL10n` | `bool` | `true` | Generate `parseL10n` and `lookupKey` on `AppLocalizations` |
 | `message` | `String?` | `null` | Fallback when key not found. If set, returns `String`; if `null`, returns `String?` |
 | `classNames` | `String` | `"AppLocalizations"` | Comma-separated class names to generate mapper for |
 
@@ -145,6 +108,9 @@ final text2 = context.parseL10n('cashierMinimumDeposit', arguments: [100, 'USD']
 
 // Direct on AppLocalizations (e.g. in tests)
 final text3 = localizations.parseL10n('cashierDeposit');
+
+// Dynamic lookup (returns Object? - String for getters, String for methods)
+final raw = localizations.lookupKey('cashierDeposit');
 ```
 
 ## Import
@@ -156,4 +122,4 @@ import 'package:your_app/localization/gen-l10n/app_localizations.dart';
 import 'package:your_app/localization/gen-l10n/app_localizations.mapper.dart';
 ```
 
-The mapper file adds extensions and helper classes; it does not modify `app_localizations.dart`.
+The mapper file adds extensions; it does not modify `app_localizations.dart`.

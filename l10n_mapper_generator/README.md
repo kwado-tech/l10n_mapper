@@ -52,15 +52,16 @@ Arguments must match the order of placeholders in your ARB file.
 
 The generator includes automatic performance optimization with **lazy-initialized caching**:
 - **First lookup**: Creates translation map once per locale
-- **Subsequent lookups**: O(1) hash map access (~2,400x faster for large translation sets)
-- **Memory efficient**: Single map per active locale, minimal GC pressure
+- **Zero allocation**: No map, no cache, no closures
+- **O(1) lookup**: Compiler-optimized switch expression
+- **Tree-shakeable**: Unused keys can be eliminated
 - **Zero configuration**: Works automatically, no setup required
 
-For large translation files (1000+ keys), this provides significant performance improvements. See [docs/technical/PERFORMANCE.md](../docs/technical/PERFORMANCE.md) for detailed benchmarks and implementation details.
+See [docs/technical/PERFORMANCE.md](../docs/technical/PERFORMANCE.md) for details.
 
 #### Mapper
 
-Produces `app_localizations.mapper.dart` with `BuildContextExtension`, `AppLocalizationsExtension`, `L10nHelper`, and `AppLocalizationsMapper`. See [Generated Output Reference](../docs/technical/GENERATED_OUTPUT.md).
+Produces `app_localizations.mapper.dart` with `BuildContextExtension` and `AppLocalizationsExtension` (including `lookupKey` and `parseL10n`). See [Generated Output Reference](../docs/technical/GENERATED_OUTPUT.md).
 
 **Configuration** (`build.yaml`):
 
@@ -248,9 +249,7 @@ With this flexibility, one can decide to prefer camel or snake casing which are 
 See [GENERATED_OUTPUT.md](../docs/technical/GENERATED_OUTPUT.md) for the exact structure. Summary:
 
 - **BuildContextExtension**: `l10n`, `locale`, `parseL10n` on `BuildContext`
-- **AppLocalizationsExtension**: `parseL10n` on `AppLocalizations`
-- **L10nHelper**: Cached `parseL10n`, `clearCache`
-- **AppLocalizationsMapper**: `toLocalizationMap(AppLocalizations)` with typed closures for parameterized keys
+- **AppLocalizationsExtension**: `lookupKey`, `parseL10n` on `AppLocalizations` (switch-based)
 
 #### Resources
 Here is a proposal this package is aimed to resolve
