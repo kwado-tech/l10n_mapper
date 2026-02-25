@@ -4,11 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version to release (e.g., 2.3.0)'
-        required: true
-        type: string
-      changelog:
-        description: 'Changelog entry (what changed in this version)'
+        description: 'Version to release (e.g., 3.0.0)'
         required: true
         type: string
 
@@ -81,31 +77,26 @@ jobs:
           sed -i "s/^version:.*/version: $VERSION/" pubspec.yaml
           echo "✅ Updated pubspec.yaml to version $VERSION"
           
-      - name: Update CHANGELOG.md
+      - name: Extract changelog for version
         working-directory: ${{ env.PACKAGE_DIR }}
+        id: changelog
         run: |
           VERSION="${{ github.event.inputs.version }}"
-          DATE=$(date +%Y-%m-%d)
-          CHANGELOG="${{ github.event.inputs.changelog }}"
-          
-          # Create changelog entry
-          cat > /tmp/new_changelog.md << EOF
-          ## $VERSION
-          $(echo "$CHANGELOG" | sed 's/^/* /')
-          
-          EOF
-          
-          # Insert at the beginning of changelog (after any header)
-          if grep -q "^## [0-9]" CHANGELOG.md; then
-            awk -v new="$(cat /tmp/new_changelog.md)" '/^## [0-9]/ && !found {print new; found=1} 1' CHANGELOG.md > CHANGELOG.md.tmp
-            mv CHANGELOG.md.tmp CHANGELOG.md
-          else
-            # If no version entries exist yet, append
-            echo "$(cat /tmp/new_changelog.md)" >> CHANGELOG.md
+          if ! grep -qE "^## $VERSION($| )" CHANGELOG.md; then
+            echo "::error::No changelog entry for version $VERSION in CHANGELOG.md. Add a section: ## $VERSION"
+            exit 1
           fi
-          
-          echo "✅ Updated CHANGELOG.md"
-          cat CHANGELOG.md | head -20
+          # Extract changelog from ## VERSION until next ## or end of file
+          awk -v ver="$VERSION" '
+            /^## [0-9]+\.[0-9]+\.[0-9]+/ && found { exit }
+            $0 ~ "^## " ver "($| )" { found=1; next }
+            found { print }
+          ' CHANGELOG.md | sed 's/^/* /' > /tmp/changelog_body.txt
+          DELIM="CHANGELOG_$(date +%s)"
+          echo "body<<$DELIM" >> $GITHUB_OUTPUT
+          cat /tmp/changelog_body.txt >> $GITHUB_OUTPUT
+          echo "$DELIM" >> $GITHUB_OUTPUT
+          echo "✅ Extracted changelog for $VERSION"
           
       - name: Install dependencies
         working-directory: ${{ env.PACKAGE_DIR }}
@@ -150,7 +141,7 @@ jobs:
           name: v${{ github.event.inputs.version }}
           body: |
             ## Changes
-            ${{ github.event.inputs.changelog }}
+            ${{ steps.changelog.outputs.body }}
             
             ## Installation
             ```yaml
@@ -174,4 +165,4 @@ jobs:
           echo "- 🏷️ [GitHub Release](https://github.com/${{ github.repository }}/releases/tag/$VERSION)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**What's New:**" >> $GITHUB_STEP_SUMMARY
-          echo "${{ github.event.inputs.changelog }}" | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.changelog.outputs.body }}" >> $GITHUB_STEP_SUMMARY

@@ -1,3 +1,6 @@
+## 3.0.0 [BREAKING CHANGE]
+* Replaced map-based lookup with switch expression; removed L10nHelper and clearCache - remove any L10nHelper.clearCache() calls from your code.
+
 ## 2.3.3
 * * Fixed type safety (mapper closures, parseL10n casts, Function.apply argument) and updated documentation
 ## 2.3.2
