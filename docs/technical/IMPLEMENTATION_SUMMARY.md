@@ -2,7 +2,7 @@
 
 ## Overview
 
-`l10n_mapper_generator` uses a **switch expression** for dynamic translation lookups instead of a map. This provides zero allocation, tree-shaking, and no memory leaks.
+`l10n_mapper_generator` uses a **switch expression** for dynamic translation lookups instead of a map. Positional lookups avoid allocations and support tree-shaking; methods with Dart named parameters use generated `Function.apply` dispatch.
 
 ## Problem Statement (Historical)
 
@@ -30,8 +30,11 @@ extension AppLocalizationsExtension on AppLocalizations {
     };
   }
 
-  String parseL10n(String translationKey, {List<Object>? arguments}) {
-    final result = lookupKey(translationKey, arguments);
+  String parseL10n(String translationKey, {
+    List<Object>? arguments,
+    Map<String, Object?>? namedArguments,
+  }) {
+    final result = _lookupKey(translationKey, arguments, namedArguments);
     if (result == null) return 'Translation key not found!';
     return result as String;
   }
@@ -42,22 +45,23 @@ extension AppLocalizationsExtension on AppLocalizations {
 
 | Aspect | Map (old) | Switch (current) |
 |--------|-----------|------------------|
-| **Allocation** | Map + closures per locale | Zero |
+| **Allocation** | Map + closures per locale | Zero for positional lookups |
 | **Tree-shaking** | No | Yes |
-| **Type safety** | Function.apply | Pattern matching |
+| **Type safety** | Function.apply | Positional patterns; Dart checks named invocation types |
 | **Memory leaks** | Cache held references | None |
 | **Lookup** | O(1) hash map | O(1) jump table |
 
 ## Performance
 
 - **~2–3μs per lookup** (2,400+ keys)
-- **Zero heap allocation** per lookup
+- **Zero heap allocation** for positional lookups
 - **No caching** — no warm-up, no cleanup
 
 ## API
 
 - `context.parseL10n('key')` — unchanged
 - `context.parseL10n('key', arguments: [...])` — unchanged
+- `context.parseL10n('key', namedArguments: {'name': value})` — for methods with Dart named parameters
 - `localizations.lookupKey('key', args)` — new, for direct dynamic lookup
 
 ## Migration (v3.0.0)

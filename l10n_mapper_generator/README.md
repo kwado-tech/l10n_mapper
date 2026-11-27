@@ -40,19 +40,23 @@ dart pub global activate l10n_mapper_generator
 ####
 **Example usage**
 
-Arguments must match the order of placeholders in your ARB file.
+Positional arguments must match the order of placeholders in your ARB file. If a localization method declares Dart named parameters, pass them by name with `namedArguments`. Flutter's standard `gen-l10n` output uses positional parameters.
 
 ```dart
   // Keys match Flutter-generated names (camelCase from ARB)
   final text = context.parseL10n('cashierDeposit');
   final text2 = context.parseL10n('cashierMinimumDeposit', arguments: [100, 'USD']);
+  final greeting = context.parseL10n(
+    'welcomeUser',
+    namedArguments: {'userName': 'Alice'},
+  );
 ```
 
 #### ⚡ Performance
 
-The generator includes automatic performance optimization with **lazy-initialized caching**:
-- **First lookup**: Creates translation map once per locale
-- **Zero allocation**: No map, no cache, no closures
+The generator uses **switch-based lookups** without caching:
+- **Positional lookups**: No map creation, cache, or closures
+- **Named-parameter lookups**: `Function.apply` dispatches supplied names
 - **O(1) lookup**: Compiler-optimized switch expression
 - **Tree-shakeable**: Unused keys can be eliminated
 - **Zero configuration**: Works automatically, no setup required

@@ -36,9 +36,16 @@ extension BuildContextExtension on BuildContext {
   AppLocalizations get l10n => _localizations;
   Locale get locale => Localizations.localeOf(this);
 
-  String parseL10n(String translationKey, {List<Object>? arguments}) {
+  String parseL10n(String translationKey, {
+    List<Object>? arguments,
+    Map<String, Object?>? namedArguments,
+  }) {
     final localizations = AppLocalizations.of(this)!;
-    return localizations.parseL10n(translationKey, arguments: arguments);
+    return localizations.parseL10n(
+      translationKey,
+      arguments: arguments,
+      namedArguments: namedArguments,
+    );
   }
 }
 ```
@@ -52,6 +59,27 @@ Extension on `AppLocalizations` with switch-based `lookupKey` and `parseL10n`:
 ```dart
 extension AppLocalizationsExtension on AppLocalizations {
   Object? lookupKey(String key, [List<Object>? args]) {
+    return _lookupKey(key, args);
+  }
+
+  Object? _lookupKey(String key, [List<Object>? args, Map<String, Object?>? namedArguments]) {
+    if (const {'welcomeUser'}.contains(key)) {
+      return switch (key) {
+        'welcomeUser' => _invokeNamedMethod(
+          welcomeUser,
+          'welcomeUser',
+          args,
+          namedArguments,
+          positionalParameterCount: 0,
+          requiredNamedParameters: const {'userName'},
+          allowedNamedParameters: const {'userName'},
+        ),
+        _ => null,
+      };
+    }
+    if (namedArguments != null && namedArguments.isNotEmpty) {
+      throw ArgumentError('$key does not accept named arguments');
+    }
     return switch (key) {
       'localeName' => localeName,
       'cashierDeposit' => cashierDeposit,
@@ -68,8 +96,45 @@ extension AppLocalizationsExtension on AppLocalizations {
     };
   }
 
-  String parseL10n(String translationKey, {List<Object>? arguments}) {
-    final result = lookupKey(translationKey, arguments);
+  Object? _invokeNamedMethod(
+    Function method,
+    String name,
+    List<Object>? arguments,
+    Map<String, Object?>? namedArguments, {
+    required int positionalParameterCount,
+    required Set<String> requiredNamedParameters,
+    required Set<String> allowedNamedParameters,
+  }) {
+    final positional = arguments ?? const <Object>[];
+    if (positional.length != positionalParameterCount) {
+      throw ArgumentError('$name requires $positionalParameterCount arguments');
+    }
+    final named = namedArguments ?? const <String, Object?>{};
+    final unexpected = named.keys
+        .where((key) => !allowedNamedParameters.contains(key))
+        .toList();
+    if (unexpected.isNotEmpty) {
+      throw ArgumentError(
+        '$name does not accept named arguments: ${unexpected.join(', ')}',
+      );
+    }
+    for (final parameter in requiredNamedParameters) {
+      if (!named.containsKey(parameter)) {
+        throw ArgumentError('$name requires named argument "$parameter"');
+      }
+    }
+    return Function.apply(
+      method,
+      positional,
+      named.map((key, value) => MapEntry(Symbol(key), value)),
+    );
+  }
+
+  String parseL10n(String translationKey, {
+    List<Object>? arguments,
+    Map<String, Object?>? namedArguments,
+  }) {
+    final result = _lookupKey(translationKey, arguments, namedArguments);
     if (result == null) {
       return 'Translation key not found!';
     }
@@ -78,12 +143,14 @@ extension AppLocalizationsExtension on AppLocalizations {
 }
 ```
 
+Named parameters are supplied with `namedArguments`, keyed by their Dart parameter names. Positional parameters continue to use `arguments`. This applies when the localization method declares Dart named parameters; Flutter's standard `gen-l10n` methods use positional parameters.
+
 **Key benefits of switch-based approach:**
 - **Tree-shakeable** — unused translation keys can be eliminated by the compiler
-- **Zero allocation** — no map creation, no caching, no closures
-- **Type-safe** — parameter types validated at generation time
+- **Zero allocation for positional lookups** — no map creation, caching, or closures
+- **Typed invocation** — named calls dispatch through the generated method tear-off and Dart checks argument types
 - **No memory leaks** — no static cache holding references to `AppLocalizations`
-- **Direct dispatch** — no `Function.apply`, compiler can inline
+- **Direct dispatch** — positional-only methods use direct calls; named-parameter methods use `Function.apply`
 
 **Nullable mode** (when `message` is `null`): Returns `String?`; key-not-found returns `null` instead of the fallback message.
 
@@ -105,6 +172,12 @@ final text = context.parseL10n('cashierDeposit');
 
 // Parameterized keys (methods) - arguments must match order in ARB
 final text2 = context.parseL10n('cashierMinimumDeposit', arguments: [100, 'USD']);
+
+// For localization methods that declare Dart named parameters
+final greeting = context.parseL10n(
+  'welcomeUser',
+  namedArguments: {'userName': 'Alice'},
+);
 
 // Direct on AppLocalizations (e.g. in tests)
 final text3 = localizations.parseL10n('cashierDeposit');

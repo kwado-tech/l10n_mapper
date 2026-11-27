@@ -31,21 +31,20 @@ extension AppLocalizationsExtension on AppLocalizations {
 ## Benefits
 
 ### Performance
-1. **Zero allocation** — No map creation, no closures, no cache
+1. **Zero allocation for positional lookups** — No map creation, no closures, no cache
 2. **O(1) lookup** — Compiler generates hash jump table for the switch
-3. **Direct dispatch** — No `Function.apply`; method calls are static and inlinable
+3. **Direct positional dispatch** — Positional method calls are static and inlinable; named-parameter calls use `Function.apply`
 4. **Consistent speed** — First lookup same as subsequent (no warm-up)
 
 ### Memory & GC
 1. **No static cache** — Nothing holds references to `AppLocalizations`
 2. **No memory leaks** — Safe for apps that cycle through many locales
 3. **Tree-shakeable** — Unused translation keys can be eliminated by the compiler
-4. **Minimal GC pressure** — Zero heap allocation per lookup
+4. **Minimal GC pressure** — Positional lookups allocate no heap objects; named-parameter dispatch allocates the argument map
 
 ### Type Safety
-- Parameter types validated at generation time
-- Argument count validated via pattern matching
-- No dynamic dispatch
+- Positional argument types and counts are validated through generated patterns
+- Named parameters are checked against the generated parameter names and Dart validates their types at invocation
 
 ## Benchmarking
 

@@ -260,7 +260,7 @@ lookupKey('deposit') → switch → localizations.cashierDeposit (de instance)
   ↓
 Return "Einzahlung"
 
-No cache, no map — each lookup is O(1) switch + direct access.
+Positional lookups use a switch and direct access without a cache or map. Methods with Dart named parameters use `Function.apply` to dispatch the supplied names.
 ```
 
 ### Parameterized Translations
