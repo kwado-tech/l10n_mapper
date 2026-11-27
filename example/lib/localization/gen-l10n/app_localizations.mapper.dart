@@ -12,14 +12,24 @@ extension BuildContextExtension on BuildContext {
   AppLocalizations get _localizations => AppLocalizations.of(this)!;
   AppLocalizations get l10n => _localizations;
   Locale get locale => Localizations.localeOf(this);
-  String parseL10n(String translationKey, {List<Object>? arguments}) {
+  String parseL10n(String translationKey,
+      {List<Object>? arguments, Map<String, Object?>? namedArguments}) {
     final localizations = AppLocalizations.of(this)!;
-    return localizations.parseL10n(translationKey, arguments: arguments);
+    return localizations.parseL10n(translationKey,
+        arguments: arguments, namedArguments: namedArguments);
   }
 }
 
 extension AppLocalizationsExtension on AppLocalizations {
   Object? lookupKey(String key, [List<Object>? args]) {
+    return _lookupKey(key, args);
+  }
+
+  Object? _lookupKey(String key,
+      [List<Object>? args, Map<String, Object?>? namedArguments]) {
+    if (namedArguments != null && namedArguments.isNotEmpty) {
+      throw ArgumentError('$key does not accept named arguments');
+    }
     return switch (key) {
       'localeName' => localeName,
       'cashierAccountsDesc' => cashierAccountsDesc,
@@ -2408,8 +2418,9 @@ extension AppLocalizationsExtension on AppLocalizations {
     };
   }
 
-  String parseL10n(String translationKey, {List<Object>? arguments}) {
-    final result = lookupKey(translationKey, arguments);
+  String parseL10n(String translationKey,
+      {List<Object>? arguments, Map<String, Object?>? namedArguments}) {
+    final result = _lookupKey(translationKey, arguments, namedArguments);
     if (result == null) {
       return 'Translation key not found!';
     }

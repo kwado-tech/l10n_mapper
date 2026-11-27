@@ -5,9 +5,11 @@ targets:
         enabled: true  # enables or disables the builder
         generate_for:
           - lib/localization/gen-l10n/app_localizations.dart
+          - lib/localization/gen-l10n/named_localizations.dart
         options:
           l10n: true # optional default - true
           locale: true # optional default - true
           parseL10n: true # optional default - true
           message: "Translation key not found!" # optional default - null
+          classNames: "AppLocalizations,NamedLocalizations"
 

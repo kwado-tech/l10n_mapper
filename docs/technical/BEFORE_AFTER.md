@@ -34,7 +34,7 @@ Call 3: lookupKey → switch → direct access ✓
 ...
 Call 10: lookupKey → switch → direct access ✓
 
-Total: 0 allocations, ~20-30μs
+Total: no per-lookup allocations, ~20-30μs (positional lookups)
 ```
 
 ---
@@ -48,10 +48,10 @@ Total: 0 allocations, ~20-30μs
 | 3000 lookups | ~4-12ms |
 
 ### Benefits
-- **Zero allocation** — no map, no cache, no closures
+- **Zero allocation for positional lookups** — no map, no cache, no closures
 - **Tree-shakeable** — unused keys eliminated by compiler
 - **No memory leaks** — no static cache holding references
-- **Type-safe args** — pattern matching validates parameters
+- **Type-safe args** — generated patterns validate positional args; Dart validates named args at invocation
 
 ---
 

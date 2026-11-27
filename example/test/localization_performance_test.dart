@@ -1,5 +1,7 @@
 import 'package:example/localization/gen-l10n/app_localizations.dart';
 import 'package:example/localization/gen-l10n/app_localizations.mapper.dart';
+import 'package:example/localization/gen-l10n/named_localizations.dart';
+import 'package:example/localization/gen-l10n/named_localizations.mapper.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -92,6 +94,75 @@ void main() {
       expect(result, isNotEmpty);
     });
 
+    test('rejects named arguments for positional-only methods', () {
+      final localizations = lookupAppLocalizations(const Locale('en'));
+
+      expect(
+        () => localizations.parseL10n(
+          'cashierMinimumDeposit',
+          arguments: [100, 'USD'],
+          namedArguments: {'unexpected': 'value'},
+        ),
+        throwsA(isA<ArgumentError>()),
+      );
+    });
+
+    group('required named parameters', () {
+      final localizations = _TestNamedLocalizations();
+
+      test('passes required named arguments', () {
+        expect(
+          localizations.parseL10n(
+            'namedGreeting',
+            namedArguments: {'userName': 'Alice'},
+          ),
+          'Hello, Alice!',
+        );
+      });
+
+      test('passes positional and required named arguments together', () {
+        expect(
+          localizations.parseL10n(
+            'mixedGreeting',
+            arguments: ['Welcome'],
+            namedArguments: {'userName': 'Alice'},
+          ),
+          'Welcome, Alice!',
+        );
+      });
+
+      test('preserves defaults for omitted optional named arguments', () {
+        expect(localizations.parseL10n('optionalGreeting'), 'Hello!');
+        expect(
+          localizations.parseL10n(
+            'optionalGreeting',
+            namedArguments: {'punctuation': '?'},
+          ),
+          'Hello?',
+        );
+      });
+
+      test(
+        'throws ArgumentError when a required named argument is missing',
+        () {
+          expect(
+            () => localizations.parseL10n('namedGreeting'),
+            throwsA(isA<ArgumentError>()),
+          );
+        },
+      );
+
+      test('throws ArgumentError for an unknown named argument', () {
+        expect(
+          () => localizations.parseL10n(
+            'namedGreeting',
+            namedArguments: {'unknown': 'Alice'},
+          ),
+          throwsA(isA<ArgumentError>()),
+        );
+      });
+    });
+
     test('returns String for method keys with args', () {
       final localizations = lookupAppLocalizations(const Locale('en'));
 
@@ -137,4 +208,16 @@ void main() {
       expect(subsequentLookupTime, lessThan(10000)); // < 10ms for 100 lookups
     });
   });
+}
+
+class _TestNamedLocalizations extends NamedLocalizations {
+  @override
+  String namedGreeting({required String userName}) => 'Hello, $userName!';
+
+  @override
+  String mixedGreeting(String prefix, {required String userName}) =>
+      '$prefix, $userName!';
+
+  @override
+  String optionalGreeting({String punctuation = '!'}) => 'Hello$punctuation';
 }
